@@ -479,7 +479,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get playtimeEnterGameName => '输入游戏名称';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[ZH] [ZH] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[ZH] [ZH] Please login to access family features';
 
   @override
   String get myInvites => '我的邀请';
@@ -554,40 +555,52 @@ class AppLocalizationsZh extends AppLocalizations {
   String get contentLibrary => '[ZH] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[ZH] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[ZH] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[ZH] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[ZH] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[ZH] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[ZH] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[ZH] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[ZH] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[ZH] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[ZH] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[ZH] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[ZH] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[ZH] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[ZH] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[ZH] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[ZH] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[ZH] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[ZH] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[ZH] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[ZH] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[ZH] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[ZH] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[ZH] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +617,24 @@ class AppLocalizationsZh extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[ZH] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[ZH] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[ZH] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[ZH] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[ZH] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[ZH] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[ZH] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[ZH] Missing verification ID.';
@@ -628,43 +646,56 @@ class AppLocalizationsZh extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[ZH] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[ZH] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[ZH] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[ZH] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[ZH] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[ZH] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[ZH] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[ZH] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[ZH] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[ZH] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[ZH] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[ZH] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[ZH] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[ZH] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[ZH] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[ZH] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[ZH] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[ZH] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[ZH] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[ZH] The ID token is invalid.';
@@ -676,10 +707,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[ZH] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[ZH] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[ZH] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[ZH] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[ZH] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[ZH] Invalid custom claims provided.';
@@ -688,70 +721,87 @@ class AppLocalizationsZh extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[ZH] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[ZH] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[ZH] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[ZH] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[ZH] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[ZH] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[ZH] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[ZH] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[ZH] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[ZH] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[ZH] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[ZH] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[ZH] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[ZH] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[ZH] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[ZH] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[ZH] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[ZH] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[ZH] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[ZH] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[ZH] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[ZH] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[ZH] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[ZH] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[ZH] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[ZH] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[ZH] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[ZH] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[ZH] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[ZH] Missing continue URL.';
@@ -766,7 +816,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get authErrorMissingUid => '[ZH] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[ZH] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[ZH] Firebase project not found.';
@@ -775,19 +826,23 @@ class AppLocalizationsZh extends AppLocalizations {
   String get authErrorReservedClaims => '[ZH] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[ZH] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[ZH] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[ZH] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[ZH] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[ZH] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[ZH] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[ZH] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[ZH] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +891,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Virtual session created! Inviting friends... (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Virtual session created! Inviting friends... (Chinese (Simplified))';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +933,15 @@ class AppLocalizationsZh extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[ZH] Subscription unavailable (Chinese (Simplified))';
+  String get subscriptionUnavailable =>
+      '[ZH] Subscription unavailable (Chinese (Simplified))';
 
   @override
   String get confirmBooking => '[ZH] Confirm Booking (Chinese (Simplified))';
 
   @override
-  String get failedToUpdatePermissionE => '[ZH] Failed to update permission: \$e (Chinese (Simplified))';
+  String get failedToUpdatePermissionE =>
+      '[ZH] Failed to update permission: \$e (Chinese (Simplified))';
 
   @override
   String get reject => '[ZH] Reject (Chinese (Simplified))';
@@ -897,7 +955,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get noProviders => '[ZH] No providers';
 
   @override
-  String get checkingSubscription => '[ZH] Checking subscription... (Chinese (Simplified))';
+  String get checkingSubscription =>
+      '[ZH] Checking subscription... (Chinese (Simplified))';
 
   @override
   String errorPickingImageE(Object e) {
@@ -905,13 +964,15 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[ZH] No content available yet (Chinese (Simplified))';
+  String get noContentAvailableYet =>
+      '[ZH] No content available yet (Chinese (Simplified))';
 
   @override
   String get resolve => '[ZH] Resolve (Chinese (Simplified))';
 
   @override
-  String get errorLoadingSurveysError => '[ZH] Error loading surveys: \$error (Chinese (Simplified))';
+  String get errorLoadingSurveysError =>
+      '[ZH] Error loading surveys: \$error (Chinese (Simplified))';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +980,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[ZH] Get help with your account (Chinese (Simplified))';
+  String get getHelpWithYourAccount =>
+      '[ZH] Get help with your account (Chinese (Simplified))';
 
   @override
   String get pay => '[ZH] Pay (Chinese (Simplified))';
@@ -934,10 +996,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[ZH] Changes saved successfully! (Chinese (Simplified))';
+  String get changesSavedSuccessfully =>
+      '[ZH] Changes saved successfully! (Chinese (Simplified))';
 
   @override
-  String get createNewInvoice => '[ZH] Create New Invoice (Chinese (Simplified))';
+  String get createNewInvoice =>
+      '[ZH] Create New Invoice (Chinese (Simplified))';
 
   @override
   String get profileNotFound => 'الملف الشخصي غير موجود';
@@ -954,7 +1018,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get profileSaved => '[ZH] Profile saved! (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -968,7 +1033,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding => '[ZH] Business Onboarding (Chinese (Simplified))';
+  String get businessOnboarding =>
+      '[ZH] Business Onboarding (Chinese (Simplified))';
 
   @override
   String get addNewClient => '[ZH] Add New Client (Chinese (Simplified))';
@@ -985,7 +1051,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ZH] You will receive a confirmation email shortly. (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] You will receive a confirmation email shortly. (Chinese (Simplified))';
 
   @override
   String get addQuestion => '[ZH] Add Question (Chinese (Simplified))';
@@ -1002,7 +1069,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get join => '[ZH] Join (Chinese (Simplified))';
 
   @override
-  String get businessSubscription => '[ZH] Business Subscription (Chinese (Simplified))';
+  String get businessSubscription =>
+      '[ZH] Business Subscription (Chinese (Simplified))';
 
   @override
   String get myInvites1 => 'دعواتي';
@@ -1011,34 +1079,42 @@ class AppLocalizationsZh extends AppLocalizations {
   String get providers => '[ZH] Providers';
 
   @override
-  String get surveyManagement => '[ZH] Survey Management (Chinese (Simplified))';
+  String get surveyManagement =>
+      '[ZH] Survey Management (Chinese (Simplified))';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[ZH] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[ZH] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[ZH] No rooms found. Add your first room! (Chinese (Simplified))';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[ZH] No rooms found. Add your first room! (Chinese (Simplified))';
 
   @override
-  String get readOurPrivacyPolicy => '[ZH] Read our privacy policy (Chinese (Simplified))';
+  String get readOurPrivacyPolicy =>
+      '[ZH] Read our privacy policy (Chinese (Simplified))';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[ZH] Could not open privacy policy (Chinese (Simplified))';
+  String get couldNotOpenPrivacyPolicy =>
+      '[ZH] Could not open privacy policy (Chinese (Simplified))';
 
   @override
   String get refresh1 => '[ZH] Refresh (Chinese (Simplified))';
 
   @override
-  String get roomUpdatedSuccessfully => '[ZH] Room updated successfully! (Chinese (Simplified))';
+  String get roomUpdatedSuccessfully =>
+      '[ZH] Room updated successfully! (Chinese (Simplified))';
 
   @override
   String get contentDetail => '[ZH] Content Detail (Chinese (Simplified))';
 
   @override
-  String get cancelSubscription => '[ZH] Cancel Subscription (Chinese (Simplified))';
+  String get cancelSubscription =>
+      '[ZH] Cancel Subscription (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Successfully registered as Ambassador! (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Successfully registered as Ambassador! (Chinese (Simplified))';
 
   @override
   String get save1 => '[ZH] Save (Chinese (Simplified))';
@@ -1047,7 +1123,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get copy1 => '[ZH] Copy (Chinese (Simplified))';
 
   @override
-  String get failedToSendInvitationE => '[ZH] Failed to send invitation: \$e (Chinese (Simplified))';
+  String get failedToSendInvitationE =>
+      '[ZH] Failed to send invitation: \$e (Chinese (Simplified))';
 
   @override
   String get surveyScore => '[ZH] Survey Score (Chinese (Simplified))';
@@ -1058,22 +1135,27 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get noAppointmentsFound => '[ZH] No appointments found. (Chinese (Simplified))';
+  String get noAppointmentsFound =>
+      '[ZH] No appointments found. (Chinese (Simplified))';
 
   @override
   String get responseDetail => '[ZH] Response Detail (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[ZH] Failed to start Pro subscription: \$e (Chinese (Simplified))';
+  String get failedToStartProSubscriptionE =>
+      '[ZH] Failed to start Pro subscription: \$e (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Business Dashboard Entry Screen - Coming Soon (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Business Dashboard Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String get contentFilter => '[ZH] Content Filter (Chinese (Simplified))';
@@ -1095,7 +1177,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Business CRM Entry Screen - Coming Soon (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Business CRM Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String get adminDashboard => '[ZH] Admin Dashboard';
@@ -1106,28 +1189,34 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[ZH] Error loading dashboard: \$error (Chinese (Simplified))';
+  String get errorLoadingDashboardError =>
+      '[ZH] Error loading dashboard: \$error (Chinese (Simplified))';
 
   @override
-  String get gameDeletedSuccessfully => '[ZH] Game deleted successfully! (Chinese (Simplified))';
+  String get gameDeletedSuccessfully =>
+      '[ZH] Game deleted successfully! (Chinese (Simplified))';
 
   @override
-  String get viewResponsesComingSoon => '[ZH] View responses - Coming soon! (Chinese (Simplified))';
+  String get viewResponsesComingSoon =>
+      '[ZH] View responses - Coming soon! (Chinese (Simplified))';
 
   @override
   String get deleteProvider => '[ZH] Delete Provider';
 
   @override
-  String get errorLoadingRewards => '[ZH] Error loading rewards (Chinese (Simplified))';
+  String get errorLoadingRewards =>
+      '[ZH] Error loading rewards (Chinese (Simplified))';
 
   @override
-  String get failedToDeleteAccountE => '[ZH] Failed to delete account: \$e (Chinese (Simplified))';
+  String get failedToDeleteAccountE =>
+      '[ZH] Failed to delete account: \$e (Chinese (Simplified))';
 
   @override
   String get invited1 => '[ZH] Invited (Chinese (Simplified))';
 
   @override
-  String get noBranchesAvailable => '[ZH] No branches available (Chinese (Simplified))';
+  String get noBranchesAvailable =>
+      '[ZH] No branches available (Chinese (Simplified))';
 
   @override
   String get errorError => '[ZH] Error: \$error (Chinese (Simplified))';
@@ -1136,7 +1225,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get noEvents => '[ZH] No events (Chinese (Simplified))';
 
   @override
-  String get gameCreatedSuccessfully => '[ZH] Game created successfully! (Chinese (Simplified))';
+  String get gameCreatedSuccessfully =>
+      '[ZH] Game created successfully! (Chinese (Simplified))';
 
   @override
   String get add1 => '[ZH] Add (Chinese (Simplified))';
@@ -1156,10 +1246,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get clients => '[ZH] Clients (Chinese (Simplified))';
 
   @override
-  String get noAmbassadorDataAvailable => '[ZH] No ambassador data available (Chinese (Simplified))';
+  String get noAmbassadorDataAvailable =>
+      '[ZH] No ambassador data available (Chinese (Simplified))';
 
   @override
-  String get backgroundDeletedSuccessfully => '[ZH] Background deleted successfully! (Chinese (Simplified))';
+  String get backgroundDeletedSuccessfully =>
+      '[ZH] Background deleted successfully! (Chinese (Simplified))';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1259,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[ZH] No analytics data available yet. (Chinese (Simplified))';
+  String get noAnalyticsDataAvailableYet =>
+      '[ZH] No analytics data available yet. (Chinese (Simplified))';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1268,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Business Phone Booking Entry Screen - Coming Soon (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Business Phone Booking Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String get verification => '[ZH] Verification (Chinese (Simplified))';
@@ -1187,7 +1281,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get dashboard1 => '[ZH] Dashboard (Chinese (Simplified))';
 
   @override
-  String get manageChildAccounts => '[ZH] Manage Child Accounts (Chinese (Simplified))';
+  String get manageChildAccounts =>
+      '[ZH] Manage Child Accounts (Chinese (Simplified))';
 
   @override
   String get grantConsent => '[ZH] Grant Consent (Chinese (Simplified))';
@@ -1207,7 +1302,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard => '[ZH] Ambassador Dashboard (Chinese (Simplified))';
+  String get ambassadorDashboard =>
+      '[ZH] Ambassador Dashboard (Chinese (Simplified))';
 
   @override
   String get phoneBooking => '[ZH] Phone Booking (Chinese (Simplified))';
@@ -1222,13 +1318,15 @@ class AppLocalizationsZh extends AppLocalizations {
   String get businessProfile => '[ZH] Business Profile (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Business Booking Entry Screen - Coming Soon (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Business Booking Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String get createNewSurvey => '[ZH] Create New Survey (Chinese (Simplified))';
 
   @override
-  String get backgroundRejected => '[ZH] Background rejected (Chinese (Simplified))';
+  String get backgroundRejected =>
+      '[ZH] Background rejected (Chinese (Simplified))';
 
   @override
   String get noMediaSelected => '[ZH] No media selected (Chinese (Simplified))';
@@ -1246,7 +1344,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get loginFailedE => '[ZH] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[ZH] Invitation sent successfully! (Chinese (Simplified))';
+  String get invitationSentSuccessfully =>
+      '[ZH] Invitation sent successfully! (Chinese (Simplified))';
 
   @override
   String get registering => '[ZH] Registering... (Chinese (Simplified))';
@@ -1260,13 +1359,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get home1 => '[ZH] Home (Chinese (Simplified))';
 
   @override
-  String get errorSavingSettingsE => '[ZH] Error saving settings: \$e (Chinese (Simplified))';
+  String get errorSavingSettingsE =>
+      '[ZH] Error saving settings: \$e (Chinese (Simplified))';
 
   @override
-  String get appVersionAndInformation => '[ZH] App version and information (Chinese (Simplified))';
+  String get appVersionAndInformation =>
+      '[ZH] App version and information (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Business Subscription Entry Screen - Coming Soon (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Business Subscription Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1376,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Your payment has been processed successfully. (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Your payment has been processed successfully. (Chinese (Simplified))';
 
   @override
   String get errorE => '[ZH] Error: \$e (Chinese (Simplified))';
@@ -1283,7 +1386,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get viewAll1 => '[ZH] View All (Chinese (Simplified))';
 
   @override
-  String get editSurveyComingSoon => '[ZH] Edit survey - Coming soon! (Chinese (Simplified))';
+  String get editSurveyComingSoon =>
+      '[ZH] Edit survey - Coming soon! (Chinese (Simplified))';
 
   @override
   String get enterOtp => '[ZH] Enter OTP (Chinese (Simplified))';
@@ -1292,7 +1396,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get payment => '[ZH] Payment (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Automatically confirm new booking requests (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Automatically confirm new booking requests (Chinese (Simplified))';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1410,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[ZH] Please sign in to upload a background (Chinese (Simplified))';
+  String get pleaseSignInToUploadABackground =>
+      '[ZH] Please sign in to upload a background (Chinese (Simplified))';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1313,28 +1419,33 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get staffAvailability => '[ZH] Staff Availability (Chinese (Simplified))';
+  String get staffAvailability =>
+      '[ZH] Staff Availability (Chinese (Simplified))';
 
   @override
   String get livePlaytime => '[ZH] Live Playtime (Chinese (Simplified))';
 
   @override
-  String get autoconfirmBookings => '[ZH] Auto-Confirm Bookings (Chinese (Simplified))';
+  String get autoconfirmBookings =>
+      '[ZH] Auto-Confirm Bookings (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Redirecting to Stripe checkout for Pro plan... (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Redirecting to Stripe checkout for Pro plan... (Chinese (Simplified))';
 
   @override
   String get exportAsCsv => '[ZH] Export as CSV (Chinese (Simplified))';
 
   @override
-  String get deleteFunctionalityComingSoon => '[ZH] Delete functionality coming soon! (Chinese (Simplified))';
+  String get deleteFunctionalityComingSoon =>
+      '[ZH] Delete functionality coming soon! (Chinese (Simplified))';
 
   @override
   String get editClient => '[ZH] Edit Client (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Are you sure you want to delete this message? (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Are you sure you want to delete this message? (Chinese (Simplified))';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1456,39 @@ class AppLocalizationsZh extends AppLocalizations {
   String get notAuthenticated => '[ZH] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[ZH] Privacy request sent to your parents! (Chinese (Simplified))';
+  String get privacyRequestSentToYourParents =>
+      '[ZH] Privacy request sent to your parents! (Chinese (Simplified))';
 
   @override
-  String get clientDeletedSuccessfully => '[ZH] Client deleted successfully! (Chinese (Simplified))';
+  String get clientDeletedSuccessfully =>
+      '[ZH] Client deleted successfully! (Chinese (Simplified))';
 
   @override
-  String get failedToCancelSubscription => '[ZH] Failed to cancel subscription (Chinese (Simplified))';
+  String get failedToCancelSubscription =>
+      '[ZH] Failed to cancel subscription (Chinese (Simplified))';
 
   @override
   String get allLanguages => '[ZH] All Languages (Chinese (Simplified))';
 
   @override
-  String get slotDeletedSuccessfully => '[ZH] Slot deleted successfully (Chinese (Simplified))';
+  String get slotDeletedSuccessfully =>
+      '[ZH] Slot deleted successfully (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[ZH] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Parents must approve before children can join (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Parents must approve before children can join (Chinese (Simplified))';
 
   @override
-  String get subscribeToPro1499mo => '[ZH] Subscribe to Pro (€14.99/mo) (Chinese (Simplified))';
+  String get subscribeToPro1499mo =>
+      '[ZH] Subscribe to Pro (€14.99/mo) (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Business Availability Entry Screen - Coming Soon (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Business Availability Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,10 +1502,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get submitBooking => '[ZH] Submit Booking (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Are you sure you want to cancel this appointment? (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Are you sure you want to cancel this appointment? (Chinese (Simplified))';
 
   @override
-  String get noUpcomingBookings => '[ZH] No upcoming bookings (Chinese (Simplified))';
+  String get noUpcomingBookings =>
+      '[ZH] No upcoming bookings (Chinese (Simplified))';
 
   @override
   String get goBack => '[ZH] Go Back (Chinese (Simplified))';
@@ -1401,7 +1522,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get goToDashboard => '[ZH] Go to Dashboard (Chinese (Simplified))';
 
   @override
-  String get ambassadorQuotaDashboard => '[ZH] Ambassador Quota Dashboard (Chinese (Simplified))';
+  String get ambassadorQuotaDashboard =>
+      '[ZH] Ambassador Quota Dashboard (Chinese (Simplified))';
 
   @override
   String get adminSettings => '[ZH] Admin Settings';
@@ -1424,61 +1546,73 @@ class AppLocalizationsZh extends AppLocalizations {
   String get bookingRequest => '[ZH] Booking Request (Chinese (Simplified))';
 
   @override
-  String get advancedReporting => '[ZH] • Advanced reporting (Chinese (Simplified))';
+  String get advancedReporting =>
+      '[ZH] • Advanced reporting (Chinese (Simplified))';
 
   @override
   String get rooms => '[ZH] Rooms (Chinese (Simplified))';
 
   @override
-  String get copiedToClipboard => '[ZH] Copied to clipboard (Chinese (Simplified))';
+  String get copiedToClipboard =>
+      '[ZH] Copied to clipboard (Chinese (Simplified))';
 
   @override
-  String get bookingConfirmed => '[ZH] Booking Confirmed (Chinese (Simplified))';
+  String get bookingConfirmed =>
+      '[ZH] Booking Confirmed (Chinese (Simplified))';
 
   @override
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[ZH] Client added successfully! (Chinese (Simplified))';
+  String get clientAddedSuccessfully =>
+      '[ZH] Client added successfully! (Chinese (Simplified))';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved => '[ZH] Background approved! (Chinese (Simplified))';
+  String get backgroundApproved =>
+      '[ZH] Background approved! (Chinese (Simplified))';
 
   @override
   String get familySupport => '[ZH] Family Support (Chinese (Simplified))';
 
   @override
-  String get deletingAccount => '[ZH] Deleting account... (Chinese (Simplified))';
+  String get deletingAccount =>
+      '[ZH] Deleting account... (Chinese (Simplified))';
 
   @override
   String get bookAppointment => '[ZH] Book Appointment (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[ZH] Delete (Chinese (Simplified))';
 
   @override
-  String get sendBookingInvite => '[ZH] Send Booking Invite (Chinese (Simplified))';
+  String get sendBookingInvite =>
+      '[ZH] Send Booking Invite (Chinese (Simplified))';
 
   @override
   String get text => '[ZH] Text (Chinese (Simplified))';
 
   @override
-  String get manageSubscription => '[ZH] Manage Subscription (Chinese (Simplified))';
+  String get manageSubscription =>
+      '[ZH] Manage Subscription (Chinese (Simplified))';
 
   @override
-  String get requiresInstallFallback => '[ZH] Requires Install Fallback (Chinese (Simplified))';
+  String get requiresInstallFallback =>
+      '[ZH] Requires Install Fallback (Chinese (Simplified))';
 
   @override
-  String get paymentConfirmation => '[ZH] Payment Confirmation (Chinese (Simplified))';
+  String get paymentConfirmation =>
+      '[ZH] Payment Confirmation (Chinese (Simplified))';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[ZH] Promo applied! Your next bill is free. (Chinese (Simplified))';
+  String get promoAppliedYourNextBillIsFree =>
+      '[ZH] Promo applied! Your next bill is free. (Chinese (Simplified))';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1486,16 +1620,20 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingSlots => '[ZH] Error loading slots (Chinese (Simplified))';
+  String get errorLoadingSlots =>
+      '[ZH] Error loading slots (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Allow other users to find and join this game (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Allow other users to find and join this game (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Business Onboarding Screen - Coming Soon (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Business Onboarding Screen - Coming Soon (Chinese (Simplified))';
 
   @override
-  String get activateBusinessProfile => '[ZH] Activate Business Profile (Chinese (Simplified))';
+  String get activateBusinessProfile =>
+      '[ZH] Activate Business Profile (Chinese (Simplified))';
 
   @override
   String get contentNotFound => '[ZH] Content not found (Chinese (Simplified))';
@@ -1517,7 +1655,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get becomeAnAmbassador => '[ZH] Become an Ambassador (Chinese (Simplified))';
+  String get becomeAnAmbassador =>
+      '[ZH] Become an Ambassador (Chinese (Simplified))';
 
   @override
   String get subscribeNow => '[ZH] Subscribe Now (Chinese (Simplified))';
@@ -1528,7 +1667,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get shareViaWhatsapp => '[ZH] Share via WhatsApp (Chinese (Simplified))';
+  String get shareViaWhatsapp =>
+      '[ZH] Share via WhatsApp (Chinese (Simplified))';
 
   @override
   String get users1 => '[ZH] Users (Chinese (Simplified))';
@@ -1537,19 +1677,23 @@ class AppLocalizationsZh extends AppLocalizations {
   String get shareLink => '[ZH] Share Link (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[ZH] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment => '[ZH] Delete Appointment (Chinese (Simplified))';
+  String get deleteAppointment =>
+      '[ZH] Delete Appointment (Chinese (Simplified))';
 
   @override
-  String get toggleAvailability => '[ZH] Toggle Availability (Chinese (Simplified))';
+  String get toggleAvailability =>
+      '[ZH] Toggle Availability (Chinese (Simplified))';
 
   @override
   String get changePlan => '[ZH] Change Plan (Chinese (Simplified))';
 
   @override
-  String get errorLoadingStaff => '[ZH] Error loading staff (Chinese (Simplified))';
+  String get errorLoadingStaff =>
+      '[ZH] Error loading staff (Chinese (Simplified))';
 
   @override
   String errorLoadingConfigurationE(Object e) {
@@ -1557,10 +1701,12 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[ZH] Update your business information (Chinese (Simplified))';
+  String get updateYourBusinessInformation =>
+      '[ZH] Update your business information (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[ZH] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[ZH] Parent Dashboard (Chinese (Simplified))';
@@ -1583,10 +1729,12 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Studio booking is only available on web (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Studio booking is only available on web (Chinese (Simplified))';
 
   @override
-  String get errorLoadingBranchesE => '[ZH] Error loading branches: \$e (Chinese (Simplified))';
+  String get errorLoadingBranchesE =>
+      '[ZH] Error loading branches: \$e (Chinese (Simplified))';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1602,13 +1750,15 @@ class AppLocalizationsZh extends AppLocalizations {
   String get none => '[ZH] None (Chinese (Simplified))';
 
   @override
-  String get failedToUpdateConsentE => '[ZH] Failed to update consent: \$e (Chinese (Simplified))';
+  String get failedToUpdateConsentE =>
+      '[ZH] Failed to update consent: \$e (Chinese (Simplified))';
 
   @override
   String get welcome1 => '[ZH] Welcome (Chinese (Simplified))';
 
   @override
-  String get failedToCreateSessionE => '[ZH] Failed to create session: \$e (Chinese (Simplified))';
+  String get failedToCreateSessionE =>
+      '[ZH] Failed to create session: \$e (Chinese (Simplified))';
 
   @override
   String get inviteContact => '[ZH] Invite Contact (Chinese (Simplified))';
@@ -1617,7 +1767,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get surveyEditor => '[ZH] Survey Editor (Chinese (Simplified))';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[ZH] Failed to start Basic subscription: \$e (Chinese (Simplified))';
+  String get failedToStartBasicSubscriptionE =>
+      '[ZH] Failed to start Basic subscription: \$e (Chinese (Simplified))';
 
   @override
   String get mySchedule => '[ZH] My Schedule (Chinese (Simplified))';
@@ -1637,16 +1788,19 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[ZH] Settings saved successfully! (Chinese (Simplified))';
+  String get settingsSavedSuccessfully =>
+      '[ZH] Settings saved successfully! (Chinese (Simplified))';
 
   @override
-  String get linkCopiedToClipboard => '[ZH] Link copied to clipboard! (Chinese (Simplified))';
+  String get linkCopiedToClipboard =>
+      '[ZH] Link copied to clipboard! (Chinese (Simplified))';
 
   @override
   String get accept1 => '[ZH] Accept (Chinese (Simplified))';
 
   @override
-  String get noAvailableSlots => '[ZH] No available slots (Chinese (Simplified))';
+  String get noAvailableSlots =>
+      '[ZH] No available slots (Chinese (Simplified))';
 
   @override
   String get makeGamePublic => '[ZH] Make Game Public (Chinese (Simplified))';
@@ -1657,16 +1811,19 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[ZH] Room deleted successfully! (Chinese (Simplified))';
+  String get roomDeletedSuccessfully =>
+      '[ZH] Room deleted successfully! (Chinese (Simplified))';
 
   @override
-  String get businessCalendar => '[ZH] Business Calendar (Chinese (Simplified))';
+  String get businessCalendar =>
+      '[ZH] Business Calendar (Chinese (Simplified))';
 
   @override
   String get addAvailability => '[ZH] Add Availability (Chinese (Simplified))';
 
   @override
-  String get ambassadorOnboarding => '[ZH] Ambassador Onboarding (Chinese (Simplified))';
+  String get ambassadorOnboarding =>
+      '[ZH] Ambassador Onboarding (Chinese (Simplified))';
 
   @override
   String phoneProfileasyncphone(Object phone) {
@@ -1677,7 +1834,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get addNewRoom => '[ZH] Add New Room (Chinese (Simplified))';
 
   @override
-  String get requireParentApproval => '[ZH] Require Parent Approval (Chinese (Simplified))';
+  String get requireParentApproval =>
+      '[ZH] Require Parent Approval (Chinese (Simplified))';
 
   @override
   String get closed => '[ZH] Closed (Chinese (Simplified))';
@@ -1722,7 +1880,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get cancel1 => '[ZH] Cancel (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Subscription activated successfully! (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Subscription activated successfully! (Chinese (Simplified))';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1892,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get broadcast => '[ZH] Broadcast (Chinese (Simplified))';
 
   @override
-  String get noEventsScheduledThisWeek => '[ZH] No events scheduled this week (Chinese (Simplified))';
+  String get noEventsScheduledThisWeek =>
+      '[ZH] No events scheduled this week (Chinese (Simplified))';
 
   @override
   String get googleCalendar => '[ZH] Google Calendar (Chinese (Simplified))';
@@ -1745,7 +1905,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get childDashboard => '[ZH] Child Dashboard (Chinese (Simplified))';
 
   @override
-  String get failedToUploadBackgroundE => '[ZH] Failed to upload background: \$e (Chinese (Simplified))';
+  String get failedToUploadBackgroundE =>
+      '[ZH] Failed to upload background: \$e (Chinese (Simplified))';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1925,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get noAppointments => '[ZH] No appointments (Chinese (Simplified))';
 
   @override
-  String get unlimitedBookingsPerWeek => '[ZH] • Unlimited bookings per week (Chinese (Simplified))';
+  String get unlimitedBookingsPerWeek =>
+      '[ZH] • Unlimited bookings per week (Chinese (Simplified))';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,19 +1934,23 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[ZH] Scheduled at: \$scheduledAt (Chinese (Simplified))';
+  String get scheduledAtScheduledat =>
+      '[ZH] Scheduled at: \$scheduledAt (Chinese (Simplified))';
 
   @override
   String get selectStaff => '[ZH] Select Staff (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Subscription cancelled successfully (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Subscription cancelled successfully (Chinese (Simplified))';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment => '[ZH] Cancel Appointment (Chinese (Simplified))';
+  String get cancelAppointment =>
+      '[ZH] Cancel Appointment (Chinese (Simplified))';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
@@ -1795,7 +1961,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get businessSignup => '[ZH] Business Signup (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Business Completion Screen - Coming Soon (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Business Completion Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String get createGame1 => '[ZH] Create Game (Chinese (Simplified))';
@@ -1806,25 +1973,30 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[ZH] Please enter a promo code (Chinese (Simplified))';
+  String get pleaseEnterAPromoCode =>
+      '[ZH] Please enter a promo code (Chinese (Simplified))';
 
   @override
-  String get errorLoadingAvailabilityE => '[ZH] Error loading availability: \$e (Chinese (Simplified))';
+  String get errorLoadingAvailabilityE =>
+      '[ZH] Error loading availability: \$e (Chinese (Simplified))';
 
   @override
-  String get parentalControls => '[ZH] Parental Controls (Chinese (Simplified))';
+  String get parentalControls =>
+      '[ZH] Parental Controls (Chinese (Simplified))';
 
   @override
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[ZH] Child linked successfully! (Chinese (Simplified))';
+  String get childLinkedSuccessfully =>
+      '[ZH] Child linked successfully! (Chinese (Simplified))';
 
   @override
   String get create => '[ZH] Create (Chinese (Simplified))';
 
   @override
-  String get noExternalMeetingsFound => '[ZH] No external meetings found. (Chinese (Simplified))';
+  String get noExternalMeetingsFound =>
+      '[ZH] No external meetings found. (Chinese (Simplified))';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +2004,15 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[ZH] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[ZH] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[ZH] Scheduler Screen (Chinese (Simplified))';
 
   @override
-  String get clientUpdatedSuccessfully => '[ZH] Client updated successfully! (Chinese (Simplified))';
+  String get clientUpdatedSuccessfully =>
+      '[ZH] Client updated successfully! (Chinese (Simplified))';
 
   @override
   String get surveyResponses => '[ZH] Survey Responses (Chinese (Simplified))';
@@ -1861,13 +2035,16 @@ class AppLocalizationsZh extends AppLocalizations {
   String get analytics => '[ZH] Analytics (Chinese (Simplified))';
 
   @override
-  String get errorLoadingEvents => '[ZH] Error loading events (Chinese (Simplified))';
+  String get errorLoadingEvents =>
+      '[ZH] Error loading events (Chinese (Simplified))';
 
   @override
-  String get errorLoadingOrganizations => '[ZH] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[ZH] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[ZH] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[ZH] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[ZH] Success (Chinese (Simplified))';
@@ -1886,10 +2063,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get readWrite => '[ZH] Read & Write (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Redirecting to Stripe checkout for Basic plan... (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Redirecting to Stripe checkout for Basic plan... (Chinese (Simplified))';
 
   @override
-  String get errorSavingConfigurationE => '[ZH] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[ZH] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[ZH] Pick Date (Chinese (Simplified))';
@@ -1898,7 +2077,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get chatBooking => '[ZH] Chat Booking (Chinese (Simplified))';
 
   @override
-  String get noQuestionsAdded => '[ZH] No questions added (Chinese (Simplified))';
+  String get noQuestionsAdded =>
+      '[ZH] No questions added (Chinese (Simplified))';
 
   @override
   String severityLogseverityname(Object severity) {
@@ -1925,10 +2105,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get businessLogin => '[ZH] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[ZH] Invoice created successfully! (Chinese (Simplified))';
+  String get invoiceCreatedSuccessfully =>
+      '[ZH] Invoice created successfully! (Chinese (Simplified))';
 
   @override
-  String get noTimeSeriesDataAvailable => '[ZH] No time series data available (Chinese (Simplified))';
+  String get noTimeSeriesDataAvailable =>
+      '[ZH] No time series data available (Chinese (Simplified))';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,13 +2123,15 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[ZH] Failed to send privacy request: \$e (Chinese (Simplified))';
+  String get failedToSendPrivacyRequestE =>
+      '[ZH] Failed to send privacy request: \$e (Chinese (Simplified))';
 
   @override
   String get chooseYourPlan => '[ZH] Choose Your Plan (Chinese (Simplified))';
 
   @override
-  String get playtimeManagement => '[ZH] Playtime Management (Chinese (Simplified))';
+  String get playtimeManagement =>
+      '[ZH] Playtime Management (Chinese (Simplified))';
 
   @override
   String get availability => '[ZH] Availability (Chinese (Simplified))';
@@ -1956,16 +2140,19 @@ class AppLocalizationsZh extends AppLocalizations {
   String get eventCreated => '[ZH] Event created (Chinese (Simplified))';
 
   @override
-  String get subscribeToBasic499mo => '[ZH] Subscribe to Basic (€4.99/mo) (Chinese (Simplified))';
+  String get subscribeToBasic499mo =>
+      '[ZH] Subscribe to Basic (€4.99/mo) (Chinese (Simplified))';
 
   @override
   String get completion => '[ZH] Completion (Chinese (Simplified))';
 
   @override
-  String get supportTicketSubmitted => '[ZH] Support ticket submitted (Chinese (Simplified))';
+  String get supportTicketSubmitted =>
+      '[ZH] Support ticket submitted (Chinese (Simplified))';
 
   @override
-  String get monetizationSettings => '[ZH] Monetization Settings (Chinese (Simplified))';
+  String get monetizationSettings =>
+      '[ZH] Monetization Settings (Chinese (Simplified))';
 
   @override
   String get noBookingsFound => '[ZH] No bookings found (Chinese (Simplified))';
@@ -1977,10 +2164,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get deleteSurvey => '[ZH] Delete Survey (Chinese (Simplified))';
 
   @override
-  String get gameApprovedSuccessfully => '[ZH] Game approved successfully! (Chinese (Simplified))';
+  String get gameApprovedSuccessfully =>
+      '[ZH] Game approved successfully! (Chinese (Simplified))';
 
   @override
-  String get errorLoadingPermissionsError => '[ZH] Error loading permissions: \$error (Chinese (Simplified))';
+  String get errorLoadingPermissionsError =>
+      '[ZH] Error loading permissions: \$error (Chinese (Simplified))';
 
   @override
   String get referrals => '[ZH] Referrals (Chinese (Simplified))';
@@ -1995,10 +2184,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get appointments => '[ZH] Appointments (Chinese (Simplified))';
 
   @override
-  String get onboardingScreen => '[ZH] Onboarding Screen (Chinese (Simplified))';
+  String get onboardingScreen =>
+      '[ZH] Onboarding Screen (Chinese (Simplified))';
 
   @override
-  String get welcomeToYourStudio => '[ZH] Welcome to your studio (Chinese (Simplified))';
+  String get welcomeToYourStudio =>
+      '[ZH] Welcome to your studio (Chinese (Simplified))';
 
   @override
   String get update => '[ZH] Update (Chinese (Simplified))';
@@ -2010,7 +2201,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get booking => '[ZH] Booking (Chinese (Simplified))';
 
   @override
-  String get parentalSettings => '[ZH] Parental Settings (Chinese (Simplified))';
+  String get parentalSettings =>
+      '[ZH] Parental Settings (Chinese (Simplified))';
 
   @override
   String get language => '[ZH] Language (Chinese (Simplified))';
@@ -2022,7 +2214,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get organizations => '[ZH] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[ZH] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[ZH] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[ZH] Create New Game (Chinese (Simplified))';
@@ -2031,16 +2224,19 @@ class AppLocalizationsZh extends AppLocalizations {
   String get next1 => '[ZH] Next (Chinese (Simplified))';
 
   @override
-  String get backgroundUploadedSuccessfully => '[ZH] Background uploaded successfully! (Chinese (Simplified))';
+  String get backgroundUploadedSuccessfully =>
+      '[ZH] Background uploaded successfully! (Chinese (Simplified))';
 
   @override
-  String get noAppointmentRequestsFound => '[ZH] No appointment requests found. (Chinese (Simplified))';
+  String get noAppointmentRequestsFound =>
+      '[ZH] No appointment requests found. (Chinese (Simplified))';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => '[ZH] Restrict mature content (Chinese (Simplified))';
+  String get restrictMatureContent =>
+      '[ZH] Restrict mature content (Chinese (Simplified))';
 
   @override
   String get ambassadors => '[ZH] Ambassadors (Chinese (Simplified))';
@@ -2049,7 +2245,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled => '[ZH] Payment was cancelled (Chinese (Simplified))';
+  String get paymentWasCancelled =>
+      '[ZH] Payment was cancelled (Chinese (Simplified))';
 
   @override
   String get clearAll => '[ZH] Clear All (Chinese (Simplified))';
@@ -2061,16 +2258,20 @@ class AppLocalizationsZh extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[ZH] Failed to create game: \$e (Chinese (Simplified))';
+  String get failedToCreateGameE =>
+      '[ZH] Failed to create game: \$e (Chinese (Simplified))';
 
   @override
-  String get noChartDataAvailable => '[ZH] No chart data available (Chinese (Simplified))';
+  String get noChartDataAvailable =>
+      '[ZH] No chart data available (Chinese (Simplified))';
 
   @override
-  String get phonebasedBookingSystem => '[ZH] • Phone-based booking system (Chinese (Simplified))';
+  String get phonebasedBookingSystem =>
+      '[ZH] • Phone-based booking system (Chinese (Simplified))';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2280,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get invoices => '[ZH] Invoices (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2095,7 +2297,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tryAgain => '[ZH] Try Again (Chinese (Simplified))';
 
   @override
-  String get deleteBackground => '[ZH] Delete Background (Chinese (Simplified))';
+  String get deleteBackground =>
+      '[ZH] Delete Background (Chinese (Simplified))';
 
   @override
   String currentTierTiertouppercase(Object tier) {
@@ -2106,22 +2309,26 @@ class AppLocalizationsZh extends AppLocalizations {
   String get iDoNotConsent => '[ZH] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] No clients found. Add your first client! (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] No clients found. Add your first client! (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[ZH] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[ZH] Group: \$groupId';
 
   @override
-  String get appointmentRequests => '[ZH] Appointment Requests (Chinese (Simplified))';
+  String get appointmentRequests =>
+      '[ZH] Appointment Requests (Chinese (Simplified))';
 
   @override
   String get forward => '[ZH] Forward (Chinese (Simplified))';
 
   @override
-  String get roomAddedSuccessfully => '[ZH] Room added successfully! (Chinese (Simplified))';
+  String get roomAddedSuccessfully =>
+      '[ZH] Room added successfully! (Chinese (Simplified))';
 
   @override
   String get option => '[ZH] • \$option (Chinese (Simplified))';
@@ -2132,7 +2339,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[ZH] • CRM dashboard with analytics (Chinese (Simplified))';
+  String get crmDashboardWithAnalytics =>
+      '[ZH] • CRM dashboard with analytics (Chinese (Simplified))';
 
   @override
   String get contentLibrary1 => '[ZH] Content Library (Chinese (Simplified))';
@@ -2141,28 +2349,34 @@ class AppLocalizationsZh extends AppLocalizations {
   String get reply => '[ZH] Reply (Chinese (Simplified))';
 
   @override
-  String get subscriptionManagement => '[ZH] Subscription Management (Chinese (Simplified))';
+  String get subscriptionManagement =>
+      '[ZH] Subscription Management (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Monetization settings will be implemented here (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Monetization settings will be implemented here (Chinese (Simplified))';
 
   @override
-  String get failedToApplyPromoCodeE => '[ZH] Failed to apply promo code: \$e (Chinese (Simplified))';
+  String get failedToApplyPromoCodeE =>
+      '[ZH] Failed to apply promo code: \$e (Chinese (Simplified))';
 
   @override
   String get editProvider => '[ZH] Edit Provider';
 
   @override
-  String get localizationContribution => '[ZH] Localization Contribution (Chinese (Simplified))';
+  String get localizationContribution =>
+      '[ZH] Localization Contribution (Chinese (Simplified))';
 
   @override
   String get parentalConsent => '[ZH] Parental Consent (Chinese (Simplified))';
 
   @override
-  String get businessSignupScreenComingSoon => '[ZH] Business Signup Screen - Coming Soon (Chinese (Simplified))';
+  String get businessSignupScreenComingSoon =>
+      '[ZH] Business Signup Screen - Coming Soon (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH] Are you sure you want to delete this appointment? (Chinese (Simplified))';
+  String get REDACTED_TOKEN =>
+      '[ZH] Are you sure you want to delete this appointment? (Chinese (Simplified))';
 
   @override
   String get syncAppointment => '[ZH] Sync Appointment (Chinese (Simplified))';
@@ -2174,19 +2388,23 @@ class AppLocalizationsZh extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[ZH] Business Setup Screen - Coming Soon (Chinese (Simplified))';
+  String get businessSetupScreenComingSoon =>
+      '[ZH] Business Setup Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String get edit1 => '[ZH] Edit (Chinese (Simplified))';
 
   @override
-  String get noEventsScheduledThisMonth => '[ZH] No events scheduled this month (Chinese (Simplified))';
+  String get noEventsScheduledThisMonth =>
+      '[ZH] No events scheduled this month (Chinese (Simplified))';
 
   @override
-  String get businessDashboard => '[ZH] Business Dashboard (Chinese (Simplified))';
+  String get businessDashboard =>
+      '[ZH] Business Dashboard (Chinese (Simplified))';
 
   @override
-  String get noMessagesFound => '[ZH] No messages found. (Chinese (Simplified))';
+  String get noMessagesFound =>
+      '[ZH] No messages found. (Chinese (Simplified))';
 
   @override
   String staffStaffidNotSelected(Object staff) {
@@ -2194,10 +2412,12 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[ZH] Manage Staff Availability (Chinese (Simplified))';
+  String get manageStaffAvailability =>
+      '[ZH] Manage Staff Availability (Chinese (Simplified))';
 
   @override
-  String get noMissingTranslations => '[ZH] No missing translations (Chinese (Simplified))';
+  String get noMissingTranslations =>
+      '[ZH] No missing translations (Chinese (Simplified))';
 
   @override
   String get skip => '[ZH] Skip (Chinese (Simplified))';
@@ -2211,7 +2431,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get noUsers => '[ZH] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[ZH] Error loading referral code (Chinese (Simplified))';
+  String get errorLoadingReferralCode =>
+      '[ZH] Error loading referral code (Chinese (Simplified))';
 
   @override
   String get allCountries => '[ZH] All Countries (Chinese (Simplified))';
@@ -2220,13 +2441,15 @@ class AppLocalizationsZh extends AppLocalizations {
   String get deleteGame => '[ZH] Delete Game (Chinese (Simplified))';
 
   @override
-  String get staffManagementTools => '[ZH] • Staff management tools (Chinese (Simplified))';
+  String get staffManagementTools =>
+      '[ZH] • Staff management tools (Chinese (Simplified))';
 
   @override
   String get deleteMessage => '[ZH] Delete Message (Chinese (Simplified))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[ZH] changeRole (TRANSLATE)';
@@ -2237,7 +2460,8 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[ZH] Opening customer portal... (Chinese (Simplified))';
+  String get openingCustomerPortal =>
+      '[ZH] Opening customer portal... (Chinese (Simplified))';
 
   @override
   String get signOut => '[ZH] Sign Out (Chinese (Simplified))';
@@ -2248,10 +2472,12 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness => '[ZH] Upgrade to Business (Chinese (Simplified))';
+  String get upgradeToBusiness =>
+      '[ZH] Upgrade to Business (Chinese (Simplified))';
 
   @override
   String get apply => 'تطبيق';
@@ -2274,7 +2500,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[ZH] View Responses (Chinese (Simplified))';
@@ -2303,7 +2530,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2378,7 +2606,8 @@ class AppLocalizationsZh extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2655,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[ZH] Congratulations! You\'re now an Ambassador! (Chinese)';
+  String get ambassadorPromotionTitle =>
+      '[ZH] Congratulations! You\'re now an Ambassador! (Chinese)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2671,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get tierUpgradeTitle => '[ZH] Tier Upgrade! 🎉 (Chinese)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[ZH] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Chinese)';
   }
 
@@ -2448,20 +2683,29 @@ class AppLocalizationsZh extends AppLocalizations {
   String get monthlyReminderTitle => '[ZH] Monthly Goal Reminder (Chinese)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[ZH] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Chinese)';
   }
 
   @override
-  String get performanceWarningTitle => '[ZH] Ambassador Performance Alert (Chinese)';
+  String get performanceWarningTitle =>
+      '[ZH] Ambassador Performance Alert (Chinese)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[ZH] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Chinese)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[ZH] Ambassador Status Update (Chinese)';
+  String get ambassadorDemotionTitle =>
+      '[ZH] Ambassador Status Update (Chinese)';
 
   @override
   String ambassadorDemotionBody(String reason) {
@@ -2479,7 +2723,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
 class AppLocalizationsZhHant extends AppLocalizationsZh {
-  AppLocalizationsZhHant(): super('zh_Hant');
+  AppLocalizationsZhHant() : super('zh_Hant');
 
   @override
   String get refresh => '[ZH_HANT] Refresh';
@@ -2595,7 +2839,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get playtimeModeVirtual => '[ZH_HANT] Virtual Play';
 
   @override
-  String get playtimeDescription => '[ZH_HANT] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription =>
+      '[ZH_HANT] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[ZH_HANT] Delete';
@@ -2630,7 +2875,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get done => '[ZH_HANT] Done';
 
   @override
-  String get defaultShareMessage => '[ZH_HANT] 嗨！我透過 APP‑OINT 安排了一次會議。點此確認或提出其他時間：';
+  String get defaultShareMessage =>
+      '[ZH_HANT] 嗨！我透過 APP‑OINT 安排了一次會議。點此確認或提出其他時間：';
 
   @override
   String get no => '否';
@@ -3006,7 +3252,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[ZH_HANT] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[ZH_HANT] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[ZH_HANT] Admin Metrics';
@@ -3027,40 +3274,52 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get contentLibrary => '[ZH_HANT] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[ZH_HANT] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[ZH_HANT] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[ZH_HANT] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[ZH_HANT] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[ZH_HANT] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[ZH_HANT] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[ZH_HANT] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[ZH_HANT] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[ZH_HANT] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[ZH_HANT] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[ZH_HANT] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[ZH_HANT] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[ZH_HANT] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[ZH_HANT] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[ZH_HANT] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[ZH_HANT] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[ZH_HANT] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[ZH_HANT] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[ZH_HANT] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[ZH_HANT] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[ZH_HANT] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[ZH_HANT] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -3077,67 +3336,88 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[ZH_HANT] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[ZH_HANT] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[ZH_HANT] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[ZH_HANT] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[ZH_HANT] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[ZH_HANT] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Please enter the verification code.';
 
   @override
-  String get authErrorMissingVerificationId => '[ZH_HANT] Missing verification ID.';
+  String get authErrorMissingVerificationId =>
+      '[ZH_HANT] Missing verification ID.';
 
   @override
-  String get authErrorInvalidPhoneNumber => '[ZH_HANT] The phone number is invalid.';
+  String get authErrorInvalidPhoneNumber =>
+      '[ZH_HANT] The phone number is invalid.';
 
   @override
-  String get authErrorMissingPhoneNumber => '[ZH_HANT] Please enter a phone number.';
+  String get authErrorMissingPhoneNumber =>
+      '[ZH_HANT] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[ZH_HANT] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[ZH_HANT] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[ZH_HANT] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[ZH_HANT] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[ZH_HANT] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[ZH_HANT] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[ZH_HANT] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[ZH_HANT] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[ZH_HANT] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[ZH_HANT] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[ZH_HANT] The ID token is invalid.';
@@ -3146,91 +3426,117 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get authErrorIdTokenExpired => '[ZH_HANT] The ID token has expired.';
 
   @override
-  String get authErrorIdTokenRevoked => '[ZH_HANT] The ID token has been revoked.';
+  String get authErrorIdTokenRevoked =>
+      '[ZH_HANT] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[ZH_HANT] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[ZH_HANT] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[ZH_HANT] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[ZH_HANT] An invalid argument was provided.';
 
   @override
-  String get authErrorInvalidClaims => '[ZH_HANT] Invalid custom claims provided.';
+  String get authErrorInvalidClaims =>
+      '[ZH_HANT] Invalid custom claims provided.';
 
   @override
-  String get authErrorInvalidContinueUri => '[ZH_HANT] The continue URL is invalid.';
+  String get authErrorInvalidContinueUri =>
+      '[ZH_HANT] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[ZH_HANT] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[ZH_HANT] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[ZH_HANT] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[ZH_HANT] The disabled field value is invalid.';
 
   @override
-  String get authErrorInvalidDisplayName => '[ZH_HANT] The display name is invalid.';
+  String get authErrorInvalidDisplayName =>
+      '[ZH_HANT] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[ZH_HANT] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[ZH_HANT] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[ZH_HANT] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[ZH_HANT] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[ZH_HANT] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[ZH_HANT] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[ZH_HANT] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[ZH_HANT] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[ZH_HANT] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[ZH_HANT] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[ZH_HANT] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[ZH_HANT] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[ZH_HANT] The last sign-in time is invalid.';
 
   @override
-  String get authErrorInvalidPageToken => '[ZH_HANT] The page token is invalid.';
+  String get authErrorInvalidPageToken =>
+      '[ZH_HANT] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[ZH_HANT] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[ZH_HANT] The provider data is invalid.';
 
   @override
-  String get authErrorInvalidProviderId => '[ZH_HANT] The provider ID is invalid.';
+  String get authErrorInvalidProviderId =>
+      '[ZH_HANT] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[ZH_HANT] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[ZH_HANT] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[ZH_HANT] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[ZH_HANT] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[ZH_HANT] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[ZH_HANT] Missing continue URL.';
 
   @override
-  String get authErrorMissingHashAlgorithm => '[ZH_HANT] Missing hash algorithm.';
+  String get authErrorMissingHashAlgorithm =>
+      '[ZH_HANT] Missing hash algorithm.';
 
   @override
   String get authErrorMissingIosBundleId => '[ZH_HANT] Missing iOS bundle ID.';
@@ -3239,28 +3545,35 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get authErrorMissingUid => '[ZH_HANT] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Missing OAuth client secret.';
 
   @override
-  String get authErrorProjectNotFound => '[ZH_HANT] Firebase project not found.';
+  String get authErrorProjectNotFound =>
+      '[ZH_HANT] Firebase project not found.';
 
   @override
   String get authErrorReservedClaims => '[ZH_HANT] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[ZH_HANT] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[ZH_HANT] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[ZH_HANT] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[ZH_HANT] Session cookie has been revoked.';
 
   @override
-  String get authErrorUidAlreadyExists => '[ZH_HANT] The UID is already in use.';
+  String get authErrorUidAlreadyExists =>
+      '[ZH_HANT] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[ZH_HANT] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[ZH_HANT] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -3309,7 +3622,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Virtual session created! Inviting friends... (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Virtual session created! Inviting friends... (Chinese (Traditional))';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -3335,10 +3649,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get signIn => '登入';
 
   @override
-  String get homeFeedScreen => '[ZH_HANT] Home Feed Screen (Chinese (Traditional))';
+  String get homeFeedScreen =>
+      '[ZH_HANT] Home Feed Screen (Chinese (Traditional))';
 
   @override
-  String get selectLocation => '[ZH_HANT] Select Location (Chinese (Traditional))';
+  String get selectLocation =>
+      '[ZH_HANT] Select Location (Chinese (Traditional))';
 
   @override
   String get noTicketsYet => '[ZH_HANT] No tickets yet (Chinese (Traditional))';
@@ -3350,13 +3666,15 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[ZH_HANT] Subscription unavailable (Chinese (Traditional))';
+  String get subscriptionUnavailable =>
+      '[ZH_HANT] Subscription unavailable (Chinese (Traditional))';
 
   @override
   String get confirmBooking => '確認預約';
 
   @override
-  String get failedToUpdatePermissionE => '[ZH_HANT] Failed to update permission: \$e (Chinese (Traditional))';
+  String get failedToUpdatePermissionE =>
+      '[ZH_HANT] Failed to update permission: \$e (Chinese (Traditional))';
 
   @override
   String get reject => '[ZH_HANT] Reject (Chinese (Traditional))';
@@ -3370,7 +3688,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get noProviders => '[ZH_HANT] No providers';
 
   @override
-  String get checkingSubscription => '[ZH_HANT] Checking subscription... (Chinese (Traditional))';
+  String get checkingSubscription =>
+      '[ZH_HANT] Checking subscription... (Chinese (Traditional))';
 
   @override
   String errorPickingImageE(Object e) {
@@ -3378,13 +3697,15 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get noContentAvailableYet => '[ZH_HANT] No content available yet (Chinese (Traditional))';
+  String get noContentAvailableYet =>
+      '[ZH_HANT] No content available yet (Chinese (Traditional))';
 
   @override
   String get resolve => '[ZH_HANT] Resolve (Chinese (Traditional))';
 
   @override
-  String get errorLoadingSurveysError => '[ZH_HANT] Error loading surveys: \$error (Chinese (Traditional))';
+  String get errorLoadingSurveysError =>
+      '[ZH_HANT] Error loading surveys: \$error (Chinese (Traditional))';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -3392,7 +3713,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get getHelpWithYourAccount => '[ZH_HANT] Get help with your account (Chinese (Traditional))';
+  String get getHelpWithYourAccount =>
+      '[ZH_HANT] Get help with your account (Chinese (Traditional))';
 
   @override
   String get pay => '[ZH_HANT] Pay (Chinese (Traditional))';
@@ -3407,10 +3729,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[ZH_HANT] Changes saved successfully! (Chinese (Traditional))';
+  String get changesSavedSuccessfully =>
+      '[ZH_HANT] Changes saved successfully! (Chinese (Traditional))';
 
   @override
-  String get createNewInvoice => '[ZH_HANT] Create New Invoice (Chinese (Traditional))';
+  String get createNewInvoice =>
+      '[ZH_HANT] Create New Invoice (Chinese (Traditional))';
 
   @override
   String get profileNotFound => 'الملف الشخصي غير موجود';
@@ -3427,7 +3751,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get profileSaved => '[ZH_HANT] Profile saved! (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -3435,13 +3760,15 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get deleteAccount => '[ZH_HANT] Delete Account (Chinese (Traditional))';
+  String get deleteAccount =>
+      '[ZH_HANT] Delete Account (Chinese (Traditional))';
 
   @override
   String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding => '[ZH_HANT] Business Onboarding (Chinese (Traditional))';
+  String get businessOnboarding =>
+      '[ZH_HANT] Business Onboarding (Chinese (Traditional))';
 
   @override
   String get addNewClient => '[ZH_HANT] Add New Client (Chinese (Traditional))';
@@ -3458,13 +3785,15 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] You will receive a confirmation email shortly. (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] You will receive a confirmation email shortly. (Chinese (Traditional))';
 
   @override
   String get addQuestion => '[ZH_HANT] Add Question (Chinese (Traditional))';
 
   @override
-  String get privacyPolicy => '[ZH_HANT] Privacy Policy (Chinese (Traditional))';
+  String get privacyPolicy =>
+      '[ZH_HANT] Privacy Policy (Chinese (Traditional))';
 
   @override
   String branchesLengthBranches(Object branchCount) {
@@ -3475,7 +3804,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get join => '[ZH_HANT] Join (Chinese (Traditional))';
 
   @override
-  String get businessSubscription => '[ZH_HANT] Business Subscription (Chinese (Traditional))';
+  String get businessSubscription =>
+      '[ZH_HANT] Business Subscription (Chinese (Traditional))';
 
   @override
   String get myInvites1 => 'دعواتي';
@@ -3484,34 +3814,43 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get providers => '[ZH_HANT] Providers';
 
   @override
-  String get surveyManagement => '[ZH_HANT] Survey Management (Chinese (Traditional))';
+  String get surveyManagement =>
+      '[ZH_HANT] Survey Management (Chinese (Traditional))';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[ZH_HANT] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[ZH_HANT] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[ZH_HANT] No rooms found. Add your first room! (Chinese (Traditional))';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[ZH_HANT] No rooms found. Add your first room! (Chinese (Traditional))';
 
   @override
-  String get readOurPrivacyPolicy => '[ZH_HANT] Read our privacy policy (Chinese (Traditional))';
+  String get readOurPrivacyPolicy =>
+      '[ZH_HANT] Read our privacy policy (Chinese (Traditional))';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[ZH_HANT] Could not open privacy policy (Chinese (Traditional))';
+  String get couldNotOpenPrivacyPolicy =>
+      '[ZH_HANT] Could not open privacy policy (Chinese (Traditional))';
 
   @override
   String get refresh1 => '[ZH_HANT] Refresh (Chinese (Traditional))';
 
   @override
-  String get roomUpdatedSuccessfully => '[ZH_HANT] Room updated successfully! (Chinese (Traditional))';
+  String get roomUpdatedSuccessfully =>
+      '[ZH_HANT] Room updated successfully! (Chinese (Traditional))';
 
   @override
-  String get contentDetail => '[ZH_HANT] Content Detail (Chinese (Traditional))';
+  String get contentDetail =>
+      '[ZH_HANT] Content Detail (Chinese (Traditional))';
 
   @override
-  String get cancelSubscription => '[ZH_HANT] Cancel Subscription (Chinese (Traditional))';
+  String get cancelSubscription =>
+      '[ZH_HANT] Cancel Subscription (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Successfully registered as Ambassador! (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Successfully registered as Ambassador! (Chinese (Traditional))';
 
   @override
   String get save1 => '[ZH_HANT] Save (Chinese (Traditional))';
@@ -3520,7 +3859,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get copy1 => '[ZH_HANT] Copy (Chinese (Traditional))';
 
   @override
-  String get failedToSendInvitationE => '[ZH_HANT] Failed to send invitation: \$e (Chinese (Traditional))';
+  String get failedToSendInvitationE =>
+      '[ZH_HANT] Failed to send invitation: \$e (Chinese (Traditional))';
 
   @override
   String get surveyScore => '[ZH_HANT] Survey Score (Chinese (Traditional))';
@@ -3531,25 +3871,32 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get noAppointmentsFound => '[ZH_HANT] No appointments found. (Chinese (Traditional))';
+  String get noAppointmentsFound =>
+      '[ZH_HANT] No appointments found. (Chinese (Traditional))';
 
   @override
-  String get responseDetail => '[ZH_HANT] Response Detail (Chinese (Traditional))';
+  String get responseDetail =>
+      '[ZH_HANT] Response Detail (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[ZH_HANT] Failed to start Pro subscription: \$e (Chinese (Traditional))';
+  String get failedToStartProSubscriptionE =>
+      '[ZH_HANT] Failed to start Pro subscription: \$e (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Business Dashboard Entry Screen - Coming Soon (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Business Dashboard Entry Screen - Coming Soon (Chinese (Traditional))';
 
   @override
-  String get contentFilter => '[ZH_HANT] Content Filter (Chinese (Traditional))';
+  String get contentFilter =>
+      '[ZH_HANT] Content Filter (Chinese (Traditional))';
 
   @override
   String get helpSupport => '[ZH_HANT] Help & Support (Chinese (Traditional))';
@@ -3568,7 +3915,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Business CRM Entry Screen - Coming Soon (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Business CRM Entry Screen - Coming Soon (Chinese (Traditional))';
 
   @override
   String get adminDashboard => '[ZH_HANT] Admin Dashboard';
@@ -3579,28 +3927,34 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get errorLoadingDashboardError => '[ZH_HANT] Error loading dashboard: \$error (Chinese (Traditional))';
+  String get errorLoadingDashboardError =>
+      '[ZH_HANT] Error loading dashboard: \$error (Chinese (Traditional))';
 
   @override
-  String get gameDeletedSuccessfully => '[ZH_HANT] Game deleted successfully! (Chinese (Traditional))';
+  String get gameDeletedSuccessfully =>
+      '[ZH_HANT] Game deleted successfully! (Chinese (Traditional))';
 
   @override
-  String get viewResponsesComingSoon => '[ZH_HANT] View responses - Coming soon! (Chinese (Traditional))';
+  String get viewResponsesComingSoon =>
+      '[ZH_HANT] View responses - Coming soon! (Chinese (Traditional))';
 
   @override
   String get deleteProvider => '[ZH_HANT] Delete Provider';
 
   @override
-  String get errorLoadingRewards => '[ZH_HANT] Error loading rewards (Chinese (Traditional))';
+  String get errorLoadingRewards =>
+      '[ZH_HANT] Error loading rewards (Chinese (Traditional))';
 
   @override
-  String get failedToDeleteAccountE => '[ZH_HANT] Failed to delete account: \$e (Chinese (Traditional))';
+  String get failedToDeleteAccountE =>
+      '[ZH_HANT] Failed to delete account: \$e (Chinese (Traditional))';
 
   @override
   String get invited1 => '[ZH_HANT] Invited (Chinese (Traditional))';
 
   @override
-  String get noBranchesAvailable => '[ZH_HANT] No branches available (Chinese (Traditional))';
+  String get noBranchesAvailable =>
+      '[ZH_HANT] No branches available (Chinese (Traditional))';
 
   @override
   String get errorError => '[ZH_HANT] Error: \$error (Chinese (Traditional))';
@@ -3609,7 +3963,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get noEvents => '[ZH_HANT] No events (Chinese (Traditional))';
 
   @override
-  String get gameCreatedSuccessfully => '[ZH_HANT] Game created successfully! (Chinese (Traditional))';
+  String get gameCreatedSuccessfully =>
+      '[ZH_HANT] Game created successfully! (Chinese (Traditional))';
 
   @override
   String get add1 => '[ZH_HANT] Add (Chinese (Traditional))';
@@ -3623,16 +3978,19 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get allowPlaytime => '[ZH_HANT] Allow Playtime (Chinese (Traditional))';
+  String get allowPlaytime =>
+      '[ZH_HANT] Allow Playtime (Chinese (Traditional))';
 
   @override
   String get clients => '[ZH_HANT] Clients (Chinese (Traditional))';
 
   @override
-  String get noAmbassadorDataAvailable => '[ZH_HANT] No ambassador data available (Chinese (Traditional))';
+  String get noAmbassadorDataAvailable =>
+      '[ZH_HANT] No ambassador data available (Chinese (Traditional))';
 
   @override
-  String get backgroundDeletedSuccessfully => '[ZH_HANT] Background deleted successfully! (Chinese (Traditional))';
+  String get backgroundDeletedSuccessfully =>
+      '[ZH_HANT] Background deleted successfully! (Chinese (Traditional))';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -3640,7 +3998,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[ZH_HANT] No analytics data available yet. (Chinese (Traditional))';
+  String get noAnalyticsDataAvailableYet =>
+      '[ZH_HANT] No analytics data available yet. (Chinese (Traditional))';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -3648,7 +4007,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Business Phone Booking Entry Screen - Coming Soon (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Business Phone Booking Entry Screen - Coming Soon (Chinese (Traditional))';
 
   @override
   String get verification => '[ZH_HANT] Verification (Chinese (Traditional))';
@@ -3660,7 +4020,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get dashboard1 => '[ZH_HANT] Dashboard (Chinese (Traditional))';
 
   @override
-  String get manageChildAccounts => '[ZH_HANT] Manage Child Accounts (Chinese (Traditional))';
+  String get manageChildAccounts =>
+      '[ZH_HANT] Manage Child Accounts (Chinese (Traditional))';
 
   @override
   String get grantConsent => '授予同意';
@@ -3680,7 +4041,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard => '[ZH_HANT] Ambassador Dashboard (Chinese (Traditional))';
+  String get ambassadorDashboard =>
+      '[ZH_HANT] Ambassador Dashboard (Chinese (Traditional))';
 
   @override
   String get phoneBooking => '[ZH_HANT] Phone Booking (Chinese (Traditional))';
@@ -3692,25 +4054,31 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get error => '[ZH_HANT] Error';
 
   @override
-  String get businessProfile => '[ZH_HANT] Business Profile (Chinese (Traditional))';
+  String get businessProfile =>
+      '[ZH_HANT] Business Profile (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Business Booking Entry Screen - Coming Soon (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Business Booking Entry Screen - Coming Soon (Chinese (Traditional))';
 
   @override
-  String get createNewSurvey => '[ZH_HANT] Create New Survey (Chinese (Traditional))';
+  String get createNewSurvey =>
+      '[ZH_HANT] Create New Survey (Chinese (Traditional))';
 
   @override
-  String get backgroundRejected => '[ZH_HANT] Background rejected (Chinese (Traditional))';
+  String get backgroundRejected =>
+      '[ZH_HANT] Background rejected (Chinese (Traditional))';
 
   @override
-  String get noMediaSelected => '[ZH_HANT] No media selected (Chinese (Traditional))';
+  String get noMediaSelected =>
+      '[ZH_HANT] No media selected (Chinese (Traditional))';
 
   @override
   String get syncToGoogle => '[ZH_HANT] Sync to Google (Chinese (Traditional))';
 
   @override
-  String get virtualPlaytime => '[ZH_HANT] Virtual Playtime (Chinese (Traditional))';
+  String get virtualPlaytime =>
+      '[ZH_HANT] Virtual Playtime (Chinese (Traditional))';
 
   @override
   String get colorContrastTesting => '[ZH_HANT] Color Contrast Testing';
@@ -3733,13 +4101,16 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get home1 => '[ZH_HANT] Home (Chinese (Traditional))';
 
   @override
-  String get errorSavingSettingsE => '[ZH_HANT] Error saving settings: \$e (Chinese (Traditional))';
+  String get errorSavingSettingsE =>
+      '[ZH_HANT] Error saving settings: \$e (Chinese (Traditional))';
 
   @override
-  String get appVersionAndInformation => '[ZH_HANT] App version and information (Chinese (Traditional))';
+  String get appVersionAndInformation =>
+      '[ZH_HANT] App version and information (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Business Subscription Entry Screen - Coming Soon (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Business Subscription Entry Screen - Coming Soon (Chinese (Traditional))';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -3747,7 +4118,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Your payment has been processed successfully. (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Your payment has been processed successfully. (Chinese (Traditional))';
 
   @override
   String get errorE => '[ZH_HANT] Error: \$e (Chinese (Traditional))';
@@ -3756,7 +4128,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get viewAll1 => '[ZH_HANT] View All (Chinese (Traditional))';
 
   @override
-  String get editSurveyComingSoon => '[ZH_HANT] Edit survey - Coming soon! (Chinese (Traditional))';
+  String get editSurveyComingSoon =>
+      '[ZH_HANT] Edit survey - Coming soon! (Chinese (Traditional))';
 
   @override
   String get enterOtp => '[ZH_HANT] 輸入 OTP';
@@ -3765,7 +4138,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get payment => '[ZH_HANT] Payment (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Automatically confirm new booking requests (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Automatically confirm new booking requests (Chinese (Traditional))';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -3778,7 +4152,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[ZH_HANT] Please sign in to upload a background (Chinese (Traditional))';
+  String get pleaseSignInToUploadABackground =>
+      '[ZH_HANT] Please sign in to upload a background (Chinese (Traditional))';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -3786,28 +4161,33 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get staffAvailability => '[ZH_HANT] Staff Availability (Chinese (Traditional))';
+  String get staffAvailability =>
+      '[ZH_HANT] Staff Availability (Chinese (Traditional))';
 
   @override
   String get livePlaytime => '[ZH_HANT] Live Playtime (Chinese (Traditional))';
 
   @override
-  String get autoconfirmBookings => '[ZH_HANT] Auto-Confirm Bookings (Chinese (Traditional))';
+  String get autoconfirmBookings =>
+      '[ZH_HANT] Auto-Confirm Bookings (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Redirecting to Stripe checkout for Pro plan... (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Redirecting to Stripe checkout for Pro plan... (Chinese (Traditional))';
 
   @override
   String get exportAsCsv => '[ZH_HANT] Export as CSV (Chinese (Traditional))';
 
   @override
-  String get deleteFunctionalityComingSoon => '[ZH_HANT] Delete functionality coming soon! (Chinese (Traditional))';
+  String get deleteFunctionalityComingSoon =>
+      '[ZH_HANT] Delete functionality coming soon! (Chinese (Traditional))';
 
   @override
   String get editClient => '[ZH_HANT] Edit Client (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Are you sure you want to delete this message? (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Are you sure you want to delete this message? (Chinese (Traditional))';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -3818,31 +4198,39 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get notAuthenticated => '[ZH_HANT] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[ZH_HANT] Privacy request sent to your parents! (Chinese (Traditional))';
+  String get privacyRequestSentToYourParents =>
+      '[ZH_HANT] Privacy request sent to your parents! (Chinese (Traditional))';
 
   @override
-  String get clientDeletedSuccessfully => '[ZH_HANT] Client deleted successfully! (Chinese (Traditional))';
+  String get clientDeletedSuccessfully =>
+      '[ZH_HANT] Client deleted successfully! (Chinese (Traditional))';
 
   @override
-  String get failedToCancelSubscription => '[ZH_HANT] Failed to cancel subscription (Chinese (Traditional))';
+  String get failedToCancelSubscription =>
+      '[ZH_HANT] Failed to cancel subscription (Chinese (Traditional))';
 
   @override
   String get allLanguages => '[ZH_HANT] All Languages (Chinese (Traditional))';
 
   @override
-  String get slotDeletedSuccessfully => '[ZH_HANT] Slot deleted successfully (Chinese (Traditional))';
+  String get slotDeletedSuccessfully =>
+      '[ZH_HANT] Slot deleted successfully (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Parents must approve before children can join (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Parents must approve before children can join (Chinese (Traditional))';
 
   @override
-  String get subscribeToPro1499mo => '[ZH_HANT] Subscribe to Pro (€14.99/mo) (Chinese (Traditional))';
+  String get subscribeToPro1499mo =>
+      '[ZH_HANT] Subscribe to Pro (€14.99/mo) (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Business Availability Entry Screen - Coming Soon (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Business Availability Entry Screen - Coming Soon (Chinese (Traditional))';
 
   @override
   String appointmentsListlength(Object count) {
@@ -3856,10 +4244,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get submitBooking => '提交預約';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Are you sure you want to cancel this appointment? (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Are you sure you want to cancel this appointment? (Chinese (Traditional))';
 
   @override
-  String get noUpcomingBookings => '[ZH_HANT] No upcoming bookings (Chinese (Traditional))';
+  String get noUpcomingBookings =>
+      '[ZH_HANT] No upcoming bookings (Chinese (Traditional))';
 
   @override
   String get goBack => '[ZH_HANT] Go Back (Chinese (Traditional))';
@@ -3871,10 +4261,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get inviteChild => '邀請孩童';
 
   @override
-  String get goToDashboard => '[ZH_HANT] Go to Dashboard (Chinese (Traditional))';
+  String get goToDashboard =>
+      '[ZH_HANT] Go to Dashboard (Chinese (Traditional))';
 
   @override
-  String get ambassadorQuotaDashboard => '[ZH_HANT] Ambassador Quota Dashboard (Chinese (Traditional))';
+  String get ambassadorQuotaDashboard =>
+      '[ZH_HANT] Ambassador Quota Dashboard (Chinese (Traditional))';
 
   @override
   String get adminSettings => '[ZH_HANT] Admin Settings';
@@ -3897,13 +4289,15 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get bookingRequest => '預約請求';
 
   @override
-  String get advancedReporting => '[ZH_HANT] • Advanced reporting (Chinese (Traditional))';
+  String get advancedReporting =>
+      '[ZH_HANT] • Advanced reporting (Chinese (Traditional))';
 
   @override
   String get rooms => '[ZH_HANT] Rooms (Chinese (Traditional))';
 
   @override
-  String get copiedToClipboard => '[ZH_HANT] Copied to clipboard (Chinese (Traditional))';
+  String get copiedToClipboard =>
+      '[ZH_HANT] Copied to clipboard (Chinese (Traditional))';
 
   @override
   String get bookingConfirmed => '預約已確認';
@@ -3912,46 +4306,55 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[ZH_HANT] Client added successfully! (Chinese (Traditional))';
+  String get clientAddedSuccessfully =>
+      '[ZH_HANT] Client added successfully! (Chinese (Traditional))';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved => '[ZH_HANT] Background approved! (Chinese (Traditional))';
+  String get backgroundApproved =>
+      '[ZH_HANT] Background approved! (Chinese (Traditional))';
 
   @override
-  String get familySupport => '[ZH_HANT] Family Support (Chinese (Traditional))';
+  String get familySupport =>
+      '[ZH_HANT] Family Support (Chinese (Traditional))';
 
   @override
-  String get deletingAccount => '[ZH_HANT] Deleting account... (Chinese (Traditional))';
+  String get deletingAccount =>
+      '[ZH_HANT] Deleting account... (Chinese (Traditional))';
 
   @override
   String get bookAppointment => '預約服務';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[ZH_HANT] Delete (Chinese (Traditional))';
 
   @override
-  String get sendBookingInvite => '[ZH_HANT] Send Booking Invite (Chinese (Traditional))';
+  String get sendBookingInvite =>
+      '[ZH_HANT] Send Booking Invite (Chinese (Traditional))';
 
   @override
   String get text => '[ZH_HANT] Text (Chinese (Traditional))';
 
   @override
-  String get manageSubscription => '[ZH_HANT] Manage Subscription (Chinese (Traditional))';
+  String get manageSubscription =>
+      '[ZH_HANT] Manage Subscription (Chinese (Traditional))';
 
   @override
   String get requiresInstallFallback => '需要安裝';
 
   @override
-  String get paymentConfirmation => '[ZH_HANT] Payment Confirmation (Chinese (Traditional))';
+  String get paymentConfirmation =>
+      '[ZH_HANT] Payment Confirmation (Chinese (Traditional))';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[ZH_HANT] Promo applied! Your next bill is free. (Chinese (Traditional))';
+  String get promoAppliedYourNextBillIsFree =>
+      '[ZH_HANT] Promo applied! Your next bill is free. (Chinese (Traditional))';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -3959,19 +4362,24 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get errorLoadingSlots => '[ZH_HANT] Error loading slots (Chinese (Traditional))';
+  String get errorLoadingSlots =>
+      '[ZH_HANT] Error loading slots (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Allow other users to find and join this game (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Allow other users to find and join this game (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Business Onboarding Screen - Coming Soon (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Business Onboarding Screen - Coming Soon (Chinese (Traditional))';
 
   @override
-  String get activateBusinessProfile => '[ZH_HANT] Activate Business Profile (Chinese (Traditional))';
+  String get activateBusinessProfile =>
+      '[ZH_HANT] Activate Business Profile (Chinese (Traditional))';
 
   @override
-  String get contentNotFound => '[ZH_HANT] Content not found (Chinese (Traditional))';
+  String get contentNotFound =>
+      '[ZH_HANT] Content not found (Chinese (Traditional))';
 
   @override
   String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
@@ -3990,7 +4398,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get becomeAnAmbassador => '[ZH_HANT] Become an Ambassador (Chinese (Traditional))';
+  String get becomeAnAmbassador =>
+      '[ZH_HANT] Become an Ambassador (Chinese (Traditional))';
 
   @override
   String get subscribeNow => '[ZH_HANT] Subscribe Now (Chinese (Traditional))';
@@ -4001,7 +4410,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get shareViaWhatsapp => '[ZH_HANT] Share via WhatsApp (Chinese (Traditional))';
+  String get shareViaWhatsapp =>
+      '[ZH_HANT] Share via WhatsApp (Chinese (Traditional))';
 
   @override
   String get users1 => '[ZH_HANT] Users (Chinese (Traditional))';
@@ -4010,19 +4420,23 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get shareLink => '[ZH_HANT] Share Link (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment => '[ZH_HANT] Delete Appointment (Chinese (Traditional))';
+  String get deleteAppointment =>
+      '[ZH_HANT] Delete Appointment (Chinese (Traditional))';
 
   @override
-  String get toggleAvailability => '[ZH_HANT] Toggle Availability (Chinese (Traditional))';
+  String get toggleAvailability =>
+      '[ZH_HANT] Toggle Availability (Chinese (Traditional))';
 
   @override
   String get changePlan => '[ZH_HANT] Change Plan (Chinese (Traditional))';
 
   @override
-  String get errorLoadingStaff => '[ZH_HANT] Error loading staff (Chinese (Traditional))';
+  String get errorLoadingStaff =>
+      '[ZH_HANT] Error loading staff (Chinese (Traditional))';
 
   @override
   String errorLoadingConfigurationE(Object e) {
@@ -4030,25 +4444,30 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get updateYourBusinessInformation => '[ZH_HANT] Update your business information (Chinese (Traditional))';
+  String get updateYourBusinessInformation =>
+      '[ZH_HANT] Update your business information (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] No providers found. Add your first provider!';
 
   @override
-  String get parentDashboard => '[ZH_HANT] Parent Dashboard (Chinese (Traditional))';
+  String get parentDashboard =>
+      '[ZH_HANT] Parent Dashboard (Chinese (Traditional))';
 
   @override
   String get menu => '選單';
 
   @override
-  String get studioBooking => '[ZH_HANT] Studio Booking (Chinese (Traditional))';
+  String get studioBooking =>
+      '[ZH_HANT] Studio Booking (Chinese (Traditional))';
 
   @override
   String get about1 => '[ZH_HANT] About (Chinese (Traditional))';
 
   @override
-  String get multipleChoice => '[ZH_HANT] Multiple Choice (Chinese (Traditional))';
+  String get multipleChoice =>
+      '[ZH_HANT] Multiple Choice (Chinese (Traditional))';
 
   @override
   String REDACTED_TOKEN(Object date) {
@@ -4056,10 +4475,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Studio booking is only available on web (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Studio booking is only available on web (Chinese (Traditional))';
 
   @override
-  String get errorLoadingBranchesE => '[ZH_HANT] Error loading branches: \$e (Chinese (Traditional))';
+  String get errorLoadingBranchesE =>
+      '[ZH_HANT] Error loading branches: \$e (Chinese (Traditional))';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -4075,13 +4496,15 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get none => '無';
 
   @override
-  String get failedToUpdateConsentE => '[ZH_HANT] Failed to update consent: \$e (Chinese (Traditional))';
+  String get failedToUpdateConsentE =>
+      '[ZH_HANT] Failed to update consent: \$e (Chinese (Traditional))';
 
   @override
   String get welcome1 => '[ZH_HANT] Welcome (Chinese (Traditional))';
 
   @override
-  String get failedToCreateSessionE => '[ZH_HANT] Failed to create session: \$e (Chinese (Traditional))';
+  String get failedToCreateSessionE =>
+      '[ZH_HANT] Failed to create session: \$e (Chinese (Traditional))';
 
   @override
   String get inviteContact => '邀請聯絡人';
@@ -4090,13 +4513,15 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get surveyEditor => '[ZH_HANT] Survey Editor (Chinese (Traditional))';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[ZH_HANT] Failed to start Basic subscription: \$e (Chinese (Traditional))';
+  String get failedToStartBasicSubscriptionE =>
+      '[ZH_HANT] Failed to start Basic subscription: \$e (Chinese (Traditional))';
 
   @override
   String get mySchedule => '[ZH_HANT] My Schedule (Chinese (Traditional))';
 
   @override
-  String get studioDashboard => '[ZH_HANT] Studio Dashboard (Chinese (Traditional))';
+  String get studioDashboard =>
+      '[ZH_HANT] Studio Dashboard (Chinese (Traditional))';
 
   @override
   String get editProfile => 'تحرير الملف الشخصي';
@@ -4110,19 +4535,23 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[ZH_HANT] Settings saved successfully! (Chinese (Traditional))';
+  String get settingsSavedSuccessfully =>
+      '[ZH_HANT] Settings saved successfully! (Chinese (Traditional))';
 
   @override
-  String get linkCopiedToClipboard => '[ZH_HANT] Link copied to clipboard! (Chinese (Traditional))';
+  String get linkCopiedToClipboard =>
+      '[ZH_HANT] Link copied to clipboard! (Chinese (Traditional))';
 
   @override
   String get accept1 => '[ZH_HANT] Accept (Chinese (Traditional))';
 
   @override
-  String get noAvailableSlots => '[ZH_HANT] No available slots (Chinese (Traditional))';
+  String get noAvailableSlots =>
+      '[ZH_HANT] No available slots (Chinese (Traditional))';
 
   @override
-  String get makeGamePublic => '[ZH_HANT] Make Game Public (Chinese (Traditional))';
+  String get makeGamePublic =>
+      '[ZH_HANT] Make Game Public (Chinese (Traditional))';
 
   @override
   String REDACTED_TOKEN(Object category) {
@@ -4130,16 +4559,20 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[ZH_HANT] Room deleted successfully! (Chinese (Traditional))';
+  String get roomDeletedSuccessfully =>
+      '[ZH_HANT] Room deleted successfully! (Chinese (Traditional))';
 
   @override
-  String get businessCalendar => '[ZH_HANT] Business Calendar (Chinese (Traditional))';
+  String get businessCalendar =>
+      '[ZH_HANT] Business Calendar (Chinese (Traditional))';
 
   @override
-  String get addAvailability => '[ZH_HANT] Add Availability (Chinese (Traditional))';
+  String get addAvailability =>
+      '[ZH_HANT] Add Availability (Chinese (Traditional))';
 
   @override
-  String get ambassadorOnboarding => '[ZH_HANT] Ambassador Onboarding (Chinese (Traditional))';
+  String get ambassadorOnboarding =>
+      '[ZH_HANT] Ambassador Onboarding (Chinese (Traditional))';
 
   @override
   String phoneProfileasyncphone(Object phone) {
@@ -4150,7 +4583,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get addNewRoom => '[ZH_HANT] Add New Room (Chinese (Traditional))';
 
   @override
-  String get requireParentApproval => '[ZH_HANT] Require Parent Approval (Chinese (Traditional))';
+  String get requireParentApproval =>
+      '[ZH_HANT] Require Parent Approval (Chinese (Traditional))';
 
   @override
   String get closed => '[ZH_HANT] Closed (Chinese (Traditional))';
@@ -4159,7 +4593,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get exportAsPdf => '[ZH_HANT] Export as PDF (Chinese (Traditional))';
 
   @override
-  String get enableVibration => '[ZH_HANT] Enable Vibration (Chinese (Traditional))';
+  String get enableVibration =>
+      '[ZH_HANT] Enable Vibration (Chinese (Traditional))';
 
   @override
   String toAvailendformatcontext(Object endTime) {
@@ -4195,7 +4630,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get cancel1 => '[ZH_HANT] Cancel (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Subscription activated successfully! (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Subscription activated successfully! (Chinese (Traditional))';
 
   @override
   String activityLogaction(Object action) {
@@ -4206,19 +4642,23 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get broadcast => '[ZH_HANT] Broadcast (Chinese (Traditional))';
 
   @override
-  String get noEventsScheduledThisWeek => '[ZH_HANT] No events scheduled this week (Chinese (Traditional))';
+  String get noEventsScheduledThisWeek =>
+      '[ZH_HANT] No events scheduled this week (Chinese (Traditional))';
 
   @override
-  String get googleCalendar => '[ZH_HANT] Google Calendar (Chinese (Traditional))';
+  String get googleCalendar =>
+      '[ZH_HANT] Google Calendar (Chinese (Traditional))';
 
   @override
   String get sendInvite => 'إرسال دعوة';
 
   @override
-  String get childDashboard => '[ZH_HANT] Child Dashboard (Chinese (Traditional))';
+  String get childDashboard =>
+      '[ZH_HANT] Child Dashboard (Chinese (Traditional))';
 
   @override
-  String get failedToUploadBackgroundE => '[ZH_HANT] Failed to upload background: \$e (Chinese (Traditional))';
+  String get failedToUploadBackgroundE =>
+      '[ZH_HANT] Failed to upload background: \$e (Chinese (Traditional))';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -4234,10 +4674,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get contextContextid => '[ZH_HANT] Context: \$contextId';
 
   @override
-  String get noAppointments => '[ZH_HANT] No appointments (Chinese (Traditional))';
+  String get noAppointments =>
+      '[ZH_HANT] No appointments (Chinese (Traditional))';
 
   @override
-  String get unlimitedBookingsPerWeek => '[ZH_HANT] • Unlimited bookings per week (Chinese (Traditional))';
+  String get unlimitedBookingsPerWeek =>
+      '[ZH_HANT] • Unlimited bookings per week (Chinese (Traditional))';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -4245,19 +4687,23 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get scheduledAtScheduledat => '[ZH_HANT] Scheduled at: \$scheduledAt (Chinese (Traditional))';
+  String get scheduledAtScheduledat =>
+      '[ZH_HANT] Scheduled at: \$scheduledAt (Chinese (Traditional))';
 
   @override
   String get selectStaff => '選擇工作人員';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Subscription cancelled successfully (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Subscription cancelled successfully (Chinese (Traditional))';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment => '[ZH_HANT] Cancel Appointment (Chinese (Traditional))';
+  String get cancelAppointment =>
+      '[ZH_HANT] Cancel Appointment (Chinese (Traditional))';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
@@ -4265,10 +4711,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get businessSignup => '[ZH_HANT] Business Signup (Chinese (Traditional))';
+  String get businessSignup =>
+      '[ZH_HANT] Business Signup (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Business Completion Screen - Coming Soon (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Business Completion Screen - Coming Soon (Chinese (Traditional))';
 
   @override
   String get createGame1 => '[ZH_HANT] Create Game (Chinese (Traditional))';
@@ -4279,13 +4727,16 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[ZH_HANT] Please enter a promo code (Chinese (Traditional))';
+  String get pleaseEnterAPromoCode =>
+      '[ZH_HANT] Please enter a promo code (Chinese (Traditional))';
 
   @override
-  String get errorLoadingAvailabilityE => '[ZH_HANT] Error loading availability: \$e (Chinese (Traditional))';
+  String get errorLoadingAvailabilityE =>
+      '[ZH_HANT] Error loading availability: \$e (Chinese (Traditional))';
 
   @override
-  String get parentalControls => '[ZH_HANT] Parental Controls (Chinese (Traditional))';
+  String get parentalControls =>
+      '[ZH_HANT] Parental Controls (Chinese (Traditional))';
 
   @override
   String get editBusinessProfile => 'تحرير الملف التجاري';
@@ -4297,7 +4748,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get create => '[ZH_HANT] Create (Chinese (Traditional))';
 
   @override
-  String get noExternalMeetingsFound => '[ZH_HANT] No external meetings found. (Chinese (Traditional))';
+  String get noExternalMeetingsFound =>
+      '[ZH_HANT] No external meetings found. (Chinese (Traditional))';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -4305,19 +4757,24 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[ZH_HANT] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[ZH_HANT] Please enter a valid email address';
 
   @override
-  String get schedulerScreen => '[ZH_HANT] Scheduler Screen (Chinese (Traditional))';
+  String get schedulerScreen =>
+      '[ZH_HANT] Scheduler Screen (Chinese (Traditional))';
 
   @override
-  String get clientUpdatedSuccessfully => '[ZH_HANT] Client updated successfully! (Chinese (Traditional))';
+  String get clientUpdatedSuccessfully =>
+      '[ZH_HANT] Client updated successfully! (Chinese (Traditional))';
 
   @override
-  String get surveyResponses => '[ZH_HANT] Survey Responses (Chinese (Traditional))';
+  String get surveyResponses =>
+      '[ZH_HANT] Survey Responses (Chinese (Traditional))';
 
   @override
-  String get syncToOutlook => '[ZH_HANT] Sync to Outlook (Chinese (Traditional))';
+  String get syncToOutlook =>
+      '[ZH_HANT] Sync to Outlook (Chinese (Traditional))';
 
   @override
   String get saveChanges => '[ZH_HANT] Save Changes (Chinese (Traditional))';
@@ -4334,13 +4791,15 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get analytics => '[ZH_HANT] Analytics (Chinese (Traditional))';
 
   @override
-  String get errorLoadingEvents => '[ZH_HANT] Error loading events (Chinese (Traditional))';
+  String get errorLoadingEvents =>
+      '[ZH_HANT] Error loading events (Chinese (Traditional))';
 
   @override
   String get errorLoadingOrganizations => '讀取組織錯誤';
 
   @override
-  String get businessLoginScreenComingSoon => '[ZH_HANT] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[ZH_HANT] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[ZH_HANT] Success (Chinese (Traditional))';
@@ -4359,10 +4818,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get readWrite => '可讀寫';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Redirecting to Stripe checkout for Basic plan... (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Redirecting to Stripe checkout for Basic plan... (Chinese (Traditional))';
 
   @override
-  String get errorSavingConfigurationE => '[ZH_HANT] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[ZH_HANT] Error saving configuration: \$e';
 
   @override
   String get pickDate => '選擇日期';
@@ -4371,7 +4832,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get chatBooking => '聊天預約';
 
   @override
-  String get noQuestionsAdded => '[ZH_HANT] No questions added (Chinese (Traditional))';
+  String get noQuestionsAdded =>
+      '[ZH_HANT] No questions added (Chinese (Traditional))';
 
   @override
   String severityLogseverityname(Object severity) {
@@ -4382,7 +4844,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get markAsPaid => '[ZH_HANT] Mark as Paid';
 
   @override
-  String get typeOpenCall => '[ZH_HANT] Type: Open Call (Chinese (Traditional))';
+  String get typeOpenCall =>
+      '[ZH_HANT] Type: Open Call (Chinese (Traditional))';
 
   @override
   String appointmentAppointmentid(Object appointmentId) {
@@ -4398,10 +4861,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get businessLogin => '[ZH_HANT] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[ZH_HANT] Invoice created successfully! (Chinese (Traditional))';
+  String get invoiceCreatedSuccessfully =>
+      '[ZH_HANT] Invoice created successfully! (Chinese (Traditional))';
 
   @override
-  String get noTimeSeriesDataAvailable => '[ZH_HANT] No time series data available (Chinese (Traditional))';
+  String get noTimeSeriesDataAvailable =>
+      '[ZH_HANT] No time series data available (Chinese (Traditional))';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -4414,13 +4879,16 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[ZH_HANT] Failed to send privacy request: \$e (Chinese (Traditional))';
+  String get failedToSendPrivacyRequestE =>
+      '[ZH_HANT] Failed to send privacy request: \$e (Chinese (Traditional))';
 
   @override
-  String get chooseYourPlan => '[ZH_HANT] Choose Your Plan (Chinese (Traditional))';
+  String get chooseYourPlan =>
+      '[ZH_HANT] Choose Your Plan (Chinese (Traditional))';
 
   @override
-  String get playtimeManagement => '[ZH_HANT] Playtime Management (Chinese (Traditional))';
+  String get playtimeManagement =>
+      '[ZH_HANT] Playtime Management (Chinese (Traditional))';
 
   @override
   String get availability => '[ZH_HANT] Availability (Chinese (Traditional))';
@@ -4429,16 +4897,19 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get eventCreated => '[ZH_HANT] Event created (Chinese (Traditional))';
 
   @override
-  String get subscribeToBasic499mo => '[ZH_HANT] Subscribe to Basic (€4.99/mo) (Chinese (Traditional))';
+  String get subscribeToBasic499mo =>
+      '[ZH_HANT] Subscribe to Basic (€4.99/mo) (Chinese (Traditional))';
 
   @override
   String get completion => '[ZH_HANT] Completion (Chinese (Traditional))';
 
   @override
-  String get supportTicketSubmitted => '[ZH_HANT] Support ticket submitted (Chinese (Traditional))';
+  String get supportTicketSubmitted =>
+      '[ZH_HANT] Support ticket submitted (Chinese (Traditional))';
 
   @override
-  String get monetizationSettings => '[ZH_HANT] Monetization Settings (Chinese (Traditional))';
+  String get monetizationSettings =>
+      '[ZH_HANT] Monetization Settings (Chinese (Traditional))';
 
   @override
   String get noBookingsFound => '找不到預約';
@@ -4450,10 +4921,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get deleteSurvey => '[ZH_HANT] Delete Survey (Chinese (Traditional))';
 
   @override
-  String get gameApprovedSuccessfully => '[ZH_HANT] Game approved successfully! (Chinese (Traditional))';
+  String get gameApprovedSuccessfully =>
+      '[ZH_HANT] Game approved successfully! (Chinese (Traditional))';
 
   @override
-  String get errorLoadingPermissionsError => '[ZH_HANT] Error loading permissions: \$error (Chinese (Traditional))';
+  String get errorLoadingPermissionsError =>
+      '[ZH_HANT] Error loading permissions: \$error (Chinese (Traditional))';
 
   @override
   String get referrals => '[ZH_HANT] Referrals (Chinese (Traditional))';
@@ -4468,10 +4941,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get appointments => '[ZH_HANT] Appointments (Chinese (Traditional))';
 
   @override
-  String get onboardingScreen => '[ZH_HANT] Onboarding Screen (Chinese (Traditional))';
+  String get onboardingScreen =>
+      '[ZH_HANT] Onboarding Screen (Chinese (Traditional))';
 
   @override
-  String get welcomeToYourStudio => '[ZH_HANT] Welcome to your studio (Chinese (Traditional))';
+  String get welcomeToYourStudio =>
+      '[ZH_HANT] Welcome to your studio (Chinese (Traditional))';
 
   @override
   String get update => '[ZH_HANT] Update (Chinese (Traditional))';
@@ -4483,7 +4958,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get booking => '[ZH_HANT] Booking (Chinese (Traditional))';
 
   @override
-  String get parentalSettings => '[ZH_HANT] Parental Settings (Chinese (Traditional))';
+  String get parentalSettings =>
+      '[ZH_HANT] Parental Settings (Chinese (Traditional))';
 
   @override
   String get language => '[ZH_HANT] Language (Chinese (Traditional))';
@@ -4495,25 +4971,30 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get organizations => '組織';
 
   @override
-  String get configurationSavedSuccessfully => '[ZH_HANT] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[ZH_HANT] Configuration saved successfully!';
 
   @override
-  String get createNewGame => '[ZH_HANT] Create New Game (Chinese (Traditional))';
+  String get createNewGame =>
+      '[ZH_HANT] Create New Game (Chinese (Traditional))';
 
   @override
   String get next1 => '[ZH_HANT] Next (Chinese (Traditional))';
 
   @override
-  String get backgroundUploadedSuccessfully => '[ZH_HANT] Background uploaded successfully! (Chinese (Traditional))';
+  String get backgroundUploadedSuccessfully =>
+      '[ZH_HANT] Background uploaded successfully! (Chinese (Traditional))';
 
   @override
-  String get noAppointmentRequestsFound => '[ZH_HANT] No appointment requests found. (Chinese (Traditional))';
+  String get noAppointmentRequestsFound =>
+      '[ZH_HANT] No appointment requests found. (Chinese (Traditional))';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => '[ZH_HANT] Restrict mature content (Chinese (Traditional))';
+  String get restrictMatureContent =>
+      '[ZH_HANT] Restrict mature content (Chinese (Traditional))';
 
   @override
   String get ambassadors => '[ZH_HANT] Ambassadors (Chinese (Traditional))';
@@ -4522,7 +5003,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled => '[ZH_HANT] Payment was cancelled (Chinese (Traditional))';
+  String get paymentWasCancelled =>
+      '[ZH_HANT] Payment was cancelled (Chinese (Traditional))';
 
   @override
   String get clearAll => '[ZH_HANT] Clear All (Chinese (Traditional))';
@@ -4534,16 +5016,20 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[ZH_HANT] Failed to create game: \$e (Chinese (Traditional))';
+  String get failedToCreateGameE =>
+      '[ZH_HANT] Failed to create game: \$e (Chinese (Traditional))';
 
   @override
-  String get noChartDataAvailable => '[ZH_HANT] No chart data available (Chinese (Traditional))';
+  String get noChartDataAvailable =>
+      '[ZH_HANT] No chart data available (Chinese (Traditional))';
 
   @override
-  String get phonebasedBookingSystem => '[ZH_HANT] • Phone-based booking system (Chinese (Traditional))';
+  String get phonebasedBookingSystem =>
+      '[ZH_HANT] • Phone-based booking system (Chinese (Traditional))';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -4552,7 +5038,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get invoices => '[ZH_HANT] Invoices (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -4568,7 +5055,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get tryAgain => '[ZH_HANT] Try Again (Chinese (Traditional))';
 
   @override
-  String get deleteBackground => '[ZH_HANT] Delete Background (Chinese (Traditional))';
+  String get deleteBackground =>
+      '[ZH_HANT] Delete Background (Chinese (Traditional))';
 
   @override
   String currentTierTiertouppercase(Object tier) {
@@ -4579,22 +5067,26 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get iDoNotConsent => '[ZH_HANT] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] No clients found. Add your first client! (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] No clients found. Add your first client! (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[ZH_HANT] Group: \$groupId';
 
   @override
-  String get appointmentRequests => '[ZH_HANT] Appointment Requests (Chinese (Traditional))';
+  String get appointmentRequests =>
+      '[ZH_HANT] Appointment Requests (Chinese (Traditional))';
 
   @override
   String get forward => '[ZH_HANT] Forward (Chinese (Traditional))';
 
   @override
-  String get roomAddedSuccessfully => '[ZH_HANT] Room added successfully! (Chinese (Traditional))';
+  String get roomAddedSuccessfully =>
+      '[ZH_HANT] Room added successfully! (Chinese (Traditional))';
 
   @override
   String get option => '[ZH_HANT] • \$option (Chinese (Traditional))';
@@ -4605,40 +5097,50 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[ZH_HANT] • CRM dashboard with analytics (Chinese (Traditional))';
+  String get crmDashboardWithAnalytics =>
+      '[ZH_HANT] • CRM dashboard with analytics (Chinese (Traditional))';
 
   @override
-  String get contentLibrary1 => '[ZH_HANT] Content Library (Chinese (Traditional))';
+  String get contentLibrary1 =>
+      '[ZH_HANT] Content Library (Chinese (Traditional))';
 
   @override
   String get reply => '[ZH_HANT] Reply (Chinese (Traditional))';
 
   @override
-  String get subscriptionManagement => '[ZH_HANT] Subscription Management (Chinese (Traditional))';
+  String get subscriptionManagement =>
+      '[ZH_HANT] Subscription Management (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Monetization settings will be implemented here (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Monetization settings will be implemented here (Chinese (Traditional))';
 
   @override
-  String get failedToApplyPromoCodeE => '[ZH_HANT] Failed to apply promo code: \$e (Chinese (Traditional))';
+  String get failedToApplyPromoCodeE =>
+      '[ZH_HANT] Failed to apply promo code: \$e (Chinese (Traditional))';
 
   @override
   String get editProvider => '[ZH_HANT] Edit Provider';
 
   @override
-  String get localizationContribution => '[ZH_HANT] Localization Contribution (Chinese (Traditional))';
+  String get localizationContribution =>
+      '[ZH_HANT] Localization Contribution (Chinese (Traditional))';
 
   @override
-  String get parentalConsent => '[ZH_HANT] Parental Consent (Chinese (Traditional))';
+  String get parentalConsent =>
+      '[ZH_HANT] Parental Consent (Chinese (Traditional))';
 
   @override
-  String get businessSignupScreenComingSoon => '[ZH_HANT] Business Signup Screen - Coming Soon (Chinese (Traditional))';
+  String get businessSignupScreenComingSoon =>
+      '[ZH_HANT] Business Signup Screen - Coming Soon (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => '[ZH_HANT] Are you sure you want to delete this appointment? (Chinese (Traditional))';
+  String get REDACTED_TOKEN =>
+      '[ZH_HANT] Are you sure you want to delete this appointment? (Chinese (Traditional))';
 
   @override
-  String get syncAppointment => '[ZH_HANT] Sync Appointment (Chinese (Traditional))';
+  String get syncAppointment =>
+      '[ZH_HANT] Sync Appointment (Chinese (Traditional))';
 
   @override
   String get iConsent => '[ZH_HANT] I Consent (Chinese (Traditional))';
@@ -4647,19 +5149,22 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[ZH_HANT] Business Setup Screen - Coming Soon (Chinese (Traditional))';
+  String get businessSetupScreenComingSoon =>
+      '[ZH_HANT] Business Setup Screen - Coming Soon (Chinese (Traditional))';
 
   @override
   String get edit1 => '[ZH_HANT] Edit (Chinese (Traditional))';
 
   @override
-  String get noEventsScheduledThisMonth => '[ZH_HANT] No events scheduled this month (Chinese (Traditional))';
+  String get noEventsScheduledThisMonth =>
+      '[ZH_HANT] No events scheduled this month (Chinese (Traditional))';
 
   @override
   String get businessDashboard => '商業儀表板';
 
   @override
-  String get noMessagesFound => '[ZH_HANT] No messages found. (Chinese (Traditional))';
+  String get noMessagesFound =>
+      '[ZH_HANT] No messages found. (Chinese (Traditional))';
 
   @override
   String staffStaffidNotSelected(Object staff) {
@@ -4667,10 +5172,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get manageStaffAvailability => '[ZH_HANT] Manage Staff Availability (Chinese (Traditional))';
+  String get manageStaffAvailability =>
+      '[ZH_HANT] Manage Staff Availability (Chinese (Traditional))';
 
   @override
-  String get noMissingTranslations => '[ZH_HANT] No missing translations (Chinese (Traditional))';
+  String get noMissingTranslations =>
+      '[ZH_HANT] No missing translations (Chinese (Traditional))';
 
   @override
   String get skip => '[ZH_HANT] Skip (Chinese (Traditional))';
@@ -4684,7 +5191,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get noUsers => '無使用者';
 
   @override
-  String get errorLoadingReferralCode => '[ZH_HANT] Error loading referral code (Chinese (Traditional))';
+  String get errorLoadingReferralCode =>
+      '[ZH_HANT] Error loading referral code (Chinese (Traditional))';
 
   @override
   String get allCountries => '[ZH_HANT] All Countries (Chinese (Traditional))';
@@ -4693,13 +5201,16 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get deleteGame => '[ZH_HANT] Delete Game (Chinese (Traditional))';
 
   @override
-  String get staffManagementTools => '[ZH_HANT] • Staff management tools (Chinese (Traditional))';
+  String get staffManagementTools =>
+      '[ZH_HANT] • Staff management tools (Chinese (Traditional))';
 
   @override
-  String get deleteMessage => '[ZH_HANT] Delete Message (Chinese (Traditional))';
+  String get deleteMessage =>
+      '[ZH_HANT] Delete Message (Chinese (Traditional))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '更改角色';
@@ -4710,7 +5221,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get openingCustomerPortal => '[ZH_HANT] Opening customer portal... (Chinese (Traditional))';
+  String get openingCustomerPortal =>
+      '[ZH_HANT] Opening customer portal... (Chinese (Traditional))';
 
   @override
   String get signOut => '登出';
@@ -4721,10 +5233,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness => '[ZH_HANT] Upgrade to Business (Chinese (Traditional))';
+  String get upgradeToBusiness =>
+      '[ZH_HANT] Upgrade to Business (Chinese (Traditional))';
 
   @override
   String get apply => 'تطبيق';
@@ -4747,10 +5261,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
-  String get viewResponses => '[ZH_HANT] View Responses (Chinese (Traditional))';
+  String get viewResponses =>
+      '[ZH_HANT] View Responses (Chinese (Traditional))';
 
   @override
   String get businessWelcomeScreenComingSoon => 'شاشة ترحيب الأعمال - قريباً';
@@ -4776,7 +5292,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -4794,7 +5311,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -4803,7 +5321,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -4818,7 +5337,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get purchase_now_button => 'Purchase Now';
 
   @override
-  String get ambassadorPromotionTitle => '[ZH_HANT] Congratulations! You\'re now an Ambassador! (Chinese Traditional)';
+  String get ambassadorPromotionTitle =>
+      '[ZH_HANT] Congratulations! You\'re now an Ambassador! (Chinese Traditional)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -4826,31 +5346,46 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get tierUpgradeTitle => '[ZH_HANT] Tier Upgrade! 🎉 (Chinese Traditional)';
+  String get tierUpgradeTitle =>
+      '[ZH_HANT] Tier Upgrade! 🎉 (Chinese Traditional)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[ZH_HANT] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Chinese Traditional)';
   }
 
   @override
-  String get monthlyReminderTitle => '[ZH_HANT] Monthly Goal Reminder (Chinese Traditional)';
+  String get monthlyReminderTitle =>
+      '[ZH_HANT] Monthly Goal Reminder (Chinese Traditional)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[ZH_HANT] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Chinese Traditional)';
   }
 
   @override
-  String get performanceWarningTitle => '[ZH_HANT] Ambassador Performance Alert (Chinese Traditional)';
+  String get performanceWarningTitle =>
+      '[ZH_HANT] Ambassador Performance Alert (Chinese Traditional)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[ZH_HANT] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Chinese Traditional)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[ZH_HANT] Ambassador Status Update (Chinese Traditional)';
+  String get ambassadorDemotionTitle =>
+      '[ZH_HANT] Ambassador Status Update (Chinese Traditional)';
 
   @override
   String ambassadorDemotionBody(String reason) {
@@ -4858,7 +5393,8 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String get referralSuccessTitle => '[ZH_HANT] New Referral! 🎉 (Chinese Traditional)';
+  String get referralSuccessTitle =>
+      '[ZH_HANT] New Referral! 🎉 (Chinese Traditional)';
 
   @override
   String referralSuccessBody(String referredUserName, String totalReferrals) {

@@ -15,7 +15,6 @@ import 'providers/auth_provider.dart';
 import 'providers/theme_provider.dart';
 import 'providers/notification_provider.dart';
 import 'services/notification_service.dart';
-import 'services/firestore_service.dart';
 import 'theme/app_theme.dart';
 import 'widgets/splash_screen.dart';
 
@@ -28,9 +27,6 @@ void main() async {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
-
-    // Initialize Firestore settings globally
-    FirestoreService.initialize();
 
     // Initialize Firebase Crashlytics
     if (!kDebugMode) {
@@ -47,6 +43,7 @@ void main() async {
     // Initialize notification service
     final notificationService = NotificationService();
     await notificationService.initialize();
+    
     // Request notification permissions on startup (Android only for now)
     await notificationService.requestPermissions();
 
@@ -60,55 +57,11 @@ void main() async {
       ),
     );
 
-    // Set a custom error widget for uncaught Flutter errors
-    ErrorWidget.builder = (FlutterErrorDetails details) {
-      return MaterialApp(
-        home: Scaffold(
-          backgroundColor: Colors.red.shade50,
-          body: Center(
-            child: Padding(
-              padding: const EdgeInsets.all(24),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(Icons.error_outline, size: 64, color: Colors.red.shade600),
-                  const SizedBox(height: 16),
-                  const Text(
-                    'Something went wrong',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 12),
-                  const Text(
-                    'Please restart the app or try again later.',
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 24),
-                  ElevatedButton(
-                    onPressed: () => runApp(const AppLauncher()),
-                    child: const Text('Restart'),
-                  ),
-                  if (kDebugMode) ...[
-                    const SizedBox(height: 24),
-                    ExpansionTile(
-                      title: const Text('Error details'),
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(12),
-                          child: Text(details.toString()),
-                        ),
-                      ],
-                    ),
-                  ],
-                ],
-              ),
-            ),
-          ),
-        ),
-      );
-    };
-
-    runApp(const AppLauncher());
+    runApp(
+      ProviderScope(
+        child: const AppOintApp(),
+      ),
+    );
   } catch (error, stackTrace) {
     // Handle initialization errors gracefully
     debugPrint('App initialization error: $error');
@@ -132,14 +85,17 @@ class AppOintApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(appRouterProvider);
     final themeMode = ref.watch(themeModeProvider);
+    // Obtain themedata instances based on the current palette selection
+    final lightTheme = ref.watch(lightThemeProvider);
+    final darkTheme = ref.watch(darkThemeProvider);
     
     return MaterialApp.router(
-      title: 'AppOint',
+      title: 'APP-OINT',
       debugShowCheckedModeBanner: false,
       
       // Theme configuration
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
+      theme: lightTheme,
+      darkTheme: darkTheme,
       themeMode: themeMode,
       
       // Localization configuration
@@ -182,7 +138,7 @@ class ErrorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'AppOint - Error',
+      title: 'APP-OINT - Error',
       home: Scaffold(
         backgroundColor: Colors.red.shade50,
         body: Center(
@@ -208,7 +164,7 @@ class ErrorApp extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'AppOint failed to initialize properly. Please restart the app.',
+                  'APP-OINT failed to initialize properly. Please restart the app.',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.red.shade700,
@@ -255,15 +211,5 @@ class ErrorApp extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-/// Separate launcher widget to allow restarting after fatal error
-class AppLauncher extends StatelessWidget {
-  const AppLauncher({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return ProviderScope(child: const AppOintApp());
   }
 }

@@ -74,7 +74,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get search => '[ES] Buscar';
 
   @override
-  String get cancelInviteConfirmation => '[ES] ¿Confirmar cancelación de invitación?';
+  String get cancelInviteConfirmation =>
+      '[ES] ¿Confirmar cancelación de invitación?';
 
   @override
   String created(Object date) {
@@ -88,7 +89,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get playtimeLiveScheduled => '[ES] Juego en vivo programado';
 
   @override
-  String get revokeAccessConfirmation => '[ES] ¿Confirmar revocación de acceso?';
+  String get revokeAccessConfirmation =>
+      '[ES] ¿Confirmar revocación de acceso?';
 
   @override
   String get download => '[ES] Descargar';
@@ -182,7 +184,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[ES] Reunión compartida exitosamente';
+  String get meetingSharedSuccessfully =>
+      '[ES] Reunión compartida exitosamente';
 
   @override
   String get welcomeToPlaytime => '[ES] Bienvenido a Playtime';
@@ -200,7 +203,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get cut => '[ES] Cortar';
 
   @override
-  String get inviteCancelledSuccessfully => '[ES] Invitación cancelada exitosamente';
+  String get inviteCancelledSuccessfully =>
+      '[ES] Invitación cancelada exitosamente';
 
   @override
   String get retry => '[ES] Reintentar';
@@ -405,7 +409,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noPermissionForBroadcast => '[ES] Sin permiso para difusión';
 
   @override
-  String get playtimeAdminPanelTitle => '[ES] Panel de administración de juegos';
+  String get playtimeAdminPanelTitle =>
+      '[ES] Panel de administración de juegos';
 
   @override
   String get inviteDetail => '[ES] Detalle de invitación';
@@ -479,7 +484,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get playtimeEnterGameName => '[ES] Ingresar nombre del juego';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[ES] Por favor inicia sesión para acceder a las funciones familiares';
+  String get pleaseLoginForFamilyFeatures =>
+      '[ES] Por favor inicia sesión para acceder a las funciones familiares';
 
   @override
   String get myInvites => '[ES] Mis invitaciones';
@@ -533,7 +539,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[ES] Por favor inicia sesión para ver el perfil';
+  String get pleaseLoginToViewProfile =>
+      '[ES] Por favor inicia sesión para ver el perfil';
 
   @override
   String get adminMetrics => '[ES] Admin Metrics';
@@ -554,40 +561,52 @@ class AppLocalizationsEs extends AppLocalizations {
   String get contentLibrary => '[ES] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[ES] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[ES] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[ES] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[ES] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[ES] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[ES] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[ES] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[ES] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[ES] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[ES] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[ES] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[ES] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[ES] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[ES] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[ES] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[ES] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[ES] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[ES] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[ES] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[ES] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[ES] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[ES] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[ES] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'Conflicto de cuenta social';
@@ -604,19 +623,24 @@ class AppLocalizationsEs extends AppLocalizations {
   String get signInWithExistingMethod => 'Iniciar sesión con método existente';
 
   @override
-  String get authErrorRequiresRecentLogin => '[ES] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[ES] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[ES] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[ES] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[ES] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[ES] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[ES] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[ES] Missing verification ID.';
@@ -628,43 +652,56 @@ class AppLocalizationsEs extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[ES] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[ES] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[ES] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[ES] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[ES] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[ES] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[ES] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[ES] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[ES] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[ES] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[ES] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[ES] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[ES] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[ES] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[ES] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[ES] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[ES] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[ES] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[ES] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[ES] The ID token is invalid.';
@@ -676,10 +713,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[ES] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[ES] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[ES] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[ES] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[ES] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[ES] Invalid custom claims provided.';
@@ -688,70 +727,87 @@ class AppLocalizationsEs extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[ES] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[ES] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[ES] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[ES] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[ES] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[ES] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[ES] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[ES] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[ES] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[ES] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[ES] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[ES] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[ES] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[ES] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[ES] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[ES] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[ES] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[ES] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[ES] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[ES] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[ES] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[ES] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[ES] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[ES] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[ES] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[ES] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[ES] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[ES] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[ES] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[ES] Missing continue URL.';
@@ -766,7 +822,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get authErrorMissingUid => '[ES] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[ES] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[ES] Firebase project not found.';
@@ -775,19 +832,23 @@ class AppLocalizationsEs extends AppLocalizations {
   String get authErrorReservedClaims => '[ES] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[ES] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[ES] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[ES] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[ES] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[ES] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[ES] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[ES] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[ES] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[ES] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'Verificando permisos...';
@@ -836,7 +897,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get keepSubscription => 'Mantener suscripción';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Sesión virtual creada, invitando amigos';
+  String get REDACTED_TOKEN =>
+      '[ES] Sesión virtual creada, invitando amigos';
 
   @override
   String get noEventsScheduledForToday => 'No hay eventos programados para hoy';
@@ -877,13 +939,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get studioProfile => 'Perfil del estudio';
 
   @override
-  String get subscriptionUnavailable => '[ES] Subscription unavailable (Spanish)';
+  String get subscriptionUnavailable =>
+      '[ES] Subscription unavailable (Spanish)';
 
   @override
   String get confirmBooking => '[ES] Confirm Booking (Spanish)';
 
   @override
-  String get failedToUpdatePermissionE => '[ES] Failed to update permission: \$e (Spanish)';
+  String get failedToUpdatePermissionE =>
+      '[ES] Failed to update permission: \$e (Spanish)';
 
   @override
   String get reject => '[ES] Reject (Spanish)';
@@ -911,7 +975,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get resolve => '[ES] Resolve (Spanish)';
 
   @override
-  String get errorLoadingSurveysError => '[ES] Error loading surveys: \$error (Spanish)';
+  String get errorLoadingSurveysError =>
+      '[ES] Error loading surveys: \$error (Spanish)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +984,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[ES] Get help with your account (Spanish)';
+  String get getHelpWithYourAccount =>
+      '[ES] Get help with your account (Spanish)';
 
   @override
   String get pay => '[ES] Pay (Spanish)';
@@ -931,10 +997,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get meetingDetails => 'Detalles de la reunión';
 
   @override
-  String get errorLoadingAppointments => '[ES] Error loading appointments (Spanish)';
+  String get errorLoadingAppointments =>
+      '[ES] Error loading appointments (Spanish)';
 
   @override
-  String get changesSavedSuccessfully => '[ES] Changes saved successfully! (Spanish)';
+  String get changesSavedSuccessfully =>
+      '[ES] Changes saved successfully! (Spanish)';
 
   @override
   String get createNewInvoice => '[ES] Create New Invoice (Spanish)';
@@ -954,7 +1022,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get profileSaved => '[ES] Profile saved! (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => 'Recibir notificaciones de reserva por email';
+  String get REDACTED_TOKEN =>
+      'Recibir notificaciones de reserva por email';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1054,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ES] Recibirás un email de confirmación en breve';
+  String get REDACTED_TOKEN =>
+      '[ES] Recibirás un email de confirmación en breve';
 
   @override
   String get addQuestion => '[ES] Add Question (Spanish)';
@@ -1014,22 +1084,26 @@ class AppLocalizationsEs extends AppLocalizations {
   String get surveyManagement => '[ES] Survey Management (Spanish)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[ES] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[ES] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[ES] No rooms found. Add your first room! (Spanish)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[ES] No rooms found. Add your first room! (Spanish)';
 
   @override
   String get readOurPrivacyPolicy => '[ES] Read our privacy policy (Spanish)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[ES] Could not open privacy policy (Spanish)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[ES] Could not open privacy policy (Spanish)';
 
   @override
   String get refresh1 => '[ES] Refresh (Spanish)';
 
   @override
-  String get roomUpdatedSuccessfully => '[ES] Room updated successfully! (Spanish)';
+  String get roomUpdatedSuccessfully =>
+      '[ES] Room updated successfully! (Spanish)';
 
   @override
   String get contentDetail => '[ES] Content Detail (Spanish)';
@@ -1038,7 +1112,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get cancelSubscription => '[ES] Cancel Subscription (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Successfully registered as Ambassador! (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Successfully registered as Ambassador! (Spanish)';
 
   @override
   String get save1 => '[ES] Save (Spanish)';
@@ -1047,7 +1122,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get copy1 => '[ES] Copy (Spanish)';
 
   @override
-  String get failedToSendInvitationE => '[ES] Failed to send invitation: \$e (Spanish)';
+  String get failedToSendInvitationE =>
+      '[ES] Failed to send invitation: \$e (Spanish)';
 
   @override
   String get surveyScore => '[ES] Survey Score (Spanish)';
@@ -1064,16 +1140,20 @@ class AppLocalizationsEs extends AppLocalizations {
   String get responseDetail => '[ES] Response Detail (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => 'Pantalla de verificación empresarial - Próximamente';
+  String get REDACTED_TOKEN =>
+      'Pantalla de verificación empresarial - Próximamente';
 
   @override
-  String get REDACTED_TOKEN => 'Perfil empresarial activado exitosamente';
+  String get REDACTED_TOKEN =>
+      'Perfil empresarial activado exitosamente';
 
   @override
-  String get failedToStartProSubscriptionE => '[ES] Failed to start Pro subscription: \$e (Spanish)';
+  String get failedToStartProSubscriptionE =>
+      '[ES] Failed to start Pro subscription: \$e (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Business Dashboard Entry Screen - Coming Soon (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Business Dashboard Entry Screen - Coming Soon (Spanish)';
 
   @override
   String get contentFilter => '[ES] Content Filter (Spanish)';
@@ -1095,7 +1175,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ES] Business CRM Entry Screen - Coming Soon (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Business CRM Entry Screen - Coming Soon (Spanish)';
 
   @override
   String get adminDashboard => '[ES] Admin Dashboard';
@@ -1106,10 +1187,12 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[ES] Error loading dashboard: \$error (Spanish)';
+  String get errorLoadingDashboardError =>
+      '[ES] Error loading dashboard: \$error (Spanish)';
 
   @override
-  String get gameDeletedSuccessfully => '[ES] Game deleted successfully! (Spanish)';
+  String get gameDeletedSuccessfully =>
+      '[ES] Game deleted successfully! (Spanish)';
 
   @override
   String get viewResponsesComingSoon => '[ES] Ver respuestas próximamente';
@@ -1121,7 +1204,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get errorLoadingRewards => '[ES] Error loading rewards (Spanish)';
 
   @override
-  String get failedToDeleteAccountE => '[ES] Failed to delete account: \$e (Spanish)';
+  String get failedToDeleteAccountE =>
+      '[ES] Failed to delete account: \$e (Spanish)';
 
   @override
   String get invited1 => '[ES] Invited (Spanish)';
@@ -1136,7 +1220,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noEvents => '[ES] No events (Spanish)';
 
   @override
-  String get gameCreatedSuccessfully => '[ES] Game created successfully! (Spanish)';
+  String get gameCreatedSuccessfully =>
+      '[ES] Game created successfully! (Spanish)';
 
   @override
   String get add1 => '[ES] Add (Spanish)';
@@ -1156,10 +1241,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get clients => '[ES] Clients (Spanish)';
 
   @override
-  String get noAmbassadorDataAvailable => '[ES] No ambassador data available (Spanish)';
+  String get noAmbassadorDataAvailable =>
+      '[ES] No ambassador data available (Spanish)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[ES] Background deleted successfully! (Spanish)';
+  String get backgroundDeletedSuccessfully =>
+      '[ES] Background deleted successfully! (Spanish)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1254,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[ES] No analytics data available yet. (Spanish)';
+  String get noAnalyticsDataAvailableYet =>
+      '[ES] No analytics data available yet. (Spanish)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1263,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ES] Business Phone Booking Entry Screen - Coming Soon (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Business Phone Booking Entry Screen - Coming Soon (Spanish)';
 
   @override
   String get verification => '[ES] Verificación';
@@ -1222,7 +1311,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get businessProfile => '[ES] Business Profile (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Business Booking Entry Screen - Coming Soon (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Business Booking Entry Screen - Coming Soon (Spanish)';
 
   @override
   String get createNewSurvey => '[ES] Create New Survey (Spanish)';
@@ -1246,7 +1336,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get loginFailedE => '[ES] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[ES] Invitation sent successfully! (Spanish)';
+  String get invitationSentSuccessfully =>
+      '[ES] Invitation sent successfully! (Spanish)';
 
   @override
   String get registering => '[ES] Registering... (Spanish)';
@@ -1260,13 +1351,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get home1 => '[ES] Home (Spanish)';
 
   @override
-  String get errorSavingSettingsE => '[ES] Error saving settings: \$e (Spanish)';
+  String get errorSavingSettingsE =>
+      '[ES] Error saving settings: \$e (Spanish)';
 
   @override
-  String get appVersionAndInformation => '[ES] App version and information (Spanish)';
+  String get appVersionAndInformation =>
+      '[ES] App version and information (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Business Subscription Entry Screen - Coming Soon (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Business Subscription Entry Screen - Coming Soon (Spanish)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1368,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ES] Tu pago ha sido procesado exitosamente';
+  String get REDACTED_TOKEN =>
+      '[ES] Tu pago ha sido procesado exitosamente';
 
   @override
   String get errorE => '[ES] Error: \$e (Spanish)';
@@ -1283,7 +1378,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get viewAll1 => '[ES] Ver todo';
 
   @override
-  String get editSurveyComingSoon => '[ES] Edit survey - Coming soon! (Spanish)';
+  String get editSurveyComingSoon =>
+      '[ES] Edit survey - Coming soon! (Spanish)';
 
   @override
   String get enterOtp => '[ES] Enter OTP (Spanish)';
@@ -1292,7 +1388,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get payment => '[ES] Payment (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Automatically confirm new booking requests (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Automatically confirm new booking requests (Spanish)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1402,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[ES] Please sign in to upload a background (Spanish)';
+  String get pleaseSignInToUploadABackground =>
+      '[ES] Please sign in to upload a background (Spanish)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1420,22 @@ class AppLocalizationsEs extends AppLocalizations {
   String get autoconfirmBookings => '[ES] Auto-Confirm Bookings (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Redirecting to Stripe checkout for Pro plan... (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Redirecting to Stripe checkout for Pro plan... (Spanish)';
 
   @override
   String get exportAsCsv => '[ES] Export as CSV (Spanish)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[ES] Delete functionality coming soon! (Spanish)';
+  String get deleteFunctionalityComingSoon =>
+      '[ES] Delete functionality coming soon! (Spanish)';
 
   @override
   String get editClient => '[ES] Edit Client (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Are you sure you want to delete this message? (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Are you sure you want to delete this message? (Spanish)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1446,39 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notAuthenticated => '[ES] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[ES] Privacy request sent to your parents! (Spanish)';
+  String get privacyRequestSentToYourParents =>
+      '[ES] Privacy request sent to your parents! (Spanish)';
 
   @override
-  String get clientDeletedSuccessfully => '[ES] Client deleted successfully! (Spanish)';
+  String get clientDeletedSuccessfully =>
+      '[ES] Client deleted successfully! (Spanish)';
 
   @override
-  String get failedToCancelSubscription => '[ES] Failed to cancel subscription (Spanish)';
+  String get failedToCancelSubscription =>
+      '[ES] Failed to cancel subscription (Spanish)';
 
   @override
   String get allLanguages => '[ES] All Languages (Spanish)';
 
   @override
-  String get slotDeletedSuccessfully => '[ES] Slot deleted successfully (Spanish)';
+  String get slotDeletedSuccessfully =>
+      '[ES] Slot deleted successfully (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[ES] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Parents must approve before children can join (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Parents must approve before children can join (Spanish)';
 
   @override
-  String get subscribeToPro1499mo => '[ES] Subscribe to Pro (€14.99/mo) (Spanish)';
+  String get subscribeToPro1499mo =>
+      '[ES] Subscribe to Pro (€14.99/mo) (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Business Availability Entry Screen - Coming Soon (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Business Availability Entry Screen - Coming Soon (Spanish)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1492,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get submitBooking => '[ES] Submit Booking (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Are you sure you want to cancel this appointment? (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Are you sure you want to cancel this appointment? (Spanish)';
 
   @override
   String get noUpcomingBookings => '[ES] No upcoming bookings (Spanish)';
@@ -1401,7 +1511,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get goToDashboard => '[ES] Go to Dashboard (Spanish)';
 
   @override
-  String get ambassadorQuotaDashboard => '[ES] Ambassador Quota Dashboard (Spanish)';
+  String get ambassadorQuotaDashboard =>
+      '[ES] Ambassador Quota Dashboard (Spanish)';
 
   @override
   String get adminSettings => '[ES] Admin Settings';
@@ -1439,7 +1550,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get sessionApproved => 'Sesión aprobada';
 
   @override
-  String get clientAddedSuccessfully => '[ES] Client added successfully! (Spanish)';
+  String get clientAddedSuccessfully =>
+      '[ES] Client added successfully! (Spanish)';
 
   @override
   String get noNotifications => 'Sin notificaciones';
@@ -1457,7 +1569,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get bookAppointment => '[ES] Book Appointment (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => 'Recibir notificaciones push para nuevas reservas';
+  String get REDACTED_TOKEN =>
+      'Recibir notificaciones push para nuevas reservas';
 
   @override
   String get delete1 => '[ES] Delete (Spanish)';
@@ -1472,13 +1585,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get manageSubscription => '[ES] Manage Subscription (Spanish)';
 
   @override
-  String get requiresInstallFallback => '[ES] Requires Install Fallback (Spanish)';
+  String get requiresInstallFallback =>
+      '[ES] Requires Install Fallback (Spanish)';
 
   @override
   String get paymentConfirmation => '[ES] Payment Confirmation (Spanish)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[ES] Promo applied! Your next bill is free. (Spanish)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[ES] Promo applied! Your next bill is free. (Spanish)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1604,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get errorLoadingSlots => '[ES] Error loading slots (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Allow other users to find and join this game (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Allow other users to find and join this game (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Business Onboarding Screen - Coming Soon (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Business Onboarding Screen - Coming Soon (Spanish)';
 
   @override
-  String get activateBusinessProfile => '[ES] Activate Business Profile (Spanish)';
+  String get activateBusinessProfile =>
+      '[ES] Activate Business Profile (Spanish)';
 
   @override
   String get contentNotFound => '[ES] Content not found (Spanish)';
@@ -1537,7 +1655,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get shareLink => '[ES] Share Link (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[ES] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[ES] Delete Appointment (Spanish)';
@@ -1557,10 +1676,12 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[ES] Update your business information (Spanish)';
+  String get updateYourBusinessInformation =>
+      '[ES] Update your business information (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[ES] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[ES] Parent Dashboard (Spanish)';
@@ -1583,10 +1704,12 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ES] Studio booking is only available on web (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Studio booking is only available on web (Spanish)';
 
   @override
-  String get errorLoadingBranchesE => '[ES] Error loading branches: \$e (Spanish)';
+  String get errorLoadingBranchesE =>
+      '[ES] Error loading branches: \$e (Spanish)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1602,13 +1725,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get none => '[ES] None (Spanish)';
 
   @override
-  String get failedToUpdateConsentE => '[ES] Failed to update consent: \$e (Spanish)';
+  String get failedToUpdateConsentE =>
+      '[ES] Failed to update consent: \$e (Spanish)';
 
   @override
   String get welcome1 => '[ES] Bienvenido';
 
   @override
-  String get failedToCreateSessionE => '[ES] Failed to create session: \$e (Spanish)';
+  String get failedToCreateSessionE =>
+      '[ES] Failed to create session: \$e (Spanish)';
 
   @override
   String get inviteContact => '[ES] Invite Contact (Spanish)';
@@ -1617,7 +1742,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get surveyEditor => '[ES] Survey Editor (Spanish)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[ES] Failed to start Basic subscription: \$e (Spanish)';
+  String get failedToStartBasicSubscriptionE =>
+      '[ES] Failed to start Basic subscription: \$e (Spanish)';
 
   @override
   String get mySchedule => '[ES] My Schedule (Spanish)';
@@ -1637,10 +1763,12 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[ES] Settings saved successfully! (Spanish)';
+  String get settingsSavedSuccessfully =>
+      '[ES] Settings saved successfully! (Spanish)';
 
   @override
-  String get linkCopiedToClipboard => '[ES] Link copied to clipboard! (Spanish)';
+  String get linkCopiedToClipboard =>
+      '[ES] Link copied to clipboard! (Spanish)';
 
   @override
   String get accept1 => '[ES] Accept (Spanish)';
@@ -1657,7 +1785,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[ES] Room deleted successfully! (Spanish)';
+  String get roomDeletedSuccessfully =>
+      '[ES] Room deleted successfully! (Spanish)';
 
   @override
   String get businessCalendar => '[ES] Business Calendar (Spanish)';
@@ -1722,7 +1851,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get cancel1 => '[ES] Cancel (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Subscription activated successfully! (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Subscription activated successfully! (Spanish)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1863,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get broadcast => '[ES] Broadcast (Spanish)';
 
   @override
-  String get noEventsScheduledThisWeek => '[ES] No events scheduled this week (Spanish)';
+  String get noEventsScheduledThisWeek =>
+      '[ES] No events scheduled this week (Spanish)';
 
   @override
   String get googleCalendar => '[ES] Google Calendar (Spanish)';
@@ -1745,7 +1876,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get childDashboard => '[ES] Child Dashboard (Spanish)';
 
   @override
-  String get failedToUploadBackgroundE => '[ES] Failed to upload background: \$e (Spanish)';
+  String get failedToUploadBackgroundE =>
+      '[ES] Failed to upload background: \$e (Spanish)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1896,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noAppointments => '[ES] No appointments (Spanish)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[ES] • Unlimited bookings per week (Spanish)';
+  String get unlimitedBookingsPerWeek =>
+      '[ES] • Unlimited bookings per week (Spanish)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1905,19 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[ES] Scheduled at: \$scheduledAt (Spanish)';
+  String get scheduledAtScheduledat =>
+      '[ES] Scheduled at: \$scheduledAt (Spanish)';
 
   @override
   String get selectStaff => '[ES] Select Staff (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Subscription cancelled successfully (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Subscription cancelled successfully (Spanish)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'Por favor inicia sesión para ver tu perfil';
+  String get pleaseLogInToViewYourProfile =>
+      'Por favor inicia sesión para ver tu perfil';
 
   @override
   String get cancelAppointment => '[ES] Cancel Appointment (Spanish)';
@@ -1795,7 +1931,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get businessSignup => '[ES] Business Signup (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Business Completion Screen - Coming Soon (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Business Completion Screen - Coming Soon (Spanish)';
 
   @override
   String get createGame1 => '[ES] Create Game (Spanish)';
@@ -1806,10 +1943,12 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[ES] Please enter a promo code (Spanish)';
+  String get pleaseEnterAPromoCode =>
+      '[ES] Please enter a promo code (Spanish)';
 
   @override
-  String get errorLoadingAvailabilityE => '[ES] Error loading availability: \$e (Spanish)';
+  String get errorLoadingAvailabilityE =>
+      '[ES] Error loading availability: \$e (Spanish)';
 
   @override
   String get parentalControls => '[ES] Parental Controls (Spanish)';
@@ -1818,13 +1957,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get editBusinessProfile => 'Editar perfil empresarial';
 
   @override
-  String get childLinkedSuccessfully => '[ES] Child linked successfully! (Spanish)';
+  String get childLinkedSuccessfully =>
+      '[ES] Child linked successfully! (Spanish)';
 
   @override
   String get create => '[ES] Create (Spanish)';
 
   @override
-  String get noExternalMeetingsFound => '[ES] No external meetings found. (Spanish)';
+  String get noExternalMeetingsFound =>
+      '[ES] No external meetings found. (Spanish)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1973,15 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[ES] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[ES] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[ES] Scheduler Screen (Spanish)';
 
   @override
-  String get clientUpdatedSuccessfully => '[ES] Client updated successfully! (Spanish)';
+  String get clientUpdatedSuccessfully =>
+      '[ES] Client updated successfully! (Spanish)';
 
   @override
   String get surveyResponses => '[ES] Survey Responses (Spanish)';
@@ -1867,7 +2010,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get errorLoadingOrganizations => '[ES] Error al cargar organizaciones';
 
   @override
-  String get businessLoginScreenComingSoon => '[ES] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[ES] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[ES] Success (Spanish)';
@@ -1886,10 +2030,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get readWrite => '[ES] Read & Write (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Redirecting to Stripe checkout for Basic plan... (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Redirecting to Stripe checkout for Basic plan... (Spanish)';
 
   @override
-  String get errorSavingConfigurationE => '[ES] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[ES] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[ES] Pick Date (Spanish)';
@@ -1925,10 +2071,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get businessLogin => '[ES] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[ES] Invoice created successfully! (Spanish)';
+  String get invoiceCreatedSuccessfully =>
+      '[ES] Invoice created successfully! (Spanish)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[ES] No time series data available (Spanish)';
+  String get noTimeSeriesDataAvailable =>
+      '[ES] No time series data available (Spanish)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2089,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[ES] Failed to send privacy request: \$e (Spanish)';
+  String get failedToSendPrivacyRequestE =>
+      '[ES] Failed to send privacy request: \$e (Spanish)';
 
   @override
   String get chooseYourPlan => '[ES] Choose Your Plan (Spanish)';
@@ -1956,13 +2105,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get eventCreated => '[ES] Event created (Spanish)';
 
   @override
-  String get subscribeToBasic499mo => '[ES] Subscribe to Basic (€4.99/mo) (Spanish)';
+  String get subscribeToBasic499mo =>
+      '[ES] Subscribe to Basic (€4.99/mo) (Spanish)';
 
   @override
   String get completion => '[ES] Completion (Spanish)';
 
   @override
-  String get supportTicketSubmitted => '[ES] Support ticket submitted (Spanish)';
+  String get supportTicketSubmitted =>
+      '[ES] Support ticket submitted (Spanish)';
 
   @override
   String get monetizationSettings => '[ES] Monetization Settings (Spanish)';
@@ -1977,10 +2128,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get deleteSurvey => '[ES] Delete Survey (Spanish)';
 
   @override
-  String get gameApprovedSuccessfully => '[ES] Game approved successfully! (Spanish)';
+  String get gameApprovedSuccessfully =>
+      '[ES] Game approved successfully! (Spanish)';
 
   @override
-  String get errorLoadingPermissionsError => '[ES] Error loading permissions: \$error (Spanish)';
+  String get errorLoadingPermissionsError =>
+      '[ES] Error loading permissions: \$error (Spanish)';
 
   @override
   String get referrals => '[ES] Referrals (Spanish)';
@@ -2022,7 +2175,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get organizations => '[ES] Organizaciones';
 
   @override
-  String get configurationSavedSuccessfully => '[ES] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[ES] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[ES] Create New Game (Spanish)';
@@ -2031,13 +2185,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get next1 => '[ES] Next (Spanish)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[ES] Background uploaded successfully! (Spanish)';
+  String get backgroundUploadedSuccessfully =>
+      '[ES] Background uploaded successfully! (Spanish)';
 
   @override
-  String get noAppointmentRequestsFound => '[ES] No appointment requests found. (Spanish)';
+  String get noAppointmentRequestsFound =>
+      '[ES] No appointment requests found. (Spanish)';
 
   @override
-  String get pleaseSignInToCreateASession => 'Por favor inicia sesión para crear una sesión';
+  String get pleaseSignInToCreateASession =>
+      'Por favor inicia sesión para crear una sesión';
 
   @override
   String get restrictMatureContent => '[ES] Restrict mature content (Spanish)';
@@ -2061,7 +2218,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get notifications1 => 'Notificaciones';
 
   @override
-  String get REDACTED_TOKEN => 'Sesión en vivo programada, esperando aprobación del padre';
+  String get REDACTED_TOKEN =>
+      'Sesión en vivo programada, esperando aprobación del padre';
 
   @override
   String get failedToCreateGameE => '[ES] Failed to create game: \$e (Spanish)';
@@ -2070,7 +2228,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noChartDataAvailable => '[ES] No chart data available (Spanish)';
 
   @override
-  String get phonebasedBookingSystem => '[ES] • Phone-based booking system (Spanish)';
+  String get phonebasedBookingSystem =>
+      '[ES] • Phone-based booking system (Spanish)';
 
   @override
   String get enableNotifications1 => 'Habilitar notificaciones';
@@ -2079,7 +2238,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get invoices => '[ES] Invoices (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => 'Por favor activa tu perfil empresarial para continuar';
+  String get REDACTED_TOKEN =>
+      'Por favor activa tu perfil empresarial para continuar';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2266,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get iDoNotConsent => '[ES] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[ES] No clients found. Add your first client! (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] No clients found. Add your first client! (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[ES] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[ES] Group: \$groupId';
@@ -2132,7 +2294,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[ES] • CRM dashboard with analytics (Spanish)';
+  String get crmDashboardWithAnalytics =>
+      '[ES] • CRM dashboard with analytics (Spanish)';
 
   @override
   String get contentLibrary1 => '[ES] Content Library (Spanish)';
@@ -2144,25 +2307,30 @@ class AppLocalizationsEs extends AppLocalizations {
   String get subscriptionManagement => '[ES] Subscription Management (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Monetization settings will be implemented here (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Monetization settings will be implemented here (Spanish)';
 
   @override
-  String get failedToApplyPromoCodeE => '[ES] Failed to apply promo code: \$e (Spanish)';
+  String get failedToApplyPromoCodeE =>
+      '[ES] Failed to apply promo code: \$e (Spanish)';
 
   @override
   String get editProvider => '[ES] Edit Provider';
 
   @override
-  String get localizationContribution => '[ES] Localization Contribution (Spanish)';
+  String get localizationContribution =>
+      '[ES] Localization Contribution (Spanish)';
 
   @override
   String get parentalConsent => '[ES] Parental Consent (Spanish)';
 
   @override
-  String get businessSignupScreenComingSoon => '[ES] Business Signup Screen - Coming Soon (Spanish)';
+  String get businessSignupScreenComingSoon =>
+      '[ES] Business Signup Screen - Coming Soon (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => '[ES] Are you sure you want to delete this appointment? (Spanish)';
+  String get REDACTED_TOKEN =>
+      '[ES] Are you sure you want to delete this appointment? (Spanish)';
 
   @override
   String get syncAppointment => '[ES] Sync Appointment (Spanish)';
@@ -2174,13 +2342,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get sessionRejected => 'Sesión rechazada';
 
   @override
-  String get businessSetupScreenComingSoon => '[ES] Business Setup Screen - Coming Soon (Spanish)';
+  String get businessSetupScreenComingSoon =>
+      '[ES] Business Setup Screen - Coming Soon (Spanish)';
 
   @override
   String get edit1 => '[ES] Edit (Spanish)';
 
   @override
-  String get noEventsScheduledThisMonth => '[ES] No events scheduled this month (Spanish)';
+  String get noEventsScheduledThisMonth =>
+      '[ES] No events scheduled this month (Spanish)';
 
   @override
   String get businessDashboard => '[ES] Business Dashboard (Spanish)';
@@ -2194,7 +2364,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[ES] Manage Staff Availability (Spanish)';
+  String get manageStaffAvailability =>
+      '[ES] Manage Staff Availability (Spanish)';
 
   @override
   String get noMissingTranslations => '[ES] No missing translations (Spanish)';
@@ -2211,7 +2382,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get noUsers => '[ES] Sin usuarios';
 
   @override
-  String get errorLoadingReferralCode => '[ES] Error loading referral code (Spanish)';
+  String get errorLoadingReferralCode =>
+      '[ES] Error loading referral code (Spanish)';
 
   @override
   String get allCountries => '[ES] All Countries (Spanish)';
@@ -2226,7 +2398,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get deleteMessage => '[ES] Delete Message (Spanish)';
 
   @override
-  String get REDACTED_TOKEN => 'Recibir notificaciones de reserva por SMS';
+  String get REDACTED_TOKEN =>
+      'Recibir notificaciones de reserva por SMS';
 
   @override
   String get changeRole => '[ES] Cambiar rol';
@@ -2237,7 +2410,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[ES] Opening customer portal... (Spanish)';
+  String get openingCustomerPortal =>
+      '[ES] Opening customer portal... (Spanish)';
 
   @override
   String get signOut => '[ES] Sign Out (Spanish)';
@@ -2248,7 +2422,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'Pantalla de entrada del perfil empresarial - Próximamente';
+  String get REDACTED_TOKEN =>
+      'Pantalla de entrada del perfil empresarial - Próximamente';
 
   @override
   String get upgradeToBusiness => '[ES] Actualizar a negocio';
@@ -2274,13 +2449,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get deleteMyAccount => 'Eliminar mi cuenta';
 
   @override
-  String get REDACTED_TOKEN => 'Pantalla de entrada de citas comerciales - Próximamente';
+  String get REDACTED_TOKEN =>
+      'Pantalla de entrada de citas comerciales - Próximamente';
 
   @override
   String get viewResponses => '[ES] Ver respuestas';
 
   @override
-  String get businessWelcomeScreenComingSoon => 'Pantalla de bienvenida empresarial - Próximamente';
+  String get businessWelcomeScreenComingSoon =>
+      'Pantalla de bienvenida empresarial - Próximamente';
 
   @override
   String failedToOpenCustomerPortalE(Object e) {
@@ -2303,7 +2480,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get approve => 'Aprobar';
 
   @override
-  String get REDACTED_TOKEN => 'No se encontraron facturas. ¡Crea tu primera factura!';
+  String get REDACTED_TOKEN =>
+      'No se encontraron facturas. ¡Crea tu primera factura!';
 
   @override
   String get subscribe => 'Suscribirse';
@@ -2321,7 +2499,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get ad_pre_title => 'Mira un anuncio para confirmar tu cita';
 
   @override
-  String get ad_pre_description => 'Como usuario gratuito, debes ver un anuncio corto antes de confirmar. Puedes eliminar todos los anuncios permanentemente actualizando.';
+  String get ad_pre_description =>
+      'Como usuario gratuito, debes ver un anuncio corto antes de confirmar. Puedes eliminar todos los anuncios permanentemente actualizando.';
 
   @override
   String get watch_ad_button => 'Ver Anuncio';
@@ -2330,7 +2509,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get upgrade_button => 'Actualizar a Premium (€4)';
 
   @override
-  String get ad_post_title => '¡Anuncio terminado! Ahora puedes confirmar tu cita.';
+  String get ad_post_title =>
+      '¡Anuncio terminado! Ahora puedes confirmar tu cita.';
 
   @override
   String get confirm_appointment_button => 'Confirmar Cita';
@@ -2339,7 +2519,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get upgrade_prompt_title => 'Actualización única';
 
   @override
-  String get upgrade_prompt_description => 'Paga €4 para eliminar todos los anuncios para siempre';
+  String get upgrade_prompt_description =>
+      'Paga €4 para eliminar todos los anuncios para siempre';
 
   @override
   String get purchase_now_button => 'Comprar Ahora';
@@ -2378,7 +2559,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2608,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[ES] Congratulations! You\'re now an Ambassador! (Spanish)';
+  String get ambassadorPromotionTitle =>
+      '[ES] Congratulations! You\'re now an Ambassador! (Spanish)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2624,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get tierUpgradeTitle => '[ES] Tier Upgrade! 🎉 (Spanish)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[ES] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Spanish)';
   }
 
@@ -2448,20 +2636,29 @@ class AppLocalizationsEs extends AppLocalizations {
   String get monthlyReminderTitle => '[ES] Monthly Goal Reminder (Spanish)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[ES] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Spanish)';
   }
 
   @override
-  String get performanceWarningTitle => '[ES] Ambassador Performance Alert (Spanish)';
+  String get performanceWarningTitle =>
+      '[ES] Ambassador Performance Alert (Spanish)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[ES] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Spanish)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[ES] Ambassador Status Update (Spanish)';
+  String get ambassadorDemotionTitle =>
+      '[ES] Ambassador Status Update (Spanish)';
 
   @override
   String ambassadorDemotionBody(String reason) {
@@ -2479,7 +2676,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
 /// The translations for Spanish Castilian, as used in Latin America and the Caribbean (`es_419`).
 class AppLocalizationsEs419 extends AppLocalizationsEs {
-  AppLocalizationsEs419(): super('es_419');
+  AppLocalizationsEs419() : super('es_419');
 
   @override
   String get refresh => '[ES_419] [ES_419] Refresh';
@@ -2494,7 +2691,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get ok => '[ES_419] [ES_419] OK';
 
   @override
-  String get playtimeLandingChooseMode => '[ES_419] [ES_419] Choose your play mode:';
+  String get playtimeLandingChooseMode =>
+      '[ES_419] [ES_419] Choose your play mode:';
 
   @override
   String get signUp => '[ES_419] [ES_419] Sign Up';
@@ -2512,7 +2710,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get login => '[ES_419] [ES_419] Login';
 
   @override
-  String get playtimeChooseFriends => '[ES_419] [ES_419] Choose friends to invite';
+  String get playtimeChooseFriends =>
+      '[ES_419] [ES_419] Choose friends to invite';
 
   @override
   String get noInvites => '[ES_419] [ES_419] No invites';
@@ -2535,7 +2734,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get createVirtualSession => '[ES_419] [ES_419] Create Virtual Session';
 
   @override
-  String get messageSentSuccessfully => '[ES_419] [ES_419] Message sent successfully';
+  String get messageSentSuccessfully =>
+      '[ES_419] [ES_419] Message sent successfully';
 
   @override
   String get redo => '[ES_419] [ES_419] Redo';
@@ -2547,7 +2747,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get search => '[ES_419] [ES_419] Search';
 
   @override
-  String get cancelInviteConfirmation => '[ES_419] [ES_419] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation =>
+      '[ES_419] [ES_419] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -2558,10 +2759,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get revokeAccess => '[ES_419] [ES_419] Revoke Access';
 
   @override
-  String get playtimeLiveScheduled => '[ES_419] [ES_419] Live playtime scheduled!';
+  String get playtimeLiveScheduled =>
+      '[ES_419] [ES_419] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => '[ES_419] [ES_419] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[ES_419] [ES_419] Are you sure you want to revoke access?';
 
   @override
   String get download => '[ES_419] [ES_419] Download';
@@ -2595,13 +2798,15 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get playtimeModeVirtual => '[ES_419] [ES_419] Virtual Play';
 
   @override
-  String get playtimeDescription => '[ES_419] [ES_419] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription =>
+      '[ES_419] [ES_419] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[ES_419] [ES_419] Delete';
 
   @override
-  String get playtimeVirtualStarted => '[ES_419] [ES_419] Virtual playtime started!';
+  String get playtimeVirtualStarted =>
+      '[ES_419] [ES_419] Virtual playtime started!';
 
   @override
   String get createYourFirstGame => '[ES_419] [ES_419] Create your first game';
@@ -2630,7 +2835,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get done => '[ES_419] [ES_419] Done';
 
   @override
-  String get defaultShareMessage => '[ES_419] [ES_419] Let\'s meet via Appoint!';
+  String get defaultShareMessage =>
+      '[ES_419] [ES_419] Let\'s meet via Appoint!';
 
   @override
   String get no => '[ES_419] [ES_419] No';
@@ -2655,7 +2861,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[ES_419] [ES_419] Meeting shared successfully';
+  String get meetingSharedSuccessfully =>
+      '[ES_419] [ES_419] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[ES_419] [ES_419] Welcome to Playtime';
@@ -2673,13 +2880,15 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get cut => '[ES_419] [ES_419] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => '[ES_419] [ES_419] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully =>
+      '[ES_419] [ES_419] Invite cancelled successfully';
 
   @override
   String get retry => '[ES_419] [ES_419] Retry';
 
   @override
-  String get composeBroadcastMessage => '[ES_419] [ES_419] Compose Broadcast Message';
+  String get composeBroadcastMessage =>
+      '[ES_419] [ES_419] Compose Broadcast Message';
 
   @override
   String get sendNow => '[ES_419] [ES_419] Send Now';
@@ -2717,7 +2926,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get welcome => '[ES_419] [ES_419] Welcome';
 
   @override
-  String get playtimeCreateSession => '[ES_419] [ES_419] Create a Playtime Session';
+  String get playtimeCreateSession =>
+      '[ES_419] [ES_419] Create a Playtime Session';
 
   @override
   String get familyMembers => '[ES_419] [ES_419] Family Members';
@@ -2750,7 +2960,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get scheduleForLater => '[ES_419] [ES_419] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully => '[ES_419] [ES_419] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[ES_419] [ES_419] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -2835,7 +3046,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get playtimeTitle => '[ES_419] [ES_419] Playtime';
 
   @override
-  String get otpResentSuccessfully => '[ES_419] [ES_419] OTP resent successfully';
+  String get otpResentSuccessfully =>
+      '[ES_419] [ES_419] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
@@ -2866,7 +3078,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get mediaOptional => '[ES_419] [ES_419] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => '[ES_419] [ES_419] Message saved successfully';
+  String get messageSavedSuccessfully =>
+      '[ES_419] [ES_419] Message saved successfully';
 
   @override
   String get scheduledFor => '[ES_419] [ES_419] Scheduled for';
@@ -2875,7 +3088,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get dashboard => '[ES_419] [ES_419] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => '[ES_419] [ES_419] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[ES_419] [ES_419] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[ES_419] Playtime Games – Admin';
@@ -2908,7 +3122,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get playtimeApprove => '[ES_419] [ES_419] Approve';
 
   @override
-  String get createYourFirstSession => '[ES_419] [ES_419] Create your first session';
+  String get createYourFirstSession =>
+      '[ES_419] [ES_419] Create your first session';
 
   @override
   String get playtimeGameRejected => '[ES_419] [ES_419] Game rejected';
@@ -2952,7 +3167,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get playtimeEnterGameName => '[ES_419] [ES_419] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[ES_419] [ES_419] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[ES_419] [ES_419] Please login to access family features';
 
   @override
   String get myInvites => '[ES_419] [ES_419] My Invites';
@@ -2961,13 +3177,15 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get createGame => '[ES_419] [ES_419] Create Game';
 
   @override
-  String get playtimeNoSessions => '[ES_419] [ES_419] No playtime sessions found.';
+  String get playtimeNoSessions =>
+      '[ES_419] [ES_419] No playtime sessions found.';
 
   @override
   String get adminScreenTBD => '[ES_419] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => '[ES_419] [ES_419] Playtime Dashboard';
+  String get playtimeParentDashboardTitle =>
+      '[ES_419] [ES_419] Playtime Dashboard';
 
   @override
   String get close => '[ES_419] [ES_419] Close';
@@ -2995,7 +3213,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get meetingReadyMessage => '[ES_419] [ES_419] Your meeting is ready! Join now';
+  String get meetingReadyMessage =>
+      '[ES_419] [ES_419] Your meeting is ready! Join now';
 
   @override
   String get pendingInvites => '[ES_419] [ES_419] Pending Invites';
@@ -3006,7 +3225,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[ES_419] [ES_419] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[ES_419] [ES_419] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[ES_419] Admin Metrics';
@@ -3027,40 +3247,52 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get contentLibrary => '[ES_419] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[ES_419] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[ES_419] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[ES_419] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[ES_419] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[ES_419] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[ES_419] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[ES_419] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[ES_419] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[ES_419] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[ES_419] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[ES_419] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[ES_419] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[ES_419] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[ES_419] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[ES_419] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[ES_419] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[ES_419] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[ES_419] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[ES_419] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[ES_419] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[ES_419] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[ES_419] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -3077,67 +3309,88 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[ES_419] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[ES_419] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[ES_419] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[ES_419] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[ES_419] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[ES_419] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Please enter the verification code.';
 
   @override
-  String get authErrorMissingVerificationId => '[ES_419] Missing verification ID.';
+  String get authErrorMissingVerificationId =>
+      '[ES_419] Missing verification ID.';
 
   @override
-  String get authErrorInvalidPhoneNumber => '[ES_419] The phone number is invalid.';
+  String get authErrorInvalidPhoneNumber =>
+      '[ES_419] The phone number is invalid.';
 
   @override
-  String get authErrorMissingPhoneNumber => '[ES_419] Please enter a phone number.';
+  String get authErrorMissingPhoneNumber =>
+      '[ES_419] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[ES_419] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[ES_419] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[ES_419] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[ES_419] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[ES_419] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[ES_419] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[ES_419] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[ES_419] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[ES_419] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[ES_419] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[ES_419] The ID token is invalid.';
@@ -3146,91 +3399,116 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get authErrorIdTokenExpired => '[ES_419] The ID token has expired.';
 
   @override
-  String get authErrorIdTokenRevoked => '[ES_419] The ID token has been revoked.';
+  String get authErrorIdTokenRevoked =>
+      '[ES_419] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[ES_419] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[ES_419] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[ES_419] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[ES_419] An invalid argument was provided.';
 
   @override
-  String get authErrorInvalidClaims => '[ES_419] Invalid custom claims provided.';
+  String get authErrorInvalidClaims =>
+      '[ES_419] Invalid custom claims provided.';
 
   @override
-  String get authErrorInvalidContinueUri => '[ES_419] The continue URL is invalid.';
+  String get authErrorInvalidContinueUri =>
+      '[ES_419] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[ES_419] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[ES_419] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[ES_419] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[ES_419] The disabled field value is invalid.';
 
   @override
-  String get authErrorInvalidDisplayName => '[ES_419] The display name is invalid.';
+  String get authErrorInvalidDisplayName =>
+      '[ES_419] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[ES_419] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[ES_419] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[ES_419] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[ES_419] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[ES_419] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[ES_419] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[ES_419] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[ES_419] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[ES_419] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[ES_419] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[ES_419] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[ES_419] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[ES_419] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[ES_419] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[ES_419] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[ES_419] The provider data is invalid.';
 
   @override
-  String get authErrorInvalidProviderId => '[ES_419] The provider ID is invalid.';
+  String get authErrorInvalidProviderId =>
+      '[ES_419] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[ES_419] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[ES_419] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[ES_419] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[ES_419] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[ES_419] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[ES_419] Missing continue URL.';
 
   @override
-  String get authErrorMissingHashAlgorithm => '[ES_419] Missing hash algorithm.';
+  String get authErrorMissingHashAlgorithm =>
+      '[ES_419] Missing hash algorithm.';
 
   @override
   String get authErrorMissingIosBundleId => '[ES_419] Missing iOS bundle ID.';
@@ -3239,7 +3517,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get authErrorMissingUid => '[ES_419] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[ES_419] Firebase project not found.';
@@ -3248,19 +3527,23 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get authErrorReservedClaims => '[ES_419] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[ES_419] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[ES_419] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[ES_419] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[ES_419] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[ES_419] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[ES_419] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[ES_419] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -3309,7 +3592,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Virtual session created! Inviting friends... (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Virtual session created! Inviting friends... (Spanish (Latin America))';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -3335,13 +3619,16 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get signIn => '[ES_419] Sign In (Spanish (Latin America))';
 
   @override
-  String get homeFeedScreen => '[ES_419] Home Feed Screen (Spanish (Latin America))';
+  String get homeFeedScreen =>
+      '[ES_419] Home Feed Screen (Spanish (Latin America))';
 
   @override
-  String get selectLocation => '[ES_419] Select Location (Spanish (Latin America))';
+  String get selectLocation =>
+      '[ES_419] Select Location (Spanish (Latin America))';
 
   @override
-  String get noTicketsYet => '[ES_419] No tickets yet (Spanish (Latin America))';
+  String get noTicketsYet =>
+      '[ES_419] No tickets yet (Spanish (Latin America))';
 
   @override
   String get meetingSharedSuccessfully1 => 'تم مشاركة الاجتماع بنجاح';
@@ -3350,13 +3637,16 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[ES_419] Subscription unavailable (Spanish (Latin America))';
+  String get subscriptionUnavailable =>
+      '[ES_419] Subscription unavailable (Spanish (Latin America))';
 
   @override
-  String get confirmBooking => '[ES_419] Confirm Booking (Spanish (Latin America))';
+  String get confirmBooking =>
+      '[ES_419] Confirm Booking (Spanish (Latin America))';
 
   @override
-  String get failedToUpdatePermissionE => '[ES_419] Failed to update permission: \$e (Spanish (Latin America))';
+  String get failedToUpdatePermissionE =>
+      '[ES_419] Failed to update permission: \$e (Spanish (Latin America))';
 
   @override
   String get reject => '[ES_419] Reject (Spanish (Latin America))';
@@ -3370,7 +3660,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get noProviders => '[ES_419] No providers';
 
   @override
-  String get checkingSubscription => '[ES_419] Checking subscription... (Spanish (Latin America))';
+  String get checkingSubscription =>
+      '[ES_419] Checking subscription... (Spanish (Latin America))';
 
   @override
   String errorPickingImageE(Object e) {
@@ -3378,13 +3669,15 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get noContentAvailableYet => '[ES_419] No content available yet (Spanish (Latin America))';
+  String get noContentAvailableYet =>
+      '[ES_419] No content available yet (Spanish (Latin America))';
 
   @override
   String get resolve => '[ES_419] Resolve (Spanish (Latin America))';
 
   @override
-  String get errorLoadingSurveysError => '[ES_419] Error loading surveys: \$error (Spanish (Latin America))';
+  String get errorLoadingSurveysError =>
+      '[ES_419] Error loading surveys: \$error (Spanish (Latin America))';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -3392,7 +3685,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get getHelpWithYourAccount => '[ES_419] Get help with your account (Spanish (Latin America))';
+  String get getHelpWithYourAccount =>
+      '[ES_419] Get help with your account (Spanish (Latin America))';
 
   @override
   String get pay => '[ES_419] Pay (Spanish (Latin America))';
@@ -3407,10 +3701,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[ES_419] Changes saved successfully! (Spanish (Latin America))';
+  String get changesSavedSuccessfully =>
+      '[ES_419] Changes saved successfully! (Spanish (Latin America))';
 
   @override
-  String get createNewInvoice => '[ES_419] Create New Invoice (Spanish (Latin America))';
+  String get createNewInvoice =>
+      '[ES_419] Create New Invoice (Spanish (Latin America))';
 
   @override
   String get profileNotFound => 'الملف الشخصي غير موجود';
@@ -3424,10 +3720,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get inviteFriends => 'دعوة الأصدقاء';
 
   @override
-  String get profileSaved => '[ES_419] Profile saved! (Spanish (Latin America))';
+  String get profileSaved =>
+      '[ES_419] Profile saved! (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -3435,16 +3733,19 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get deleteAccount => '[ES_419] Delete Account (Spanish (Latin America))';
+  String get deleteAccount =>
+      '[ES_419] Delete Account (Spanish (Latin America))';
 
   @override
   String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding => '[ES_419] Business Onboarding (Spanish (Latin America))';
+  String get businessOnboarding =>
+      '[ES_419] Business Onboarding (Spanish (Latin America))';
 
   @override
-  String get addNewClient => '[ES_419] Add New Client (Spanish (Latin America))';
+  String get addNewClient =>
+      '[ES_419] Add New Client (Spanish (Latin America))';
 
   @override
   String get darkMode => '[ES_419] Dark Mode (Spanish (Latin America))';
@@ -3458,13 +3759,15 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] You will receive a confirmation email shortly. (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] You will receive a confirmation email shortly. (Spanish (Latin America))';
 
   @override
   String get addQuestion => '[ES_419] Add Question (Spanish (Latin America))';
 
   @override
-  String get privacyPolicy => '[ES_419] Privacy Policy (Spanish (Latin America))';
+  String get privacyPolicy =>
+      '[ES_419] Privacy Policy (Spanish (Latin America))';
 
   @override
   String branchesLengthBranches(Object branchCount) {
@@ -3475,7 +3778,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get join => '[ES_419] Join (Spanish (Latin America))';
 
   @override
-  String get businessSubscription => '[ES_419] Business Subscription (Spanish (Latin America))';
+  String get businessSubscription =>
+      '[ES_419] Business Subscription (Spanish (Latin America))';
 
   @override
   String get myInvites1 => 'دعواتي';
@@ -3484,34 +3788,43 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get providers => '[ES_419] Providers';
 
   @override
-  String get surveyManagement => '[ES_419] Survey Management (Spanish (Latin America))';
+  String get surveyManagement =>
+      '[ES_419] Survey Management (Spanish (Latin America))';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[ES_419] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[ES_419] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[ES_419] No rooms found. Add your first room! (Spanish (Latin America))';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[ES_419] No rooms found. Add your first room! (Spanish (Latin America))';
 
   @override
-  String get readOurPrivacyPolicy => '[ES_419] Read our privacy policy (Spanish (Latin America))';
+  String get readOurPrivacyPolicy =>
+      '[ES_419] Read our privacy policy (Spanish (Latin America))';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[ES_419] Could not open privacy policy (Spanish (Latin America))';
+  String get couldNotOpenPrivacyPolicy =>
+      '[ES_419] Could not open privacy policy (Spanish (Latin America))';
 
   @override
   String get refresh1 => '[ES_419] Refresh (Spanish (Latin America))';
 
   @override
-  String get roomUpdatedSuccessfully => '[ES_419] Room updated successfully! (Spanish (Latin America))';
+  String get roomUpdatedSuccessfully =>
+      '[ES_419] Room updated successfully! (Spanish (Latin America))';
 
   @override
-  String get contentDetail => '[ES_419] Content Detail (Spanish (Latin America))';
+  String get contentDetail =>
+      '[ES_419] Content Detail (Spanish (Latin America))';
 
   @override
-  String get cancelSubscription => '[ES_419] Cancel Subscription (Spanish (Latin America))';
+  String get cancelSubscription =>
+      '[ES_419] Cancel Subscription (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Successfully registered as Ambassador! (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Successfully registered as Ambassador! (Spanish (Latin America))';
 
   @override
   String get save1 => '[ES_419] Save (Spanish (Latin America))';
@@ -3520,7 +3833,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get copy1 => '[ES_419] Copy (Spanish (Latin America))';
 
   @override
-  String get failedToSendInvitationE => '[ES_419] Failed to send invitation: \$e (Spanish (Latin America))';
+  String get failedToSendInvitationE =>
+      '[ES_419] Failed to send invitation: \$e (Spanish (Latin America))';
 
   @override
   String get surveyScore => '[ES_419] Survey Score (Spanish (Latin America))';
@@ -3531,25 +3845,32 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get noAppointmentsFound => '[ES_419] No appointments found. (Spanish (Latin America))';
+  String get noAppointmentsFound =>
+      '[ES_419] No appointments found. (Spanish (Latin America))';
 
   @override
-  String get responseDetail => '[ES_419] Response Detail (Spanish (Latin America))';
+  String get responseDetail =>
+      '[ES_419] Response Detail (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[ES_419] Failed to start Pro subscription: \$e (Spanish (Latin America))';
+  String get failedToStartProSubscriptionE =>
+      '[ES_419] Failed to start Pro subscription: \$e (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Business Dashboard Entry Screen - Coming Soon (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Business Dashboard Entry Screen - Coming Soon (Spanish (Latin America))';
 
   @override
-  String get contentFilter => '[ES_419] Content Filter (Spanish (Latin America))';
+  String get contentFilter =>
+      '[ES_419] Content Filter (Spanish (Latin America))';
 
   @override
   String get helpSupport => '[ES_419] Help & Support (Spanish (Latin America))';
@@ -3568,7 +3889,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Business CRM Entry Screen - Coming Soon (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Business CRM Entry Screen - Coming Soon (Spanish (Latin America))';
 
   @override
   String get adminDashboard => '[ES_419] Admin Dashboard';
@@ -3579,28 +3901,34 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get errorLoadingDashboardError => '[ES_419] Error loading dashboard: \$error (Spanish (Latin America))';
+  String get errorLoadingDashboardError =>
+      '[ES_419] Error loading dashboard: \$error (Spanish (Latin America))';
 
   @override
-  String get gameDeletedSuccessfully => '[ES_419] Game deleted successfully! (Spanish (Latin America))';
+  String get gameDeletedSuccessfully =>
+      '[ES_419] Game deleted successfully! (Spanish (Latin America))';
 
   @override
-  String get viewResponsesComingSoon => '[ES_419] View responses - Coming soon! (Spanish (Latin America))';
+  String get viewResponsesComingSoon =>
+      '[ES_419] View responses - Coming soon! (Spanish (Latin America))';
 
   @override
   String get deleteProvider => '[ES_419] Delete Provider';
 
   @override
-  String get errorLoadingRewards => '[ES_419] Error loading rewards (Spanish (Latin America))';
+  String get errorLoadingRewards =>
+      '[ES_419] Error loading rewards (Spanish (Latin America))';
 
   @override
-  String get failedToDeleteAccountE => '[ES_419] Failed to delete account: \$e (Spanish (Latin America))';
+  String get failedToDeleteAccountE =>
+      '[ES_419] Failed to delete account: \$e (Spanish (Latin America))';
 
   @override
   String get invited1 => '[ES_419] Invited (Spanish (Latin America))';
 
   @override
-  String get noBranchesAvailable => '[ES_419] No branches available (Spanish (Latin America))';
+  String get noBranchesAvailable =>
+      '[ES_419] No branches available (Spanish (Latin America))';
 
   @override
   String get errorError => '[ES_419] Error: \$error (Spanish (Latin America))';
@@ -3609,7 +3937,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get noEvents => '[ES_419] No events (Spanish (Latin America))';
 
   @override
-  String get gameCreatedSuccessfully => '[ES_419] Game created successfully! (Spanish (Latin America))';
+  String get gameCreatedSuccessfully =>
+      '[ES_419] Game created successfully! (Spanish (Latin America))';
 
   @override
   String get add1 => '[ES_419] Add (Spanish (Latin America))';
@@ -3623,16 +3952,19 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get allowPlaytime => '[ES_419] Allow Playtime (Spanish (Latin America))';
+  String get allowPlaytime =>
+      '[ES_419] Allow Playtime (Spanish (Latin America))';
 
   @override
   String get clients => '[ES_419] Clients (Spanish (Latin America))';
 
   @override
-  String get noAmbassadorDataAvailable => '[ES_419] No ambassador data available (Spanish (Latin America))';
+  String get noAmbassadorDataAvailable =>
+      '[ES_419] No ambassador data available (Spanish (Latin America))';
 
   @override
-  String get backgroundDeletedSuccessfully => '[ES_419] Background deleted successfully! (Spanish (Latin America))';
+  String get backgroundDeletedSuccessfully =>
+      '[ES_419] Background deleted successfully! (Spanish (Latin America))';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -3640,7 +3972,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[ES_419] No analytics data available yet. (Spanish (Latin America))';
+  String get noAnalyticsDataAvailableYet =>
+      '[ES_419] No analytics data available yet. (Spanish (Latin America))';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -3648,7 +3981,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Business Phone Booking Entry Screen - Coming Soon (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Business Phone Booking Entry Screen - Coming Soon (Spanish (Latin America))';
 
   @override
   String get verification => '[ES_419] Verification (Spanish (Latin America))';
@@ -3660,7 +3994,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get dashboard1 => '[ES_419] Dashboard (Spanish (Latin America))';
 
   @override
-  String get manageChildAccounts => '[ES_419] Manage Child Accounts (Spanish (Latin America))';
+  String get manageChildAccounts =>
+      '[ES_419] Manage Child Accounts (Spanish (Latin America))';
 
   @override
   String get grantConsent => '[ES_419] Grant Consent (Spanish (Latin America))';
@@ -3680,7 +4015,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard => '[ES_419] Ambassador Dashboard (Spanish (Latin America))';
+  String get ambassadorDashboard =>
+      '[ES_419] Ambassador Dashboard (Spanish (Latin America))';
 
   @override
   String get phoneBooking => '[ES_419] Phone Booking (Spanish (Latin America))';
@@ -3692,25 +4028,32 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get error => '[ES_419] [ES_419] Error';
 
   @override
-  String get businessProfile => '[ES_419] Business Profile (Spanish (Latin America))';
+  String get businessProfile =>
+      '[ES_419] Business Profile (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Business Booking Entry Screen - Coming Soon (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Business Booking Entry Screen - Coming Soon (Spanish (Latin America))';
 
   @override
-  String get createNewSurvey => '[ES_419] Create New Survey (Spanish (Latin America))';
+  String get createNewSurvey =>
+      '[ES_419] Create New Survey (Spanish (Latin America))';
 
   @override
-  String get backgroundRejected => '[ES_419] Background rejected (Spanish (Latin America))';
+  String get backgroundRejected =>
+      '[ES_419] Background rejected (Spanish (Latin America))';
 
   @override
-  String get noMediaSelected => '[ES_419] No media selected (Spanish (Latin America))';
+  String get noMediaSelected =>
+      '[ES_419] No media selected (Spanish (Latin America))';
 
   @override
-  String get syncToGoogle => '[ES_419] Sync to Google (Spanish (Latin America))';
+  String get syncToGoogle =>
+      '[ES_419] Sync to Google (Spanish (Latin America))';
 
   @override
-  String get virtualPlaytime => '[ES_419] Virtual Playtime (Spanish (Latin America))';
+  String get virtualPlaytime =>
+      '[ES_419] Virtual Playtime (Spanish (Latin America))';
 
   @override
   String get colorContrastTesting => '[ES_419] Color Contrast Testing';
@@ -3719,7 +4062,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get loginFailedE => '[ES_419] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[ES_419] Invitation sent successfully! (Spanish (Latin America))';
+  String get invitationSentSuccessfully =>
+      '[ES_419] Invitation sent successfully! (Spanish (Latin America))';
 
   @override
   String get registering => '[ES_419] Registering... (Spanish (Latin America))';
@@ -3733,13 +4077,16 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get home1 => '[ES_419] Home (Spanish (Latin America))';
 
   @override
-  String get errorSavingSettingsE => '[ES_419] Error saving settings: \$e (Spanish (Latin America))';
+  String get errorSavingSettingsE =>
+      '[ES_419] Error saving settings: \$e (Spanish (Latin America))';
 
   @override
-  String get appVersionAndInformation => '[ES_419] App version and information (Spanish (Latin America))';
+  String get appVersionAndInformation =>
+      '[ES_419] App version and information (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Business Subscription Entry Screen - Coming Soon (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Business Subscription Entry Screen - Coming Soon (Spanish (Latin America))';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -3747,7 +4094,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Your payment has been processed successfully. (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Your payment has been processed successfully. (Spanish (Latin America))';
 
   @override
   String get errorE => '[ES_419] Error: \$e (Spanish (Latin America))';
@@ -3756,7 +4104,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get viewAll1 => '[ES_419] View All (Spanish (Latin America))';
 
   @override
-  String get editSurveyComingSoon => '[ES_419] Edit survey - Coming soon! (Spanish (Latin America))';
+  String get editSurveyComingSoon =>
+      '[ES_419] Edit survey - Coming soon! (Spanish (Latin America))';
 
   @override
   String get enterOtp => '[ES_419] Enter OTP (Spanish (Latin America))';
@@ -3765,7 +4114,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get payment => '[ES_419] Payment (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Automatically confirm new booking requests (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Automatically confirm new booking requests (Spanish (Latin America))';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -3778,7 +4128,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[ES_419] Please sign in to upload a background (Spanish (Latin America))';
+  String get pleaseSignInToUploadABackground =>
+      '[ES_419] Please sign in to upload a background (Spanish (Latin America))';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -3786,28 +4137,33 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get staffAvailability => '[ES_419] Staff Availability (Spanish (Latin America))';
+  String get staffAvailability =>
+      '[ES_419] Staff Availability (Spanish (Latin America))';
 
   @override
   String get livePlaytime => '[ES_419] Live Playtime (Spanish (Latin America))';
 
   @override
-  String get autoconfirmBookings => '[ES_419] Auto-Confirm Bookings (Spanish (Latin America))';
+  String get autoconfirmBookings =>
+      '[ES_419] Auto-Confirm Bookings (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Redirecting to Stripe checkout for Pro plan... (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Redirecting to Stripe checkout for Pro plan... (Spanish (Latin America))';
 
   @override
   String get exportAsCsv => '[ES_419] Export as CSV (Spanish (Latin America))';
 
   @override
-  String get deleteFunctionalityComingSoon => '[ES_419] Delete functionality coming soon! (Spanish (Latin America))';
+  String get deleteFunctionalityComingSoon =>
+      '[ES_419] Delete functionality coming soon! (Spanish (Latin America))';
 
   @override
   String get editClient => '[ES_419] Edit Client (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Are you sure you want to delete this message? (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Are you sure you want to delete this message? (Spanish (Latin America))';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -3818,31 +4174,39 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get notAuthenticated => '[ES_419] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[ES_419] Privacy request sent to your parents! (Spanish (Latin America))';
+  String get privacyRequestSentToYourParents =>
+      '[ES_419] Privacy request sent to your parents! (Spanish (Latin America))';
 
   @override
-  String get clientDeletedSuccessfully => '[ES_419] Client deleted successfully! (Spanish (Latin America))';
+  String get clientDeletedSuccessfully =>
+      '[ES_419] Client deleted successfully! (Spanish (Latin America))';
 
   @override
-  String get failedToCancelSubscription => '[ES_419] Failed to cancel subscription (Spanish (Latin America))';
+  String get failedToCancelSubscription =>
+      '[ES_419] Failed to cancel subscription (Spanish (Latin America))';
 
   @override
   String get allLanguages => '[ES_419] All Languages (Spanish (Latin America))';
 
   @override
-  String get slotDeletedSuccessfully => '[ES_419] Slot deleted successfully (Spanish (Latin America))';
+  String get slotDeletedSuccessfully =>
+      '[ES_419] Slot deleted successfully (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Parents must approve before children can join (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Parents must approve before children can join (Spanish (Latin America))';
 
   @override
-  String get subscribeToPro1499mo => '[ES_419] Subscribe to Pro (€14.99/mo) (Spanish (Latin America))';
+  String get subscribeToPro1499mo =>
+      '[ES_419] Subscribe to Pro (€14.99/mo) (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Business Availability Entry Screen - Coming Soon (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Business Availability Entry Screen - Coming Soon (Spanish (Latin America))';
 
   @override
   String appointmentsListlength(Object count) {
@@ -3853,13 +4217,16 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get clearFilters => '[ES_419] Clear Filters (Spanish (Latin America))';
 
   @override
-  String get submitBooking => '[ES_419] Submit Booking (Spanish (Latin America))';
+  String get submitBooking =>
+      '[ES_419] Submit Booking (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Are you sure you want to cancel this appointment? (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Are you sure you want to cancel this appointment? (Spanish (Latin America))';
 
   @override
-  String get noUpcomingBookings => '[ES_419] No upcoming bookings (Spanish (Latin America))';
+  String get noUpcomingBookings =>
+      '[ES_419] No upcoming bookings (Spanish (Latin America))';
 
   @override
   String get goBack => '[ES_419] Go Back (Spanish (Latin America))';
@@ -3871,10 +4238,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get inviteChild => '[ES_419] Invite Child (Spanish (Latin America))';
 
   @override
-  String get goToDashboard => '[ES_419] Go to Dashboard (Spanish (Latin America))';
+  String get goToDashboard =>
+      '[ES_419] Go to Dashboard (Spanish (Latin America))';
 
   @override
-  String get ambassadorQuotaDashboard => '[ES_419] Ambassador Quota Dashboard (Spanish (Latin America))';
+  String get ambassadorQuotaDashboard =>
+      '[ES_419] Ambassador Quota Dashboard (Spanish (Latin America))';
 
   @override
   String get adminSettings => '[ES_419] Admin Settings';
@@ -3894,64 +4263,79 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get readOnly => '[ES_419] Read Only (Spanish (Latin America))';
 
   @override
-  String get bookingRequest => '[ES_419] Booking Request (Spanish (Latin America))';
+  String get bookingRequest =>
+      '[ES_419] Booking Request (Spanish (Latin America))';
 
   @override
-  String get advancedReporting => '[ES_419] • Advanced reporting (Spanish (Latin America))';
+  String get advancedReporting =>
+      '[ES_419] • Advanced reporting (Spanish (Latin America))';
 
   @override
   String get rooms => '[ES_419] Rooms (Spanish (Latin America))';
 
   @override
-  String get copiedToClipboard => '[ES_419] Copied to clipboard (Spanish (Latin America))';
+  String get copiedToClipboard =>
+      '[ES_419] Copied to clipboard (Spanish (Latin America))';
 
   @override
-  String get bookingConfirmed => '[ES_419] Booking Confirmed (Spanish (Latin America))';
+  String get bookingConfirmed =>
+      '[ES_419] Booking Confirmed (Spanish (Latin America))';
 
   @override
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[ES_419] Client added successfully! (Spanish (Latin America))';
+  String get clientAddedSuccessfully =>
+      '[ES_419] Client added successfully! (Spanish (Latin America))';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved => '[ES_419] Background approved! (Spanish (Latin America))';
+  String get backgroundApproved =>
+      '[ES_419] Background approved! (Spanish (Latin America))';
 
   @override
-  String get familySupport => '[ES_419] Family Support (Spanish (Latin America))';
+  String get familySupport =>
+      '[ES_419] Family Support (Spanish (Latin America))';
 
   @override
-  String get deletingAccount => '[ES_419] Deleting account... (Spanish (Latin America))';
+  String get deletingAccount =>
+      '[ES_419] Deleting account... (Spanish (Latin America))';
 
   @override
-  String get bookAppointment => '[ES_419] Book Appointment (Spanish (Latin America))';
+  String get bookAppointment =>
+      '[ES_419] Book Appointment (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[ES_419] Delete (Spanish (Latin America))';
 
   @override
-  String get sendBookingInvite => '[ES_419] Send Booking Invite (Spanish (Latin America))';
+  String get sendBookingInvite =>
+      '[ES_419] Send Booking Invite (Spanish (Latin America))';
 
   @override
   String get text => '[ES_419] Text (Spanish (Latin America))';
 
   @override
-  String get manageSubscription => '[ES_419] Manage Subscription (Spanish (Latin America))';
+  String get manageSubscription =>
+      '[ES_419] Manage Subscription (Spanish (Latin America))';
 
   @override
-  String get requiresInstallFallback => '[ES_419] Requires Install Fallback (Spanish (Latin America))';
+  String get requiresInstallFallback =>
+      '[ES_419] Requires Install Fallback (Spanish (Latin America))';
 
   @override
-  String get paymentConfirmation => '[ES_419] Payment Confirmation (Spanish (Latin America))';
+  String get paymentConfirmation =>
+      '[ES_419] Payment Confirmation (Spanish (Latin America))';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[ES_419] Promo applied! Your next bill is free. (Spanish (Latin America))';
+  String get promoAppliedYourNextBillIsFree =>
+      '[ES_419] Promo applied! Your next bill is free. (Spanish (Latin America))';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -3959,19 +4343,24 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get errorLoadingSlots => '[ES_419] Error loading slots (Spanish (Latin America))';
+  String get errorLoadingSlots =>
+      '[ES_419] Error loading slots (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Allow other users to find and join this game (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Allow other users to find and join this game (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Business Onboarding Screen - Coming Soon (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Business Onboarding Screen - Coming Soon (Spanish (Latin America))';
 
   @override
-  String get activateBusinessProfile => '[ES_419] Activate Business Profile (Spanish (Latin America))';
+  String get activateBusinessProfile =>
+      '[ES_419] Activate Business Profile (Spanish (Latin America))';
 
   @override
-  String get contentNotFound => '[ES_419] Content not found (Spanish (Latin America))';
+  String get contentNotFound =>
+      '[ES_419] Content not found (Spanish (Latin America))';
 
   @override
   String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
@@ -3990,7 +4379,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get becomeAnAmbassador => '[ES_419] Become an Ambassador (Spanish (Latin America))';
+  String get becomeAnAmbassador =>
+      '[ES_419] Become an Ambassador (Spanish (Latin America))';
 
   @override
   String get subscribeNow => '[ES_419] Subscribe Now (Spanish (Latin America))';
@@ -4001,7 +4391,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get shareViaWhatsapp => '[ES_419] Share via WhatsApp (Spanish (Latin America))';
+  String get shareViaWhatsapp =>
+      '[ES_419] Share via WhatsApp (Spanish (Latin America))';
 
   @override
   String get users1 => '[ES_419] Users (Spanish (Latin America))';
@@ -4010,19 +4401,23 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get shareLink => '[ES_419] Share Link (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment => '[ES_419] Delete Appointment (Spanish (Latin America))';
+  String get deleteAppointment =>
+      '[ES_419] Delete Appointment (Spanish (Latin America))';
 
   @override
-  String get toggleAvailability => '[ES_419] Toggle Availability (Spanish (Latin America))';
+  String get toggleAvailability =>
+      '[ES_419] Toggle Availability (Spanish (Latin America))';
 
   @override
   String get changePlan => '[ES_419] Change Plan (Spanish (Latin America))';
 
   @override
-  String get errorLoadingStaff => '[ES_419] Error loading staff (Spanish (Latin America))';
+  String get errorLoadingStaff =>
+      '[ES_419] Error loading staff (Spanish (Latin America))';
 
   @override
   String errorLoadingConfigurationE(Object e) {
@@ -4030,25 +4425,30 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get updateYourBusinessInformation => '[ES_419] Update your business information (Spanish (Latin America))';
+  String get updateYourBusinessInformation =>
+      '[ES_419] Update your business information (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[ES_419] No providers found. Add your first provider!';
 
   @override
-  String get parentDashboard => '[ES_419] Parent Dashboard (Spanish (Latin America))';
+  String get parentDashboard =>
+      '[ES_419] Parent Dashboard (Spanish (Latin America))';
 
   @override
   String get menu => '[ES_419] Menu (Spanish (Latin America))';
 
   @override
-  String get studioBooking => '[ES_419] Studio Booking (Spanish (Latin America))';
+  String get studioBooking =>
+      '[ES_419] Studio Booking (Spanish (Latin America))';
 
   @override
   String get about1 => '[ES_419] About (Spanish (Latin America))';
 
   @override
-  String get multipleChoice => '[ES_419] Multiple Choice (Spanish (Latin America))';
+  String get multipleChoice =>
+      '[ES_419] Multiple Choice (Spanish (Latin America))';
 
   @override
   String REDACTED_TOKEN(Object date) {
@@ -4056,10 +4456,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Studio booking is only available on web (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Studio booking is only available on web (Spanish (Latin America))';
 
   @override
-  String get errorLoadingBranchesE => '[ES_419] Error loading branches: \$e (Spanish (Latin America))';
+  String get errorLoadingBranchesE =>
+      '[ES_419] Error loading branches: \$e (Spanish (Latin America))';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -4075,28 +4477,33 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get none => '[ES_419] None (Spanish (Latin America))';
 
   @override
-  String get failedToUpdateConsentE => '[ES_419] Failed to update consent: \$e (Spanish (Latin America))';
+  String get failedToUpdateConsentE =>
+      '[ES_419] Failed to update consent: \$e (Spanish (Latin America))';
 
   @override
   String get welcome1 => '[ES_419] Welcome (Spanish (Latin America))';
 
   @override
-  String get failedToCreateSessionE => '[ES_419] Failed to create session: \$e (Spanish (Latin America))';
+  String get failedToCreateSessionE =>
+      '[ES_419] Failed to create session: \$e (Spanish (Latin America))';
 
   @override
-  String get inviteContact => '[ES_419] Invite Contact (Spanish (Latin America))';
+  String get inviteContact =>
+      '[ES_419] Invite Contact (Spanish (Latin America))';
 
   @override
   String get surveyEditor => '[ES_419] Survey Editor (Spanish (Latin America))';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[ES_419] Failed to start Basic subscription: \$e (Spanish (Latin America))';
+  String get failedToStartBasicSubscriptionE =>
+      '[ES_419] Failed to start Basic subscription: \$e (Spanish (Latin America))';
 
   @override
   String get mySchedule => '[ES_419] My Schedule (Spanish (Latin America))';
 
   @override
-  String get studioDashboard => '[ES_419] Studio Dashboard (Spanish (Latin America))';
+  String get studioDashboard =>
+      '[ES_419] Studio Dashboard (Spanish (Latin America))';
 
   @override
   String get editProfile => 'تحرير الملف الشخصي';
@@ -4110,19 +4517,23 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[ES_419] Settings saved successfully! (Spanish (Latin America))';
+  String get settingsSavedSuccessfully =>
+      '[ES_419] Settings saved successfully! (Spanish (Latin America))';
 
   @override
-  String get linkCopiedToClipboard => '[ES_419] Link copied to clipboard! (Spanish (Latin America))';
+  String get linkCopiedToClipboard =>
+      '[ES_419] Link copied to clipboard! (Spanish (Latin America))';
 
   @override
   String get accept1 => '[ES_419] Accept (Spanish (Latin America))';
 
   @override
-  String get noAvailableSlots => '[ES_419] No available slots (Spanish (Latin America))';
+  String get noAvailableSlots =>
+      '[ES_419] No available slots (Spanish (Latin America))';
 
   @override
-  String get makeGamePublic => '[ES_419] Make Game Public (Spanish (Latin America))';
+  String get makeGamePublic =>
+      '[ES_419] Make Game Public (Spanish (Latin America))';
 
   @override
   String REDACTED_TOKEN(Object category) {
@@ -4130,16 +4541,20 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[ES_419] Room deleted successfully! (Spanish (Latin America))';
+  String get roomDeletedSuccessfully =>
+      '[ES_419] Room deleted successfully! (Spanish (Latin America))';
 
   @override
-  String get businessCalendar => '[ES_419] Business Calendar (Spanish (Latin America))';
+  String get businessCalendar =>
+      '[ES_419] Business Calendar (Spanish (Latin America))';
 
   @override
-  String get addAvailability => '[ES_419] Add Availability (Spanish (Latin America))';
+  String get addAvailability =>
+      '[ES_419] Add Availability (Spanish (Latin America))';
 
   @override
-  String get ambassadorOnboarding => '[ES_419] Ambassador Onboarding (Spanish (Latin America))';
+  String get ambassadorOnboarding =>
+      '[ES_419] Ambassador Onboarding (Spanish (Latin America))';
 
   @override
   String phoneProfileasyncphone(Object phone) {
@@ -4150,7 +4565,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get addNewRoom => '[ES_419] Add New Room (Spanish (Latin America))';
 
   @override
-  String get requireParentApproval => '[ES_419] Require Parent Approval (Spanish (Latin America))';
+  String get requireParentApproval =>
+      '[ES_419] Require Parent Approval (Spanish (Latin America))';
 
   @override
   String get closed => '[ES_419] Closed (Spanish (Latin America))';
@@ -4159,7 +4575,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get exportAsPdf => '[ES_419] Export as PDF (Spanish (Latin America))';
 
   @override
-  String get enableVibration => '[ES_419] Enable Vibration (Spanish (Latin America))';
+  String get enableVibration =>
+      '[ES_419] Enable Vibration (Spanish (Latin America))';
 
   @override
   String toAvailendformatcontext(Object endTime) {
@@ -4172,7 +4589,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get requestPrivateSession => '[ES_419] requestPrivateSession (TRANSLATE)';
+  String get requestPrivateSession =>
+      '[ES_419] requestPrivateSession (TRANSLATE)';
 
   @override
   String get country => '[ES_419] Country (Spanish (Latin America))';
@@ -4186,7 +4604,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get revokeConsent => '[ES_419] Revoke Consent (Spanish (Latin America))';
+  String get revokeConsent =>
+      '[ES_419] Revoke Consent (Spanish (Latin America))';
 
   @override
   String get settings1 => '[ES_419] Settings (Spanish (Latin America))';
@@ -4195,7 +4614,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get cancel1 => '[ES_419] Cancel (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Subscription activated successfully! (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Subscription activated successfully! (Spanish (Latin America))';
 
   @override
   String activityLogaction(Object action) {
@@ -4206,19 +4626,23 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get broadcast => '[ES_419] Broadcast (Spanish (Latin America))';
 
   @override
-  String get noEventsScheduledThisWeek => '[ES_419] No events scheduled this week (Spanish (Latin America))';
+  String get noEventsScheduledThisWeek =>
+      '[ES_419] No events scheduled this week (Spanish (Latin America))';
 
   @override
-  String get googleCalendar => '[ES_419] Google Calendar (Spanish (Latin America))';
+  String get googleCalendar =>
+      '[ES_419] Google Calendar (Spanish (Latin America))';
 
   @override
   String get sendInvite => 'إرسال دعوة';
 
   @override
-  String get childDashboard => '[ES_419] Child Dashboard (Spanish (Latin America))';
+  String get childDashboard =>
+      '[ES_419] Child Dashboard (Spanish (Latin America))';
 
   @override
-  String get failedToUploadBackgroundE => '[ES_419] Failed to upload background: \$e (Spanish (Latin America))';
+  String get failedToUploadBackgroundE =>
+      '[ES_419] Failed to upload background: \$e (Spanish (Latin America))';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -4234,10 +4658,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get contextContextid => '[ES_419] Context: \$contextId';
 
   @override
-  String get noAppointments => '[ES_419] No appointments (Spanish (Latin America))';
+  String get noAppointments =>
+      '[ES_419] No appointments (Spanish (Latin America))';
 
   @override
-  String get unlimitedBookingsPerWeek => '[ES_419] • Unlimited bookings per week (Spanish (Latin America))';
+  String get unlimitedBookingsPerWeek =>
+      '[ES_419] • Unlimited bookings per week (Spanish (Latin America))';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -4245,19 +4671,23 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get scheduledAtScheduledat => '[ES_419] Scheduled at: \$scheduledAt (Spanish (Latin America))';
+  String get scheduledAtScheduledat =>
+      '[ES_419] Scheduled at: \$scheduledAt (Spanish (Latin America))';
 
   @override
   String get selectStaff => '[ES_419] Select Staff (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Subscription cancelled successfully (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Subscription cancelled successfully (Spanish (Latin America))';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment => '[ES_419] Cancel Appointment (Spanish (Latin America))';
+  String get cancelAppointment =>
+      '[ES_419] Cancel Appointment (Spanish (Latin America))';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
@@ -4265,10 +4695,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get businessSignup => '[ES_419] Business Signup (Spanish (Latin America))';
+  String get businessSignup =>
+      '[ES_419] Business Signup (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Business Completion Screen - Coming Soon (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Business Completion Screen - Coming Soon (Spanish (Latin America))';
 
   @override
   String get createGame1 => '[ES_419] Create Game (Spanish (Latin America))';
@@ -4279,25 +4711,30 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[ES_419] Please enter a promo code (Spanish (Latin America))';
+  String get pleaseEnterAPromoCode =>
+      '[ES_419] Please enter a promo code (Spanish (Latin America))';
 
   @override
-  String get errorLoadingAvailabilityE => '[ES_419] Error loading availability: \$e (Spanish (Latin America))';
+  String get errorLoadingAvailabilityE =>
+      '[ES_419] Error loading availability: \$e (Spanish (Latin America))';
 
   @override
-  String get parentalControls => '[ES_419] Parental Controls (Spanish (Latin America))';
+  String get parentalControls =>
+      '[ES_419] Parental Controls (Spanish (Latin America))';
 
   @override
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[ES_419] Child linked successfully! (Spanish (Latin America))';
+  String get childLinkedSuccessfully =>
+      '[ES_419] Child linked successfully! (Spanish (Latin America))';
 
   @override
   String get create => '[ES_419] Create (Spanish (Latin America))';
 
   @override
-  String get noExternalMeetingsFound => '[ES_419] No external meetings found. (Spanish (Latin America))';
+  String get noExternalMeetingsFound =>
+      '[ES_419] No external meetings found. (Spanish (Latin America))';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -4305,19 +4742,24 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[ES_419] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[ES_419] Please enter a valid email address';
 
   @override
-  String get schedulerScreen => '[ES_419] Scheduler Screen (Spanish (Latin America))';
+  String get schedulerScreen =>
+      '[ES_419] Scheduler Screen (Spanish (Latin America))';
 
   @override
-  String get clientUpdatedSuccessfully => '[ES_419] Client updated successfully! (Spanish (Latin America))';
+  String get clientUpdatedSuccessfully =>
+      '[ES_419] Client updated successfully! (Spanish (Latin America))';
 
   @override
-  String get surveyResponses => '[ES_419] Survey Responses (Spanish (Latin America))';
+  String get surveyResponses =>
+      '[ES_419] Survey Responses (Spanish (Latin America))';
 
   @override
-  String get syncToOutlook => '[ES_419] Sync to Outlook (Spanish (Latin America))';
+  String get syncToOutlook =>
+      '[ES_419] Sync to Outlook (Spanish (Latin America))';
 
   @override
   String get saveChanges => '[ES_419] Save Changes (Spanish (Latin America))';
@@ -4334,13 +4776,16 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get analytics => '[ES_419] Analytics (Spanish (Latin America))';
 
   @override
-  String get errorLoadingEvents => '[ES_419] Error loading events (Spanish (Latin America))';
+  String get errorLoadingEvents =>
+      '[ES_419] Error loading events (Spanish (Latin America))';
 
   @override
-  String get errorLoadingOrganizations => '[ES_419] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[ES_419] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[ES_419] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[ES_419] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[ES_419] Success (Spanish (Latin America))';
@@ -4359,10 +4804,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get readWrite => '[ES_419] Read & Write (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Redirecting to Stripe checkout for Basic plan... (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Redirecting to Stripe checkout for Basic plan... (Spanish (Latin America))';
 
   @override
-  String get errorSavingConfigurationE => '[ES_419] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[ES_419] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[ES_419] Pick Date (Spanish (Latin America))';
@@ -4371,7 +4818,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get chatBooking => '[ES_419] Chat Booking (Spanish (Latin America))';
 
   @override
-  String get noQuestionsAdded => '[ES_419] No questions added (Spanish (Latin America))';
+  String get noQuestionsAdded =>
+      '[ES_419] No questions added (Spanish (Latin America))';
 
   @override
   String severityLogseverityname(Object severity) {
@@ -4382,7 +4830,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get markAsPaid => '[ES_419] Mark as Paid';
 
   @override
-  String get typeOpenCall => '[ES_419] Type: Open Call (Spanish (Latin America))';
+  String get typeOpenCall =>
+      '[ES_419] Type: Open Call (Spanish (Latin America))';
 
   @override
   String appointmentAppointmentid(Object appointmentId) {
@@ -4398,10 +4847,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get businessLogin => '[ES_419] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[ES_419] Invoice created successfully! (Spanish (Latin America))';
+  String get invoiceCreatedSuccessfully =>
+      '[ES_419] Invoice created successfully! (Spanish (Latin America))';
 
   @override
-  String get noTimeSeriesDataAvailable => '[ES_419] No time series data available (Spanish (Latin America))';
+  String get noTimeSeriesDataAvailable =>
+      '[ES_419] No time series data available (Spanish (Latin America))';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -4414,13 +4865,16 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[ES_419] Failed to send privacy request: \$e (Spanish (Latin America))';
+  String get failedToSendPrivacyRequestE =>
+      '[ES_419] Failed to send privacy request: \$e (Spanish (Latin America))';
 
   @override
-  String get chooseYourPlan => '[ES_419] Choose Your Plan (Spanish (Latin America))';
+  String get chooseYourPlan =>
+      '[ES_419] Choose Your Plan (Spanish (Latin America))';
 
   @override
-  String get playtimeManagement => '[ES_419] Playtime Management (Spanish (Latin America))';
+  String get playtimeManagement =>
+      '[ES_419] Playtime Management (Spanish (Latin America))';
 
   @override
   String get availability => '[ES_419] Availability (Spanish (Latin America))';
@@ -4429,19 +4883,23 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get eventCreated => '[ES_419] Event created (Spanish (Latin America))';
 
   @override
-  String get subscribeToBasic499mo => '[ES_419] Subscribe to Basic (€4.99/mo) (Spanish (Latin America))';
+  String get subscribeToBasic499mo =>
+      '[ES_419] Subscribe to Basic (€4.99/mo) (Spanish (Latin America))';
 
   @override
   String get completion => '[ES_419] Completion (Spanish (Latin America))';
 
   @override
-  String get supportTicketSubmitted => '[ES_419] Support ticket submitted (Spanish (Latin America))';
+  String get supportTicketSubmitted =>
+      '[ES_419] Support ticket submitted (Spanish (Latin America))';
 
   @override
-  String get monetizationSettings => '[ES_419] Monetization Settings (Spanish (Latin America))';
+  String get monetizationSettings =>
+      '[ES_419] Monetization Settings (Spanish (Latin America))';
 
   @override
-  String get noBookingsFound => '[ES_419] No bookings found (Spanish (Latin America))';
+  String get noBookingsFound =>
+      '[ES_419] No bookings found (Spanish (Latin America))';
 
   @override
   String get admin => '[ES_419] Admin';
@@ -4450,10 +4908,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get deleteSurvey => '[ES_419] Delete Survey (Spanish (Latin America))';
 
   @override
-  String get gameApprovedSuccessfully => '[ES_419] Game approved successfully! (Spanish (Latin America))';
+  String get gameApprovedSuccessfully =>
+      '[ES_419] Game approved successfully! (Spanish (Latin America))';
 
   @override
-  String get errorLoadingPermissionsError => '[ES_419] Error loading permissions: \$error (Spanish (Latin America))';
+  String get errorLoadingPermissionsError =>
+      '[ES_419] Error loading permissions: \$error (Spanish (Latin America))';
 
   @override
   String get referrals => '[ES_419] Referrals (Spanish (Latin America))';
@@ -4468,10 +4928,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get appointments => '[ES_419] Appointments (Spanish (Latin America))';
 
   @override
-  String get onboardingScreen => '[ES_419] Onboarding Screen (Spanish (Latin America))';
+  String get onboardingScreen =>
+      '[ES_419] Onboarding Screen (Spanish (Latin America))';
 
   @override
-  String get welcomeToYourStudio => '[ES_419] Welcome to your studio (Spanish (Latin America))';
+  String get welcomeToYourStudio =>
+      '[ES_419] Welcome to your studio (Spanish (Latin America))';
 
   @override
   String get update => '[ES_419] Update (Spanish (Latin America))';
@@ -4483,7 +4945,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get booking => '[ES_419] Booking (Spanish (Latin America))';
 
   @override
-  String get parentalSettings => '[ES_419] Parental Settings (Spanish (Latin America))';
+  String get parentalSettings =>
+      '[ES_419] Parental Settings (Spanish (Latin America))';
 
   @override
   String get language => '[ES_419] Language (Spanish (Latin America))';
@@ -4495,25 +4958,30 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get organizations => '[ES_419] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[ES_419] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[ES_419] Configuration saved successfully!';
 
   @override
-  String get createNewGame => '[ES_419] Create New Game (Spanish (Latin America))';
+  String get createNewGame =>
+      '[ES_419] Create New Game (Spanish (Latin America))';
 
   @override
   String get next1 => '[ES_419] Next (Spanish (Latin America))';
 
   @override
-  String get backgroundUploadedSuccessfully => '[ES_419] Background uploaded successfully! (Spanish (Latin America))';
+  String get backgroundUploadedSuccessfully =>
+      '[ES_419] Background uploaded successfully! (Spanish (Latin America))';
 
   @override
-  String get noAppointmentRequestsFound => '[ES_419] No appointment requests found. (Spanish (Latin America))';
+  String get noAppointmentRequestsFound =>
+      '[ES_419] No appointment requests found. (Spanish (Latin America))';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => '[ES_419] Restrict mature content (Spanish (Latin America))';
+  String get restrictMatureContent =>
+      '[ES_419] Restrict mature content (Spanish (Latin America))';
 
   @override
   String get ambassadors => '[ES_419] Ambassadors (Spanish (Latin America))';
@@ -4522,7 +4990,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled => '[ES_419] Payment was cancelled (Spanish (Latin America))';
+  String get paymentWasCancelled =>
+      '[ES_419] Payment was cancelled (Spanish (Latin America))';
 
   @override
   String get clearAll => '[ES_419] Clear All (Spanish (Latin America))';
@@ -4534,16 +5003,20 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[ES_419] Failed to create game: \$e (Spanish (Latin America))';
+  String get failedToCreateGameE =>
+      '[ES_419] Failed to create game: \$e (Spanish (Latin America))';
 
   @override
-  String get noChartDataAvailable => '[ES_419] No chart data available (Spanish (Latin America))';
+  String get noChartDataAvailable =>
+      '[ES_419] No chart data available (Spanish (Latin America))';
 
   @override
-  String get phonebasedBookingSystem => '[ES_419] • Phone-based booking system (Spanish (Latin America))';
+  String get phonebasedBookingSystem =>
+      '[ES_419] • Phone-based booking system (Spanish (Latin America))';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -4552,7 +5025,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get invoices => '[ES_419] Invoices (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -4568,7 +5042,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get tryAgain => '[ES_419] Try Again (Spanish (Latin America))';
 
   @override
-  String get deleteBackground => '[ES_419] Delete Background (Spanish (Latin America))';
+  String get deleteBackground =>
+      '[ES_419] Delete Background (Spanish (Latin America))';
 
   @override
   String currentTierTiertouppercase(Object tier) {
@@ -4579,22 +5054,26 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get iDoNotConsent => '[ES_419] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] No clients found. Add your first client! (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] No clients found. Add your first client! (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[ES_419] Group: \$groupId';
 
   @override
-  String get appointmentRequests => '[ES_419] Appointment Requests (Spanish (Latin America))';
+  String get appointmentRequests =>
+      '[ES_419] Appointment Requests (Spanish (Latin America))';
 
   @override
   String get forward => '[ES_419] Forward (Spanish (Latin America))';
 
   @override
-  String get roomAddedSuccessfully => '[ES_419] Room added successfully! (Spanish (Latin America))';
+  String get roomAddedSuccessfully =>
+      '[ES_419] Room added successfully! (Spanish (Latin America))';
 
   @override
   String get option => '[ES_419] • \$option (Spanish (Latin America))';
@@ -4605,40 +5084,50 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[ES_419] • CRM dashboard with analytics (Spanish (Latin America))';
+  String get crmDashboardWithAnalytics =>
+      '[ES_419] • CRM dashboard with analytics (Spanish (Latin America))';
 
   @override
-  String get contentLibrary1 => '[ES_419] Content Library (Spanish (Latin America))';
+  String get contentLibrary1 =>
+      '[ES_419] Content Library (Spanish (Latin America))';
 
   @override
   String get reply => '[ES_419] Reply (Spanish (Latin America))';
 
   @override
-  String get subscriptionManagement => '[ES_419] Subscription Management (Spanish (Latin America))';
+  String get subscriptionManagement =>
+      '[ES_419] Subscription Management (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Monetization settings will be implemented here (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Monetization settings will be implemented here (Spanish (Latin America))';
 
   @override
-  String get failedToApplyPromoCodeE => '[ES_419] Failed to apply promo code: \$e (Spanish (Latin America))';
+  String get failedToApplyPromoCodeE =>
+      '[ES_419] Failed to apply promo code: \$e (Spanish (Latin America))';
 
   @override
   String get editProvider => '[ES_419] Edit Provider';
 
   @override
-  String get localizationContribution => '[ES_419] Localization Contribution (Spanish (Latin America))';
+  String get localizationContribution =>
+      '[ES_419] Localization Contribution (Spanish (Latin America))';
 
   @override
-  String get parentalConsent => '[ES_419] Parental Consent (Spanish (Latin America))';
+  String get parentalConsent =>
+      '[ES_419] Parental Consent (Spanish (Latin America))';
 
   @override
-  String get businessSignupScreenComingSoon => '[ES_419] Business Signup Screen - Coming Soon (Spanish (Latin America))';
+  String get businessSignupScreenComingSoon =>
+      '[ES_419] Business Signup Screen - Coming Soon (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => '[ES_419] Are you sure you want to delete this appointment? (Spanish (Latin America))';
+  String get REDACTED_TOKEN =>
+      '[ES_419] Are you sure you want to delete this appointment? (Spanish (Latin America))';
 
   @override
-  String get syncAppointment => '[ES_419] Sync Appointment (Spanish (Latin America))';
+  String get syncAppointment =>
+      '[ES_419] Sync Appointment (Spanish (Latin America))';
 
   @override
   String get iConsent => '[ES_419] I Consent (Spanish (Latin America))';
@@ -4647,19 +5136,23 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[ES_419] Business Setup Screen - Coming Soon (Spanish (Latin America))';
+  String get businessSetupScreenComingSoon =>
+      '[ES_419] Business Setup Screen - Coming Soon (Spanish (Latin America))';
 
   @override
   String get edit1 => '[ES_419] Edit (Spanish (Latin America))';
 
   @override
-  String get noEventsScheduledThisMonth => '[ES_419] No events scheduled this month (Spanish (Latin America))';
+  String get noEventsScheduledThisMonth =>
+      '[ES_419] No events scheduled this month (Spanish (Latin America))';
 
   @override
-  String get businessDashboard => '[ES_419] Business Dashboard (Spanish (Latin America))';
+  String get businessDashboard =>
+      '[ES_419] Business Dashboard (Spanish (Latin America))';
 
   @override
-  String get noMessagesFound => '[ES_419] No messages found. (Spanish (Latin America))';
+  String get noMessagesFound =>
+      '[ES_419] No messages found. (Spanish (Latin America))';
 
   @override
   String staffStaffidNotSelected(Object staff) {
@@ -4667,10 +5160,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get manageStaffAvailability => '[ES_419] Manage Staff Availability (Spanish (Latin America))';
+  String get manageStaffAvailability =>
+      '[ES_419] Manage Staff Availability (Spanish (Latin America))';
 
   @override
-  String get noMissingTranslations => '[ES_419] No missing translations (Spanish (Latin America))';
+  String get noMissingTranslations =>
+      '[ES_419] No missing translations (Spanish (Latin America))';
 
   @override
   String get skip => '[ES_419] Skip (Spanish (Latin America))';
@@ -4684,7 +5179,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get noUsers => '[ES_419] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[ES_419] Error loading referral code (Spanish (Latin America))';
+  String get errorLoadingReferralCode =>
+      '[ES_419] Error loading referral code (Spanish (Latin America))';
 
   @override
   String get allCountries => '[ES_419] All Countries (Spanish (Latin America))';
@@ -4693,13 +5189,16 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get deleteGame => '[ES_419] Delete Game (Spanish (Latin America))';
 
   @override
-  String get staffManagementTools => '[ES_419] • Staff management tools (Spanish (Latin America))';
+  String get staffManagementTools =>
+      '[ES_419] • Staff management tools (Spanish (Latin America))';
 
   @override
-  String get deleteMessage => '[ES_419] Delete Message (Spanish (Latin America))';
+  String get deleteMessage =>
+      '[ES_419] Delete Message (Spanish (Latin America))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[ES_419] changeRole (TRANSLATE)';
@@ -4710,7 +5209,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get openingCustomerPortal => '[ES_419] Opening customer portal... (Spanish (Latin America))';
+  String get openingCustomerPortal =>
+      '[ES_419] Opening customer portal... (Spanish (Latin America))';
 
   @override
   String get signOut => '[ES_419] Sign Out (Spanish (Latin America))';
@@ -4721,10 +5221,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness => '[ES_419] Upgrade to Business (Spanish (Latin America))';
+  String get upgradeToBusiness =>
+      '[ES_419] Upgrade to Business (Spanish (Latin America))';
 
   @override
   String get apply => 'تطبيق';
@@ -4747,10 +5249,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
-  String get viewResponses => '[ES_419] View Responses (Spanish (Latin America))';
+  String get viewResponses =>
+      '[ES_419] View Responses (Spanish (Latin America))';
 
   @override
   String get businessWelcomeScreenComingSoon => 'شاشة ترحيب الأعمال - قريباً';
@@ -4776,7 +5280,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -4794,7 +5299,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -4803,7 +5309,8 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';

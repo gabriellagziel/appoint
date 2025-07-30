@@ -514,4 +514,3 @@ class FamilyDashboardScreen extends ConsumerWidget {
       ),
     );
   }
-}

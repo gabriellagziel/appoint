@@ -1,6 +1,7 @@
 import 'package:appoint/exceptions/booking_conflict_exception.dart';
 import 'package:appoint/providers/notification_provider.dart';
 import 'package:appoint/services/ui_notification_service.dart';
+
 import 'package:appoint/widgets/booking_conflict_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -17,8 +18,6 @@ class NotificationIntegrationExample extends ConsumerStatefulWidget {
 class REDACTED_TOKEN
     extends ConsumerState<NotificationIntegrationExample> {
   late SyncNotificationHelper syncHelper;
-  late GlobalKey<ScaffoldMessengerState> messengerKey;
-
   @override
   Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
@@ -139,7 +138,6 @@ class REDACTED_TOKEN
 /// Example of how to set up the notification service in main.dart
 class MainAppSetupExample {
   static late GlobalKey<ScaffoldMessengerState> messengerKey;
-
   static Widget buildApp() {
     messengerKey = GlobalKey<ScaffoldMessengerState>();
 

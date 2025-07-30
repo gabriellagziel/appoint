@@ -74,7 +74,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get search => '[MS] Cari';
 
   @override
-  String get cancelInviteConfirmation => '[MS] [MS] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation =>
+      '[MS] [MS] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -88,7 +89,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get playtimeLiveScheduled => '[MS] Sesi langsung dijadualkan';
 
   @override
-  String get revokeAccessConfirmation => '[MS] [MS] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[MS] [MS] Are you sure you want to revoke access?';
 
   @override
   String get download => '[MS] [MS] Download';
@@ -182,7 +184,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[MS] [MS] Meeting shared successfully';
+  String get meetingSharedSuccessfully =>
+      '[MS] [MS] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[MS] [MS] Welcome to Playtime';
@@ -200,7 +203,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get cut => '[MS] [MS] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => '[MS] [MS] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully =>
+      '[MS] [MS] Invite cancelled successfully';
 
   @override
   String get retry => '[MS] Cuba lagi';
@@ -277,7 +281,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get scheduleForLater => '[MS] Jadualkan kemudian';
 
   @override
-  String get accessRevokedSuccessfully => '[MS] [MS] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[MS] [MS] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -479,7 +484,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get playtimeEnterGameName => '[MS] [MS] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[MS] [MS] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[MS] [MS] Please login to access family features';
 
   @override
   String get myInvites => '[MS] [MS] My Invites';
@@ -533,7 +539,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[MS] [MS] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[MS] [MS] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[MS] Admin Metrics';
@@ -554,40 +561,52 @@ class AppLocalizationsMs extends AppLocalizations {
   String get contentLibrary => '[MS] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[MS] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[MS] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[MS] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[MS] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[MS] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[MS] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[MS] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[MS] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[MS] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[MS] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[MS] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[MS] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[MS] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[MS] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[MS] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[MS] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[MS] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[MS] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[MS] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[MS] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[MS] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[MS] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[MS] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +623,24 @@ class AppLocalizationsMs extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[MS] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[MS] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[MS] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[MS] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[MS] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[MS] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[MS] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[MS] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[MS] Missing verification ID.';
@@ -628,43 +652,56 @@ class AppLocalizationsMs extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[MS] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[MS] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[MS] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[MS] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[MS] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[MS] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[MS] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[MS] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[MS] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[MS] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[MS] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[MS] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[MS] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[MS] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[MS] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[MS] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[MS] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[MS] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[MS] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[MS] The ID token is invalid.';
@@ -676,10 +713,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[MS] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[MS] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[MS] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[MS] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[MS] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[MS] Invalid custom claims provided.';
@@ -688,70 +727,87 @@ class AppLocalizationsMs extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[MS] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[MS] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[MS] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[MS] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[MS] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[MS] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[MS] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[MS] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[MS] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[MS] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[MS] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[MS] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[MS] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[MS] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[MS] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[MS] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[MS] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[MS] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[MS] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[MS] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[MS] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[MS] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[MS] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[MS] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[MS] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[MS] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[MS] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[MS] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[MS] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[MS] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[MS] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[MS] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[MS] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[MS] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[MS] Missing continue URL.';
@@ -766,7 +822,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get authErrorMissingUid => '[MS] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[MS] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[MS] Firebase project not found.';
@@ -775,19 +832,23 @@ class AppLocalizationsMs extends AppLocalizations {
   String get authErrorReservedClaims => '[MS] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[MS] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[MS] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[MS] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[MS] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[MS] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[MS] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[MS] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[MS] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[MS] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +897,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Virtual session created! Inviting friends... (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Virtual session created! Inviting friends... (Malay)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -883,7 +945,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get confirmBooking => '[MS] Confirm Booking (Malay)';
 
   @override
-  String get failedToUpdatePermissionE => '[MS] Failed to update permission: \$e (Malay)';
+  String get failedToUpdatePermissionE =>
+      '[MS] Failed to update permission: \$e (Malay)';
 
   @override
   String get reject => '[MS] Reject (Malay)';
@@ -911,7 +974,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get resolve => '[MS] Resolve (Malay)';
 
   @override
-  String get errorLoadingSurveysError => '[MS] Error loading surveys: \$error (Malay)';
+  String get errorLoadingSurveysError =>
+      '[MS] Error loading surveys: \$error (Malay)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +983,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[MS] Get help with your account (Malay)';
+  String get getHelpWithYourAccount =>
+      '[MS] Get help with your account (Malay)';
 
   @override
   String get pay => '[MS] Pay (Malay)';
@@ -934,7 +999,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[MS] Changes saved successfully! (Malay)';
+  String get changesSavedSuccessfully =>
+      '[MS] Changes saved successfully! (Malay)';
 
   @override
   String get createNewInvoice => '[MS] Create New Invoice (Malay)';
@@ -954,7 +1020,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get profileSaved => '[MS] Profile saved! (Malay)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1052,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[MS] You will receive a confirmation email shortly. (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] You will receive a confirmation email shortly. (Malay)';
 
   @override
   String get addQuestion => '[MS] Add Question (Malay)';
@@ -1014,22 +1082,26 @@ class AppLocalizationsMs extends AppLocalizations {
   String get surveyManagement => '[MS] Survey Management (Malay)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[MS] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[MS] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[MS] No rooms found. Add your first room! (Malay)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[MS] No rooms found. Add your first room! (Malay)';
 
   @override
   String get readOurPrivacyPolicy => '[MS] Read our privacy policy (Malay)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[MS] Could not open privacy policy (Malay)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[MS] Could not open privacy policy (Malay)';
 
   @override
   String get refresh1 => '[MS] Refresh (Malay)';
 
   @override
-  String get roomUpdatedSuccessfully => '[MS] Room updated successfully! (Malay)';
+  String get roomUpdatedSuccessfully =>
+      '[MS] Room updated successfully! (Malay)';
 
   @override
   String get contentDetail => '[MS] Content Detail (Malay)';
@@ -1038,7 +1110,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get cancelSubscription => '[MS] Cancel Subscription (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Successfully registered as Ambassador! (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Successfully registered as Ambassador! (Malay)';
 
   @override
   String get save1 => '[MS] Save (Malay)';
@@ -1047,7 +1120,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get copy1 => '[MS] Copy (Malay)';
 
   @override
-  String get failedToSendInvitationE => '[MS] Failed to send invitation: \$e (Malay)';
+  String get failedToSendInvitationE =>
+      '[MS] Failed to send invitation: \$e (Malay)';
 
   @override
   String get surveyScore => '[MS] Survey Score (Malay)';
@@ -1064,16 +1138,20 @@ class AppLocalizationsMs extends AppLocalizations {
   String get responseDetail => '[MS] Response Detail (Malay)';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[MS] Failed to start Pro subscription: \$e (Malay)';
+  String get failedToStartProSubscriptionE =>
+      '[MS] Failed to start Pro subscription: \$e (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Business Dashboard Entry Screen - Coming Soon (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Business Dashboard Entry Screen - Coming Soon (Malay)';
 
   @override
   String get contentFilter => '[MS] Content Filter (Malay)';
@@ -1095,7 +1173,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[MS] Business CRM Entry Screen - Coming Soon (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Business CRM Entry Screen - Coming Soon (Malay)';
 
   @override
   String get adminDashboard => '[MS] Admin Dashboard';
@@ -1106,13 +1185,16 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[MS] Error loading dashboard: \$error (Malay)';
+  String get errorLoadingDashboardError =>
+      '[MS] Error loading dashboard: \$error (Malay)';
 
   @override
-  String get gameDeletedSuccessfully => '[MS] Game deleted successfully! (Malay)';
+  String get gameDeletedSuccessfully =>
+      '[MS] Game deleted successfully! (Malay)';
 
   @override
-  String get viewResponsesComingSoon => '[MS] View responses - Coming soon! (Malay)';
+  String get viewResponsesComingSoon =>
+      '[MS] View responses - Coming soon! (Malay)';
 
   @override
   String get deleteProvider => '[MS] Delete Provider';
@@ -1121,7 +1203,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get errorLoadingRewards => '[MS] Error loading rewards (Malay)';
 
   @override
-  String get failedToDeleteAccountE => '[MS] Failed to delete account: \$e (Malay)';
+  String get failedToDeleteAccountE =>
+      '[MS] Failed to delete account: \$e (Malay)';
 
   @override
   String get invited1 => '[MS] Invited (Malay)';
@@ -1136,7 +1219,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get noEvents => '[MS] No events (Malay)';
 
   @override
-  String get gameCreatedSuccessfully => '[MS] Game created successfully! (Malay)';
+  String get gameCreatedSuccessfully =>
+      '[MS] Game created successfully! (Malay)';
 
   @override
   String get add1 => '[MS] Add (Malay)';
@@ -1156,10 +1240,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get clients => '[MS] Clients (Malay)';
 
   @override
-  String get noAmbassadorDataAvailable => '[MS] No ambassador data available (Malay)';
+  String get noAmbassadorDataAvailable =>
+      '[MS] No ambassador data available (Malay)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[MS] Background deleted successfully! (Malay)';
+  String get backgroundDeletedSuccessfully =>
+      '[MS] Background deleted successfully! (Malay)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1253,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[MS] No analytics data available yet. (Malay)';
+  String get noAnalyticsDataAvailableYet =>
+      '[MS] No analytics data available yet. (Malay)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1262,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[MS] Business Phone Booking Entry Screen - Coming Soon (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Business Phone Booking Entry Screen - Coming Soon (Malay)';
 
   @override
   String get verification => '[MS] Verification (Malay)';
@@ -1222,7 +1310,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get businessProfile => '[MS] Business Profile (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Business Booking Entry Screen - Coming Soon (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Business Booking Entry Screen - Coming Soon (Malay)';
 
   @override
   String get createNewSurvey => '[MS] Create New Survey (Malay)';
@@ -1246,7 +1335,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get loginFailedE => '[MS] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[MS] Invitation sent successfully! (Malay)';
+  String get invitationSentSuccessfully =>
+      '[MS] Invitation sent successfully! (Malay)';
 
   @override
   String get registering => '[MS] Registering... (Malay)';
@@ -1263,10 +1353,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get errorSavingSettingsE => '[MS] Error saving settings: \$e (Malay)';
 
   @override
-  String get appVersionAndInformation => '[MS] App version and information (Malay)';
+  String get appVersionAndInformation =>
+      '[MS] App version and information (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Business Subscription Entry Screen - Coming Soon (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Business Subscription Entry Screen - Coming Soon (Malay)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1366,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[MS] Your payment has been processed successfully. (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Your payment has been processed successfully. (Malay)';
 
   @override
   String get errorE => '[MS] Error: \$e (Malay)';
@@ -1292,7 +1385,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get payment => '[MS] Payment (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Automatically confirm new booking requests (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Automatically confirm new booking requests (Malay)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1399,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[MS] Please sign in to upload a background (Malay)';
+  String get pleaseSignInToUploadABackground =>
+      '[MS] Please sign in to upload a background (Malay)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1417,22 @@ class AppLocalizationsMs extends AppLocalizations {
   String get autoconfirmBookings => '[MS] Auto-Confirm Bookings (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Redirecting to Stripe checkout for Pro plan... (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Redirecting to Stripe checkout for Pro plan... (Malay)';
 
   @override
   String get exportAsCsv => '[MS] Export as CSV (Malay)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[MS] Delete functionality coming soon! (Malay)';
+  String get deleteFunctionalityComingSoon =>
+      '[MS] Delete functionality coming soon! (Malay)';
 
   @override
   String get editClient => '[MS] Edit Client (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Are you sure you want to delete this message? (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Are you sure you want to delete this message? (Malay)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1443,39 @@ class AppLocalizationsMs extends AppLocalizations {
   String get notAuthenticated => '[MS] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[MS] Privacy request sent to your parents! (Malay)';
+  String get privacyRequestSentToYourParents =>
+      '[MS] Privacy request sent to your parents! (Malay)';
 
   @override
-  String get clientDeletedSuccessfully => '[MS] Client deleted successfully! (Malay)';
+  String get clientDeletedSuccessfully =>
+      '[MS] Client deleted successfully! (Malay)';
 
   @override
-  String get failedToCancelSubscription => '[MS] Failed to cancel subscription (Malay)';
+  String get failedToCancelSubscription =>
+      '[MS] Failed to cancel subscription (Malay)';
 
   @override
   String get allLanguages => '[MS] All Languages (Malay)';
 
   @override
-  String get slotDeletedSuccessfully => '[MS] Slot deleted successfully (Malay)';
+  String get slotDeletedSuccessfully =>
+      '[MS] Slot deleted successfully (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[MS] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Parents must approve before children can join (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Parents must approve before children can join (Malay)';
 
   @override
-  String get subscribeToPro1499mo => '[MS] Subscribe to Pro (€14.99/mo) (Malay)';
+  String get subscribeToPro1499mo =>
+      '[MS] Subscribe to Pro (€14.99/mo) (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Business Availability Entry Screen - Coming Soon (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Business Availability Entry Screen - Coming Soon (Malay)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1489,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get submitBooking => '[MS] Submit Booking (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Are you sure you want to cancel this appointment? (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Are you sure you want to cancel this appointment? (Malay)';
 
   @override
   String get noUpcomingBookings => '[MS] No upcoming bookings (Malay)';
@@ -1401,7 +1508,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get goToDashboard => '[MS] Go to Dashboard (Malay)';
 
   @override
-  String get ambassadorQuotaDashboard => '[MS] Ambassador Quota Dashboard (Malay)';
+  String get ambassadorQuotaDashboard =>
+      '[MS] Ambassador Quota Dashboard (Malay)';
 
   @override
   String get adminSettings => '[MS] Admin Settings';
@@ -1439,7 +1547,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[MS] Client added successfully! (Malay)';
+  String get clientAddedSuccessfully =>
+      '[MS] Client added successfully! (Malay)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1566,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get bookAppointment => '[MS] Book Appointment (Malay)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[MS] Delete (Malay)';
@@ -1472,13 +1582,15 @@ class AppLocalizationsMs extends AppLocalizations {
   String get manageSubscription => '[MS] Manage Subscription (Malay)';
 
   @override
-  String get requiresInstallFallback => '[MS] Requires Install Fallback (Malay)';
+  String get requiresInstallFallback =>
+      '[MS] Requires Install Fallback (Malay)';
 
   @override
   String get paymentConfirmation => '[MS] Payment Confirmation (Malay)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[MS] Promo applied! Your next bill is free. (Malay)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[MS] Promo applied! Your next bill is free. (Malay)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1601,16 @@ class AppLocalizationsMs extends AppLocalizations {
   String get errorLoadingSlots => '[MS] Error loading slots (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Allow other users to find and join this game (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Allow other users to find and join this game (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Business Onboarding Screen - Coming Soon (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Business Onboarding Screen - Coming Soon (Malay)';
 
   @override
-  String get activateBusinessProfile => '[MS] Activate Business Profile (Malay)';
+  String get activateBusinessProfile =>
+      '[MS] Activate Business Profile (Malay)';
 
   @override
   String get contentNotFound => '[MS] Content not found (Malay)';
@@ -1537,7 +1652,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get shareLink => '[MS] Share Link (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[MS] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[MS] Delete Appointment (Malay)';
@@ -1557,10 +1673,12 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[MS] Update your business information (Malay)';
+  String get updateYourBusinessInformation =>
+      '[MS] Update your business information (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[MS] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[MS] Parent Dashboard (Malay)';
@@ -1583,10 +1701,12 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[MS] Studio booking is only available on web (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Studio booking is only available on web (Malay)';
 
   @override
-  String get errorLoadingBranchesE => '[MS] Error loading branches: \$e (Malay)';
+  String get errorLoadingBranchesE =>
+      '[MS] Error loading branches: \$e (Malay)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1602,13 +1722,15 @@ class AppLocalizationsMs extends AppLocalizations {
   String get none => '[MS] None (Malay)';
 
   @override
-  String get failedToUpdateConsentE => '[MS] Failed to update consent: \$e (Malay)';
+  String get failedToUpdateConsentE =>
+      '[MS] Failed to update consent: \$e (Malay)';
 
   @override
   String get welcome1 => '[MS] Welcome (Malay)';
 
   @override
-  String get failedToCreateSessionE => '[MS] Failed to create session: \$e (Malay)';
+  String get failedToCreateSessionE =>
+      '[MS] Failed to create session: \$e (Malay)';
 
   @override
   String get inviteContact => '[MS] Invite Contact (Malay)';
@@ -1617,7 +1739,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get surveyEditor => '[MS] Survey Editor (Malay)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[MS] Failed to start Basic subscription: \$e (Malay)';
+  String get failedToStartBasicSubscriptionE =>
+      '[MS] Failed to start Basic subscription: \$e (Malay)';
 
   @override
   String get mySchedule => '[MS] My Schedule (Malay)';
@@ -1637,7 +1760,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[MS] Settings saved successfully! (Malay)';
+  String get settingsSavedSuccessfully =>
+      '[MS] Settings saved successfully! (Malay)';
 
   @override
   String get linkCopiedToClipboard => '[MS] Link copied to clipboard! (Malay)';
@@ -1657,7 +1781,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[MS] Room deleted successfully! (Malay)';
+  String get roomDeletedSuccessfully =>
+      '[MS] Room deleted successfully! (Malay)';
 
   @override
   String get businessCalendar => '[MS] Business Calendar (Malay)';
@@ -1722,7 +1847,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get cancel1 => '[MS] Cancel (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Subscription activated successfully! (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Subscription activated successfully! (Malay)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1859,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get broadcast => '[MS] Broadcast (Malay)';
 
   @override
-  String get noEventsScheduledThisWeek => '[MS] No events scheduled this week (Malay)';
+  String get noEventsScheduledThisWeek =>
+      '[MS] No events scheduled this week (Malay)';
 
   @override
   String get googleCalendar => '[MS] Google Calendar (Malay)';
@@ -1745,7 +1872,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get childDashboard => '[MS] Child Dashboard (Malay)';
 
   @override
-  String get failedToUploadBackgroundE => '[MS] Failed to upload background: \$e (Malay)';
+  String get failedToUploadBackgroundE =>
+      '[MS] Failed to upload background: \$e (Malay)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1892,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get noAppointments => '[MS] No appointments (Malay)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[MS] • Unlimited bookings per week (Malay)';
+  String get unlimitedBookingsPerWeek =>
+      '[MS] • Unlimited bookings per week (Malay)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1901,19 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[MS] Scheduled at: \$scheduledAt (Malay)';
+  String get scheduledAtScheduledat =>
+      '[MS] Scheduled at: \$scheduledAt (Malay)';
 
   @override
   String get selectStaff => '[MS] Select Staff (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Subscription cancelled successfully (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Subscription cancelled successfully (Malay)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[MS] Cancel Appointment (Malay)';
@@ -1795,7 +1927,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get businessSignup => '[MS] Business Signup (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Business Completion Screen - Coming Soon (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Business Completion Screen - Coming Soon (Malay)';
 
   @override
   String get createGame1 => '[MS] Create Game (Malay)';
@@ -1809,7 +1942,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[MS] Please enter a promo code (Malay)';
 
   @override
-  String get errorLoadingAvailabilityE => '[MS] Error loading availability: \$e (Malay)';
+  String get errorLoadingAvailabilityE =>
+      '[MS] Error loading availability: \$e (Malay)';
 
   @override
   String get parentalControls => '[MS] Parental Controls (Malay)';
@@ -1818,13 +1952,15 @@ class AppLocalizationsMs extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[MS] Child linked successfully! (Malay)';
+  String get childLinkedSuccessfully =>
+      '[MS] Child linked successfully! (Malay)';
 
   @override
   String get create => '[MS] Create (Malay)';
 
   @override
-  String get noExternalMeetingsFound => '[MS] No external meetings found. (Malay)';
+  String get noExternalMeetingsFound =>
+      '[MS] No external meetings found. (Malay)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1968,15 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[MS] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[MS] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[MS] Scheduler Screen (Malay)';
 
   @override
-  String get clientUpdatedSuccessfully => '[MS] Client updated successfully! (Malay)';
+  String get clientUpdatedSuccessfully =>
+      '[MS] Client updated successfully! (Malay)';
 
   @override
   String get surveyResponses => '[MS] Survey Responses (Malay)';
@@ -1864,10 +2002,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get errorLoadingEvents => '[MS] Error loading events (Malay)';
 
   @override
-  String get errorLoadingOrganizations => '[MS] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[MS] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[MS] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[MS] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[MS] Success (Malay)';
@@ -1886,10 +2026,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get readWrite => '[MS] Read & Write (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Redirecting to Stripe checkout for Basic plan... (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Redirecting to Stripe checkout for Basic plan... (Malay)';
 
   @override
-  String get errorSavingConfigurationE => '[MS] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[MS] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[MS] Pick Date (Malay)';
@@ -1925,10 +2067,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get businessLogin => '[MS] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[MS] Invoice created successfully! (Malay)';
+  String get invoiceCreatedSuccessfully =>
+      '[MS] Invoice created successfully! (Malay)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[MS] No time series data available (Malay)';
+  String get noTimeSeriesDataAvailable =>
+      '[MS] No time series data available (Malay)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2085,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[MS] Failed to send privacy request: \$e (Malay)';
+  String get failedToSendPrivacyRequestE =>
+      '[MS] Failed to send privacy request: \$e (Malay)';
 
   @override
   String get chooseYourPlan => '[MS] Choose Your Plan (Malay)';
@@ -1956,7 +2101,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get eventCreated => '[MS] Event created (Malay)';
 
   @override
-  String get subscribeToBasic499mo => '[MS] Subscribe to Basic (€4.99/mo) (Malay)';
+  String get subscribeToBasic499mo =>
+      '[MS] Subscribe to Basic (€4.99/mo) (Malay)';
 
   @override
   String get completion => '[MS] Completion (Malay)';
@@ -1977,10 +2123,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get deleteSurvey => '[MS] Delete Survey (Malay)';
 
   @override
-  String get gameApprovedSuccessfully => '[MS] Game approved successfully! (Malay)';
+  String get gameApprovedSuccessfully =>
+      '[MS] Game approved successfully! (Malay)';
 
   @override
-  String get errorLoadingPermissionsError => '[MS] Error loading permissions: \$error (Malay)';
+  String get errorLoadingPermissionsError =>
+      '[MS] Error loading permissions: \$error (Malay)';
 
   @override
   String get referrals => '[MS] Referrals (Malay)';
@@ -2022,7 +2170,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get organizations => '[MS] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[MS] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[MS] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[MS] Create New Game (Malay)';
@@ -2031,10 +2180,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get next1 => '[MS] Next (Malay)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[MS] Background uploaded successfully! (Malay)';
+  String get backgroundUploadedSuccessfully =>
+      '[MS] Background uploaded successfully! (Malay)';
 
   @override
-  String get noAppointmentRequestsFound => '[MS] No appointment requests found. (Malay)';
+  String get noAppointmentRequestsFound =>
+      '[MS] No appointment requests found. (Malay)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2061,7 +2212,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[MS] Failed to create game: \$e (Malay)';
@@ -2070,7 +2222,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get noChartDataAvailable => '[MS] No chart data available (Malay)';
 
   @override
-  String get phonebasedBookingSystem => '[MS] • Phone-based booking system (Malay)';
+  String get phonebasedBookingSystem =>
+      '[MS] • Phone-based booking system (Malay)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2232,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get invoices => '[MS] Invoices (Malay)';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2260,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get iDoNotConsent => '[MS] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[MS] No clients found. Add your first client! (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] No clients found. Add your first client! (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[MS] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[MS] Group: \$groupId';
@@ -2132,7 +2288,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[MS] • CRM dashboard with analytics (Malay)';
+  String get crmDashboardWithAnalytics =>
+      '[MS] • CRM dashboard with analytics (Malay)';
 
   @override
   String get contentLibrary1 => '[MS] Content Library (Malay)';
@@ -2144,25 +2301,30 @@ class AppLocalizationsMs extends AppLocalizations {
   String get subscriptionManagement => '[MS] Subscription Management (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Monetization settings will be implemented here (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Monetization settings will be implemented here (Malay)';
 
   @override
-  String get failedToApplyPromoCodeE => '[MS] Failed to apply promo code: \$e (Malay)';
+  String get failedToApplyPromoCodeE =>
+      '[MS] Failed to apply promo code: \$e (Malay)';
 
   @override
   String get editProvider => '[MS] Edit Provider';
 
   @override
-  String get localizationContribution => '[MS] Localization Contribution (Malay)';
+  String get localizationContribution =>
+      '[MS] Localization Contribution (Malay)';
 
   @override
   String get parentalConsent => '[MS] Parental Consent (Malay)';
 
   @override
-  String get businessSignupScreenComingSoon => '[MS] Business Signup Screen - Coming Soon (Malay)';
+  String get businessSignupScreenComingSoon =>
+      '[MS] Business Signup Screen - Coming Soon (Malay)';
 
   @override
-  String get REDACTED_TOKEN => '[MS] Are you sure you want to delete this appointment? (Malay)';
+  String get REDACTED_TOKEN =>
+      '[MS] Are you sure you want to delete this appointment? (Malay)';
 
   @override
   String get syncAppointment => '[MS] Sync Appointment (Malay)';
@@ -2174,13 +2336,15 @@ class AppLocalizationsMs extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[MS] Business Setup Screen - Coming Soon (Malay)';
+  String get businessSetupScreenComingSoon =>
+      '[MS] Business Setup Screen - Coming Soon (Malay)';
 
   @override
   String get edit1 => '[MS] Edit (Malay)';
 
   @override
-  String get noEventsScheduledThisMonth => '[MS] No events scheduled this month (Malay)';
+  String get noEventsScheduledThisMonth =>
+      '[MS] No events scheduled this month (Malay)';
 
   @override
   String get businessDashboard => '[MS] Business Dashboard (Malay)';
@@ -2194,7 +2358,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[MS] Manage Staff Availability (Malay)';
+  String get manageStaffAvailability =>
+      '[MS] Manage Staff Availability (Malay)';
 
   @override
   String get noMissingTranslations => '[MS] No missing translations (Malay)';
@@ -2211,7 +2376,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get noUsers => '[MS] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[MS] Error loading referral code (Malay)';
+  String get errorLoadingReferralCode =>
+      '[MS] Error loading referral code (Malay)';
 
   @override
   String get allCountries => '[MS] All Countries (Malay)';
@@ -2226,7 +2392,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get deleteMessage => '[MS] Delete Message (Malay)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[MS] changeRole (TRANSLATE)';
@@ -2248,7 +2415,8 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[MS] Upgrade to Business (Malay)';
@@ -2274,7 +2442,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[MS] View Responses (Malay)';
@@ -2303,7 +2472,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2491,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2330,7 +2501,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2378,7 +2550,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2599,12 @@ class AppLocalizationsMs extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[MS] Congratulations! You\'re now an Ambassador! (Malay)';
+  String get ambassadorPromotionTitle =>
+      '[MS] Congratulations! You\'re now an Ambassador! (Malay)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2615,11 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tierUpgradeTitle => '[MS] Tier Upgrade! 🎉 (Malay)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[MS] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Malay)';
   }
 
@@ -2448,15 +2627,23 @@ class AppLocalizationsMs extends AppLocalizations {
   String get monthlyReminderTitle => '[MS] Monthly Goal Reminder (Malay)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[MS] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Malay)';
   }
 
   @override
-  String get performanceWarningTitle => '[MS] Ambassador Performance Alert (Malay)';
+  String get performanceWarningTitle =>
+      '[MS] Ambassador Performance Alert (Malay)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[MS] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Malay)';
   }
 
