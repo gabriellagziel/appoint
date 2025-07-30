@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-
-import '../../../models/booking.dart';
-import '../services/booking_service.dart';
-import '../../../providers/auth_provider.dart';
-import '../../selection/providers/selection_provider.dart';
 import '../../../widgets/bottom_sheet_manager.dart';
 import '../../../widgets/booking_confirmation_sheet.dart';
+import '../booking_helper.dart';
+import '../services/booking_service.dart';
+import '../../selection/providers/selection_provider.dart';
+import '../../../models/booking.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
   const BookingScreen({super.key});
@@ -21,71 +20,28 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
 
   Future<void> _submitBooking() async {
     setState(() => _isSubmitting = true);
-
     try {
-      final user = ref.read(authProvider).currentUser;
-      final userId = user?.uid ?? '';
-      if (userId.isEmpty) throw Exception('User not logged in');
-
-      final staffId = ref.read(staffSelectionProvider);
-      final serviceId = ref.read(serviceSelectionProvider);
-      final serviceName = ref.read(serviceNameProvider);
-      final dateTime = ref.read(selectedSlotProvider);
-      final duration = ref.read(serviceDurationProvider);
-
-      if (staffId == null ||
-          serviceId == null ||
-          dateTime == null ||
-          duration == null) {
-        throw Exception('Missing required booking information');
-      }
-
-      final booking = Booking(
-        id: '', // Will be set by Firestore
-        userId: userId,
-        staffId: staffId,
-        serviceId: serviceId,
-        serviceName: serviceName ?? 'Unknown Service',
-        dateTime: dateTime,
-        duration: duration,
-        notes: null,
-        createdAt: DateTime.now(),
-      );
-
-      await ref.read(bookingServiceProvider).submitBooking(booking);
-
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Booking confirmed')),
-      );
-      Navigator.pop(context);
-    } catch (e, st) {
-      debugPrint('Error during booking: $e\n$st');
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Failed to confirm booking')),
-      );
+      await BookingHelper.submitBooking(context, ref);
     } finally {
       if (mounted) setState(() => _isSubmitting = false);
     }
   }
 
-  Future<void> _showConfirmationSheet() async {
+  void _showConfirmationSheet() {
     final staffId = ref.read(staffSelectionProvider);
-    final serviceName = ref.read(serviceNameProvider);
+    final serviceName = ref.read(serviceNameProvider) ?? 'Service';
     final dateTime = ref.read(selectedSlotProvider);
     final duration = ref.read(serviceDurationProvider);
-
     if (staffId == null || dateTime == null || duration == null) return;
 
-    final summaryText =
-        'You are about to book a ${duration.inMinutes}-minute ${serviceName ?? 'meeting'} on '
-        '${DateFormat.yMMMd().format(dateTime)} at ${DateFormat.jm().format(dateTime)} with $staffId.';
+    final summary = 'You are about to book $serviceName with $staffId on ' +
+        DateFormat.yMMMEd().add_jm().format(dateTime) +
+        ' for ${duration.inMinutes} minutes.';
 
-    await BottomSheetManager.show(
+    BottomSheetManager.show(
       context: context,
       child: BookingConfirmationSheet(
-        summaryText: summaryText,
+        summaryText: summary,
         onCancel: () => Navigator.of(context).pop(),
         onConfirm: () {
           Navigator.of(context).pop();
