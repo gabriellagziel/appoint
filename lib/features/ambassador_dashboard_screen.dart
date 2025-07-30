@@ -3,7 +3,9 @@ import 'package:appoint/features/ambassador_quota_dashboard_screen.dart';
 import 'package:appoint/models/ambassador_stats.dart';
 import 'package:appoint/models/branch.dart';
 import 'package:appoint/models/business_analytics.dart';
-// import 'package:appoint/providers/ambassador_data_provider.dart'; // Unused
+import 'package:appoint/providers/ambassador_data_provider.dart';
+import 'package:appoint/providers/branch_provider.dart';
+import 'package:appoint/providers/notification_provider.dart';
 import 'package:appoint/services/branch_service.dart';
 import 'package:appoint/services/notification_service.dart';
 import 'package:fl_chart/fl_chart.dart';
@@ -11,11 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AmbassadorDashboardScreen extends ConsumerStatefulWidget {
-  const AmbassadorDashboardScreen({
-    required this.notificationService, required this.branchService, super.key,
-  });
-  final NotificationService notificationService;
-  final BranchService branchService;
+  const AmbassadorDashboardScreen({super.key});
 
   @override
   ConsumerState<AmbassadorDashboardScreen> createState() =>
@@ -35,8 +33,8 @@ class _AmbassadorDashboardScreenState
   @override
   void initState() {
     super.initState();
-    _notificationService = widget.notificationService;
-    _branchService = widget.branchService;
+    final _notificationService = ref.read(notificationServiceProvider);
+    final _branchService = ref.read(branchServiceProvider);
     _loadBranches();
     _initializeNotifications();
   }
@@ -46,12 +44,12 @@ class _AmbassadorDashboardScreenState
       _isLoadingBranches = true;
     });
     try {
-      branches = await _branchService.fetchBranches();
+      final branches = await _branchService.fetchBranches();
       setState(() {
         _branches = branches;
-        _isLoadingBranches = false;
+        var _isLoadingBranches = false;
       });
-    } catch (e) {e) {
+    } catch (e) {
       setState(() {
         _isLoadingBranches = false;
       });
@@ -64,6 +62,7 @@ class _AmbassadorDashboardScreenState
   }
 
   Future<void> _initializeNotifications() async {
+    final _notificationService = ref.read(notificationServiceProvider);
     await _notificationService.initialize(
       onMessage: (payload) {
         if (mounted) {
@@ -85,8 +84,8 @@ class _AmbassadorDashboardScreenState
 
   @override
   Widget build(BuildContext context) {
-    ambassadorDataAsync = ref.watch(ambassadorDataProvider);
-    ambassadorsOverTimeAsync = ref.watch(ambassadorsOverTimeProvider);
+    final ambassadorDataAsync = ref.watch(ambassadorDataProvider);
+    final ambassadorsOverTimeAsync = ref.watch(ambassadorsOverTimeProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -176,17 +175,23 @@ class _AmbassadorDashboardScreenState
         child: LayoutBuilder(
           builder: (context, final constraints) {
             if (constraints.maxWidth > 600) {
-              // Responsive horizontal/wrapped layout for larger screens
-              return Wrap(
-                spacing: 16,
-                runSpacing: 16,
-                crossAxisAlignment: WrapCrossAlignment.center,
-                children: [
-                  _buildCountryFilter(),
-                  _buildLanguageFilter(),
-                  _buildDateRangeFilter(),
-                  _buildClearButton(),
-                ],
+              // Horizontal layout for larger screens
+              return SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width * 1.5,
+                  child: Row(
+                    children: [
+                      Expanded(child: _buildCountryFilter()),
+                      const SizedBox(width: 16),
+                      Expanded(child: _buildLanguageFilter()),
+                      const SizedBox(width: 16),
+                      _buildDateRangeFilter(),
+                      const SizedBox(width: 16),
+                      _buildClearButton(),
+                    ],
+                  ),
+                ),
               );
             } else {
               // Vertical layout for smaller screens
@@ -298,8 +303,8 @@ class _AmbassadorDashboardScreenState
       onPressed: () {
         setState(() {
           selectedCountry = null;
-          selectedLanguage = null;
-          selectedDateRange = null;
+          final selectedLanguage = null;
+          final selectedDateRange = null;
         });
         ref.read(ambassadorDataProvider.notifier).clearFilters();
       },
@@ -497,9 +502,9 @@ class _AmbassadorDashboardScreenState
                   barTouchData: BarTouchData(enabled: false),
                   titlesData: FlTitlesData(
                     rightTitles: const AxisTitles(
-                        ,),
+                        ),
                     topTitles: const AxisTitles(
-                        ,),
+                        ),
                     bottomTitles: AxisTitles(
                       sideTitles: SideTitles(
                         showTitles: true,

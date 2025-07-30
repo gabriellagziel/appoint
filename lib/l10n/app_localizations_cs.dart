@@ -479,8 +479,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get playtimeEnterGameName => '[CS] Zadejte název hry';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[CS] [CS] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[CS] [CS] Please login to access family features';
 
   @override
   String get myInvites => '[CS] Moje pozvánky';
@@ -495,8 +494,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get adminScreenTBD => '[CS] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      '[CS] Název rodičovského panelu Playtime';
+  String get playtimeParentDashboardTitle => '[CS] Název rodičovského panelu Playtime';
 
   @override
   String get close => '[CS] Zavřít';
@@ -535,8 +533,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[CS] [CS] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[CS] [CS] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[CS] Admin Metrics';
@@ -557,52 +554,40 @@ class AppLocalizationsCs extends AppLocalizations {
   String get contentLibrary => '[CS] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[CS] No account found with this email address.';
+  String get authErrorUserNotFound => '[CS] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[CS] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[CS] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[CS] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[CS] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[CS] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[CS] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[CS] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[CS] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[CS] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[CS] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[CS] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[CS] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[CS] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[CS] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[CS] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[CS] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[CS] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[CS] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[CS] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[CS] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[CS] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[CS] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -619,24 +604,19 @@ class AppLocalizationsCs extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[CS] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[CS] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[CS] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[CS] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[CS] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[CS] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[CS] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[CS] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[CS] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[CS] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[CS] Missing verification ID.';
@@ -648,56 +628,43 @@ class AppLocalizationsCs extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[CS] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[CS] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[CS] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[CS] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[CS] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[CS] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[CS] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[CS] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[CS] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[CS] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[CS] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[CS] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[CS] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[CS] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[CS] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[CS] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[CS] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[CS] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[CS] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[CS] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[CS] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[CS] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[CS] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[CS] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[CS] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[CS] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[CS] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[CS] The ID token is invalid.';
@@ -709,12 +676,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[CS] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[CS] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[CS] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[CS] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[CS] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[CS] Invalid custom claims provided.';
@@ -723,87 +688,70 @@ class AppLocalizationsCs extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[CS] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[CS] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[CS] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[CS] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[CS] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[CS] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[CS] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[CS] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[CS] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[CS] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[CS] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[CS] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[CS] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[CS] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[CS] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[CS] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[CS] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[CS] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[CS] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[CS] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[CS] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[CS] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[CS] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[CS] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[CS] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[CS] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[CS] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[CS] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[CS] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[CS] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[CS] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[CS] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[CS] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[CS] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[CS] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[CS] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[CS] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[CS] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[CS] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[CS] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[CS] Missing continue URL.';
@@ -818,8 +766,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get authErrorMissingUid => '[CS] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[CS] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[CS] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[CS] Firebase project not found.';
@@ -828,23 +775,19 @@ class AppLocalizationsCs extends AppLocalizations {
   String get authErrorReservedClaims => '[CS] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[CS] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[CS] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[CS] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[CS] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[CS] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[CS] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[CS] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[CS] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[CS] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -893,8 +836,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[CS] Virtual session created! Inviting friends... (Czech)';
+  String get virtualSessionCreatedInvitingFriends => '[CS] Virtual session created! Inviting friends... (Czech)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -941,8 +883,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get confirmBooking => '[CS] Confirm Booking (Czech)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[CS] Failed to update permission: \$e (Czech)';
+  String get failedToUpdatePermissionE => '[CS] Failed to update permission: \$e (Czech)';
 
   @override
   String get reject => '[CS] Reject (Czech)';
@@ -970,8 +911,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get resolve => '[CS] Resolve (Czech)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[CS] Error loading surveys: \$error (Czech)';
+  String get errorLoadingSurveysError => '[CS] Error loading surveys: \$error (Czech)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -979,8 +919,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[CS] Get help with your account (Czech)';
+  String get getHelpWithYourAccount => '[CS] Get help with your account (Czech)';
 
   @override
   String get pay => '[CS] Pay (Czech)';
@@ -995,8 +934,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[CS] Changes saved successfully! (Czech)';
+  String get changesSavedSuccessfully => '[CS] Changes saved successfully! (Czech)';
 
   @override
   String get createNewInvoice => '[CS] Create New Invoice (Czech)';
@@ -1016,8 +954,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get profileSaved => '[CS] Profile saved! (Czech)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1048,8 +985,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[CS] You will receive a confirmation email shortly. (Czech)';
+  String get youWillReceiveAConfirmationEmailShortly => '[CS] You will receive a confirmation email shortly. (Czech)';
 
   @override
   String get addQuestion => '[CS] Add Question (Czech)';
@@ -1078,26 +1014,22 @@ class AppLocalizationsCs extends AppLocalizations {
   String get surveyManagement => '[CS] Survey Management (Czech)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[CS] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[CS] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[CS] No rooms found. Add your first room! (Czech)';
+  String get noRoomsFoundAddYourFirstRoom => '[CS] No rooms found. Add your first room! (Czech)';
 
   @override
   String get readOurPrivacyPolicy => '[CS] Read our privacy policy (Czech)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[CS] Could not open privacy policy (Czech)';
+  String get couldNotOpenPrivacyPolicy => '[CS] Could not open privacy policy (Czech)';
 
   @override
   String get refresh1 => '[CS] Refresh (Czech)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[CS] Room updated successfully! (Czech)';
+  String get roomUpdatedSuccessfully => '[CS] Room updated successfully! (Czech)';
 
   @override
   String get contentDetail => '[CS] Content Detail (Czech)';
@@ -1106,8 +1038,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get cancelSubscription => '[CS] Cancel Subscription (Czech)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[CS] Successfully registered as Ambassador! (Czech)';
+  String get successfullyRegisteredAsAmbassador => '[CS] Successfully registered as Ambassador! (Czech)';
 
   @override
   String get save1 => '[CS] Save (Czech)';
@@ -1116,8 +1047,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get copy1 => '[CS] Copy (Czech)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[CS] Failed to send invitation: \$e (Czech)';
+  String get failedToSendInvitationE => '[CS] Failed to send invitation: \$e (Czech)';
 
   @override
   String get surveyScore => '[CS] Survey Score (Czech)';
@@ -1134,20 +1064,16 @@ class AppLocalizationsCs extends AppLocalizations {
   String get responseDetail => '[CS] Response Detail (Czech)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[CS] Failed to start Pro subscription: \$e (Czech)';
+  String get failedToStartProSubscriptionE => '[CS] Failed to start Pro subscription: \$e (Czech)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[CS] Business Dashboard Entry Screen - Coming Soon (Czech)';
+  String get businessDashboardEntryScreenComingSoon => '[CS] Business Dashboard Entry Screen - Coming Soon (Czech)';
 
   @override
   String get contentFilter => '[CS] Content Filter (Czech)';
@@ -1169,8 +1095,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[CS] Business CRM Entry Screen - Coming Soon (Czech)';
+  String get businessCrmEntryScreenComingSoon => '[CS] Business CRM Entry Screen - Coming Soon (Czech)';
 
   @override
   String get adminDashboard => '[CS] Admin Dashboard';
@@ -1181,16 +1106,13 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[CS] Error loading dashboard: \$error (Czech)';
+  String get errorLoadingDashboardError => '[CS] Error loading dashboard: \$error (Czech)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[CS] Game deleted successfully! (Czech)';
+  String get gameDeletedSuccessfully => '[CS] Game deleted successfully! (Czech)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[CS] View responses - Coming soon! (Czech)';
+  String get viewResponsesComingSoon => '[CS] View responses - Coming soon! (Czech)';
 
   @override
   String get deleteProvider => '[CS] Delete Provider';
@@ -1199,8 +1121,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get errorLoadingRewards => '[CS] Error loading rewards (Czech)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[CS] Failed to delete account: \$e (Czech)';
+  String get failedToDeleteAccountE => '[CS] Failed to delete account: \$e (Czech)';
 
   @override
   String get invited1 => '[CS] Invited (Czech)';
@@ -1215,8 +1136,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get noEvents => '[CS] No events (Czech)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[CS] Game created successfully! (Czech)';
+  String get gameCreatedSuccessfully => '[CS] Game created successfully! (Czech)';
 
   @override
   String get add1 => '[CS] Add (Czech)';
@@ -1236,12 +1156,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get clients => '[CS] Clients (Czech)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[CS] No ambassador data available (Czech)';
+  String get noAmbassadorDataAvailable => '[CS] No ambassador data available (Czech)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[CS] Background deleted successfully! (Czech)';
+  String get backgroundDeletedSuccessfully => '[CS] Background deleted successfully! (Czech)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1249,8 +1167,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[CS] No analytics data available yet. (Czech)';
+  String get noAnalyticsDataAvailableYet => '[CS] No analytics data available yet. (Czech)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1258,8 +1175,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[CS] Business Phone Booking Entry Screen - Coming Soon (Czech)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[CS] Business Phone Booking Entry Screen - Coming Soon (Czech)';
 
   @override
   String get verification => '[CS] Verification (Czech)';
@@ -1306,8 +1222,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get businessProfile => '[CS] Business Profile (Czech)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[CS] Business Booking Entry Screen - Coming Soon (Czech)';
+  String get businessBookingEntryScreenComingSoon => '[CS] Business Booking Entry Screen - Coming Soon (Czech)';
 
   @override
   String get createNewSurvey => '[CS] Create New Survey (Czech)';
@@ -1331,8 +1246,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get loginFailedE => '[CS] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[CS] Invitation sent successfully! (Czech)';
+  String get invitationSentSuccessfully => '[CS] Invitation sent successfully! (Czech)';
 
   @override
   String get registering => '[CS] Registering... (Czech)';
@@ -1349,12 +1263,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get errorSavingSettingsE => '[CS] Error saving settings: \$e (Czech)';
 
   @override
-  String get appVersionAndInformation =>
-      '[CS] App version and information (Czech)';
+  String get appVersionAndInformation => '[CS] App version and information (Czech)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[CS] Business Subscription Entry Screen - Coming Soon (Czech)';
+  String get businessSubscriptionEntryScreenComingSoon => '[CS] Business Subscription Entry Screen - Coming Soon (Czech)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1362,8 +1274,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[CS] Your payment has been processed successfully. (Czech)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[CS] Your payment has been processed successfully. (Czech)';
 
   @override
   String get errorE => '[CS] Error: \$e (Czech)';
@@ -1381,8 +1292,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get payment => '[CS] Payment (Czech)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[CS] Automatically confirm new booking requests (Czech)';
+  String get automaticallyConfirmNewBookingRequests => '[CS] Automatically confirm new booking requests (Czech)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1395,8 +1305,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[CS] Please sign in to upload a background (Czech)';
+  String get pleaseSignInToUploadABackground => '[CS] Please sign in to upload a background (Czech)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1413,22 +1322,19 @@ class AppLocalizationsCs extends AppLocalizations {
   String get autoconfirmBookings => '[CS] Auto-Confirm Bookings (Czech)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[CS] Redirecting to Stripe checkout for Pro plan... (Czech)';
+  String get redirectingToStripeCheckoutForProPlan => '[CS] Redirecting to Stripe checkout for Pro plan... (Czech)';
 
   @override
   String get exportAsCsv => '[CS] Export as CSV (Czech)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[CS] Delete functionality coming soon! (Czech)';
+  String get deleteFunctionalityComingSoon => '[CS] Delete functionality coming soon! (Czech)';
 
   @override
   String get editClient => '[CS] Edit Client (Czech)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[CS] Are you sure you want to delete this message? (Czech)';
+  String get areYouSureYouWantToDeleteThisMessage => '[CS] Are you sure you want to delete this message? (Czech)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1439,39 +1345,31 @@ class AppLocalizationsCs extends AppLocalizations {
   String get notAuthenticated => '[CS] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[CS] Privacy request sent to your parents! (Czech)';
+  String get privacyRequestSentToYourParents => '[CS] Privacy request sent to your parents! (Czech)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[CS] Client deleted successfully! (Czech)';
+  String get clientDeletedSuccessfully => '[CS] Client deleted successfully! (Czech)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[CS] Failed to cancel subscription (Czech)';
+  String get failedToCancelSubscription => '[CS] Failed to cancel subscription (Czech)';
 
   @override
   String get allLanguages => '[CS] All Languages (Czech)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[CS] Slot deleted successfully (Czech)';
+  String get slotDeletedSuccessfully => '[CS] Slot deleted successfully (Czech)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[CS] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[CS] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[CS] Parents must approve before children can join (Czech)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[CS] Parents must approve before children can join (Czech)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[CS] Subscribe to Pro (€14.99/mo) (Czech)';
+  String get subscribeToPro1499mo => '[CS] Subscribe to Pro (€14.99/mo) (Czech)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[CS] Business Availability Entry Screen - Coming Soon (Czech)';
+  String get businessAvailabilityEntryScreenComingSoon => '[CS] Business Availability Entry Screen - Coming Soon (Czech)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1485,8 +1383,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get submitBooking => '[CS] Submit Booking (Czech)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[CS] Are you sure you want to cancel this appointment? (Czech)';
+  String get areYouSureYouWantToCancelThisAppointment => '[CS] Are you sure you want to cancel this appointment? (Czech)';
 
   @override
   String get noUpcomingBookings => '[CS] No upcoming bookings (Czech)';
@@ -1504,8 +1401,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get goToDashboard => '[CS] Go to Dashboard (Czech)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[CS] Ambassador Quota Dashboard (Czech)';
+  String get ambassadorQuotaDashboard => '[CS] Ambassador Quota Dashboard (Czech)';
 
   @override
   String get adminSettings => '[CS] Admin Settings';
@@ -1543,8 +1439,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[CS] Client added successfully! (Czech)';
+  String get clientAddedSuccessfully => '[CS] Client added successfully! (Czech)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1562,8 +1457,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get bookAppointment => '[CS] Book Appointment (Czech)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[CS] Delete (Czech)';
@@ -1578,15 +1472,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get manageSubscription => '[CS] Manage Subscription (Czech)';
 
   @override
-  String get requiresInstallFallback =>
-      '[CS] Requires Install Fallback (Czech)';
+  String get requiresInstallFallback => '[CS] Requires Install Fallback (Czech)';
 
   @override
   String get paymentConfirmation => '[CS] Payment Confirmation (Czech)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[CS] Promo applied! Your next bill is free. (Czech)';
+  String get promoAppliedYourNextBillIsFree => '[CS] Promo applied! Your next bill is free. (Czech)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1597,16 +1489,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get errorLoadingSlots => '[CS] Error loading slots (Czech)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[CS] Allow other users to find and join this game (Czech)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[CS] Allow other users to find and join this game (Czech)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[CS] Business Onboarding Screen - Coming Soon (Czech)';
+  String get businessOnboardingScreenComingSoon => '[CS] Business Onboarding Screen - Coming Soon (Czech)';
 
   @override
-  String get activateBusinessProfile =>
-      '[CS] Activate Business Profile (Czech)';
+  String get activateBusinessProfile => '[CS] Activate Business Profile (Czech)';
 
   @override
   String get contentNotFound => '[CS] Content not found (Czech)';
@@ -1648,8 +1537,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get shareLink => '[CS] Share Link (Czech)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[CS] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[CS] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[CS] Delete Appointment (Czech)';
@@ -1669,12 +1557,10 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[CS] Update your business information (Czech)';
+  String get updateYourBusinessInformation => '[CS] Update your business information (Czech)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[CS] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[CS] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[CS] Parent Dashboard (Czech)';
@@ -1697,12 +1583,10 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[CS] Studio booking is only available on web (Czech)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[CS] Studio booking is only available on web (Czech)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[CS] Error loading branches: \$e (Czech)';
+  String get errorLoadingBranchesE => '[CS] Error loading branches: \$e (Czech)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1718,15 +1602,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get none => '[CS] None (Czech)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[CS] Failed to update consent: \$e (Czech)';
+  String get failedToUpdateConsentE => '[CS] Failed to update consent: \$e (Czech)';
 
   @override
   String get welcome1 => '[CS] Welcome (Czech)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[CS] Failed to create session: \$e (Czech)';
+  String get failedToCreateSessionE => '[CS] Failed to create session: \$e (Czech)';
 
   @override
   String get inviteContact => '[CS] Invite Contact (Czech)';
@@ -1735,8 +1617,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get surveyEditor => '[CS] Survey Editor (Czech)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[CS] Failed to start Basic subscription: \$e (Czech)';
+  String get failedToStartBasicSubscriptionE => '[CS] Failed to start Basic subscription: \$e (Czech)';
 
   @override
   String get mySchedule => '[CS] My Schedule (Czech)';
@@ -1756,8 +1637,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[CS] Settings saved successfully! (Czech)';
+  String get settingsSavedSuccessfully => '[CS] Settings saved successfully! (Czech)';
 
   @override
   String get linkCopiedToClipboard => '[CS] Link copied to clipboard! (Czech)';
@@ -1777,8 +1657,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[CS] Room deleted successfully! (Czech)';
+  String get roomDeletedSuccessfully => '[CS] Room deleted successfully! (Czech)';
 
   @override
   String get businessCalendar => '[CS] Business Calendar (Czech)';
@@ -1843,8 +1722,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get cancel1 => '[CS] Cancel (Czech)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[CS] Subscription activated successfully! (Czech)';
+  String get subscriptionActivatedSuccessfully => '[CS] Subscription activated successfully! (Czech)';
 
   @override
   String activityLogaction(Object action) {
@@ -1855,8 +1733,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get broadcast => '[CS] Broadcast (Czech)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[CS] No events scheduled this week (Czech)';
+  String get noEventsScheduledThisWeek => '[CS] No events scheduled this week (Czech)';
 
   @override
   String get googleCalendar => '[CS] Google Calendar (Czech)';
@@ -1868,8 +1745,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get childDashboard => '[CS] Child Dashboard (Czech)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[CS] Failed to upload background: \$e (Czech)';
+  String get failedToUploadBackgroundE => '[CS] Failed to upload background: \$e (Czech)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1888,8 +1764,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get noAppointments => '[CS] No appointments (Czech)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[CS] • Unlimited bookings per week (Czech)';
+  String get unlimitedBookingsPerWeek => '[CS] • Unlimited bookings per week (Czech)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1897,19 +1772,16 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[CS] Scheduled at: \$scheduledAt (Czech)';
+  String get scheduledAtScheduledat => '[CS] Scheduled at: \$scheduledAt (Czech)';
 
   @override
   String get selectStaff => '[CS] Select Staff (Czech)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[CS] Subscription cancelled successfully (Czech)';
+  String get subscriptionCancelledSuccessfully => '[CS] Subscription cancelled successfully (Czech)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[CS] Cancel Appointment (Czech)';
@@ -1923,8 +1795,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get businessSignup => '[CS] Business Signup (Czech)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[CS] Business Completion Screen - Coming Soon (Czech)';
+  String get businessCompletionScreenComingSoon => '[CS] Business Completion Screen - Coming Soon (Czech)';
 
   @override
   String get createGame1 => '[CS] Create Game (Czech)';
@@ -1938,8 +1809,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[CS] Please enter a promo code (Czech)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[CS] Error loading availability: \$e (Czech)';
+  String get errorLoadingAvailabilityE => '[CS] Error loading availability: \$e (Czech)';
 
   @override
   String get parentalControls => '[CS] Parental Controls (Czech)';
@@ -1948,15 +1818,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[CS] Child linked successfully! (Czech)';
+  String get childLinkedSuccessfully => '[CS] Child linked successfully! (Czech)';
 
   @override
   String get create => '[CS] Create (Czech)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[CS] No external meetings found. (Czech)';
+  String get noExternalMeetingsFound => '[CS] No external meetings found. (Czech)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1964,15 +1832,13 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[CS] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[CS] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[CS] Scheduler Screen (Czech)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[CS] Client updated successfully! (Czech)';
+  String get clientUpdatedSuccessfully => '[CS] Client updated successfully! (Czech)';
 
   @override
   String get surveyResponses => '[CS] Survey Responses (Czech)';
@@ -1998,12 +1864,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get errorLoadingEvents => '[CS] Error loading events (Czech)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[CS] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[CS] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[CS] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[CS] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[CS] Success (Czech)';
@@ -2022,12 +1886,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get readWrite => '[CS] Read & Write (Czech)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[CS] Redirecting to Stripe checkout for Basic plan... (Czech)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[CS] Redirecting to Stripe checkout for Basic plan... (Czech)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[CS] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[CS] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[CS] Pick Date (Czech)';
@@ -2063,12 +1925,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get businessLogin => '[CS] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[CS] Invoice created successfully! (Czech)';
+  String get invoiceCreatedSuccessfully => '[CS] Invoice created successfully! (Czech)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[CS] No time series data available (Czech)';
+  String get noTimeSeriesDataAvailable => '[CS] No time series data available (Czech)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2081,8 +1941,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[CS] Failed to send privacy request: \$e (Czech)';
+  String get failedToSendPrivacyRequestE => '[CS] Failed to send privacy request: \$e (Czech)';
 
   @override
   String get chooseYourPlan => '[CS] Choose Your Plan (Czech)';
@@ -2097,8 +1956,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get eventCreated => '[CS] Event created (Czech)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[CS] Subscribe to Basic (€4.99/mo) (Czech)';
+  String get subscribeToBasic499mo => '[CS] Subscribe to Basic (€4.99/mo) (Czech)';
 
   @override
   String get completion => '[CS] Completion (Czech)';
@@ -2119,12 +1977,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get deleteSurvey => '[CS] Delete Survey (Czech)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[CS] Game approved successfully! (Czech)';
+  String get gameApprovedSuccessfully => '[CS] Game approved successfully! (Czech)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[CS] Error loading permissions: \$error (Czech)';
+  String get errorLoadingPermissionsError => '[CS] Error loading permissions: \$error (Czech)';
 
   @override
   String get referrals => '[CS] Referrals (Czech)';
@@ -2166,8 +2022,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get organizations => '[CS] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[CS] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[CS] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[CS] Create New Game (Czech)';
@@ -2176,12 +2031,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get next1 => '[CS] Next (Czech)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[CS] Background uploaded successfully! (Czech)';
+  String get backgroundUploadedSuccessfully => '[CS] Background uploaded successfully! (Czech)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[CS] No appointment requests found. (Czech)';
+  String get noAppointmentRequestsFound => '[CS] No appointment requests found. (Czech)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2208,8 +2061,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[CS] Failed to create game: \$e (Czech)';
@@ -2218,8 +2070,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get noChartDataAvailable => '[CS] No chart data available (Czech)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[CS] • Phone-based booking system (Czech)';
+  String get phonebasedBookingSystem => '[CS] • Phone-based booking system (Czech)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2228,8 +2079,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get invoices => '[CS] Invoices (Czech)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2256,12 +2106,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get iDoNotConsent => '[CS] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[CS] No clients found. Add your first client! (Czech)';
+  String get noClientsFoundAddYourFirstClient => '[CS] No clients found. Add your first client! (Czech)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[CS] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[CS] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[CS] Group: \$groupId';
@@ -2284,8 +2132,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[CS] • CRM dashboard with analytics (Czech)';
+  String get crmDashboardWithAnalytics => '[CS] • CRM dashboard with analytics (Czech)';
 
   @override
   String get contentLibrary1 => '[CS] Content Library (Czech)';
@@ -2297,30 +2144,25 @@ class AppLocalizationsCs extends AppLocalizations {
   String get subscriptionManagement => '[CS] Subscription Management (Czech)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[CS] Monetization settings will be implemented here (Czech)';
+  String get monetizationSettingsWillBeImplementedHere => '[CS] Monetization settings will be implemented here (Czech)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[CS] Failed to apply promo code: \$e (Czech)';
+  String get failedToApplyPromoCodeE => '[CS] Failed to apply promo code: \$e (Czech)';
 
   @override
   String get editProvider => '[CS] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[CS] Localization Contribution (Czech)';
+  String get localizationContribution => '[CS] Localization Contribution (Czech)';
 
   @override
   String get parentalConsent => '[CS] Parental Consent (Czech)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[CS] Business Signup Screen - Coming Soon (Czech)';
+  String get businessSignupScreenComingSoon => '[CS] Business Signup Screen - Coming Soon (Czech)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[CS] Are you sure you want to delete this appointment? (Czech)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[CS] Are you sure you want to delete this appointment? (Czech)';
 
   @override
   String get syncAppointment => '[CS] Sync Appointment (Czech)';
@@ -2332,15 +2174,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[CS] Business Setup Screen - Coming Soon (Czech)';
+  String get businessSetupScreenComingSoon => '[CS] Business Setup Screen - Coming Soon (Czech)';
 
   @override
   String get edit1 => '[CS] Edit (Czech)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[CS] No events scheduled this month (Czech)';
+  String get noEventsScheduledThisMonth => '[CS] No events scheduled this month (Czech)';
 
   @override
   String get businessDashboard => '[CS] Business Dashboard (Czech)';
@@ -2354,8 +2194,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[CS] Manage Staff Availability (Czech)';
+  String get manageStaffAvailability => '[CS] Manage Staff Availability (Czech)';
 
   @override
   String get noMissingTranslations => '[CS] No missing translations (Czech)';
@@ -2372,8 +2211,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get noUsers => '[CS] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[CS] Error loading referral code (Czech)';
+  String get errorLoadingReferralCode => '[CS] Error loading referral code (Czech)';
 
   @override
   String get allCountries => '[CS] All Countries (Czech)';
@@ -2388,8 +2226,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get deleteMessage => '[CS] Delete Message (Czech)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[CS] changeRole (TRANSLATE)';
@@ -2411,8 +2248,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[CS] Upgrade to Business (Czech)';
@@ -2438,8 +2274,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[CS] View Responses (Czech)';
@@ -2468,8 +2303,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2487,8 +2321,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2497,8 +2330,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2546,8 +2378,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2595,12 +2426,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle =>
-      '[CS] Congratulations! You\'re now an Ambassador! (Czech)';
+  String get ambassadorPromotionTitle => '[CS] Congratulations! You\'re now an Ambassador! (Czech)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2611,11 +2440,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get tierUpgradeTitle => '[CS] Tier Upgrade! 🎉 (Czech)';
 
   @override
-  String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
     return '[CS] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Czech)';
   }
 
@@ -2623,23 +2448,15 @@ class AppLocalizationsCs extends AppLocalizations {
   String get monthlyReminderTitle => '[CS] Monthly Goal Reminder (Czech)';
 
   @override
-  String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
     return '[CS] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Czech)';
   }
 
   @override
-  String get performanceWarningTitle =>
-      '[CS] Ambassador Performance Alert (Czech)';
+  String get performanceWarningTitle => '[CS] Ambassador Performance Alert (Czech)';
 
   @override
-  String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
     return '[CS] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Czech)';
   }
 

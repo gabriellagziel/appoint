@@ -4,7 +4,7 @@ import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/providers/admin_provider.dart';
-import 'package:appoint/services/broadcast_service.dart';
+import 'package:appoint/services/broadcast_service.dart' hide adminBroadcastServiceProvider;
 import 'package:appoint/infra/firebase_storage_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -46,16 +46,18 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   Widget build(BuildContext context) {
     final isAdmin = ref.watch(isAdminProvider);
     final broadcastMessages = ref.watch(broadcastMessagesProvider);
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(l10n.adminBroadcast),
+        title: Text(l10n?.adminBroadcast ?? 'Admin Broadcast'),
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: () => _showComposeDialog(context, l10n!, theme),
+            onPressed: l10n != null 
+                ? () => _showComposeDialog(context, l10n!, theme)
+                : null,
           ),
         ],
       ),
@@ -144,7 +146,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Widget _buildMessagesList(List<AdminBroadcastMessage> messages) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     if (messages.isEmpty) {
       return Center(
@@ -329,12 +331,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             TextFormField(
               controller: _titleController,
               decoration: InputDecoration(
-                labelText: 'Title',
+                labelText: l10n.title,
                 border: const OutlineInputBorder(),
               ),
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter a title';
+                  return l10n.pleaseEnterTitle;
                 }
                 return null;
               },
@@ -343,7 +345,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             DropdownButtonFormField<BroadcastMessageType>(
               value: _selectedType,
               decoration: InputDecoration(
-                labelText: 'Message Type',
+                labelText: l10n.messageType,
                 border: const OutlineInputBorder(),
               ),
               items: BroadcastMessageType.values.map((type) => DropdownMenuItem(
@@ -360,13 +362,13 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             TextFormField(
               controller: _contentController,
               decoration: InputDecoration(
-                labelText: 'Content',
+                labelText: l10n.content,
                 border: const OutlineInputBorder(),
               ),
               maxLines: 3,
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter content';
+                  return l10n.pleaseEnterContent;
                 }
                 return null;
               },
@@ -407,7 +409,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
-                            'Image Selected: ${_selectedImage!.path.split('/').last}',
+                            '${l10n.imageSelected}: ${_selectedImage!.path.split('/').last}',
                             style: const TextStyle(fontSize: 12),
                           ),
                         ),
@@ -435,7 +437,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
-                            'Video Selected: ${_selectedVideo!.path.split('/').last}',
+                            '${l10n.videoSelected}: ${_selectedVideo!.path.split('/').last}',
                             style: const TextStyle(fontSize: 12),
                           ),
                         ),
@@ -467,12 +469,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               TextFormField(
                 controller: _linkController,
                 decoration: InputDecoration(
-                  labelText: 'External Link',
+                  labelText: l10n.externalLink,
                   border: const OutlineInputBorder(),
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter a link';
+                    return l10n.pleaseEnterLink;
                   }
                   return null;
                 },
@@ -500,7 +502,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             if (_estimatedRecipients != 0) ...[
               const SizedBox(height: 16),
               Text(
-                'Estimated Recipients: $_estimatedRecipients',
+                '${l10n.estimatedRecipients}: $_estimatedRecipients',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
             ],
@@ -518,7 +520,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // Countries
         TextFormField(
           decoration: InputDecoration(
-                            labelText: 'Countries',
+            labelText: l10n.countries,
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
@@ -536,7 +538,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // Cities
         TextFormField(
           decoration: InputDecoration(
-                            labelText: 'Cities',
+            labelText: l10n.cities,
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
@@ -554,7 +556,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // Subscription Tiers
         TextFormField(
           decoration: InputDecoration(
-                            labelText: 'Subscription Tiers',
+            labelText: l10n.subscriptionTiers,
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
@@ -572,7 +574,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // User Roles
         TextFormField(
           decoration: InputDecoration(
-                            labelText: 'User Roles',
+            labelText: l10n.userRoles,
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
@@ -664,7 +666,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${AppLocalizations.of(context)!.errorEstimatingRecipients}: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context).errorEstimatingRecipients}: $e')),
         );
       }
     }
@@ -685,15 +687,15 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (pickedFile != null) {
         setState(() {
-          _selectedImage = File(pickedFile.path);
-          _selectedVideo = null; // Clear video if image is selected
+          final _selectedImage = File(pickedFile.path);
+          final _selectedVideo = null; // Clear video if image is selected
         });
       }
     } catch (e) {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${AppLocalizations.of(context)!.errorPickingImage}: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context).errorPickingImage}: $e')),
         );
       }
     }
@@ -711,15 +713,15 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (pickedFile != null) {
         setState(() {
-          _selectedVideo = File(pickedFile.path);
-          _selectedImage = null; // Clear image if video is selected
+          final _selectedVideo = File(pickedFile.path);
+          final _selectedImage = null; // Clear image if video is selected
         });
       }
     } catch (e) {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${AppLocalizations.of(context)!.errorPickingVideo}: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context).errorPickingVideo}: $e')),
         );
       }
     }
@@ -731,12 +733,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   void _clearMedia() {
     setState(() {
       _selectedImage = null;
-      _selectedVideo = null;
+      final _selectedVideo = null;
     });
   }
 
   Future<void> _saveMessage() async {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     if (!_formKey.currentState!.validate()) return;
 
@@ -759,7 +761,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       final user = FirebaseAuth.instance.currentUser;
 
       if (user == null) {
-        throw Exception('${AppLocalizations.of(context)!.userNotAuthenticated}');
+        throw Exception('${AppLocalizations.of(context).userNotAuthenticated}');
       }
 
       // Upload media files if selected
@@ -770,7 +772,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         try {
           final imageUrl = await FirebaseStorageService.instance.uploadBroadcastImage(_selectedImage!);
         } catch (e) {
-          throw Exception('${AppLocalizations.of(context)!.failedToUploadImage}: $e');
+          throw Exception('${AppLocalizations.of(context).failedToUploadImage}: $e');
         }
       }
 
@@ -778,7 +780,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         try {
           final videoUrl = await FirebaseStorageService.instance.uploadBroadcastVideo(_selectedVideo!);
         } catch (e) {
-          throw Exception('${AppLocalizations.of(context)!.failedToUploadVideo}: $e');
+          throw Exception('${AppLocalizations.of(context).failedToUploadVideo}: $e');
         }
       }
 
@@ -832,7 +834,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Future<void> _sendMessage(String messageId) async {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     try {
       final service = ref.read(adminBroadcastServiceProvider);
@@ -850,7 +852,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   void _showMessageDetails(AdminBroadcastMessage message) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     showDialog(
       context: context,
@@ -866,7 +868,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               Text(l10n.type(message.type.toString())),
               if (message.imageUrl != null) ...[
                 const SizedBox(height: 8),
-                const Text('${AppLocalizations.of(context)!.image}:',
+                const Text('${AppLocalizations.of(context).image}:',
                     style: TextStyle(fontWeight: FontWeight.bold),),
                 Text(message.imageUrl!, style: const TextStyle(fontSize: 12)),
                 const SizedBox(height: 8),
@@ -891,7 +893,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               ],
               if (message.videoUrl != null) ...[
                 const SizedBox(height: 8),
-                const Text('${AppLocalizations.of(context)!.video}:',
+                const Text('${AppLocalizations.of(context).video}:',
                     style: TextStyle(fontWeight: FontWeight.bold),),
                 Text(message.videoUrl!, style: const TextStyle(fontSize: 12)),
                 const SizedBox(height: 8),
