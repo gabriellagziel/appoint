@@ -479,8 +479,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get playtimeEnterGameName => '[AR] أدخل اسم اللعبة';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[AR] يرجى تسجيل الدخول لميزات العائلة';
+  String get pleaseLoginForFamilyFeatures => '[AR] يرجى تسجيل الدخول لميزات العائلة';
 
   @override
   String get myInvites => 'دعواتي';
@@ -495,8 +494,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get adminScreenTBD => '[AR] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      '[AR] عنوان لوحة الآباء في Playtime';
+  String get playtimeParentDashboardTitle => '[AR] عنوان لوحة الآباء في Playtime';
 
   @override
   String get close => 'إغلاق';
@@ -535,8 +533,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[AR] يرجى تسجيل الدخول لعرض الملف الشخصي';
+  String get pleaseLoginToViewProfile => '[AR] يرجى تسجيل الدخول لعرض الملف الشخصي';
 
   @override
   String get adminMetrics => '[AR] Admin Metrics';
@@ -557,52 +554,40 @@ class AppLocalizationsAr extends AppLocalizations {
   String get contentLibrary => '[AR] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[AR] No account found with this email address.';
+  String get authErrorUserNotFound => '[AR] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[AR] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[AR] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[AR] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[AR] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[AR] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[AR] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[AR] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[AR] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[AR] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[AR] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[AR] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[AR] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[AR] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[AR] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[AR] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[AR] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN => '[AR] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[AR] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[AR] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[AR] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[AR] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -619,24 +604,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[AR] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[AR] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[AR] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[AR] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] The verification code is invalid.';
+  String get REDACTED_TOKEN => '[AR] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[AR] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[AR] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Please enter the verification code.';
+  String get REDACTED_TOKEN => '[AR] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[AR] Missing verification ID.';
@@ -648,56 +628,43 @@ class AppLocalizationsAr extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[AR] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[AR] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[AR] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[AR] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[AR] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[AR] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[AR] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN => '[AR] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Multi-factor information not found.';
+  String get REDACTED_TOKEN => '[AR] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Missing multi-factor session.';
+  String get REDACTED_TOKEN => '[AR] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Invalid multi-factor session.';
+  String get REDACTED_TOKEN => '[AR] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] This second factor is already in use.';
+  String get REDACTED_TOKEN => '[AR] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN => '[AR] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[AR] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[AR] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Email change requires verification.';
+  String get REDACTED_TOKEN => '[AR] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] This phone number is already in use.';
+  String get REDACTED_TOKEN => '[AR] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[AR] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[AR] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[AR] The ID token is invalid.';
@@ -709,12 +676,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[AR] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[AR] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[AR] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[AR] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[AR] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[AR] Invalid custom claims provided.';
@@ -723,87 +688,70 @@ class AppLocalizationsAr extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[AR] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[AR] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[AR] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[AR] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[AR] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[AR] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN => '[AR] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[AR] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[AR] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[AR] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[AR] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[AR] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[AR] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN => '[AR] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[AR] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[AR] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[AR] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN => '[AR] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[AR] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[AR] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN => '[AR] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[AR] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[AR] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[AR] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[AR] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[AR] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[AR] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN => '[AR] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[AR] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[AR] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[AR] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN => '[AR] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[AR] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[AR] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[AR] Missing continue URL.';
@@ -818,8 +766,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get authErrorMissingUid => '[AR] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Missing OAuth client secret.';
+  String get REDACTED_TOKEN => '[AR] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[AR] Firebase project not found.';
@@ -828,23 +775,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get authErrorReservedClaims => '[AR] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[AR] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[AR] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[AR] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[AR] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[AR] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN => '[AR] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[AR] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[AR] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -893,8 +836,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] تم إنشاء جلسة افتراضية، يتم دعوة الأصدقاء';
+  String get REDACTED_TOKEN => '[AR] تم إنشاء جلسة افتراضية، يتم دعوة الأصدقاء';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -935,15 +877,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[AR] Subscription unavailable (Arabic)';
+  String get subscriptionUnavailable => '[AR] Subscription unavailable (Arabic)';
 
   @override
   String get confirmBooking => '[AR] Confirm Booking (Arabic)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[AR] Failed to update permission: \$e (Arabic)';
+  String get failedToUpdatePermissionE => '[AR] Failed to update permission: \$e (Arabic)';
 
   @override
   String get reject => '[AR] Reject (Arabic)';
@@ -971,8 +911,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get resolve => '[AR] Resolve (Arabic)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[AR] Error loading surveys: \$error (Arabic)';
+  String get errorLoadingSurveysError => '[AR] Error loading surveys: \$error (Arabic)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -980,8 +919,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[AR] Get help with your account (Arabic)';
+  String get getHelpWithYourAccount => '[AR] Get help with your account (Arabic)';
 
   @override
   String get pay => '[AR] Pay (Arabic)';
@@ -996,8 +934,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[AR] Changes saved successfully! (Arabic)';
+  String get changesSavedSuccessfully => '[AR] Changes saved successfully! (Arabic)';
 
   @override
   String get createNewInvoice => '[AR] Create New Invoice (Arabic)';
@@ -1017,8 +954,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get profileSaved => '[AR] Profile saved! (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1049,8 +985,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] ستتلقى رسالة تأكيد بالبريد الإلكتروني قريباً';
+  String get REDACTED_TOKEN => '[AR] ستتلقى رسالة تأكيد بالبريد الإلكتروني قريباً';
 
   @override
   String get addQuestion => '[AR] Add Question (Arabic)';
@@ -1079,26 +1014,22 @@ class AppLocalizationsAr extends AppLocalizations {
   String get surveyManagement => '[AR] Survey Management (Arabic)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[AR] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[AR] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[AR] No rooms found. Add your first room! (Arabic)';
+  String get noRoomsFoundAddYourFirstRoom => '[AR] No rooms found. Add your first room! (Arabic)';
 
   @override
   String get readOurPrivacyPolicy => '[AR] Read our privacy policy (Arabic)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[AR] Could not open privacy policy (Arabic)';
+  String get couldNotOpenPrivacyPolicy => '[AR] Could not open privacy policy (Arabic)';
 
   @override
   String get refresh1 => '[AR] Refresh (Arabic)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[AR] Room updated successfully! (Arabic)';
+  String get roomUpdatedSuccessfully => '[AR] Room updated successfully! (Arabic)';
 
   @override
   String get contentDetail => '[AR] Content Detail (Arabic)';
@@ -1107,8 +1038,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get cancelSubscription => '[AR] Cancel Subscription (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Successfully registered as Ambassador! (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Successfully registered as Ambassador! (Arabic)';
 
   @override
   String get save1 => '[AR] Save (Arabic)';
@@ -1117,8 +1047,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get copy1 => '[AR] Copy (Arabic)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[AR] Failed to send invitation: \$e (Arabic)';
+  String get failedToSendInvitationE => '[AR] Failed to send invitation: \$e (Arabic)';
 
   @override
   String get surveyScore => '[AR] Survey Score (Arabic)';
@@ -1135,20 +1064,16 @@ class AppLocalizationsAr extends AppLocalizations {
   String get responseDetail => '[AR] Response Detail (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[AR] Failed to start Pro subscription: \$e (Arabic)';
+  String get failedToStartProSubscriptionE => '[AR] Failed to start Pro subscription: \$e (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Business Dashboard Entry Screen - Coming Soon (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Business Dashboard Entry Screen - Coming Soon (Arabic)';
 
   @override
   String get contentFilter => '[AR] Content Filter (Arabic)';
@@ -1170,8 +1095,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Business CRM Entry Screen - Coming Soon (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Business CRM Entry Screen - Coming Soon (Arabic)';
 
   @override
   String get adminDashboard => '[AR] Admin Dashboard';
@@ -1182,12 +1106,10 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[AR] Error loading dashboard: \$error (Arabic)';
+  String get errorLoadingDashboardError => '[AR] Error loading dashboard: \$error (Arabic)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[AR] Game deleted successfully! (Arabic)';
+  String get gameDeletedSuccessfully => '[AR] Game deleted successfully! (Arabic)';
 
   @override
   String get viewResponsesComingSoon => '[AR] عرض الردود قريباً';
@@ -1199,8 +1121,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get errorLoadingRewards => '[AR] Error loading rewards (Arabic)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[AR] Failed to delete account: \$e (Arabic)';
+  String get failedToDeleteAccountE => '[AR] Failed to delete account: \$e (Arabic)';
 
   @override
   String get invited1 => '[AR] Invited (Arabic)';
@@ -1215,8 +1136,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get noEvents => '[AR] No events (Arabic)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[AR] Game created successfully! (Arabic)';
+  String get gameCreatedSuccessfully => '[AR] Game created successfully! (Arabic)';
 
   @override
   String get add1 => '[AR] Add (Arabic)';
@@ -1236,12 +1156,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get clients => '[AR] Clients (Arabic)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[AR] No ambassador data available (Arabic)';
+  String get noAmbassadorDataAvailable => '[AR] No ambassador data available (Arabic)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[AR] Background deleted successfully! (Arabic)';
+  String get backgroundDeletedSuccessfully => '[AR] Background deleted successfully! (Arabic)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1249,8 +1167,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[AR] No analytics data available yet. (Arabic)';
+  String get noAnalyticsDataAvailableYet => '[AR] No analytics data available yet. (Arabic)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1258,8 +1175,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Business Phone Booking Entry Screen - Coming Soon (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Business Phone Booking Entry Screen - Coming Soon (Arabic)';
 
   @override
   String get verification => 'التحقق';
@@ -1306,8 +1222,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get businessProfile => '[AR] الملف التجاري';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Business Booking Entry Screen - Coming Soon (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Business Booking Entry Screen - Coming Soon (Arabic)';
 
   @override
   String get createNewSurvey => '[AR] Create New Survey (Arabic)';
@@ -1331,8 +1246,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get loginFailedE => '[AR] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[AR] Invitation sent successfully! (Arabic)';
+  String get invitationSentSuccessfully => '[AR] Invitation sent successfully! (Arabic)';
 
   @override
   String get registering => '[AR] Registering... (Arabic)';
@@ -1349,12 +1263,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get errorSavingSettingsE => '[AR] Error saving settings: \$e (Arabic)';
 
   @override
-  String get appVersionAndInformation =>
-      '[AR] App version and information (Arabic)';
+  String get appVersionAndInformation => '[AR] App version and information (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Business Subscription Entry Screen - Coming Soon (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Business Subscription Entry Screen - Coming Soon (Arabic)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1362,8 +1274,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] تم معالجة دفعتك بنجاح';
+  String get REDACTED_TOKEN => '[AR] تم معالجة دفعتك بنجاح';
 
   @override
   String get errorE => '[AR] Error: \$e (Arabic)';
@@ -1381,8 +1292,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get payment => '[AR] Payment (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Automatically confirm new booking requests (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Automatically confirm new booking requests (Arabic)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1395,8 +1305,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[AR] Please sign in to upload a background (Arabic)';
+  String get pleaseSignInToUploadABackground => '[AR] Please sign in to upload a background (Arabic)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1413,22 +1322,19 @@ class AppLocalizationsAr extends AppLocalizations {
   String get autoconfirmBookings => '[AR] Auto-Confirm Bookings (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Redirecting to Stripe checkout for Pro plan... (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Redirecting to Stripe checkout for Pro plan... (Arabic)';
 
   @override
   String get exportAsCsv => '[AR] Export as CSV (Arabic)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[AR] Delete functionality coming soon! (Arabic)';
+  String get deleteFunctionalityComingSoon => '[AR] Delete functionality coming soon! (Arabic)';
 
   @override
   String get editClient => '[AR] Edit Client (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Are you sure you want to delete this message? (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Are you sure you want to delete this message? (Arabic)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1439,39 +1345,31 @@ class AppLocalizationsAr extends AppLocalizations {
   String get notAuthenticated => '[AR] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[AR] Privacy request sent to your parents! (Arabic)';
+  String get privacyRequestSentToYourParents => '[AR] Privacy request sent to your parents! (Arabic)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[AR] Client deleted successfully! (Arabic)';
+  String get clientDeletedSuccessfully => '[AR] Client deleted successfully! (Arabic)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[AR] Failed to cancel subscription (Arabic)';
+  String get failedToCancelSubscription => '[AR] Failed to cancel subscription (Arabic)';
 
   @override
   String get allLanguages => '[AR] All Languages (Arabic)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[AR] Slot deleted successfully (Arabic)';
+  String get slotDeletedSuccessfully => '[AR] Slot deleted successfully (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN => '[AR] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Parents must approve before children can join (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Parents must approve before children can join (Arabic)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[AR] Subscribe to Pro (€14.99/mo) (Arabic)';
+  String get subscribeToPro1499mo => '[AR] Subscribe to Pro (€14.99/mo) (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Business Availability Entry Screen - Coming Soon (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Business Availability Entry Screen - Coming Soon (Arabic)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1485,8 +1383,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get submitBooking => '[AR] Submit Booking (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Are you sure you want to cancel this appointment? (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Are you sure you want to cancel this appointment? (Arabic)';
 
   @override
   String get noUpcomingBookings => '[AR] No upcoming bookings (Arabic)';
@@ -1504,8 +1401,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get goToDashboard => '[AR] Go to Dashboard (Arabic)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[AR] Ambassador Quota Dashboard (Arabic)';
+  String get ambassadorQuotaDashboard => '[AR] Ambassador Quota Dashboard (Arabic)';
 
   @override
   String get adminSettings => '[AR] Admin Settings';
@@ -1543,8 +1439,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[AR] Client added successfully! (Arabic)';
+  String get clientAddedSuccessfully => '[AR] Client added successfully! (Arabic)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1562,8 +1457,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get bookAppointment => '[AR] Book Appointment (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[AR] Delete (Arabic)';
@@ -1578,15 +1472,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get manageSubscription => '[AR] Manage Subscription (Arabic)';
 
   @override
-  String get requiresInstallFallback =>
-      '[AR] Requires Install Fallback (Arabic)';
+  String get requiresInstallFallback => '[AR] Requires Install Fallback (Arabic)';
 
   @override
   String get paymentConfirmation => '[AR] Payment Confirmation (Arabic)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[AR] Promo applied! Your next bill is free. (Arabic)';
+  String get promoAppliedYourNextBillIsFree => '[AR] Promo applied! Your next bill is free. (Arabic)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1597,16 +1489,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get errorLoadingSlots => '[AR] Error loading slots (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Allow other users to find and join this game (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Allow other users to find and join this game (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Business Onboarding Screen - Coming Soon (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Business Onboarding Screen - Coming Soon (Arabic)';
 
   @override
-  String get activateBusinessProfile =>
-      '[AR] Activate Business Profile (Arabic)';
+  String get activateBusinessProfile => '[AR] Activate Business Profile (Arabic)';
 
   @override
   String get contentNotFound => '[AR] Content not found (Arabic)';
@@ -1648,8 +1537,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get shareLink => '[AR] Share Link (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN => '[AR] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[AR] Delete Appointment (Arabic)';
@@ -1669,12 +1557,10 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[AR] Update your business information (Arabic)';
+  String get updateYourBusinessInformation => '[AR] Update your business information (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN => '[AR] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[AR] Parent Dashboard (Arabic)';
@@ -1697,12 +1583,10 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Studio booking is only available on web (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Studio booking is only available on web (Arabic)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[AR] Error loading branches: \$e (Arabic)';
+  String get errorLoadingBranchesE => '[AR] Error loading branches: \$e (Arabic)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1718,15 +1602,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get none => '[AR] None (Arabic)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[AR] Failed to update consent: \$e (Arabic)';
+  String get failedToUpdateConsentE => '[AR] Failed to update consent: \$e (Arabic)';
 
   @override
   String get welcome1 => 'مرحباً';
 
   @override
-  String get failedToCreateSessionE =>
-      '[AR] Failed to create session: \$e (Arabic)';
+  String get failedToCreateSessionE => '[AR] Failed to create session: \$e (Arabic)';
 
   @override
   String get inviteContact => '[AR] Invite Contact (Arabic)';
@@ -1735,8 +1617,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get surveyEditor => '[AR] Survey Editor (Arabic)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[AR] Failed to start Basic subscription: \$e (Arabic)';
+  String get failedToStartBasicSubscriptionE => '[AR] Failed to start Basic subscription: \$e (Arabic)';
 
   @override
   String get mySchedule => '[AR] My Schedule (Arabic)';
@@ -1756,8 +1637,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[AR] Settings saved successfully! (Arabic)';
+  String get settingsSavedSuccessfully => '[AR] Settings saved successfully! (Arabic)';
 
   @override
   String get linkCopiedToClipboard => '[AR] Link copied to clipboard! (Arabic)';
@@ -1777,8 +1657,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[AR] Room deleted successfully! (Arabic)';
+  String get roomDeletedSuccessfully => '[AR] Room deleted successfully! (Arabic)';
 
   @override
   String get businessCalendar => '[AR] Business Calendar (Arabic)';
@@ -1843,8 +1722,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get cancel1 => '[AR] Cancel (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Subscription activated successfully! (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Subscription activated successfully! (Arabic)';
 
   @override
   String activityLogaction(Object action) {
@@ -1855,8 +1733,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get broadcast => '[AR] Broadcast (Arabic)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[AR] No events scheduled this week (Arabic)';
+  String get noEventsScheduledThisWeek => '[AR] No events scheduled this week (Arabic)';
 
   @override
   String get googleCalendar => '[AR] Google Calendar (Arabic)';
@@ -1868,8 +1745,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get childDashboard => '[AR] Child Dashboard (Arabic)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[AR] Failed to upload background: \$e (Arabic)';
+  String get failedToUploadBackgroundE => '[AR] Failed to upload background: \$e (Arabic)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1888,8 +1764,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get noAppointments => '[AR] No appointments (Arabic)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[AR] • Unlimited bookings per week (Arabic)';
+  String get unlimitedBookingsPerWeek => '[AR] • Unlimited bookings per week (Arabic)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1897,19 +1772,16 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[AR] Scheduled at: \$scheduledAt (Arabic)';
+  String get scheduledAtScheduledat => '[AR] Scheduled at: \$scheduledAt (Arabic)';
 
   @override
   String get selectStaff => '[AR] Select Staff (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Subscription cancelled successfully (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Subscription cancelled successfully (Arabic)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[AR] Cancel Appointment (Arabic)';
@@ -1923,8 +1795,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get businessSignup => '[AR] Business Signup (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Business Completion Screen - Coming Soon (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Business Completion Screen - Coming Soon (Arabic)';
 
   @override
   String get createGame1 => '[AR] Create Game (Arabic)';
@@ -1938,8 +1809,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[AR] Please enter a promo code (Arabic)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[AR] Error loading availability: \$e (Arabic)';
+  String get errorLoadingAvailabilityE => '[AR] Error loading availability: \$e (Arabic)';
 
   @override
   String get parentalControls => '[AR] Parental Controls (Arabic)';
@@ -1948,15 +1818,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[AR] Child linked successfully! (Arabic)';
+  String get childLinkedSuccessfully => '[AR] Child linked successfully! (Arabic)';
 
   @override
   String get create => '[AR] Create (Arabic)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[AR] No external meetings found. (Arabic)';
+  String get noExternalMeetingsFound => '[AR] No external meetings found. (Arabic)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1964,15 +1832,13 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[AR] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[AR] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[AR] Scheduler Screen (Arabic)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[AR] Client updated successfully! (Arabic)';
+  String get clientUpdatedSuccessfully => '[AR] Client updated successfully! (Arabic)';
 
   @override
   String get surveyResponses => '[AR] Survey Responses (Arabic)';
@@ -1998,12 +1864,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get errorLoadingEvents => '[AR] Error loading events (Arabic)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[AR] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[AR] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[AR] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[AR] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[AR] Success (Arabic)';
@@ -2022,12 +1886,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get readWrite => '[AR] Read & Write (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Redirecting to Stripe checkout for Basic plan... (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Redirecting to Stripe checkout for Basic plan... (Arabic)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[AR] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[AR] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[AR] Pick Date (Arabic)';
@@ -2063,12 +1925,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get businessLogin => '[AR] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[AR] Invoice created successfully! (Arabic)';
+  String get invoiceCreatedSuccessfully => '[AR] Invoice created successfully! (Arabic)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[AR] No time series data available (Arabic)';
+  String get noTimeSeriesDataAvailable => '[AR] No time series data available (Arabic)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2081,8 +1941,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[AR] Failed to send privacy request: \$e (Arabic)';
+  String get failedToSendPrivacyRequestE => '[AR] Failed to send privacy request: \$e (Arabic)';
 
   @override
   String get chooseYourPlan => '[AR] Choose Your Plan (Arabic)';
@@ -2097,8 +1956,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get eventCreated => '[AR] Event created (Arabic)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[AR] Subscribe to Basic (€4.99/mo) (Arabic)';
+  String get subscribeToBasic499mo => '[AR] Subscribe to Basic (€4.99/mo) (Arabic)';
 
   @override
   String get completion => '[AR] Completion (Arabic)';
@@ -2119,12 +1977,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get deleteSurvey => '[AR] Delete Survey (Arabic)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[AR] Game approved successfully! (Arabic)';
+  String get gameApprovedSuccessfully => '[AR] Game approved successfully! (Arabic)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[AR] Error loading permissions: \$error (Arabic)';
+  String get errorLoadingPermissionsError => '[AR] Error loading permissions: \$error (Arabic)';
 
   @override
   String get referrals => '[AR] Referrals (Arabic)';
@@ -2166,8 +2022,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get organizations => '[AR] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[AR] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[AR] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[AR] Create New Game (Arabic)';
@@ -2176,12 +2031,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get next1 => '[AR] Next (Arabic)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[AR] Background uploaded successfully! (Arabic)';
+  String get backgroundUploadedSuccessfully => '[AR] Background uploaded successfully! (Arabic)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[AR] No appointment requests found. (Arabic)';
+  String get noAppointmentRequestsFound => '[AR] No appointment requests found. (Arabic)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2208,8 +2061,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[AR] Failed to create game: \$e (Arabic)';
@@ -2218,8 +2070,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get noChartDataAvailable => '[AR] No chart data available (Arabic)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[AR] • Phone-based booking system (Arabic)';
+  String get phonebasedBookingSystem => '[AR] • Phone-based booking system (Arabic)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2228,8 +2079,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get invoices => '[AR] Invoices (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2256,12 +2106,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get iDoNotConsent => '[AR] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] No clients found. Add your first client! (Arabic)';
+  String get REDACTED_TOKEN => '[AR] No clients found. Add your first client! (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN => '[AR] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[AR] Group: \$groupId';
@@ -2284,8 +2132,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[AR] • CRM dashboard with analytics (Arabic)';
+  String get crmDashboardWithAnalytics => '[AR] • CRM dashboard with analytics (Arabic)';
 
   @override
   String get contentLibrary1 => '[AR] Content Library (Arabic)';
@@ -2297,30 +2144,25 @@ class AppLocalizationsAr extends AppLocalizations {
   String get subscriptionManagement => '[AR] Subscription Management (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Monetization settings will be implemented here (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Monetization settings will be implemented here (Arabic)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[AR] Failed to apply promo code: \$e (Arabic)';
+  String get failedToApplyPromoCodeE => '[AR] Failed to apply promo code: \$e (Arabic)';
 
   @override
   String get editProvider => '[AR] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[AR] Localization Contribution (Arabic)';
+  String get localizationContribution => '[AR] Localization Contribution (Arabic)';
 
   @override
   String get parentalConsent => '[AR] Parental Consent (Arabic)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[AR] Business Signup Screen - Coming Soon (Arabic)';
+  String get businessSignupScreenComingSoon => '[AR] Business Signup Screen - Coming Soon (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[AR] Are you sure you want to delete this appointment? (Arabic)';
+  String get REDACTED_TOKEN => '[AR] Are you sure you want to delete this appointment? (Arabic)';
 
   @override
   String get syncAppointment => '[AR] Sync Appointment (Arabic)';
@@ -2332,15 +2174,13 @@ class AppLocalizationsAr extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[AR] Business Setup Screen - Coming Soon (Arabic)';
+  String get businessSetupScreenComingSoon => '[AR] Business Setup Screen - Coming Soon (Arabic)';
 
   @override
   String get edit1 => '[AR] Edit (Arabic)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[AR] No events scheduled this month (Arabic)';
+  String get noEventsScheduledThisMonth => '[AR] No events scheduled this month (Arabic)';
 
   @override
   String get businessDashboard => '[AR] لوحة الأعمال';
@@ -2354,8 +2194,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[AR] Manage Staff Availability (Arabic)';
+  String get manageStaffAvailability => '[AR] Manage Staff Availability (Arabic)';
 
   @override
   String get noMissingTranslations => '[AR] No missing translations (Arabic)';
@@ -2372,8 +2211,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get noUsers => '[AR] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[AR] Error loading referral code (Arabic)';
+  String get errorLoadingReferralCode => '[AR] Error loading referral code (Arabic)';
 
   @override
   String get allCountries => '[AR] All Countries (Arabic)';
@@ -2388,8 +2226,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get deleteMessage => '[AR] Delete Message (Arabic)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[AR] changeRole (TRANSLATE)';
@@ -2400,8 +2237,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[AR] Opening customer portal... (Arabic)';
+  String get openingCustomerPortal => '[AR] Opening customer portal... (Arabic)';
 
   @override
   String get signOut => '[AR] Sign Out (Arabic)';
@@ -2412,8 +2248,7 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[AR] ترقية للأعمال';
@@ -2439,8 +2274,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[AR] عرض الردود';
@@ -2469,8 +2303,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2488,8 +2321,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get ad_pre_title => 'شاهد إعلانًا لتأكيد موعدك';
 
   @override
-  String get ad_pre_description =>
-      'كعضو مجاني، يجب عليك مشاهدة إعلان قصير قبل التأكيد. يمكنك إزالة جميع الإعلانات نهائيًا عن طريق الترقية.';
+  String get ad_pre_description => 'كعضو مجاني، يجب عليك مشاهدة إعلان قصير قبل التأكيد. يمكنك إزالة جميع الإعلانات نهائيًا عن طريق الترقية.';
 
   @override
   String get watch_ad_button => 'شاهد الإعلان';
@@ -2507,8 +2339,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get upgrade_prompt_title => 'ترقية لمرة واحدة';
 
   @override
-  String get upgrade_prompt_description =>
-      'ادفع €4 لإزالة جميع الإعلانات إلى الأبد';
+  String get upgrade_prompt_description => 'ادفع €4 لإزالة جميع الإعلانات إلى الأبد';
 
   @override
   String get purchase_now_button => 'اشتر الآن';
@@ -2547,8 +2378,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2596,12 +2426,10 @@ class AppLocalizationsAr extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle =>
-      '[AR] Congratulations! You\'re now an Ambassador! (Arabic)';
+  String get ambassadorPromotionTitle => '[AR] Congratulations! You\'re now an Ambassador! (Arabic)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2612,11 +2440,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get tierUpgradeTitle => '[AR] Tier Upgrade! 🎉 (Arabic)';
 
   @override
-  String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
     return '[AR] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Arabic)';
   }
 
@@ -2624,29 +2448,20 @@ class AppLocalizationsAr extends AppLocalizations {
   String get monthlyReminderTitle => '[AR] Monthly Goal Reminder (Arabic)';
 
   @override
-  String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
     return '[AR] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Arabic)';
   }
 
   @override
-  String get performanceWarningTitle =>
-      '[AR] Ambassador Performance Alert (Arabic)';
+  String get performanceWarningTitle => '[AR] Ambassador Performance Alert (Arabic)';
 
   @override
-  String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
     return '[AR] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Arabic)';
   }
 
   @override
-  String get ambassadorDemotionTitle =>
-      '[AR] Ambassador Status Update (Arabic)';
+  String get ambassadorDemotionTitle => '[AR] Ambassador Status Update (Arabic)';
 
   @override
   String ambassadorDemotionBody(String reason) {

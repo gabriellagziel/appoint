@@ -17,49 +17,51 @@ class NotificationIntegrationExample extends ConsumerStatefulWidget {
 class REDACTED_TOKEN
     extends ConsumerState<NotificationIntegrationExample> {
   late SyncNotificationHelper syncHelper;
+  late GlobalKey<ScaffoldMessengerState> messengerKey;
+
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(
-          title: const Text('Notification Integration Example'),
+      appBar: AppBar(
+        title: const Text('Notification Integration Example'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            ElevatedButton(
+              onPressed: _showInfoNotification,
+              child: const Text('Show Info Notification'),
+            ),
+            const SizedBox(height: 8),
+            ElevatedButton(
+              onPressed: _showWarningNotification,
+              child: const Text('Show Warning Notification'),
+            ),
+            const SizedBox(height: 8),
+            ElevatedButton(
+              onPressed: _showErrorNotification,
+              child: const Text('Show Error Notification'),
+            ),
+            const SizedBox(height: 8),
+            ElevatedButton(
+              onPressed: _showSuccessNotification,
+              child: const Text('Show Success Notification'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: _showConflictDialog,
+              child: const Text('Show Conflict Dialog'),
+            ),
+            const SizedBox(height: 8),
+            ElevatedButton(
+              onPressed: _showSyncNotifications,
+              child: const Text('Show Sync Notifications'),
+            ),
+          ],
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              ElevatedButton(
-                onPressed: _showInfoNotification,
-                child: const Text('Show Info Notification'),
-              ),
-              const SizedBox(height: 8),
-              ElevatedButton(
-                onPressed: _showWarningNotification,
-                child: const Text('Show Warning Notification'),
-              ),
-              const SizedBox(height: 8),
-              ElevatedButton(
-                onPressed: _showErrorNotification,
-                child: const Text('Show Error Notification'),
-              ),
-              const SizedBox(height: 8),
-              ElevatedButton(
-                onPressed: _showSuccessNotification,
-                child: const Text('Show Success Notification'),
-              ),
-              const SizedBox(height: 16),
-              ElevatedButton(
-                onPressed: _showConflictDialog,
-                child: const Text('Show Conflict Dialog'),
-              ),
-              const SizedBox(height: 8),
-              ElevatedButton(
-                onPressed: _showSyncNotifications,
-                child: const Text('Show Sync Notifications'),
-              ),
-            ],
-          ),
-        ),
-      );
+      ),
+    );
 
   void _showInfoNotification() {
     ref
@@ -130,17 +132,17 @@ class REDACTED_TOKEN
     });
 
     // Simulate circuit breaker
-    Future.delayed(
-        const Duration(seconds: 6), syncHelper.showCircuitBreakerOpen);
+    Future.delayed(const Duration(seconds: 6), syncHelper.showCircuitBreakerOpen);
   }
 }
 
 /// Example of how to set up the notification service in main.dart
 class MainAppSetupExample {
-  static final GlobalKey<ScaffoldMessengerState> messengerKey =
-      GlobalKey<ScaffoldMessengerState>();
+  static late GlobalKey<ScaffoldMessengerState> messengerKey;
 
   static Widget buildApp() {
+    messengerKey = GlobalKey<ScaffoldMessengerState>();
+
     return ProviderScope(
       overrides: [
         uiNotificationServiceProvider.overrideWithValue(
@@ -162,14 +164,14 @@ class BookingScreenExample extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) => Scaffold(
-        appBar: AppBar(title: const Text('Bookings')),
-        body: Center(
-          child: ElevatedButton(
-            onPressed: () => _handleBookingSync(context, ref),
-            child: const Text('Sync Bookings'),
-          ),
+      appBar: AppBar(title: const Text('Bookings')),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () => _handleBookingSync(context, ref),
+          child: const Text('Sync Bookings'),
         ),
-      );
+      ),
+    );
 
   Future<void> _handleBookingSync(BuildContext context, WidgetRef ref) async {
     try {
