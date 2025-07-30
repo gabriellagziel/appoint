@@ -14,8 +14,9 @@ void main() {
   });
 
   group('EditProfileScreen bio field', () {
-    testWidgets('shows live character count and enforces max length',
-        (tester) async {
+    testWidgets('shows live character count and enforces max length', (
+      tester,
+    ) async {
       await tester.pumpWidget(
         createTestAppWithFirebaseHandling(
           const MaterialApp(home: EditProfileScreen()),
@@ -24,7 +25,7 @@ void main() {
 
       await tester.pumpAndSettle();
 
-      bioField = find.byType(TextFormField);
+      final bioField = find.byType(TextFormField);
       await tester.tap(bioField);
       await tester.enterText(bioField, 'a' * 10);
       await tester.pump();
@@ -33,7 +34,7 @@ void main() {
       await tester.enterText(bioField, 'b' * 200);
       await tester.pump();
 
-      textField = tester.widget<TextFormField>(bioField);
+      final textField = tester.widget<TextFormField>(bioField);
       expect(textField.controller!.text.length, lessThanOrEqualTo(150));
       expect(find.text('150/150'), findsOneWidget);
     });

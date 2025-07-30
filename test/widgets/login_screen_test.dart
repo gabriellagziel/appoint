@@ -25,13 +25,9 @@ void main() {
   });
 
   Widget createTestWidget(Widget child) => ProviderScope(
-        overrides: [
-          authServiceProvider.overrideWithValue(mockAuthService),
-        ],
-        child: MaterialApp(
-          home: child,
-        ),
-      );
+    overrides: [authServiceProvider.overrideWithValue(mockAuthService)],
+    child: MaterialApp(home: child),
+  );
 
   group('LoginScreen Widget Tests', () {
     testWidgets('should display login form', (WidgetTester tester) async {
@@ -47,8 +43,9 @@ void main() {
       expect(find.byType(TextField), findsNWidgets(2)); // Email and password
     });
 
-    testWidgets('should show email and password fields',
-        (WidgetTester tester) async {
+    testWidgets('should show email and password fields', (
+      WidgetTester tester,
+    ) async {
       // Arrange
       when(() => mockAuthService.signIn(any(), any())).thenAnswer((_) async {});
 
@@ -80,7 +77,7 @@ void main() {
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
-      passwordField = find.byType(TextField).last;
+      final passwordField = find.byType(TextField).last;
       await tester.enterText(passwordField, 'password123');
       await tester.pump();
 
@@ -106,11 +103,13 @@ void main() {
       await tester.pumpAndSettle();
     });
 
-    testWidgets('should display error message for login failure',
-        (WidgetTester tester) async {
+    testWidgets('should display error message for login failure', (
+      WidgetTester tester,
+    ) async {
       // Arrange
-      when(() => mockAuthService.signIn(any(), any()))
-          .thenThrow(Exception('Invalid credentials'));
+      when(
+        () => mockAuthService.signIn(any(), any()),
+      ).thenThrow(Exception('Invalid credentials'));
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));

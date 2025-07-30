@@ -3,19 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'firebase_test_helper.dart';
+import '../../firebase_test_helper.dart';
 
 void main() {
   setUpAll(() async {
     await initializeTestFirebase();
   });
 
-  testWidgets('Admin Dashboard shows overview text',
-      (WidgetTester tester) async {
+  testWidgets('Admin Dashboard shows overview text', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(
-      const ProviderScope(
-        child: MaterialApp(home: AdminDashboardScreen()),
-      ),
+      const ProviderScope(child: MaterialApp(home: AdminDashboardScreen())),
     );
 
     expect(find.text('Admin overview goes here'), findsOneWidget);

@@ -49,7 +49,7 @@ void main() {
     group('AuthService Provider', () {
       test('should provide AuthService instance', () {
         // Act
-        authService = container.read(authServiceProvider);
+        final authService = container.read(authServiceProvider);
 
         // Assert
         expect(authService, isA<AuthService>());
@@ -59,12 +59,13 @@ void main() {
     group('AuthState Provider', () {
       test('should emit null when user is not authenticated', () async {
         // Arrange
-        streamController = StreamController<AppUser?>();
-        when(() => mockAuthService.authStateChanges())
-            .thenAnswer((_) => streamController.stream.asBroadcastStream());
+        final streamController = StreamController<AppUser?>();
+        when(
+          () => mockAuthService.authStateChanges(),
+        ).thenAnswer((_) => streamController.stream.asBroadcastStream());
 
         // Act
-        authState = container.read(authStateProvider);
+        final authState = container.read(authStateProvider);
 
         // Assert
         expect(authState, isA<AsyncValue<AppUser?>>());
@@ -72,9 +73,10 @@ void main() {
 
       test('should emit AppUser when user is authenticated', () async {
         // Arrange
-        streamController = StreamController<AppUser?>();
-        when(() => mockAuthService.authStateChanges())
-            .thenAnswer((_) => streamController.stream.asBroadcastStream());
+        final streamController = StreamController<AppUser?>();
+        when(
+          () => mockAuthService.authStateChanges(),
+        ).thenAnswer((_) => streamController.stream.asBroadcastStream());
 
         const appUser = AppUser(
           uid: 'test-uid',
@@ -87,47 +89,50 @@ void main() {
         await Future.delayed(const Duration(milliseconds: 100));
 
         // Assert
-        authState = container.read(authStateProvider);
+        final authState = container.read(authStateProvider);
         expect(authState, isA<AsyncValue<AppUser?>>());
       });
 
       test(
-          'should emit AppUser with business role when user has business claims',
-          () async {
-        // Arrange
-        streamController = StreamController<AppUser?>();
-        when(() => mockAuthService.authStateChanges())
-            .thenAnswer((_) => streamController.stream.asBroadcastStream());
+        'should emit AppUser with business role when user has business claims',
+        () async {
+          // Arrange
+          final streamController = StreamController<AppUser?>();
+          when(
+            () => mockAuthService.authStateChanges(),
+          ).thenAnswer((_) => streamController.stream.asBroadcastStream());
 
-        const businessUser = AppUser(
-          uid: 'business-uid',
-          email: 'business@example.com',
-          role: 'business',
-          studioId: 'studio-123',
-          businessProfileId: 'business-456',
-        );
+          const businessUser = AppUser(
+            uid: 'business-uid',
+            email: 'business@example.com',
+            role: 'business',
+            studioId: 'studio-123',
+            businessProfileId: 'business-456',
+          );
 
-        // Act
-        streamController.add(businessUser);
-        await Future.delayed(const Duration(milliseconds: 100));
+          // Act
+          streamController.add(businessUser);
+          await Future.delayed(const Duration(milliseconds: 100));
 
-        // Assert
-        authState = container.read(authStateProvider);
-        expect(authState, isA<AsyncValue<AppUser?>>());
-      });
+          // Assert
+          final authState = container.read(authStateProvider);
+          expect(authState, isA<AsyncValue<AppUser?>>());
+        },
+      );
 
       test('should emit null when user signs out', () async {
         // Arrange
-        streamController = StreamController<AppUser?>();
-        when(() => mockAuthService.authStateChanges())
-            .thenAnswer((_) => streamController.stream.asBroadcastStream());
+        final streamController = StreamController<AppUser?>();
+        when(
+          () => mockAuthService.authStateChanges(),
+        ).thenAnswer((_) => streamController.stream.asBroadcastStream());
 
         // Act
         streamController.add(null);
         await Future.delayed(const Duration(milliseconds: 100));
 
         // Assert
-        authState = container.read(authStateProvider);
+        final authState = container.read(authStateProvider);
         expect(authState, isA<AsyncValue<AppUser?>>());
       });
     });
@@ -135,7 +140,7 @@ void main() {
     group('FirebaseAuth Provider', () {
       test('should provide FirebaseAuth instance', () {
         // Act
-        firebaseAuth = container.read(authProvider);
+        final firebaseAuth = container.read(authProvider);
 
         // Assert
         expect(firebaseAuth, equals(mockFirebaseAuth));

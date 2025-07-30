@@ -11,9 +11,7 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 
 import '../../firebase_test_helper.dart';
-import 'chat_length_limit_test.mocks.dart';
 
-@GenerateMocks([FirebaseAuth, User])
 void main() {
   setUpAll(() async {
     await initializeTestFirebase();
@@ -29,8 +27,9 @@ void main() {
       mockUser = MockUser();
       when(mockUser.uid).thenReturn('testUser');
       when(mockAuth.currentUser).thenReturn(mockUser);
-      when(mockAuth.authStateChanges())
-          .thenAnswer((_) => Stream.value(mockUser));
+      when(
+        mockAuth.authStateChanges(),
+      ).thenAnswer((_) => Stream.value(mockUser));
       fakeFirestore = FakeFirebaseFirestore();
 
       // Seed empty chat
@@ -42,24 +41,25 @@ void main() {
     });
 
     Widget createTestWidget() => ProviderScope(
-          overrides: [
-            firebaseAuthProvider.overrideWithValue(mockAuth),
-            firestoreProvider.overrideWithValue(fakeFirestore),
-          ],
-          child: MaterialApp(
-            localizationsDelegates: AppLocalizations.localizationsDelegates,
-            supportedLocales: AppLocalizations.supportedLocales,
-            home: ChatFlowWidget(auth: AuthService()),
-          ),
-        );
+      overrides: [
+        firebaseAuthProvider.overrideWithValue(mockAuth),
+        firestoreProvider.overrideWithValue(fakeFirestore),
+      ],
+      child: MaterialApp(
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: ChatFlowWidget(auth: AuthService()),
+      ),
+    );
 
-    testWidgets('shows correct character counter for 400 characters',
-        (tester) async {
+    testWidgets('shows correct character counter for 400 characters', (
+      tester,
+    ) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
       // Find the TextField
-      textField = find.byType(TextField);
+      final textField = find.byType(TextField);
       expect(textField, findsOneWidget);
 
       // Enter 400 characters
@@ -71,18 +71,19 @@ void main() {
       expect(find.text('400/500'), findsOneWidget);
 
       // Check send button is enabled
-      sendButton = find.byIcon(Icons.send);
+      final sendButton = find.byIcon(Icons.send);
       expect(sendButton, findsOneWidget);
       expect(tester.widget<IconButton>(sendButton).onPressed, isNotNull);
     });
 
-    testWidgets('shows correct character counter for 500 characters',
-        (tester) async {
+    testWidgets('shows correct character counter for 500 characters', (
+      tester,
+    ) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
       // Find the TextField
-      textField = find.byType(TextField);
+      final textField = find.byType(TextField);
       expect(textField, findsOneWidget);
 
       // Enter 500 characters
@@ -94,7 +95,7 @@ void main() {
       expect(find.text('500/500'), findsOneWidget);
 
       // Check send button is enabled (at exact limit)
-      sendButton = find.byIcon(Icons.send);
+      final sendButton = find.byIcon(Icons.send);
       expect(sendButton, findsOneWidget);
       expect(tester.widget<IconButton>(sendButton).onPressed, isNotNull);
 
@@ -102,13 +103,14 @@ void main() {
       expect(find.text('Message too long'), findsNothing);
     });
 
-    testWidgets('shows error and disables send for 501 characters',
-        (tester) async {
+    testWidgets('shows error and disables send for 501 characters', (
+      tester,
+    ) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
       // Find the TextField
-      textField = find.byType(TextField);
+      final textField = find.byType(TextField);
       expect(textField, findsOneWidget);
 
       // Enter 501 characters
@@ -123,7 +125,7 @@ void main() {
       expect(find.text('Message too long'), findsOneWidget);
 
       // Check send button is disabled
-      sendButton = find.byIcon(Icons.send);
+      final sendButton = find.byIcon(Icons.send);
       expect(sendButton, findsOneWidget);
       expect(tester.widget<IconButton>(sendButton).onPressed, isNull);
     });
@@ -133,7 +135,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Find the TextField
-      textField = find.byType(TextField);
+      final textField = find.byType(TextField);
       expect(textField, findsOneWidget);
 
       // Enter 501 characters
@@ -150,7 +152,7 @@ void main() {
       expect(find.text(testMessage), findsOneWidget);
 
       // Try to send by clicking send button (should be disabled)
-      sendButton = find.byIcon(Icons.send);
+      final sendButton = find.byIcon(Icons.send);
       await tester.tap(sendButton);
       await tester.pump();
 
@@ -163,7 +165,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Find the TextField
-      textField = find.byType(TextField);
+      final textField = find.byType(TextField);
       expect(textField, findsOneWidget);
 
       // Enter 500 characters
@@ -184,7 +186,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // Find the TextField
-      textField = find.byType(TextField);
+      final textField = find.byType(TextField);
       expect(textField, findsOneWidget);
 
       // Start typing

@@ -11,7 +11,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-import '../../fake_firebase_setup.dart';
 import '../../firebase_test_helper.dart';
 
 class FakeUser implements User {
@@ -24,8 +23,9 @@ class FakeUser implements User {
 }
 
 final fakeAuthUser = FakeUser('test-parent-id');
-final fakeAuthStateProvider =
-    FutureProvider<User?>((ref) async => fakeAuthUser);
+final fakeAuthStateProvider = FutureProvider<User?>(
+  (ref) async => fakeAuthUser,
+);
 
 class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
@@ -38,15 +38,14 @@ class MockFamilyService implements FamilyService {
   Future<FamilyLink> inviteChild(
     String parentId,
     final String childEmail,
-  ) async =>
-      FamilyLink(
-        id: 'test-invite',
-        parentId: parentId,
-        childId: childEmail,
-        status: 'pending',
-        invitedAt: DateTime.now(),
-        consentedAt: [],
-      );
+  ) async => FamilyLink(
+    id: 'test-invite',
+    parentId: parentId,
+    childId: childEmail,
+    status: 'pending',
+    invitedAt: DateTime.now(),
+    consentedAt: null,
+  );
 
   @override
   Future<List<FamilyLink>> fetchFamilyLinks(String parentId) async {
@@ -58,7 +57,7 @@ class MockFamilyService implements FamilyService {
         childId: 'child-1',
         status: 'pending',
         invitedAt: DateTime(2024),
-        consentedAt: [],
+        consentedAt: null,
       ),
       FamilyLink(
         id: 'test-link-2',
@@ -66,34 +65,31 @@ class MockFamilyService implements FamilyService {
         childId: 'child-2',
         status: 'active',
         invitedAt: DateTime(2024),
-        consentedAt: [DateTime(2024, 1, 2)],
+        consentedAt: DateTime(2024, 1, 2),
       ),
     ];
   }
 
   @override
   Future<List<Permission>> fetchPermissions(String linkId) async => [
-        Permission(
-          id: 'perm-1',
-          familyLinkId: linkId,
-          category: 'profile',
-          accessLevel: 'read',
-        ),
-      ];
+    Permission(
+      id: 'perm-1',
+      familyLinkId: linkId,
+      category: 'profile',
+      accessLevel: 'read',
+    ),
+  ];
 
   @override
-  Future<List<PrivacyRequest>> fetchPrivacyRequests(
-    String parentId,
-  ) async =>
-      [
-        PrivacyRequest(
-          id: 'req-1',
-          childId: 'child-1',
-          type: 'private_session',
-          status: 'pending',
-          requestedAt: DateTime(2024),
-        ),
-      ];
+  Future<List<PrivacyRequest>> fetchPrivacyRequests(String parentId) async => [
+    PrivacyRequest(
+      id: 'req-1',
+      childId: 'child-1',
+      type: 'private_session',
+      status: 'pending',
+      requestedAt: DateTime(2024),
+    ),
+  ];
 
   @override
   Future<void> cancelInvite(String parentId, final String childId) async {
@@ -187,7 +183,7 @@ Future<void> main() async {
         childId: 'child-456',
         status: 'active',
         invitedAt: DateTime(2024),
-        consentedAt: [DateTime(2024, 1, 2)],
+        consentedAt: DateTime(2024, 1, 2),
       );
 
       final json = familyLink.toJson();
@@ -239,7 +235,9 @@ Future<void> main() async {
 
     test('FamilyService can invite child', () async {
       final result = await mockFamilyService.inviteChild(
-          'parent-123', 'child@example.com');
+        'parent-123',
+        'child@example.com',
+      );
 
       expect(result.id, equals('test-invite'));
       expect(result.parentId, equals('parent-123'));

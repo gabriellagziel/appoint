@@ -22,17 +22,18 @@ void main() {
       authStateController = StreamController<AppUser?>.broadcast();
 
       // Mock the authStateChanges method to throw SocketException
-      when(() => mockAuthService.authStateChanges()).thenAnswer(
-        (_) => Stream.error(const SocketException('No Internet')),
-      );
+      when(
+        () => mockAuthService.authStateChanges(),
+      ).thenAnswer((_) => Stream.error(const SocketException('No Internet')));
     });
 
     tearDown(() {
       authStateController.close();
     });
 
-    testWidgets('NetworkErrorRetry widget displays correct UI',
-        (WidgetTester tester) async {
+    testWidgets('NetworkErrorRetry widget displays correct UI', (
+      WidgetTester tester,
+    ) async {
       // Arrange: Create a test callback
       var retryCalled = false;
       void onRetry() {
@@ -41,9 +42,7 @@ void main() {
 
       // Build the NetworkErrorRetry widget directly
       await tester.pumpWidget(
-        MaterialApp(
-          home: NetworkErrorRetry(onRetry: onRetry),
-        ),
+        MaterialApp(home: NetworkErrorRetry(onRetry: onRetry)),
       );
       await tester.pumpAndSettle();
 
@@ -55,7 +54,7 @@ void main() {
       expect(find.byIcon(Icons.refresh), findsOneWidget);
 
       // Locate and tap the Retry label directly
-      retryText = find.text('Retry');
+      final retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
       await tester.tap(retryText);
       await tester.pumpAndSettle();
@@ -64,39 +63,37 @@ void main() {
       expect(retryCalled, isTrue);
     });
 
-    testWidgets('NetworkErrorRetry widget displays correct styling',
-        (WidgetTester tester) async {
+    testWidgets('NetworkErrorRetry widget displays correct styling', (
+      WidgetTester tester,
+    ) async {
       // Arrange: Create a test callback
       void onRetry() {}
 
       // Build the NetworkErrorRetry widget directly
       await tester.pumpWidget(
-        MaterialApp(
-          home: NetworkErrorRetry(onRetry: onRetry),
-        ),
+        MaterialApp(home: NetworkErrorRetry(onRetry: onRetry)),
       );
       await tester.pumpAndSettle();
 
       // Assert: Network error UI styling is correct
-      wifiOffIcon = tester.widget<Icon>(find.byIcon(Icons.wifi_off));
+      final wifiOffIcon = tester.widget<Icon>(find.byIcon(Icons.wifi_off));
       expect(wifiOffIcon.size, 64);
       expect(wifiOffIcon.color, Colors.red);
 
       // Check that Retry text is present
-      retryText = find.text('Retry');
+      final retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
     });
 
-    testWidgets('NetworkErrorRetry widget is centered on screen',
-        (WidgetTester tester) async {
+    testWidgets('NetworkErrorRetry widget is centered on screen', (
+      WidgetTester tester,
+    ) async {
       // Arrange: Create a test callback
       void onRetry() {}
 
       // Build the NetworkErrorRetry widget directly
       await tester.pumpWidget(
-        MaterialApp(
-          home: NetworkErrorRetry(onRetry: onRetry),
-        ),
+        MaterialApp(home: NetworkErrorRetry(onRetry: onRetry)),
       );
       await tester.pumpAndSettle();
 
@@ -110,16 +107,15 @@ void main() {
       expect(centerWidget, isNotNull);
     });
 
-    testWidgets('NetworkErrorRetry widget shows all required elements',
-        (WidgetTester tester) async {
+    testWidgets('NetworkErrorRetry widget shows all required elements', (
+      WidgetTester tester,
+    ) async {
       // Arrange: Create a test callback
       void onRetry() {}
 
       // Build the NetworkErrorRetry widget directly
       await tester.pumpWidget(
-        MaterialApp(
-          home: NetworkErrorRetry(onRetry: onRetry),
-        ),
+        MaterialApp(home: NetworkErrorRetry(onRetry: onRetry)),
       );
       await tester.pumpAndSettle();
 
@@ -129,17 +125,16 @@ void main() {
       expect(find.textContaining('check your connection'), findsOneWidget);
       expect(find.textContaining('try again'), findsOneWidget);
       expect(find.byIcon(Icons.refresh), findsOneWidget);
-      retryText = find.text('Retry');
+      final retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
     });
 
-    testWidgets('shows retry button on network error and allows retry',
-        (tester) async {
+    testWidgets('shows retry button on network error and allows retry', (
+      tester,
+    ) async {
       // Arrange: override the authServiceProvider with our mock
       final container = ProviderContainer(
-        overrides: [
-          authServiceProvider.overrideWithValue(mockAuthService),
-        ],
+        overrides: [authServiceProvider.overrideWithValue(mockAuthService)],
       );
 
       // Build the widget
@@ -157,7 +152,7 @@ void main() {
       debugPrint(tester.element(find.byType(AuthWrapper)).toStringDeep());
 
       // Locate the Retry label
-      retryText = find.text('Retry');
+      final retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
 
       // Tap the label to trigger the button
