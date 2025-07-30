@@ -1,7 +1,7 @@
 import 'package:appoint/features/family/widgets/otp_entry_modal.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/family_provider.dart';
-import 'package:appoint/providers/otp_provider.dart';
+// import 'package:appoint/providers/otp_provider.dart'; // Unused
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

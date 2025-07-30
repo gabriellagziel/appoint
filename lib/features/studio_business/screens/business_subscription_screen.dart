@@ -1,4 +1,4 @@
-import 'package:appoint/features/studio_business/models/business_subscription.dart';
+// import 'package:appoint/features/studio_business/models/business_subscription.dart'; // Unused
 import 'package:appoint/features/studio_business/providers/business_subscription_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

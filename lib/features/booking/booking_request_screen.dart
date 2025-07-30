@@ -1,11 +1,10 @@
+import 'package:appoint/features/selection/providers/selection_provider.dart';
+import 'package:appoint/providers/branch_provider.dart';
+import 'package:appoint/services/location_service.dart';
+import 'package:appoint/services/maps_service.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../models/booking.dart';
-import 'services/booking_service.dart';
-import '../../providers/auth_provider.dart';
-import '../selection/providers/selection_provider.dart';
-import '../../providers/minor_parent_provider.dart';
-
 class BookingRequestScreen extends ConsumerStatefulWidget {
   const BookingRequestScreen({super.key});
 
@@ -15,112 +14,86 @@ class BookingRequestScreen extends ConsumerStatefulWidget {
 }
 
 class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
-  bool _isSubmitting = false;
+  GoogleMapController? _mapController;
+  LocationService _locationService = LocationService();
+  Set<Marker> _markers = {};
 
-  Future<void> _submitBooking() async {
-    setState(() => _isSubmitting = true);
+  @override
+  void initState() {
+    super.initState();
+    if (!kIsWeb) {
+      _loadInitialData();
+    }
+  }
 
+  Future<void> _loadInitialData() async {
     try {
-      final user = ref.read(authProvider).currentUser;
-      final userId = user?.uid ?? '';
-      if (userId.isEmpty) throw Exception('User not logged in');
+      branches = await ref.read(branchesProvider.future);
+      setState(() {
+        _markers = branches
+            .map((b) => Marker(
+                  markerId: MarkerId(b.id),
+                  position: LatLng(b.latitude, b.longitude),
+                  infoWindow: InfoWindow(title: b.name),
+                ),)
+            .toSet();
+      });
 
-      final staffId = ref.read(staffSelectionProvider);
-      final serviceId = ref.read(serviceSelectionProvider);
-      final serviceName = ref.read(serviceNameProvider);
-      final dateTime = ref.read(selectedSlotProvider);
-      final duration = ref.read(serviceDurationProvider);
-
-      if (staffId == null ||
-          serviceId == null ||
-          dateTime == null ||
-          duration == null) {
-        throw Exception('Missing required booking information');
+      if (!kIsWeb) {
+        position = await _locationService.getCurrentLocation();
+        if (position != null && _mapController != null) {
+          _mapController!.moveCamera(CameraUpdate.newLatLng(
+              LatLng(position.latitude, position.longitude),),);
+        }
       }
-
-      final booking = Booking(
-        id: '', // Will be set by Firestore
-        userId: userId,
-        staffId: staffId,
-        serviceId: serviceId,
-        serviceName: serviceName ?? 'Unknown Service',
-        dateTime: dateTime,
-        duration: duration,
-        notes: null,
-        createdAt: DateTime.now(),
-      );
-
-      await ref.read(bookingServiceProvider).submitBooking(booking);
-
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Booking confirmed')),
-      );
-      Navigator.pop(context);
-    } catch (e, st) {
-      debugPrint('Error during booking: $e\n$st');
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Failed to confirm booking')),
-      );
-    } finally {
-      if (mounted) setState(() => _isSubmitting = false);
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error loading initial data: $e');
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    final verified = ref.watch(minorParentProvider)?.isVerified ?? false;
-    if (!verified) {
-      Future.microtask(() =>
-          Navigator.pushNamed(context, '/select-minor'));
-      return const SizedBox.shrink();
-    }
-    final staffId = ref.watch(staffSelectionProvider);
-    final serviceId = ref.watch(serviceSelectionProvider);
-    final dateTime = ref.watch(selectedSlotProvider);
-    final duration = ref.watch(serviceDurationProvider);
+    ref.watch(staffSelectionProvider);
+    ref.watch(serviceSelectionProvider);
+    ref.watch(selectedSlotProvider);
+    ref.watch(serviceDurationProvider);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Booking Request')),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('Staff: ${staffId ?? "Not selected"}'),
-                    const SizedBox(height: 8),
-                    Text('Service: ${serviceId ?? "Not selected"}'),
-                    const SizedBox(height: 8),
-                    Text(
-                        'Date & Time: ${dateTime?.toLocal() ?? "Not selected"}'),
-                    const SizedBox(height: 8),
-                    Text('Duration: ${duration?.inMinutes ?? 0} minutes'),
-                  ],
-                ),
-              ),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: (staffId != null &&
-                      serviceId != null &&
-                      dateTime != null &&
-                      duration != null)
-                  ? (_isSubmitting ? null : _submitBooking)
-                  : null,
-              child: _isSubmitting
-                  ? const CircularProgressIndicator()
-                  : const Text('Submit Booking'),
-            ),
-          ],
-        ),
-      ),
+      appBar: AppBar(title: const Text('Select Location')),
+      body: kIsWeb ? _buildWebFallback() : _buildMap(),
     );
   }
+
+  Widget _buildMap() => GoogleMap(
+      initialCameraPosition: MapsService.initialPosition,
+      markers: _markers,
+      onMapCreated: (controller) {
+        _mapController = controller;
+      },
+      myLocationEnabled: true,
+    );
+
+  Widget _buildWebFallback() => Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Icon(Icons.map, size: 64, color: Colors.grey),
+          const SizedBox(height: 16),
+          const Text(
+            'Map selection is not available on web',
+            style: TextStyle(fontSize: 18),
+          ),
+          const SizedBox(height: 16),
+          const Text(
+            'Please use the mobile app for location selection',
+            style: TextStyle(fontSize: 14, color: Colors.grey),
+          ),
+          const SizedBox(height: 24),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Go Back'),
+          ),
+        ],
+      ),
+    );
 }

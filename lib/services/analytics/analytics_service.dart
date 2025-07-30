@@ -1,9 +1,11 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
+// import 'package:flutter/foundation.dart'; // Unused
 
 class AnalyticsService {
-  AnalyticsService._();
   static final AnalyticsService _instance = AnalyticsService._();
   static AnalyticsService get instance => _instance;
+  
+  AnalyticsService._();
 
   final FirebaseAnalytics _analytics = FirebaseAnalytics.instance;
 
@@ -31,7 +33,7 @@ class AnalyticsService {
   }) async {
     await _analytics.logEvent(
       name: action,
-      parameters: parameters?.cast<String, Object>(),
+      parameters: parameters,
     );
   }
 
@@ -123,36 +125,17 @@ class AnalyticsService {
   }
 
   // Track onboarding events
-  Future<void> trackOnboardingStart() async {
-    await _analytics.logEvent(
-      name: 'onboarding_started',
-      parameters: {
-        'timestamp': DateTime.now().millisecondsSinceEpoch,
-      },
-    );
-  }
-
   Future<void> trackOnboardingStep({
-    required String stepName,
+    required String step,
     required int stepNumber,
-    required int totalSteps,
+    int? totalSteps,
   }) async {
     await _analytics.logEvent(
       name: 'onboarding_step_completed',
       parameters: {
-        'step': stepName,
+        'step': step,
         'step_number': stepNumber,
-        'total_steps': totalSteps,
-        'timestamp': DateTime.now().millisecondsSinceEpoch,
-      },
-    );
-  }
-
-  Future<void> trackOnboardingComplete({int? totalTimeSeconds}) async {
-    await _analytics.logEvent(
-      name: 'onboarding_completed',
-      parameters: {
-        if (totalTimeSeconds != null) 'total_time_seconds': totalTimeSeconds,
+        if (totalSteps != null) 'total_steps': totalSteps,
         'timestamp': DateTime.now().millisecondsSinceEpoch,
       },
     );
@@ -307,7 +290,7 @@ class AnalyticsService {
       name: 'app_lifecycle',
       parameters: {
         'event': event,
-        if (parameters != null) ...parameters.cast<String, Object>(),
+        if (parameters != null) ...parameters,
         'timestamp': DateTime.now().millisecondsSinceEpoch,
       },
     );
@@ -371,20 +354,10 @@ class AnalyticsService {
   }) async {
     await _analytics.logEvent(
       name: name,
-      parameters: parameters?.cast<String, Object>(),
-    );
-  }
-
-  Future<void> trackEvent(
-    String action,
-    Map<String, dynamic>? parameters,
-  ) async {
-    await _analytics.logEvent(
-      name: action,
-      parameters: parameters?.cast<String, Object>(),
+      parameters: parameters,
     );
   }
 
   // Get analytics instance for direct access
   FirebaseAnalytics get analytics => _analytics;
-}
+} 

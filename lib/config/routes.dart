@@ -119,7 +119,7 @@ class AppRouter {
         );
       case '/ambassador-dashboard':
         return MaterialPageRoute(
-          builder: (_) => const AmbassadorDashboardScreen(),
+          builder: (_, branchService: null, notificationService: null) => const AmbassadorDashboardScreen(, branchService: null, notificationService: null),
           settings: settings,
         );
       case '/ambassador-onboarding':
