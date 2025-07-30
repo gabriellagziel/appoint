@@ -45,7 +45,7 @@ class QualityTrendPredictor {
     final n = values.length;
     final sumX = timestamps.reduce((a, b) => a + b);
     final sumY = values.reduce((a, b) => a + b);
-    final sumXY = 0;
+    double sumXY = 0;
     final sumX2 = timestamps.map((x) => x * x).reduce((a, b) => a + b);
 
     for (int i = 0; i < n; i++) {
