@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/studio_business/providers/booking_provider.dart';
+import 'package:appoint/widgets/app_attribution.dart';
 
 class BookingConfirmationSheet extends ConsumerWidget {
 
@@ -114,6 +115,10 @@ class BookingConfirmationSheet extends ConsumerWidget {
               ),
             ],
           ),
+          
+          // Attribution - Required for all booking-related screens
+          const SizedBox(height: 16),
+          const AppAttributionFooter(showBorder: false),
         ],
       ),
     );
