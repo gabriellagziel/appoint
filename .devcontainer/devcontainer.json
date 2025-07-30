@@ -1,30 +1,17 @@
 {
-  "name": "App-Oint Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": "."
+  "name": "Flutter App",
+  "image": "ghcr.io/cirruslabs/flutter:stable",
+  "postCreateCommand": "flutter pub get",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dart-code.dart-code",
+        "dart-code.flutter"
+      ]
+    }
   },
-  "remoteUser": "vscode",
-  "workspaceFolder": "/workspace",
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
-  "postCreateCommand": [
-    "which flutter && flutter --version",
-    "which dart    && dart --version",
-    "which firebase && firebase --version",
-    "bash -c \"ls /workspace/sdk_archives && which flutter && which dart && which firebase\""
-  ],
-  "mounts": [
-    // Mount host pub cache for offline packages
-    "source=${localEnv:HOME}/.pub-cache,target=/home/vscode/.pub-cache,type=bind,consistency=cached",
-    "source=${localWorkspaceFolder}/sdk_archives,target=/workspace/sdk_archives,type=bind,consistency=cached"
-  ],
-  "containerEnv": {
-    "PATH": "/usr/local/bin:/usr/lib/dart/bin:${containerEnv:PATH}",
-    "PUB_CACHE": "/home/vscode/.pub-cache"
-  },
-  "remoteEnv": {
-    "PATH": "/usr/local/bin:/usr/lib/dart/bin:${containerEnv:PATH}"
-  }
+  "features": {}
+  ,"mounts": [
+    "source=${localEnv:HOME}/.pub-cache,target=/root/.pub-cache,type=bind"
+  ]
 }
