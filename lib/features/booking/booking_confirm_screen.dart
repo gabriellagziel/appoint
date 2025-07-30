@@ -1,4 +1,4 @@
-import 'dart:core';
+import 'dart:core' show DateTime, Duration;
 
 import 'package:appoint/features/booking/models/booking_request_args.dart';
 import 'package:appoint/models/appointment.dart';

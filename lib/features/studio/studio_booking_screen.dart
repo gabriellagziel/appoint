@@ -1,6 +1,8 @@
 import 'package:appoint/models/staff_availability.dart';
 import 'package:appoint/models/staff_member.dart';
 import 'package:appoint/providers/studio_provider.dart';
+import 'dart:core' show DateTime, Duration;
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

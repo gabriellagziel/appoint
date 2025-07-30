@@ -102,10 +102,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -321,10 +317,6 @@
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "Enter group name",
-  "@enterGroupName": {
-    "description": "Description"
-  },
   "confirm": "Confirm",
   "@confirm": {
     "description": "Description"
@@ -455,7 +447,7 @@
   },
   "quickActions": "Quick Actions",
   "@quickActions": {
-    "description": "Description"
+    "description": "Section title for quick action buttons"
   },
   "playtimeTitle": "Playtime",
   "@playtimeTitle": {
@@ -587,7 +579,7 @@
   },
   "share": "Share",
   "@share": {
-    "description": "Description"
+    "description": "Tab label for share section"
   },
   "playtimeEnterGameName": "Enter game name",
   "@playtimeEnterGameName": {
@@ -605,10 +597,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -623,10 +611,6 @@
   },
   "close": "Close",
   "@close": {
-    "description": "Description"
-  },
-  "knownGroupDetected": "Known group detected",
-  "@knownGroupDetected": {
     "description": "Description"
   },
   "back": "Back",
@@ -672,7 +656,7 @@
   },
   "overview": "Overview",
   "@overview": {
-    "description": "Description"
+    "description": "Tab label for overview section"
   },
   "bookings": "Bookings",
   "@bookings": {
@@ -887,7 +871,7 @@
   },
   "rewards": "Rewards",
   "@rewards": {
-    "description": "Localization key for: Rewards"
+    "description": "Tab label for rewards section"
   },
   "time": "Time",
   "@time": {
@@ -1295,7 +1279,7 @@
   },
   "copyLink": "Copy Link",
   "@copyLink": {
-    "description": "Localization key for: Copy Link"
+    "description": "Tooltip for copy link button"
   },
   "dashboard1": "Dashboard",
   "@dashboard1": {
@@ -1327,7 +1311,7 @@
   },
   "ambassadorDashboard": "Ambassador Dashboard",
   "@ambassadorDashboard": {
-    "description": "Localization key for: Ambassador Dashboard"
+    "description": "Title for the ambassador dashboard screen"
   },
   "phoneBooking": "Phone Booking",
   "@phoneBooking": {
@@ -1728,7 +1712,7 @@
   },
   "shareLink": "Share Link",
   "@shareLink": {
-    "description": "Localization key for: Share Link"
+    "description": "Button label for sharing referral link"
   },
   "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
@@ -1854,9 +1838,9 @@
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard!",
+  "linkCopiedToClipboard": "Link copied to clipboard",
   "@linkCopiedToClipboard": {
-    "description": "Localization key for: Link copied to clipboard!"
+    "description": "Confirmation message when link is copied"
   },
   "accept1": "Accept",
   "@accept1": {
@@ -2260,7 +2244,7 @@
   },
   "referrals": "Referrals",
   "@referrals": {
-    "description": "Localization key for: Referrals"
+    "description": "Tab label for referrals section"
   },
   "crm": "CRM",
   "@crm": {
@@ -2714,11 +2698,6 @@
   "@purchase_now_button": {
     "description": "Button to purchase upgrade"
   },
-  
-  "ambassadorDashboard": "Ambassador Dashboard",
-  "@ambassadorDashboard": {
-    "description": "Title for the ambassador dashboard screen"
-  },
   "welcomeAmbassador": "Welcome, Ambassador!",
   "@welcomeAmbassador": {
     "description": "Welcome message for ambassadors"
@@ -2726,22 +2705,6 @@
   "activeStatus": "Active",
   "@activeStatus": {
     "description": "Status label showing ambassador is active"
-  },
-  "overview": "Overview",
-  "@overview": {
-    "description": "Tab label for overview section"
-  },
-  "referrals": "Referrals",
-  "@referrals": {
-    "description": "Tab label for referrals section"
-  },
-  "rewards": "Rewards",
-  "@rewards": {
-    "description": "Tab label for rewards section"
-  },
-  "share": "Share",
-  "@share": {
-    "description": "Tab label for share section"
   },
   "totalReferrals": "Total Referrals",
   "@totalReferrals": {
@@ -2783,14 +2746,6 @@
   "@monthlyReferralRequirement": {
     "description": "Explanation of monthly referral requirement"
   },
-  "quickActions": "Quick Actions",
-  "@quickActions": {
-    "description": "Section title for quick action buttons"
-  },
-  "shareLink": "Share Link",
-  "@shareLink": {
-    "description": "Button label for sharing referral link"
-  },
   "viewRewards": "View Rewards",
   "@viewRewards": {
     "description": "Button label for viewing rewards"
@@ -2822,10 +2777,6 @@
   "yourReferralLink": "Your Referral Link",
   "@yourReferralLink": {
     "description": "Title for referral link section"
-  },
-  "copyLink": "Copy Link",
-  "@copyLink": {
-    "description": "Tooltip for copy link button"
   },
   "shareYourLink": "Share Your Link",
   "@shareYourLink": {
@@ -2859,8 +2810,370 @@
   "@ambassadorWelcomeMessage": {
     "description": "Welcome message for new ambassadors"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard",
-  "@linkCopiedToClipboard": {
-    "description": "Confirmation message when link is copied"
+  "ambassadorPromotionTitle": "Congratulations! You're now an Ambassador!",
+  "@ambassadorPromotionTitle": {
+    "description": "Title for ambassador promotion notification"
+  },
+  "ambassadorPromotionBody": "Welcome to the {tier} tier! Start sharing your referral link to earn rewards.",
+  "@ambassadorPromotionBody": {
+    "description": "Body text for ambassador promotion notification",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "tierUpgradeTitle": "Tier Upgrade! 🎉",
+  "@tierUpgradeTitle": {
+    "description": "Title for tier upgrade notification"
+  },
+  "tierUpgradeBody": "Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals!",
+  "@tierUpgradeBody": {
+    "description": "Body text for tier upgrade notification",
+    "placeholders": {
+      "previousTier": {
+        "type": "String"
+      },
+      "newTier": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "monthlyReminderTitle": "Monthly Goal Reminder",
+  "@monthlyReminderTitle": {
+    "description": "Title for monthly performance reminder notification"
+  },
+  "monthlyReminderBody": "You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal!",
+  "@monthlyReminderBody": {
+    "description": "Body text for monthly reminder notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "targetReferrals": {
+        "type": "String"
+      },
+      "daysRemaining": {
+        "type": "String"
+      }
+    }
+  },
+  "performanceWarningTitle": "Ambassador Performance Alert",
+  "@performanceWarningTitle": {
+    "description": "Title for performance warning notification"
+  },
+  "performanceWarningBody": "Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected.",
+  "@performanceWarningBody": {
+    "description": "Body text for performance warning notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "minimumRequired": {
+        "type": "String"
+      }
+    }
+  },
+  "ambassadorDemotionTitle": "Ambassador Status Update",
+  "@ambassadorDemotionTitle": {
+    "description": "Title for ambassador demotion notification"
+  },
+  "ambassadorDemotionBody": "Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again.",
+  "@ambassadorDemotionBody": {
+    "description": "Body text for ambassador demotion notification",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSuccessTitle": "New Referral! 🎉",
+  "@referralSuccessTitle": {
+    "description": "Title for successful referral notification"
+  },
+  "referralSuccessBody": "{referredUserName} joined through your referral! You now have {totalReferrals} total referrals.",
+  "@referralSuccessBody": {
+    "description": "Body text for successful referral notification",
+    "placeholders": {
+      "referredUserName": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Title label"
+  },
+  "pleaseEnterTitle": "Please enter a title",
+  "@pleaseEnterTitle": {
+    "description": "Validation message for title field"
+  },
+  "messageType": "Message Type",
+  "@messageType": {
+    "description": "Message type field label"
+  },
+  "pleaseEnterContent": "Please enter content",
+  "@pleaseEnterContent": {
+    "description": "Validation message for content field"
+  },
+  "imageSelected": "Image selected",
+  "@imageSelected": {
+    "description": "Image selected confirmation"
+  },
+  "videoSelected": "Video selected",
+  "@videoSelected": {
+    "description": "Video selected confirmation"
+  },
+  "externalLink": "External Link",
+  "@externalLink": {
+    "description": "External link field label"
+  },
+  "pleaseEnterLink": "Please enter a link",
+  "@pleaseEnterLink": {
+    "description": "Validation message for link field"
+  },
+  "estimatedRecipients": "Estimated recipients",
+  "@estimatedRecipients": {
+    "description": "Estimated recipients count label"
+  },
+  "countries": "Countries",
+  "@countries": {
+    "description": "Countries filter label"
+  },
+  "cities": "Cities",
+  "@cities": {
+    "description": "Cities filter label"
+  },
+  "subscriptionTiers": "Subscription Tiers",
+  "@subscriptionTiers": {
+    "description": "Subscription tiers filter label"
+  },
+  "userRoles": "User Roles",
+  "@userRoles": {
+    "description": "User roles filter label"
+  },
+  "errorEstimatingRecipients": "Error estimating recipients",
+  "@errorEstimatingRecipients": {
+    "description": "Error message for recipient estimation"
+  },
+  "errorPickingImage": "Error picking image",
+  "@errorPickingImage": {
+    "description": "Error message for image selection"
+  },
+  "errorPickingVideo": "Error picking video",
+  "@errorPickingVideo": {
+    "description": "Error message for video selection"
+  },
+  "noPermissionForBroadcast": "No permission for broadcast",
+  "@noPermissionForBroadcast": {
+    "description": "No permission message"
+  },
+  "userNotAuthenticated": "User not authenticated",
+  "@userNotAuthenticated": {
+    "description": "User not authenticated error"
+  },
+  "failedToUploadImage": "Failed to upload image",
+  "@failedToUploadImage": {
+    "description": "Image upload failure message"
+  },
+  "failedToUploadVideo": "Failed to upload video",
+  "@failedToUploadVideo": {
+    "description": "Video upload failure message"
+  },
+  "messageSavedSuccessfully": "Message saved successfully",
+  "@messageSavedSuccessfully": {
+    "description": "Message save success confirmation"
+  },
+  "messageSentSuccessfully": "Message sent successfully",
+  "@messageSentSuccessfully": {
+    "description": "Message send success confirmation"
+  },
+  "sendNow": "Send Now",
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Details button"
+  },
+  "image": "Image",
+  "@image": {
+    "description": "Image label"
+  },
+  "video": "Video",
+  "@video": {
+    "description": "Video label"
+  },
+  "pollOptions": "Poll Options",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "continue1": "Continue",
+  "@continue1": {
+    "description": "Continue button"
+  },
+  "getStarted": "Get Started",
+  "@getStarted": {
+    "description": "Get started button"
+  },
+  "noBroadcastMessages": "No broadcast messages",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "content": "Content: {content}",
+  "@content": {
+    "description": "Content display with parameter",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "type": "Type: {type}",
+  "@type": {
+    "description": "Type display with parameter",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "recipients": "Recipients: {recipients}",
+  "@recipients": {
+    "description": "Recipients display with parameter",
+    "placeholders": {
+      "recipients": {
+        "type": "String"
+      }
+    }
+  },
+  "clicked": "Clicked: {clicked}",
+  "@clicked": {
+    "description": "Clicked count display with parameter",
+    "placeholders": {
+      "clicked": {
+        "type": "String"
+      }
+    }
+  },
+  "created": "Created: {created}",
+  "@created": {
+    "description": "Created date display with parameter",
+    "placeholders": {
+      "created": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduled": "Scheduled: {scheduled}",
+  "@scheduled": {
+    "description": "Scheduled date display with parameter",
+    "placeholders": {
+      "scheduled": {
+        "type": "String"
+      }
+    }
+  },
+  "link": "Link: {link}",
+  "@link": {
+    "description": "Link display with parameter",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "status": "Status: {status}",
+  "@status": {
+    "description": "Status display with parameter",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "errorSavingMessage": "Error saving message: {error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message with parameter",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorSendingMessage": "Error sending message: {error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message with parameter",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "sendNow": "Send Now",
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Details label"
+  },
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "myInvites": "My Invites",
+  "@myInvites": {
+    "description": "My invites label"
+  },
+  "accept": "Accept",
+  "@accept": {
+    "description": "Accept button"
+  },
+  "createNew": "Create New",
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "viewAll": "View All",
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "myProfile": "My Profile",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "staffScreenTBD": "Staff Screen TBD",
+  "@staffScreenTBD": {
+    "description": "Staff screen placeholder"
+  },
+  "adminScreenTBD": "Admin Screen TBD",
+  "@adminScreenTBD": {
+    "description": "Admin screen placeholder"
+  },
+  "clientScreenTBD": "Client Screen TBD",
+  "@clientScreenTBD": {
+    "description": "Client screen placeholder"
+  },
+  "shareOnWhatsApp": "Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "customizeMessage": "Customize Message",
+  "@customizeMessage": {
+    "description": "Customize message label"
+  },
+  "enterGroupName": "Enter Group Name",
+  "@enterGroupName": {
+    "description": "Enter group name prompt"
+  },
+  "sent": "Sent",
+  "@sent": {
+    "description": "Sent status"
   }
 }
