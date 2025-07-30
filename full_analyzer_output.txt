@@ -1,0 +1,101 @@
+Analyzing ga...                                                 
+
+warning • The operand can't be 'null', so the condition is always 'true' • accessibility/tests/semantic_labels_test.dart:418:23 • unnecessary_null_comparison
+warning • 'unused_parameter' isn't a recognized error code • analysis_options.yaml:33:5 • unrecognized_error_code
+warning • The operand can't be 'null', so the condition is always 'true' • appoint/accessibility/tests/semantic_labels_test.dart:418:23 • unnecessary_null_comparison
+warning • 'unused_parameter' isn't a recognized error code • appoint/analysis_options.yaml:33:5 • unrecognized_error_code
+  error • The getter 'analyticsDashboard' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:29:26 • undefined_getter
+  error • The getter 'filters' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:39:27 • undefined_getter
+  error • The getter 'broadcasts' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:56:38 • undefined_getter
+  error • The getter 'formAnalytics' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:57:38 • undefined_getter
+  error • The getter 'totalBroadcasts' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:144:56 • undefined_getter
+  error • The getter 'totalRecipients' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:153:56 • undefined_getter
+  error • The getter 'openRate' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:166:56 • undefined_getter
+  error • The getter 'engagementRate' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:175:56 • undefined_getter
+  error • The getter 'noDataAvailable' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:255:51 • undefined_getter
+  error • The getter 'breakdown' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:402:43 • undefined_getter
+  error • The getter 'byCountry' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:410:49 • undefined_getter
+  error • The getter 'byType' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:417:49 • undefined_getter
+  error • The getter 'noDataAvailable' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:440:50 • undefined_getter
+  error • The getter 'noBroadcastsFound' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:496:51 • undefined_getter
+  error • The getter 'sent' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:548:26 • undefined_getter
+  error • The getter 'responses' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:554:39 • undefined_getter
+  error • The getter 'openRate' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:561:37 • undefined_getter
+  error • The getter 'clickRate' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:562:37 • undefined_getter
+  error • The getter 'responseRate' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:565:28 • undefined_getter
+  error • The getter 'viewFormAnalytics' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:573:34 • undefined_getter
+  error • The getter 'pending' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:628:46 • undefined_getter
+  error • The getter 'sending' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:631:46 • undefined_getter
+  error • The getter 'sent' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:634:46 • undefined_getter
+  error • The getter 'failed' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:637:46 • undefined_getter
+  error • The getter 'partialSent' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:640:46 • undefined_getter
+  error • The getter 'noFormBroadcasts' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:658:57 • undefined_getter
+  error • The getter 'totalResponses' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:688:50 • undefined_getter
+  error • The getter 'noFormData' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:695:52 • undefined_getter
+  error • The getter 'responses' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:714:54 • undefined_getter
+  error • The getter 'average' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:718:56 • undefined_getter
+  error • The getter 'mostCommon' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:721:56 • undefined_getter
+  error • The getter 'errorLoadingData' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:794:47 • undefined_getter
+  error • The getter 'today' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:829:21 • undefined_getter
+  error • The getter 'last7Days' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:831:21 • undefined_getter
+  error • The getter 'last30Days' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:833:21 • undefined_getter
+  error • The getter 'customRange' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:835:21 • undefined_getter
+  error • The getter 'filters' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:921:24 • undefined_getter
+  error • The getter 'all' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:945:49 • undefined_getter
+  error • The getter 'timeRange' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1006:24 • undefined_getter
+  error • The getter 'startDate' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1046:34 • undefined_getter
+  error • The getter 'endDate' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1070:34 • undefined_getter
+  error • The getter 'today' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1104:21 • undefined_getter
+  error • The getter 'last7Days' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1106:21 • undefined_getter
+  error • The getter 'last30Days' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1108:21 • undefined_getter
+  error • The getter 'customRange' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1110:21 • undefined_getter
+  error • The getter 'exportDataDescription' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1124:26 • undefined_getter
+  error • The getter 'exportComplete' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1138:45 • undefined_getter
+  error • The getter 'exportFailed' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1142:48 • undefined_getter
+  error • The getter 'export' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1146:28 • undefined_getter
+  error • The getter 'formAnalytics' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1165:27 • undefined_getter
+  error • The getter 'totalResponses' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1174:27 • undefined_getter
+  error • The getter 'noFormData' isn't defined for the type 'AppLocalizations' • appoint/lib/features/admin/analytics_dashboard_screen.dart:1180:27 • undefined_getter
+   info • 'foregroundColor' is deprecated and shouldn't be used. use colors in eyeStyle and dataModuleStyle instead • appoint/lib/features/ambassador/ambassador_user_dashboard.dart:896:21 • deprecated_member_use
+warning • The left operand can't be null, so the right operand is never executed • appoint/lib/features/playtime/screens/playtime_screen.dart:117:51 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • appoint/lib/features/playtime/screens/playtime_screen.dart:127:29 • dead_null_aware_expression
+warning • The annotation 'JsonKey.new' can only be used on fields or getters • appoint/lib/models/app_user.dart:22:6 • invalid_annotation_target
+warning • The annotation 'JsonSerializable.new' can only be used on classes • appoint/lib/models/service_offering.dart:8:4 • invalid_annotation_target
+warning • The method doesn't override an inherited method • appoint/lib/providers/notification_provider.dart:28:16 • REDACTED_TOKEN
+warning • The method doesn't override an inherited method • appoint/lib/providers/notification_provider.dart:38:16 • REDACTED_TOKEN
+warning • The method doesn't override an inherited method • appoint/lib/providers/notification_provider.dart:44:16 • REDACTED_TOKEN
+   info • 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion • appoint/lib/services/ambassador_mobile_notifications.dart:421:22 • deprecated_member_use
+   info • 'calendar' is deprecated and shouldn't be used. Use [calendarWriteOnly] and [calendarFullAccess] • appoint/lib/services/permission_service.dart:16:37 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • appoint/lib/widgets/accessibility/accessibility_enhancements.dart:8:21 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • appoint/lib/widgets/accessibility/accessibility_enhancements.dart:9:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • appoint/lib/widgets/accessibility/accessibility_enhancements.dart:10:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • appoint/lib/widgets/accessibility/accessibility_enhancements.dart:14:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • appoint/lib/widgets/accessibility/accessibility_enhancements.dart:18:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • appoint/lib/widgets/accessibility/accessibility_enhancements.dart:22:31 • deprecated_member_use
+warning • This default clause is covered by the previous cases • appoint/lib/widgets/auth_wrapper.dart:31:7 • unreachable_switch_default
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorFormField.validator, InlineErrorFormField.onChanged, InlineErrorFormField.onSubmitted • appoint/lib/widgets/forms/inline_error_hints.dart:5:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPasswordField.validator, InlineErrorPasswordField.onChanged, InlineErrorPasswordField.onSubmitted • appoint/lib/widgets/forms/inline_error_hints.dart:239:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorEmailField.onChanged, InlineErrorEmailField.onSubmitted • appoint/lib/widgets/forms/inline_error_hints.dart:384:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPhoneField.onChanged, InlineErrorPhoneField.onSubmitted • appoint/lib/widgets/forms/inline_error_hints.dart:519:7 • must_be_immutable
+   info • 'foregroundColor' is deprecated and shouldn't be used. use colors in eyeStyle and dataModuleStyle instead • lib/features/ambassador/ambassador_user_dashboard.dart:896:21 • deprecated_member_use
+warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:117:51 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:127:29 • dead_null_aware_expression
+warning • The annotation 'JsonKey.new' can only be used on fields or getters • lib/models/app_user.dart:22:6 • invalid_annotation_target
+warning • The annotation 'JsonSerializable.new' can only be used on classes • lib/models/service_offering.dart:8:4 • invalid_annotation_target
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:28:16 • REDACTED_TOKEN
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:38:16 • REDACTED_TOKEN
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:44:16 • REDACTED_TOKEN
+   info • 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion • lib/services/ambassador_mobile_notifications.dart:421:22 • deprecated_member_use
+   info • 'calendar' is deprecated and shouldn't be used. Use [calendarWriteOnly] and [calendarFullAccess] • lib/services/permission_service.dart:16:37 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:8:21 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:9:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:10:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:14:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:18:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:22:31 • deprecated_member_use
+warning • This default clause is covered by the previous cases • lib/widgets/auth_wrapper.dart:31:7 • unreachable_switch_default
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorFormField.validator, InlineErrorFormField.onChanged, InlineErrorFormField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:5:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPasswordField.validator, InlineErrorPasswordField.onChanged, InlineErrorPasswordField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:239:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorEmailField.onChanged, InlineErrorEmailField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:384:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPhoneField.onChanged, InlineErrorPhoneField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:519:7 • must_be_immutable
+

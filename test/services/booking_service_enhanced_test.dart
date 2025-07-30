@@ -9,33 +9,23 @@ import 'package:appoint/models/booking_model.dart';
 import 'package:appoint/models/user_profile.dart';
 import '../mocks/firebase_mocks.dart';
 
-// Generate mocks
-@GenerateMocks([
-  BookingService,
-  FirebaseFirestore,
-  CollectionReference,
-  DocumentReference,
-  DocumentSnapshot,
-  Query,
-  QuerySnapshot
-])
 void main() {
   group('BookingService Enhanced Tests', () {
     late BookingService bookingService;
-    late MockFirebaseFirestoreGenerated mockFirestore;
-    late REDACTED_TOKEN mockCollection;
-    late MockDocumentReferenceGenerated mockDocRef;
-    late MockDocumentSnapshotGenerated mockDocSnapshot;
-    late MockQueryGenerated mockQuery;
-    late MockQuerySnapshotGenerated mockQuerySnapshot;
+    late Mock mockFirestore;
+    late Mock mockCollection;
+    late Mock mockDocRef;
+    late Mock mockDocSnapshot;
+    late Mock mockQuery;
+    late Mock mockQuerySnapshot;
 
     setUp(() {
-      mockFirestore = MockFirebaseFirestoreGenerated();
-      mockCollection = REDACTED_TOKEN();
-      mockDocRef = MockDocumentReferenceGenerated();
-      mockDocSnapshot = MockDocumentSnapshotGenerated();
-      mockQuery = MockQueryGenerated();
-      mockQuerySnapshot = MockQuerySnapshotGenerated();
+      mockFirestore = Mock();
+      mockCollection = Mock();
+      mockDocRef = Mock();
+      mockDocSnapshot = Mock();
+      mockQuery = Mock();
+      mockQuerySnapshot = Mock();
 
       bookingService = BookingService();
     });
