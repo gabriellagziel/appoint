@@ -1,444 +1,330 @@
-import 'dart:core';
-
-import 'package:appoint/models/event_features.dart';
-import 'package:appoint/models/meeting.dart';
+import 'dart:async';
+import 'package:appoint/models/meeting_details.dart';
+import 'package:appoint/models/location.dart';
+import 'package:appoint/services/location_service.dart';
 import 'package:appoint/services/notification_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:geolocator/geolocator.dart';
 
 class MeetingService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final LocationService _locationService = LocationService();
   final NotificationService _notificationService = NotificationService();
 
-  // Collections
-  CollectionReference get _meetingsCollection =>
-      _firestore.collection('meetings');
-  CollectionReference get _formsCollection =>
-      _firestore.collection('eventForms');
-  CollectionReference get _checklistsCollection =>
-      _firestore.collection('eventChecklists');
-  CollectionReference get _formSubmissionsCollection =>
-      _firestore.collection('eventFormSubmissions');
+  static const String _meetingsCollection = 'meetings';
+  static const String _participantStatusCollection = 'participant_status';
 
-  /// Creates a new meeting with automatic type determination based on participant count
-  Future<Meeting> createMeeting({
-    required String organizerId,
-    required String title,
-    required DateTime startTime,
-    required DateTime endTime,
-    String? description,
-    String? location,
-    String? virtualMeetingUrl,
-    List<MeetingParticipant> participants = const [],
-    String? businessProfileId,
-  }) async {
-    // Validate business rules
-    final totalParticipants = participants.length + 1; // +1 for organizer
-    if (totalParticipants < 2) {
-      throw Exception(
-          'Meeting must have at least one participant besides the organizer');
+  /// Create a new meeting
+  Future<MeetingDetails> createMeeting(MeetingDetails meeting) async {
+    final doc = _firestore.collection(_meetingsCollection).doc();
+    final meetingWithId = meeting.copyWith(id: doc.id);
+    
+    await doc.set(meetingWithId.toJson());
+    
+    // Schedule reminders for all participants
+    await _scheduleReminders(meetingWithId);
+    
+    // Create chat for group meetings
+    if (meetingWithId.isGroupEvent) {
+      await _createMeetingChat(meetingWithId);
     }
-
-    final doc = _meetingsCollection.doc();
-    final meeting = Meeting(
-      id: doc.id,
-      organizerId: organizerId,
-      title: title,
-      description: description,
-      startTime: startTime,
-      endTime: endTime,
-      location: location,
-      virtualMeetingUrl: virtualMeetingUrl,
-      participants: participants,
-      status: MeetingStatus.scheduled,
-      businessProfileId: businessProfileId,
-      createdAt: DateTime.now(),
-      updatedAt: DateTime.now(),
-    );
-
-    // Additional validation
-    final validationError = meeting.validateMeetingCreation();
-    if (validationError != null) {
-      throw Exception(validationError);
-    }
-
-    await doc.set(meeting.toJson());
-
-    // Send notifications to participants
-    await _notifyParticipants(
-      meeting,
-      'Meeting Created',
-      'You have been invited to ${meeting.typeDisplayName.toLowerCase()}: $title',
-    );
-
-    return meeting;
+    
+    // Send invitations to participants
+    await _sendInvitations(meetingWithId);
+    
+    return meetingWithId;
   }
 
-  /// Adds participants to a meeting and automatically updates meeting type
-  Future<Meeting> addParticipants(
-      String meetingId, List<MeetingParticipant> newParticipants) async {
-    final meetingDoc = await _meetingsCollection.doc(meetingId).get();
-    if (!meetingDoc.exists) {
-      throw Exception('Meeting not found');
-    }
-
-    final meeting =
-        Meeting.fromJson(meetingDoc.data()! as Map<String, dynamic>);
-    final updatedParticipants =
-        List<MeetingParticipant>.from(meeting.participants);
-
-    // Check for duplicates and add new participants
-    for (final newParticipant in newParticipants) {
-      if (!updatedParticipants.any((p) => p.userId == newParticipant.userId)) {
-        updatedParticipants.add(newParticipant);
-      }
-    }
-
-    final updatedMeeting = meeting.copyWith(
-      participants: updatedParticipants,
-      updatedAt: DateTime.now(),
-    );
-
-    // If meeting type changed from personal to event, initialize event features
-    if (meeting.isPersonalMeeting && updatedMeeting.isEvent) {
-      await _initializeEventFeatures(updatedMeeting);
-    }
-
-    await _meetingsCollection.doc(meetingId).update(updatedMeeting.toJson());
-
-    // Notify new participants
-    await _notifySpecificParticipants(
-      updatedMeeting,
-      newParticipants,
-      'Meeting Invitation',
-      'You have been added to ${updatedMeeting.typeDisplayName.toLowerCase()}: ${meeting.title}',
-    );
-
-    return updatedMeeting;
+  /// Get meeting details
+  Future<MeetingDetails?> getMeeting(String meetingId) async {
+    final doc = await _firestore.collection(_meetingsCollection).doc(meetingId).get();
+    if (!doc.exists) return null;
+    
+    final data = doc.data()!;
+    return MeetingDetails.fromJson({...data, 'id': doc.id});
   }
 
-  /// Removes participants from a meeting and automatically updates meeting type
-  Future<Meeting> removeParticipants(
-      String meetingId, List<String> userIds) async {
-    final meetingDoc = await _meetingsCollection.doc(meetingId).get();
-    if (!meetingDoc.exists) {
-      throw Exception('Meeting not found');
-    }
-
-    final meeting =
-        Meeting.fromJson(meetingDoc.data()! as Map<String, dynamic>);
-    final updatedParticipants =
-        meeting.participants.where((p) => !userIds.contains(p.userId)).toList();
-
-    // Validate minimum participants
-    if (updatedParticipants.isEmpty) {
-      throw Exception(
-          'Meeting must have at least one participant besides the organizer');
-    }
-
-    final updatedMeeting = meeting.copyWith(
-      participants: updatedParticipants,
-      updatedAt: DateTime.now(),
-    );
-
-    // If meeting type changed from event to personal, clean up event features
-    if (meeting.isEvent && updatedMeeting.isPersonalMeeting) {
-      await _cleanupEventFeatures(updatedMeeting);
-    }
-
-    await _meetingsCollection.doc(meetingId).update(updatedMeeting.toJson());
-
-    return updatedMeeting;
+  /// Watch meeting details with real-time updates
+  Stream<MeetingDetails?> watchMeeting(String meetingId) {
+    return _firestore
+        .collection(_meetingsCollection)
+        .doc(meetingId)
+        .snapshots()
+        .map((doc) {
+      if (!doc.exists) return null;
+      final data = doc.data()!;
+      return MeetingDetails.fromJson({...data, 'id': doc.id});
+    });
   }
 
-  /// Creates a custom form for an event (only available for events)
-  Future<EventCustomForm> createEventForm({
+  /// Update participant status
+  Future<void> updateParticipantStatus({
     required String meetingId,
-    required String title,
-    required List<EventCustomFormField> fields,
-    required String createdBy,
-    String? description,
-    bool allowAnonymousSubmissions = false,
-    DateTime? submissionDeadline,
+    required String userId,
+    required ParticipantStatus status,
+    String? lateReason,
+    DateTime? estimatedArrival,
   }) async {
-    // Verify this is an event
-    final meeting = await getMeeting(meetingId);
-    if (!meeting.isEvent) {
-      throw Exception(
-          'Custom forms are only available for events (4+ participants)');
-    }
-
-    // Verify user has admin permissions
-    if (!meeting.canAccessEventFeatures(createdBy)) {
-      throw Exception('Only event organizers and admins can create forms');
-    }
-
-    final doc = _formsCollection.doc();
-    final form = EventCustomForm(
-      id: doc.id,
-      meetingId: meetingId,
-      title: title,
-      description: description,
-      fields: fields,
-      allowAnonymousSubmissions: allowAnonymousSubmissions,
-      submissionDeadline: submissionDeadline,
-      createdAt: DateTime.now(),
-      updatedAt: DateTime.now(),
-      createdBy: createdBy,
-    );
-
-    await doc.set(form.toJson());
-
-    // Update meeting with form reference
-    await _meetingsCollection.doc(meetingId).update({
-      'customFormId': doc.id,
-      'updatedAt': FieldValue.serverTimestamp(),
-    });
-
-    return form;
-  }
-
-  /// Creates a checklist for an event (only available for events)
-  Future<EventChecklist> createEventChecklist({
-    required String meetingId,
-    required String title,
-    required List<EventChecklistItem> items,
-    required String createdBy,
-    String? description,
-  }) async {
-    // Verify this is an event
-    final meeting = await getMeeting(meetingId);
-    if (!meeting.isEvent) {
-      throw Exception(
-          'Checklists are only available for events (4+ participants)');
-    }
-
-    // Verify user has admin permissions
-    if (!meeting.canAccessEventFeatures(createdBy)) {
-      throw Exception('Only event organizers and admins can create checklists');
-    }
-
-    final doc = _checklistsCollection.doc();
-    final checklist = EventChecklist(
-      id: doc.id,
-      meetingId: meetingId,
-      title: title,
-      description: description,
-      items: items,
-      createdAt: DateTime.now(),
-      updatedAt: DateTime.now(),
-      createdBy: createdBy,
-    );
-
-    await doc.set(checklist.toJson());
-
-    // Update meeting with checklist reference
-    await _meetingsCollection.doc(meetingId).update({
-      'checklistId': doc.id,
-      'updatedAt': FieldValue.serverTimestamp(),
-    });
-
-    return checklist;
-  }
-
-  /// Enables group chat for an event (only available for events)
-  Future<String> enableEventGroupChat(String meetingId, String userId) async {
-    final meeting = await getMeeting(meetingId);
-    if (!meeting.isEvent) {
-      throw Exception(
-          'Group chat is only available for events (4+ participants)');
-    }
-
-    if (!meeting.canAccessEventFeatures(userId)) {
-      throw Exception('Only event organizers and admins can enable group chat');
-    }
-
-    // Create group chat (this would integrate with your existing chat system)
-    final chatId =
-        'event_chat_${meetingId}_${DateTime.now().millisecondsSinceEpoch}';
-
-    // Update meeting with chat reference
-    await _meetingsCollection.doc(meetingId).update({
-      'groupChatId': chatId,
-      'updatedAt': FieldValue.serverTimestamp(),
-    });
-
-    // TODO: Integrate with existing chat service to create actual chat room
-    // await _chatService.createGroupChat(chatId, meeting.participants);
-
-    return chatId;
-  }
-
-  /// Gets a meeting by ID
-  Future<Meeting> getMeeting(String meetingId) async {
-    final doc = await _meetingsCollection.doc(meetingId).get();
-    if (!doc.exists) {
-      throw Exception('Meeting not found');
-    }
-    return Meeting.fromJson(doc.data()! as Map<String, dynamic>);
-  }
-
-  /// Gets meetings for a user (as organizer or participant)
-  Stream<List<Meeting>> getUserMeetings(String userId) => _meetingsCollection
-      .where('participants', arrayContains: {'userId': userId})
-      .snapshots()
-      .asyncMap((snapshot) async {
-        final participantMeetings = snapshot.docs
-            .map((doc) => Meeting.fromJson(doc.data()! as Map<String, dynamic>))
-            .toList();
-
-        // Also get meetings where user is organizer
-        final organizerSnapshot = await _meetingsCollection
-            .where('organizerId', isEqualTo: userId)
-            .get();
-
-        final organizerMeetings = organizerSnapshot.docs
-            .map((doc) => Meeting.fromJson(doc.data()! as Map<String, dynamic>))
-            .toList();
-
-        // Combine and deduplicate
-        final allMeetings = <String, Meeting>{};
-        for (final meeting in participantMeetings) {
-          allMeetings[meeting.id] = meeting;
-        }
-        for (final meeting in organizerMeetings) {
-          allMeetings[meeting.id] = meeting;
-        }
-
-        return allMeetings.values.toList()
-          ..sort((a, b) => a.startTime.compareTo(b.startTime));
+    final meetingRef = _firestore.collection(_meetingsCollection).doc(meetingId);
+    
+    await _firestore.runTransaction((transaction) async {
+      final meetingDoc = await transaction.get(meetingRef);
+      if (!meetingDoc.exists) throw Exception('Meeting not found');
+      
+      final data = meetingDoc.data()!;
+      final participants = (data['participants'] as List)
+          .map((p) => MeetingParticipant.fromJson(p))
+          .toList();
+      
+      final participantIndex = participants.indexWhere((p) => p.userId == userId);
+      if (participantIndex == -1) throw Exception('Participant not found');
+      
+      participants[participantIndex] = participants[participantIndex].copyWith(
+        status: status,
+        isRunningLate: status == ParticipantStatus.late,
+        lateReason: lateReason,
+        estimatedArrival: estimatedArrival,
+        lastSeenAt: DateTime.now(),
+      );
+      
+      transaction.update(meetingRef, {
+        'participants': participants.map((p) => p.toJson()).toList(),
       });
-
-  /// Gets event form by meeting ID
-  Future<EventCustomForm?> getEventForm(String meetingId) async {
-    final snapshot = await _formsCollection
-        .where('meetingId', isEqualTo: meetingId)
-        .limit(1)
-        .get();
-
-    if (snapshot.docs.isEmpty) return null;
-
-    return EventCustomForm.fromJson(
-        snapshot.docs.first.data()! as Map<String, dynamic>);
+    });
+    
+    // Notify other participants of status change
+    await REDACTED_TOKEN(meetingId, userId, status);
   }
 
-  /// Gets event checklist by meeting ID
-  Future<EventChecklist?> getEventChecklist(String meetingId) async {
-    final snapshot = await _checklistsCollection
-        .where('meetingId', isEqualTo: meetingId)
-        .limit(1)
-        .get();
-
-    if (snapshot.docs.isEmpty) return null;
-
-    return EventChecklist.fromJson(
-        snapshot.docs.first.data()! as Map<String, dynamic>);
-  }
-
-  /// Validates if a user can access event features
-  Future<bool> canUserAccessEventFeatures(
-      String meetingId, String userId) async {
+  /// Mark participant as running late
+  Future<void> markAsRunningLate({
+    required String meetingId,
+    required String userId,
+    String? reason,
+    int? delayMinutes,
+  }) async {
     final meeting = await getMeeting(meetingId);
-    return meeting.canAccessEventFeatures(userId);
+    if (meeting == null) throw Exception('Meeting not found');
+    
+    final estimatedArrival = delayMinutes != null 
+        ? meeting.scheduledAt.add(Duration(minutes: delayMinutes))
+        : null;
+    
+    await updateParticipantStatus(
+      meetingId: meetingId,
+      userId: userId,
+      status: ParticipantStatus.late,
+      lateReason: reason,
+      estimatedArrival: estimatedArrival,
+    );
   }
 
-  /// Gets analytics data for meetings vs events
-  Future<Map<String, dynamic>> getMeetingAnalytics(String userId,
-      {DateTime? startDate, DateTime? endDate}) async {
-    var query = _meetingsCollection.where('organizerId', isEqualTo: userId);
+  /// Check if user will be late based on location
+  Future<bool> checkIfUserWillBeLate(String meetingId, String userId) async {
+    final meeting = await getMeeting(meetingId);
+    if (meeting == null || meeting.location == null) return false;
+    
+    final currentPosition = await _locationService.getCurrentLocation();
+    if (currentPosition == null) return false;
+    
+    // Calculate travel time to meeting location
+    final distanceInMeters = Geolocator.distanceBetween(
+      currentPosition.latitude,
+      currentPosition.longitude,
+      meeting.location!.latitude,
+      meeting.location!.longitude,
+    );
+    
+    // Estimate travel time (assuming walking speed of 5 km/h)
+    const walkingSpeedKmh = 5.0;
+    final travelTimeMinutes = (distanceInMeters / 1000) / walkingSpeedKmh * 60;
+    
+    final timeUntilMeeting = meeting.scheduledAt.difference(DateTime.now()).inMinutes;
+    
+    // Consider late if travel time is more than 80% of remaining time
+    return travelTimeMinutes > (timeUntilMeeting * 0.8);
+  }
 
+  /// Schedule pre-meeting location check
+  Future<void> scheduleLocationCheck(MeetingDetails meeting) async {
+    if (!meeting.isLocationTrackingEnabled || meeting.location == null) return;
+    
+    final checkTime = meeting.scheduledAt.subtract(Duration(minutes: meeting.reminderMinutes));
+    
+    await _notificationService.scheduleNotification(
+      title: 'Meeting Location Check',
+      body: 'Checking if you\'ll arrive on time for ${meeting.title}',
+      scheduledDate: checkTime,
+      payload: 'location_check:${meeting.id}',
+    );
+  }
+
+  /// Get user's meetings for a date range
+  Stream<List<MeetingDetails>> watchUserMeetings(String userId, {
+    DateTime? startDate,
+    DateTime? endDate,
+  }) {
+    var query = _firestore
+        .collection(_meetingsCollection)
+        .where('participants', arrayContains: {'userId': userId});
+    
     if (startDate != null) {
-      query = query.where('createdAt', isGreaterThanOrEqualTo: startDate);
+      query = query.where('scheduledAt', isGreaterThanOrEqualTo: startDate);
     }
+    
     if (endDate != null) {
-      query = query.where('createdAt', isLessThanOrEqualTo: endDate);
+      query = query.where('scheduledAt', isLessThanOrEqualTo: endDate);
     }
-
-    final snapshot = await query.get();
-    final meetings = snapshot.docs
-        .map((doc) => Meeting.fromJson(doc.data()! as Map<String, dynamic>))
-        .toList();
-
-    final personalMeetings =
-        meetings.where((m) => m.isPersonalMeeting).toList();
-    final events = meetings.where((m) => m.isEvent).toList();
-
-    return {
-      'totalMeetings': meetings.length,
-      'personalMeetings': personalMeetings.length,
-      'events': events.length,
-      'averageParticipantsPersonal': personalMeetings.isEmpty
-          ? 0
-          : personalMeetings
-                  .map((m) => m.totalParticipantCount)
-                  .reduce((a, b) => a + b) /
-              personalMeetings.length,
-      'averageParticipantsEvents': events.isEmpty
-          ? 0
-          : events.map((m) => m.totalParticipantCount).reduce((a, b) => a + b) /
-              events.length,
-      'eventsWithForms': events.where((e) => e.hasCustomForm).length,
-      'eventsWithChecklists': events.where((e) => e.hasChecklist).length,
-      'eventsWithGroupChat': events.where((e) => e.hasGroupChat).length,
-    };
-  }
-
-  // Private helper methods
-
-  Future<void> _initializeEventFeatures(Meeting meeting) async {
-    // Called when a meeting becomes an event (crosses 4 participant threshold)
-    // Initialize default event settings if needed
-    const eventSettings = EventSettings();
-
-    await _meetingsCollection.doc(meeting.id).update({
-      'eventSettings': eventSettings.toJson(),
+    
+    return query.snapshots().map((snapshot) {
+      return snapshot.docs.map((doc) {
+        final data = doc.data();
+        return MeetingDetails.fromJson({...data, 'id': doc.id});
+      }).toList();
     });
   }
 
-  Future<void> _cleanupEventFeatures(Meeting meeting) async {
-    // Called when an event becomes a personal meeting (drops below 4 participants)
-    // Clean up event-only features
-
-    final updates = <String, dynamic>{
-      'customFormId': FieldValue.delete(),
-      'checklistId': FieldValue.delete(),
-      'groupChatId': FieldValue.delete(),
-      'eventSettings': FieldValue.delete(),
-    };
-
-    await _meetingsCollection.doc(meeting.id).update(updates);
-
-    // TODO: Also clean up associated forms, checklists, etc.
-    if (meeting.customFormId != null) {
-      await _formsCollection.doc(meeting.customFormId).delete();
-    }
-    if (meeting.checklistId != null) {
-      await _checklistsCollection.doc(meeting.checklistId).delete();
-    }
-  }
-
-  Future<void> _notifyParticipants(
-      Meeting meeting, String title, String body) async {
+  /// Send invitations to meeting participants
+  Future<void> _sendInvitations(MeetingDetails meeting) async {
     for (final participant in meeting.participants) {
       await _notificationService.sendNotificationToUser(
         uid: participant.userId,
-        title: title,
-        body: body,
+        title: 'Meeting Invitation',
+        body: 'You\'re invited to ${meeting.title} on ${_formatDateTime(meeting.scheduledAt)}',
+        data: {
+          'type': 'meeting_invitation',
+          'meetingId': meeting.id,
+          'action': 'view_meeting',
+        },
       );
     }
   }
 
-  Future<void> _notifySpecificParticipants(
-    Meeting meeting,
-    List<MeetingParticipant> participants,
-    String title,
-    String body,
-  ) async {
-    for (final participant in participants) {
-      await _notificationService.sendNotificationToUser(
-        uid: participant.userId,
-        title: title,
-        body: body,
+  /// Schedule reminders for meeting
+  Future<void> _scheduleReminders(MeetingDetails meeting) async {
+    final reminderTime = meeting.scheduledAt.subtract(Duration(minutes: meeting.reminderMinutes));
+    
+    for (final participant in meeting.participants) {
+      await _notificationService.scheduleNotification(
+        title: 'Upcoming Meeting',
+        body: '${meeting.title} starts in ${meeting.reminderMinutes} minutes',
+        scheduledDate: reminderTime,
+        payload: 'meeting_reminder:${meeting.id}:${participant.userId}',
       );
+    }
+  }
+
+  /// Create chat for group meetings
+  Future<void> _createMeetingChat(MeetingDetails meeting) async {
+    final chatDoc = _firestore.collection('chats').doc();
+    
+    await chatDoc.set({
+      'id': chatDoc.id,
+      'name': '${meeting.title} - Chat',
+      'type': 'meeting',
+      'meetingId': meeting.id,
+      'participants': meeting.participants.map((p) => p.userId).toList(),
+      'createdAt': FieldValue.serverTimestamp(),
+      'createdBy': meeting.creatorId,
+    });
+    
+    // Update meeting with chat ID
+    await _firestore.collection(_meetingsCollection).doc(meeting.id).update({
+      'chatId': chatDoc.id,
+    });
+  }
+
+  /// Notify participants of status changes
+  Future<void> REDACTED_TOKEN(
+    String meetingId,
+    String userId,
+    ParticipantStatus status,
+  ) async {
+    final meeting = await getMeeting(meetingId);
+    if (meeting == null) return;
+    
+    final participant = meeting.participants.firstWhere((p) => p.userId == userId);
+    final otherParticipants = meeting.participants.where((p) => p.userId != userId);
+    
+    String statusMessage;
+    switch (status) {
+      case ParticipantStatus.confirmed:
+        statusMessage = '${participant.displayName} confirmed attendance';
+        break;
+      case ParticipantStatus.declined:
+        statusMessage = '${participant.displayName} declined the meeting';
+        break;
+      case ParticipantStatus.late:
+        statusMessage = '${participant.displayName} is running late';
+        break;
+      case ParticipantStatus.arrived:
+        statusMessage = '${participant.displayName} has arrived';
+        break;
+      default:
+        return;
+    }
+    
+    for (final otherParticipant in otherParticipants) {
+      await _notificationService.sendNotificationToUser(
+        uid: otherParticipant.userId,
+        title: 'Meeting Update',
+        body: statusMessage,
+        data: {
+          'type': 'participant_status_change',
+          'meetingId': meetingId,
+          'participantId': userId,
+          'status': status.name,
+        },
+      );
+    }
+  }
+
+  String _formatDateTime(DateTime dateTime) {
+    return '${dateTime.day}/${dateTime.month}/${dateTime.year} at ${dateTime.hour}:${dateTime.minute.toString().padLeft(2, '0')}';
+  }
+
+  /// Background job to check locations before meetings
+  static Future<void> checkUpcomingMeetingLocations() async {
+    final firestore = FirebaseFirestore.instance;
+    final now = DateTime.now();
+    final oneHourFromNow = now.add(const Duration(hours: 1));
+    
+    // Get meetings starting in the next hour with location tracking enabled
+    final meetingsQuery = await firestore
+        .collection('meetings')
+        .where('scheduledAt', isGreaterThan: now)
+        .where('scheduledAt', isLessThan: oneHourFromNow)
+        .where('isLocationTrackingEnabled', isEqualTo: true)
+        .get();
+    
+    final meetingService = MeetingService();
+    
+    for (final doc in meetingsQuery.docs) {
+      final meeting = MeetingDetails.fromJson({...doc.data(), 'id': doc.id});
+      
+      for (final participant in meeting.participants) {
+        if (participant.status == ParticipantStatus.confirmed) {
+          final willBeLate = await meetingService.checkIfUserWillBeLate(
+            meeting.id,
+            participant.userId,
+          );
+          
+          if (willBeLate) {
+            // Send smart reminder about potential lateness
+            await NotificationService().sendNotificationToUser(
+              uid: participant.userId,
+              title: 'You might be late!',
+              body: 'Based on your location, you might be late for ${meeting.title}. Tap to update your status or get directions.',
+              data: {
+                'type': 'late_warning',
+                'meetingId': meeting.id,
+                'action': 'show_late_options',
+              },
+            );
+          }
+        }
+      }
     }
   }
 }
