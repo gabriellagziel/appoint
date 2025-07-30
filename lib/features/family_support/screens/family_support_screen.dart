@@ -56,10 +56,8 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
               ),
             ),
             const SizedBox(height: 24),
-            const Text(
-              'Past Tickets',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
+            const Text('Past Tickets',
+                style: TextStyle(fontWeight: FontWeight.bold),),
             const SizedBox(height: 8),
             ticketsAsync.when(
               data: (tickets) {
@@ -104,8 +102,10 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
         );
       }
     } catch (e) {
-      ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text('Error: $e')));
+      if (mounted) {
+        ScaffoldMessenger.of(context)
+            .showSnackBar(SnackBar(content: Text('Error: $e')));
+      }
     } finally {
       if (mounted) setState(() => _submitting = false);
     }

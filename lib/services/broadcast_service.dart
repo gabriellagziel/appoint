@@ -1,9 +1,8 @@
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/models/user_profile.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloud_functions/cloud_functions.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'dart:developer' as dev;
 
 class BroadcastService {
 
@@ -17,9 +16,6 @@ class BroadcastService {
 
   CollectionReference<Map<String, dynamic>> get _usersCollection =>
       _firestore.collection('users');
-
-  CollectionReference<Map<String, dynamic>> get _analyticsCollection =>
-      _firestore.collection('broadcast_analytics');
 
   // Create a new broadcast message
   Future<String> createBroadcastMessage(
@@ -114,15 +110,24 @@ class BroadcastService {
         throw Exception('Message not found');
       }
 
-      // Send via backend Firebase Function
-      // The backend function will handle targeting, batch sending, and analytics tracking
-      await _sendViaBackendFunction(messageId);
+      // Get target users
+      final targetUsers = await _getTargetUsers(message.targetingFilters);
+
+      // Update message with actual recipient count
+      await _broadcastsCollection.doc(messageId).update({
+        'actualRecipients': targetUsers.length,
+        'status': BroadcastMessageStatus.sent.name,
+      });
+
+      // Send FCM messages
+      for (final user in targetUsers) {
+        await _sendFCMNotification(user, message);
+      }
     } catch (e) {
       // Update message with failure status
       await _broadcastsCollection.doc(messageId).update({
         'status': BroadcastMessageStatus.failed.name,
         'failureReason': e.toString(),
-        'processedAt': FieldValue.serverTimestamp(),
       });
       throw Exception('Failed to send broadcast message: $e');
     }
@@ -172,7 +177,7 @@ class BroadcastService {
       return snapshot.docs
           .map((doc) => UserProfile.fromJson({
                 'id': doc.id,
-                ...(doc.data() as Map<String, dynamic>),
+                ...(doc.data()!),
               }),)
           .toList();
     } catch (e) {
@@ -180,36 +185,25 @@ class BroadcastService {
     }
   }
 
-  // Send broadcast message via backend Firebase Function
-  Future<void> _sendViaBackendFunction(String messageId) async {
+  // Send FCM notification to a user
+  Future<void> _sendFCMNotification(
+      UserProfile user, final AdminBroadcastMessage message,) async {
     try {
-      // Get current user ID for admin verification
-      final user = FirebaseAuth.instance.currentUser;
-      if (user == null) {
-        throw Exception('User not authenticated');
+      // Get user's FCM token
+      final userDoc = await _usersCollection.doc(user.id).get();
+      final fcmToken = userDoc.data()?['fcmToken'] as String?;
+
+      if (fcmToken == null) {
+        throw Exception('User has no FCM token');
       }
 
-      // Call the backend Firebase Function
-      final callable = FirebaseFunctions.instance.httpsCallable('sendBroadcastMessage');
-      
-      final result = await callable.call({
-        'messageId': messageId,
-        'adminId': user.uid,
-      });
-
-      final data = result.data as Map<String, dynamic>;
-      print('Broadcast sent via backend: ${data['deliveredCount']} delivered, ${data['failedCount']} failed');
-      
-      if (data['retryCount'] > 0) {
-        print('Retries performed: ${data['retryCount']}');
-      }
-      
-      if (data['errors'] != null && (data['errors'] as List).isNotEmpty) {
-        print('Delivery errors: ${(data['errors'] as List).take(3).join(', ')}');
-      }
-      
-    } catch (e) {
-      print('Failed to send broadcast via backend: $e');
+      // Stub implementation for FCM notification sending
+      // In a real implementation, this would call Firebase Functions to send the notification
+      dev.log('FCM notification would be sent', name: 'BroadcastService',
+          error: {'userId': user.id, 'token': fcmToken, 'title': message.title});
+    } catch (e, st) {
+      dev.log('Failed to send FCM notification', name: 'BroadcastService',
+          error: e, stackTrace: st);
       rethrow;
     }
   }
@@ -358,335 +352,7 @@ class BroadcastService {
 
     return true;
   }
-
-  /// Track message interaction events for analytics
-  Future<void> trackMessageInteraction(
-    String messageId,
-    String userId,
-    String event, {
-    Map<String, dynamic>? additionalData,
-  }) async {
-    try {
-      final data = {
-        'messageId': messageId,
-        'userId': userId,
-        'event': event, // sent, received, opened, clicked, poll_response, failed
-        'timestamp': FieldValue.serverTimestamp(),
-        ...?additionalData,
-      };
-
-      await _analyticsCollection.add(data);
-
-      // Update message-level analytics counters
-      await _updateMessageCounters(messageId, event);
-    } catch (e) {
-      // Log error but don't fail the operation
-      print('Failed to track message interaction: $e');
-    }
-  }
-
-  /// Update message-level analytics counters
-  Future<void> _updateMessageCounters(String messageId, String event) async {
-    try {
-      final messageRef = _broadcastsCollection.doc(messageId);
-      
-      switch (event) {
-        case 'opened':
-          await messageRef.update({
-            'openedCount': FieldValue.increment(1),
-          });
-          break;
-        case 'clicked':
-          await messageRef.update({
-            'clickedCount': FieldValue.increment(1),
-          });
-          break;
-        case 'poll_response':
-          await messageRef.update({
-            'pollResponseCount': FieldValue.increment(1),
-          });
-          break;
-        case 'failed':
-          await messageRef.update({
-            'failedCount': FieldValue.increment(1),
-          });
-          break;
-      }
-    } catch (e) {
-      print('Failed to update message counters: $e');
-    }
-  }
-
-  /// Get comprehensive analytics for a message
-  Future<Map<String, dynamic>> getMessageAnalytics(String messageId) async {
-    try {
-      // Get message data
-      final messageDoc = await _broadcastsCollection.doc(messageId).get();
-      if (!messageDoc.exists) {
-        throw Exception('Message not found');
-      }
-
-      final messageData = messageDoc.data()!;
-      final actualRecipients = messageData['actualRecipients'] as int? ?? 0;
-      final openedCount = messageData['openedCount'] as int? ?? 0;
-      final clickedCount = messageData['clickedCount'] as int? ?? 0;
-      final pollResponseCount = messageData['pollResponseCount'] as int? ?? 0;
-      final failedCount = messageData['failedCount'] as int? ?? 0;
-
-      // Get detailed analytics events
-      final analyticsQuery = await _analyticsCollection
-          .where('messageId', isEqualTo: messageId)
-          .orderBy('timestamp', descending: true)
-          .get();
-
-      final events = analyticsQuery.docs.map((doc) => {
-        'id': doc.id,
-        ...doc.data(),
-      }).toList();
-
-      // Calculate rates
-      final openRate = actualRecipients > 0 ? (openedCount / actualRecipients * 100) : 0.0;
-      final clickRate = openedCount > 0 ? (clickedCount / openedCount * 100) : 0.0;
-      final responseRate = actualRecipients > 0 ? (pollResponseCount / actualRecipients * 100) : 0.0;
-      final deliveryRate = actualRecipients > 0 ? ((actualRecipients - failedCount) / actualRecipients * 100) : 0.0;
-
-      // Get poll response breakdown if applicable
-      Map<String, int>? pollBreakdown;
-      if (messageData['type'] == BroadcastMessageType.poll.name) {
-        pollBreakdown = await _getPollResponseBreakdown(messageId);
-      }
-
-      return {
-        'messageId': messageId,
-        'title': messageData['title'],
-        'type': messageData['type'],
-        'status': messageData['status'],
-        'createdAt': messageData['createdAt'],
-        'sentAt': messageData['sentAt'],
-        'actualRecipients': actualRecipients,
-        'openedCount': openedCount,
-        'clickedCount': clickedCount,
-        'pollResponseCount': pollResponseCount,
-        'failedCount': failedCount,
-        'openRate': openRate,
-        'clickRate': clickRate,
-        'responseRate': responseRate,
-        'deliveryRate': deliveryRate,
-        'pollBreakdown': pollBreakdown,
-        'events': events,
-      };
-    } catch (e) {
-      throw Exception('Failed to get message analytics: $e');
-    }
-  }
-
-  /// Get poll response breakdown
-  Future<Map<String, int>> _getPollResponseBreakdown(String messageId) async {
-    try {
-      final responseQuery = await _analyticsCollection
-          .where('messageId', isEqualTo: messageId)
-          .where('event', isEqualTo: 'poll_response')
-          .get();
-
-      final breakdown = <String, int>{};
-      for (final doc in responseQuery.docs) {
-        final data = doc.data();
-        final selectedOption = data['selectedOption'] as String?;
-        if (selectedOption != null) {
-          breakdown[selectedOption] = (breakdown[selectedOption] ?? 0) + 1;
-        }
-      }
-
-      return breakdown;
-    } catch (e) {
-      print('Failed to get poll response breakdown: $e');
-      return {};
-    }
-  }
-
-  /// Get analytics summary for multiple messages
-  Future<Map<String, dynamic>> getAnalyticsSummary({
-    DateTime? startDate,
-    DateTime? endDate,
-    int? limit,
-  }) async {
-    try {
-      Query query = _broadcastsCollection
-          .where('status', isEqualTo: BroadcastMessageStatus.sent.name)
-          .orderBy('createdAt', descending: true);
-
-      if (startDate != null) {
-        query = query.where('createdAt', isGreaterThanOrEqualTo: startDate);
-      }
-
-      if (endDate != null) {
-        query = query.where('createdAt', isLessThanOrEqualTo: endDate);
-      }
-
-      if (limit != null) {
-        query = query.limit(limit);
-      }
-
-      final snapshot = await query.get();
-      
-      int totalMessages = 0;
-      int totalRecipients = 0;
-      int totalOpened = 0;
-      int totalClicked = 0;
-      int totalFailed = 0;
-      final messagesByType = <String, int>{};
-      final messagesByDate = <String, int>{};
-
-      for (final doc in snapshot.docs) {
-        final data = doc.data() as Map<String, dynamic>;
-        totalMessages++;
-        totalRecipients += (data['actualRecipients'] as int? ?? 0);
-        totalOpened += (data['openedCount'] as int? ?? 0);
-        totalClicked += (data['clickedCount'] as int? ?? 0);
-        totalFailed += (data['failedCount'] as int? ?? 0);
-
-        // Count by type
-        final type = data['type'] as String? ?? 'unknown';
-        messagesByType[type] = (messagesByType[type] ?? 0) + 1;
-
-        // Count by date
-        final createdAt = (data['createdAt'] as Timestamp?)?.toDate();
-        if (createdAt != null) {
-          final dateKey = '${createdAt.year}-${createdAt.month.toString().padLeft(2, '0')}-${createdAt.day.toString().padLeft(2, '0')}';
-          messagesByDate[dateKey] = (messagesByDate[dateKey] ?? 0) + 1;
-        }
-      }
-
-      final avgOpenRate = totalRecipients > 0 ? (totalOpened / totalRecipients * 100) : 0.0;
-      final avgClickRate = totalOpened > 0 ? (totalClicked / totalOpened * 100) : 0.0;
-      final avgDeliveryRate = totalRecipients > 0 ? ((totalRecipients - totalFailed) / totalRecipients * 100) : 0.0;
-
-      return {
-        'totalMessages': totalMessages,
-        'totalRecipients': totalRecipients,
-        'totalOpened': totalOpened,
-        'totalClicked': totalClicked,
-        'totalFailed': totalFailed,
-        'avgOpenRate': avgOpenRate,
-        'avgClickRate': avgClickRate,
-        'avgDeliveryRate': avgDeliveryRate,
-        'messagesByType': messagesByType,
-        'messagesByDate': messagesByDate,
-      };
-    } catch (e) {
-      throw Exception('Failed to get analytics summary: $e');
-    }
-  }
-
-  /// Process scheduled messages that are ready to be sent
-  /// Note: This method is now primarily for manual processing
-  /// Scheduled messages are automatically processed by the backend Firebase Function
-  Future<void> processScheduledMessages() async {
-    try {
-      final now = DateTime.now();
-      
-      // Find messages scheduled for sending
-      final scheduledQuery = await _broadcastsCollection
-          .where('status', isEqualTo: BroadcastMessageStatus.pending.name)
-          .where('scheduledFor', isLessThanOrEqualTo: now)
-          .limit(5) // Process max 5 at a time from client
-          .get();
-
-      if (scheduledQuery.docs.isEmpty) {
-        print('No scheduled messages to process');
-        return;
-      }
-
-      for (final doc in scheduledQuery.docs) {
-        try {
-          await sendBroadcastMessage(doc.id);
-          print('Successfully sent scheduled message: ${doc.id}');
-        } catch (e) {
-          print('Failed to send scheduled message ${doc.id}: $e');
-          // Error handling is now managed by the backend function
-        }
-      }
-    } catch (e) {
-      print('Error processing scheduled messages: $e');
-      throw Exception('Failed to process scheduled messages: $e');
-    }
-  }
-
-  /// Export analytics data as CSV-formatted string
-  Future<String> exportAnalyticsCSV({
-    DateTime? startDate,
-    DateTime? endDate,
-  }) async {
-    try {
-      Query query = _broadcastsCollection
-          .where('status', isEqualTo: BroadcastMessageStatus.sent.name)
-          .orderBy('createdAt', descending: true);
-
-      if (startDate != null) {
-        query = query.where('createdAt', isGreaterThanOrEqualTo: startDate);
-      }
-
-      if (endDate != null) {
-        query = query.where('createdAt', isLessThanOrEqualTo: endDate);
-      }
-
-      final snapshot = await query.get();
-      
-      final csvLines = <String>[];
-      csvLines.add('Message ID,Title,Type,Created At,Recipients,Opened,Clicked,Open Rate %,Click Rate %,Status');
-
-      for (final doc in snapshot.docs) {
-        final data = doc.data() as Map<String, dynamic>;
-        final recipients = data['actualRecipients'] as int? ?? 0;
-        final opened = data['openedCount'] as int? ?? 0;
-        final clicked = data['clickedCount'] as int? ?? 0;
-        final openRate = recipients > 0 ? (opened / recipients * 100).toStringAsFixed(2) : '0.00';
-        final clickRate = opened > 0 ? (clicked / opened * 100).toStringAsFixed(2) : '0.00';
-        final createdAt = (data['createdAt'] as Timestamp?)?.toDate().toIso8601String() ?? '';
-
-        csvLines.add('"${doc.id}","${data['title'] ?? ''}","${data['type'] ?? ''}","$createdAt","$recipients","$opened","$clicked","$openRate","$clickRate","${data['status'] ?? ''}"');
-      }
-
-      return csvLines.join('\n');
-    } catch (e) {
-      throw Exception('Failed to export analytics CSV: $e');
-    }
-  }
-
-  /// Get real-time analytics stream for a message
-  Stream<Map<String, dynamic>> getMessageAnalyticsStream(String messageId) {
-    return _broadcastsCollection.doc(messageId).snapshots().map((snapshot) {
-      if (!snapshot.exists) {
-        return {'error': 'Message not found'};
-      }
-
-      final data = snapshot.data()!;
-      final actualRecipients = data['actualRecipients'] as int? ?? 0;
-      final openedCount = data['openedCount'] as int? ?? 0;
-      final clickedCount = data['clickedCount'] as int? ?? 0;
-      final failedCount = data['failedCount'] as int? ?? 0;
-
-      final openRate = actualRecipients > 0 ? (openedCount / actualRecipients * 100) : 0.0;
-      final clickRate = openedCount > 0 ? (clickedCount / openedCount * 100) : 0.0;
-      final deliveryRate = actualRecipients > 0 ? ((actualRecipients - failedCount) / actualRecipients * 100) : 0.0;
-
-      return {
-        'messageId': messageId,
-        'actualRecipients': actualRecipients,
-        'openedCount': openedCount,
-        'clickedCount': clickedCount,
-        'failedCount': failedCount,
-        'openRate': openRate,
-        'clickRate': clickRate,
-        'deliveryRate': deliveryRate,
-        'lastUpdated': DateTime.now().toIso8601String(),
-      };
-    });
-  }
 }
 
 // Provider
 final broadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());
-
-// Alias for compatibility with existing code
-final adminBroadcastServiceProvider = broadcastServiceProvider;

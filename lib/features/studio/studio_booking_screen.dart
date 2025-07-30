@@ -1,12 +1,11 @@
 import 'package:appoint/models/staff_availability.dart';
 import 'package:appoint/models/staff_member.dart';
 import 'package:appoint/providers/studio_provider.dart';
-import 'dart:core' show DateTime, Duration;
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class StudioBookingSelection {
+
   StudioBookingSelection({
     required this.staff,
     required this.date,
@@ -48,7 +47,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
     if (date != null) {
       setState(() {
         _selectedDate = date;
-        const selectedSlot = null;
+        _selectedSlot = null;
       });
     }
   }
@@ -59,12 +58,10 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
     final staffListAsync = ref.watch(staffListProvider(studioId));
     AsyncValue<StaffAvailability>? availability;
     if (_selectedStaff != null && _selectedDate != null) {
-      availability = ref.watch(
-        staffAvailabilityProvider({
-          'staffId': _selectedStaff!.id,
-          'date': _selectedDate,
-        }),
-      );
+      availability = ref.watch(staffAvailabilityProvider({
+        'staffId': _selectedStaff!.id,
+        'date': _selectedDate,
+      }),);
     }
 
     return Scaffold(
@@ -81,16 +78,14 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                 onChanged: (value) {
                   setState(() {
                     _selectedStaff = value;
-                    const selectedSlot = null;
+                    _selectedSlot = null;
                   });
                 },
                 items: staff
-                    .map(
-                      (s) => DropdownMenuItem(
-                        value: s,
-                        child: Text(s.displayName),
-                      ),
-                    )
+                    .map((s) => DropdownMenuItem(
+                          value: s,
+                          child: Text(s.displayName),
+                        ),)
                     .toList(),
               ),
               loading: () => const CircularProgressIndicator(),
@@ -98,11 +93,9 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
             ),
             const SizedBox(height: 16),
             ListTile(
-              title: Text(
-                _selectedDate == null
-                    ? 'Pick Date'
-                    : _selectedDate!.toLocal().toString().split(' ')[0],
-              ),
+              title: Text(_selectedDate == null
+                  ? 'Pick Date'
+                  : _selectedDate!.toLocal().toString().split(' ')[0],),
               trailing: const Icon(Icons.calendar_today),
               onTap: _pickDate,
             ),
@@ -145,11 +138,8 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                         date: _selectedDate!,
                         slot: _selectedSlot!,
                       );
-                      Navigator.pushNamed(
-                        context,
-                        '/studio/confirm',
-                        arguments: args,
-                      );
+                      Navigator.pushNamed(context, '/studio/confirm',
+                          arguments: args,);
                     }
                   : null,
               child: const Text('Next'),
