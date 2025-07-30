@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions/v1';
+import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 
 const db = admin.firestore();
@@ -225,7 +225,7 @@ export const sendMonthlyReminders = functions.pubsub
         
         // Only send reminder if they have less than 10 referrals this month
         if (profile.monthlyReferrals < 10) {
-          await (sendAmbassadorNotification as any)({
+          await sendAmbassadorNotification({
             userId: profile.userId,
             type: AmbassadorNotificationType.MONTHLY_REMINDER,
             languageCode: profile.languageCode || 'en',
@@ -318,40 +318,9 @@ function getNotificationChannel(type: AmbassadorNotificationType): string {
 }
 
 /**
- * Send email notification with App-Oint branding
+ * Send email notification (placeholder - integrate with your email service)
  */
 async function sendEmailNotification(email: string, subject: string, body: string): Promise<void> {
-  // Wrap email body with App-Oint branding template
-  const emailHtml = `
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>${subject}</title>
-    </head>
-    <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-      <!-- App-Oint Header -->
-      <div style="text-align: center; margin-bottom: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
-        <img src="https://app-oint.com/assets/logo-app-oint.svg" alt="App-Oint Logo" style="height: 40px; margin-bottom: 10px;">
-        <div style="font-size: 24px; font-weight: bold; color: #1576d4;">APP-OINT</div>
-        <div style="font-size: 14px; color: #666; margin-top: 5px;">Time Organized • Set Send Done</div>
-      </div>
-      
-      <!-- Email Content -->
-      <div style="margin-bottom: 40px;">
-        ${body}
-      </div>
-      
-      <!-- App-Oint Footer Branding (Required) -->
-      <div style="text-align: center; font-size: 13px; color: #888; border-top: 1px solid #eee; padding-top: 20px; margin-top: 30px;">
-        <img src="https://app-oint.com/assets/logo-app-oint.svg" alt="App-Oint Logo" style="height: 20px; vertical-align: middle; margin-right: 6px;">
-        Powered by <a href="https://app-oint.com" style="color: #1576d4; text-decoration: none; font-weight: bold;">App-Oint</a>
-      </div>
-    </body>
-    </html>
-  `;
-
   // Placeholder for email service integration
   // In production, integrate with SendGrid, Mailgun, or similar
   console.log(`Email notification sent to ${email}: ${subject}`);
@@ -365,7 +334,7 @@ async function sendEmailNotification(email: string, subject: string, body: strin
     to: email,
     from: 'noreply@app-oint.com',
     subject: subject,
-    html: emailHtml,
+    html: body,
   };
   
   await sgMail.send(msg);
@@ -376,7 +345,7 @@ async function sendEmailNotification(email: string, subject: string, body: strin
  * Convenience functions for specific notification types
  */
 export async function sendPromotionNotification(userId: string, languageCode: string, tier: string): Promise<void> {
-  await (sendAmbassadorNotification as any)({
+  await sendAmbassadorNotification({
     userId,
     type: AmbassadorNotificationType.PROMOTION,
     languageCode,
@@ -394,7 +363,7 @@ export async function sendTierUpgradeNotification(
   newTier: string, 
   totalReferrals: number
 ): Promise<void> {
-  await (sendAmbassadorNotification as any)({
+  await sendAmbassadorNotification({
     userId,
     type: AmbassadorNotificationType.TIER_UPGRADE,
     languageCode,
@@ -415,7 +384,7 @@ export async function sendPerformanceWarningNotification(
   currentReferrals: number, 
   minimumRequired: number
 ): Promise<void> {
-  await (sendAmbassadorNotification as any)({
+  await sendAmbassadorNotification({
     userId,
     type: AmbassadorNotificationType.PERFORMANCE_WARNING,
     languageCode,
@@ -434,7 +403,7 @@ export async function sendDemotionNotification(
   languageCode: string, 
   reason: string
 ): Promise<void> {
-  await (sendAmbassadorNotification as any)({
+  await sendAmbassadorNotification({
     userId,
     type: AmbassadorNotificationType.DEMOTION,
     languageCode,
@@ -451,7 +420,7 @@ export async function sendReferralSuccessNotification(
   referredUserName: string, 
   totalReferrals: number
 ): Promise<void> {
-  await (sendAmbassadorNotification as any)({
+  await sendAmbassadorNotification({
     userId,
     type: AmbassadorNotificationType.REFERRAL_SUCCESS,
     languageCode,
