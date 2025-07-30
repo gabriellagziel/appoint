@@ -1,4 +1,5 @@
 import 'package:appoint/features/studio_business/models/staff_profile.dart';
+import 'package:appoint/features/studio_business/models/business_profile.dart';
 import 'package:appoint/features/studio_business/providers/booking_provider.dart';
 import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 import 'package:appoint/features/studio_business/providers/weekly_usage_provider.dart';
@@ -24,6 +25,16 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   final _phoneController = TextEditingController();
   final _dateController = TextEditingController();
   final _timeController = TextEditingController();
+  bool _isProcessing = false;
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _phoneController.dispose();
+    _dateController.dispose();
+    _timeController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,158 +47,186 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
       );
     }
 
-    final profileAsync = ref.watch(businessProfileProvider);
-    final bookingState = ref.watch(bookingProvider);
+    final profile = ref.watch(studioBusinessProfileProvider);
+    final bookingAsync = ref.watch(bookingProvider);
+
+    if (profile == null) {
+      return const Scaffold(
+        appBar: AppBar(title: Text('Studio Booking')),
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
 
     return Scaffold(
       appBar: AppBar(title: const Text('Studio Booking')),
-      body: profileAsync == null
-          ? const Center(child: CircularProgressIndicator())
-          : Padding(
-              padding: const EdgeInsets.all(16),
-              child: Form(
-                key: _formKey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Business Info
-                    Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              profileAsync.name,
-                              style: Theme.of(context).textTheme.headlineSmall,
-                            ),
-                            const SizedBox(height: 8),
-                            Text('Phone: ${profileAsync.phone}'),
-                          ],
-                        ),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Form(
+          key: _formKey,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Business Info
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        profile.name,
+                        style: Theme.of(context).textTheme.headlineSmall,
                       ),
-                    ),
-                    const SizedBox(height: 24),
+                      const SizedBox(height: 8),
+                      Text('Phone: ${profile.phone}'),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
 
-                    // Customer Details Form
-                    const Text(
-                      'Customer Details',
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                    const SizedBox(height: 16),
+              // Customer Details Form
+              const Text(
+                'Customer Details',
+                style:
+                    TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 16),
 
-                    TextFormField(
-                      controller: _nameController,
-                      decoration: const InputDecoration(
-                        labelText: 'Customer Name',
-                        border: OutlineInputBorder(),
-                      ),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter customer name';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 16),
+              TextFormField(
+                controller: _nameController,
+                decoration: const InputDecoration(
+                  labelText: 'Customer Name',
+                  border: OutlineInputBorder(),
+                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter customer name';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
 
-                    TextFormField(
-                      controller: _phoneController,
-                      decoration: const InputDecoration(
-                        labelText: 'Phone Number',
-                        border: OutlineInputBorder(),
-                        prefixText: '+1 ',
-                      ),
-                      keyboardType: TextInputType.phone,
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter phone number';
-                        }
-                        if (value.length < 10) {
-                          return 'Please enter a valid phone number';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 16),
+              TextFormField(
+                controller: _phoneController,
+                decoration: const InputDecoration(
+                  labelText: 'Phone Number',
+                  border: OutlineInputBorder(),
+                  prefixText: '+1 ',
+                ),
+                keyboardType: TextInputType.phone,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter phone number';
+                  }
+                  if (value.length < 10) {
+                    return 'Please enter a valid phone number';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
 
-                    TextFormField(
-                      controller: _dateController,
-                      decoration: const InputDecoration(
-                        labelText: 'Preferred Date',
-                        border: OutlineInputBorder(),
-                        suffixIcon: Icon(Icons.calendar_today),
-                      ),
-                      readOnly: true,
-                      onTap: () => _selectDate(context),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please select a date';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 16),
+              TextFormField(
+                controller: _dateController,
+                decoration: const InputDecoration(
+                  labelText: 'Preferred Date',
+                  border: OutlineInputBorder(),
+                  suffixIcon: Icon(Icons.calendar_today),
+                ),
+                readOnly: true,
+                onTap: () => _selectDate(context),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please select a date';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
 
-                    TextFormField(
-                      controller: _timeController,
-                      decoration: const InputDecoration(
-                        labelText: 'Preferred Time',
-                        border: OutlineInputBorder(),
-                        suffixIcon: Icon(Icons.access_time),
-                      ),
-                      readOnly: true,
-                      onTap: () => _selectTime(context),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please select a time';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 24),
+              TextFormField(
+                controller: _timeController,
+                decoration: const InputDecoration(
+                  labelText: 'Preferred Time',
+                  border: OutlineInputBorder(),
+                  suffixIcon: Icon(Icons.access_time),
+                ),
+                readOnly: true,
+                onTap: () => _selectTime(context),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please select a time';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 24),
 
-                    // Error message display
-                    if (bookingState.hasError)
-                      Container(
-                        padding: const EdgeInsets.all(12),
-                        margin: const EdgeInsets.only(bottom: 16),
-                        decoration: BoxDecoration(
-                          color: Colors.red.shade50,
-                          border: Border.all(color: Colors.red.shade200),
-                          borderRadius: BorderRadius.circular(8),
-                        ),
+              // Show booking state
+              bookingAsync.when(
+                data: (booking) => const SizedBox.shrink(),
+                loading: () => const Center(
+                  child: Padding(
+                    padding: EdgeInsets.all(16.0),
+                    child: CircularProgressIndicator(),
+                  ),
+                ),
+                error: (error, stack) => Container(
+                  padding: const EdgeInsets.all(16),
+                  margin: const EdgeInsets.only(bottom: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.red.shade50,
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: Colors.red.shade200),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.error, color: Colors.red.shade600),
+                      const SizedBox(width: 8),
+                      Expanded(
                         child: Text(
-                          'Error: ${bookingState.error}',
+                          'Error: ${error.toString()}',
                           style: TextStyle(color: Colors.red.shade700),
                         ),
                       ),
-
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton(
-                        onPressed: bookingState.isLoading ? null : _processBooking,
-                        child: bookingState.isLoading
-                            ? const SizedBox(
-                                height: 20,
-                                width: 20,
-                                child: CircularProgressIndicator(strokeWidth: 2),
-                              )
-                            : const Text('Send Booking Invite'),
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
+
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: _isProcessing || bookingAsync.maybeWhen(
+                    loading: () => true,
+                    orElse: () => false,
+                  ) 
+                      ? null 
+                      : _processBooking,
+                  child: _isProcessing || bookingAsync.maybeWhen(
+                    loading: () => true,
+                    orElse: () => false,
+                  )
+                      ? const CircularProgressIndicator()
+                      : const Text('Send Booking Invite'),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 
   // TODO(username): Implement time slot selector and staff selector when needed
 
   Future<void> _processBooking() async {
-    if (_formKey.currentState!.validate()) {
+    final profile = ref.read(studioBusinessProfileProvider);
+    if (_formKey.currentState!.validate() && profile != null) {
+      setState(() => _isProcessing = true);
+
       try {
         // Check weekly usage for upgrade modal
         final weeklyUsage = ref.read(weeklyUsageProvider.notifier);
@@ -196,11 +235,11 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           return;
         }
 
-        // Create booking using context.read(bookingProvider)
+        // Create booking using submitBooking method
         final bookingNotifier = ref.read(bookingProvider.notifier);
         await bookingNotifier.submitBooking(
-          staffProfileId: selectedStaff?.id ?? 'default_staff_id',
-          businessProfileId: 'business1', // Use default business ID since BusinessProfile doesn't have id field
+          staffProfileId: selectedStaff?.id ?? 'default-staff-id',
+          businessProfileId: profile.id,
           date: selectedDate ?? DateTime.now(),
           startTime: selectedTimeSlot ?? '09:00',
           endTime: _getEndTime(selectedTimeSlot ?? '09:00'),
@@ -211,18 +250,23 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
         await weeklyUsage.incrementUsage();
 
         if (mounted) {
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-              builder: (_) => const REDACTED_TOKEN(),
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Booking submitted successfully!'),
+              backgroundColor: Colors.green,
             ),
           );
+          Navigator.pop(context);
         }
       } catch (e) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Error: $e')),
           );
+        }
+      } finally {
+        if (mounted) {
+          setState(() => _isProcessing = false);
         }
       }
     }
@@ -270,34 +314,32 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   }
 
   void _selectDate(BuildContext context) {
-    // Implementation of _selectDate method
+    showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime.now(),
+      lastDate: DateTime.now().add(const Duration(days: 365)),
+    ).then((date) {
+      if (date != null) {
+        setState(() {
+          selectedDate = date;
+          _dateController.text = '${date.day}/${date.month}/${date.year}';
+        });
+      }
+    });
   }
 
   void _selectTime(BuildContext context) {
-    // Implementation of _selectTime method
+    showTimePicker(
+      context: context,
+      initialTime: const TimeOfDay(hour: 9, minute: 0),
+    ).then((time) {
+      if (time != null) {
+        setState(() {
+          selectedTimeSlot = '${time.hour.toString().padLeft(2, '0')}:${time.minute.toString().padLeft(2, '0')}';
+          _timeController.text = time.format(context);
+        });
+      }
+    });
   }
-}
-
-class REDACTED_TOKEN extends StatelessWidget {
-  const REDACTED_TOKEN({super.key});
-
-  @override
-  Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(title: const Text('Booking Confirmed')),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.check_circle, color: Colors.green, size: 64),
-            SizedBox(height: 16),
-            Text(
-              'Your studio booking has been confirmed!',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 8),
-            Text('You will receive a confirmation email shortly.'),
-          ],
-        ),
-      ),
-    );
 }
