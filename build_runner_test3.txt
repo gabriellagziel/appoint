@@ -1,0 +1,166 @@
+[INFO] Generating build script...
+[INFO] Generating build script completed, took 267ms
+
+[INFO] Initializing inputs
+[INFO] Reading cached asset graph...
+[INFO] Reading cached asset graph completed, took 146ms
+
+[INFO] Checking for updates since last build...
+[INFO] Checking for updates since last build completed, took 1.8s
+
+[INFO] Running build...
+[SEVERE] hive_generator on lib/features/playtime/widgets/custom_background_picker.dart:
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/playtime/widgets/custom_background_picker.dart (or an existing part) contains the following errors.
+custom_background_picker.dart:703:7: Expected a class member.
+custom_background_picker.dart:703:15: Expected an identifier.
+custom_background_picker.dart:703:15: Methods must have an explicit list of parameters.
+And 1 more...
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio_business/screens/business_subscription_screen.dart:
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio_business/screens/business_subscription_screen.dart (or an existing part) contains the following errors.
+business_subscription_screen.dart:54:7: Expected a class member.
+business_subscription_screen.dart:54:15: Expected an identifier.
+business_subscription_screen.dart:54:15: Methods must have an explicit list of parameters.
+And 11 more...
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/family_support/screens/family_support_screen.dart:
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/family_support/screens/family_support_screen.dart (or an existing part) contains the following errors.
+family_support_screen.dart:108:7: Expected a class member.
+family_support_screen.dart:108:15: Expected an identifier.
+family_support_screen.dart:108:15: Methods must have an explicit list of parameters.
+And 1 more...
+
+Try fixing the errors and re-running the build.
+
+[WARNING] hive_generator on lib/features/playtime/widgets/custom_background_picker.dart:
+Your current `analyzer` version may not fully support your current SDK version.
+
+Analyzer language version: 3.4.0
+SDK language version: 3.9.0
+
+Please update to the latest `analyzer` version (8.0.0) by running
+`flutter packages upgrade`.
+
+If you are not getting the latest version by running the above command, you
+can try adding a constraint like the following to your pubspec to start
+diagnosing why you can't get the latest version:
+
+dev_dependencies:
+  analyzer: ^8.0.0
+
+[INFO] 1.4s elapsed, 8/75 actions completed.
+[INFO] 2.5s elapsed, 181/264 actions completed.
+[INFO] 3.5s elapsed, 445/476 actions completed.
+[INFO] 4.6s elapsed, 624/638 actions completed.
+[INFO] 5.7s elapsed, 824/838 actions completed.
+[INFO] 15.3s elapsed, 956/958 actions completed.
+[INFO] Running build completed, took 15.5s
+
+[INFO] Caching finalized dependency graph...
+[INFO] Caching finalized dependency graph completed, took 259ms
+
+[SEVERE] hive_generator on lib/features/playtime/screens/create_game_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/playtime/screens/create_game_screen.dart (or an existing part) contains the following errors.
+create_game_screen.dart:440:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/playtime/screens/playtime_live_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/playtime/screens/playtime_live_screen.dart (or an existing part) contains the following errors.
+playtime_live_screen.dart:698:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/onboarding/screens/enhanced_onboarding_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/onboarding/screens/enhanced_onboarding_screen.dart (or an existing part) contains the following errors.
+enhanced_onboarding_screen.dart:779:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio_business/screens/rooms_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio_business/screens/rooms_screen.dart (or an existing part) contains the following errors.
+rooms_screen.dart:372:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/family/screens/family_dashboard_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/family/screens/family_dashboard_screen.dart (or an existing part) contains the following errors.
+family_dashboard_screen.dart:518:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio_business/screens/business_connect_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio_business/screens/business_connect_screen.dart (or an existing part) contains the following errors.
+business_connect_screen.dart:146:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio/screens/staff_availability_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio/screens/staff_availability_screen.dart (or an existing part) contains the following errors.
+staff_availability_screen.dart:209:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/services/family_background_service.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/services/family_background_service.dart (or an existing part) contains the following errors.
+family_background_service.dart:358:3: Expected a method, getter, setter or operator declaration.
+family_background_service.dart:370:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio_business/screens/settings_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio_business/screens/settings_screen.dart (or an existing part) contains the following errors.
+settings_screen.dart:208:3: Expected a method, getter, setter or operator declaration.
+settings_screen.dart:209:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/playtime/screens/playtime_virtual_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/playtime/screens/playtime_virtual_screen.dart (or an existing part) contains the following errors.
+playtime_virtual_screen.dart:566:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] mockito:mockBuilder on test/services/booking_service_enhanced_test.dart (cached):
+
+Invalid @GenerateMocks annotation: The GenerateMocks "classes" argument is missing, includes an unknown type, or includes an extension
+[SEVERE] hive_generator on lib/features/subscriptions/screens/subscription_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/subscriptions/screens/subscription_screen.dart (or an existing part) contains the following errors.
+subscription_screen.dart:468:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] Failed after 15.7s
+Failed to update packages.
