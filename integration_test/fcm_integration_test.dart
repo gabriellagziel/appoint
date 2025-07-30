@@ -27,10 +27,6 @@ void main() {
 
     testWidgets('FCM Service Initialization and Token Management',
         (tester) async {
-      // Declare variables
-      late FCMService fcmService;
-      late String? token;
-
       app.main();
       await tester.pumpAndSettle();
 
@@ -99,9 +95,6 @@ void main() {
     });
 
     testWidgets('FCM Topic Subscription and Unsubscription', (tester) async {
-      // Declare variables
-      late FCMService fcmService;
-
       app.main();
       await tester.pumpAndSettle();
 
@@ -121,10 +114,6 @@ void main() {
     });
 
     testWidgets('FCM Foreground Message Handling', (tester) async {
-      // Declare variables
-      late FCMService fcmService;
-      late String? token;
-
       app.main();
       await tester.pumpAndSettle();
 
