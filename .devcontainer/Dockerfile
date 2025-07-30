@@ -1,22 +1,38 @@
+# Use an official lightweight base image
 FROM ubuntu:22.04
 
-ARG DART_VERSION=3.4.0
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    unzip \
+    git \
+    xz-utils \
+    zip \
+    && rm -rf /var/lib/apt/lists/*
 
-# Install dependencies for Dart installation
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    wget unzip ca-certificates xz-utils && \
-    rm -rf /var/lib/apt/lists/*
+# Install Flutter 3.32.0 and Dart 3.4.0
+RUN curl -L https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.32.0-stable.tar.xz -o flutter.tar.xz \
+    && tar xf flutter.tar.xz -C /usr/local \
+    && rm flutter.tar.xz \
+    && curl -L https://storage.googleapis.com/dart-archive/channels/stable/release/3.4.0/sdk/dartsdk-linux-x64-release.zip -o dart.zip \
+    && unzip dart.zip -d /usr/lib/dart \
+    && rm dart.zip
 
-# Download and install Dart SDK
-RUN wget -O /tmp/dart-sdk.zip https://storage.googleapis.com/dart-archive/channels/stable/release/${DART_VERSION}/sdk/dartsdk-linux-x64-release.zip && \
-    unzip /tmp/dart-sdk.zip -d /usr/lib && \
-    mv /usr/lib/dart-sdk /usr/lib/dart && \
-    rm /tmp/dart-sdk.zip
+# Symlink flutter and dart into /usr/local/bin for easy access
+RUN ln -s /usr/local/flutter/bin/flutter /usr/local/bin/flutter \
+    && ln -s /usr/lib/dart/dart-sdk/bin/dart /usr/local/bin/dart \
+    && rm -f /etc/profile.d/sdk-path.sh
 
-# Set PATH for Dart
-ENV DART_HOME=/usr/lib/dart
-ENV PATH="${DART_HOME}/bin:${PATH}"
+# Expose environment variables for both build and runtime
+ENV FLUTTER_HOME=/usr/local/flutter
+ENV DART_HOME=/usr/lib/dart/dart-sdk
+ENV PATH="$FLUTTER_HOME/bin:$DART_HOME/bin:${PATH}"
 
-# Verify installation
-RUN dart --version
+# Verify installations at build time
+RUN which flutter && flutter --version && which dart && dart --version
 
+# Set up working directory
+WORKDIR /workspace
+
+# Default command
+CMD ["bash"]
