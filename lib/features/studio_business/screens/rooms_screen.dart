@@ -290,6 +290,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
+      }
     } finally {
       if (mounted) {
         setState(() => _isAdding = false);
@@ -321,13 +322,16 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         );
       }
     } catch (e) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
-    } finally {
-      if (mounted) {
-        setState(() => _isAdding = false);
       }
+    }
+    
+    // Always reset adding state
+    if (mounted) {
+      setState(() => _isAdding = false);
     }
   }
 
@@ -350,6 +354,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
+      }
     }
   }
 
@@ -366,6 +371,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
+      }
     }
   }
 }

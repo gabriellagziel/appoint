@@ -74,7 +74,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get search => '[MK] [MK] Search';
 
   @override
-  String get cancelInviteConfirmation => '[MK] [MK] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation =>
+      '[MK] [MK] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -88,7 +89,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get playtimeLiveScheduled => '[MK] [MK] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => '[MK] [MK] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[MK] [MK] Are you sure you want to revoke access?';
 
   @override
   String get download => '[MK] [MK] Download';
@@ -122,7 +124,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get playtimeModeVirtual => '[MK] [MK] Virtual Play';
 
   @override
-  String get playtimeDescription => '[MK] [MK] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription =>
+      '[MK] [MK] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[MK] [MK] Delete';
@@ -182,7 +185,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[MK] [MK] Meeting shared successfully';
+  String get meetingSharedSuccessfully =>
+      '[MK] [MK] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[MK] [MK] Welcome to Playtime';
@@ -200,7 +204,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get cut => '[MK] [MK] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => '[MK] [MK] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully =>
+      '[MK] [MK] Invite cancelled successfully';
 
   @override
   String get retry => '[MK] [MK] Retry';
@@ -277,7 +282,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get scheduleForLater => '[MK] [MK] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully => '[MK] [MK] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[MK] [MK] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -402,7 +408,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get dashboard => '[MK] [MK] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => '[MK] [MK] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[MK] [MK] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[MK] Playtime Games – Admin';
@@ -479,7 +486,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get playtimeEnterGameName => '[MK] [MK] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[MK] [MK] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[MK] [MK] Please login to access family features';
 
   @override
   String get myInvites => '[MK] [MK] My Invites';
@@ -533,7 +541,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[MK] [MK] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[MK] [MK] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[MK] Admin Metrics';
@@ -554,40 +563,52 @@ class AppLocalizationsMk extends AppLocalizations {
   String get contentLibrary => '[MK] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[MK] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[MK] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[MK] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[MK] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[MK] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[MK] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[MK] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[MK] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[MK] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[MK] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[MK] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[MK] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[MK] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[MK] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[MK] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[MK] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[MK] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[MK] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential => '[MK] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential =>
+      '[MK] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[MK] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[MK] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[MK] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[MK] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +625,24 @@ class AppLocalizationsMk extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[MK] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[MK] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[MK] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[MK] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode => '[MK] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode =>
+      '[MK] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[MK] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[MK] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode => '[MK] Please enter the verification code.';
+  String get authErrorMissingVerificationCode =>
+      '[MK] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[MK] Missing verification ID.';
@@ -628,43 +654,56 @@ class AppLocalizationsMk extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[MK] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[MK] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[MK] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[MK] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[MK] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[MK] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[MK] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired => '[MK] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired =>
+      '[MK] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound => '[MK] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound =>
+      '[MK] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession => '[MK] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession =>
+      '[MK] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession => '[MK] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession =>
+      '[MK] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse => '[MK] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse =>
+      '[MK] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded => '[MK] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded =>
+      '[MK] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[MK] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[MK] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification => '[MK] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification =>
+      '[MK] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists => '[MK] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists =>
+      '[MK] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[MK] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[MK] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[MK] The ID token is invalid.';
@@ -676,10 +715,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[MK] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[MK] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[MK] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[MK] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[MK] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[MK] Invalid custom claims provided.';
@@ -688,70 +729,87 @@ class AppLocalizationsMk extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[MK] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[MK] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[MK] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[MK] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[MK] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[MK] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain => '[MK] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain =>
+      '[MK] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[MK] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[MK] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[MK] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[MK] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[MK] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[MK] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength => '[MK] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength =>
+      '[MK] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[MK] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[MK] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[MK] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization => '[MK] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization =>
+      '[MK] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[MK] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[MK] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator => '[MK] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator =>
+      '[MK] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[MK] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[MK] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[MK] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[MK] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[MK] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[MK] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration => '[MK] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration =>
+      '[MK] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[MK] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[MK] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[MK] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded => '[MK] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded =>
+      '[MK] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[MK] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[MK] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[MK] Missing continue URL.';
@@ -766,7 +824,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get authErrorMissingUid => '[MK] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret => '[MK] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret =>
+      '[MK] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[MK] Firebase project not found.';
@@ -775,19 +834,23 @@ class AppLocalizationsMk extends AppLocalizations {
   String get authErrorReservedClaims => '[MK] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[MK] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[MK] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[MK] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[MK] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[MK] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri => '[MK] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri =>
+      '[MK] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[MK] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[MK] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +899,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends => '[MK] Virtual session created! Inviting friends... (Macedonian)';
+  String get virtualSessionCreatedInvitingFriends =>
+      '[MK] Virtual session created! Inviting friends... (Macedonian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +941,15 @@ class AppLocalizationsMk extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[MK] Subscription unavailable (Macedonian)';
+  String get subscriptionUnavailable =>
+      '[MK] Subscription unavailable (Macedonian)';
 
   @override
   String get confirmBooking => '[MK] Confirm Booking (Macedonian)';
 
   @override
-  String get failedToUpdatePermissionE => '[MK] Failed to update permission: \$e (Macedonian)';
+  String get failedToUpdatePermissionE =>
+      '[MK] Failed to update permission: \$e (Macedonian)';
 
   @override
   String get reject => '[MK] Reject (Macedonian)';
@@ -897,7 +963,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get noProviders => '[MK] No providers';
 
   @override
-  String get checkingSubscription => '[MK] Checking subscription... (Macedonian)';
+  String get checkingSubscription =>
+      '[MK] Checking subscription... (Macedonian)';
 
   @override
   String errorPickingImageE(Object e) {
@@ -905,13 +972,15 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[MK] No content available yet (Macedonian)';
+  String get noContentAvailableYet =>
+      '[MK] No content available yet (Macedonian)';
 
   @override
   String get resolve => '[MK] Resolve (Macedonian)';
 
   @override
-  String get errorLoadingSurveysError => '[MK] Error loading surveys: \$error (Macedonian)';
+  String get errorLoadingSurveysError =>
+      '[MK] Error loading surveys: \$error (Macedonian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +988,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[MK] Get help with your account (Macedonian)';
+  String get getHelpWithYourAccount =>
+      '[MK] Get help with your account (Macedonian)';
 
   @override
   String get pay => '[MK] Pay (Macedonian)';
@@ -934,7 +1004,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[MK] Changes saved successfully! (Macedonian)';
+  String get changesSavedSuccessfully =>
+      '[MK] Changes saved successfully! (Macedonian)';
 
   @override
   String get createNewInvoice => '[MK] Create New Invoice (Macedonian)';
@@ -954,7 +1025,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get profileSaved => '[MK] Profile saved! (Macedonian)';
 
   @override
-  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1057,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly => '[MK] You will receive a confirmation email shortly. (Macedonian)';
+  String get youWillReceiveAConfirmationEmailShortly =>
+      '[MK] You will receive a confirmation email shortly. (Macedonian)';
 
   @override
   String get addQuestion => '[MK] Add Question (Macedonian)';
@@ -1014,22 +1087,27 @@ class AppLocalizationsMk extends AppLocalizations {
   String get surveyManagement => '[MK] Survey Management (Macedonian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[MK] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[MK] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[MK] No rooms found. Add your first room! (Macedonian)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[MK] No rooms found. Add your first room! (Macedonian)';
 
   @override
-  String get readOurPrivacyPolicy => '[MK] Read our privacy policy (Macedonian)';
+  String get readOurPrivacyPolicy =>
+      '[MK] Read our privacy policy (Macedonian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[MK] Could not open privacy policy (Macedonian)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[MK] Could not open privacy policy (Macedonian)';
 
   @override
   String get refresh1 => '[MK] Refresh (Macedonian)';
 
   @override
-  String get roomUpdatedSuccessfully => '[MK] Room updated successfully! (Macedonian)';
+  String get roomUpdatedSuccessfully =>
+      '[MK] Room updated successfully! (Macedonian)';
 
   @override
   String get contentDetail => '[MK] Content Detail (Macedonian)';
@@ -1038,7 +1116,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get cancelSubscription => '[MK] Cancel Subscription (Macedonian)';
 
   @override
-  String get successfullyRegisteredAsAmbassador => '[MK] Successfully registered as Ambassador! (Macedonian)';
+  String get successfullyRegisteredAsAmbassador =>
+      '[MK] Successfully registered as Ambassador! (Macedonian)';
 
   @override
   String get save1 => '[MK] Save (Macedonian)';
@@ -1047,7 +1126,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get copy1 => '[MK] Copy (Macedonian)';
 
   @override
-  String get failedToSendInvitationE => '[MK] Failed to send invitation: \$e (Macedonian)';
+  String get failedToSendInvitationE =>
+      '[MK] Failed to send invitation: \$e (Macedonian)';
 
   @override
   String get surveyScore => '[MK] Survey Score (Macedonian)';
@@ -1064,16 +1144,20 @@ class AppLocalizationsMk extends AppLocalizations {
   String get responseDetail => '[MK] Response Detail (Macedonian)';
 
   @override
-  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[MK] Failed to start Pro subscription: \$e (Macedonian)';
+  String get failedToStartProSubscriptionE =>
+      '[MK] Failed to start Pro subscription: \$e (Macedonian)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon => '[MK] Business Dashboard Entry Screen - Coming Soon (Macedonian)';
+  String get businessDashboardEntryScreenComingSoon =>
+      '[MK] Business Dashboard Entry Screen - Coming Soon (Macedonian)';
 
   @override
   String get contentFilter => '[MK] Content Filter (Macedonian)';
@@ -1095,7 +1179,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon => '[MK] Business CRM Entry Screen - Coming Soon (Macedonian)';
+  String get businessCrmEntryScreenComingSoon =>
+      '[MK] Business CRM Entry Screen - Coming Soon (Macedonian)';
 
   @override
   String get adminDashboard => '[MK] Admin Dashboard';
@@ -1106,13 +1191,16 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[MK] Error loading dashboard: \$error (Macedonian)';
+  String get errorLoadingDashboardError =>
+      '[MK] Error loading dashboard: \$error (Macedonian)';
 
   @override
-  String get gameDeletedSuccessfully => '[MK] Game deleted successfully! (Macedonian)';
+  String get gameDeletedSuccessfully =>
+      '[MK] Game deleted successfully! (Macedonian)';
 
   @override
-  String get viewResponsesComingSoon => '[MK] View responses - Coming soon! (Macedonian)';
+  String get viewResponsesComingSoon =>
+      '[MK] View responses - Coming soon! (Macedonian)';
 
   @override
   String get deleteProvider => '[MK] Delete Provider';
@@ -1121,7 +1209,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get errorLoadingRewards => '[MK] Error loading rewards (Macedonian)';
 
   @override
-  String get failedToDeleteAccountE => '[MK] Failed to delete account: \$e (Macedonian)';
+  String get failedToDeleteAccountE =>
+      '[MK] Failed to delete account: \$e (Macedonian)';
 
   @override
   String get invited1 => '[MK] Invited (Macedonian)';
@@ -1136,7 +1225,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get noEvents => '[MK] No events (Macedonian)';
 
   @override
-  String get gameCreatedSuccessfully => '[MK] Game created successfully! (Macedonian)';
+  String get gameCreatedSuccessfully =>
+      '[MK] Game created successfully! (Macedonian)';
 
   @override
   String get add1 => '[MK] Add (Macedonian)';
@@ -1156,10 +1246,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get clients => '[MK] Clients (Macedonian)';
 
   @override
-  String get noAmbassadorDataAvailable => '[MK] No ambassador data available (Macedonian)';
+  String get noAmbassadorDataAvailable =>
+      '[MK] No ambassador data available (Macedonian)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[MK] Background deleted successfully! (Macedonian)';
+  String get backgroundDeletedSuccessfully =>
+      '[MK] Background deleted successfully! (Macedonian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1259,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[MK] No analytics data available yet. (Macedonian)';
+  String get noAnalyticsDataAvailableYet =>
+      '[MK] No analytics data available yet. (Macedonian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1268,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon => '[MK] Business Phone Booking Entry Screen - Coming Soon (Macedonian)';
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      '[MK] Business Phone Booking Entry Screen - Coming Soon (Macedonian)';
 
   @override
   String get verification => '[MK] Verification (Macedonian)';
@@ -1222,7 +1316,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get businessProfile => '[MK] Business Profile (Macedonian)';
 
   @override
-  String get businessBookingEntryScreenComingSoon => '[MK] Business Booking Entry Screen - Coming Soon (Macedonian)';
+  String get businessBookingEntryScreenComingSoon =>
+      '[MK] Business Booking Entry Screen - Coming Soon (Macedonian)';
 
   @override
   String get createNewSurvey => '[MK] Create New Survey (Macedonian)';
@@ -1246,7 +1341,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get loginFailedE => '[MK] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[MK] Invitation sent successfully! (Macedonian)';
+  String get invitationSentSuccessfully =>
+      '[MK] Invitation sent successfully! (Macedonian)';
 
   @override
   String get registering => '[MK] Registering... (Macedonian)';
@@ -1260,13 +1356,16 @@ class AppLocalizationsMk extends AppLocalizations {
   String get home1 => '[MK] Home (Macedonian)';
 
   @override
-  String get errorSavingSettingsE => '[MK] Error saving settings: \$e (Macedonian)';
+  String get errorSavingSettingsE =>
+      '[MK] Error saving settings: \$e (Macedonian)';
 
   @override
-  String get appVersionAndInformation => '[MK] App version and information (Macedonian)';
+  String get appVersionAndInformation =>
+      '[MK] App version and information (Macedonian)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon => '[MK] Business Subscription Entry Screen - Coming Soon (Macedonian)';
+  String get businessSubscriptionEntryScreenComingSoon =>
+      '[MK] Business Subscription Entry Screen - Coming Soon (Macedonian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1373,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully => '[MK] Your payment has been processed successfully. (Macedonian)';
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      '[MK] Your payment has been processed successfully. (Macedonian)';
 
   @override
   String get errorE => '[MK] Error: \$e (Macedonian)';
@@ -1283,7 +1383,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get viewAll1 => '[MK] View All (Macedonian)';
 
   @override
-  String get editSurveyComingSoon => '[MK] Edit survey - Coming soon! (Macedonian)';
+  String get editSurveyComingSoon =>
+      '[MK] Edit survey - Coming soon! (Macedonian)';
 
   @override
   String get enterOtp => '[MK] Enter OTP (Macedonian)';
@@ -1292,7 +1393,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get payment => '[MK] Payment (Macedonian)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests => '[MK] Automatically confirm new booking requests (Macedonian)';
+  String get automaticallyConfirmNewBookingRequests =>
+      '[MK] Automatically confirm new booking requests (Macedonian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1407,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[MK] Please sign in to upload a background (Macedonian)';
+  String get pleaseSignInToUploadABackground =>
+      '[MK] Please sign in to upload a background (Macedonian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1425,22 @@ class AppLocalizationsMk extends AppLocalizations {
   String get autoconfirmBookings => '[MK] Auto-Confirm Bookings (Macedonian)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan => '[MK] Redirecting to Stripe checkout for Pro plan... (Macedonian)';
+  String get redirectingToStripeCheckoutForProPlan =>
+      '[MK] Redirecting to Stripe checkout for Pro plan... (Macedonian)';
 
   @override
   String get exportAsCsv => '[MK] Export as CSV (Macedonian)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[MK] Delete functionality coming soon! (Macedonian)';
+  String get deleteFunctionalityComingSoon =>
+      '[MK] Delete functionality coming soon! (Macedonian)';
 
   @override
   String get editClient => '[MK] Edit Client (Macedonian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage => '[MK] Are you sure you want to delete this message? (Macedonian)';
+  String get areYouSureYouWantToDeleteThisMessage =>
+      '[MK] Are you sure you want to delete this message? (Macedonian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1451,39 @@ class AppLocalizationsMk extends AppLocalizations {
   String get notAuthenticated => '[MK] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[MK] Privacy request sent to your parents! (Macedonian)';
+  String get privacyRequestSentToYourParents =>
+      '[MK] Privacy request sent to your parents! (Macedonian)';
 
   @override
-  String get clientDeletedSuccessfully => '[MK] Client deleted successfully! (Macedonian)';
+  String get clientDeletedSuccessfully =>
+      '[MK] Client deleted successfully! (Macedonian)';
 
   @override
-  String get failedToCancelSubscription => '[MK] Failed to cancel subscription (Macedonian)';
+  String get failedToCancelSubscription =>
+      '[MK] Failed to cancel subscription (Macedonian)';
 
   @override
   String get allLanguages => '[MK] All Languages (Macedonian)';
 
   @override
-  String get slotDeletedSuccessfully => '[MK] Slot deleted successfully (Macedonian)';
+  String get slotDeletedSuccessfully =>
+      '[MK] Slot deleted successfully (Macedonian)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon => '[MK] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon =>
+      '[MK] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin => '[MK] Parents must approve before children can join (Macedonian)';
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      '[MK] Parents must approve before children can join (Macedonian)';
 
   @override
-  String get subscribeToPro1499mo => '[MK] Subscribe to Pro (€14.99/mo) (Macedonian)';
+  String get subscribeToPro1499mo =>
+      '[MK] Subscribe to Pro (€14.99/mo) (Macedonian)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon => '[MK] Business Availability Entry Screen - Coming Soon (Macedonian)';
+  String get businessAvailabilityEntryScreenComingSoon =>
+      '[MK] Business Availability Entry Screen - Coming Soon (Macedonian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1497,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get submitBooking => '[MK] Submit Booking (Macedonian)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment => '[MK] Are you sure you want to cancel this appointment? (Macedonian)';
+  String get areYouSureYouWantToCancelThisAppointment =>
+      '[MK] Are you sure you want to cancel this appointment? (Macedonian)';
 
   @override
   String get noUpcomingBookings => '[MK] No upcoming bookings (Macedonian)';
@@ -1401,7 +1516,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get goToDashboard => '[MK] Go to Dashboard (Macedonian)';
 
   @override
-  String get ambassadorQuotaDashboard => '[MK] Ambassador Quota Dashboard (Macedonian)';
+  String get ambassadorQuotaDashboard =>
+      '[MK] Ambassador Quota Dashboard (Macedonian)';
 
   @override
   String get adminSettings => '[MK] Admin Settings';
@@ -1439,7 +1555,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[MK] Client added successfully! (Macedonian)';
+  String get clientAddedSuccessfully =>
+      '[MK] Client added successfully! (Macedonian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1574,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get bookAppointment => '[MK] Book Appointment (Macedonian)';
 
   @override
-  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[MK] Delete (Macedonian)';
@@ -1472,13 +1590,15 @@ class AppLocalizationsMk extends AppLocalizations {
   String get manageSubscription => '[MK] Manage Subscription (Macedonian)';
 
   @override
-  String get requiresInstallFallback => '[MK] Requires Install Fallback (Macedonian)';
+  String get requiresInstallFallback =>
+      '[MK] Requires Install Fallback (Macedonian)';
 
   @override
   String get paymentConfirmation => '[MK] Payment Confirmation (Macedonian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[MK] Promo applied! Your next bill is free. (Macedonian)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[MK] Promo applied! Your next bill is free. (Macedonian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1609,16 @@ class AppLocalizationsMk extends AppLocalizations {
   String get errorLoadingSlots => '[MK] Error loading slots (Macedonian)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame => '[MK] Allow other users to find and join this game (Macedonian)';
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      '[MK] Allow other users to find and join this game (Macedonian)';
 
   @override
-  String get businessOnboardingScreenComingSoon => '[MK] Business Onboarding Screen - Coming Soon (Macedonian)';
+  String get businessOnboardingScreenComingSoon =>
+      '[MK] Business Onboarding Screen - Coming Soon (Macedonian)';
 
   @override
-  String get activateBusinessProfile => '[MK] Activate Business Profile (Macedonian)';
+  String get activateBusinessProfile =>
+      '[MK] Activate Business Profile (Macedonian)';
 
   @override
   String get contentNotFound => '[MK] Content not found (Macedonian)';
@@ -1537,7 +1660,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get shareLink => '[MK] Share Link (Macedonian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider => '[MK] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider =>
+      '[MK] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[MK] Delete Appointment (Macedonian)';
@@ -1557,10 +1681,12 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[MK] Update your business information (Macedonian)';
+  String get updateYourBusinessInformation =>
+      '[MK] Update your business information (Macedonian)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider => '[MK] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider =>
+      '[MK] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[MK] Parent Dashboard (Macedonian)';
@@ -1583,10 +1709,12 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb => '[MK] Studio booking is only available on web (Macedonian)';
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      '[MK] Studio booking is only available on web (Macedonian)';
 
   @override
-  String get errorLoadingBranchesE => '[MK] Error loading branches: \$e (Macedonian)';
+  String get errorLoadingBranchesE =>
+      '[MK] Error loading branches: \$e (Macedonian)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1602,13 +1730,15 @@ class AppLocalizationsMk extends AppLocalizations {
   String get none => '[MK] None (Macedonian)';
 
   @override
-  String get failedToUpdateConsentE => '[MK] Failed to update consent: \$e (Macedonian)';
+  String get failedToUpdateConsentE =>
+      '[MK] Failed to update consent: \$e (Macedonian)';
 
   @override
   String get welcome1 => '[MK] Welcome (Macedonian)';
 
   @override
-  String get failedToCreateSessionE => '[MK] Failed to create session: \$e (Macedonian)';
+  String get failedToCreateSessionE =>
+      '[MK] Failed to create session: \$e (Macedonian)';
 
   @override
   String get inviteContact => '[MK] Invite Contact (Macedonian)';
@@ -1617,7 +1747,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get surveyEditor => '[MK] Survey Editor (Macedonian)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[MK] Failed to start Basic subscription: \$e (Macedonian)';
+  String get failedToStartBasicSubscriptionE =>
+      '[MK] Failed to start Basic subscription: \$e (Macedonian)';
 
   @override
   String get mySchedule => '[MK] My Schedule (Macedonian)';
@@ -1637,10 +1768,12 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[MK] Settings saved successfully! (Macedonian)';
+  String get settingsSavedSuccessfully =>
+      '[MK] Settings saved successfully! (Macedonian)';
 
   @override
-  String get linkCopiedToClipboard => '[MK] Link copied to clipboard! (Macedonian)';
+  String get linkCopiedToClipboard =>
+      '[MK] Link copied to clipboard! (Macedonian)';
 
   @override
   String get accept1 => '[MK] Accept (Macedonian)';
@@ -1657,7 +1790,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[MK] Room deleted successfully! (Macedonian)';
+  String get roomDeletedSuccessfully =>
+      '[MK] Room deleted successfully! (Macedonian)';
 
   @override
   String get businessCalendar => '[MK] Business Calendar (Macedonian)';
@@ -1677,7 +1811,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get addNewRoom => '[MK] Add New Room (Macedonian)';
 
   @override
-  String get requireParentApproval => '[MK] Require Parent Approval (Macedonian)';
+  String get requireParentApproval =>
+      '[MK] Require Parent Approval (Macedonian)';
 
   @override
   String get closed => '[MK] Closed (Macedonian)';
@@ -1722,7 +1857,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get cancel1 => '[MK] Cancel (Macedonian)';
 
   @override
-  String get subscriptionActivatedSuccessfully => '[MK] Subscription activated successfully! (Macedonian)';
+  String get subscriptionActivatedSuccessfully =>
+      '[MK] Subscription activated successfully! (Macedonian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1869,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get broadcast => '[MK] Broadcast (Macedonian)';
 
   @override
-  String get noEventsScheduledThisWeek => '[MK] No events scheduled this week (Macedonian)';
+  String get noEventsScheduledThisWeek =>
+      '[MK] No events scheduled this week (Macedonian)';
 
   @override
   String get googleCalendar => '[MK] Google Calendar (Macedonian)';
@@ -1745,7 +1882,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get childDashboard => '[MK] Child Dashboard (Macedonian)';
 
   @override
-  String get failedToUploadBackgroundE => '[MK] Failed to upload background: \$e (Macedonian)';
+  String get failedToUploadBackgroundE =>
+      '[MK] Failed to upload background: \$e (Macedonian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1902,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get noAppointments => '[MK] No appointments (Macedonian)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[MK] • Unlimited bookings per week (Macedonian)';
+  String get unlimitedBookingsPerWeek =>
+      '[MK] • Unlimited bookings per week (Macedonian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1911,19 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[MK] Scheduled at: \$scheduledAt (Macedonian)';
+  String get scheduledAtScheduledat =>
+      '[MK] Scheduled at: \$scheduledAt (Macedonian)';
 
   @override
   String get selectStaff => '[MK] Select Staff (Macedonian)';
 
   @override
-  String get subscriptionCancelledSuccessfully => '[MK] Subscription cancelled successfully (Macedonian)';
+  String get subscriptionCancelledSuccessfully =>
+      '[MK] Subscription cancelled successfully (Macedonian)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[MK] Cancel Appointment (Macedonian)';
@@ -1795,7 +1937,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get businessSignup => '[MK] Business Signup (Macedonian)';
 
   @override
-  String get businessCompletionScreenComingSoon => '[MK] Business Completion Screen - Coming Soon (Macedonian)';
+  String get businessCompletionScreenComingSoon =>
+      '[MK] Business Completion Screen - Coming Soon (Macedonian)';
 
   @override
   String get createGame1 => '[MK] Create Game (Macedonian)';
@@ -1806,10 +1949,12 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[MK] Please enter a promo code (Macedonian)';
+  String get pleaseEnterAPromoCode =>
+      '[MK] Please enter a promo code (Macedonian)';
 
   @override
-  String get errorLoadingAvailabilityE => '[MK] Error loading availability: \$e (Macedonian)';
+  String get errorLoadingAvailabilityE =>
+      '[MK] Error loading availability: \$e (Macedonian)';
 
   @override
   String get parentalControls => '[MK] Parental Controls (Macedonian)';
@@ -1818,13 +1963,15 @@ class AppLocalizationsMk extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[MK] Child linked successfully! (Macedonian)';
+  String get childLinkedSuccessfully =>
+      '[MK] Child linked successfully! (Macedonian)';
 
   @override
   String get create => '[MK] Create (Macedonian)';
 
   @override
-  String get noExternalMeetingsFound => '[MK] No external meetings found. (Macedonian)';
+  String get noExternalMeetingsFound =>
+      '[MK] No external meetings found. (Macedonian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1979,15 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[MK] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[MK] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[MK] Scheduler Screen (Macedonian)';
 
   @override
-  String get clientUpdatedSuccessfully => '[MK] Client updated successfully! (Macedonian)';
+  String get clientUpdatedSuccessfully =>
+      '[MK] Client updated successfully! (Macedonian)';
 
   @override
   String get surveyResponses => '[MK] Survey Responses (Macedonian)';
@@ -1864,10 +2013,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get errorLoadingEvents => '[MK] Error loading events (Macedonian)';
 
   @override
-  String get errorLoadingOrganizations => '[MK] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[MK] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[MK] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[MK] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[MK] Success (Macedonian)';
@@ -1886,10 +2037,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get readWrite => '[MK] Read & Write (Macedonian)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan => '[MK] Redirecting to Stripe checkout for Basic plan... (Macedonian)';
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      '[MK] Redirecting to Stripe checkout for Basic plan... (Macedonian)';
 
   @override
-  String get errorSavingConfigurationE => '[MK] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[MK] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[MK] Pick Date (Macedonian)';
@@ -1925,10 +2078,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get businessLogin => '[MK] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[MK] Invoice created successfully! (Macedonian)';
+  String get invoiceCreatedSuccessfully =>
+      '[MK] Invoice created successfully! (Macedonian)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[MK] No time series data available (Macedonian)';
+  String get noTimeSeriesDataAvailable =>
+      '[MK] No time series data available (Macedonian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2096,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[MK] Failed to send privacy request: \$e (Macedonian)';
+  String get failedToSendPrivacyRequestE =>
+      '[MK] Failed to send privacy request: \$e (Macedonian)';
 
   @override
   String get chooseYourPlan => '[MK] Choose Your Plan (Macedonian)';
@@ -1956,13 +2112,15 @@ class AppLocalizationsMk extends AppLocalizations {
   String get eventCreated => '[MK] Event created (Macedonian)';
 
   @override
-  String get subscribeToBasic499mo => '[MK] Subscribe to Basic (€4.99/mo) (Macedonian)';
+  String get subscribeToBasic499mo =>
+      '[MK] Subscribe to Basic (€4.99/mo) (Macedonian)';
 
   @override
   String get completion => '[MK] Completion (Macedonian)';
 
   @override
-  String get supportTicketSubmitted => '[MK] Support ticket submitted (Macedonian)';
+  String get supportTicketSubmitted =>
+      '[MK] Support ticket submitted (Macedonian)';
 
   @override
   String get monetizationSettings => '[MK] Monetization Settings (Macedonian)';
@@ -1977,10 +2135,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get deleteSurvey => '[MK] Delete Survey (Macedonian)';
 
   @override
-  String get gameApprovedSuccessfully => '[MK] Game approved successfully! (Macedonian)';
+  String get gameApprovedSuccessfully =>
+      '[MK] Game approved successfully! (Macedonian)';
 
   @override
-  String get errorLoadingPermissionsError => '[MK] Error loading permissions: \$error (Macedonian)';
+  String get errorLoadingPermissionsError =>
+      '[MK] Error loading permissions: \$error (Macedonian)';
 
   @override
   String get referrals => '[MK] Referrals (Macedonian)';
@@ -2022,7 +2182,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get organizations => '[MK] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[MK] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[MK] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[MK] Create New Game (Macedonian)';
@@ -2031,16 +2192,19 @@ class AppLocalizationsMk extends AppLocalizations {
   String get next1 => '[MK] Next (Macedonian)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[MK] Background uploaded successfully! (Macedonian)';
+  String get backgroundUploadedSuccessfully =>
+      '[MK] Background uploaded successfully! (Macedonian)';
 
   @override
-  String get noAppointmentRequestsFound => '[MK] No appointment requests found. (Macedonian)';
+  String get noAppointmentRequestsFound =>
+      '[MK] No appointment requests found. (Macedonian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => '[MK] Restrict mature content (Macedonian)';
+  String get restrictMatureContent =>
+      '[MK] Restrict mature content (Macedonian)';
 
   @override
   String get ambassadors => '[MK] Ambassadors (Macedonian)';
@@ -2061,16 +2225,20 @@ class AppLocalizationsMk extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[MK] Failed to create game: \$e (Macedonian)';
+  String get failedToCreateGameE =>
+      '[MK] Failed to create game: \$e (Macedonian)';
 
   @override
-  String get noChartDataAvailable => '[MK] No chart data available (Macedonian)';
+  String get noChartDataAvailable =>
+      '[MK] No chart data available (Macedonian)';
 
   @override
-  String get phonebasedBookingSystem => '[MK] • Phone-based booking system (Macedonian)';
+  String get phonebasedBookingSystem =>
+      '[MK] • Phone-based booking system (Macedonian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2247,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get invoices => '[MK] Invoices (Macedonian)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2275,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get iDoNotConsent => '[MK] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient => '[MK] No clients found. Add your first client! (Macedonian)';
+  String get noClientsFoundAddYourFirstClient =>
+      '[MK] No clients found. Add your first client! (Macedonian)';
 
   @override
-  String get settingsDialogWillBeImplementedHere => '[MK] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere =>
+      '[MK] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[MK] Group: \$groupId';
@@ -2121,7 +2292,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get forward => '[MK] Forward (Macedonian)';
 
   @override
-  String get roomAddedSuccessfully => '[MK] Room added successfully! (Macedonian)';
+  String get roomAddedSuccessfully =>
+      '[MK] Room added successfully! (Macedonian)';
 
   @override
   String get option => '[MK] • \$option (Macedonian)';
@@ -2132,7 +2304,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[MK] • CRM dashboard with analytics (Macedonian)';
+  String get crmDashboardWithAnalytics =>
+      '[MK] • CRM dashboard with analytics (Macedonian)';
 
   @override
   String get contentLibrary1 => '[MK] Content Library (Macedonian)';
@@ -2141,28 +2314,34 @@ class AppLocalizationsMk extends AppLocalizations {
   String get reply => '[MK] Reply (Macedonian)';
 
   @override
-  String get subscriptionManagement => '[MK] Subscription Management (Macedonian)';
+  String get subscriptionManagement =>
+      '[MK] Subscription Management (Macedonian)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere => '[MK] Monetization settings will be implemented here (Macedonian)';
+  String get monetizationSettingsWillBeImplementedHere =>
+      '[MK] Monetization settings will be implemented here (Macedonian)';
 
   @override
-  String get failedToApplyPromoCodeE => '[MK] Failed to apply promo code: \$e (Macedonian)';
+  String get failedToApplyPromoCodeE =>
+      '[MK] Failed to apply promo code: \$e (Macedonian)';
 
   @override
   String get editProvider => '[MK] Edit Provider';
 
   @override
-  String get localizationContribution => '[MK] Localization Contribution (Macedonian)';
+  String get localizationContribution =>
+      '[MK] Localization Contribution (Macedonian)';
 
   @override
   String get parentalConsent => '[MK] Parental Consent (Macedonian)';
 
   @override
-  String get businessSignupScreenComingSoon => '[MK] Business Signup Screen - Coming Soon (Macedonian)';
+  String get businessSignupScreenComingSoon =>
+      '[MK] Business Signup Screen - Coming Soon (Macedonian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment => '[MK] Are you sure you want to delete this appointment? (Macedonian)';
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      '[MK] Are you sure you want to delete this appointment? (Macedonian)';
 
   @override
   String get syncAppointment => '[MK] Sync Appointment (Macedonian)';
@@ -2174,13 +2353,15 @@ class AppLocalizationsMk extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[MK] Business Setup Screen - Coming Soon (Macedonian)';
+  String get businessSetupScreenComingSoon =>
+      '[MK] Business Setup Screen - Coming Soon (Macedonian)';
 
   @override
   String get edit1 => '[MK] Edit (Macedonian)';
 
   @override
-  String get noEventsScheduledThisMonth => '[MK] No events scheduled this month (Macedonian)';
+  String get noEventsScheduledThisMonth =>
+      '[MK] No events scheduled this month (Macedonian)';
 
   @override
   String get businessDashboard => '[MK] Business Dashboard (Macedonian)';
@@ -2194,10 +2375,12 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[MK] Manage Staff Availability (Macedonian)';
+  String get manageStaffAvailability =>
+      '[MK] Manage Staff Availability (Macedonian)';
 
   @override
-  String get noMissingTranslations => '[MK] No missing translations (Macedonian)';
+  String get noMissingTranslations =>
+      '[MK] No missing translations (Macedonian)';
 
   @override
   String get skip => '[MK] Skip (Macedonian)';
@@ -2211,7 +2394,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get noUsers => '[MK] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[MK] Error loading referral code (Macedonian)';
+  String get errorLoadingReferralCode =>
+      '[MK] Error loading referral code (Macedonian)';
 
   @override
   String get allCountries => '[MK] All Countries (Macedonian)';
@@ -2220,13 +2404,15 @@ class AppLocalizationsMk extends AppLocalizations {
   String get deleteGame => '[MK] Delete Game (Macedonian)';
 
   @override
-  String get staffManagementTools => '[MK] • Staff management tools (Macedonian)';
+  String get staffManagementTools =>
+      '[MK] • Staff management tools (Macedonian)';
 
   @override
   String get deleteMessage => '[MK] Delete Message (Macedonian)';
 
   @override
-  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[MK] changeRole (TRANSLATE)';
@@ -2237,7 +2423,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[MK] Opening customer portal... (Macedonian)';
+  String get openingCustomerPortal =>
+      '[MK] Opening customer portal... (Macedonian)';
 
   @override
   String get signOut => '[MK] Sign Out (Macedonian)';
@@ -2248,7 +2435,8 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[MK] Upgrade to Business (Macedonian)';
@@ -2274,7 +2462,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[MK] View Responses (Macedonian)';
@@ -2303,7 +2492,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2511,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2330,7 +2521,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2378,7 +2570,8 @@ class AppLocalizationsMk extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2619,12 @@ class AppLocalizationsMk extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[MK] Congratulations! You\'re now an Ambassador! (Macedonian)';
+  String get ambassadorPromotionTitle =>
+      '[MK] Congratulations! You\'re now an Ambassador! (Macedonian)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2635,11 @@ class AppLocalizationsMk extends AppLocalizations {
   String get tierUpgradeTitle => '[MK] Tier Upgrade! 🎉 (Macedonian)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[MK] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Macedonian)';
   }
 
@@ -2448,20 +2647,29 @@ class AppLocalizationsMk extends AppLocalizations {
   String get monthlyReminderTitle => '[MK] Monthly Goal Reminder (Macedonian)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[MK] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Macedonian)';
   }
 
   @override
-  String get performanceWarningTitle => '[MK] Ambassador Performance Alert (Macedonian)';
+  String get performanceWarningTitle =>
+      '[MK] Ambassador Performance Alert (Macedonian)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[MK] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Macedonian)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[MK] Ambassador Status Update (Macedonian)';
+  String get ambassadorDemotionTitle =>
+      '[MK] Ambassador Status Update (Macedonian)';
 
   @override
   String ambassadorDemotionBody(String reason) {

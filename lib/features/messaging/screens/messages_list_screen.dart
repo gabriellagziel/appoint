@@ -1,4 +1,5 @@
 import 'package:appoint/features/messaging/models/message.dart';
+import 'package:appoint/features/messaging/models/chat.dart';
 import 'package:appoint/features/messaging/services/messaging_service.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';

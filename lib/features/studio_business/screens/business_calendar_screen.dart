@@ -261,7 +261,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
         // Responsive grid based on screen width
         int crossAxisCount;
         double childAspectRatio;
-
+        
         if (constraints.maxWidth > 1200) {
           // Large desktop/tablet landscape
           crossAxisCount = 4;

@@ -48,6 +48,37 @@ class AdminService {
     return Analytics.fromJson(doc.data() ?? {});
   }
 
+  // Dashboard Stats
+  Future<AdminDashboardStats> getDashboardStats() async {
+    final usersCount = await getTotalUsersCount();
+    final organizationsSnapshot = await _firestore.collection('organizations').get();
+    final messagesSnapshot = await _firestore.collection('admin_broadcast_messages').get();
+    
+    return AdminDashboardStats(
+      totalUsers: usersCount,
+      totalOrganizations: organizationsSnapshot.docs.length,
+      totalMessages: messagesSnapshot.docs.length,
+      activeUsers: usersCount, // Simplified for now
+    );
+  }
+
+  // Total Users Count
+  Future<int> getTotalUsersCount() async {
+    final snapshot = await _firestore.collection('users').get();
+    return snapshot.docs.length;
+  }
+
+  // Delete User
+  Future<void> deleteUser(String userId) async {
+    await _firestore.collection('users').doc(userId).delete();
+    await _logAdminActivity(
+      action: 'delete_user',
+      targetType: 'user',
+      targetId: userId,
+      details: {'deleted': true},
+    );
+  }
+
   // Admin Dashboard Stats
   Future<AdminDashboardStats> fetchAdminDashboardStats() async {
     // Fetch users stats

@@ -129,13 +129,16 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
         Navigator.pushReplacementNamed(context, '/business/dashboard');
       }
     } catch (e) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
-    } finally {
-      if (mounted) {
-        setState(() => _isConnecting = false);
       }
+    }
+    
+    // Always reset loading state
+    if (mounted) {
+      setState(() => _isConnecting = false);
     }
   }
 
