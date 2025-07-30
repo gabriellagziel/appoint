@@ -51,6 +51,8 @@ import 'package:appoint/features/studio_business/screens/business_profile_screen
 import 'package:appoint/features/studio_profile/studio_profile_screen.dart';
 import 'package:appoint/models/invite.dart';
 import 'package:appoint/widgets/animations/fade_slide_page_route.dart';
+import 'package:appoint/services/notification_service.dart';
+import 'package:appoint/services/branch_service.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {

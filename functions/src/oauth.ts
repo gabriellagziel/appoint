@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions/v1';
+import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import express from 'express';
 import { v4 as uuidv4 } from 'uuid';
@@ -37,7 +37,7 @@ app.get('/authorize', async (req, res) => {
     if (state) url.searchParams.set('state', state);
     res.redirect(url.toString());
   } catch (err) {
-    res.status(400).json({ error: err instanceof Error ? err.message : 'Unknown error' });
+    res.status(400).json({ error: err instanceof Error ? err.message : String(err) });
   }
 });
 
@@ -73,7 +73,7 @@ app.post('/token', async (req, res) => {
       throw new Error('unsupported_grant_type');
     }
   } catch (err) {
-    res.status(400).json({ error: err instanceof Error ? err.message : 'Unknown error' });
+    res.status(400).json({ error: err instanceof Error ? err.message : String(err) });
   }
 });
 
