@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 class BusinessConnectScreen extends ConsumerStatefulWidget {
   const BusinessConnectScreen({super.key});
@@ -127,19 +126,16 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
           const SnackBar(
               content: Text('Business profile activated successfully!'),),
         );
-        context.go('/business/dashboard');
+        Navigator.pushReplacementNamed(context, '/business/dashboard');
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
       }
-    }
-    
-    // Always reset loading state
-    if (mounted) {
-      setState(() => _isConnecting = false);
+      if (mounted) {
+        setState(() => _isConnecting = false);
+      }
     }
   }
 

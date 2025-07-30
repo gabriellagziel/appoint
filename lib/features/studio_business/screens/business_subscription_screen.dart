@@ -51,7 +51,6 @@ class _BusinessSubscriptionScreenState
           ),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isLoading = false);
       }
@@ -109,7 +108,6 @@ class _BusinessSubscriptionScreenState
           ),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isLoading = false);
       }
@@ -150,7 +148,6 @@ class _BusinessSubscriptionScreenState
           ),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isApplyingPromo = false);
       }
