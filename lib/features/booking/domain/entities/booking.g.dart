@@ -12,8 +12,9 @@ _$$_BookingFromJson(Map<String, dynamic> json) => _$$_Booking(
       endTime: DateTime.parse(json['endTime'] as String),
     );
 
-Map<String, dynamic> _$$_BookingToJson(_$$_Booking instance) => <String, dynamic>{
+Map<String, dynamic> _$$_BookingToJson(_$$_Booking instance) =>
+    <String, dynamic>{
       'id': instance.id,
       'startTime': instance.startTime.toIso8601String(),
       'endTime': instance.endTime.toIso8601String(),
-    }; 
+    };
