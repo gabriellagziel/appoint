@@ -1,11 +1,11 @@
-// Test setup utilities for unit tests
+// Centralized utilities for initializing and mocking Firebase during tests.
+// Provides shared Firebase channel mocks so tests can import this file without
+// additional setup.
 import 'package:flutter_test/flutter_test.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:appoint/firebase_options.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core_platform_interface/test.dart';
-import 'package:cloud_firestore_platform_interface/src/method_channel/utils/firestore_message_codec.dart';
-import 'package:cloud_firestore_platform_interface/src/pigeon/messages.pigeon.dart';
 
 // Common test utilities
 class TestUtils {
@@ -58,6 +58,17 @@ Future<void> registerFirebaseMock() async {
     }
   });
 
+  // Handle new Pigeon API channel for Firebase Auth
+  const MethodChannel firebaseAuthApiChannel = MethodChannel(
+      'dev.flutter.pigeon.firebase_auth_platform_interface.FirebaseAuthHostApi');
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(firebaseAuthApiChannel,
+          (MethodCall methodCall) async {
+    print(
+        '[Mock] firebaseAuthApiChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    return null;
+  });
+
   // Mock Cloud Firestore
   const MethodChannel cloudFirestoreChannel =
       MethodChannel('plugins.flutter.io/cloud_firestore');
@@ -80,31 +91,20 @@ Future<void> registerFirebaseMock() async {
         return {'documents': []};
       case 'Query#count':
         return {'count': 0};
-      case 'FirebaseFirestore#addSnapshotListener':
-        return '0';
-      case 'Query#addSnapshotListener':
-        return '0';
-      case 'DocumentReference#addSnapshotListener':
-        return '0';
       default:
         return null;
     }
   });
 
-  const String querySnapshotChannel =
-      'dev.flutter.pigeon.cloud_firestore_platform_interface.FirebaseFirestoreHostApi.querySnapshot';
-  const String documentSnapshotChannel =
-      'dev.flutter.pigeon.cloud_firestore_platform_interface.FirebaseFirestoreHostApi.documentReferenceSnapshot';
-  const MessageCodec<Object?> firestoreCodec = FirebaseFirestoreHostApi.codec;
-
+  // Handle new Pigeon API channel for Cloud Firestore
+  const MethodChannel cloudFirestoreApiChannel = MethodChannel(
+      'dev.flutter.pigeon.cloud_firestore.FirebaseFirestoreHostApi');
   TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
-      .setMockMessageHandler(querySnapshotChannel, (ByteData? message) async {
-    return firestoreCodec.encodeMessage(<Object?>['0']);
-  });
-
-  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
-      .setMockMessageHandler(documentSnapshotChannel, (ByteData? message) async {
-    return firestoreCodec.encodeMessage(<Object?>['0']);
+      .setMockMethodCallHandler(cloudFirestoreApiChannel,
+          (MethodCall methodCall) async {
+    print(
+        '[Mock] cloudFirestoreApiChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    return null;
   });
 
   // Mock Firebase Storage
