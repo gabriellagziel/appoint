@@ -24,7 +24,12 @@ if ! command -v doctl &> /dev/null; then
 fi
 
 # Set the DigitalOcean token
-export DIGITALOCEAN_ACCESS_TOKEN="REDACTED_TOKEN"
+# DIGITALOCEAN_ACCESS_TOKEN should be set as environment variable
+if [ -z "$DIGITALOCEAN_ACCESS_TOKEN" ]; then
+    echo "❌ Error: DIGITALOCEAN_ACCESS_TOKEN environment variable is required"
+    echo "Please set it before running this script"
+    exit 1
+fi
 
 echo "🔑 Authenticating with DigitalOcean..."
 doctl auth init --access-token $DIGITALOCEAN_ACCESS_TOKEN
