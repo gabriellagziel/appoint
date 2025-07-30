@@ -60,7 +60,7 @@ class _EnhancedOnboardingScreenState
 
   // Onboarding pages
   final List<OnboardingPage> _onboardingPages = [
-    OnboardingPage(
+    const OnboardingPage(
       title: 'Welcome',
       subtitle: 'Welcome to APP-OINT',
       description:
@@ -68,35 +68,35 @@ class _EnhancedOnboardingScreenState
       icon: Icons.app_registration,
       color: Colors.blue,
     ),
-    OnboardingPage(
+    const OnboardingPage(
       title: 'User Type',
       subtitle: 'How will you use APP-OINT?',
       description: 'Choose how you plan to use our platform.',
       icon: Icons.person,
       color: Colors.purple,
     ),
-    OnboardingPage(
+    const OnboardingPage(
       title: 'Language',
       subtitle: 'Select your language',
       description: 'Choose your preferred language for the app.',
       icon: Icons.language,
       color: Colors.orange,
     ),
-    OnboardingPage(
+    const OnboardingPage(
       title: 'Profile',
       subtitle: 'Tell us about yourself',
       description: 'Help us personalize your experience.',
       icon: Icons.account_circle,
       color: Colors.green,
     ),
-    OnboardingPage(
+    const OnboardingPage(
       title: 'Preferences',
       subtitle: 'Customize your experience',
       description: 'Set your preferences and interests.',
       icon: Icons.settings,
       color: Colors.red,
     ),
-    OnboardingPage(
+    const OnboardingPage(
       title: 'Complete',
       subtitle: 'You\'re all set!',
       description: 'Welcome to APP-OINT! Let\'s get started.',

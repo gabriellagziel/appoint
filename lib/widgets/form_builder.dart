@@ -550,9 +550,9 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 // Field Type
                 DropdownButtonFormField<CustomFormFieldType>(
                   value: _selectedType,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Field Type',
-                    border: const OutlineInputBorder(),
+                    border: OutlineInputBorder(),
                   ),
                   items: CustomFormFieldType.values
                       .map(
@@ -573,9 +573,9 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 // Label
                 TextFormField(
                   controller: _labelController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Field Label',
-                    border: const OutlineInputBorder(),
+                    border: OutlineInputBorder(),
                   ),
                   validator: (value) {
                     if (value == null || value.trim().isEmpty) {
@@ -589,9 +589,9 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 // Description
                 TextFormField(
                   controller: _descriptionController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Description (Optional)',
-                    border: const OutlineInputBorder(),
+                    border: OutlineInputBorder(),
                   ),
                   maxLines: 2,
                 ),
@@ -605,9 +605,9 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                     _selectedType == CustomFormFieldType.number) ...[
                   TextFormField(
                     controller: _placeholderController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: 'Placeholder (Optional)',
-                      border: const OutlineInputBorder(),
+                      border: OutlineInputBorder(),
                     ),
                   ),
                   const SizedBox(height: 16),
@@ -650,16 +650,16 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
       case CustomFormFieldType.choice:
       case CustomFormFieldType.multiselect:
         return [
-          Text('Options', style: const TextStyle(fontWeight: FontWeight.bold)),
+          const Text('Options', style: TextStyle(fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
           Row(
             children: [
               Expanded(
                 child: TextFormField(
                   controller: _optionController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Add Option',
-                    border: const OutlineInputBorder(),
+                    border: OutlineInputBorder(),
                   ),
                   onFieldSubmitted: (_) => _addOption(),
                 ),
@@ -700,9 +700,9 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
               Expanded(
                 child: TextFormField(
                   controller: _minValueController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Minimum Value',
-                    border: const OutlineInputBorder(),
+                    border: OutlineInputBorder(),
                   ),
                   keyboardType: TextInputType.number,
                   inputFormatters: [FilteringTextInputFormatter.digitsOnly],
@@ -712,9 +712,9 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
               Expanded(
                 child: TextFormField(
                   controller: _maxValueController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Maximum Value',
-                    border: const OutlineInputBorder(),
+                    border: OutlineInputBorder(),
                   ),
                   keyboardType: TextInputType.number,
                   inputFormatters: [FilteringTextInputFormatter.digitsOnly],
@@ -732,9 +732,9 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
               Expanded(
                 child: TextFormField(
                   controller: _minLengthController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Minimum Length',
-                    border: const OutlineInputBorder(),
+                    border: OutlineInputBorder(),
                   ),
                   keyboardType: TextInputType.number,
                   inputFormatters: [FilteringTextInputFormatter.digitsOnly],
@@ -744,9 +744,9 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
               Expanded(
                 child: TextFormField(
                   controller: _maxLengthController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: 'Maximum Length',
-                    border: const OutlineInputBorder(),
+                    border: OutlineInputBorder(),
                   ),
                   keyboardType: TextInputType.number,
                   inputFormatters: [FilteringTextInputFormatter.digitsOnly],
@@ -757,18 +757,18 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
           const SizedBox(height: 16),
           TextFormField(
             controller: _validationPatternController,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               labelText: 'Validation Pattern (Optional)',
-              border: const OutlineInputBorder(),
+              border: OutlineInputBorder(),
               hintText: 'RegEx pattern',
             ),
           ),
           const SizedBox(height: 16),
           TextFormField(
             controller: _validationMessageController,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               labelText: 'Validation Message (Optional)',
-              border: const OutlineInputBorder(),
+              border: OutlineInputBorder(),
             ),
           ),
         ];
