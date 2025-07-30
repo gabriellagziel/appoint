@@ -1,26 +1,24 @@
 /// APP-OINT Branding Constants
 /// This file contains all branding-related constants for the APP-OINT platform
-library;
 
 class AppBranding {
   // App Name
   static const String appName = 'APP-OINT';
   static const String appNameShort = 'AppOint';
 
-  // Official Slogan - DO NOT TRANSLATE
+  // Official Slogan
   static const String slogan = 'Time Organized';
   static const String sloganSubtitle = 'Set Send Done';
   static const String fullSlogan = '$slogan • $sloganSubtitle';
 
   // Logo Assets
-  static const String logoPath = 'assets/images/app_oint_logo.svg';
-  static const String logoIconPath = 'assets/images/app_oint_logo.svg';
-  static const String faviconPath = 'web/favicon.png';
+  static const String logoPath = 'assets/images/app_oint_logo.png';
+  static const String logoIconPath = 'assets/images/app_oint_icon.png';
+  static const String faviconPath = 'assets/images/favicon.png';
 
   // App Icons
   static const String appIconPath = 'assets/images/app_icon.png';
-  static const String appIconMaskablePath =
-      'assets/images/app_icon_maskable.png';
+  static const String appIconMaskablePath = 'assets/images/app_icon_maskable.png';
 
   // Brand Colors (extracted from the logo)
   static const int primaryOrange = 0xFFFF8C00; // Top figure
