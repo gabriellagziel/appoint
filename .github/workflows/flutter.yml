@@ -7,25 +7,81 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  analyze_and_test:
+    name: Analyze & Test
     runs-on: ubuntu-latest
-
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Flutter
+      - name: Check required network access
+        run: |
+          for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
+            for i in 1 2 3; do
+              curl --head --fail https://$host && break || sleep 5
+            done
+          done
+      - name: Setup Flutter SDK
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.19.0'
-          channel: 'stable'
-      - name: Install dependencies
-        run: flutter pub get
-      - name: Generate code
-        run: flutter pub run build_runner build --delete-conflicting-outputs
-      - name: Analyze
-        run: flutter analyze
-      - name: Run tests
-        run: flutter test --coverage
-      - name: Upload coverage
-        uses: codecov/codecov-action@v3
+          flutter-version: '3.32.0'
+          cache: true
+      - name: Setup Dart SDK
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: '3.4.0'
+      - name: Ensure Flutter & Dart in PATH
+        run: |
+          echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+          echo "$HOME/.flutter/bin/cache/dart-sdk/bin" >> $GITHUB_PATH
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
+      - name: Configure Network Allowlist
+        run: |
+          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
+      - name: Clear Flutter cache
+        run: flutter clean
+      - name: Verify Flutter Version
+        run: flutter --version
+      - name: "Pre-flight: Verify network & Dart"
+        run: |
+    which dart
+          dart --version
+          for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
+            curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
+          done
+      - name: Get dependencies with retry
+        run: |
+          for i in 1 2 3; do
+            flutter pub get && break || sleep 5
+          done
+      - run: dart pub get
+      - name: Verify firebase_app_check resolution
+        run: grep firebase_app_check pubspec.lock
+      - run: dart run build_runner build --delete-conflicting-outputs
+      - name: Configure offline pub cache
+        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Fetch dependencies offline
+        run: flutter pub get --offline
+      - run: flutter analyze
+      - run: dart analyze
+      - name: Run tests with coverage
+          run: flutter test --coverage
+      - run: dart test integration_test/
+      - run: flutter build web
+      - uses: codecov/codecov-action@v3
         with:
           files: coverage/lcov.info
+          fail_ci_if_error: true
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
