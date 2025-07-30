@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
 
-/// Simple screen displayed when there is no content available.
 class EmptyScreen extends StatelessWidget {
-  final VoidCallback onExplore;
+  final String message;
+  final VoidCallback? onExplore;
 
-  const EmptyScreen({
-    super.key,
-    required this.onExplore,
-  });
+  const EmptyScreen({super.key, this.message = 'Nothing here yet', this.onExplore});
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text('Nothing here yet', textAlign: TextAlign.center),
+          Text(message, textAlign: TextAlign.center),
           const SizedBox(height: 24),
           ElevatedButton(
             onPressed: onExplore,
