@@ -1,6 +1,7 @@
-// import 'package:appoint/models/appointment.dart'; // Unused
-// import 'package:appoint/models/business_profile.dart'; // Unused
+import 'package:appoint/models/appointment.dart';
+import 'package:appoint/models/business_profile.dart';
 import 'package:appoint/providers/studio_business_providers.dart';
+import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -9,13 +10,16 @@ class CRMDashboardScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    final profileAsync = ref.watch(businessProfileProvider);
+    final profile = ref.watch(studioBusinessProfileProvider);
+
+    if (profile == null) {
+      return const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
 
     return Scaffold(
-      body: profileAsync.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, final _) => Center(child: Text('Error: $e')),
-        data: (profile) => Row(
+      body: Row(
           children: [
             // Sidebar
             Container(
@@ -36,9 +40,7 @@ class CRMDashboardScreen extends ConsumerWidget {
                         Text(
                           profile.name,
                           style: const TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
+                              fontSize: 18, fontWeight: FontWeight.bold,),
                         ),
                       ],
                     ),
@@ -97,25 +99,20 @@ class CRMDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildNavItem(
-    final BuildContext context,
-    final String title,
-    final IconData icon,
-    final VoidCallback onTap, {
-    bool isSelected = false,
-  }) =>
-      ListTile(
-        leading: Icon(icon, color: isSelected ? Colors.blue : Colors.grey),
-        title: Text(
-          title,
-          style: TextStyle(
-            color: isSelected ? Colors.blue : Colors.black,
-            fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
-          ),
+  Widget _buildNavItem(final BuildContext context, final String title,
+      final IconData icon, final VoidCallback onTap,
+      {bool isSelected = false,}) => ListTile(
+      leading: Icon(icon, color: isSelected ? Colors.blue : Colors.grey),
+      title: Text(
+        title,
+        style: TextStyle(
+          color: isSelected ? Colors.blue : Colors.black,
+          fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
         ),
-        onTap: onTap,
-        selected: isSelected,
-      );
+      ),
+      onTap: onTap,
+      selected: isSelected,
+    );
 }
 
 class DashboardHome extends ConsumerWidget {
@@ -123,13 +120,14 @@ class DashboardHome extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    final profileAsync = ref.watch(businessProfileProvider);
+    final profile = ref.watch(studioBusinessProfileProvider);
     final statsAsync = ref.watch(dashboardStatsProvider);
 
-    return profileAsync.when(
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (e, final _) => Center(child: Text('Error: $e')),
-      data: (profile) => Padding(
+    if (profile == null) {
+      return const Center(child: CircularProgressIndicator());
+    }
+
+    return Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -155,20 +153,14 @@ class DashboardHome extends ConsumerWidget {
                 // Quick Stats
                 Row(
                   children: [
-                    _buildStatCard(
-                      'Weekly Bookings',
-                      '${statsAsync['totalBookings'] ?? 0}',
-                    ),
+                    _buildStatCard('Weekly Bookings',
+                        '${statsAsync['totalBookings'] ?? 0}',),
                     const SizedBox(width: 16),
                     _buildStatCard(
-                      'Total Clients',
-                      '${statsAsync['totalClients'] ?? 0}',
-                    ),
+                        'Total Clients', '${statsAsync['totalClients'] ?? 0}',),
                     const SizedBox(width: 16),
-                    _buildStatCard(
-                      'Upcoming',
-                      '${statsAsync['upcomingAppointments'] ?? 0}',
-                    ),
+                    _buildStatCard('Upcoming',
+                        '${statsAsync['upcomingAppointments'] ?? 0}',),
                   ],
                 ),
               ],
@@ -237,67 +229,55 @@ class DashboardHome extends ConsumerWidget {
   }
 
   Widget _buildStatCard(String title, final String value) => Card(
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              Text(title, style: const TextStyle(fontSize: 12)),
-              const SizedBox(height: 4),
-              Text(
-                value,
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            Text(title, style: const TextStyle(fontSize: 12)),
+            const SizedBox(height: 4),
+            Text(value,
                 style:
-                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-            ],
-          ),
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+          ],
         ),
-      );
+      ),
+    );
 
   Widget _buildKPICard(
-    String title,
-    final String value,
-    final IconData icon,
-  ) =>
-      Card(
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            children: [
-              Icon(icon, size: 32, color: Colors.blue),
-              const SizedBox(height: 8),
-              Text(
-                value,
+      String title, final String value, final IconData icon,) => Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            Icon(icon, size: 32, color: Colors.blue),
+            const SizedBox(height: 8),
+            Text(value,
                 style:
-                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-              Text(title, style: const TextStyle(fontSize: 14)),
-            ],
-          ),
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
+            Text(title, style: const TextStyle(fontSize: 14)),
+          ],
         ),
-      );
+      ),
+    );
 
   Widget _buildQuickAction(
-    String title,
-    final IconData icon,
-    final VoidCallback onTap,
-  ) =>
-      Expanded(
-        child: Card(
-          child: InkWell(
-            onTap: onTap,
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                children: [
-                  Icon(icon, size: 32),
-                  const SizedBox(height: 8),
-                  Text(title, textAlign: TextAlign.center),
-                ],
-              ),
+      String title, final IconData icon, final VoidCallback onTap,) => Expanded(
+      child: Card(
+        child: InkWell(
+          onTap: onTap,
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              children: [
+                Icon(icon, size: 32),
+                const SizedBox(height: 8),
+                Text(title, textAlign: TextAlign.center),
+              ],
             ),
           ),
         ),
-      );
+      ),
+    );
 }
 
 // Real screens for other sections
@@ -306,7 +286,7 @@ class ClientsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    final clientsAsync = ref.watch(clientsProvider);
+    clientsAsync = ref.watch(clientsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Clients')),
@@ -325,7 +305,8 @@ class ClientsScreen extends ConsumerWidget {
           },
         ),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, final stack) => Center(child: Text('Error: $error')),
+        error: (error, final stack) =>
+            Center(child: Text('Error: $error')),
       ),
     );
   }
@@ -336,7 +317,7 @@ class AppointmentsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    final appointmentsAsync = ref.watch(appointmentsProvider);
+    appointmentsAsync = ref.watch(appointmentsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Appointments')),
@@ -353,7 +334,8 @@ class AppointmentsScreen extends ConsumerWidget {
           },
         ),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, final stack) => Center(child: Text('Error: $error')),
+        error: (error, final stack) =>
+            Center(child: Text('Error: $error')),
       ),
     );
   }
