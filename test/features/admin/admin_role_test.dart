@@ -9,6 +9,8 @@ import '../../firebase_test_helper.dart';
 class MockFirebaseAuth extends Mock implements FirebaseAuth {}
 
 late MockFirebaseAuth mockAuth;
+late ProviderContainer container;
+late bool isAdmin;
 
 void main() {
   setUpAll(() async {

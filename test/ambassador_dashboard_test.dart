@@ -27,13 +27,6 @@ void main() {
   late MockNotificationService mockNotificationService;
   late MockBranchService mockBranchService;
   late ProviderContainer container;
-  late Finder countryDropdowns;
-  late Finder usaOption;
-  late Finder languageDropdowns;
-  late Finder spanishOption;
-  late Finder clearFiltersButton;
-  late AsyncValue<AmbassadorData> state;
-  late AmbassadorDataNotifier notifier;
 
   setUp(() {
     mockService = MockAmbassadorService();
@@ -41,17 +34,16 @@ void main() {
     mockBranchService = MockBranchService();
 
     // Stub the notification service to prevent Firebase calls
-    when(
-      () => mockNotificationService.initialize(
-        onMessage: any(named: 'onMessage'),
-      ),
-    ).thenAnswer((_) async {});
+    when(() => mockNotificationService.initialize(onMessage: any(named: 'onMessage')))
+        .thenAnswer((_) async {});
 
     // Stub the branch service to return empty list
     when(() => mockBranchService.fetchBranches()).thenAnswer((_) async => []);
 
     container = ProviderContainer(
-      overrides: [ambassadorServiceProvider.overrideWithValue(mockService)],
+      overrides: [
+        ambassadorServiceProvider.overrideWithValue(mockService),
+      ],
     );
   });
 
@@ -61,9 +53,9 @@ void main() {
 
   group('Ambassador Dashboard Tests', () {
     testWidgets('should display loading state initially', (tester) async {
-      when(
-        () => mockService.fetchAmbassadorStats(),
-      ).thenAnswer((_) async => Future.delayed(const Duration(seconds: 1)));
+      when(() => mockService.fetchAmbassadorStats()).thenAnswer(
+        (_) async => Future.delayed(const Duration(seconds: 1)),
+      );
 
       await tester.pumpWidget(
         REDACTED_TOKEN(
@@ -82,9 +74,8 @@ void main() {
       expect(find.byType(CircularProgressIndicator), findsAtLeastNWidgets(1));
     });
 
-    testWidgets('should display data table with ambassador stats', (
-      tester,
-    ) async {
+    testWidgets('should display data table with ambassador stats',
+        (tester) async {
       final mockStats = [
         AmbassadorStats(
           country: 'United States',
@@ -104,9 +95,8 @@ void main() {
         ),
       ];
 
-      when(
-        () => mockService.fetchAmbassadorStats(),
-      ).thenAnswer((_) async => mockStats);
+      when(() => mockService.fetchAmbassadorStats())
+          .thenAnswer((_) async => mockStats);
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
           label: 'United States',
@@ -164,9 +154,8 @@ void main() {
       ];
 
       // Mock service to return all data (filtering happens locally in widget)
-      when(
-        () => mockService.fetchAmbassadorStats(),
-      ).thenAnswer((_) async => allStats);
+      when(() => mockService.fetchAmbassadorStats())
+          .thenAnswer((_) async => allStats);
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
           label: 'United States',
@@ -203,7 +192,7 @@ void main() {
       // Find and tap the country dropdown
       countryDropdowns = find.byType(DropdownButtonFormField<String>);
       expect(countryDropdowns, findsWidgets);
-
+      
       // Tap the first dropdown (country filter)
       await tester.tap(countryDropdowns.first);
       await tester.pumpAndSettle();
@@ -239,9 +228,8 @@ void main() {
       ];
 
       // Mock service to return all data (filtering happens locally in widget)
-      when(
-        () => mockService.fetchAmbassadorStats(),
-      ).thenAnswer((_) async => allStats);
+      when(() => mockService.fetchAmbassadorStats())
+          .thenAnswer((_) async => allStats);
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
           label: 'United States',
@@ -278,7 +266,7 @@ void main() {
       // Find and tap the language dropdown (second dropdown)
       languageDropdowns = find.byType(DropdownButtonFormField<String>);
       expect(languageDropdowns, findsWidgets);
-
+      
       // Tap the second dropdown (language filter)
       await tester.tap(languageDropdowns.at(1));
       await tester.pumpAndSettle();
@@ -293,9 +281,8 @@ void main() {
       expect(find.text('Spain'), findsWidgets);
     });
 
-    testWidgets('should clear filters when clear button is pressed', (
-      tester,
-    ) async {
+    testWidgets('should clear filters when clear button is pressed',
+        (tester) async {
       final allStats = [
         AmbassadorStats(
           country: 'United States',
@@ -315,9 +302,8 @@ void main() {
         ),
       ];
 
-      when(
-        () => mockService.fetchAmbassadorStats(),
-      ).thenAnswer((_) async => allStats);
+      when(() => mockService.fetchAmbassadorStats())
+          .thenAnswer((_) async => allStats);
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
           label: 'United States',
@@ -359,88 +345,90 @@ void main() {
       expect(find.text('Spain'), findsWidgets);
     });
 
-    testWidgets('should display chart when data is available', (tester) async {
-      final mockStats = [
-        AmbassadorStats(
-          country: 'United States',
-          language: 'English',
-          ambassadors: 45,
-          referrals: 128,
-          surveyScore: 4.2,
-          date: DateTime.now(),
-        ),
-        AmbassadorStats(
-          country: 'Spain',
-          language: 'Spanish',
-          ambassadors: 32,
-          referrals: 89,
-          surveyScore: 4.5,
-          date: DateTime.now(),
-        ),
-      ];
+    testWidgets(
+      'should display chart when data is available',
+      (tester) async {
+        final mockStats = [
+          AmbassadorStats(
+            country: 'United States',
+            language: 'English',
+            ambassadors: 45,
+            referrals: 128,
+            surveyScore: 4.2,
+            date: DateTime.now(),
+          ),
+          AmbassadorStats(
+            country: 'Spain',
+            language: 'Spanish',
+            ambassadors: 32,
+            referrals: 89,
+            surveyScore: 4.5,
+            date: DateTime.now(),
+          ),
+        ];
 
-      when(
-        () => mockService.fetchAmbassadorStats(),
-      ).thenAnswer((_) async => mockStats);
-      when(() => mockService.generateChartData(any())).thenReturn([
-        const ChartDataPoint(
-          label: 'United States',
-          value: 45,
-          category: 'ambassadors',
-        ),
-        const ChartDataPoint(
-          label: 'Spain',
-          value: 32,
-          category: 'ambassadors',
-        ),
-      ]);
+        when(() => mockService.fetchAmbassadorStats())
+            .thenAnswer((_) async => mockStats);
+        when(() => mockService.generateChartData(any())).thenReturn([
+          const ChartDataPoint(
+            label: 'United States',
+            value: 45,
+            category: 'ambassadors',
+          ),
+          const ChartDataPoint(
+            label: 'Spain',
+            value: 32,
+            category: 'ambassadors',
+          ),
+        ]);
 
-      await tester.pumpWidget(
-        REDACTED_TOKEN(
-          UncontrolledProviderScope(
-            container: container,
-            child: MaterialApp(
-              home: AmbassadorDashboardScreen(
-                notificationService: mockNotificationService,
-                branchService: mockBranchService,
+        await tester.pumpWidget(
+          REDACTED_TOKEN(
+            UncontrolledProviderScope(
+              container: container,
+              child: MaterialApp(
+                home: AmbassadorDashboardScreen(
+                  notificationService: mockNotificationService,
+                  branchService: mockBranchService,
+                ),
               ),
             ),
           ),
-        ),
-      );
+        );
 
-      await tester.pumpAndSettle();
+        await tester.pumpAndSettle();
 
-      // Should display chart
-      expect(find.byType(BarChart), findsOneWidget);
-    }, skip: true);
+        // Should display chart
+        expect(find.byType(BarChart), findsOneWidget);
+      },
+    );
 
-    testWidgets('should display error state when service fails', (
-      tester,
-    ) async {
-      when(
-        () => mockService.fetchAmbassadorStats(),
-      ).thenThrow(Exception('Service error'));
+    testWidgets(
+      'should display error state when service fails',
+      (tester) async {
+        when(() => mockService.fetchAmbassadorStats())
+            .thenThrow(Exception('Service error'));
 
-      await tester.pumpWidget(
-        REDACTED_TOKEN(
-          UncontrolledProviderScope(
-            container: container,
-            child: MaterialApp(
-              home: AmbassadorDashboardScreen(
-                notificationService: mockNotificationService,
-                branchService: mockBranchService,
+        await tester.pumpWidget(
+          REDACTED_TOKEN(
+            UncontrolledProviderScope(
+              container: container,
+              child: MaterialApp(
+                home: AmbassadorDashboardScreen(
+                  notificationService: mockNotificationService,
+                  branchService: mockBranchService,
+                ),
               ),
             ),
           ),
-        ),
-      );
+        );
 
-      await tester.pumpAndSettle();
+        await tester.pumpAndSettle();
 
-      expect(find.byIcon(Icons.error), findsAtLeastNWidgets(1));
-      expect(find.textContaining('Error:'), findsAtLeastNWidgets(1));
-    }, skip: true);
+        expect(find.byIcon(Icons.error), findsAtLeastNWidgets(1));
+        expect(find.textContaining('Error:'), findsAtLeastNWidgets(1));
+      },
+    );
   });
 
   group('Ambassador Data Provider Tests', () {
@@ -456,9 +444,8 @@ void main() {
         ),
       ];
 
-      when(
-        () => mockService.fetchAmbassadorStats(),
-      ).thenAnswer((_) async => mockStats);
+      when(() => mockService.fetchAmbassadorStats())
+          .thenAnswer((_) async => mockStats);
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
           label: 'United States',
@@ -471,7 +458,7 @@ void main() {
       await Future.doWhile(() async {
         state = container.read(ambassadorDataProvider);
         if (state is AsyncData<AmbassadorData>) {
-          expect(state.value?.stats, equals(mockStats));
+          expect(state.value.stats, equals(mockStats));
           return false;
         }
         await Future.delayed(const Duration(milliseconds: 10));
@@ -491,12 +478,10 @@ void main() {
         ),
       ];
 
-      when(
-        () => mockService.fetchAmbassadorStats(),
-      ).thenAnswer((_) async => mockStats);
-      when(
-        () => mockService.fetchAmbassadorStats(country: 'United States'),
-      ).thenAnswer((_) async => mockStats);
+      when(() => mockService.fetchAmbassadorStats())
+          .thenAnswer((_) async => mockStats);
+      when(() => mockService.fetchAmbassadorStats(country: 'United States'))
+          .thenAnswer((_) async => mockStats);
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
           label: 'United States',
@@ -513,9 +498,8 @@ void main() {
         const Duration(milliseconds: 100),
       ); // Wait for async operation
 
-      verify(
-        () => mockService.fetchAmbassadorStats(country: 'United States'),
-      ).called(1);
+      verify(() => mockService.fetchAmbassadorStats(country: 'United States'))
+          .called(1);
     });
 
     test('should clear filters and reload data', () async {
@@ -530,9 +514,8 @@ void main() {
         ),
       ];
 
-      when(
-        () => mockService.fetchAmbassadorStats(),
-      ).thenAnswer((_) async => mockStats);
+      when(() => mockService.fetchAmbassadorStats())
+          .thenAnswer((_) async => mockStats);
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
           label: 'United States',
