@@ -1,216 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <base href="/" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="APP-OINT">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>APP-OINT - Time Organized. Set Send Done.</title>
-  <link rel="manifest" href="manifest.json">
-  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin" />
-  <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp" />
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="APP-OINT - Time Organized. Set Send Done.">
-  <meta property="og:description" content="APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://app-oint.com">
-  <meta property="og:image" content="icons/Icon-512.png">
-
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="APP-OINT - Time Organized. Set Send Done.">
-  <meta name="twitter:description" content="APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform">
-  <meta name="twitter:image" content="icons/Icon-512.png">
-
-  <!-- Google Identity Services SDK -->
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
-
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-analytics-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore-compat.js"></script>
-
-  <!-- Required meta tags for Google Sign-In -->
-  <meta name="google-signin-client_id" content="944776470711-7lbv8tlpq9dju8967pg88v6as328.googleusercontent.com">
-
-  <!-- SEO Structured Data - JSON-LD Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://app-oint.com/#organization",
-        "name": "APP-OINT",
-        "url": "https://app-oint.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://app-oint.com/icons/Icon-512.png",
-          "width": 512,
-          "height": 512
-        },
-        "description": "APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform",
-        "contactPoint": [
-          {
-            "@type": "ContactPoint",
-            "telephone": "+1-800-APP-OINT",
-            "contactType": "customer service",
-            "availableLanguage": ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Russian", "Chinese", "Japanese", "Korean", "Arabic", "Hindi", "Persian", "Turkish", "Polish", "Czech", "Danish", "Finnish", "Norwegian", "Swedish", "Estonian", "Latvian", "Lithuanian", "Slovenian", "Slovak", "Croatian", "Serbian", "Bulgarian", "Romanian", "Hungarian", "Greek", "Hebrew", "Thai", "Vietnamese", "Malay", "Indonesian", "Tagalog", "Ukrainian", "Belarusian", "Georgian", "Armenian", "Azerbaijani", "Kazakh", "Uzbek", "Kyrgyz", "Mongolian", "Tibetan", "Nepali", "Bengali", "Tamil", "Telugu", "Marathi", "Gujarati", "Punjabi", "Urdu", "Pashto", "Dari"]
-          },
-          {
-            "@type": "ContactPoint",
-            "email": "support@app-oint.com",
-            "contactType": "customer service"
-          },
-          {
-            "@type": "ContactPoint",
-            "email": "legal@app-oint.com",
-            "contactType": "legal"
-          },
-          {
-            "@type": "ContactPoint",
-            "email": "privacy@app-oint.com",
-            "contactType": "privacy"
-          }
-        ],
-        "sameAs": [
-          "https://twitter.com/app_oint",
-          "https://facebook.com/app.oint",
-          "https://linkedin.com/company/app-oint"
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://app-oint.com/#website",
-        "url": "https://app-oint.com",
-        "name": "APP-OINT",
-        "description": "APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform",
-        "publisher": {
-          "@id": "https://app-oint.com/#organization"
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://app-oint.com/search?q={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        },
-        "inLanguage": ["en", "es", "fr", "de", "it", "pt", "nl", "ru", "zh", "ja", "ko", "ar", "hi", "fa", "tr", "pl", "cs", "da", "fi", "no", "sv", "et", "lv", "lt", "sl", "sk", "hr", "sr", "bg", "ro", "hu", "el", "he", "th", "vi", "ms", "id", "tl", "uk", "be", "ka", "hy", "az", "kk", "uz", "ky", "mn", "bo", "ne", "bn", "ta", "te", "mr", "gu", "pa", "ur", "ps"]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://app-oint.com/#breadcrumbs",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://app-oint.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Dashboard",
-            "item": "https://app-oint.com/dashboard"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Terms of Service",
-            "item": "https://app-oint.com/terms"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Privacy Policy",
-            "item": "https://app-oint.com/privacy"
-          }
-        ]
-      },
-      {
-        "@type": "WebApplication",
-        "@id": "https://app-oint.com/#webapp",
-        "name": "APP-OINT",
-        "description": "Healthcare appointment scheduling and management platform with multilingual support",
-        "url": "https://app-oint.com",
-        "applicationCategory": "HealthApplication",
-        "operatingSystem": "Web, iOS, Android",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock"
-        },
-        "featureList": [
-          "Appointment scheduling",
-          "Healthcare provider management", 
-          "Multilingual support (56 languages)",
-          "Family account management",
-          "COPPA and GDPR compliant",
-          "Real-time notifications",
-          "Calendar integration"
-        ]
-      }
-    ]
-  }
-  </script>
-
-  <script>
-    // Firebase Configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyA8aBdSq3ZWY47uGuccuypI5FKFQBSjpY",
-      authDomain: "app-oint-core.firebaseapp.com",
-      projectId: "app-oint-core",
-      storageBucket: "app-oint-core.appspot.com",
-      messagingSenderId: "944776470711",
-      appId: "1:94477647711:web:6f38330",
-      measurementId: "G-HHH7T7HS"
-    };
-    
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-    
-    console.log('Firebase initialized successfully');
-  </script>
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = null;
-  </script>
+  <base href="$FLUTTER_BASE_HREF">
   
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="App-oint - Perfect Appointment System">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2196F3">
+  
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+  
+  <!-- SEO -->
+  <title>App-oint - Perfect Appointment System</title>
+  <meta name="description" content="The perfect appointment booking and management system for businesses and individuals">
+  <meta name="keywords" content="appointments, booking, calendar, scheduling, business">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    
+    #loading {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #2196F3;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
+  <div id="loading">
+    <div class="spinner"></div>
+    <p>Loading App-oint...</p>
+  </div>
+
   <script>
+    // Service Worker registration
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+    
+    // Handle routing for single page app
     window.addEventListener('load', function(ev) {
-      // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
         }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
       });
     });
   </script>
+  
+  <script src="flutter.js" defer></script>
 </body>
 </html>
