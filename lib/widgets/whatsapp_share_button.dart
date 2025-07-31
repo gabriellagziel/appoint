@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/models/appointment.dart';
 // import 'package:appoint/providers/whatsapp_share_provider.dart'; // Unused
 import 'package:flutter/material.dart';

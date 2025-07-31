@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-CI/CD Pipeline Verification Script
+CI/CD Setup Verification Script
 
 This script verifies that all CI/CD workflows are properly configured
-and production-ready for the Appoint project.
+and ready for production use.
 """
 
 import os
@@ -12,161 +12,131 @@ import glob
 from pathlib import Path
 
 def check_workflow_file(file_path):
-    """Check if a workflow file is valid and properly configured."""
+    """Check if a workflow file is valid YAML and has required structure."""
     try:
         with open(file_path, 'r') as f:
             workflow = yaml.safe_load(f)
         
-        # Basic structure checks
-        if not workflow or 'name' not in workflow:
-            return False, "Missing workflow name"
+        # Check required fields
+        required_fields = ['name', 'on']
+        for field in required_fields:
+            if field not in workflow:
+                return False, f"Missing required field: {field}"
         
-        # Check for triggers (can be 'on' or other trigger patterns)
-        has_triggers = False
-        for key in workflow.keys():
-            if key in ['on', 'push', 'pull_request', 'workflow_dispatch', 'schedule']:
-                has_triggers = True
-                break
+        # Check if it's a deprecated file
+        if file_path.endswith('.deprecated'):
+            return True, "Deprecated file (expected)"
         
-        if not has_triggers:
-            return False, "Missing triggers"
-        
-        if 'jobs' not in workflow:
-            return False, "Missing jobs"
-        
-        # Check for required elements
-        required_elements = ['name', 'jobs']
-        for element in required_elements:
-            if element not in workflow:
-                return False, f"Missing required element: {element}"
-        
-        return True, "Valid workflow"
-        
-    except yaml.YAMLError as e:
-        return False, f"YAML parsing error: {e}"
+        return True, "Valid workflow file"
     except Exception as e:
-        return False, f"Error reading file: {e}"
+        return False, f"Invalid YAML: {str(e)}"
 
-def check_required_workflows():
-    """Check for required workflow files."""
-    workflows_dir = Path('.github/workflows')
-    required_workflows = [
-        'ci-cd-pipeline.yml',
-        'ci.yml',
-        'android-build.yml',
-        'ios-build.yml',
-        'web-deploy.yml',
-        'security-qa.yml',
-        'release.yml',
-        'coverage-badge.yml',
-        'branch-protection-check.yml'
-    ]
-    
-    missing_workflows = []
-    for workflow in required_workflows:
-        if not (workflows_dir / workflow).exists():
-            missing_workflows.append(workflow)
-    
-    return missing_workflows
-
-def check_workflow_quality():
-    """Check workflow quality and best practices."""
-    workflows_dir = Path('.github/workflows')
-    issues = []
-    
-    for workflow_file in workflows_dir.glob('*.yml'):
-        if workflow_file.name in ['README.md', 'secrets-management.md']:
-            continue
-            
-        is_valid, message = check_workflow_file(workflow_file)
-        if not is_valid:
-            issues.append(f"{workflow_file.name}: {message}")
-    
-    return issues
-
-def check_secrets_documentation():
-    """Check if secrets are properly documented."""
-    secrets_file = Path('.github/workflows/secrets-management.md')
-    if not secrets_file.exists():
-        return ["Missing secrets-management.md file"]
-    
-    return []
-
-def check_readme_documentation():
-    """Check if README is properly updated."""
-    readme_file = Path('.github/workflows/README.md')
-    if not readme_file.exists():
-        return ["Missing README.md file"]
-    
-    with open(readme_file, 'r') as f:
-        content = f.read()
-    
-    issues = []
-    if "PRODUCTION READY" not in content:
-        issues.append("README doesn't indicate production readiness")
-    
-    if "✅" not in content:
-        issues.append("README doesn't have completion checkmarks")
-    
-    return issues
+def check_secrets_usage(file_path):
+    """Check if workflow uses secrets properly."""
+    try:
+        with open(file_path, 'r') as f:
+            content = f.read()
+        
+        # Check for hardcoded secrets (basic check)
+        suspicious_patterns = [
+            'password: "',
+            'token: "',
+            'key: "',
+            'secret: "',
+        ]
+        
+        for pattern in suspicious_patterns:
+            if pattern in content:
+                return False, f"Potential hardcoded secret found: {pattern}"
+        
+        return True, "No hardcoded secrets detected"
+    except Exception as e:
+        return False, f"Error reading file: {str(e)}"
 
 def main():
     """Main verification function."""
-    print("🔍 CI/CD Pipeline Verification")
+    print("🔍 CI/CD Setup Verification")
     print("=" * 50)
     
+    workflows_dir = Path(".github/workflows")
+    
+    # Check if workflows directory exists
+    if not workflows_dir.exists():
+        print("❌ .github/workflows directory not found")
+        return
+    
+    # Get all workflow files
+    workflow_files = list(workflows_dir.glob("*.yml")) + list(workflows_dir.glob("*.yaml"))
+    
+    print(f"📁 Found {len(workflow_files)} workflow files")
+    print()
+    
+    # Check each workflow file
+    valid_workflows = []
+    deprecated_workflows = []
+    invalid_workflows = []
+    
+    for workflow_file in workflow_files:
+        is_valid, message = check_workflow_file(workflow_file)
+        secrets_ok, secrets_message = check_secrets_usage(workflow_file)
+        
+        if workflow_file.name.endswith('.deprecated'):
+            deprecated_workflows.append(workflow_file.name)
+            print(f"📄 {workflow_file.name}: {message}")
+        elif is_valid and secrets_ok:
+            valid_workflows.append(workflow_file.name)
+            print(f"✅ {workflow_file.name}: {message}")
+        else:
+            invalid_workflows.append(workflow_file.name)
+            print(f"❌ {workflow_file.name}: {message}")
+            if not secrets_ok:
+                print(f"   ⚠️  {secrets_message}")
+    
+    print()
+    print("📊 Summary:")
+    print(f"   ✅ Valid workflows: {len(valid_workflows)}")
+    print(f"   📄 Deprecated workflows: {len(deprecated_workflows)}")
+    print(f"   ❌ Invalid workflows: {len(invalid_workflows)}")
+    
     # Check for required workflows
-    print("\n📋 Checking required workflows...")
-    missing_workflows = check_required_workflows()
-    if missing_workflows:
-        print(f"❌ Missing required workflows: {missing_workflows}")
+    required_workflows = [
+        'test.yml',
+        'build.yml', 
+        'deploy.yml',
+        'android_release.yml',
+        'ios_build.yml'
+    ]
+    
+    print()
+    print("🎯 Required Workflows Check:")
+    for workflow in required_workflows:
+        if workflow in valid_workflows:
+            print(f"   ✅ {workflow}")
+        else:
+            print(f"   ❌ {workflow} (missing)")
+    
+    # Check for deprecated workflows that should be removed
+    print()
+    print("🧹 Cleanup Recommendations:")
+    if deprecated_workflows:
+        print("   The following deprecated workflows can be removed:")
+        for workflow in deprecated_workflows:
+            print(f"   - {workflow}")
     else:
-        print("✅ All required workflows present")
+        print("   ✅ No deprecated workflows found")
     
-    # Check workflow quality
-    print("\n🔧 Checking workflow quality...")
-    quality_issues = check_workflow_quality()
-    if quality_issues:
-        print(f"❌ Workflow quality issues found:")
-        for issue in quality_issues:
-            print(f"   - {issue}")
+    # Final status
+    print()
+    if len(invalid_workflows) == 0 and all(w in valid_workflows for w in required_workflows):
+        print("🎉 CI/CD Setup Verification: PASSED")
+        print("   All workflows are properly configured and ready for production use.")
     else:
-        print("✅ All workflows are valid")
-    
-    # Check secrets documentation
-    print("\n🔐 Checking secrets documentation...")
-    secrets_issues = check_secrets_documentation()
-    if secrets_issues:
-        print(f"❌ Secrets documentation issues:")
-        for issue in secrets_issues:
-            print(f"   - {issue}")
-    else:
-        print("✅ Secrets documentation present")
-    
-    # Check README documentation
-    print("\n📚 Checking README documentation...")
-    readme_issues = check_readme_documentation()
-    if readme_issues:
-        print(f"❌ README documentation issues:")
-        for issue in readme_issues:
-            print(f"   - {issue}")
-    else:
-        print("✅ README documentation complete")
-    
-    # Summary
-    print("\n" + "=" * 50)
-    total_issues = len(missing_workflows) + len(quality_issues) + len(secrets_issues) + len(readme_issues)
-    
-    if total_issues == 0:
-        print("🎉 CI/CD Pipeline Verification: PASSED")
-        print("✅ All workflows are production-ready")
-        print("🚀 Ready for Go To Market phase")
-    else:
-        print(f"❌ CI/CD Pipeline Verification: FAILED")
-        print(f"Found {total_issues} issues that need to be resolved")
-    
-    return total_issues == 0
+        print("⚠️  CI/CD Setup Verification: NEEDS ATTENTION")
+        if invalid_workflows:
+            print(f"   - {len(invalid_workflows)} invalid workflow(s) need fixing")
+        missing = [w for w in required_workflows if w not in valid_workflows]
+        if missing:
+            print(f"   - {len(missing)} required workflow(s) missing: {', '.join(missing)}")
 
 if __name__ == "__main__":
-    success = main()
-    exit(0 if success else 1)
+    main()

@@ -1,16 +1,15 @@
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/models/meeting.dart';
-import 'package:appoint/providers/auth_provider.dart';
-import 'package:appoint/services/meeting_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:appoint/models/meeting.dart';
+import 'package:appoint/services/meeting_service.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CreateMeetingScreen extends ConsumerStatefulWidget {
   const CreateMeetingScreen({super.key});
 
   @override
-  ConsumerState<CreateMeetingScreen> createState() =>
-      _CreateMeetingScreenState();
+  ConsumerState<CreateMeetingScreen> createState() => _CreateMeetingScreenState();
 }
 
 class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
@@ -19,7 +18,7 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
   final _descriptionController = TextEditingController();
   final _locationController = TextEditingController();
   final _virtualUrlController = TextEditingController();
-
+  
   DateTime? _startTime;
   DateTime? _endTime;
   final List<MeetingParticipant> _participants = [];
@@ -40,16 +39,17 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
   }
 
   bool get _isEvent => _meetingType == MeetingType.event;
-
+  
   String get _typeDisplayName => _isEvent ? 'Event' : 'Meeting';
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+    final theme = Theme.of(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Create $_typeDisplayName'),
+        title: Text('Create ${_typeDisplayName}'),
         actions: [
           if (_isLoading)
             const Center(
@@ -104,8 +104,7 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed:
-                    _isLoading || !_canCreateMeeting ? null : _createMeeting,
+                onPressed: _isLoading || !_canCreateMeeting ? null : _createMeeting,
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                 ),
@@ -115,7 +114,7 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
                         width: 20,
                         child: CircularProgressIndicator(strokeWidth: 2),
                       )
-                    : Text('Create $_typeDisplayName'),
+                    : Text('Create ${_typeDisplayName}'),
               ),
             ),
           ],
@@ -151,11 +150,9 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
                 ),
                 const Spacer(),
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                   decoration: BoxDecoration(
-                    color: (isEvent ? Colors.orange : Colors.blue)
-                        .withValues(alpha: 0.1),
+                    color: (isEvent ? Colors.orange : Colors.blue).withOpacity(0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(
@@ -184,281 +181,282 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
     );
   }
 
-  Widget _buildBasicInfoSection(AppLocalizations l10n) => Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Basic Information',
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                ),
+  Widget _buildBasicInfoSection(AppLocalizations l10n) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Basic Information',
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
           ),
-          const SizedBox(height: 12),
-          TextFormField(
-            controller: _titleController,
-            decoration: InputDecoration(
-              labelText: '$_typeDisplayName Title',
-              hintText: 'Enter the ${_typeDisplayName.toLowerCase()} title',
-              border: const OutlineInputBorder(),
-            ),
-            validator: (value) {
-              if (value == null || value.trim().isEmpty) {
-                return 'Please enter a title';
-              }
-              return null;
-            },
+        ),
+        const SizedBox(height: 12),
+        TextFormField(
+          controller: _titleController,
+          decoration: InputDecoration(
+            labelText: '${_typeDisplayName} Title',
+            hintText: 'Enter the ${_typeDisplayName.toLowerCase()} title',
+            border: const OutlineInputBorder(),
           ),
-          const SizedBox(height: 12),
-          TextFormField(
-            controller: _descriptionController,
-            decoration: const InputDecoration(
-              labelText: 'Description (optional)',
-              hintText: 'Enter a description',
-              border: OutlineInputBorder(),
-            ),
-            maxLines: 3,
+          validator: (value) {
+            if (value == null || value.trim().isEmpty) {
+              return 'Please enter a title';
+            }
+            return null;
+          },
+        ),
+        const SizedBox(height: 12),
+        TextFormField(
+          controller: _descriptionController,
+          decoration: const InputDecoration(
+            labelText: 'Description (optional)',
+            hintText: 'Enter a description',
+            border: OutlineInputBorder(),
           ),
-        ],
-      );
+          maxLines: 3,
+        ),
+      ],
+    );
+  }
 
-  Widget _buildDateTimeSection(AppLocalizations l10n) => Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Date & Time',
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                ),
+  Widget _buildDateTimeSection(AppLocalizations l10n) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Date & Time',
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
           ),
-          const SizedBox(height: 12),
-          Row(
-            children: [
-              Expanded(
-                child: ListTile(
-                  title: const Text('Start Time'),
-                  subtitle: Text(_startTime?.toString() ?? 'Select start time'),
-                  leading: const Icon(Icons.access_time),
-                  onTap: () => _selectDateTime(true),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    side: const BorderSide(color: Colors.grey),
-                  ),
+        ),
+        const SizedBox(height: 12),
+        Row(
+          children: [
+            Expanded(
+              child: ListTile(
+                title: const Text('Start Time'),
+                subtitle: Text(_startTime?.toString() ?? 'Select start time'),
+                leading: const Icon(Icons.access_time),
+                onTap: () => _selectDateTime(true),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  side: const BorderSide(color: Colors.grey),
                 ),
               ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: ListTile(
-                  title: const Text('End Time'),
-                  subtitle: Text(_endTime?.toString() ?? 'Select end time'),
-                  leading: const Icon(Icons.access_time_filled),
-                  onTap: () => _selectDateTime(false),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    side: const BorderSide(color: Colors.grey),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      );
-
-  Widget _buildLocationSection(AppLocalizations l10n) => Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Location',
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                ),
-          ),
-          const SizedBox(height: 12),
-          TextFormField(
-            controller: _locationController,
-            decoration: const InputDecoration(
-              labelText: 'Physical Location (optional)',
-              hintText: 'Enter meeting location',
-              border: OutlineInputBorder(),
-              prefixIcon: Icon(Icons.location_on),
             ),
-          ),
-          const SizedBox(height: 12),
-          TextFormField(
-            controller: _virtualUrlController,
-            decoration: const InputDecoration(
-              labelText: 'Virtual Meeting URL (optional)',
-              hintText: 'Enter Zoom, Meet, or other meeting URL',
-              border: OutlineInputBorder(),
-              prefixIcon: Icon(Icons.videocam),
+            const SizedBox(width: 12),
+            Expanded(
+              child: ListTile(
+                title: const Text('End Time'),
+                subtitle: Text(_endTime?.toString() ?? 'Select end time'),
+                leading: const Icon(Icons.access_time_filled),
+                onTap: () => _selectDateTime(false),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  side: const BorderSide(color: Colors.grey),
+                ),
+              ),
             ),
-          ),
-        ],
-      );
+          ],
+        ),
+      ],
+    );
+  }
 
-  Widget _buildParticipantsSection(AppLocalizations l10n) => Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Text(
-                'Participants',
-                style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-              ),
-              const Spacer(),
-              TextButton.icon(
-                onPressed: _addParticipant,
-                icon: const Icon(Icons.person_add),
-                label: const Text('Add'),
-              ),
-            ],
+  Widget _buildLocationSection(AppLocalizations l10n) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Location',
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
           ),
-          const SizedBox(height: 12),
-          if (_participants.isEmpty)
-            Container(
-              padding: const EdgeInsets.all(16),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.grey.shade300),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Row(
-                children: [
-                  Icon(Icons.info_outline, color: Colors.grey[600]),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      'Add participants to your ${_typeDisplayName.toLowerCase()}. You need at least 1 participant.',
-                      style: TextStyle(color: Colors.grey[600]),
-                    ),
-                  ),
-                ],
-              ),
-            )
-          else
-            ...List.generate(_participants.length, (index) {
-              final participant = _participants[index];
-              return Card(
-                margin: const EdgeInsets.only(bottom: 8),
-                child: ListTile(
-                  leading: CircleAvatar(
-                    child: Text(participant.name[0].toUpperCase()),
-                  ),
-                  title: Text(participant.name),
-                  subtitle: Text(participant.email ?? ''),
-                  trailing: PopupMenuButton(
-                    itemBuilder: (context) => [
-                      PopupMenuItem(
-                        value: 'role',
-                        child: Text('Role: ${participant.role.name}'),
-                      ),
-                      if (_isEvent)
-                        PopupMenuItem(
-                          value: 'admin',
-                          child: Text(
-                            participant.role == ParticipantRole.admin
-                                ? 'Remove Admin'
-                                : 'Make Admin',
-                          ),
-                        ),
-                      const PopupMenuItem(
-                        value: 'remove',
-                        child:
-                            Text('Remove', style: TextStyle(color: Colors.red)),
-                      ),
-                    ],
-                    onSelected: (value) =>
-                        _handleParticipantAction(index, value),
-                  ),
-                ),
-              );
-            }),
-        ],
-      );
+        ),
+        const SizedBox(height: 12),
+        TextFormField(
+          controller: _locationController,
+          decoration: const InputDecoration(
+            labelText: 'Physical Location (optional)',
+            hintText: 'Enter meeting location',
+            border: OutlineInputBorder(),
+            prefixIcon: Icon(Icons.location_on),
+          ),
+        ),
+        const SizedBox(height: 12),
+        TextFormField(
+          controller: _virtualUrlController,
+          decoration: const InputDecoration(
+            labelText: 'Virtual Meeting URL (optional)',
+            hintText: 'Enter Zoom, Meet, or other meeting URL',
+            border: OutlineInputBorder(),
+            prefixIcon: Icon(Icons.videocam),
+          ),
+        ),
+      ],
+    );
+  }
 
-  Widget _buildEventFeaturesSection(AppLocalizations l10n) => Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Event Features',
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.orange,
-                ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'These features are available because this is an event (4+ participants):',
-            style: TextStyle(color: Colors.grey[600], fontSize: 12),
-          ),
-          const SizedBox(height: 12),
-          Card(
-            child: Column(
+  Widget _buildParticipantsSection(AppLocalizations l10n) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Text(
+              'Participants',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const Spacer(),
+            TextButton.icon(
+              onPressed: _addParticipant,
+              icon: const Icon(Icons.person_add),
+              label: const Text('Add'),
+            ),
+          ],
+        ),
+        const SizedBox(height: 12),
+        if (_participants.isEmpty)
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.grey.shade300),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Row(
               children: [
-                ListTile(
-                  leading: const Icon(Icons.assignment, color: Colors.orange),
-                  title: const Text('Custom Registration Form'),
-                  subtitle: const Text('Collect information from attendees'),
-                  trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                  onTap: () {
-                    // TODO: Navigate to form builder
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                          content: Text(
-                              'Form builder will be available after creating the event')),
-                    );
-                  },
-                ),
-                const Divider(),
-                ListTile(
-                  leading: const Icon(Icons.checklist, color: Colors.orange),
-                  title: const Text('Event Checklist'),
-                  subtitle: const Text('Organize tasks and preparation'),
-                  trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                  onTap: () {
-                    // TODO: Navigate to checklist builder
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                          content: Text(
-                              'Checklist will be available after creating the event')),
-                    );
-                  },
-                ),
-                const Divider(),
-                ListTile(
-                  leading: const Icon(Icons.chat, color: Colors.orange),
-                  title: const Text('Group Chat'),
-                  subtitle: const Text('Enable chat for all participants'),
-                  trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                  onTap: () {
-                    // TODO: Navigate to chat settings
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                          content: Text(
-                              'Group chat will be available after creating the event')),
-                    );
-                  },
+                Icon(Icons.info_outline, color: Colors.grey[600]),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    'Add participants to your ${_typeDisplayName.toLowerCase()}. You need at least 1 participant.',
+                    style: TextStyle(color: Colors.grey[600]),
+                  ),
                 ),
               ],
             ),
-          ),
-        ],
-      );
+          )
+        else
+          ...List.generate(_participants.length, (index) {
+            final participant = _participants[index];
+            return Card(
+              margin: const EdgeInsets.only(bottom: 8),
+              child: ListTile(
+                leading: CircleAvatar(
+                  child: Text(participant.name[0].toUpperCase()),
+                ),
+                title: Text(participant.name),
+                subtitle: Text(participant.email ?? ''),
+                trailing: PopupMenuButton(
+                  itemBuilder: (context) => [
+                    PopupMenuItem(
+                      value: 'role',
+                      child: Text('Role: ${participant.role.name}'),
+                    ),
+                    if (_isEvent)
+                      PopupMenuItem(
+                        value: 'admin',
+                        child: Text(
+                          participant.role == ParticipantRole.admin
+                              ? 'Remove Admin'
+                              : 'Make Admin',
+                        ),
+                      ),
+                    const PopupMenuItem(
+                      value: 'remove',
+                      child: Text('Remove', style: TextStyle(color: Colors.red)),
+                    ),
+                  ],
+                  onSelected: (value) => _handleParticipantAction(index, value.toString()),
+                ),
+              ),
+            );
+          }),
+      ],
+    );
+  }
 
-  bool get _canCreateMeeting =>
-      _titleController.text.trim().isNotEmpty &&
-      _startTime != null &&
-      _endTime != null &&
-      _participants.isNotEmpty &&
-      _startTime!.isBefore(_endTime!);
+  Widget _buildEventFeaturesSection(AppLocalizations l10n) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Event Features',
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+            color: Colors.orange,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          'These features are available because this is an event (4+ participants):',
+          style: TextStyle(color: Colors.grey[600], fontSize: 12),
+        ),
+        const SizedBox(height: 12),
+        Card(
+          child: Column(
+            children: [
+              ListTile(
+                leading: const Icon(Icons.assignment, color: Colors.orange),
+                title: const Text('Custom Registration Form'),
+                subtitle: const Text('Collect information from attendees'),
+                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                onTap: () {
+                  // TODO: Navigate to form builder
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Form builder will be available after creating the event')),
+                  );
+                },
+              ),
+              const Divider(),
+              ListTile(
+                leading: const Icon(Icons.checklist, color: Colors.orange),
+                title: const Text('Event Checklist'),
+                subtitle: const Text('Organize tasks and preparation'),
+                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                onTap: () {
+                  // TODO: Navigate to checklist builder
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Checklist will be available after creating the event')),
+                  );
+                },
+              ),
+              const Divider(),
+              ListTile(
+                leading: const Icon(Icons.chat, color: Colors.orange),
+                title: const Text('Group Chat'),
+                subtitle: const Text('Enable chat for all participants'),
+                trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                onTap: () {
+                  // TODO: Navigate to chat settings
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Group chat will be available after creating the event')),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  bool get _canCreateMeeting {
+    return _titleController.text.trim().isNotEmpty &&
+           _startTime != null &&
+           _endTime != null &&
+           _participants.isNotEmpty &&
+           _startTime!.isBefore(_endTime!);
+  }
 
   Future<void> _selectDateTime(bool isStartTime) async {
     final now = DateTime.now();
-    final initialDate = isStartTime
+    final initialDate = isStartTime 
         ? (_startTime ?? now.add(const Duration(days: 1)))
-        : (_endTime ??
-            _startTime?.add(const Duration(hours: 1)) ??
-            now.add(const Duration(days: 1, hours: 1)));
+        : (_endTime ?? _startTime?.add(const Duration(hours: 1)) ?? now.add(const Duration(days: 1, hours: 1)));
 
     final date = await showDatePicker(
       context: context,
@@ -543,10 +541,12 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
                 : ParticipantRole.admin,
           );
         });
+        break;
       case 'remove':
         setState(() {
           _participants.removeAt(index);
         });
+        break;
     }
   }
 
@@ -562,20 +562,20 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
       if (user == null) throw Exception('User not authenticated');
 
       final meetingService = MeetingService();
-
+      
       final meeting = await meetingService.createMeeting(
         organizerId: user.uid,
         title: _titleController.text.trim(),
-        description: _descriptionController.text.trim().isEmpty
-            ? null
+        description: _descriptionController.text.trim().isEmpty 
+            ? null 
             : _descriptionController.text.trim(),
         startTime: _startTime!,
         endTime: _endTime!,
-        location: _locationController.text.trim().isEmpty
-            ? null
+        location: _locationController.text.trim().isEmpty 
+            ? null 
             : _locationController.text.trim(),
-        virtualMeetingUrl: _virtualUrlController.text.trim().isEmpty
-            ? null
+        virtualMeetingUrl: _virtualUrlController.text.trim().isEmpty 
+            ? null 
             : _virtualUrlController.text.trim(),
         participants: _participants,
       );
@@ -593,8 +593,7 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content:
-                Text('Error creating ${_typeDisplayName.toLowerCase()}: $e'),
+            content: Text('Error creating ${_typeDisplayName.toLowerCase()}: $e'),
             backgroundColor: Colors.red,
           ),
         );

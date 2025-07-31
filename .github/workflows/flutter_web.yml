@@ -1,0 +1,81 @@
+name: Flutter Web CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      FLUTTER_CACHE_DIR: ~/.flutter
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Flutter SDK
+      uses: flutter-actions/setup-flutter@v2
+      with:
+        flutter-version: '3.20.0'
+    - name: Ensure flutter in PATH
+      run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+    - name: Cache Pub packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.pub-cache
+        key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pub-
+    - name: Clear Flutter cache
+      run: flutter clean
+    - name: Verify Flutter Version
+      run: flutter --version
+    - name: Ensure Dart CLI
+      run: |
+        which dart || {
+          echo "dart not found; adding Flutter bin to PATH";
+          echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+          export PATH="$HOME/.flutter/bin:$PATH"
+        }
+        which dart
+        dart --version
+    - name: Configure Network Allowlist
+      run: |
+        scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
+    - name: "Pre-flight: Verify network & Dart"
+      run: |
+        dart --version
+        for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
+        done
+    - run: flutter pub get
+    - run: dart pub get
+    - run: dart run build_runner build --delete-conflicting-outputs
+    - name: Configure offline pub cache
+      run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+    - name: Fetch dependencies offline
+      run: flutter pub get --offline
+    - run: flutter analyze
+    - run: dart analyze
+    - run: flutter test --coverage test/
+    - name: Integration tests
+      run: |
+        if which dart; then
+          dart test integration_test/
+        else
+          flutter test integration_test/
+        fi
+    - run: flutter build web --release
+    - name: Upload coverage artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: coverage/lcov.info
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: web-build
+        path: build/web/

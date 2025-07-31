@@ -106,7 +106,6 @@ class _SubscriptionManagementScreenState
           backgroundColor: Colors.red,
         ),
       );
-    } finally {
       setState(() => _isLoading = false);
     }
   }
@@ -155,8 +154,8 @@ class _SubscriptionManagementScreenState
       );
 
   Widget _buildSubscriptionWidget() {
-    final status = _subscriptionDetails?['status'] ?? 'inactive';
-    final subscriptionId = _subscriptionDetails?['subscriptionId'];
+    final status = _subscriptionDetails?['status'] as String? ?? 'inactive';
+    final subscriptionId = _subscriptionDetails?['subscriptionId'] as String?;
     final lastPaymentDate = _subscriptionDetails?['lastPaymentDate'];
 
     return Padding(
@@ -209,7 +208,7 @@ class _SubscriptionManagementScreenState
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      subscriptionId,
+                      subscriptionId ?? 'No ID',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                             fontFamily: 'monospace',
                           ),

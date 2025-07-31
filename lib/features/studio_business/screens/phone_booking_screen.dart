@@ -224,12 +224,10 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
           SnackBar(content: Text('Error: $e')),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isProcessing = false);
       }
     }
-  }
 
   Future<bool> _checkUserExists(String phoneNumber) async {
     try {
@@ -332,4 +330,3 @@ We'll see you soon!
       ),
     );
   }
-}

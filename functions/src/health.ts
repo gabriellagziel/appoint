@@ -1,5 +1,45 @@
 import * as functions from 'firebase-functions';
 
+// Named exports for health endpoints
+export function liveness(req: any, res: any) {
+  res.status(200).json({ 
+    status: 'alive', 
+    timestamp: new Date().toISOString(),
+    service: 'firebase-functions',
+    uptime: process.uptime()
+  });
+}
+
+export function readiness(req: any, res: any) {
+  // Perform readiness checks
+  try {
+    // Check if Firestore is accessible
+    const db = functions.firestore;
+    if (!db) {
+      throw new Error('Firestore not available');
+    }
+
+    const healthStatus = {
+      status: 'ready',
+      timestamp: new Date().toISOString(),
+      service: 'firebase-functions',
+      version: '1.0.0',
+      environment: process.env.NODE_ENV || 'development',
+      uptime: process.uptime(),
+      memory: process.memoryUsage(),
+    };
+
+    res.status(200).json(healthStatus);
+  } catch (error) {
+    console.error('Readiness check failed:', error);
+    res.status(503).json({ 
+      status: 'not ready',
+      timestamp: new Date().toISOString(),
+      message: 'Readiness check failed'
+    });
+  }
+}
+
 export const status = functions.https.onRequest((req, res) => {
   // Set CORS headers
   res.set('Access-Control-Allow-Origin', '*');

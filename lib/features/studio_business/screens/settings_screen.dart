@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:go_router/go_router.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
@@ -74,7 +75,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         );
       }
     }
-  }
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -154,7 +154,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             title: const Text('Edit Business Profile'),
             subtitle: const Text('Update your business information'),
             onTap: () {
-              Navigator.pushNamed(context, '/business/profile');
+              context.push('/business/profile');
             },
           ),
           ListTile(
@@ -193,4 +193,3 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         ],
       ),
     );
-}

@@ -1,0 +1,481 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+# This file contains valid GitHub Actions context access patterns
+# The IDE may show false positive warnings for context access
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (e.g., 1.0.0)'
+        required: true
+        type: string
+      release_type:
+        description: 'Type of release'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+
+env:
+  FLUTTER_VERSION: '3.24.5'
+  DART_VERSION: '3.4.0'
+
+jobs:
+  version-bump:
+    runs-on: ubuntu-latest
+    outputs:
+      new_version: ${{ steps.bump.outputs.new_version }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+
+      - name: Semantic version bump
+        id: bump
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            # Manual release with specified version and type
+            RELEASE_TYPE="${{ github.event.inputs.release_type }}"
+            if [ "$RELEASE_TYPE" = "patch" ]; then
+              flutter pub version patch
+            elif [ "$RELEASE_TYPE" = "minor" ]; then
+              flutter pub version minor
+            elif [ "$RELEASE_TYPE" = "major" ]; then
+              flutter pub version major
+            else
+              flutter pub version patch
+            fi
+            NEW_VERSION=$(grep '^version:' pubspec.yaml | awk '{print $2}')
+          else
+            # Automatic release based on tag
+            NEW_VERSION="${GITHUB_REF#refs/tags/v}"
+            flutter pub version $NEW_VERSION
+          fi
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add pubspec.yaml
+          git commit -m "Bump version to $NEW_VERSION" || echo "No changes to commit"
+          git tag v$NEW_VERSION
+          git push origin HEAD
+          git push origin v$NEW_VERSION
+
+  build-android:
+    needs: version-bump
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Build APK
+        run: |
+          flutter build apk --release --target-platform android-arm64
+          flutter build apk --release --target-platform android-arm
+          flutter build apk --release --target-platform android-x64
+
+      - name: Build App Bundle
+        run: flutter build appbundle --release
+
+      - name: Upload APK artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-apks
+          path: |
+            build/app/outputs/flutter-apk/app-arm64-release.apk
+            build/app/outputs/flutter-apk/app-arm-release.apk
+            build/app/outputs/flutter-apk/app-x64-release.apk
+          retention-days: 30
+
+      - name: Upload App Bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-appbundle
+          path: build/app/outputs/bundle/release/app-release.aab
+          retention-days: 30
+
+  build-ios:
+    needs: version-bump
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Build iOS
+        run: |
+          flutter build ios --release --no-codesign
+
+      - name: Upload iOS artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-build
+          path: build/ios/iphoneos/Runner.app
+          retention-days: 30
+
+  build-web:
+    needs: version-bump
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Build Web
+        run: flutter build web --release
+
+      - name: Upload Web artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-build
+          path: build/web
+          retention-days: 30
+
+  test:
+    needs: version-bump
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Run tests
+        run: flutter test
+
+      - name: Run integration tests
+        run: flutter test integration_test/
+
+      - name: Run accessibility tests
+        run: flutter test test/a11y/
+
+  security-scan:
+    needs: version-bump
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Security audit
+        run: flutter pub deps --style=tree
+
+      - name: Analyze code
+        run: flutter analyze
+
+      - name: Check for vulnerabilities
+        run: |
+          # Check for known vulnerabilities in dependencies
+          flutter pub deps --style=tree | grep -i "vulnerability\|security\|cve" || true
+
+  create-release:
+    needs: [version-bump, build-android, build-ios, build-web, test, security-scan]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
+    outputs:
+      new_version: ${{ needs.version-bump.outputs.new_version }}
+      html_url: ${{ steps.create_release.outputs.html_url }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Generate release notes
+        id: release_notes
+        run: |
+          VERSION="${{ needs.version-bump.outputs.new_version }}"
+          NOTES=$(bash scripts/generate_release_notes.sh "$VERSION")
+          echo "notes<<EOF" >> $GITHUB_OUTPUT
+          echo "$NOTES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ needs.version-bump.outputs.new_version }}
+          release_name: Release v${{ needs.version-bump.outputs.new_version }}
+          body: ${{ steps.release_notes.outputs.notes }}
+          draft: true
+          prerelease: false
+
+      - name: Download Android APKs
+        uses: actions/download-artifact@v4
+        with:
+          name: android-apks
+          path: android-apks
+
+      - name: Download Android App Bundle
+        uses: actions/download-artifact@v4
+        with:
+          name: android-appbundle
+          path: android-appbundle
+
+      - name: Download iOS Build
+        uses: actions/download-artifact@v4
+        with:
+          name: ios-build
+          path: ios-build
+
+      - name: Download Web Build
+        uses: actions/download-artifact@v4
+        with:
+          name: web-build
+          path: web-build
+
+      - name: Upload Android APKs to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./android-apks/app-arm64-release.apk
+          asset_name: appoint-arm64-release.apk
+          asset_content_type: application/vnd.android.package-archive
+
+      - name: Upload Android App Bundle to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./android-appbundle/app-release.aab
+          asset_name: appoint-release.aab
+          asset_content_type: application/octet-stream
+
+      - name: Upload Web Build to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./web-build
+          asset_name: web-build.zip
+          asset_content_type: application/zip
+
+  notify:
+    needs: [create-release]
+    runs-on: ubuntu-latest
+    if: always()
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+    steps:
+      - name: Notify Slack
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          channel: '#releases'
+          text: |
+            Release ${{ needs.create-release.outputs.new_version }} has been created!
+            :rocket: Download: ${{ needs.create-release.outputs.html_url }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+      - name: Notify Discord
+        uses: sarisia/actions-status-discord@v1
+        if: always()
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: ${{ job.status }}
+          title: Release ${{ needs.create-release.outputs.new_version }}
+          description: |
+            A new release has been created and is ready for download.
+            Download: ${{ needs.create-release.outputs.html_url }}
+
+  cleanup:
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Cleanup old artifacts
+        run: |
+          echo "Cleaning up old artifacts..."
+          # This would typically clean up old builds, but GitHub handles this automatically
+          echo "Cleanup completed"
+
+  build-and-test:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, '[skip ci]')
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.5'
+          channel: 'stable'
+      
+      - name: Get dependencies
+        run: flutter pub get
+      
+      - name: Run tests with coverage
+        run: flutter test --coverage
+      
+      - name: Check coverage threshold
+        run: |
+          COVERAGE=$(lcov --summary coverage/lcov.info | grep lines | awk '{print $2}' | sed 's/%//')
+          if (( $(echo "$COVERAGE < 80" | bc -l) )); then
+            echo "❌ Coverage ($COVERAGE%) below threshold (80%)"
+            exit 1
+          else
+            echo "✅ Coverage ($COVERAGE%) meets threshold (80%)"
+          fi
+      
+      - name: Build Android APK
+        run: flutter build apk --release
+      
+      - name: Build Android App Bundle
+        run: flutter build appbundle --release
+      
+      - name: Setup Ruby for Fastlane
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+      
+      - name: Install Fastlane
+        run: |
+          cd fastlane
+          bundle install
+      
+      - name: Get version from pubspec.yaml
+        id: version
+        run: |
+          VERSION=$(grep '^version:' pubspec.yaml | sed 's/version: //')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Extracted version: $VERSION"
+      
+      - name: Upload Android artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-builds
+          path: |
+            build/app/outputs/flutter-apk/app-release.apk
+            build/app/outputs/bundle/release/app-release.aab
+          retention-days: 30
+      
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 30
+
+  deploy:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && !contains(github.event.head_commit.message, '[skip ci]')
+    env:
+      PLAY_STORE_JSON_KEY: ${{ secrets.PLAY_STORE_JSON_KEY }}
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Download Android artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: android-builds
+          path: build/app/outputs/
+      
+      - name: Setup Ruby for Fastlane
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+      
+      - name: Install Fastlane
+        run: |
+          cd fastlane
+          bundle install
+      
+      - name: Deploy to Play Store
+        env:
+          PLAY_STORE_JSON_KEY: ${{ secrets.PLAY_STORE_JSON_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          cd fastlane
+          bundle exec fastlane android release
+      
+      - name: Update changelog
+        run: |
+          chmod +x scripts/update_changelog.sh
+          ./scripts/update_changelog.sh
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add CHANGELOG.md
+          git commit -m "📝 Update changelog for release" || echo "No changelog changes to commit"
+      
+      - name: Create release tag
+        run: |
+          VERSION=$(grep '^version:' pubspec.yaml | sed 's/version: //')
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git tag -a "v$VERSION" -m "Release v$VERSION"
+          git push origin "v$VERSION"
+          git push origin HEAD:main
+          echo "✅ Created and pushed tag v$VERSION" 

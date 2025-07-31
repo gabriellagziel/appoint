@@ -58,13 +58,13 @@ class SurveyEntryScreen extends ConsumerWidget {
                     child: const Icon(Icons.quiz, color: Colors.white),
                   ),
                   title: Text(
-                    survey['title'] ?? 'Untitled Survey',
+                    survey['title'] as String? ?? 'Untitled Survey',
                     style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                   subtitle: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(survey['description'] ?? 'No description'),
+                      Text(survey['description'] as String? ?? 'No description'),
                       const SizedBox(height: 4),
                       Row(
                         children: [
@@ -87,7 +87,7 @@ class SurveyEntryScreen extends ConsumerWidget {
                   ),
                   trailing: PopupMenuButton<String>(
                     onSelected: (value) =>
-                        _handleSurveyAction(context, ref, survey['id'], value),
+                        _handleSurveyAction(context, ref, survey['id'] as String, value),
                     itemBuilder: (context) => [
                       const PopupMenuItem(
                         value: 'edit',
@@ -267,7 +267,7 @@ class SurveyEntryScreen extends ConsumerWidget {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text(survey['title'] ?? 'Survey Details'),
+        title: Text(survey['title'] as String? ?? 'Survey Details'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
