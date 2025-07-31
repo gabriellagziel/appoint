@@ -1,0 +1,27 @@
+{
+  "analysis_date": "2025-07-31T12:21:22Z",
+  "project_id": "",
+  "crash_metrics": {
+    "ios": {
+      "crash_free_user_rate": "Not Available",
+      "total_crashes": "Not Available",
+      "total_users": "Not Available",
+      "builds_analyzed": [],
+      "top_crash_signatures": []
+    },
+    "android": {
+      "crash_free_user_rate": "Not Available", 
+      "total_crashes": "Not Available",
+      "total_users": "Not Available",
+      "builds_analyzed": [],
+      "top_crash_signatures": []
+    }
+  },
+  "status": "No crash data available - app not yet in production",
+  "recommendations": [
+    "Deploy to TestFlight/Play Store to collect crash data",
+    "Enable Firebase Crashlytics in production builds",
+    "Set up crash monitoring dashboard",
+    "Establish baseline crash rate before public launch"
+  ]
+}

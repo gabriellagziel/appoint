@@ -1,0 +1,24 @@
+name: appoint_sdk
+description: Official Dart/Flutter client SDK for App-Oint appointment booking system
+version: 1.0.0
+homepage: https://appoint.com
+repository: https://github.com/appoint/appoint-sdk-dart
+issue_tracker: https://github.com/appoint/appoint-sdk-dart/issues
+documentation: https://docs.appoint.com/sdk
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  # No flutter-specific dependencies needed for this SDK 

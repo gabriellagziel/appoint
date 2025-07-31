@@ -2,8 +2,8 @@ import * as functions from 'firebase-functions';
 
 // Named exports for health endpoints
 export function liveness(req: any, res: any) {
-  res.status(200).json({ 
-    status: 'alive', 
+  res.status(200).json({
+    status: 'alive',
     timestamp: new Date().toISOString(),
     service: 'firebase-functions',
     uptime: process.uptime()
@@ -32,7 +32,7 @@ export function readiness(req: any, res: any) {
     res.status(200).json(healthStatus);
   } catch (error) {
     console.error('Readiness check failed:', error);
-    res.status(503).json({ 
+    res.status(503).json({
       status: 'not ready',
       timestamp: new Date().toISOString(),
       message: 'Readiness check failed'
@@ -72,7 +72,7 @@ export const status = functions.https.onRequest((req, res) => {
     res.status(200).json(healthStatus);
   } catch (error) {
     console.error('Health check failed:', error);
-    res.status(500).json({ 
+    res.status(500).json({
       status: 'error',
       timestamp: new Date().toISOString(),
       message: 'Health check failed'

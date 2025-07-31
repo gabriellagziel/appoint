@@ -1,7 +1,7 @@
 import cors from 'cors';
 import express from 'express';
-import metricsRoute, { metricsMiddleware } from './metrics';
 import { liveness, readiness } from './health';
+import metricsRoute, { metricsMiddleware } from './metrics';
 
 const app = express();
 
