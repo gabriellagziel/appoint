@@ -1,0 +1,73 @@
+name: appoint-perfect
+services:
+- name: web
+  source_dir: /
+  github:
+    repo: gabriellagziel/appoint
+    branch: main
+    deploy_on_push: true
+  run_command: |
+    flutter pub get &&
+    flutter build web --release --web-renderer html &&
+    python3 -m http.server 8080 --directory build/web
+  environment_slug: flutter
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  http_port: 8080
+  routes:
+  - path: /
+    preserve_path_prefix: false
+  envs:
+  - key: FLUTTER_WEB_RENDERER
+    value: html
+  - key: FLUTTER_WEB_CANVASKIT_URL
+    value: https://unpkg.com/canvaskit-wasm@0.39.1/bin/
+- name: api
+  source_dir: /
+  github:
+    repo: gabriellagziel/appoint
+    branch: main
+    deploy_on_push: true
+  run_command: |
+    cd dashboard &&
+    npm install &&
+    npm start
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  http_port: 3000
+  routes:
+  - path: /api
+    preserve_path_prefix: true
+databases:
+- engine: MONGODB
+  name: appoint-db
+  num_nodes: 1
+  size: db-s-1vcpu-1gb
+  version: "4.4"
+domains:
+- domain: app-oint.com
+  type: PRIMARY
+- domain: api.app-oint.com
+  type: ALIAS
+  certificate_id: app-oint-cert
+- domain: admin.app-oint.com
+  type: ALIAS
+  certificate_id: app-oint-cert
+static_sites:
+- name: marketing
+  source_dir: /web
+  github:
+    repo: gabriellagziel/appoint
+    branch: main
+    deploy_on_push: true
+  build_command: |
+    echo "Building marketing site..."
+    mkdir -p public
+    echo '<!DOCTYPE html><html><head><title>Appoint - Perfect</title></head><body><h1>Welcome to Appoint</h1><p>Perfect repository deployed!</p></body></html>' > public/index.html
+    echo 'User-agent: *\nAllow: /' > public/robots.txt
+    echo '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://app-oint.com/</loc></url></urlset>' > public/sitemap.xml
+  output_dir: /public
+  routes:
+  - path: /robots.txt
+  - path: /sitemap.xml
