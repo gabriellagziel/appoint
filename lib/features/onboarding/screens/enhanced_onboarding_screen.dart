@@ -1,10 +1,8 @@
 import 'package:appoint/features/onboarding/services/onboarding_service.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/models/user_type.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/widgets/app_logo.dart';
-import 'package:appoint/constants/app_branding.dart';
+import 'package:go_router/go_router.dart';
 
 final onboardingServiceProvider = Provider<OnboardingService>((ref) => OnboardingService());
 
@@ -13,18 +11,6 @@ final onboardingStepProvider = StateProvider<int>((ref) => 0);
 final userTypeProvider = StateProvider<UserType?>((ref) => null);
 
 final onboardingDataProvider = StateProvider<Map<String, dynamic>>((ref) => {});
-
-class OnboardingPageData {
-  final String title;
-  final String description;
-  final IconData icon;
-  
-  OnboardingPageData({
-    required this.title,
-    required this.description,
-    required this.icon,
-  });
-}
 
 class EnhancedOnboardingScreen extends ConsumerStatefulWidget {
   const EnhancedOnboardingScreen({super.key});
@@ -37,14 +23,14 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
   final PageController _pageController = PageController();
   final _formKey = GlobalKey<FormState>();
   
+  // Page management
+  int _currentPage = 0;
+  List<Widget> _onboardingPages = [];
+  
   // Controllers for form fields
   final _nameController = TextEditingController();
   final _emailController = TextEditingController();
   final _phoneController = TextEditingController();
-  
-  // State variables
-  int _currentPage = 0;
-  late List<OnboardingPageData> _onboardingPages;
   
   // Selected values
   String? _selectedLanguage;
@@ -56,27 +42,6 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
   void initState() {
     super.initState();
     _detectLanguage();
-    _initializeOnboardingPages();
-  }
-  
-  void _initializeOnboardingPages() {
-    _onboardingPages = [
-      OnboardingPageData(
-        title: 'Welcome to App-Oint',
-        description: 'Your personal appointment management solution',
-        icon: Icons.calendar_today,
-      ),
-      OnboardingPageData(
-        title: 'Schedule & Manage',
-        description: 'Easily schedule and manage all your appointments',
-        icon: Icons.schedule,
-      ),
-      OnboardingPageData(
-        title: 'Stay Connected',
-        description: 'Get notifications and stay connected with your network',
-        icon: Icons.notifications,
-      ),
-    ];
   }
 
   @override
@@ -103,111 +68,39 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
 
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // App logo/icon
-              const AppLogo(size: 120),
-              
-              const SizedBox(height: 48),
-              
-              Text(
-                'Welcome to APP-OINT',
-                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 16),
-              Text(
-                AppBranding.fullSlogan,
-                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: Colors.grey[600],
-                ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 32),
-              
-              // Onboarding content
-              Expanded(
-                child: PageView.builder(
-                  controller: _pageController,
-                  onPageChanged: (index) {
-                    setState(() {
-                      _currentPage = index;
-                    });
-                  },
-                  itemCount: _onboardingPages.length,
-                  itemBuilder: (context, index) {
-                    return _buildOnboardingPage(_onboardingPages[index]);
-                  },
-                ),
-              ),
-              
-              // Page indicators
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: List.generate(
-                  _onboardingPages.length,
-                  (index) => Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 4),
-                    width: 8,
-                    height: 8,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: _currentPage == index
-                          ? Theme.of(context).primaryColor
-                          : Colors.grey[300],
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 32),
-              
-              // Navigation buttons
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: Column(
+          children: [
+            // Progress indicator
+            _buildProgressIndicator(currentStep),
+            
+            // Page content
+            Expanded(
+              child: PageView(
+                controller: _pageController,
+                onPageChanged: (index) {
+                  ref.read(onboardingStepProvider.notifier).state = index;
+                },
                 children: [
-                  if (_currentPage > 0)
-                    TextButton(
-                      onPressed: () {
-                        _pageController.previousPage(
-                          duration: const Duration(milliseconds: 300),
-                          curve: Curves.easeInOut,
-                        );
-                      },
-                      child: const Text('Previous'),
-                    )
-                  else
-                    const SizedBox(width: 80),
-                  
-                  ElevatedButton(
-                    onPressed: () {
-                      if (_currentPage < _onboardingPages.length - 1) {
-                        _pageController.nextPage(
-                          duration: const Duration(milliseconds: 300),
-                          curve: Curves.easeInOut,
-                        );
-                      } else {
-                        // Complete onboarding
-                        _completeOnboarding();
-                      }
-                    },
-                    child: Text(
-                      _currentPage < _onboardingPages.length - 1
-                          ? 'Next'
-                          : 'Get Started',
-                    ),
-                  ),
+                  _buildWelcomeStep(l10n),
+                  _buildUserTypeStep(l10n),
+                  _buildLanguageStep(l10n),
+                  _buildProfileStep(l10n),
+                  _buildPreferencesStep(l10n),
+                  _buildCompletionStep(l10n),
                 ],
               ),
-            ],
-          ),
+            ),
+            
+            // Navigation buttons
+            _buildNavigationButtons(currentStep, userType, l10n),
+          ],
         ),
       ),
     );
+  }
+
+  Widget _buildOnboardingPage(Widget page) {
+    return page;
   }
 
   Widget _buildProgressIndicator(int currentStep) {
@@ -775,13 +668,14 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
       await service.completeOnboarding(onboardingData);
       
       if (mounted) {
-        Navigator.of(context).pushReplacementNamed('/dashboard');
+        context.go('/dashboard');
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Failed to complete onboarding: $e')),
-      );
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Failed to complete onboarding: $e')),
+        );
     }
+  }
   }
 
   String _getUserTypeName(UserType? type) {
@@ -814,4 +708,8 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     return languages[code] ?? 'Not selected';
   }
 
-
+enum UserType {
+  personal,
+  business,
+  family,
+} 

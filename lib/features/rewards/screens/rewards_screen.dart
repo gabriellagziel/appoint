@@ -1,6 +1,6 @@
 import 'package:appoint/features/rewards/models/reward.dart';
 import 'package:appoint/features/rewards/services/rewards_service.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -615,5 +615,4 @@ class RewardsScreen extends ConsumerWidget {
           SnackBar(content: Text('Failed to redeem reward: $e')),
         );
     }
-  }
-} 
+  } 

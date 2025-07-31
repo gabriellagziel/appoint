@@ -1,0 +1,50 @@
+name: Pseudo-Localization Check
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'lib/l10n/**'
+      - 'pubspec.yaml'
+      - '.github/workflows/pseudo-l10n.yml'
+
+jobs:
+  pseudo-l10n-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.5'
+          channel: 'stable'
+      
+      - name: Get dependencies
+        run: flutter pub get
+      
+      - name: Generate localization files
+        run: flutter gen-l10n
+      
+      - name: Build web app with pseudo-localization
+        run: |
+          flutter build web \
+            --release \
+            --dart-define=FLUTTER_LOCALES=xx \
+            --dart-define=FLUTTER_WEB_USE_SKIA=true
+      
+      - name: Verify build artifacts
+        run: |
+          if [ ! -d "build/web" ]; then
+            echo "❌ Web build failed - build/web directory not found"
+            exit 1
+          fi
+          
+          if [ ! -f "build/web/index.html" ]; then
+            echo "❌ Web build failed - index.html not found"
+            exit 1
+          fi
+          
+          echo "✅ Pseudo-localization build successful" 

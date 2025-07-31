@@ -1,316 +1,327 @@
-# GitHub Actions CI/CD Pipeline
+# CI/CD Pipeline Documentation
 
-This directory contains the consolidated CI/CD workflows for the Appoint project.
+This directory contains the unified CI/CD pipeline for the Appoint project. The pipeline is designed to be production-grade, secure, and maintainable.
 
-## 🚀 Workflow Overview
+## Overview
 
-### 1. `ci-consolidated.yml` - Main CI Pipeline
-**Purpose**: Comprehensive CI pipeline with cross-platform testing, security scanning, and deployment.
+The CI/CD pipeline consists of five specialized workflows that work together to ensure code quality, security, and reliable deployments across all platforms.
 
-**Triggers**:
-- Push to `main` or `develop` branches
-- Pull requests to `main` or `develop` branches
-- Manual trigger via workflow_dispatch
+## Workflow Files
 
-**Jobs**:
-- **setup-cache**: Global caching for dependencies
-- **code-generation**: Code generation with build_runner
-- **lint**: Static analysis and code formatting
-- **l10n-check**: Translation completeness validation
-- **test**: Multi-platform testing (Ubuntu + macOS)
-- **firebase-functions-test**: Firebase Functions testing
-- **build**: Cross-platform builds (Web, Android, iOS)
-- **firebase-deploy**: Firebase Hosting deployment
-- **security-scan**: Security vulnerability scanning
-- **performance-test**: Performance testing and analysis
+### 1. `test.yml` - Test & Analyze
+**Purpose**: Handles all testing, analysis, and code quality checks.
 
-**Key Features**:
-- ✅ Cross-platform testing (Ubuntu, macOS, Windows)
-- ✅ Proper error handling without masking failures
-- ✅ Comprehensive caching strategy
-- ✅ Security and performance testing
-- ✅ Multi-platform builds (Web, Android, iOS)
-
-### 2. `qa-pipeline.yml` - Comprehensive QA Pipeline
-**Purpose**: Complete quality assurance pipeline with fail-fast logic.
+**Features**:
+- ✅ Code analysis and linting (`flutter analyze`)
+- ✅ Unit, widget, and integration tests (`flutter test --coverage`)
+- ✅ Security scanning and dependency analysis
+- ✅ Localization checks (`flutter gen-l10n`)
+- ✅ Code formatting verification
+- ✅ Spell checking
 
 **Triggers**:
 - Push to `main` or `develop` branches
-- Pull requests to `main` branch
-- Manual trigger via workflow_dispatch
+- Pull requests to `main` or `develop`
+- Manual trigger
 
-**Jobs**:
-- **code-quality**: Code analysis and formatting
-- **unit-tests**: Unit tests with matrix strategy
-- **test-coverage**: Coverage analysis with 80% threshold
-- **integration-tests**: Cross-platform integration tests
-- **performance-tests**: Performance benchmarking
-- **security-tests**: Security vulnerability scanning
-- **accessibility-tests**: Accessibility compliance testing
-- **localization-tests**: Localization validation
-- **firebase-tests**: Firebase emulator testing
-- **quality-gates**: Final quality gate evaluation
+### 2. `build.yml` - Build
+**Purpose**: Handles web, Android, and iOS builds with proper artifact management.
 
-**Key Features**:
-- ✅ Fail-fast logic for quality gates
-- ✅ 80% test coverage threshold enforcement
-- ✅ Comprehensive security scanning
-- ✅ Accessibility and localization testing
-- ✅ Firebase emulator testing
-
-### 3. `release.yml` - Release Pipeline
-**Purpose**: Automated release process with multi-platform deployment.
+**Features**:
+- ✅ Web app building (`flutter build web`)
+- ✅ Android APK and App Bundle builds (`flutter build appbundle`)
+- ✅ iOS app building (`flutter build ios`)
+- ✅ Artifact upload and retention
+- ✅ Build verification
 
 **Triggers**:
-- Push of version tags (v*)
-- Manual workflow dispatch
+- Push to `main` or `develop` branches
+- Pull requests to `main` or `develop`
+- Manual trigger
 
-**Jobs**:
-- **version-bump**: Semantic version bumping
-- **test-all-platforms**: Cross-platform testing
-- **build-android**: Android APK and App Bundle builds
-- **build-ios**: iOS IPA builds with signing
-- **build-web**: Web app builds
-- **security-scan**: Security auditing
-- **create-release**: GitHub release creation
-- **deploy-android**: Play Store deployment
-- **deploy-ios**: App Store deployment
-- **deploy-web**: Firebase Hosting deployment
-- **notify**: Slack notifications
+### 3. `deploy.yml` - Deploy
+**Purpose**: Handles Firebase hosting deployment and release creation.
 
-**Key Features**:
-- ✅ Multi-platform builds (Android, iOS, Web)
-- ✅ Proper signing configuration
-- ✅ Automated store deployments
-- ✅ Comprehensive release notes
+**Features**:
+- ✅ Firebase Hosting deployment
+- ✅ Release creation on tags
 - ✅ Slack notifications
+- ✅ Deployment verification
 
-## 🔧 Configuration
+**Triggers**:
+- Push to `main` branch
+- Manual trigger with environment selection
 
-### Required Secrets
+### 4. `android_release.yml` - Android Release
+**Purpose**: Specialized workflow for Android builds with Play Store deployment.
 
-#### Core Secrets
-| Secret Name | Description | Required For |
-|-------------|-------------|--------------|
-| `FIREBASE_TOKEN` | Firebase CLI token | Firebase deployment |
-| `GITHUB_TOKEN` | GitHub token | Release creation |
+**Features**:
+- ✅ Android APK and App Bundle builds
+- ✅ Code signing with keystore
+- ✅ Play Store internal testing
+- ✅ Play Store production deployment
+- ✅ Manual trigger options
 
-#### Android Secrets
-| Secret Name | Description | Required For |
-|-------------|-------------|--------------|
-| `ANDROID_KEYSTORE_BASE64` | Base64 encoded keystore | Android signing |
-| `ANDROID_STORE_PASSWORD` | Keystore password | Android signing |
-| `ANDROID_KEY_ALIAS` | Key alias | Android signing |
-| `ANDROID_KEY_PASSWORD` | Key password | Android signing |
-| `PLAY_STORE_JSON_KEY` | Play Store service account | Play Store deployment |
+**Triggers**:
+- Push to `main` branch
+- Tags starting with `v*`
+- Manual trigger
 
-#### iOS Secrets
-| Secret Name | Description | Required For |
-|-------------|-------------|--------------|
-| `IOS_CERTIFICATE_BASE64` | Base64 encoded certificate | iOS signing |
-| `IOS_CERTIFICATE_PASSWORD` | Certificate password | iOS signing |
-| `IOS_PROVISIONING_PROFILE_BASE64` | Base64 encoded profile | iOS signing |
-| `APP_STORE_CONNECT_API_KEY` | App Store Connect API key | App Store deployment |
-| `APP_STORE_CONNECT_API_KEY_ID` | API key ID | App Store deployment |
-| `APP_STORE_CONNECT_ISSUER_ID` | Issuer ID | App Store deployment |
+### 5. `ios_build.yml` - iOS Build
+**Purpose**: Specialized workflow for iOS builds with App Store deployment.
 
-#### Optional Secrets
-| Secret Name | Description | Required For |
-|-------------|-------------|--------------|
-| `SLACK_WEBHOOK_URL` | Slack webhook URL | Notifications |
+**Features**:
+- ✅ iOS app building
+- ✅ Code signing with Apple certificates
+- ✅ TestFlight deployment
+- ✅ App Store submission
+- ✅ Manual trigger options
 
-### Environment Variables
+**Triggers**:
+- Push to `main` branch
+- Tags starting with `v*`
+- Manual trigger
 
-All workflows use consistent environment variables:
-```yaml
-env:
-  FLUTTER_VERSION: '3.32.0'
-  DART_VERSION: '3.4.0'
-  NODE_VERSION: '18'
-  FIREBASE_EMULATOR_VERSION: '13.0.0'
+## Pipeline Architecture
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Code Push     │───▶│   Test & Analyze│───▶│   Build         │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+                                │                       │
+                                ▼                       ▼
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Deploy        │◀───│   Android/iOS   │◀───│   Artifacts     │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-## 🏗️ Build Matrix Strategy
+## Job Dependencies
 
-### CI Pipeline Matrix
-- **OS**: Ubuntu, macOS, Windows
-- **Platform**: Web, Android, iOS
-- **Test Type**: Unit, Widget, Integration
+### Test & Analyze Pipeline
+- **analyze**: Code analysis, linting, formatting
+- **test**: Unit, widget, and integration tests (parallel)
+- **security-scan**: Security audit and dependency analysis
+- **l10n-check**: Localization verification
 
-### QA Pipeline Matrix
-- **Test Groups**: models, services, features, utils
-- **Platforms**: android, ios, web
+### Build Pipeline
+- **build-web**: Web app building and verification
+- **build-android**: Android APK and App Bundle builds
+- **build-ios**: iOS app building
 
-## 📊 Quality Gates
+### Deploy Pipeline
+- **deploy-firebase**: Firebase Hosting deployment
+- **create-release**: GitHub release creation (on tags)
+- **notify**: Slack notifications
+
+### Android Release Pipeline
+- **build-android**: Android builds
+- **sign-and-release**: Code signing and artifact preparation
+- **deploy-play-store**: Play Store internal testing
+- **deploy-play-store-production**: Play Store production
+
+### iOS Build Pipeline
+- **build-ios**: iOS builds
+- **code-sign-and-archive**: Code signing and IPA creation
+- **deploy-testflight**: TestFlight deployment
+- **deploy-app-store**: App Store submission
+
+## Environment Variables
+
+All workflows use consistent environment variables:
+
+```yaml
+env:
+  FLUTTER_VERSION: '3.24.5'
+  DART_VERSION: '3.5.4'
+  NODE_VERSION: '18'
+  JAVA_VERSION: '17'
+  XCODE_VERSION: '15.0'
+```
+
+## Required Secrets
+
+### Firebase
+- `FIREBASE_TOKEN`: Firebase CLI token for deployments
+
+### Android
+- `ANDROID_KEYSTORE_BASE64`: Base64 encoded keystore file
+- `ANDROID_KEYSTORE_PASSWORD`: Keystore password
+- `ANDROID_KEY_ALIAS`: Key alias
+- `ANDROID_KEY_PASSWORD`: Key password
+- `PLAY_STORE_JSON_KEY`: Google Play Store service account JSON
+
+### iOS
+- `IOS_P12_CERTIFICATE`: Base64 encoded P12 certificate
+- `IOS_P12_PASSWORD`: P12 certificate password
+- `APPLE_ISSUER_ID`: Apple Developer Team ID
+- `APPLE_API_KEY_ID`: Apple API key ID
+- `APPLE_API_PRIVATE_KEY`: Apple API private key
+
+### Notifications
+- `SLACK_WEBHOOK_URL`: Slack webhook for notifications
+
+## Caching Strategy
+
+The pipeline implements comprehensive caching:
+
+1. **Flutter cache**: Cached by Flutter action
+2. **Pub dependencies**: Cached using actions/cache
+3. **Node modules**: Cached using actions/setup-node
+4. **Build artifacts**: Stored as GitHub artifacts
+
+## Security Features
+
+### Vulnerability Scanning
+- Dependency vulnerability checks
+- Code security analysis
+- Secrets scanning
+- Hardcoded secrets detection
 
 ### Code Quality
-- Zero analyzer errors or warnings
-- Code formatting compliance
-- Dependency verification
+- Flutter analyze with fatal infos
+- Code formatting checks
+- Unused imports detection
+- Debug print detection
 
-### Test Coverage
-- Minimum 80% line coverage required
-- Coverage reports generated and uploaded
-- Coverage trend monitoring
+### Access Control
+- Environment-specific secrets
+- Least privilege principle
+- Secret rotation schedule
+- Emergency procedures
 
-### Security
-- Firebase Functions security testing
-- Dependency vulnerability scanning
-- Security rule validation
+## Deployment Targets
 
-### Performance
-- Performance benchmarks
-- Memory usage analysis
-- Startup time optimization
+### Web
+- **Firebase Hosting**: Primary web deployment
+- **Staging Environment**: Automatic deployment from `develop` branch
 
-## 🚀 Deployment Strategy
+### Mobile
+- **iOS**: TestFlight for testing, App Store for production
+- **Android**: Play Store internal testing, Play Store production
 
-### Web Deployment
-- **Platform**: Firebase Hosting
-- **Trigger**: Main branch pushes
-- **Artifacts**: Web build from CI pipeline
+## Manual Triggers
 
-### Android Deployment
-- **Platform**: Google Play Store
-- **Trigger**: Release tags
-- **Artifacts**: App Bundle (.aab)
+All workflows support manual triggers with customizable options:
 
-### iOS Deployment
-- **Platform**: App Store Connect
-- **Trigger**: Release tags
-- **Artifacts**: IPA file
+### Test & Analyze
+- No additional inputs required
 
-## 🔍 Troubleshooting
+### Build
+- No additional inputs required
+
+### Deploy
+- Environment selection (staging/production)
+
+### Android Release
+- Build type selection (debug/release/profile)
+- Deploy to Play Store option
+
+### iOS Build
+- Build type selection (debug/release/profile)
+- Deploy to TestFlight option
+
+## Monitoring and Notifications
+
+### Success Notifications
+- Slack channel: `#deployments`
+- Detailed status reporting
+
+### Failure Notifications
+- Immediate failure alerts
+- Detailed error reporting
+- Rollback procedures
+
+### Metrics
+- Build success rates
+- Deployment times
+- Test coverage
+- Security scan results
+
+## Artifact Management
+
+### Test Artifacts
+- Coverage reports for each test type
+- Retention: 30 days
+
+### Build Artifacts
+- Web build: `build/web/`
+- Android builds: APKs and App Bundle
+- iOS builds: App bundle and IPA
+- Retention: 30 days
+
+## Troubleshooting
 
 ### Common Issues
 
-1. **Coverage below threshold**
-   ```bash
-   # Add more unit tests
-   flutter test --coverage
-   # Check coverage locally
-   genhtml coverage/lcov.info --output-directory coverage/html
-   ```
+1. **Build Failures**
+   - Check Flutter version compatibility
+   - Verify dependencies
+   - Review error logs
 
-2. **Analyzer failures**
-   ```bash
-   # Fix linting issues
-   flutter analyze
-   # Update generated code
-   dart run build_runner build --delete-conflicting-outputs
-   ```
+2. **Deployment Failures**
+   - Verify secrets configuration
+   - Check network connectivity
+   - Review deployment logs
 
-3. **Build failures**
-   ```bash
-   # Clean and rebuild
-   flutter clean
-   flutter pub get
-   flutter build apk --release
-   ```
+3. **Test Failures**
+   - Review test output
+   - Check test environment
+   - Verify test data
 
-4. **Signing issues**
-   - Verify Android keystore configuration
-   - Check iOS certificate and provisioning profile
-   - Ensure secrets are properly configured
-
-### Local Testing
+### Debug Commands
 
 ```bash
-# Run analyzer locally
-flutter analyze
+# Check Flutter version
+flutter --version
 
-# Run tests with coverage
-flutter test --coverage
+# Verify dependencies
+flutter pub deps
 
-# Check coverage locally
-genhtml coverage/lcov.info --output-directory coverage/html
+# Run tests locally
+flutter test
 
-# Run Firebase emulators
-firebase emulators:start
-
-# Test Firebase Functions
-cd functions && npm test
+# Build locally
+flutter build web --release
+flutter build apk --release
+flutter build ios --release
 ```
 
-## 📈 Performance Optimization
+## Maintenance
 
-### Caching Strategy
-- **Dart Pub Cache**: `~/.pub-cache`
-- **Flutter Cache**: `~/.flutter`, `.dart_tool`, `build`
-- **NPM Cache**: `~/.npm`
-- **Firebase Emulators**: `~/.cache/firebase/emulators`
+### Regular Tasks
+- Update Flutter version (quarterly)
+- Rotate secrets (as per schedule)
+- Review and update dependencies
+- Monitor pipeline performance
 
-### Parallel Execution
-- Jobs run in parallel where possible
-- Matrix strategies for efficient resource usage
-- Fail-fast logic to prevent unnecessary builds
+### Emergency Procedures
+- Secret compromise response
+- Pipeline failure recovery
+- Rollback procedures
+- Communication protocols
 
-### Resource Optimization
-- Timeout limits on all jobs
-- Efficient artifact retention policies
-- Conditional job execution
+## Support
 
-## 🔒 Security Features
+For pipeline-related issues:
 
-### Code Security
-- Dependency vulnerability scanning
-- Security rule testing
-- Code analysis for security issues
+- **DevOps Team**: devops@appoint.com
+- **Documentation**: [Internal Wiki]
+- **Emergency**: +1-555-0123
 
-### Deployment Security
-- Secure secret management
-- Signed builds for mobile apps
-- Environment-specific configurations
+## Contributing
 
-### Access Control
-- Branch protection rules
-- Required status checks
-- PR review requirements
+When modifying the pipeline:
 
-## 📋 Migration Guide
+1. Test changes in a fork first
+2. Follow the existing patterns
+3. Update documentation
+4. Add appropriate tests
+5. Review security implications
 
-### From Old Workflows
-1. **Remove redundant workflows**: Delete `ci.yml`, `ci.yaml`, `100-percent-qa.yml`
-2. **Update branch protection**: Require `ci-consolidated` and `qa-pipeline` to pass
-3. **Configure secrets**: Add all required secrets
-4. **Update documentation**: Reference new workflow structure
+## Version History
 
-### Breaking Changes
-- Removed `continue-on-error` flags for proper failure detection
-- Consolidated multiple workflows into comprehensive pipelines
-- Updated Flutter version to 3.32.0
-- Improved error handling and reporting
-
-## 🎯 Best Practices
-
-### Development Workflow
-1. **Feature branches**: Only QA pipeline runs
-2. **PR to main**: Both CI and QA pipelines run
-3. **Main branch**: Full pipeline with deployment
-
-### Release Process
-1. **Create version tag**: Automatic release pipeline
-2. **Manual release**: Use workflow dispatch with version input
-3. **Monitor deployment**: Check all platform deployments
-
-### Quality Assurance
-1. **Pre-commit**: Local testing and analysis
-2. **PR checks**: Automated quality gates
-3. **Post-deployment**: Smoke tests and monitoring
-
-## 📞 Support
-
-For issues with the CI/CD pipeline:
-1. Check the workflow logs for detailed error messages
-2. Verify all required secrets are configured
-3. Ensure local builds work before pushing
-4. Review the troubleshooting section above
-
-## 🔄 Continuous Improvement
-
-The pipeline is designed for continuous improvement:
-- Regular dependency updates
-- Performance monitoring
-- Security scanning
-- Quality metric tracking
-- Automated testing expansion 
+- **v2.0.0**: Unified workflow structure
+- **v2.1.0**: Enhanced security scanning
+- **v2.2.0**: Improved artifact management
+- **v2.3.0**: Added comprehensive monitoring
+- **v2.4.0**: Enhanced error handling and notifications 

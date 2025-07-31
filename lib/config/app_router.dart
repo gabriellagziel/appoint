@@ -69,11 +69,8 @@ import 'package:appoint/features/notifications/enhanced_notifications_screen.dar
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/features/onboarding/permissions_onboarding_screen.dart';
-import 'package:appoint/features/reminders/screens/reminders_dashboard_screen.dart';
-import 'package:appoint/features/reminders/screens/create_reminder_screen.dart';
-import 'package:appoint/features/admin/screens/reminder_analytics_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -109,16 +106,6 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         builder: (context, final state) => const UserProfileScreen(),
       ),
       GoRoute(
-        path: '/reminders',
-        name: 'reminders',
-        builder: (context, final state) => const RemindersDashboardScreen(),
-      ),
-      GoRoute(
-        path: '/reminders/create',
-        name: 'createReminder',
-        builder: (context, final state) => const CreateReminderScreen(),
-      ),
-      GoRoute(
         path: '/search',
         name: 'search',
         builder: (context, final state) => const SearchScreen(),
@@ -137,11 +124,6 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/admin/messages',
         name: 'adminMessages',
         builder: (context, final state) => const AdminBroadcastScreen(),
-      ),
-      GoRoute(
-        path: '/admin/reminder-analytics',
-        name: 'adminReminderAnalytics',
-        builder: (context, final state) => const ReminderAnalyticsScreen(),
       ),
 
       GoRoute(
@@ -248,13 +230,6 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       GoRoute(
         path: '/business/dashboard',
         name: 'businessDashboard',
-        builder: (context, final state) =>
-            const business.BusinessDashboardScreen(),
-      ),
-      // B2B API Management route (for CRM clients only)
-      GoRoute(
-        path: '/app.business',
-        name: 'appBusiness',
         builder: (context, final state) =>
             const business.BusinessDashboardScreen(),
       ),
@@ -565,7 +540,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
         mode: _travelMode,
       );
       if (eta == null) return;
-      final start = DateTime.parse((meetingData?['start'] as String?) ?? '');
+      final start = DateTime.parse(meetingData?['start'] as String? ?? '');
       final minutesUntilStart = start.difference(DateTime.now()).inMinutes;
       final delta = eta - minutesUntilStart;
       setState(() {
@@ -578,7 +553,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text((meetingData?['title'] as String?) ?? 'Meeting Details'),
+        title: Text(meetingData?['title'] as String? ?? 'Meeting Details'),
         actions: [
           if (meetingData != null)
             PopupMenuButton(
@@ -619,13 +594,13 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
               onSelected: (value) {
                 switch (value) {
                   case 'join':
-                    _joinMeeting(meetingData!['link'] as String);
+                    _joinMeeting(meetingData!['link'] as String?);
                     break;
                   case 'directions':
-                                          _openDirections(
-                        (meetingData!['latitude'] as num?)?.toDouble(),
-                        (meetingData!['longitude'] as num?)?.toDouble(),
-                      );
+                    _openDirections(
+                      (meetingData!['latitude'] as double?)?.toDouble(),
+                      (meetingData!['longitude'] as double?)?.toDouble(),
+                    );
                     break;
                   case 'share':
                     _shareMeeting();
@@ -728,7 +703,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              (meeting['title'] as String?) ?? 'Meeting',
+                              meeting['title'] as String? ?? 'Meeting',
                               style: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
@@ -796,7 +771,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton.icon(
-                        onPressed: () => _joinMeeting(meeting['link'] as String),
+                        onPressed: () => _joinMeeting(meeting['link'] as String?),
                         icon: const Icon(Icons.video_call),
                         label: const Text('Join Meeting'),
                         style: ElevatedButton.styleFrom(
@@ -856,8 +831,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                           child: GoogleMap(
                             initialCameraPosition: CameraPosition(
                               target: LatLng(
-                                (meeting['latitude'] as num).toDouble(),
-                                (meeting['longitude'] as num).toDouble(),
+                                (meeting['latitude'] as double).toDouble(),
+                                (meeting['longitude'] as double).toDouble(),
                               ),
                               zoom: 16,
                             ),
@@ -865,11 +840,11 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                               Marker(
                                 markerId: MarkerId(widget.meetingId),
                                 position: LatLng(
-                                  (meeting['latitude'] as num).toDouble(),
-                                  (meeting['longitude'] as num).toDouble(),
+                                  (meeting['latitude'] as double).toDouble(),
+                                  (meeting['longitude'] as double).toDouble(),
                                 ),
                                 infoWindow: InfoWindow(
-                                  title: (meeting['title'] as String?) ?? 'Meeting Location',
+                                  title: meeting['title'] as String? ?? 'Meeting Location',
                                   snippet: meeting['address'] as String?,
                                 ),
                               ),
@@ -882,8 +857,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                         width: double.infinity,
                         child: ElevatedButton.icon(
                           onPressed: () => _openDirections(
-                            (meeting['latitude'] as num?)?.toDouble(),
-                            (meeting['longitude'] as num?)?.toDouble(),
+                            (meeting['latitude'] as double?)?.toDouble(),
+                            (meeting['longitude'] as double?)?.toDouble(),
                           ),
                           icon: const Icon(Icons.directions),
                           label: const Text('Get Directions'),

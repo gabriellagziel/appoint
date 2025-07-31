@@ -1,5 +1,5 @@
 import 'package:appoint/config/theme.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/services/analytics_service.dart';
 import 'package:appoint/services/onboarding_service.dart';
 import 'package:flutter/material.dart';
@@ -129,7 +129,6 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             backgroundColor: Colors.red,
           ),
         );
-    } finally {
       if (mounted) {
         setState(() {
           _isLoading = false;

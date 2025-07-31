@@ -1,6 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 import metricsRoute, { metricsMiddleware } from './metrics';
+import { liveness, readiness } from './health';
 
 const app = express();
 
@@ -14,12 +15,7 @@ app.use(cors({ origin: true }));
 app.use('/metrics', metricsRoute);
 
 // Health checks
-app.get('/health/liveness', (req, res) => {
-  res.status(200).json({ status: 'alive', timestamp: new Date().toISOString() });
-});
-
-app.get('/health/readiness', (req, res) => {
-  res.status(200).json({ status: 'ready', timestamp: new Date().toISOString() });
-});
+app.get('/health/liveness', liveness);
+app.get('/health/readiness', readiness);
 
 export default app;

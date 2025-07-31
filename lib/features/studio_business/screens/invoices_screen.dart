@@ -219,16 +219,13 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
       }
-    }
-    
-    // Always reset loading state
-    if (mounted) {
-      setState(() => _isAdding = false);
+      if (mounted) {
+        setState(() => _isAdding = false);
+      }
     }
   }
 
@@ -284,4 +281,3 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
       // Removed debug print: debugPrint('Error deleting invoice: $e');
     }
   }
-}

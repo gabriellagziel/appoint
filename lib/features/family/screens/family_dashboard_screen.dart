@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/models/family_link.dart';
 import 'package:appoint/models/privacy_request.dart';
 import 'package:appoint/providers/auth_provider.dart';
@@ -465,10 +465,10 @@ class FamilyDashboardScreen extends ConsumerWidget {
   }
 
   void _showRevokeConfirmation(
-      BuildContext context, final WidgetRef ref, final FamilyLink link,) {
+      BuildContext context, final WidgetRef ref, final FamilyLink link) {
     final l10n = AppLocalizations.of(context)!;
 
-    showDialog(
+    showDialog<void>(
       context: context,
       builder: (context) => AlertDialog(
         title: Text(l10n.revokeAccess),
