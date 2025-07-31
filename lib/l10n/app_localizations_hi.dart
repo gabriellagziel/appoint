@@ -78,7 +78,7 @@ class AppLocalizationsHi extends AppLocalizations {
       '[HI] क्या आप वाकई इस निमंत्रण को रद्द करना चाहते हैं?';
 
   @override
-  String created(String created, Object date) {
+  String created(Object date) {
     return '[HI] बनाया गया: $date';
   }
 
@@ -139,7 +139,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get participants => 'प्रतिभागी';
 
   @override
-  String recipients(String recipients, Object count) {
+  String recipients(Object count) {
     return '[HI] प्राप्तकर्ता: $count';
   }
 
@@ -180,7 +180,7 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String content(String content) {
+  String content(Object content) {
     return '[HI] सामग्री: $content';
   }
 
@@ -234,7 +234,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get removeChild => '[HI] बच्चे को हटाएं';
 
   @override
-  String status(String status) {
+  String status(Object status) {
     return '[HI] स्थिति: $status';
   }
 
@@ -284,7 +284,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get accessRevokedSuccessfully => '[HI] पहुंच सफलतापूर्वक रद्द की गई!';
 
   @override
-  String type(String type) {
+  String type(Object type) {
     return '[HI] प्रकार: $type';
   }
 
@@ -417,7 +417,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get inviteDetail => '[HI] निमंत्रण विवरण';
 
   @override
-  String scheduled(String scheduled, Object date) {
+  String scheduled(Object date) {
     return '[HI] अनुसूचित: $date';
   }
 
@@ -430,7 +430,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get scheduling => 'अनुसूची';
 
   @override
-  String errorSavingMessage(String error) {
+  String errorSavingMessage(Object error) {
     return '[HI] संदेश सहेजने में त्रुटि: $error';
   }
 
@@ -463,7 +463,7 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(String error) {
+  String errorSendingMessage(Object error) {
     return '[HI] संदेश भेजने में त्रुटि: $error';
   }
 
@@ -519,12 +519,12 @@ class AppLocalizationsHi extends AppLocalizations {
   String get pollOptions => '[HI] मतदान विकल्प:';
 
   @override
-  String clicked(String clicked, Object count) {
+  String clicked(Object count) {
     return '[HI] क्लिक किया गया: $count';
   }
 
   @override
-  String link(String link) {
+  String link(Object link) {
     return '[HI] लिंक: $link';
   }
 
@@ -2518,10 +2518,10 @@ class AppLocalizationsHi extends AppLocalizations {
   String get purchase_now_button => 'अभी खरीदें';
 
   @override
-  String get welcomeAmbassador => 'Welcome Ambassador';
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
 
   @override
-  String get activeStatus => 'Active Status';
+  String get activeStatus => 'Active';
 
   @override
   String get totalReferrals => 'Total Referrals';
@@ -2539,7 +2539,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get progressToPremium => 'Progress to Premium';
 
   @override
-  String get remaining => 'Remaining';
+  String get remaining => 'remaining';
 
   @override
   String get monthlyGoal => 'Monthly Goal';
@@ -2551,7 +2551,8 @@ class AppLocalizationsHi extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Monthly Referral Requirement';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2581,25 +2582,26 @@ class AppLocalizationsHi extends AppLocalizations {
   String get shareYourLink => 'Share Your Link';
 
   @override
-  String get shareViaMessage => 'Share via Message';
+  String get shareViaMessage => 'Message';
 
   @override
-  String get shareViaEmail => 'Share via Email';
+  String get shareViaEmail => 'Email';
 
   @override
-  String get shareMore => 'Share More';
+  String get shareMore => 'More Options';
 
   @override
-  String get becomeAmbassador => 'Become Ambassador';
+  String get becomeAmbassador => 'Become an Ambassador';
 
   @override
-  String get ambassadorEligible => 'Ambassador Eligible';
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
 
   @override
-  String get ambassadorWelcomeTitle => 'Ambassador Welcome Title';
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Ambassador Welcome Message';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
   String get ambassadorPromotionTitle =>
@@ -2661,73 +2663,4 @@ class AppLocalizationsHi extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[HI] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Hindi)';
   }
-
-  @override
-  String get title => 'Title';
-
-  @override
-  String get pleaseEnterTitle => 'Please Enter Title';
-
-  @override
-  String get messageType => 'Message Type';
-
-  @override
-  String get pleaseEnterContent => 'Please Enter Content';
-
-  @override
-  String get imageSelected => 'Image Selected';
-
-  @override
-  String get videoSelected => 'Video Selected';
-
-  @override
-  String get externalLink => 'External Link';
-
-  @override
-  String get pleaseEnterLink => 'Please Enter Link';
-
-  @override
-  String get estimatedRecipients => 'Estimated Recipients';
-
-  @override
-  String get countries => 'Countries';
-
-  @override
-  String get cities => 'Cities';
-
-  @override
-  String get subscriptionTiers => 'Subscription Tiers';
-
-  @override
-  String get userRoles => 'User Roles';
-
-  @override
-  String get errorEstimatingRecipients => 'Error Estimating Recipients';
-
-  @override
-  String get errorPickingImage => 'Error Picking Image';
-
-  @override
-  String get errorPickingVideo => 'Error Picking Video';
-
-  @override
-  String get userNotAuthenticated => 'User Not Authenticated';
-
-  @override
-  String get failedToUploadImage => 'Failed to Upload Image';
-
-  @override
-  String get failedToUploadVideo => 'Failed to Upload Video';
-
-  @override
-  String get image => 'Image';
-
-  @override
-  String get video => 'Video';
-
-  @override
-  String get continue1 => 'Continue';
-
-  @override
-  String get getStarted => 'Get Started';
 }

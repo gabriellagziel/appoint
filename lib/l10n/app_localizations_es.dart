@@ -78,7 +78,7 @@ class AppLocalizationsEs extends AppLocalizations {
       '[ES] ¿Confirmar cancelación de invitación?';
 
   @override
-  String created(String created, Object date) {
+  String created(Object date) {
     return '[ES] Creado';
   }
 
@@ -139,7 +139,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get participants => '[ES] Participantes';
 
   @override
-  String recipients(String recipients, Object count) {
+  String recipients(Object count) {
     return '[ES] Destinatarios';
   }
 
@@ -179,7 +179,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String content(String content) {
+  String content(Object content) {
     return '[ES] Contenido';
   }
 
@@ -234,7 +234,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get removeChild => '[ES] Eliminar niño';
 
   @override
-  String status(String status) {
+  String status(Object status) {
     return '[ES] Estado';
   }
 
@@ -284,7 +284,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get accessRevokedSuccessfully => '[ES] Acceso revocado exitosamente';
 
   @override
-  String type(String type) {
+  String type(Object type) {
     return '[ES] Tipo';
   }
 
@@ -416,7 +416,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get inviteDetail => '[ES] Detalle de invitación';
 
   @override
-  String scheduled(String scheduled, Object date) {
+  String scheduled(Object date) {
     return '[ES] Programado';
   }
 
@@ -429,7 +429,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get scheduling => '[ES] Programación';
 
   @override
-  String errorSavingMessage(String error) {
+  String errorSavingMessage(Object error) {
     return '[ES] Error al guardar mensaje';
   }
 
@@ -462,7 +462,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(String error) {
+  String errorSendingMessage(Object error) {
     return '[ES] Error al enviar mensaje';
   }
 
@@ -518,12 +518,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get pollOptions => '[ES] Opciones de encuesta';
 
   @override
-  String clicked(String clicked, Object count) {
+  String clicked(Object count) {
     return '[ES] Hace clic';
   }
 
   @override
-  String link(String link) {
+  String link(Object link) {
     return '[ES] Enlace';
   }
 
@@ -2526,10 +2526,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get purchase_now_button => 'Comprar Ahora';
 
   @override
-  String get welcomeAmbassador => 'Welcome Ambassador';
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
 
   @override
-  String get activeStatus => 'Active Status';
+  String get activeStatus => 'Active';
 
   @override
   String get totalReferrals => 'Total Referrals';
@@ -2547,7 +2547,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get progressToPremium => 'Progress to Premium';
 
   @override
-  String get remaining => 'Remaining';
+  String get remaining => 'remaining';
 
   @override
   String get monthlyGoal => 'Monthly Goal';
@@ -2559,7 +2559,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Monthly Referral Requirement';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2589,25 +2590,26 @@ class AppLocalizationsEs extends AppLocalizations {
   String get shareYourLink => 'Share Your Link';
 
   @override
-  String get shareViaMessage => 'Share via Message';
+  String get shareViaMessage => 'Message';
 
   @override
-  String get shareViaEmail => 'Share via Email';
+  String get shareViaEmail => 'Email';
 
   @override
-  String get shareMore => 'Share More';
+  String get shareMore => 'More Options';
 
   @override
-  String get becomeAmbassador => 'Become Ambassador';
+  String get becomeAmbassador => 'Become an Ambassador';
 
   @override
-  String get ambassadorEligible => 'Ambassador Eligible';
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
 
   @override
-  String get ambassadorWelcomeTitle => 'Ambassador Welcome Title';
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Ambassador Welcome Message';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
   String get ambassadorPromotionTitle =>
@@ -2670,75 +2672,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[ES] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Spanish)';
   }
-
-  @override
-  String get title => 'Title';
-
-  @override
-  String get pleaseEnterTitle => 'Please Enter Title';
-
-  @override
-  String get messageType => 'Message Type';
-
-  @override
-  String get pleaseEnterContent => 'Please Enter Content';
-
-  @override
-  String get imageSelected => 'Image Selected';
-
-  @override
-  String get videoSelected => 'Video Selected';
-
-  @override
-  String get externalLink => 'External Link';
-
-  @override
-  String get pleaseEnterLink => 'Please Enter Link';
-
-  @override
-  String get estimatedRecipients => 'Estimated Recipients';
-
-  @override
-  String get countries => 'Countries';
-
-  @override
-  String get cities => 'Cities';
-
-  @override
-  String get subscriptionTiers => 'Subscription Tiers';
-
-  @override
-  String get userRoles => 'User Roles';
-
-  @override
-  String get errorEstimatingRecipients => 'Error Estimating Recipients';
-
-  @override
-  String get errorPickingImage => 'Error Picking Image';
-
-  @override
-  String get errorPickingVideo => 'Error Picking Video';
-
-  @override
-  String get userNotAuthenticated => 'User Not Authenticated';
-
-  @override
-  String get failedToUploadImage => 'Failed to Upload Image';
-
-  @override
-  String get failedToUploadVideo => 'Failed to Upload Video';
-
-  @override
-  String get image => 'Image';
-
-  @override
-  String get video => 'Video';
-
-  @override
-  String get continue1 => 'Continue';
-
-  @override
-  String get getStarted => 'Get Started';
 }
 
 /// The translations for Spanish Castilian, as used in Latin America and the Caribbean (`es_419`).
@@ -2818,7 +2751,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
       '[ES_419] [ES_419] Are you sure you want to cancel this invite?';
 
   @override
-  String created(String created, Object date) {
+  String created(Object date) {
     return '[ES_419] [ES_419] Created';
   }
 
@@ -2882,7 +2815,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get participants => '[ES_419] [ES_419] Participants';
 
   @override
-  String recipients(String recipients, Object count) {
+  String recipients(Object count) {
     return '[ES_419] [ES_419] Recipients';
   }
 
@@ -2923,7 +2856,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String content(String content) {
+  String content(Object content) {
     return '[ES_419] [ES_419] Content';
   }
 
@@ -2979,7 +2912,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get removeChild => '[ES_419] [ES_419] Remove Child';
 
   @override
-  String status(String status) {
+  String status(Object status) {
     return '[ES_419] [ES_419] Status';
   }
 
@@ -3031,7 +2964,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
       '[ES_419] [ES_419] Access revoked successfully';
 
   @override
-  String type(String type) {
+  String type(Object type) {
     return '[ES_419] [ES_419] Type';
   }
 
@@ -3165,7 +3098,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get inviteDetail => '[ES_419] [ES_419] Invite Details';
 
   @override
-  String scheduled(String scheduled, Object date) {
+  String scheduled(Object date) {
     return '[ES_419] [ES_419] Scheduled';
   }
 
@@ -3178,7 +3111,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get scheduling => '[ES_419] [ES_419] Scheduling';
 
   @override
-  String errorSavingMessage(String error) {
+  String errorSavingMessage(Object error) {
     return '[ES_419] [ES_419] Error saving message';
   }
 
@@ -3212,7 +3145,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String errorSendingMessage(String error) {
+  String errorSendingMessage(Object error) {
     return '[ES_419] [ES_419] Error sending message';
   }
 
@@ -3270,12 +3203,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get pollOptions => '[ES_419] [ES_419] Poll Options';
 
   @override
-  String clicked(String clicked, Object count) {
+  String clicked(Object count) {
     return '[ES_419] [ES_419] Clicked';
   }
 
   @override
-  String link(String link) {
+  String link(Object link) {
     return '[ES_419] [ES_419] Link';
   }
 
@@ -5390,216 +5323,4 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
 
   @override
   String get purchase_now_button => 'Purchase Now';
-
-  @override
-  String get welcomeAmbassador => 'Welcome Ambassador';
-
-  @override
-  String get activeStatus => 'Active Status';
-
-  @override
-  String get totalReferrals => 'Total Referrals';
-
-  @override
-  String get thisMonth => 'This Month';
-
-  @override
-  String get activeRewards => 'Active Rewards';
-
-  @override
-  String get nextTierProgress => 'Next Tier Progress';
-
-  @override
-  String get progressToPremium => 'Progress to Premium';
-
-  @override
-  String get remaining => 'Remaining';
-
-  @override
-  String get monthlyGoal => 'Monthly Goal';
-
-  @override
-  String get onTrack => 'On Track';
-
-  @override
-  String get needsAttention => 'Needs Attention';
-
-  @override
-  String get monthlyReferralRequirement => 'Monthly Referral Requirement';
-
-  @override
-  String get viewRewards => 'View Rewards';
-
-  @override
-  String get referralStatistics => 'Referral Statistics';
-
-  @override
-  String get activeReferrals => 'Active Referrals';
-
-  @override
-  String get conversionRate => 'Conversion Rate';
-
-  @override
-  String get recentReferrals => 'Recent Referrals';
-
-  @override
-  String get tierBenefits => 'Tier Benefits';
-
-  @override
-  String get yourReferralQRCode => 'Your Referral QR Code';
-
-  @override
-  String get yourReferralLink => 'Your Referral Link';
-
-  @override
-  String get shareYourLink => 'Share Your Link';
-
-  @override
-  String get shareViaMessage => 'Share via Message';
-
-  @override
-  String get shareViaEmail => 'Share via Email';
-
-  @override
-  String get shareMore => 'Share More';
-
-  @override
-  String get becomeAmbassador => 'Become Ambassador';
-
-  @override
-  String get ambassadorEligible => 'Ambassador Eligible';
-
-  @override
-  String get ambassadorWelcomeTitle => 'Ambassador Welcome Title';
-
-  @override
-  String get ambassadorWelcomeMessage => 'Ambassador Welcome Message';
-
-  @override
-  String get ambassadorPromotionTitle => 'ambassadorPromotionTitle';
-
-  @override
-  String ambassadorPromotionBody(String tier) {
-    return 'ambassadorPromotionBody';
-  }
-
-  @override
-  String get tierUpgradeTitle => 'tierUpgradeTitle';
-
-  @override
-  String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
-    return 'tierUpgradeBody';
-  }
-
-  @override
-  String get monthlyReminderTitle => 'monthlyReminderTitle';
-
-  @override
-  String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
-    return 'monthlyReminderBody';
-  }
-
-  @override
-  String get performanceWarningTitle => 'performanceWarningTitle';
-
-  @override
-  String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
-    return 'performanceWarningBody';
-  }
-
-  @override
-  String get ambassadorDemotionTitle => 'ambassadorDemotionTitle';
-
-  @override
-  String ambassadorDemotionBody(String reason) {
-    return 'ambassadorDemotionBody';
-  }
-
-  @override
-  String get referralSuccessTitle => 'referralSuccessTitle';
-
-  @override
-  String referralSuccessBody(String referredUserName, String totalReferrals) {
-    return 'referralSuccessBody';
-  }
-
-  @override
-  String get title => 'Title';
-
-  @override
-  String get pleaseEnterTitle => 'Please Enter Title';
-
-  @override
-  String get messageType => 'Message Type';
-
-  @override
-  String get pleaseEnterContent => 'Please Enter Content';
-
-  @override
-  String get imageSelected => 'Image Selected';
-
-  @override
-  String get videoSelected => 'Video Selected';
-
-  @override
-  String get externalLink => 'External Link';
-
-  @override
-  String get pleaseEnterLink => 'Please Enter Link';
-
-  @override
-  String get estimatedRecipients => 'Estimated Recipients';
-
-  @override
-  String get countries => 'Countries';
-
-  @override
-  String get cities => 'Cities';
-
-  @override
-  String get subscriptionTiers => 'Subscription Tiers';
-
-  @override
-  String get userRoles => 'User Roles';
-
-  @override
-  String get errorEstimatingRecipients => 'Error Estimating Recipients';
-
-  @override
-  String get errorPickingImage => 'Error Picking Image';
-
-  @override
-  String get errorPickingVideo => 'Error Picking Video';
-
-  @override
-  String get userNotAuthenticated => 'User Not Authenticated';
-
-  @override
-  String get failedToUploadImage => 'Failed to Upload Image';
-
-  @override
-  String get failedToUploadVideo => 'Failed to Upload Video';
-
-  @override
-  String get image => 'Image';
-
-  @override
-  String get video => 'Video';
-
-  @override
-  String get continue1 => 'Continue';
-
-  @override
-  String get getStarted => 'Get Started';
 }
