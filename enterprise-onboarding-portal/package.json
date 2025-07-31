@@ -2,14 +2,14 @@
     "name": "appoint-enterprise-onboarding",
     "version": "1.0.0",
     "description": "Enterprise onboarding portal for App-Oint",
-    "main": "server.js",
+    "main": "index.js",
     "engines": {
         "node": "18.x"
     },
     "scripts": {
         "build": "echo 'Enterprise app built successfully'",
-        "start": "node server.js",
-        "dev": "nodemon server.js",
+        "start": "node index.js",
+        "dev": "nodemon index.js",
         "test": "jest"
     },
     "dependencies": {
