@@ -28,7 +28,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -42,13 +42,22 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -76,8 +85,22 @@ jobs:
         run: |
           (firebase emulators:start --only firestore,auth || sleep 5 && firebase emulators:start --only firestore,auth) &
           echo $! > emulator.pid
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test integration_test/
+      - name: Dart tests
+        run: |
+          if which dart; then
+            dart test --coverage
+          else
+            flutter test --coverage
+          fi
+      - name: Integration tests
+        run: |
+          if which dart; then
+            dart test integration_test/
+          else
+            flutter test integration_test/
+          fi
       - run: flutter build web
       - name: Stop emulators
         if: always()
@@ -95,7 +118,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -109,13 +132,22 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -135,18 +167,8 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-      - name: Download Firebase emulators
-        run: firebase setup:emulators:download --only firestore,auth
-      - name: Start Firebase emulators
-        run: |
-          (firebase emulators:start --only firestore,auth || sleep 5 && firebase emulators:start --only firestore,auth) &
-          echo $! > emulator.pid
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage test/features/studio/content_library_screen_test.dart
-      - name: Stop emulators
-        if: always()
-        run: kill $(cat emulator.pid)
 
   deploy-functions:
     needs: build-and-test
@@ -161,7 +183,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -175,13 +197,22 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -214,7 +245,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -228,13 +259,22 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -254,8 +294,22 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test integration_test/
+      - name: Dart tests
+        run: |
+          if which dart; then
+            dart test --coverage
+          else
+            flutter test --coverage
+          fi
+      - name: Integration tests
+        run: |
+          if which dart; then
+            dart test integration_test/
+          else
+            flutter test integration_test/
+          fi
       - name: Build Web App
         run: flutter build web --release
       - name: Install Firebase CLI
@@ -276,7 +330,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -290,13 +344,22 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -316,20 +379,23 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-      - name: Download Firebase emulators
-        run: firebase setup:emulators:download --only firestore,auth
-      - name: Start Firebase emulators
-        run: |
-          (firebase emulators:start --only firestore,auth || sleep 5 && firebase emulators:start --only firestore,auth) &
-          echo $! > emulator.pid
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test integration_test/
+      - name: Dart tests
+        run: |
+          if which dart; then
+            dart test --coverage
+          else
+            flutter test --coverage
+          fi
+      - name: Integration tests
+        run: |
+          if which dart; then
+            dart test integration_test/
+          else
+            flutter test integration_test/
+          fi
       - run: flutter build web
-      - name: Stop emulators
-        if: always()
-        run: kill $(cat emulator.pid)
       - name: Run Smoke Tests
         run: |
           echo "Running smoke tests against production..."
@@ -348,7 +414,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -362,13 +428,22 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -388,20 +463,23 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-      - name: Download Firebase emulators
-        run: firebase setup:emulators:download --only firestore,auth
-      - name: Start Firebase emulators
-        run: |
-          (firebase emulators:start --only firestore,auth || sleep 5 && firebase emulators:start --only firestore,auth) &
-          echo $! > emulator.pid
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test integration_test/
+      - name: Dart tests
+        run: |
+          if which dart; then
+            dart test --coverage
+          else
+            flutter test --coverage
+          fi
+      - name: Integration tests
+        run: |
+          if which dart; then
+            dart test integration_test/
+          else
+            flutter test integration_test/
+          fi
       - run: flutter build web
-      - name: Stop emulators
-        if: always()
-        run: kill $(cat emulator.pid)
       - name: Run Security Scan
         run: |
           echo "Running security scan..."
@@ -420,7 +498,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -434,13 +512,22 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Install Verdaccio
@@ -456,20 +543,23 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-      - name: Download Firebase emulators
-        run: firebase setup:emulators:download --only firestore,auth
-      - name: Start Firebase emulators
-        run: |
-          (firebase emulators:start --only firestore,auth || sleep 5 && firebase emulators:start --only firestore,auth) &
-          echo $! > emulator.pid
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test integration_test/
+      - name: Dart tests
+        run: |
+          if which dart; then
+            dart test --coverage
+          else
+            flutter test --coverage
+          fi
+      - name: Integration tests
+        run: |
+          if which dart; then
+            dart test integration_test/
+          else
+            flutter test integration_test/
+          fi
       - run: flutter build web
-      - name: Stop emulators
-        if: always()
-        run: kill $(cat emulator.pid)
       - name: Notify on Success
         if: success()
         run: |
