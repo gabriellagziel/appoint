@@ -1,0 +1,269 @@
+global:
+  # Global SMTP configuration
+  smtp_smarthost: '${SMTP_SMARTHOST:-smtp.gmail.com:587}'
+  smtp_from: '${ALERT_EMAIL_FROM:-alerts@app-oint.com}'
+  smtp_auth_username: '${SMTP_USERNAME}'
+  smtp_auth_password: '${SMTP_PASSWORD}'
+  smtp_require_tls: true
+
+  # Global Slack configuration
+  slack_api_url: '${SLACK_WEBHOOK_URL}'
+
+  # PagerDuty configuration
+  pagerduty_url: 'https://events.pagerduty.com/v2/enqueue'
+
+# Alert routing configuration
+route:
+  group_by: ['alertname', 'service', 'severity']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  receiver: 'default-notifications'
+  
+  routes:
+    # Critical alerts go to PagerDuty immediately
+    - match:
+        severity: critical
+      receiver: 'critical-alerts'
+      group_wait: 10s
+      group_interval: 1m
+      repeat_interval: 30m
+      continue: true
+
+    # Regional failure alerts for geo-DNS failover
+    - match:
+        alert_type: regional_failure
+      receiver: 'regional-failover'
+      group_wait: 5s
+      group_interval: 30s
+      repeat_interval: 15m
+      continue: true
+
+    # Control plane failures
+    - match:
+        alert_type: control_plane_failure
+      receiver: 'control-plane-alerts'
+      group_wait: 5s
+      group_interval: 30s
+      repeat_interval: 15m
+      continue: true
+
+    # SLO violations
+    - match:
+        slo: error_rate
+      receiver: 'slo-violations'
+      group_wait: 1m
+      group_interval: 2m
+      repeat_interval: 1h
+      continue: true
+
+    - match:
+        slo: latency
+      receiver: 'slo-violations'
+      group_wait: 1m
+      group_interval: 2m
+      repeat_interval: 1h
+      continue: true
+
+    # Team-specific routing
+    - match:
+        team: devops
+      receiver: 'devops-team'
+      continue: true
+
+    - match:
+        team: product
+      receiver: 'product-team'
+      continue: true
+
+    # Warning alerts
+    - match:
+        severity: warning
+      receiver: 'warning-alerts'
+      group_wait: 2m
+      group_interval: 10m
+      repeat_interval: 2h
+
+# Alert receivers configuration
+receivers:
+  # Default notification channel
+  - name: 'default-notifications'
+    slack_configs:
+      - channel: '#alerts-general'
+        title: 'App-Oint Alert'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Description:* {{ .Annotations.description }}
+          *Severity:* {{ .Labels.severity }}
+          *Service:* {{ .Labels.service }}
+          {{ end }}
+        color: '{{ if eq .Status "firing" }}danger{{ else }}good{{ end }}'
+        send_resolved: true
+
+  # Critical alerts - PagerDuty + Slack + Email
+  - name: 'critical-alerts'
+    pagerduty_configs:
+      - routing_key: '${PAGERDUTY_ROUTING_KEY}'
+        description: '{{ .GroupLabels.alertname }}: {{ .GroupLabels.service }}'
+        severity: 'critical'
+        details:
+          summary: '{{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+          description: '{{ range .Alerts }}{{ .Annotations.description }}{{ end }}'
+          runbook_url: '{{ range .Alerts }}{{ .Annotations.runbook_url }}{{ end }}'
+          dashboard_url: '{{ range .Alerts }}{{ .Annotations.dashboard_url }}{{ end }}'
+    
+    slack_configs:
+      - channel: '#alerts-critical'
+        title: '🚨 CRITICAL ALERT 🚨'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Description:* {{ .Annotations.description }}
+          *Service:* {{ .Labels.service }}
+          *Runbook:* {{ .Annotations.runbook_url }}
+          *Dashboard:* {{ .Annotations.dashboard_url }}
+          {{ end }}
+        color: 'danger'
+        send_resolved: true
+        actions:
+          - type: button
+            text: 'View Dashboard'
+            url: '{{ range .Alerts }}{{ .Annotations.dashboard_url }}{{ end }}'
+          - type: button
+            text: 'View Runbook'
+            url: '{{ range .Alerts }}{{ .Annotations.runbook_url }}{{ end }}'
+
+    email_configs:
+      - to: '${CRITICAL_EMAIL_LIST:-devops@app-oint.com,oncall@app-oint.com}'
+        subject: '[CRITICAL] App-Oint Alert: {{ .GroupLabels.alertname }}'
+        body: |
+          Critical alert fired for App-Oint:
+          
+          {{ range .Alerts }}
+          Alert: {{ .Annotations.summary }}
+          Description: {{ .Annotations.description }}
+          Service: {{ .Labels.service }}
+          Severity: {{ .Labels.severity }}
+          
+          Runbook: {{ .Annotations.runbook_url }}
+          Dashboard: {{ .Annotations.dashboard_url }}
+          {{ end }}
+
+  # Regional failover alerts - immediate action required
+  - name: 'regional-failover'
+    slack_configs:
+      - channel: '#incidents'
+        title: '🌍 REGIONAL FAILOVER REQUIRED 🌍'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Action Required:* {{ .Annotations.action }}
+          *Description:* {{ .Annotations.description }}
+          {{ end }}
+        color: 'danger'
+        send_resolved: true
+
+    email_configs:
+      - to: '${ONCALL_EMAIL_LIST:-oncall@app-oint.com,devops@app-oint.com}'
+        subject: '[REGIONAL FAILOVER] {{ .GroupLabels.alertname }}'
+        body: |
+          Regional failover alert:
+          
+          {{ range .Alerts }}
+          {{ .Annotations.summary }}
+          Action Required: {{ .Annotations.action }}
+          {{ end }}
+
+  # Control plane alerts
+  - name: 'control-plane-alerts'
+    slack_configs:
+      - channel: '#infrastructure'
+        title: '⚠️ CONTROL PLANE ISSUE ⚠️'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Action Required:* {{ .Annotations.action }}
+          {{ end }}
+        color: 'danger'
+
+  # SLO violation alerts
+  - name: 'slo-violations'
+    slack_configs:
+      - channel: '#slo-violations'
+        title: '📊 SLO Violation Detected'
+        text: |
+          {{ range .Alerts }}
+          *SLO Type:* {{ .Labels.slo }}
+          *Alert:* {{ .Annotations.summary }}
+          *Service:* {{ .Labels.service }}
+          *Description:* {{ .Annotations.description }}
+          {{ end }}
+        color: 'warning'
+        send_resolved: true
+
+  # DevOps team alerts
+  - name: 'devops-team'
+    slack_configs:
+      - channel: '#devops'
+        title: 'DevOps Alert'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Service:* {{ .Labels.service }}
+          *Severity:* {{ .Labels.severity }}
+          {{ end }}
+        color: '{{ if eq .CommonLabels.severity "critical" }}danger{{ else if eq .CommonLabels.severity "warning" }}warning{{ else }}good{{ end }}'
+
+  # Product team alerts
+  - name: 'product-team'
+    slack_configs:
+      - channel: '#product'
+        title: 'Product Alert'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Description:* {{ .Annotations.description }}
+          {{ end }}
+        color: 'warning'
+
+  # Warning alerts
+  - name: 'warning-alerts'
+    slack_configs:
+      - channel: '#alerts-warnings'
+        title: '⚠️ Warning Alert'
+        text: |
+          {{ range .Alerts }}
+          *Alert:* {{ .Annotations.summary }}
+          *Service:* {{ .Labels.service }}
+          *Description:* {{ .Annotations.description }}
+          {{ end }}
+        color: 'warning'
+        send_resolved: true
+
+# Inhibition rules to reduce noise
+inhibit_rules:
+  # If there's a critical alert, suppress warning alerts for the same service
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['service', 'alertname']
+
+  # If service is down, suppress all other alerts for that service
+  - source_match:
+      alertname: 'ServiceDown'
+    target_match_re:
+      alertname: '.*'
+    equal: ['service']
+
+  # If there's a regional failure, suppress individual service alerts
+  - source_match:
+      alert_type: 'regional_failure'
+    target_match_re:
+      alertname: '.*'
+    equal: ['region']
+
+# Templates for custom message formatting
+templates:
+  - '/etc/alertmanager/templates/*.tmpl'
