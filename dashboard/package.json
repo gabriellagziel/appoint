@@ -1,52 +1,22 @@
 {
-  "name": "dashboard",
-  "version": "0.1.0",
-  "private": true,
+  "name": "app-oint-api",
+  "version": "1.0.0",
+  "description": "App-oint API Backend",
+  "main": "api/index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "type-check": "tsc --noEmit",
-    "clean": "rm -rf .next out coverage",
-    "docker:build": "docker build -t app-oint/dashboard:latest .",
-    "docker:run": "docker run -p 3000:3000 app-oint/dashboard:latest",
-    "docker:dev": "docker-compose up dashboard",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js",
+    "test": "echo \"No tests specified\""
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.1.1",
-    "@radix-ui/react-label": "^2.1.7",
-    "@radix-ui/react-select": "^2.2.5",
-    "@radix-ui/react-slot": "^1.2.3",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "date-fns": "^4.1.0",
-    "firebase": "^11.10.0",
-    "lucide-react": "^0.525.0",
-    "next": "15.3.5",
-    "next-auth": "^4.24.11",
-    "react": "^19.0.0",
-    "react-day-picker": "^9.8.0",
-    "react-dom": "^19.0.0",
-    "react-hook-form": "^7.60.0",
-    "tailwind-merge": "^3.3.1",
-    "zod": "^4.0.5"
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.5",
-    "tailwindcss": "^4",
-    "tw-animate-css": "^1.3.5",
-    "typescript": "^5"
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

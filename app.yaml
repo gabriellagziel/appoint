@@ -1,15 +1,19 @@
-name: appoint-perfect
+name: app-oint-perfect
 services:
-- name: web
+- name: web-app
   source_dir: /
   github:
     repo: gabriellagziel/appoint
     branch: main
     deploy_on_push: true
+  build_command: |
+    echo "Building Flutter web app..."
+    flutter pub get
+    flutter build web --release --web-renderer html --base-href /
+    echo "Build completed successfully"
   run_command: |
-    flutter pub get &&
-    flutter build web --release --web-renderer html &&
-    python3 -m http.server 8080 --directory build/web
+    cd build/web
+    python3 -m http.server 8080
   environment_slug: flutter
   instance_count: 1
   instance_size_slug: basic-xxs
@@ -17,20 +21,43 @@ services:
   routes:
   - path: /
     preserve_path_prefix: false
+  - path: /admin
+    preserve_path_prefix: false
+  - path: /business
+    preserve_path_prefix: false
+  - path: /dashboard
+    preserve_path_prefix: false
+  - path: /profile
+    preserve_path_prefix: false
+  - path: /settings
+    preserve_path_prefix: false
+  - path: /booking
+    preserve_path_prefix: false
+  - path: /appointments
+    preserve_path_prefix: false
+  - path: /services
+    preserve_path_prefix: false
+  - path: /providers
+    preserve_path_prefix: false
+  - path: /calendar
+    preserve_path_prefix: false
   envs:
   - key: FLUTTER_WEB_RENDERER
     value: html
-  - key: FLUTTER_WEB_CANVASKIT_URL
-    value: https://unpkg.com/canvaskit-wasm@0.39.1/bin/
-- name: api
-  source_dir: /
+  - key: FLUTTER_WEB_USE_SKIA
+    value: false
+
+- name: api-service
+  source_dir: /dashboard
   github:
     repo: gabriellagziel/appoint
     branch: main
     deploy_on_push: true
+  build_command: |
+    echo "Installing API dependencies..."
+    npm install
+    echo "API build completed"
   run_command: |
-    cd dashboard &&
-    npm install &&
     npm start
   environment_slug: node-js
   instance_count: 1
@@ -39,35 +66,42 @@ services:
   routes:
   - path: /api
     preserve_path_prefix: true
-databases:
-- engine: MONGODB
-  name: appoint-db
-  num_nodes: 1
-  size: db-s-1vcpu-1gb
-  version: "4.4"
-domains:
-- domain: app-oint.com
-  type: PRIMARY
-- domain: api.app-oint.com
-  type: ALIAS
-  certificate_id: app-oint-cert
-- domain: admin.app-oint.com
-  type: ALIAS
-  certificate_id: app-oint-cert
+  envs:
+  - key: NODE_ENV
+    value: production
+
 static_sites:
-- name: marketing
+- name: static-assets
   source_dir: /web
   github:
     repo: gabriellagziel/appoint
     branch: main
     deploy_on_push: true
   build_command: |
-    echo "Building marketing site..."
-    mkdir -p public
-    echo '<!DOCTYPE html><html><head><title>Appoint - Perfect</title></head><body><h1>Welcome to Appoint</h1><p>Perfect repository deployed!</p></body></html>' > public/index.html
-    echo 'User-agent: *\nAllow: /' > public/robots.txt
-    echo '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://app-oint.com/</loc></url></urlset>' > public/sitemap.xml
-  output_dir: /public
+    echo "Preparing static assets..."
+    mkdir -p _site
+    cp -r public/* _site/ 2>/dev/null || true
+    cp robots.txt _site/ 2>/dev/null || true
+    cp sitemap.xml _site/ 2>/dev/null || true
+    cp manifest.json _site/ 2>/dev/null || true
+    echo "Static assets prepared"
+  output_dir: /_site
   routes:
   - path: /robots.txt
   - path: /sitemap.xml
+  - path: /manifest.json
+
+domains:
+- domain: app-oint.com
+  type: PRIMARY
+- domain: api.app-oint.com
+  type: ALIAS
+- domain: admin.app-oint.com
+  type: ALIAS
+
+# Add database if needed
+# databases:
+# - engine: MONGODB
+#   name: app-oint-db
+#   num_nodes: 1
+#   size: db-s-1vcpu-1gb
