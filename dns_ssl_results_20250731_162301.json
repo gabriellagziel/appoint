@@ -1,0 +1,35 @@
+{
+  "dns_and_ssl_business": {
+    "status": "pending",
+    "domain": "appoint.com",
+    "dns_status": "pending",
+    "ssl_status": "generated",
+    "cert_path": "[2025-07-31 16:23:02] Generating SSL certificate for appoint.com\n/etc/letsencrypt/live/appoint.com",
+    "nginx_config": "/etc/nginx/sites-available/appoint.com",
+    "load_balancer_ip": "203.0.113.10",
+    "errors": [],
+    "warnings": []
+  },
+  "dns_and_ssl_admin": {
+    "status": "pending",
+    "domain": "admin.appoint.com",
+    "dns_status": "configured",
+    "ssl_status": "pending",
+    "cert_path": "",
+    "nginx_config": "",
+    "load_balancer_ip": "203.0.113.10",
+    "errors": [],
+    "warnings": []
+  },
+  "dns_and_ssl_playground": {
+    "status": "pending",
+    "domain": "docs.app-oint.com",
+    "dns_status": "pending",
+    "ssl_status": "pending",
+    "cert_path": "",
+    "nginx_config": "",
+    "hosting_endpoint": "docs-app-1753971781.ondigitalocean.app",
+    "errors": [],
+    "warnings": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "appoint-docs",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "mkdir -p out && cp index.html out/ && cp openapi_spec.yaml out/",
+    "serve": "serve out -p ${PORT:-8083} --single",
+    "start": "npm run serve"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}

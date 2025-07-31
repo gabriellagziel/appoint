@@ -1,5 +1,5 @@
-import { schedule } from 'firebase-functions/v2';
 import * as admin from 'firebase-admin';
+import { schedule } from 'firebase-functions/v2';
 import fetch from 'node-fetch';
 
 if (!admin.apps.length) {

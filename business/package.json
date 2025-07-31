@@ -2,12 +2,11 @@
   "name": "business-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "mkdir -p out && echo 'Building business app...'",
+    "build": "mkdir -p dist && cp -r public/* dist/ && echo 'Business app built successfully'",
     "export": "mkdir -p out && cp public/index.html out/index.html",
-    "serve": "serve out -p ${PORT:-8081} --single",
-    "start": "npm run serve"
+    "start": "node server.js"
   },
   "dependencies": {
-    "serve": "^14.2.1"
+    "express": "^4.18.2"
   }
 }

@@ -1,0 +1,90 @@
+name: app-oint-consolidated
+region: nyc1
+
+services:
+  - name: marketing
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "marketing"
+    build_command: "npm ci && npm run build"
+    run_command: "npm start"
+    http_port: 80
+    routes:
+      - path: /
+    health_check:
+      http_path: /
+    instance_count: 1
+    instance_size_slug: basic-xxs
+
+  - name: business
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "business"
+    build_command: "npm ci && npm run build"
+    run_command: "node server.js"
+    http_port: 80
+    routes:
+      - path: /business
+    health_check:
+      http_path: /business/
+    instance_count: 1
+    instance_size_slug: basic-xxs
+
+  - name: admin
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "admin"
+    build_command: "npm ci && npm run build"
+    run_command: "npm start"
+    http_port: 80
+    routes:
+      - path: /admin
+    health_check:
+      http_path: /admin/
+    instance_count: 1
+    instance_size_slug: basic-xxs
+
+  - name: enterprise
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "enterprise-onboarding-portal"
+    build_command: "npm ci && npm run build"
+    run_command: "node server.js"
+    http_port: 80
+    routes:
+      - path: /enterprise
+    health_check:
+      http_path: /enterprise/
+    instance_count: 1
+    instance_size_slug: basic-xxs
+
+  - name: api
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "functions"
+    build_command: "npm ci && npm run build"
+    run_command: "npm start"
+    http_port: 3000
+    routes:
+      - path: /api
+    health_check:
+      http_path: /api/health
+    instance_count: 1
+    instance_size_slug: basic-xxs
+
+# Environment variables
+envs:
+  - key: NODE_ENV
+    value: production
+  - key: PORT
+    value: "80" 

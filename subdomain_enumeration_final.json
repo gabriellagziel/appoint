@@ -1,0 +1,82 @@
+[
+    {
+        "subdomain": "@",
+        "type": "A",
+        "record": "199.36.158.100",
+        "http_status": 200,
+        "ssl_valid": true,
+        "issuer": "C=US, O=Google Trust Services, CN=WR4",
+        "valid_from": "2025-06-25T21:55:04Z",
+        "valid_until": "2025-09-23T21:55:03Z"
+    },
+    {
+        "subdomain": "@",
+        "type": "A",
+        "record": "162.159.140.98",
+        "http_status": 200,
+        "ssl_valid": true,
+        "issuer": "C=US, O=Google Trust Services, CN=WR4",
+        "valid_from": "2025-06-25T21:55:04Z",
+        "valid_until": "2025-09-23T21:55:03Z"
+    },
+    {
+        "subdomain": "@",
+        "type": "A",
+        "record": "172.66.0.96",
+        "http_status": 200,
+        "ssl_valid": true,
+        "issuer": "C=US, O=Google Trust Services, CN=WR4",
+        "valid_from": "2025-06-25T21:55:04Z",
+        "valid_until": "2025-09-23T21:55:03Z"
+    },
+    {
+        "subdomain": "www",
+        "type": "A",
+        "record": "199.36.158.100",
+        "http_status": 200,
+        "ssl_valid": true,
+        "issuer": "C=US, O=Google Trust Services, CN=WR3",
+        "valid_from": "2025-07-15T05:55:49Z",
+        "valid_until": "2025-10-13T06:54:23Z"
+    },
+    {
+        "subdomain": "www",
+        "type": "CNAME",
+        "record": "app-oint-core.web.app.",
+        "http_status": 200,
+        "ssl_valid": true,
+        "issuer": "C=US, O=Google Trust Services, CN=WR3",
+        "valid_from": "2025-07-15T05:55:49Z",
+        "valid_until": "2025-10-13T06:54:23Z"
+    },
+    {
+        "subdomain": "api",
+        "type": "A",
+        "record": "162.159.140.98",
+        "http_status": 404,
+        "ssl_valid": true,
+        "issuer": "C=US, O=Google Trust Services, CN=WE1",
+        "valid_from": "2025-07-23T15:31:15Z",
+        "valid_until": "2025-10-21T16:31:07Z"
+    },
+    {
+        "subdomain": "api",
+        "type": "A",
+        "record": "172.66.0.96",
+        "http_status": 404,
+        "ssl_valid": true,
+        "issuer": "C=US, O=Google Trust Services, CN=WE1",
+        "valid_from": "2025-07-23T15:31:15Z",
+        "valid_until": "2025-10-21T16:31:07Z"
+    },
+    {
+        "subdomain": "api",
+        "type": "CNAME",
+        "record": "app-oint-marketing-cqznb.ondigitalocean.app.",
+        "http_status": 404,
+        "ssl_valid": true,
+        "issuer": "C=US, O=Google Trust Services, CN=WE1",
+        "valid_from": "2025-07-23T15:31:15Z",
+        "valid_until": "2025-10-21T16:31:07Z"
+    }
+]

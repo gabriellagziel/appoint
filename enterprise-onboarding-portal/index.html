@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App-Oint Enterprise - Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body class="bg-gray-50">
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+            <div>
+                <img class="mx-auto h-12 w-auto" src="/logo.svg" alt="App-Oint">
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                    Enterprise Sign Up
+                </h2>
+                <p class="mt-2 text-center text-sm text-gray-600">
+                    Get started with App-Oint Enterprise
+                </p>
+            </div>
+
+            <!-- Registration Form -->
+            <form id="registrationForm" class="mt-8 space-y-6">
+                <div class="rounded-md shadow-sm -space-y-px">
+                    <div>
+                        <label for="company-name" class="sr-only">Company Name</label>
+                        <input id="company-name" name="companyName" type="text" required
+                            class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                            placeholder="Company Name">
+                    </div>
+                    <div>
+                        <label for="email-address" class="sr-only">Email address</label>
+                        <input id="email-address" name="email" type="email" autocomplete="email" required
+                            class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                            placeholder="Email address">
+                    </div>
+                    <div>
+                        <label for="password" class="sr-only">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="current-password" required
+                            class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                            placeholder="Password">
+                    </div>
+                    <div>
+                        <label for="plan" class="sr-only">Plan</label>
+                        <select id="plan" name="plan" required
+                            class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm">
+                            <option value="">Select Plan</option>
+                            <option value="free">Free Tier (1,000 API calls/month)</option>
+                            <option value="starter">Starter ($99/month - 10,000 API calls)</option>
+                            <option value="professional">Professional ($299/month - 100,000 API calls)</option>
+                            <option value="enterprise">Enterprise (Custom pricing)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit"
+                        class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Create Account
+                    </button>
+                </div>
+            </form>
+
+            <!-- Verification Form (hidden initially) -->
+            <form id="verificationForm" class="mt-8 space-y-6 hidden">
+                <div class="text-center">
+                    <h3 class="text-lg font-medium text-gray-900">Verify Your Email</h3>
+                    <p class="mt-2 text-sm text-gray-600">We've sent a verification code to your email address.</p>
+                </div>
+                <div>
+                    <label for="verification-code" class="sr-only">Verification Code</label>
+                    <input id="verification-code" name="verificationCode" type="text" required
+                        class="appearance-none rounded relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                        placeholder="Enter verification code">
+                </div>
+                <div>
+                    <button type="submit"
+                        class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Verify Email
+                    </button>
+                </div>
+            </form>
+
+            <!-- API Key Display (hidden initially) -->
+            <div id="apiKeyDisplay" class="mt-8 space-y-6 hidden">
+                <div class="text-center">
+                    <h3 class="text-lg font-medium text-gray-900">Welcome to App-Oint Enterprise!</h3>
+                    <p class="mt-2 text-sm text-gray-600">Your account has been created successfully.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-md">
+                    <h4 class="text-sm font-medium text-gray-900 mb-2">Your API Key</h4>
+                    <div class="flex items-center space-x-2">
+                        <input id="apiKey" type="text" readonly
+                            class="flex-1 appearance-none rounded px-3 py-2 border border-gray-300 text-gray-900 text-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                            value="">
+                        <button type="button" onclick="copyApiKey()"
+                            class="px-3 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Copy
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="/dashboard"
+                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Go to Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = '/api/enterprise';
+
+        // Registration form handler
+        document.getElementById('registrationForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const data = {
+                companyName: formData.get('companyName'),
+                email: formData.get('email'),
+                password: formData.get('password'),
+                plan: formData.get('plan')
+            };
+
+            try {
+                const response = await axios.post(`${API_BASE}/signup`, data);
+
+                if (response.data.success) {
+                    // Hide registration form, show verification form
+                    document.getElementById('registrationForm').classList.add('hidden');
+                    document.getElementById('verificationForm').classList.remove('hidden');
+                }
+            } catch (error) {
+                alert('Registration failed: ' + (error.response?.data?.error || error.message));
+            }
+        });
+
+        // Verification form handler
+        document.getElementById('verificationForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const data = {
+                email: document.getElementById('email-address').value,
+                verificationCode: formData.get('verificationCode')
+            };
+
+            try {
+                const response = await axios.post(`${API_BASE}/verify`, data);
+
+                if (response.data.success) {
+                    // Hide verification form, show API key
+                    document.getElementById('verificationForm').classList.add('hidden');
+                    document.getElementById('apiKeyDisplay').classList.remove('hidden');
+                    document.getElementById('apiKey').value = response.data.apiKey;
+                }
+            } catch (error) {
+                alert('Verification failed: ' + (error.response?.data?.error || error.message));
+            }
+        });
+
+        function copyApiKey() {
+            const apiKeyInput = document.getElementById('apiKey');
+            apiKeyInput.select();
+            document.execCommand('copy');
+            alert('API key copied to clipboard!');
+        }
+    </script>
+</body>
+
+</html>

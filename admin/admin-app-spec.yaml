@@ -1,0 +1,21 @@
+name: admin-app
+services:
+- name: admin-web
+  source_dir: /admin
+  github:
+    repo: appoint/appoint
+    branch: main
+  run_command: npm run serve
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  routes:
+  - path: /
+    preserve_path_prefix: false
+  health_check:
+    http_path: /health.html
+    initial_delay_seconds: 10
+    interval_seconds: 30
+    timeout_seconds: 10
+    success_threshold: 1
+    failure_threshold: 3
