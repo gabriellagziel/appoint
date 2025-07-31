@@ -1,0 +1,53 @@
+Production Hardening Test Suite
+================================
+Started: 2025-07-31 01:06:07
+
+2025-07-31 01:06:07 [INFO] 🚀 Starting App-Oint Production Hardening Test Suite
+2025-07-31 01:06:07 [INFO] 🎯 Running comprehensive production hardening validation...
+2025-07-31 01:06:07 [INFO] 🏥 Testing Health Monitoring...
+2025-07-31 01:06:07 [ERROR] ❌ API Health Endpoint: FAILED - Could not reach API health endpoint
+2025-07-31 01:06:07 [ERROR] ❌ API Liveness Probe: FAILED - Could not reach liveness endpoint
+2025-07-31 01:06:07 [ERROR] ❌ API Readiness Probe: FAILED - Could not reach readiness endpoint
+2025-07-31 01:06:07 [ERROR] ❌ API Metrics Endpoint: FAILED - Could not reach metrics endpoint
+2025-07-31 01:06:07 [INFO] 📊 Testing Metrics Collection...
+2025-07-31 01:06:07 [ERROR] ❌ Prometheus Configuration: FAILED - Prometheus configuration missing App-Oint targets
+2025-07-31 01:06:07 [INFO] ✅ Alerting Rules: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Grafana Dashboard: PASSED
+2025-07-31 01:06:07 [INFO] 🚨 Testing Alerting System...
+2025-07-31 01:06:07 [INFO] ✅ Alertmanager Configuration: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Alertmanager Service: PASSED
+2025-07-31 01:06:07 [INFO] 🔄 Testing Auto-Rollback Mechanism...
+2025-07-31 01:06:07 [INFO] ✅ Auto-Rollback Script: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Auto-Rollback Permissions: PASSED
+2025-07-31 01:06:07 [INFO] ⚡ Testing Load Testing Setup...
+2025-07-31 01:06:07 [ERROR] ❌ k6 Load Test Script: FAILED - k6 script not configured for required load
+2025-07-31 01:06:07 [INFO] ✅ Load Test Runner: PASSED
+2025-07-31 01:06:07 [ERROR] ❌ k6 Availability: FAILED - k6 not installed (optional for this test)
+2025-07-31 01:06:07 [INFO] 📈 Testing Auto-Scaling Configuration...
+2025-07-31 01:06:07 [INFO] ✅ Kubernetes HPA: PASSED
+2025-07-31 01:06:07 [INFO] ✅ DigitalOcean Auto-Scaling: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Auto-Scaling Monitor: PASSED
+2025-07-31 01:06:07 [INFO] 📱 Testing Flutter Health Service...
+2025-07-31 01:06:07 [INFO] ✅ Flutter Health Service: PASSED
+2025-07-31 01:06:07 [INFO] 🐳 Testing Docker Configuration...
+2025-07-31 01:06:07 [INFO] ✅ Docker Compose Monitoring: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Docker Health Checks: PASSED
+2025-07-31 01:06:07 [INFO] ⚙️ Testing Configuration Files...
+2025-07-31 01:06:07 [INFO] ✅ Prometheus configuration: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Alerting rules: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Alertmanager configuration: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Kubernetes HPA configuration: PASSED
+2025-07-31 01:06:07 [INFO] ✅ DigitalOcean App Platform configuration: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Docker Compose configuration: PASSED
+2025-07-31 01:06:07 [INFO] 🔐 Testing Script Permissions...
+2025-07-31 01:06:07 [INFO] ✅ Auto-rollback script Permissions: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Auto-scaling monitor script Permissions: PASSED
+2025-07-31 01:06:07 [INFO] ✅ Load test runner script Permissions: PASSED
+2025-07-31 01:06:07 [INFO] 📄 Generating comprehensive test report...
+2025-07-31 01:06:07 [INFO] 📄 Comprehensive report generated: REDACTED_TOKEN.md
+2025-07-31 01:06:07 [INFO] 📊 Test Summary:
+2025-07-31 01:06:07 [INFO]    Total Tests: 29
+2025-07-31 01:06:07 [INFO]    Passed: 22
+2025-07-31 01:06:07 [INFO]    Failed: 7
+2025-07-31 01:06:07 [INFO]    Success Rate: 75%
+2025-07-31 01:06:07 [WARN] ⚠️ Some components need attention. See report for details.

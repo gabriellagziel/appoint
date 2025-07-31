@@ -1,0 +1,454 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "App-Oint Production Overview",
+    "tags": ["app-oint", "production", "sli", "slo"],
+    "timezone": "UTC",
+    "refresh": "30s",
+    "time": {
+      "from": "now-1h",
+      "to": "now"
+    },
+    "panels": [
+      {
+        "id": 1,
+        "title": "SLO Status Overview",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "(1 - (sum(rate(http_errors_5xx_rate[5m])) / sum(rate(http_requests_total[5m])))) * 100",
+            "legendFormat": "Error Rate SLO (Target: >99%)"
+          },
+          {
+            "expr": "histogram_quantile(0.95, sum(rate(REDACTED_TOKEN[5m])) by (le)) * 1000",
+            "legendFormat": "P95 Latency (Target: <500ms)"
+          },
+          {
+            "expr": "sum(rate(http_requests_total[5m]))",
+            "legendFormat": "Request Rate (RPS)"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 24,
+          "x": 0,
+          "y": 0
+        },
+        "fieldConfig": {
+          "defaults": {
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": 0},
+                {"color": "yellow", "value": 95},
+                {"color": "green", "value": 99}
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 2,
+        "title": "Service Health Status",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "up",
+            "legendFormat": "{{instance}}"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 8
+        },
+        "transformations": [
+          {
+            "id": "organize",
+            "options": {
+              "excludeByName": {},
+              "indexByName": {},
+              "renameByName": {
+                "instance": "Service",
+                "Value": "Status"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Active Alerts",
+        "type": "alertlist",
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 8
+        }
+      },
+      {
+        "id": 4,
+        "title": "Request Rate by Service",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "sum(rate(http_requests_total[5m])) by (service)",
+            "legendFormat": "{{service}}"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 16
+        },
+        "fieldConfig": {
+          "defaults": {
+            "custom": {
+              "drawStyle": "line",
+              "lineInterpolation": "linear",
+              "barAlignment": 0,
+              "lineWidth": 1,
+              "fillOpacity": 10,
+              "gradientMode": "none",
+              "spanNulls": false,
+              "insertNulls": false,
+              "showPoints": "never",
+              "pointSize": 5
+            }
+          }
+        }
+      },
+      {
+        "id": 5,
+        "title": "Error Rate by Service",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "sum(rate(http_errors_5xx_rate[5m])) by (service) / sum(rate(http_requests_total[5m])) by (service) * 100",
+            "legendFormat": "{{service}} 5xx errors"
+          },
+          {
+            "expr": "sum(rate(http_errors_4xx_rate[5m])) by (service) / sum(rate(http_requests_total[5m])) by (service) * 100",
+            "legendFormat": "{{service}} 4xx errors"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 16
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "custom": {
+              "drawStyle": "line",
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "fillOpacity": 10
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 1},
+                {"color": "red", "value": 5}
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 6,
+        "title": "Response Time Percentiles",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.50, sum(rate(REDACTED_TOKEN[5m])) by (le, service)) * 1000",
+            "legendFormat": "{{service}} P50"
+          },
+          {
+            "expr": "histogram_quantile(0.95, sum(rate(REDACTED_TOKEN[5m])) by (le, service)) * 1000",
+            "legendFormat": "{{service}} P95"
+          },
+          {
+            "expr": "histogram_quantile(0.99, sum(rate(REDACTED_TOKEN[5m])) by (le, service)) * 1000",
+            "legendFormat": "{{service}} P99"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 24,
+          "x": 0,
+          "y": 24
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "ms",
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 500},
+                {"color": "red", "value": 1000}
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 7,
+        "title": "CPU Usage by Service",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "avg(process_cpu_usage_seconds) by (service)",
+            "legendFormat": "{{service}}"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 32
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 70},
+                {"color": "red", "value": 85}
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 8,
+        "title": "Memory Usage by Service",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "avg(process_memory_usage_percent) by (service)",
+            "legendFormat": "{{service}}"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 32
+        },
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "thresholds": {
+              "steps": [
+                {"color": "green", "value": 0},
+                {"color": "yellow", "value": 75},
+                {"color": "red", "value": 90}
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 9,
+        "title": "Database Performance",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "avg(database_response_time_ms)",
+            "legendFormat": "DB Response Time"
+          },
+          {
+            "expr": "sum(rate(REDACTED_TOKEN[5m]))",
+            "legendFormat": "DB Connection Errors"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 40
+        }
+      },
+      {
+        "id": 10,
+        "title": "Redis Performance",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "redis_connected_clients",
+            "legendFormat": "Connected Clients"
+          },
+          {
+            "expr": "rate(redis_commands_total[5m])",
+            "legendFormat": "Commands/sec"
+          },
+          {
+            "expr": "redis_memory_used_bytes / redis_memory_max_bytes * 100",
+            "legendFormat": "Memory Usage %"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 40
+        }
+      },
+      {
+        "id": 11,
+        "title": "Auto-Scaling Status",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "REDACTED_TOKEN",
+            "legendFormat": "Current Replicas - {{horizontalpodautoscaler}}"
+          },
+          {
+            "expr": "REDACTED_TOKEN",
+            "legendFormat": "Desired Replicas - {{horizontalpodautoscaler}}"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 24,
+          "x": 0,
+          "y": 48
+        }
+      },
+      {
+        "id": 12,
+        "title": "Load Test Results",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "k6_http_req_duration{quantile=\"0.95\"}",
+            "legendFormat": "Load Test P95 Response Time"
+          },
+          {
+            "expr": "rate(k6_http_reqs_total[5m])",
+            "legendFormat": "Load Test Request Rate"
+          },
+          {
+            "expr": "k6_http_req_failed_rate",
+            "legendFormat": "Load Test Error Rate"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 24,
+          "x": 0,
+          "y": 56
+        }
+      },
+      {
+        "id": 13,
+        "title": "Business Metrics",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(increase(booking_success_total[1h]))",
+            "legendFormat": "Bookings (last hour)"
+          },
+          {
+            "expr": "sum(increase(user_registrations_total[1h]))",
+            "legendFormat": "New Users (last hour)"
+          },
+          {
+            "expr": "sum(increase(payment_success_total[1h]))",
+            "legendFormat": "Payments (last hour)"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 24,
+          "x": 0,
+          "y": 64
+        }
+      },
+      {
+        "id": 14,
+        "title": "Regional Status",
+        "type": "geomap",
+        "targets": [
+          {
+            "expr": "up{region=~\".*\"}",
+            "legendFormat": "{{region}}"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 72
+        }
+      },
+      {
+        "id": 15,
+        "title": "Security Metrics",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "sum(rate(security_events_total[5m])) by (type)",
+            "legendFormat": "{{type}}"
+          },
+          {
+            "expr": "sum(rate(failed_login_attempts_total[5m]))",
+            "legendFormat": "Failed Logins"
+          }
+        ],
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 72
+        }
+      }
+    ],
+    "templating": {
+      "list": [
+        {
+          "name": "service",
+          "type": "query",
+          "query": "label_values(up, service)",
+          "refresh": 1,
+          "multi": true,
+          "includeAll": true
+        },
+        {
+          "name": "region",
+          "type": "query",
+          "query": "label_values(up, region)",
+          "refresh": 1,
+          "multi": true,
+          "includeAll": true
+        }
+      ]
+    },
+    "annotations": {
+      "list": [
+        {
+          "name": "Deployments",
+          "datasource": "Prometheus",
+          "expr": "increase(deployment_completed_total[5m])",
+          "titleFormat": "Deployment",
+          "textFormat": "{{service}} deployed"
+        },
+        {
+          "name": "Alerts",
+          "datasource": "Prometheus",
+          "expr": "ALERTS{alertstate=\"firing\"}",
+          "titleFormat": "Alert: {{alertname}}",
+          "textFormat": "{{summary}}"
+        }
+      ]
+    }
+  },
+  "folderId": 0,
+  "overwrite": true
+}
