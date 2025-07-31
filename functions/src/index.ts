@@ -1,6 +1,6 @@
 import * as admin from 'firebase-admin';
 import * as functions from 'firebase-functions';
-import { validateInput, sendNotificationToStudioSchema } from './validation';
+import { sendNotificationToStudioSchema, validateInput } from './validation';
 
 // Ensure admin sdk is initialised safely (handles jest mocks where apps may be undefined)
 const adminInitialized = Array.isArray((admin as any).apps) && (admin as any).apps.length > 0;
@@ -9,17 +9,18 @@ if (!adminInitialized) {
 }
 
 // Import from modular structure
+export * from './alerts';
 export * from './ambassadors';
+export * from './analytics';
+export * from './billingEngine';
+export * from './businessApi';
+export * from './health';
+export * from './ics';
+export * from './metrics';
+export * from './oauth';
 export * from './stripe';
 export * from './validation';
-export * from './businessApi';
-export * from './billingEngine';
-export * from './analytics';
-export * from './ics';
 export * from './webhooks';
-export * from './oauth';
-export * from './alerts';
-export * from './health';
 
 // REDACTED_TOKEN
 // Notification utility functions
@@ -111,4 +112,4 @@ export const onNewBooking = (functions as any).firestore
     return null;
   });
 // Re-export for backward compatibility
-export { ambassadorQuotas } from './ambassadors'; 
+export { ambassadorQuotas } from './ambassadors';
