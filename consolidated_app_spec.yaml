@@ -51,13 +51,11 @@ services:
     instance_size_slug: basic-xxs
 
   - name: enterprise
-    environment_slug: node-js
     github:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "enterprise-onboarding-portal"
-    build_command: "npm ci && npm run build"
-    run_command: "node index.js"
+    dockerfile_path: "Dockerfile"
     http_port: 80
     routes:
       - path: /enterprise
