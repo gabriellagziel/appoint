@@ -39,19 +39,23 @@ const {
 
 const functions = require('firebase-functions');
 
-// Health check endpoint
-const health = functions.https.onRequest((req, res) => {
-  res.status(200).json({
-    status: 'healthy',
-    timestamp: new Date().toISOString(),
-    service: 'app-oint-api'
-  });
-});
+// Import enhanced health endpoints
+const { health, liveness, readiness, status } = require('./src/health');
+
+// Import metrics endpoints
+const { metrics, metricsJson } = require('./src/metrics');
 
 // Export all functions
 module.exports = {
-  // Health check
+  // Health check endpoints
   health,
+  liveness,
+  readiness,
+  status,
+  
+  // Metrics endpoints
+  metrics,
+  metricsJson,
   
   // FCM and Booking functions
   onNewBooking,

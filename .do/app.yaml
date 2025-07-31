@@ -1,0 +1,463 @@
+name: app-oint
+region: nyc1
+domains:
+  - domain: app-oint.com
+    type: PRIMARY
+    zone: app-oint.com
+    certificate_id: ""  # Auto-generated SSL
+  - domain: www.app-oint.com
+    type: ALIAS
+    zone: app-oint.com
+
+# Database configuration
+databases:
+  - name: app-oint-postgres
+    engine: PG
+    version: "15"
+    size: db-s-1vcpu-1gb
+    num_nodes: 1
+    production: true
+
+# Redis configuration (managed database)
+databases:
+  - name: app-oint-redis
+    engine: REDIS
+    version: "7"
+    size: db-s-1vcpu-1gb
+    num_nodes: 1
+    production: true
+
+# Services configuration
+services:
+  # API/Functions Service
+  - name: functions
+    source_dir: /functions
+    dockerfile_path: Dockerfile
+    github:
+      branch: main
+      deploy_on_push: true
+    http_port: 5001
+    instance_count: 2
+    instance_size_slug: basic-xxs
+    
+    # Auto-scaling configuration
+    autoscaling:
+      min_instance_count: 2
+      max_instance_count: 20
+      metrics:
+        cpu:
+          percent: 80
+        memory:
+          percent: 75
+    
+    # Environment variables
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "5001"
+      - key: DATABASE_URL
+        type: SECRET
+        value: "${app-oint-postgres.DATABASE_URL}"
+      - key: REDIS_URL
+        type: SECRET
+        value: "${app-oint-redis.REDIS_URL}"
+      - key: JWT_SECRET
+        type: SECRET
+        value: "${JWT_SECRET}"
+      - key: FIREBASE_PROJECT_ID
+        type: SECRET
+        value: "${FIREBASE_PROJECT_ID}"
+      - key: FIREBASE_PRIVATE_KEY
+        type: SECRET
+        value: "${FIREBASE_PRIVATE_KEY}"
+      - key: FIREBASE_CLIENT_EMAIL
+        type: SECRET
+        value: "${FIREBASE_CLIENT_EMAIL}"
+      - key: STRIPE_SECRET_KEY
+        type: SECRET
+        value: "${STRIPE_SECRET_KEY}"
+      - key: SENDGRID_API_KEY
+        type: SECRET
+        value: "${SENDGRID_API_KEY}"
+    
+    # Health checks
+    health_check:
+      http_path: "/health"
+      initial_delay_seconds: 30
+      period_seconds: 10
+      timeout_seconds: 5
+      success_threshold: 1
+      failure_threshold: 3
+    
+    # Resource limits
+    instance_size_slug: basic-s  # 1 vCPU, 1GB RAM
+
+  # Dashboard Service (Next.js)
+  - name: dashboard
+    source_dir: /dashboard
+    dockerfile_path: Dockerfile
+    github:
+      branch: main
+      deploy_on_push: true
+    http_port: 3000
+    instance_count: 2
+    
+    # Auto-scaling
+    autoscaling:
+      min_instance_count: 2
+      max_instance_count: 15
+      metrics:
+        cpu:
+          percent: 80
+        memory:
+          percent: 75
+    
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "3000"
+      - key: API_BASE_URL
+        value: "${functions.PRIVATE_URL}"
+      - key: NEXT_PUBLIC_API_URL
+        value: "https://app-oint.com/api"
+      - key: DATABASE_URL
+        type: SECRET
+        value: "${app-oint-postgres.DATABASE_URL}"
+      - key: NEXTAUTH_URL
+        value: "https://app-oint.com"
+      - key: NEXTAUTH_SECRET
+        type: SECRET
+        value: "${NEXTAUTH_SECRET}"
+      - key: JWT_SECRET
+        type: SECRET
+        value: "${JWT_SECRET}"
+    
+    health_check:
+      http_path: "/api/health"
+      initial_delay_seconds: 45
+      period_seconds: 10
+      timeout_seconds: 5
+      success_threshold: 1
+      failure_threshold: 3
+    
+    instance_size_slug: basic-s
+
+  # Marketing Website
+  - name: marketing
+    source_dir: /marketing
+    dockerfile_path: Dockerfile
+    github:
+      branch: main
+      deploy_on_push: true
+    http_port: 8080
+    instance_count: 2
+    
+    # Auto-scaling
+    autoscaling:
+      min_instance_count: 2
+      max_instance_count: 10
+      metrics:
+        cpu:
+          percent: 80
+        memory:
+          percent: 75
+    
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "8080"
+      - key: API_BASE_URL
+        value: "${functions.PRIVATE_URL}"
+      - key: NEXT_PUBLIC_API_URL
+        value: "https://app-oint.com/api"
+      - key: NEXT_PUBLIC_SITE_URL
+        value: "https://app-oint.com"
+      - key: NEXT_PUBLIC_GA_ID
+        type: SECRET
+        value: "${GOOGLE_ANALYTICS_ID}"
+      - key: FIREBASE_PROJECT_ID
+        type: SECRET
+        value: "${FIREBASE_PROJECT_ID}"
+    
+    health_check:
+      http_path: "/api/health"
+      initial_delay_seconds: 30
+      period_seconds: 10
+      timeout_seconds: 5
+      success_threshold: 1
+      failure_threshold: 3
+    
+    instance_size_slug: basic-xs
+
+  # Admin Panel
+  - name: admin
+    source_dir: /admin
+    dockerfile_path: Dockerfile
+    github:
+      branch: main
+      deploy_on_push: true
+    http_port: 8082
+    instance_count: 1
+    
+    # Auto-scaling (conservative for admin)
+    autoscaling:
+      min_instance_count: 1
+      max_instance_count: 5
+      metrics:
+        cpu:
+          percent: 80
+        memory:
+          percent: 75
+    
+    envs:
+      - key: PORT
+        value: "8082"
+      - key: API_BASE_URL
+        value: "${functions.PRIVATE_URL}"
+      - key: NEXT_PUBLIC_API_URL
+        value: "https://app-oint.com/api"
+      - key: ADMIN_SECRET_KEY
+        type: SECRET
+        value: "${ADMIN_SECRET_KEY}"
+      - key: JWT_SECRET
+        type: SECRET
+        value: "${JWT_SECRET}"
+    
+    health_check:
+      http_path: "/health"
+      initial_delay_seconds: 30
+      period_seconds: 15
+      timeout_seconds: 5
+      success_threshold: 1
+      failure_threshold: 3
+    
+    instance_size_slug: basic-xs
+
+  # Business Portal
+  - name: business
+    source_dir: /business
+    dockerfile_path: Dockerfile
+    github:
+      branch: main
+      deploy_on_push: true
+    http_port: 8081
+    instance_count: 1
+    
+    # Auto-scaling
+    autoscaling:
+      min_instance_count: 1
+      max_instance_count: 8
+      metrics:
+        cpu:
+          percent: 80
+        memory:
+          percent: 75
+    
+    envs:
+      - key: PORT
+        value: "8081"
+      - key: API_BASE_URL
+        value: "${functions.PRIVATE_URL}"
+      - key: NEXT_PUBLIC_API_URL
+        value: "https://app-oint.com/api"
+      - key: BUSINESS_SECRET_KEY
+        type: SECRET
+        value: "${BUSINESS_SECRET_KEY}"
+      - key: JWT_SECRET
+        type: SECRET
+        value: "${JWT_SECRET}"
+      - key: STRIPE_PUBLIC_KEY
+        type: SECRET
+        value: "${STRIPE_PUBLIC_KEY}"
+    
+    health_check:
+      http_path: "/health"
+      initial_delay_seconds: 30
+      period_seconds: 15
+      timeout_seconds: 5
+      success_threshold: 1
+      failure_threshold: 3
+    
+    instance_size_slug: basic-xs
+
+# Static site for CDN
+static_sites:
+  # Flutter Web App (compiled)
+  - name: flutter-web
+    source_dir: /web
+    build_command: |
+      flutter config --enable-web
+      flutter build web --release --web-renderer html
+    output_dir: /build/web
+    index_document: index.html
+    error_document: index.html
+    
+    # CDN settings for static assets
+    routes:
+      - path: /assets/*
+        headers:
+          cache-control: "public, max-age=31536000, immutable"
+      - path: /icons/*
+        headers:
+          cache-control: "public, max-age=31536000, immutable"
+      - path: /*
+        headers:
+          cache-control: "public, max-age=3600"
+    
+    # Environment for build
+    envs:
+      - key: FLUTTER_WEB
+        value: "true"
+
+# Jobs (for background tasks)
+jobs:
+  # Database backup job
+  - name: db-backup
+    source_dir: /scripts
+    dockerfile_path: Dockerfile.backup
+    kind: PRE_DEPLOY  # Run before each deployment
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    
+    envs:
+      - key: DATABASE_URL
+        type: SECRET
+        value: "${app-oint-postgres.DATABASE_URL}"
+      - key: BACKUP_BUCKET
+        type: SECRET
+        value: "${BACKUP_BUCKET}"
+      - key: DO_SPACES_KEY
+        type: SECRET
+        value: "${DO_SPACES_KEY}"
+      - key: DO_SPACES_SECRET
+        type: SECRET
+        value: "${DO_SPACES_SECRET}"
+
+  # Scheduled maintenance job
+  - name: maintenance
+    source_dir: /scripts
+    dockerfile_path: Dockerfile.maintenance
+    kind: POST_DEPLOY  # Run after successful deployment
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    
+    envs:
+      - key: DATABASE_URL
+        type: SECRET
+        value: "${app-oint-postgres.DATABASE_URL}"
+      - key: REDIS_URL
+        type: SECRET
+        value: "${app-oint-redis.REDIS_URL}"
+
+# Workers (for background processing)
+workers:
+  # Email and notification worker
+  - name: notifications-worker
+    source_dir: /workers
+    dockerfile_path: Dockerfile.notifications
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    
+    # Auto-scaling for workers
+    autoscaling:
+      min_instance_count: 1
+      max_instance_count: 5
+      metrics:
+        cpu:
+          percent: 70
+        memory:
+          percent: 80
+    
+    envs:
+      - key: REDIS_URL
+        type: SECRET
+        value: "${app-oint-redis.REDIS_URL}"
+      - key: SENDGRID_API_KEY
+        type: SECRET
+        value: "${SENDGRID_API_KEY}"
+      - key: FIREBASE_PROJECT_ID
+        type: SECRET
+        value: "${FIREBASE_PROJECT_ID}"
+
+# Routing configuration
+ingress:
+  rules:
+    # API routes
+    - match:
+        path:
+          prefix: "/api"
+      component:
+        name: functions
+        rewrite: "/"
+    
+    # Dashboard routes
+    - match:
+        path:
+          prefix: "/dashboard"
+      component:
+        name: dashboard
+        rewrite: "/"
+    
+    # Admin routes
+    - match:
+        path:
+          prefix: "/admin"
+      component:
+        name: admin
+        rewrite: "/"
+    
+    # Business portal routes
+    - match:
+        path:
+          prefix: "/business"
+      component:
+        name: business
+        rewrite: "/"
+    
+    # Flutter web app routes
+    - match:
+        path:
+          prefix: "/app"
+      component:
+        name: flutter-web
+        rewrite: "/"
+    
+    # Marketing site (default)
+    - component:
+        name: marketing
+
+# Alerts configuration
+alerts:
+  - rule: CPU_UTILIZATION
+    disabled: false
+    spec:
+      operator: GREATER_THAN
+      value: 80
+      window: FIVE_MINUTES
+  
+  - rule: MEM_UTILIZATION
+    disabled: false
+    spec:
+      operator: GREATER_THAN
+      value: 75
+      window: FIVE_MINUTES
+  
+  - rule: RESTART_COUNT
+    disabled: false
+    spec:
+      operator: GREATER_THAN
+      value: 3
+      window: FIVE_MINUTES
+  
+  - rule: DEPLOYMENT_FAILED
+    disabled: false
+  
+  - rule: DOMAIN_FAILED
+    disabled: false
+
+# Features
+features:
+  - buildpack-stack=ubuntu-22
