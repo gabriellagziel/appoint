@@ -2215,7 +2215,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get viewDetails => '[FR] Voir les détails';
 
   @override
-  String get notifications1 => 'Notifications';
+  String get notifications1 => '[FR] Notifications';
 
   @override
   String get liveSessionScheduledWaitingForParentApproval =>
