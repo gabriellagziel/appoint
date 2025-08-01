@@ -141,6 +141,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.5'
+          channel: 'stable'
+        
       - name: Restore Flutter cache
         uses: actions/cache@v4
         with:
@@ -214,6 +220,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.5'
+          channel: 'stable'
+        
       - name: Restore Flutter cache
         uses: actions/cache@v4
         with:
@@ -268,6 +280,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.5'
+          channel: 'stable'
         
       - name: Restore Flutter cache
         uses: actions/cache@v4
@@ -378,6 +396,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.5'
+          channel: 'stable'
         
       - name: Restore Flutter cache
         uses: actions/cache@v4
