@@ -1,6 +1,6 @@
 "use client"
 
-import { useI18n } from '@/lib/i18n'
+import { useI18n } from '../lib/i18n'
 import { ChevronDown, Globe } from 'lucide-react'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'

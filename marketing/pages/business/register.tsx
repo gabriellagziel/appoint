@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Navbar } from '@/components/Navbar'
-import { BusinessRegisterForm } from '@/components/BusinessRegisterForm'
+import { Navbar } from '../../src/components/Navbar'
+import { BusinessRegisterForm } from '../../src/components/BusinessRegisterForm'
 
 export default function BusinessRegisterPage() {
   const [apiKey, setApiKey] = useState<string | null>(null)

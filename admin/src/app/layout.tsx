@@ -1,7 +1,8 @@
+import { Providers } from "@/components/Providers"
+import { ThemeProvider } from "@app-oint/design-system"
 import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { Providers } from "@/components/Providers"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -54,10 +55,12 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#3b82f6" />
         <meta name="msapplication-tap-highlight" content="no" />
       </head>
-      <body className={inter.className}>
-        <Providers>
-          {children}
-        </Providers>
+      <body className={`${inter.className} bg-gray-50 min-h-screen`}>
+        <ThemeProvider defaultTheme="light">
+          <Providers>
+            {children}
+          </Providers>
+        </ThemeProvider>
       </body>
     </html>
   )

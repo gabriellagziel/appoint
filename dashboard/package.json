@@ -9,9 +9,10 @@
     "test": "echo \"No tests specified\""
   },
   "dependencies": {
-    "express": "^4.18.2",
+    "@app-oint/design-system": "file:../packages/design-system",
     "cors": "^2.8.5",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

@@ -1,5 +1,5 @@
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts'
-import { useI18n } from '@/lib/i18n'
+import { useI18n } from '../lib/i18n'
 
 interface Props {
   data: { date: string; calls: number }[]

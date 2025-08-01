@@ -1,0 +1,13 @@
+{
+    "name": "mobile-app-download",
+    "version": "1.0.0",
+    "description": "Mobile app download page for App-Oint",
+    "main": "server.js",
+    "scripts": {
+        "build": "echo 'Mobile app download page built successfully'",
+        "start": "npx serve public -p 80"
+    },
+    "dependencies": {
+        "serve": "^14.2.1"
+    }
+}

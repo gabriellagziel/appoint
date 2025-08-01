@@ -1,7 +1,7 @@
-import { Navbar } from '@/components/Navbar'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { Navbar } from '../../src/components/Navbar'
+import { Button } from '../../src/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../src/components/ui/card'
+import { Badge } from '../../src/components/ui/badge'
 import { Code, Download, ExternalLink, Book, Zap, Shield, Users } from 'lucide-react'
 import { useState } from 'react'
 

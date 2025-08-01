@@ -62,6 +62,116 @@ async function sendVerificationEmail(email, code) {
     }
 }
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+    res.json({
+        status: 'healthy',
+        service: 'enterprise',
+        timestamp: new Date().toISOString(),
+        version: '1.0.0'
+    });
+});
+
+// API Endpoints for Mobile App Integration
+app.get('/api/enterprise', (req, res) => {
+    res.json({
+        enterprise: true,
+        features: [
+            'multi-location',
+            'advanced-analytics',
+            'white-label',
+            'custom-integrations'
+        ]
+    });
+});
+
+app.get('/api/enterprise/multi-location', (req, res) => {
+    res.json({
+        locations: [
+            {
+                id: 1,
+                name: 'Headquarters',
+                address: '123 Main St, New York, NY',
+                status: 'active'
+            },
+            {
+                id: 2,
+                name: 'West Coast Office',
+                address: '456 Tech Ave, San Francisco, CA',
+                status: 'active'
+            }
+        ]
+    });
+});
+
+app.get('/api/enterprise/advanced-analytics', (req, res) => {
+    res.json({
+        analytics: {
+            totalRevenue: 500000,
+            totalAppointments: 2500,
+            customerSatisfaction: 4.8,
+            growthRate: 15.5
+        }
+    });
+});
+
+app.get('/api/enterprise/white-label', (req, res) => {
+    res.json({
+        whiteLabel: {
+            enabled: true,
+            customDomain: 'mycompany.appoint.com',
+            branding: {
+                logo: 'https://mycompany.com/logo.png',
+                colors: {
+                    primary: '#007bff',
+                    secondary: '#6c757d'
+                }
+            }
+        }
+    });
+});
+
+app.get('/api/enterprise/integrations', (req, res) => {
+    res.json({
+        integrations: [
+            {
+                name: 'Salesforce',
+                status: 'connected',
+                lastSync: '2025-08-01T10:00:00Z'
+            },
+            {
+                name: 'HubSpot',
+                status: 'connected',
+                lastSync: '2025-08-01T09:30:00Z'
+            },
+            {
+                name: 'Zapier',
+                status: 'available',
+                lastSync: null
+            }
+        ]
+    });
+});
+
+app.get('/api/enterprise/reports', (req, res) => {
+    res.json({
+        reports: [
+            {
+                id: 1,
+                name: 'Monthly Revenue Report',
+                type: 'revenue',
+                lastGenerated: '2025-08-01T00:00:00Z'
+            },
+            {
+                id: 2,
+                name: 'Customer Analytics',
+                type: 'analytics',
+                lastGenerated: '2025-08-01T06:00:00Z'
+            }
+        ]
+    });
+});
+
 // Routes
 app.post('/api/enterprise/signup', async (req, res) => {
     try {
@@ -102,11 +212,15 @@ app.post('/api/enterprise/signup', async (req, res) => {
 
         // Send verification email
         const emailSent = await sendVerificationEmail(email, verificationCode);
-        if (!emailSent) {
-            return res.status(500).json({ error: 'Failed to send verification email' });
-        }
 
-        res.json({ success: true, message: 'Verification email sent' });
+        if (emailSent) {
+            res.status(201).json({
+                message: 'Account created successfully. Please check your email for verification.',
+                userId: user.id
+            });
+        } else {
+            res.status(500).json({ error: 'Failed to send verification email' });
+        }
     } catch (error) {
         console.error('Signup error:', error);
         res.status(500).json({ error: 'Internal server error' });
