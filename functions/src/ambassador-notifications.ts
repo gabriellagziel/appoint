@@ -1,4 +1,5 @@
-import * as functions from 'firebase-functions/v2';
+import { onCall, HttpsError } from 'firebase-functions/v2/https';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as admin from 'firebase-admin';
 
 const db = admin.firestore();
@@ -156,23 +157,23 @@ async function sendNotificationHelper(notificationData: NotificationData): Promi
 /**
  * Send Ambassador notification to a user
  */
-export const sendAmbassadorNotification = functions.https.onCall(async (request) => {
+export const sendAmbassadorNotification = onCall(async (request) => {
   if (!request.auth) {
-    throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
   }
 
   try {
     return await sendNotificationHelper(request.data);
   } catch (error) {
     console.error('Error sending notification:', error);
-    throw new functions.https.HttpsError('internal', 'Failed to send notification');
+    throw new HttpsError('internal', 'Failed to send notification');
   }
 });
 
 /**
  * Scheduled function to send monthly reminders
  */
-export const sendMonthlyReminders = functions.scheduler.onSchedule('0 10 * * *', async (event): Promise<void> => {
+export const sendMonthlyReminders = onSchedule('0 10 * * *', async (event): Promise<void> => {
     console.log('Starting monthly reminder check...');
     
     try {

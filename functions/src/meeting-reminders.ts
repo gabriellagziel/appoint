@@ -1,5 +1,7 @@
-import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
+import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/firestore';
+import { onCall } from 'firebase-functions/v2/https';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
 
 if (!admin.apps.length) {
   admin.initializeApp();
@@ -40,157 +42,155 @@ interface Location {
 /**
  * Scheduled function: Check locations for upcoming meetings every 15 minutes
  */
-export const checkMeetingLocations = functions.pubsub
-  .schedule('every 15 minutes')
-  .onRun(async (context) => {
-    console.log('Starting meeting location check...');
-    
-    const now = admin.firestore.Timestamp.now();
-    const oneHourFromNow = admin.firestore.Timestamp.fromMillis(
-      now.toMillis() + (60 * 60 * 1000)
-    );
-    
-    try {
-      // Get meetings starting in the next hour with location tracking enabled
-      const meetingsQuery = await db
-        .collection('meetings')
-        .where('scheduledAt', '>', now)
-        .where('scheduledAt', '<', oneHourFromNow)
-        .where('isLocationTrackingEnabled', '==', true)
-        .get();
+export const checkMeetingLocations = onSchedule({
+  schedule: 'every 15 minutes',
+}, async (context) => {
+  console.log('Starting meeting location check...');
 
-      let checkedCount = 0;
-      let notificationsSent = 0;
+  const now = admin.firestore.Timestamp.now();
+  const oneHourFromNow = admin.firestore.Timestamp.fromMillis(
+    now.toMillis() + (60 * 60 * 1000)
+  );
 
-      for (const doc of meetingsQuery.docs) {
-        const meeting = { id: doc.id, ...doc.data() } as MeetingDetails;
-        checkedCount++;
+  try {
+    // Get meetings starting in the next hour with location tracking enabled
+    const meetingsQuery = await db
+      .collection('meetings')
+      .where('scheduledAt', '>', now)
+      .where('scheduledAt', '<', oneHourFromNow)
+      .where('isLocationTrackingEnabled', '==', true)
+      .get();
 
-        // Check each confirmed participant
-        for (const participant of meeting.participants) {
-          if (participant.status === 'confirmed' && !participant.isRunningLate) {
-            // Get user's current location from their profile or device
-            const userDoc = await db.collection('users').doc(participant.userId).get();
-            const userData = userDoc.data();
-            
-            if (userData?.currentLocation && meeting.location) {
-              const willBeLate = await checkIfUserWillBeLate(
-                userData.currentLocation,
-                meeting.location,
-                meeting.scheduledAt.toDate()
-              );
+    let checkedCount = 0;
+    let notificationsSent = 0;
 
-              if (willBeLate) {
-                await sendLateWarningNotification(meeting, participant);
-                notificationsSent++;
-              }
+    for (const doc of meetingsQuery.docs) {
+      const meeting = { id: doc.id, ...doc.data() } as MeetingDetails;
+      checkedCount++;
+
+      // Check each confirmed participant
+      for (const participant of meeting.participants) {
+        if (participant.status === 'confirmed' && !participant.isRunningLate) {
+          // Get user's current location from their profile or device
+          const userDoc = await db.collection('users').doc(participant.userId).get();
+          const userData = userDoc.data();
+
+          if (userData?.currentLocation && meeting.location) {
+            const willBeLate = await checkIfUserWillBeLate(
+              userData.currentLocation,
+              meeting.location,
+              meeting.scheduledAt.toDate()
+            );
+
+            if (willBeLate) {
+              await sendLateWarningNotification(meeting, participant);
+              notificationsSent++;
             }
           }
         }
       }
-
-      console.log(`Meeting location check completed. Checked ${checkedCount} meetings, sent ${notificationsSent} warnings.`);
-    } catch (error) {
-      console.error('Error in meeting location check:', error);
     }
-  });
+
+    console.log(`Meeting location check completed. Checked ${checkedCount} meetings, sent ${notificationsSent} warnings.`);
+  } catch (error) {
+    console.error('Error in meeting location check:', error);
+  }
+});
 
 /**
  * Scheduled function: Send meeting reminders
  */
-export const sendMeetingReminders = functions.pubsub
-  .schedule('every 5 minutes')
-  .onRun(async (context) => {
-    console.log('Starting meeting reminder check...');
-    
-    const now = admin.firestore.Timestamp.now();
-    const fiveMinutesFromNow = admin.firestore.Timestamp.fromMillis(
-      now.toMillis() + (5 * 60 * 1000)
-    );
-    
-    try {
-      // Get meetings with reminders due in the next 5 minutes
-      const reminderQuery = await db
-        .collection('meeting_reminders')
-        .where('scheduledAt', '>', now)
-        .where('scheduledAt', '<', fiveMinutesFromNow)
-        .where('sent', '==', false)
-        .get();
+export const sendMeetingReminders = onSchedule('every 5 minutes', async (context) => {
+  console.log('Starting meeting reminder check...');
 
-      let remindersSent = 0;
+  const now = admin.firestore.Timestamp.now();
+  const fiveMinutesFromNow = admin.firestore.Timestamp.fromMillis(
+    now.toMillis() + (5 * 60 * 1000)
+  );
 
-      for (const doc of reminderQuery.docs) {
-        const reminder = doc.data();
-        const meetingDoc = await db.collection('meetings').doc(reminder.meetingId).get();
-        
-        if (meetingDoc.exists) {
-          const meeting = { id: meetingDoc.id, ...meetingDoc.data() } as MeetingDetails;
-          await sendReminderNotification(meeting, reminder.userId);
-          
-          // Mark reminder as sent
-          await doc.ref.update({ sent: true, sentAt: admin.firestore.FieldValue.serverTimestamp() });
-          remindersSent++;
-        }
+  try {
+    // Get meetings with reminders due in the next 5 minutes
+    const reminderQuery = await db
+      .collection('meeting_reminders')
+      .where('scheduledAt', '>', now)
+      .where('scheduledAt', '<', fiveMinutesFromNow)
+      .where('sent', '==', false)
+      .get();
+
+    let remindersSent = 0;
+
+    for (const doc of reminderQuery.docs) {
+      const reminder = doc.data();
+      const meetingDoc = await db.collection('meetings').doc(reminder.meetingId).get();
+
+      if (meetingDoc.exists) {
+        const meeting = { id: meetingDoc.id, ...meetingDoc.data() } as MeetingDetails;
+        await sendReminderNotification(meeting, reminder.userId);
+
+        // Mark reminder as sent
+        await doc.ref.update({ sent: true, sentAt: admin.firestore.FieldValue.serverTimestamp() });
+        remindersSent++;
       }
-
-      console.log(`Meeting reminder check completed. Sent ${remindersSent} reminders.`);
-    } catch (error) {
-      console.error('Error in meeting reminder check:', error);
     }
-  });
+
+    console.log(`Meeting reminder check completed. Sent ${remindersSent} reminders.`);
+  } catch (error) {
+    console.error('Error in meeting reminder check:', error);
+  }
+});
 
 /**
  * Firestore trigger: Create reminders when a meeting is created
  */
-export const onMeetingCreated = functions.firestore
-  .document('meetings/{meetingId}')
-  .onCreate(async (snap, context) => {
-    const meeting = { id: snap.id, ...snap.data() } as MeetingDetails;
-    
-    try {
-      await createMeetingReminders(meeting);
-      console.log(`Created reminders for meeting: ${meeting.id}`);
-    } catch (error) {
-      console.error('Error creating meeting reminders:', error);
-    }
-  });
+export const onMeetingCreated = onDocumentCreated('meetings/{meetingId}', async (event) => {
+  const snap = event.data;
+  if (!snap) return;
+  const meeting = { id: snap.id, ...snap.data() } as MeetingDetails;
+
+  try {
+    await createMeetingReminders(meeting);
+    console.log(`Created reminders for meeting: ${meeting.id}`);
+  } catch (error) {
+    console.error('Error creating meeting reminders:', error);
+  }
+});
 
 /**
  * Firestore trigger: Update chat when participant status changes
  */
-export const onParticipantStatusChange = functions.firestore
-  .document('meetings/{meetingId}')
-  .onUpdate(async (change, context) => {
-    const before = change.before.data() as MeetingDetails;
-    const after = change.after.data() as MeetingDetails;
-    
-    // Check for participant status changes
-    const statusChanges = findParticipantStatusChanges(before.participants, after.participants);
-    
-    if (statusChanges.length > 0 && after.chatId) {
-      for (const change of statusChanges) {
-        await sendChatStatusUpdate(after.chatId, change);
-      }
+export const onParticipantStatusChange = onDocumentUpdated('meetings/{meetingId}', async (event) => {
+  const change = event.data;
+  if (!change) return;
+  const before = change.before.data() as MeetingDetails;
+  const after = change.after.data() as MeetingDetails;
+
+  // Check for participant status changes
+  const statusChanges = findParticipantStatusChanges(before.participants, after.participants);
+
+  if (statusChanges.length > 0 && after.chatId) {
+    for (const change of statusChanges) {
+      await sendChatStatusUpdate(after.chatId, change);
     }
-  });
+  }
+});
 
 async function checkIfUserWillBeLate(
-  currentLocation: Location, 
-  meetingLocation: Location, 
+  currentLocation: Location,
+  meetingLocation: Location,
   meetingTime: Date
 ): Promise<boolean> {
   // Calculate distance using Haversine formula
   const distance = calculateDistance(currentLocation, meetingLocation);
-  
+
   // Estimate travel time (assuming average speed of 30 km/h for mixed transportation)
   const averageSpeedKmh = 30;
   const travelTimeMinutes = (distance / averageSpeedKmh) * 60;
-  
+
   // Add buffer time (20% extra for safety)
   const bufferedTravelTime = travelTimeMinutes * 1.2;
-  
+
   const timeUntilMeeting = (meetingTime.getTime() - Date.now()) / (1000 * 60); // minutes
-  
+
   // Consider late if travel time is more than 80% of remaining time
   return bufferedTravelTime > (timeUntilMeeting * 0.8);
 }
@@ -199,12 +199,12 @@ function calculateDistance(loc1: Location, loc2: Location): number {
   const R = 6371; // Earth's radius in kilometers
   const dLat = toRadians(loc2.latitude - loc1.latitude);
   const dLon = toRadians(loc2.longitude - loc1.longitude);
-  
-  const a = 
+
+  const a =
     Math.sin(dLat / 2) * Math.sin(dLat / 2) +
     Math.cos(toRadians(loc1.latitude)) * Math.cos(toRadians(loc2.latitude)) *
     Math.sin(dLon / 2) * Math.sin(dLon / 2);
-    
+
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   return R * c;
 }
@@ -229,7 +229,7 @@ async function sendLateWarningNotification(meeting: MeetingDetails, participant:
   // Get user's FCM token
   const userDoc = await db.collection('users').doc(participant.userId).get();
   const fcmToken = userDoc.data()?.fcmToken;
-  
+
   if (fcmToken) {
     await admin.messaging().send({
       token: fcmToken,
@@ -258,7 +258,7 @@ async function sendReminderNotification(meeting: MeetingDetails, userId: string)
   // Get user's FCM token
   const userDoc = await db.collection('users').doc(userId).get();
   const fcmToken = userDoc.data()?.fcmToken;
-  
+
   if (fcmToken) {
     await admin.messaging().send({
       token: fcmToken,
@@ -269,10 +269,10 @@ async function sendReminderNotification(meeting: MeetingDetails, userId: string)
 
 async function createMeetingReminders(meeting: MeetingDetails) {
   const reminderTime = new Date(meeting.scheduledAt.toMillis() - (meeting.reminderMinutes * 60 * 1000));
-  
+
   // Create reminder documents for each participant
   const batch = db.batch();
-  
+
   for (const participant of meeting.participants) {
     const reminderRef = db.collection('meeting_reminders').doc();
     batch.set(reminderRef, {
@@ -283,19 +283,19 @@ async function createMeetingReminders(meeting: MeetingDetails) {
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
     });
   }
-  
+
   await batch.commit();
 }
 
 function findParticipantStatusChanges(
-  beforeParticipants: MeetingParticipant[], 
+  beforeParticipants: MeetingParticipant[],
   afterParticipants: MeetingParticipant[]
-): Array<{participant: MeetingParticipant, oldStatus: string, newStatus: string}> {
-  const changes: Array<{participant: MeetingParticipant, oldStatus: string, newStatus: string}> = [];
-  
+): Array<{ participant: MeetingParticipant, oldStatus: string, newStatus: string }> {
+  const changes: Array<{ participant: MeetingParticipant, oldStatus: string, newStatus: string }> = [];
+
   afterParticipants.forEach(afterParticipant => {
     const beforeParticipant = beforeParticipants.find(p => p.userId === afterParticipant.userId);
-    
+
     if (beforeParticipant && beforeParticipant.status !== afterParticipant.status) {
       changes.push({
         participant: afterParticipant,
@@ -304,13 +304,13 @@ function findParticipantStatusChanges(
       });
     }
   });
-  
+
   return changes;
 }
 
 async function sendChatStatusUpdate(chatId: string, statusChange: any) {
   const { participant, newStatus } = statusChange;
-  
+
   let message = '';
   switch (newStatus) {
     case 'confirmed':
@@ -328,7 +328,7 @@ async function sendChatStatusUpdate(chatId: string, statusChange: any) {
     default:
       return;
   }
-  
+
   // Add system message to chat
   await db.collection('chats').doc(chatId).collection('messages').add({
     type: 'system',
@@ -345,21 +345,21 @@ async function sendChatStatusUpdate(chatId: string, statusChange: any) {
 /**
  * HTTP function: Get meeting analytics
  */
-export const getMeetingAnalytics = functions.https.onCall(async (data, context) => {
-  if (!context.auth) {
-    throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+export const getMeetingAnalytics = onCall(async (request) => {
+  if (!request.auth) {
+    throw new Error('User must be authenticated');
   }
 
-  const { userId, startDate, endDate } = data;
-  
-  if (context.auth.uid !== userId) {
-    throw new functions.https.HttpsError('permission-denied', 'User can only access their own analytics');
+  const { userId, startDate, endDate } = request.data;
+
+  if (request.auth.uid !== userId) {
+    throw new Error('User can only access their own analytics');
   }
 
   try {
     const start = admin.firestore.Timestamp.fromDate(new Date(startDate));
     const end = admin.firestore.Timestamp.fromDate(new Date(endDate));
-    
+
     const meetingsQuery = await db
       .collection('meetings')
       .where('participants', 'array-contains', { userId })
@@ -381,52 +381,52 @@ export const getMeetingAnalytics = functions.https.onCall(async (data, context) 
     meetingsQuery.docs.forEach(doc => {
       const meeting = doc.data() as MeetingDetails;
       const userParticipant = meeting.participants.find(p => p.userId === userId);
-      
+
       if (userParticipant) {
         if (userParticipant.status === 'confirmed' || userParticipant.status === 'arrived') {
           analytics.attendedMeetings++;
         } else if (userParticipant.status === 'declined') {
           analytics.declinedMeetings++;
         }
-        
+
         if (userParticipant.isRunningLate) {
           analytics.lateMeetings++;
         }
       }
-      
+
       const duration = meeting.endTime.toMillis() - meeting.scheduledAt.toMillis();
       totalDuration += duration;
-      
+
       analytics.meetingTypes[meeting.type]++;
     });
 
-    analytics.averageDuration = analytics.totalMeetings > 0 
+    analytics.averageDuration = analytics.totalMeetings > 0
       ? Math.round(totalDuration / analytics.totalMeetings / (1000 * 60)) // minutes
       : 0;
 
     return analytics;
   } catch (error) {
     console.error('Error getting meeting analytics:', error);
-    throw new functions.https.HttpsError('internal', 'Failed to get meeting analytics');
+    throw new Error('Failed to get meeting analytics');
   }
 });
 
 /**
  * HTTP function: Update user location
  */
-export const updateUserLocation = functions.https.onCall(async (data, context) => {
-  if (!context.auth) {
-    throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+export const updateUserLocation = onCall(async (request) => {
+  if (!request.auth) {
+    throw new Error('User must be authenticated');
   }
 
-  const { latitude, longitude, address } = data;
-  
+  const { latitude, longitude, address } = request.data;
+
   if (typeof latitude !== 'number' || typeof longitude !== 'number') {
-    throw new functions.https.HttpsError('invalid-argument', 'Invalid location coordinates');
+    throw new Error('Invalid location coordinates');
   }
 
   try {
-    await db.collection('users').doc(context.auth.uid).update({
+    await db.collection('users').doc(request.auth.uid).update({
       currentLocation: {
         latitude,
         longitude,
@@ -438,6 +438,6 @@ export const updateUserLocation = functions.https.onCall(async (data, context) =
     return { success: true };
   } catch (error) {
     console.error('Error updating user location:', error);
-    throw new functions.https.HttpsError('internal', 'Failed to update location');
+    throw new Error('Failed to update location');
   }
 });

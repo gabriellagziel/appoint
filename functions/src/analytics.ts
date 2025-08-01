@@ -1,9 +1,8 @@
-import * as functions from 'firebase-functions/v2';
-import type { CallableRequest } from 'firebase-functions/v2/https';
-import * as admin from 'firebase-admin';
-import { Parser } from 'json2csv';
 import archiver from 'archiver';
 import ExcelJS from 'exceljs';
+import * as admin from 'firebase-admin';
+import { HttpsError, onRequest } from 'firebase-functions/v2/https';
+import { Parser } from 'json2csv';
 
 if (!admin.apps.length) {
   admin.initializeApp();
@@ -22,17 +21,17 @@ const BUSINESS_COLLECTION = 'business_accounts';
 async function requireBusiness(req: any): Promise<{ id: string; data: any }> {
   const apiKey = (req.headers['x-api-key'] || req.headers['api-key']) as string | undefined;
   if (!apiKey) {
-    throw new functions.https.HttpsError('unauthenticated', 'API key missing');
+    throw new HttpsError('unauthenticated', 'API key missing');
   }
   const snap = await db.collection(BUSINESS_COLLECTION).where('apiKey', '==', apiKey).limit(1).get();
   if (snap.empty) {
-    throw new functions.https.HttpsError('unauthenticated', 'Invalid API key');
+    throw new HttpsError('unauthenticated', 'Invalid API key');
   }
   return { id: snap.docs[0].id, data: snap.docs[0].data() };
 }
 
 // Business facing usage stats
-export const getUsageStats = functions.https.onRequest(async (req, res) => {
+export const getUsageStats = onRequest(async (req, res) => {
   try {
     const business = await requireBusiness(req);
     const { month, year } = req.query as any;
@@ -67,7 +66,7 @@ export const getUsageStats = functions.https.onRequest(async (req, res) => {
 });
 
 // Download CSV usage report
-export const downloadUsageCSV = functions.https.onRequest(async (req, res) => {
+export const downloadUsageCSV = onRequest(async (req, res) => {
   try {
     const business = await requireBusiness(req);
     const { month, year } = req.query as any;
@@ -107,7 +106,7 @@ export const downloadUsageCSV = functions.https.onRequest(async (req, res) => {
 });
 
 // Admin analytics summary
-export const adminAnalyticsSummary = functions.https.onRequest(async (req, res) => {
+export const adminAnalyticsSummary = onRequest(async (req, res) => {
   // Admin auth check implementation - see ticket #ANA-001
   try {
     const { month, year } = req.query as any;
@@ -155,7 +154,7 @@ export const adminAnalyticsSummary = functions.https.onRequest(async (req, res) 
 });
 
 // Yearly tax export ZIP
-export const exportYearlyTax = functions.https.onRequest(async (req, res) => {
+export const exportYearlyTax = onRequest(async (req, res) => {
   // Admin auth check - see ticket #ANA-001
   try {
     const { year } = req.query as any;

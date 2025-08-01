@@ -1,5 +1,5 @@
+import { Request, Response } from 'express';
 import * as admin from 'firebase-admin';
-import { Request, Response } from 'firebase-functions';
 
 interface HealthMetrics {
     timestamp: string;

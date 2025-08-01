@@ -1,14 +1,12 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { Navbar } from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { useI18n } from '@/lib/i18n'
 import { Code, Database, Shield, Zap } from 'lucide-react'
-import { useTranslation } from '@/lib/i18n'
+import Head from 'next/head'
 
 export default function EnterprisePage() {
-  const router = useRouter()
-  const { t } = useTranslation(router.locale)
+  const { t } = useI18n()
 
   const features = [
     {
@@ -60,10 +58,10 @@ export default function EnterprisePage() {
         <title>Enterprise API - App-Oint</title>
         <meta name="description" content="Enterprise API solutions for App-Oint scheduling platform" />
       </Head>
-      
+
       <div className="min-h-screen bg-gray-50">
         <Navbar />
-        
+
         <main className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -79,7 +77,7 @@ export default function EnterprisePage() {
                 </p>
               </div>
             </div>
-            
+
             {/* Key Features */}
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Enterprise-Grade API Platform</h2>
@@ -97,7 +95,7 @@ export default function EnterprisePage() {
                 ))}
               </div>
             </div>
-            
+
             {/* API Pricing */}
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">API Pricing Plans</h2>
@@ -126,7 +124,7 @@ export default function EnterprisePage() {
                 ))}
               </div>
             </div>
-            
+
             <div className="text-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Ready to Build with App-Oint API?

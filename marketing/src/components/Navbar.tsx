@@ -1,15 +1,13 @@
-import { Button } from '@/components/ui/button'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
+import { Button } from '@/components/ui/button'
+import { useI18n } from '@/lib/i18n'
 import { Menu, X } from 'lucide-react'
-import { useState } from 'react'
-import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { useTranslation } from '@/lib/i18n'
+import { useState } from 'react'
 
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const router = useRouter()
-    const { t } = useTranslation(router.locale)
+    const { t } = useI18n()
 
     return (
         <nav className="bg-white shadow-sm border-b">

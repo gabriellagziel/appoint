@@ -1,7 +1,8 @@
 // businessApi.ts
-import * as functions from 'firebase-functions';
-import * as admin from 'firebase-admin';
 import express from 'express';
+import * as admin from 'firebase-admin';
+import { onRequest } from 'firebase-functions/v2/https';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
 
 // Initialize Firebase Admin if not already initialised
 if (!admin.apps.length) {
@@ -32,7 +33,7 @@ function generateApiKey(): string {
  *
  * Returns: { id, apiKey, quota }
  */
-export const registerBusiness = functions.https.onRequest(async (req, res) => {
+export const registerBusiness = onRequest(async (req, res) => {
   // Simple CORS (allow any origin) – adjust in production
   res.set('Access-Control-Allow-Origin', '*');
   res.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -119,9 +120,9 @@ businessApiApp.use(async (req, res, next) => {
     if (businessData.status === 'limited') {
       // Allow up to 5 calls per day – naive; count from usage_logs for today
       const todayStart = new Date();
-      todayStart.setUTCHours(0,0,0,0);
+      todayStart.setUTCHours(0, 0, 0, 0);
       const todayEnd = new Date();
-      todayEnd.setUTCHours(23,59,59,999);
+      todayEnd.setUTCHours(23, 59, 59, 999);
       const todayUsageSnap = await db
         .collection(USAGE_COLLECTION)
         .where('businessId', '==', businessDoc.id)
@@ -248,25 +249,22 @@ businessApiApp.post('/appointments/cancel', async (req, res) => {
 });
 
 // Wrap express app as cloud function
-export const businessApi = functions.https.onRequest(businessApiApp);
+export const businessApi = onRequest(businessApiApp);
 
 /**
  * Scheduled function: Reset monthly quotas & trigger billing every 1st day of month.
  * Runs at 00:00 on day-1 UTC.
  */
-export const resetMonthlyQuotas = functions.pubsub
-  .schedule('0 0 1 * *')
-  .timeZone('UTC')
-  .onRun(async () => {
-    const snapshot = await db.collection(BUSINESS_COLLECTION).get();
+export const resetMonthlyQuotas = onSchedule('0 0 1 * *', async () => {
+  const snapshot = await db.collection(BUSINESS_COLLECTION).get();
 
-    const batch = db.batch();
-    snapshot.docs.forEach((doc) => {
-      batch.update(doc.ref, { usageThisMonth: 0 });
-    });
-
-    await batch.commit();
-    console.log('Monthly quotas reset');
-
-    // Billing logic implementation - see ticket #BUS-003
+  const batch = db.batch();
+  snapshot.docs.forEach((doc) => {
+    batch.update(doc.ref, { usageThisMonth: 0 });
   });
+
+  await batch.commit();
+  console.log('Monthly quotas reset');
+
+  // Billing logic implementation - see ticket #BUS-003
+});

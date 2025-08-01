@@ -1,8 +1,8 @@
-import * as functions from 'firebase-functions/v1';
-import * as admin from 'firebase-admin';
-import fetch from 'node-fetch';
-import { onDocumentWritten } from 'firebase-functions/v2/firestore';
 import crypto from 'crypto';
+import * as admin from 'firebase-admin';
+import { onDocumentWritten } from 'firebase-functions/v2/firestore';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
+import fetch from 'node-fetch';
 
 if (!admin.apps.length) {
   admin.initializeApp();
@@ -61,36 +61,36 @@ async function deliverWebhook(webhook: any, payload: any) {
  * For demo, listen to collection 'appointments'.
  */
 export const onAppointmentWrite = onDocumentWritten('appointments/{appointmentId}', async (event: any) => {
-    const change = event.data;
-    const context = event;
-    const after = change.after.exists ? change.after.data() : null;
-    const before = change.before.exists ? change.before.data() : null;
+  const change = event.data;
+  const context = event;
+  const after = change.after.exists ? change.after.data() : null;
+  const before = change.before.exists ? change.before.data() : null;
 
-    let eventType: 'created' | 'updated' | 'cancelled' | null = null;
-    if (!before && after) eventType = 'created';
-    else if (before && after) eventType = 'updated';
-    else if (before && !after) eventType = 'cancelled';
-    else return;
+  let eventType: 'created' | 'updated' | 'cancelled' | null = null;
+  if (!before && after) eventType = 'created';
+  else if (before && after) eventType = 'updated';
+  else if (before && !after) eventType = 'cancelled';
+  else return;
 
-    const businessId = (after || before).businessId;
-    const hooksSnap = await db.collection(WEBHOOK_COLLECTION).where('businessId', '==', businessId).where('active', '==', true).get();
+  const businessId = (after || before).businessId;
+  const hooksSnap = await db.collection(WEBHOOK_COLLECTION).where('businessId', '==', businessId).where('active', '==', true).get();
 
-    const payload = {
-      event: `appointment_${eventType}`,
-      data: after || before,
-    };
+  const payload = {
+    event: `appointment_${eventType}`,
+    data: after || before,
+  };
 
-    hooksSnap.forEach((doc) => deliverWebhook({ id: doc.id, ...doc.data() }, payload));
-  });
+  hooksSnap.forEach((doc) => deliverWebhook({ id: doc.id, ...doc.data() }, payload));
+});
 
 /**
  * Pub/Sub scheduled function processes retries.
  */
-export const processWebhookRetries = functions.scheduler.onSchedule('every 5 minutes', async () => {
-    const now = admin.firestore.Timestamp.now();
-    const snap = await db.collection(WEBHOOK_COLLECTION).where('nextRetry', '<=', now).get();
-    snap.forEach((doc) => {
-      const data = doc.data();
-      deliverWebhook({ id: doc.id, ...data }, { retry: true });
-    });
+export const processWebhookRetries = onSchedule('every 5 minutes', async () => {
+  const now = admin.firestore.Timestamp.now();
+  const snap = await db.collection(WEBHOOK_COLLECTION).where('nextRetry', '<=', now).get();
+  snap.forEach((doc) => {
+    const data = doc.data();
+    deliverWebhook({ id: doc.id, ...data }, { retry: true });
   });
+});

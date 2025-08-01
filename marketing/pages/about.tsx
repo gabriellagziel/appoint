@@ -1,14 +1,12 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { Navbar } from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Target, Eye, Heart, Users } from 'lucide-react'
-import { useTranslation } from '@/lib/i18n'
+import { useI18n } from '@/lib/i18n'
+import { Eye, Heart, Target, Users } from 'lucide-react'
+import Head from 'next/head'
 
 export default function AboutPage() {
-  const router = useRouter()
-  const { t } = useTranslation(router.locale)
+  const { t } = useI18n()
 
   const stats = [
     { label: "Active Businesses", value: "5,000+" },
@@ -25,7 +23,7 @@ export default function AboutPage() {
     },
     {
       icon: Eye,
-      name: "Simplicity", 
+      name: "Simplicity",
       description: "Making complex scheduling problems simple and intuitive"
     },
     {
@@ -46,10 +44,10 @@ export default function AboutPage() {
         <title>About - App-Oint</title>
         <meta name="description" content="Learn about App-Oint mission to revolutionize appointment scheduling" />
       </Head>
-      
+
       <div className="min-h-screen bg-gray-50">
         <Navbar />
-        
+
         <main className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -60,7 +58,7 @@ export default function AboutPage() {
                 At App-Oint, we believe that scheduling should not be complicated. We are building the future of appointment management with innovative technology and elegant design.
               </p>
             </div>
-            
+
             {/* Stats Section */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
               {stats.map((stat, index) => (
@@ -70,7 +68,7 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
-            
+
             {/* Mission & Vision */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
               <Card>
@@ -83,7 +81,7 @@ export default function AboutPage() {
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <CardTitle className="text-2xl text-center">Our Vision</CardTitle>
@@ -95,7 +93,7 @@ export default function AboutPage() {
                 </CardContent>
               </Card>
             </div>
-            
+
             {/* Core Values */}
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Core Values</h2>
@@ -113,7 +111,7 @@ export default function AboutPage() {
                 ))}
               </div>
             </div>
-            
+
             <div className="text-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Ready to Join Our Mission?

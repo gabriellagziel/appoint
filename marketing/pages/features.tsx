@@ -1,14 +1,12 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { Navbar } from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Calendar, Users, BarChart3, Palette, MessageSquare, CreditCard } from 'lucide-react'
-import { useTranslation } from '@/lib/i18n'
+import { useI18n } from '@/lib/i18n'
+import { BarChart3, Calendar, CreditCard, MessageSquare, Palette, Users } from 'lucide-react'
+import Head from 'next/head'
 
 export default function FeaturesPage() {
-  const router = useRouter()
-  const { t } = useTranslation(router.locale)
+  const { t } = useI18n()
 
   const features = [
     {
@@ -49,10 +47,10 @@ export default function FeaturesPage() {
         <title>Features - App-Oint</title>
         <meta name="description" content="Discover all the powerful features of App-Oint scheduling platform" />
       </Head>
-      
+
       <div className="min-h-screen bg-gray-50">
         <Navbar />
-        
+
         <main className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -63,7 +61,7 @@ export default function FeaturesPage() {
                 App-Oint provides a complete suite of tools to streamline your booking process and grow your business.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((feature, index) => (
                 <Card key={index} className="h-full">
@@ -79,7 +77,7 @@ export default function FeaturesPage() {
                 </Card>
               ))}
             </div>
-            
+
             <div className="text-center mt-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Ready to Experience All These Features?

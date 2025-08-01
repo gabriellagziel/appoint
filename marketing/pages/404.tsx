@@ -1,14 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { Navbar } from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import { Home, Mail } from 'lucide-react'
-import { useTranslation } from '@/lib/i18n'
+import { useI18n } from '@/lib/i18n'
 
 export default function Custom404() {
-  const router = useRouter()
-  const { t } = useTranslation(router.locale)
+  const { t } = useI18n()
 
   return (
     <>
@@ -17,10 +15,10 @@ export default function Custom404() {
         <meta name="description" content={t('errors.404.description')} />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
-      
+
       <div className="min-h-screen bg-gray-50">
         <Navbar />
-        
+
         <div className="flex items-center justify-center min-h-[calc(100vh-4rem)]">
           <div className="max-w-md mx-auto text-center px-4">
             <div className="mb-8">
@@ -35,7 +33,7 @@ export default function Custom404() {
                 {t('errors.404.description')}
               </p>
             </div>
-            
+
             <div className="space-y-4">
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button asChild size="lg">

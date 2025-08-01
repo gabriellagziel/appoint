@@ -11,8 +11,6 @@ services:
     build_command: "npm ci && npm run build"
     run_command: "npm start"
     http_port: 80
-    routes:
-      - path: /
     health_check:
       http_path: /
     instance_count: 1
@@ -25,10 +23,8 @@ services:
       branch: main
     source_dir: "business"
     build_command: "npm ci && npm run build"
-    run_command: "node server.js"
+    run_command: "npm start"
     http_port: 80
-    routes:
-      - path: /business
     health_check:
       http_path: /business/
     instance_count: 1
@@ -43,22 +39,20 @@ services:
     build_command: "npm ci && npm run build"
     run_command: "npm start"
     http_port: 80
-    routes:
-      - path: /admin
     health_check:
       http_path: /admin/
     instance_count: 1
     instance_size_slug: basic-xxs
 
   - name: enterprise
+    environment_slug: node-js
     github:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "enterprise-onboarding-portal"
-    dockerfile_path: "Dockerfile"
+    build_command: "npm ci && npm run build"
+    run_command: "npm start"
     http_port: 80
-    routes:
-      - path: /enterprise
     health_check:
       http_path: /enterprise/
     instance_count: 1
@@ -73,12 +67,45 @@ services:
     build_command: "npm ci && npm run build"
     run_command: "npm start"
     http_port: 3000
-    routes:
-      - path: /api
     health_check:
       http_path: /api/health
     instance_count: 1
     instance_size_slug: basic-xxs
+
+# Ingress configuration
+ingress:
+  rules:
+    - match:
+        path:
+          prefix: "/"
+      component:
+        name: marketing
+    - match:
+        path:
+          prefix: "/business"
+      component:
+        name: business
+    - match:
+        path:
+          prefix: "/admin"
+      component:
+        name: admin
+    - match:
+        path:
+          prefix: "/enterprise"
+      component:
+        name: enterprise
+    - match:
+        path:
+          prefix: "/api"
+      component:
+        name: api
+
+# Domain configuration
+domains:
+  - domain: app-oint.com
+    type: PRIMARY
+    zone: app-oint.com
 
 # Environment variables
 envs:

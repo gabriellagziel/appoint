@@ -1,8 +1,9 @@
-import * as functions from 'firebase-functions';
-import * as admin from 'firebase-admin';
-import PDFDocument from 'pdfkit';
-import * as nodemailer from 'nodemailer';
 import { parse } from 'csv-parse/sync';
+import * as admin from 'firebase-admin';
+import { onCall, onRequest } from 'firebase-functions/v2/https';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
+import * as nodemailer from 'nodemailer';
+import PDFDocument from 'pdfkit';
 
 if (!admin.apps.length) {
   admin.initializeApp();
@@ -50,10 +51,10 @@ function calculateMapOverage(usage: number, limit: number): { overageCount: numb
   if (limit <= 0 || usage <= limit) {
     return { overageCount: 0, overageAmount: 0 };
   }
-  
+
   const overageCount = usage - limit;
   const overageAmount = overageCount * MAP_OVERAGE_RATE;
-  
+
   return { overageCount, overageAmount };
 }
 
@@ -84,50 +85,44 @@ function generateInvoicePDF({
   return new Promise((resolve, reject) => {
     const doc = new PDFDocument();
     const chunks: Buffer[] = [];
-    doc.on('data', (chunk) => chunks.push(chunk as Buffer));
+    doc.on('data', (chunk: Buffer) => chunks.push(chunk));
     doc.on('end', () => resolve(Buffer.concat(chunks)));
     doc.on('error', reject);
 
     // Header
-    doc.fontSize(20).text('App-Oint Invoice', { align: 'center' });
+    doc.fontSize(20).text('App-Oint Invoice', 50, 50, { align: 'center' });
     doc.moveDown();
 
     // Business details
-    doc.fontSize(12).text(`Business: ${businessName}`);
-    doc.text(`Business ID: ${businessId}`);
-    
+    doc.fontSize(12).text(`Business: ${businessName}`, 50, 80);
+    doc.text(`Business ID: ${businessId}`, 50, 100);
+
     if (isOverageInvoice && mapOverageDetails) {
       // Map overage invoice
       doc.moveDown();
-      doc.fontSize(16).text('Map Usage Overage Invoice', { underline: true });
+      doc.fontSize(16).text('Map Usage Overage Invoice', 50, 130, { underline: true });
       doc.moveDown();
-      
-      doc.fontSize(12).text(`Total map loads this period: ${mapOverageDetails.totalUsage}`);
-      doc.text(`Plan limit: ${mapOverageDetails.limit} loads`);
-      doc.text(`Overage: ${mapOverageDetails.overageCount} loads`);
-      doc.text(`Rate per overage load: €${MAP_OVERAGE_RATE.toFixed(3)}`);
+
+      doc.fontSize(12).text(`Total map loads this period: ${mapOverageDetails.totalUsage}`, 50, 160);
+      doc.text(`Plan limit: ${mapOverageDetails.limit} loads`, 50, 180);
+      doc.text(`Overage: ${mapOverageDetails.overageCount} loads`, 50, 200);
+      doc.text(`Rate per overage load: €${MAP_OVERAGE_RATE.toFixed(3)}`, 50, 220);
       doc.moveDown();
-      doc.text(`Overage amount: €${mapOverageDetails.overageAmount.toFixed(2)}`, { 
-        fontSize: 14, 
-        continued: false 
-      });
+      doc.fontSize(14).text(`Overage amount: €${mapOverageDetails.overageAmount.toFixed(2)}`, 50, 250);
     } else {
       // Regular API usage invoice
-      doc.text(`API Key: ${apiKey}`);
-      doc.text(`Usage (this month): ${usage} calls`);
+      doc.text(`API Key: ${apiKey}`, 50, 160);
+      doc.text(`Usage (this month): ${usage} calls`, 50, 180);
     }
-    
-    doc.moveDown();
-    doc.fontSize(14).text(`Total amount due: €${amount.toFixed(2)}`, { 
-      fontSize: 16, 
-      underline: true 
-    });
-    doc.text(`Due date: ${dueDate.toDateString()}`);
 
     doc.moveDown();
-    doc.fontSize(12).text('Payment Methods:');
-    doc.text('Bank Transfer IBAN: DE00 0000 0000 0000 0000 00');
-    doc.text('Or pay via Stripe: https://pay.stripe.com/link');
+    doc.fontSize(16).text(`Total amount due: €${amount.toFixed(2)}`, 50, 280, { underline: true });
+    doc.text(`Due date: ${dueDate.toDateString()}`, 50, 300);
+
+    doc.moveDown();
+    doc.fontSize(12).text('Payment Methods:', 50, 330);
+    doc.text('Bank Transfer IBAN: DE00 0000 0000 0000 0000 00', 50, 350);
+    doc.text('Or pay via Stripe: https://pay.stripe.com/link', 50, 370);
 
     doc.end();
   });
@@ -151,10 +146,10 @@ async function sendInvoiceEmail({
     secure: false,
   });
 
-  const subject = isOverageInvoice 
-    ? 'App-Oint Map Usage Overage Invoice' 
+  const subject = isOverageInvoice
+    ? 'App-Oint Map Usage Overage Invoice'
     : 'Your App-Oint API Invoice';
-  
+
   const text = isOverageInvoice
     ? 'Your map usage has exceeded your plan limits. Please find attached the overage invoice.'
     : 'Please find attached the invoice for your API usage.';
@@ -174,174 +169,168 @@ async function sendInvoiceEmail({
 }
 
 // Monthly billing job for API usage (existing)
-export const monthlyBillingJob = functions.pubsub
-  .schedule('15 0 1 * *') // 00:15 on first day UTC
-  .timeZone('UTC')
-  .onRun(async () => {
-    const year = new Date().getUTCFullYear();
-    const month = new Date().getUTCMonth(); // previous month? Actually runs first day for previous month compute
-    const billingPeriodStart = new Date(Date.UTC(year, month - 1, 1));
-    const billingPeriodEnd = new Date(Date.UTC(year, month, 0, 23, 59, 59)); // last day prev month
+export const monthlyBillingJob = onSchedule('15 0 1 * *', async () => {
+  const year = new Date().getUTCFullYear();
+  const month = new Date().getUTCMonth(); // previous month? Actually runs first day for previous month compute
+  const billingPeriodStart = new Date(Date.UTC(year, month - 1, 1));
+  const billingPeriodEnd = new Date(Date.UTC(year, month, 0, 23, 59, 59)); // last day prev month
 
-    const businessesSnap = await db.collection(BUSINESS_COLLECTION).where('status', '==', 'active').get();
+  const businessesSnap = await db.collection(BUSINESS_COLLECTION).where('status', '==', 'active').get();
 
-    for (const doc of businessesSnap.docs) {
-      const businessData = doc.data() as any;
+  for (const doc of businessesSnap.docs) {
+    const businessData = doc.data() as any;
 
-      // Fetch usage logs for period
-      const usageSnap = await db
-        .collection('usage_logs')
-        .where('businessId', '==', doc.id)
-        .where('timestamp', '>=', billingPeriodStart)
-        .where('timestamp', '<=', billingPeriodEnd)
-        .get();
-      const usage = usageSnap.size;
+    // Fetch usage logs for period
+    const usageSnap = await db
+      .collection('usage_logs')
+      .where('businessId', '==', doc.id)
+      .where('timestamp', '>=', billingPeriodStart)
+      .where('timestamp', '<=', billingPeriodEnd)
+      .get();
+    const usage = usageSnap.size;
 
-      const pricing: PricingModel = businessData.pricing || {
-        pricingModel: 'per_call',
-        baseRate: 0.01,
+    const pricing: PricingModel = businessData.pricing || {
+      pricingModel: 'per_call',
+      baseRate: 0.01,
+    };
+
+    const amount = calculateAmount(usage, pricing);
+
+    const dueDate = new Date(Date.UTC(year, month, 15));
+
+    const pdfBuffer = await generateInvoicePDF({
+      businessName: businessData.name,
+      businessId: doc.id,
+      apiKey: businessData.apiKey,
+      usage,
+      amount,
+      dueDate,
+    });
+
+    const filePath = `invoices/${doc.id}/${year}-${month.toString().padStart(2, '0')}.pdf`;
+    const file = storage.file(filePath);
+    await file.save(pdfBuffer, { contentType: 'application/pdf' });
+
+    const [url] = await file.getSignedUrl({ action: 'read', expires: '03-01-2500' });
+
+    // Create invoice record
+    const invoiceRef = await db.collection(INVOICE_COLLECTION).add({
+      businessId: doc.id,
+      amount,
+      usage,
+      pricing,
+      periodStart: billingPeriodStart,
+      periodEnd: billingPeriodEnd,
+      dueDate,
+      pdfUrl: url,
+      status: 'pending',
+      type: 'api_usage',
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+    });
+
+    // Send email
+    await sendInvoiceEmail({
+      to: businessData.email,
+      pdfBuffer,
+      filename: `invoice-${invoiceRef.id}.pdf`,
+    });
+
+    console.log(`Invoice sent to ${businessData.email}`);
+  }
+
+  console.log('Monthly billing job completed');
+});
+
+// Monthly map overage billing job (NEW)
+export const monthlyMapOverageBilling = onSchedule('30 0 1 * *', async () => {
+  const year = new Date().getUTCFullYear();
+  const month = new Date().getUTCMonth();
+
+  // Get all active business subscriptions with map overage
+  const subscriptionsSnap = await db.collection(BUSINESS_SUBSCRIPTIONS_COLLECTION)
+    .where('status', '==', 'active')
+    .where('mapOverageThisPeriod', '>', 0)
+    .get();
+
+  for (const doc of subscriptionsSnap.docs) {
+    const subscriptionData = doc.data() as any;
+
+    try {
+      // Get business profile
+      const businessDoc = await db.collection('business_profiles').doc(subscriptionData.businessId).get();
+      const businessData = businessDoc.exists ? businessDoc.data() : null;
+
+      if (!businessData) {
+        console.warn(`No business profile found for subscription: ${doc.id}`);
+        continue;
+      }
+
+      const mapOverageDetails = {
+        overageCount: Math.round(subscriptionData.mapOverageThisPeriod / MAP_OVERAGE_RATE),
+        overageAmount: subscriptionData.mapOverageThisPeriod,
+        totalUsage: subscriptionData.mapUsageCurrentPeriod,
+        limit: getMapLimitForPlan(subscriptionData.plan),
       };
 
-      const amount = calculateAmount(usage, pricing);
+      const dueDate = new Date();
+      dueDate.setDate(dueDate.getDate() + 15); // 15 days from now
 
-      const dueDate = new Date(Date.UTC(year, month, 15));
-
+      // Generate overage invoice PDF
       const pdfBuffer = await generateInvoicePDF({
-        businessName: businessData.name,
-        businessId: doc.id,
-        apiKey: businessData.apiKey,
-        usage,
-        amount,
+        businessName: businessData.name || 'Business User',
+        businessId: subscriptionData.businessId,
+        apiKey: '', // Not applicable for map usage
+        usage: 0, // Not applicable for map overage
+        amount: subscriptionData.mapOverageThisPeriod,
         dueDate,
+        isOverageInvoice: true,
+        mapOverageDetails,
       });
 
-      const filePath = `invoices/${doc.id}/${year}-${month.toString().padStart(2, '0')}.pdf`;
+      // Save PDF to storage
+      const filePath = `invoices/${subscriptionData.businessId}/map-overage-${year}-${month.toString().padStart(2, '0')}.pdf`;
       const file = storage.file(filePath);
       await file.save(pdfBuffer, { contentType: 'application/pdf' });
 
       const [url] = await file.getSignedUrl({ action: 'read', expires: '03-01-2500' });
 
-      // Create invoice record
+      // Create overage invoice record
       const invoiceRef = await db.collection(INVOICE_COLLECTION).add({
-        businessId: doc.id,
-        amount,
-        usage,
-        pricing,
-        periodStart: billingPeriodStart,
-        periodEnd: billingPeriodEnd,
+        businessId: subscriptionData.businessId,
+        subscriptionId: doc.id,
+        amount: subscriptionData.mapOverageThisPeriod,
+        type: 'map_overage',
+        description: 'Map usage overage charges',
+        mapOverageAmount: subscriptionData.mapOverageThisPeriod,
+        mapOverageCount: mapOverageDetails.overageCount,
+        mapTotalUsage: mapOverageDetails.totalUsage,
+        mapLimit: mapOverageDetails.limit,
+        periodStart: subscriptionData.currentPeriodStart,
+        periodEnd: subscriptionData.currentPeriodEnd,
         dueDate,
         pdfUrl: url,
         status: 'pending',
-        type: 'api_usage',
+        currency: 'EUR',
         createdAt: admin.firestore.FieldValue.serverTimestamp(),
       });
 
-      // Send email
+      // Send overage invoice email
       await sendInvoiceEmail({
-        to: businessData.email,
+        to: businessData.email || subscriptionData.email,
         pdfBuffer,
-        filename: `invoice-${invoiceRef.id}.pdf`,
+        filename: `map-overage-invoice-${invoiceRef.id}.pdf`,
+        isOverageInvoice: true,
       });
 
-      console.log(`Invoice sent to ${businessData.email}`);
+      console.log(`Map overage invoice sent to business: ${subscriptionData.businessId}`);
+
+    } catch (error) {
+      console.error(`Error processing overage for subscription ${doc.id}:`, error);
     }
+  }
 
-    console.log('Monthly billing job completed');
-  });
-
-// Monthly map overage billing job (NEW)
-export const monthlyMapOverageBilling = functions.pubsub
-  .schedule('30 0 1 * *') // 00:30 on first day UTC - after main billing
-  .timeZone('UTC')
-  .onRun(async () => {
-    const year = new Date().getUTCFullYear();
-    const month = new Date().getUTCMonth();
-
-    // Get all active business subscriptions with map overage
-    const subscriptionsSnap = await db.collection(BUSINESS_SUBSCRIPTIONS_COLLECTION)
-      .where('status', '==', 'active')
-      .where('mapOverageThisPeriod', '>', 0)
-      .get();
-
-    for (const doc of subscriptionsSnap.docs) {
-      const subscriptionData = doc.data() as any;
-      
-      try {
-        // Get business profile
-        const businessDoc = await db.collection('business_profiles').doc(subscriptionData.businessId).get();
-        const businessData = businessDoc.exists ? businessDoc.data() : null;
-        
-        if (!businessData) {
-          console.warn(`No business profile found for subscription: ${doc.id}`);
-          continue;
-        }
-
-        const mapOverageDetails = {
-          overageCount: Math.round(subscriptionData.mapOverageThisPeriod / MAP_OVERAGE_RATE),
-          overageAmount: subscriptionData.mapOverageThisPeriod,
-          totalUsage: subscriptionData.mapUsageCurrentPeriod,
-          limit: getMapLimitForPlan(subscriptionData.plan),
-        };
-
-        const dueDate = new Date();
-        dueDate.setDate(dueDate.getDate() + 15); // 15 days from now
-
-        // Generate overage invoice PDF
-        const pdfBuffer = await generateInvoicePDF({
-          businessName: businessData.name || 'Business User',
-          businessId: subscriptionData.businessId,
-          apiKey: '', // Not applicable for map usage
-          usage: 0, // Not applicable for map overage
-          amount: subscriptionData.mapOverageThisPeriod,
-          dueDate,
-          isOverageInvoice: true,
-          mapOverageDetails,
-        });
-
-        // Save PDF to storage
-        const filePath = `invoices/${subscriptionData.businessId}/map-overage-${year}-${month.toString().padStart(2, '0')}.pdf`;
-        const file = storage.file(filePath);
-        await file.save(pdfBuffer, { contentType: 'application/pdf' });
-
-        const [url] = await file.getSignedUrl({ action: 'read', expires: '03-01-2500' });
-
-        // Create overage invoice record
-        const invoiceRef = await db.collection(INVOICE_COLLECTION).add({
-          businessId: subscriptionData.businessId,
-          subscriptionId: doc.id,
-          amount: subscriptionData.mapOverageThisPeriod,
-          type: 'map_overage',
-          description: 'Map usage overage charges',
-          mapOverageAmount: subscriptionData.mapOverageThisPeriod,
-          mapOverageCount: mapOverageDetails.overageCount,
-          mapTotalUsage: mapOverageDetails.totalUsage,
-          mapLimit: mapOverageDetails.limit,
-          periodStart: subscriptionData.currentPeriodStart,
-          periodEnd: subscriptionData.currentPeriodEnd,
-          dueDate,
-          pdfUrl: url,
-          status: 'pending',
-          currency: 'EUR',
-          createdAt: admin.firestore.FieldValue.serverTimestamp(),
-        });
-
-        // Send overage invoice email
-        await sendInvoiceEmail({
-          to: businessData.email || subscriptionData.email,
-          pdfBuffer,
-          filename: `map-overage-invoice-${invoiceRef.id}.pdf`,
-          isOverageInvoice: true,
-        });
-
-        console.log(`Map overage invoice sent to business: ${subscriptionData.businessId}`);
-
-      } catch (error) {
-        console.error(`Error processing overage for subscription ${doc.id}:`, error);
-      }
-    }
-
-    console.log('Monthly map overage billing completed');
-  });
+  console.log('Monthly map overage billing completed');
+});
 
 // Helper function to get map limit for plan
 function getMapLimitForPlan(plan: string): number {
@@ -359,11 +348,11 @@ function getMapLimitForPlan(plan: string): number {
 }
 
 // Function to manually trigger overage invoice generation (for testing)
-export const generateMapOverageInvoice = functions.https.onCall(async (data, context) => {
-  const userId = context.auth?.uid;
-  
+export const generateMapOverageInvoice = onCall(async (request) => {
+  const userId = request.auth?.uid;
+
   if (!userId) {
-    throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+    throw new Error('User must be authenticated');
   }
 
   try {
@@ -375,13 +364,13 @@ export const generateMapOverageInvoice = functions.https.onCall(async (data, con
       .get();
 
     if (subscriptionDoc.empty) {
-      throw new functions.https.HttpsError('not-found', 'No active subscription found');
+      throw new Error('No active subscription found');
     }
 
     const subscriptionData = subscriptionDoc.docs[0].data();
-    
+
     if (subscriptionData.mapOverageThisPeriod <= 0) {
-      throw new functions.https.HttpsError('failed-precondition', 'No map overage to invoice');
+      throw new Error('No map overage to invoice');
     }
 
     // Get business profile
@@ -389,7 +378,7 @@ export const generateMapOverageInvoice = functions.https.onCall(async (data, con
     const businessData = businessDoc.exists ? businessDoc.data() : null;
 
     if (!businessData) {
-      throw new functions.https.HttpsError('not-found', 'Business profile not found');
+      throw new Error('Business profile not found');
     }
 
     const mapOverageDetails = {
@@ -421,8 +410,8 @@ export const generateMapOverageInvoice = functions.https.onCall(async (data, con
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
     });
 
-    return { 
-      success: true, 
+    return {
+      success: true,
       invoiceId: invoiceRef.id,
       amount: subscriptionData.mapOverageThisPeriod,
       overageCount: mapOverageDetails.overageCount,
@@ -430,7 +419,7 @@ export const generateMapOverageInvoice = functions.https.onCall(async (data, con
 
   } catch (error) {
     console.error('Error generating map overage invoice:', error);
-    throw new functions.https.HttpsError('internal', 'Failed to generate overage invoice');
+    throw new Error('Failed to generate overage invoice');
   }
 });
 
@@ -438,7 +427,7 @@ export const generateMapOverageInvoice = functions.https.onCall(async (data, con
  * HTTPS function to import CSV of paid invoices (bank transfers).
  * Expects multipart form or raw CSV string in body.
  */
-export const importBankPayments = functions.https.onRequest(async (req, res) => {
+export const importBankPayments = onRequest(async (req, res) => {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Only POST allowed' });
     return;
@@ -450,29 +439,29 @@ export const importBankPayments = functions.https.onRequest(async (req, res) => 
     // CSV columns: invoiceId, amountPaid
 
     for (const row of records) {
-      const invoiceRef = db.collection(INVOICE_COLLECTION).doc(row.invoiceId);
-      await invoiceRef.update({ 
-        status: 'paid', 
-        paidAt: admin.firestore.FieldValue.serverTimestamp() 
+      const invoiceRef = db.collection(INVOICE_COLLECTION).doc((row as any).invoiceId);
+      await invoiceRef.update({
+        status: 'paid',
+        paidAt: admin.firestore.FieldValue.serverTimestamp()
       });
 
       const invoiceSnap = await invoiceRef.get();
       const invoiceData = invoiceSnap.data();
-      
+
       if (invoiceData?.businessId) {
         // If it's a map overage invoice, reset the overage amount
         if (invoiceData.type === 'map_overage') {
           await db.collection(BUSINESS_SUBSCRIPTIONS_COLLECTION)
             .doc(invoiceData.subscriptionId)
-            .update({ 
+            .update({
               mapOverageThisPeriod: 0.0,
               updatedAt: admin.firestore.FieldValue.serverTimestamp(),
             });
         }
-        
+
         // Reactivate business if it was suspended
-        await db.collection(BUSINESS_COLLECTION).doc(invoiceData.businessId).update({ 
-          status: 'active' 
+        await db.collection(BUSINESS_COLLECTION).doc(invoiceData.businessId).update({
+          status: 'active'
         });
       }
     }
@@ -485,12 +474,12 @@ export const importBankPayments = functions.https.onRequest(async (req, res) => 
 });
 
 // Reset map usage for all subscriptions at billing period start (helper function)
-export const resetMapUsageForNewPeriod = functions.https.onCall(async (data, context) => {
+export const resetMapUsageForNewPeriod = onCall(async (request) => {
   // This should be called by Stripe webhooks when subscription periods update
-  const { subscriptionId } = data;
-  
+  const { subscriptionId } = request.data;
+
   if (!subscriptionId) {
-    throw new functions.https.HttpsError('invalid-argument', 'Subscription ID required');
+    throw new Error('Subscription ID required');
   }
 
   try {
@@ -512,6 +501,6 @@ export const resetMapUsageForNewPeriod = functions.https.onCall(async (data, con
     return { success: true };
   } catch (error) {
     console.error('Error resetting map usage:', error);
-    throw new functions.https.HttpsError('internal', 'Failed to reset map usage');
+    throw new Error('Failed to reset map usage');
   }
 });
