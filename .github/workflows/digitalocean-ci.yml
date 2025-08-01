@@ -77,8 +77,6 @@ jobs:
     needs: validate-ci-lock
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    container:
-      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -133,8 +131,6 @@ jobs:
     needs: setup-dependencies
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    container:
-      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -208,8 +204,6 @@ jobs:
     needs: generate-code
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    container:
-      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -262,8 +256,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     if: ${{ !github.event.inputs.skip_tests }}
-    container:
-      image: registry.digitalocean.com/appoint/flutter-ci:latest
     strategy:
       matrix:
         test_type: [unit, widget, integration]
@@ -328,8 +320,6 @@ jobs:
     needs: generate-code
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    container:
-      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -379,8 +369,6 @@ jobs:
     needs: [analyze, test, security-scan]
     runs-on: ubuntu-latest
     timeout-minutes: 25
-    container:
-      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -445,8 +433,6 @@ jobs:
     needs: [analyze, test, security-scan]
     runs-on: ubuntu-latest
     timeout-minutes: 35
-    container:
-      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -504,8 +490,6 @@ jobs:
     needs: [analyze, test, security-scan]
     runs-on: ubuntu-latest
     timeout-minutes: 40
-    container:
-      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -552,8 +536,6 @@ jobs:
     runs-on: ubuntu-latest
     if: (github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch') && github.event.inputs.platform != 'android' && github.event.inputs.platform != 'ios'
     timeout-minutes: 15
-    container:
-      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -594,8 +576,6 @@ jobs:
     runs-on: ubuntu-latest
     if: (github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch') && github.event.inputs.platform != 'android' && github.event.inputs.platform != 'ios'
     timeout-minutes: 20
-    container:
-      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
