@@ -11,16 +11,15 @@ services:
     build_command: |
       npm ci
       echo 'Creating Beautiful App-Oint Business Portal...'
-      cat > public/index.html << 'BEAUTIFUL_UI_EOF'
-<!DOCTYPE html>
-<html lang='en'>
+      echo '<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App-Oint Business Portal</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif'; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: white; }
+        body { font-family: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: white; }
         .container { max-width: 1400px; margin: 0 auto; padding: 40px 20px; }
         .header { text-align: center; margin-bottom: 60px; }
         .logo { font-size: 3.5rem; font-weight: 800; margin-bottom: 15px; text-shadow: 0 4px 20px rgba(0,0,0,0.3); background: linear-gradient(45deg, #fff, #f0f0f0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
@@ -44,67 +43,68 @@ services:
     </style>
 </head>
 <body>
-    <div class='container'>
-        <div class='header'>
-            <div class='logo'>🚀 App-Oint</div>
-            <div class='subtitle'>Business Management Portal</div>
-            <div class='description'>Complete business management solution with appointment scheduling, customer management, analytics, and automated workflows.</div>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🚀 App-Oint</div>
+            <div class="subtitle">Business Management Portal</div>
+            <div class="description">Complete business management solution with appointment scheduling, customer management, analytics, and automated workflows.</div>
         </div>
-        <div class='dashboard'>
-            <div class='card'>
+        <div class="dashboard">
+            <div class="card">
                 <h3>📊 Analytics Dashboard</h3>
                 <p>Real-time business analytics and performance metrics to help you make data-driven decisions.</p>
-                <div class='status-badge'>✅ Live</div>
+                <div class="status-badge">✅ Live</div>
             </div>
-            <div class='card'>
+            <div class="card">
                 <h3>📅 Appointment Management</h3>
                 <p>Streamlined appointment scheduling with automated reminders and calendar integration.</p>
-                <div class='status-badge'>✅ Live</div>
+                <div class="status-badge">✅ Live</div>
             </div>
-            <div class='card'>
+            <div class="card">
                 <h3>👥 Customer Management</h3>
                 <p>Comprehensive customer database with profiles, history, and communication tools.</p>
-                <div class='status-badge'>✅ Live</div>
+                <div class="status-badge">✅ Live</div>
             </div>
-            <div class='card'>
+            <div class="card">
                 <h3>💳 Payment Processing</h3>
                 <p>Secure payment processing with multiple payment methods and automated billing.</p>
-                <div class='status-badge'>✅ Live</div>
+                <div class="status-badge">✅ Live</div>
             </div>
         </div>
-        <div class='api-section'>
+        <div class="api-section">
             <h3>🔌 API Endpoints</h3>
-            <div class='api-grid'>
-                <div class='api-item'>
+            <div class="api-grid">
+                <div class="api-item">
                     <strong>GET /api/appointments</strong>
                     <span>Appointment data</span>
                 </div>
-                <div class='api-item'>
+                <div class="api-item">
                     <strong>GET /api/customers</strong>
                     <span>Customer data</span>
                 </div>
-                <div class='api-item'>
+                <div class="api-item">
                     <strong>GET /api/analytics</strong>
                     <span>Business metrics</span>
                 </div>
-                <div class='api-item'>
+                <div class="api-item">
                     <strong>GET /api/payments</strong>
                     <span>Payment info</span>
                 </div>
             </div>
         </div>
-        <div class='nav-links'>
-            <a href='https://app-oint.com' class='nav-link'>🏠 Main Portal</a>
-            <a href='https://enterprise.app-oint.com' class='nav-link'>🏢 Enterprise</a>
-            <a href='https://app-oint.com/admin' class='nav-link'>⚙️ Admin Panel</a>
-            <a href='https://app-oint.com/mobile' class='nav-link'>📱 Mobile Apps</a>
+        <div class="nav-links">
+            <a href="https://app-oint.com" class="nav-link">🏠 Main Portal</a>
+            <a href="https://enterprise.app-oint.com" class="nav-link">🏢 Enterprise</a>
+            <a href="https://app-oint.com/admin" class="nav-link">⚙️ Admin Panel</a>
+            <a href="https://app-oint.com/mobile" class="nav-link">📱 Mobile Apps</a>
         </div>
-        <div class='footer'>
+        <div class="footer">
             <p>© 2025 App-Oint. All rights reserved.</p>
             <p>Built with ❤️ for modern businesses</p>
         </div>
     </div>
 </body>
+</html>' > public/index.html
 </html>
 BEAUTIFUL_UI_EOF"
     run_command: "npx serve public -p 3000"
