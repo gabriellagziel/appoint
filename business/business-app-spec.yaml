@@ -3,13 +3,13 @@ region: nyc1
 
 services:
   - name: business-web
-    environment_slug: node-js
+    environment_slug: static
     github:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "business"
-    build_command: echo "No build needed"
-    run_command: npx http-server . -p 8080
+    build_command: echo "Static site - no build needed"
+    run_command: echo "Static site served by DigitalOcean"
     http_port: 8080
     instance_count: 1
     instance_size_slug: basic-xxs
