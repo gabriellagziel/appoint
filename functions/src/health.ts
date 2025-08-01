@@ -1,4 +1,5 @@
-import * as functions from 'firebase-functions';
+import * as admin from 'firebase-admin';
+import { onRequest } from 'firebase-functions/v2/https';
 
 // Named exports for health endpoints
 export function liveness(req: any, res: any) {
@@ -14,7 +15,7 @@ export function readiness(req: any, res: any) {
   // Perform readiness checks
   try {
     // Check if Firestore is accessible
-    const db = functions.firestore;
+    const db = admin.firestore();
     if (!db) {
       throw new Error('Firestore not available');
     }
@@ -40,7 +41,7 @@ export function readiness(req: any, res: any) {
   }
 }
 
-export const status = functions.https.onRequest((req, res) => {
+export const status = onRequest((req, res) => {
   // Set CORS headers
   res.set('Access-Control-Allow-Origin', '*');
   res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');

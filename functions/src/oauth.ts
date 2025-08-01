@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions';
+import { onRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import express from 'express';
 import { v4 as uuidv4 } from 'uuid';
@@ -84,4 +84,4 @@ app.post('/revoke', async (req, res) => {
   res.status(200).json({ success: true });
 });
 
-export const oauth = functions.https.onRequest(app);
+export const oauth = onRequest(app);

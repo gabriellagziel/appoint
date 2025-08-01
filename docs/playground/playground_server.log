@@ -3,5 +3,8 @@
 > serve out -p ${PORT:-8083} --single
 
  INFO  Accepting connections at http://localhost:59235
-HTTP  7/31/2025 3:55:18 PM ::1 GET /
- HTTP  7/31/2025 3:55:18 PM ::1 Returned 200 in 353 ms
+
+ INFO  Gracefully shutting down. Please wait...
+2025 3:55:18 PM ::1 Returned 200 in 353 ms
+
+ INFO  Gracefully shutting down. Please wait...

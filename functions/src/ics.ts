@@ -1,5 +1,5 @@
-import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
+import { onRequest } from 'firebase-functions/v2/https';
 import ical from 'ical-generator';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -16,7 +16,7 @@ const APPOINTMENTS_COLLECTION = 'appointments';
  * Generates an ICS calendar for a business identified by token.
  * URL example: https://<region>-<project>.cloudfunctions.net/icsFeed?token=abc123
  */
-export const icsFeed = functions.https.onRequest(async (req, res) => {
+export const icsFeed = onRequest(async (req, res) => {
   try {
     const { token } = req.query as any;
     if (!token) {
@@ -76,7 +76,7 @@ export const icsFeed = functions.https.onRequest(async (req, res) => {
  * Callable HTTPS function (or REST) to rotate the ICS token for a business.
  * Expects { businessId } in body (admin) OR uses API key auth for business.
  */
-export const rotateIcsToken = functions.https.onRequest(async (req, res) => {
+export const rotateIcsToken = onRequest(async (req, res) => {
   try {
     if (req.method !== 'POST') {
       res.status(405).send('Method Not Allowed');

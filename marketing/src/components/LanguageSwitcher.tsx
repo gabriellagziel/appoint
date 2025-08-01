@@ -1,9 +1,9 @@
 "use client"
 
-import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
+import { useI18n } from '@/lib/i18n'
 import { ChevronDown, Globe } from 'lucide-react'
-import { useTranslation } from '@/lib/i18n'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸', nativeName: 'English' },
@@ -64,8 +64,8 @@ const languages = [
 export function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false)
   const router = useRouter()
-  const { t } = useTranslation(router.locale)
-  
+  const { t } = useI18n()
+
   const currentLang = languages.find(lang => lang.code === router.locale) || languages[0]
 
   const handleLanguageChange = (langCode: string) => {
@@ -98,7 +98,7 @@ export function LanguageSwitcher() {
         <span className="sm:hidden">{currentLang.flag}</span>
         <ChevronDown className="w-3 h-3" />
       </button>
-      
+
       {isOpen && (
         <div className="absolute right-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50 max-h-96 overflow-y-auto">
           <div className="py-1">

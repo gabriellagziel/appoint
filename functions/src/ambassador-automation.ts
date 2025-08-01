@@ -1,11 +1,13 @@
-import * as functions from 'firebase-functions/v2';
 import * as admin from 'firebase-admin';
-import { 
-  sendPromotionNotification, 
-  sendTierUpgradeNotification, 
-  REDACTED_TOKEN, 
-  sendDemotionNotification, 
-  sendReferralSuccessNotification 
+import { onDocumentCreated } from 'firebase-functions/v2/firestore';
+import { HttpsError, onCall } from 'firebase-functions/v2/https';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
+import {
+  sendDemotionNotification,
+  REDACTED_TOKEN,
+  sendPromotionNotification,
+  sendReferralSuccessNotification,
+  sendTierUpgradeNotification
 } from './ambassador-notifications';
 
 const db = admin.firestore();
@@ -46,148 +48,148 @@ export interface AmbassadorReward {
 }
 
 // Scheduled function: Daily ambassador eligibility check
-export const dailyAmbassadorEligibilityCheck = functions.scheduler.onSchedule({
+export const dailyAmbassadorEligibilityCheck = onSchedule({
   schedule: '0 2 * * *', // Run at 2 AM daily
   timeZone: 'UTC'
 }, async (context) => {
-    console.log('Starting daily ambassador eligibility check...');
-    
-    try {
-      let processedCount = 0;
-      let promotedCount = 0;
+  console.log('Starting daily ambassador eligibility check...');
 
-      // Get all non-ambassador users who might be eligible
-      const usersSnapshot = await db.collection('users')
-        .where('isAdult', '==', true)
-        .where('ambassadorStatus', '!=', 'approved')
-        .limit(1000) // Process in batches
-        .get();
+  try {
+    let processedCount = 0;
+    let promotedCount = 0;
 
-      for (const userDoc of usersSnapshot.docs) {
-        const userData = userDoc.data();
-        const userId = userDoc.id;
+    // Get all non-ambassador users who might be eligible
+    const usersSnapshot = await db.collection('users')
+      .where('isAdult', '==', true)
+      .where('ambassadorStatus', '!=', 'approved')
+      .limit(1000) // Process in batches
+      .get();
 
-        // Check referral count
-        const referralCount = await getUserReferralCount(userId);
-        
-        if (referralCount >= BASIC_TIER_REFERRALS) {
-          const promoted = await promoteToAmbassador(userId);
-          if (promoted) {
-            promotedCount++;
-            console.log(`Promoted user ${userId} to ambassador`);
-          }
+    for (const userDoc of usersSnapshot.docs) {
+      const userData = userDoc.data();
+      const userId = userDoc.id;
+
+      // Check referral count
+      const referralCount = await getUserReferralCount(userId);
+
+      if (referralCount >= BASIC_TIER_REFERRALS) {
+        const promoted = await promoteToAmbassador(userId);
+        if (promoted) {
+          promotedCount++;
+          console.log(`Promoted user ${userId} to ambassador`);
         }
-        
-        processedCount++;
       }
 
-      console.log(`Daily eligibility check completed: ${processedCount} users processed, ${promotedCount} promoted`);
-      
-      // Log results
-      await db.collection('ambassador_automation_logs').add({
-        type: 'daily_eligibility_check',
-        timestamp: admin.firestore.FieldValue.serverTimestamp(),
-        results: {
-          processedCount,
-          promotedCount,
-        },
-      });
-
-    } catch (error) {
-      console.error('Error in daily eligibility check:', error);
-      throw error;
+      processedCount++;
     }
-  });
+
+    console.log(`Daily eligibility check completed: ${processedCount} users processed, ${promotedCount} promoted`);
+
+    // Log results
+    await db.collection('ambassador_automation_logs').add({
+      type: 'daily_eligibility_check',
+      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+      results: {
+        processedCount,
+        promotedCount,
+      },
+    });
+
+  } catch (error) {
+    console.error('Error in daily eligibility check:', error);
+    throw error;
+  }
+});
 
 // Scheduled function: Monthly ambassador performance review
-export const monthlyAmbassadorReview = functions.scheduler.onSchedule({
+export const monthlyAmbassadorReview = onSchedule({
   schedule: '0 3 1 * *', // Run at 3 AM on the 1st of every month
   timeZone: 'UTC'
 }, async (context) => {
-    console.log('Starting monthly ambassador review...');
-    
-    try {
-      let processedCount = 0;
-      let demotedCount = 0;
-      let upgradedCount = 0;
+  console.log('Starting monthly ambassador review...');
 
-      const now = admin.firestore.Timestamp.now();
-      
-      // Get all active ambassadors due for review
-      const ambassadorSnapshot = await db.collection('ambassador_profiles')
-        .where('status', '==', 'approved')
-        .where('nextMonthlyReviewAt', '<=', now)
-        .limit(500)
-        .get();
+  try {
+    let processedCount = 0;
+    let demotedCount = 0;
+    let upgradedCount = 0;
 
-      for (const ambassadorDoc of ambassadorSnapshot.docs) {
-        const profile = ambassadorDoc.data() as AmbassadorProfile;
-        
-        // Check monthly performance
-        const monthlyReferrals = await getMonthlyReferralCount(profile.userId);
-        
-        if (monthlyReferrals < MINIMUM_MONTHLY_REFERRALS) {
-          // Send warning first if it's the first time this month
-          if (monthlyReferrals < 5) {
-            await REDACTED_TOKEN(
-              profile.userId, 
-              profile.languageCode || 'en', 
-              monthlyReferrals, 
-              MINIMUM_MONTHLY_REFERRALS
-            );
-          }
-          
-          // Demote ambassador
-          await demoteAmbassador(profile.userId, 'insufficient_monthly_referrals');
-          demotedCount++;
-          console.log(`Demoted ambassador ${profile.userId} for insufficient referrals: ${monthlyReferrals}`);
-        } else {
-          // Update activity and check for tier upgrade
-          await updateAmbassadorActivity(profile.userId, monthlyReferrals);
-          const tierUpgraded = await checkAndUpgradeTier(profile.userId);
-          if (tierUpgraded) {
-            upgradedCount++;
-          }
+    const now = admin.firestore.Timestamp.now();
+
+    // Get all active ambassadors due for review
+    const ambassadorSnapshot = await db.collection('ambassador_profiles')
+      .where('status', '==', 'approved')
+      .where('nextMonthlyReviewAt', '<=', now)
+      .limit(500)
+      .get();
+
+    for (const ambassadorDoc of ambassadorSnapshot.docs) {
+      const profile = ambassadorDoc.data() as AmbassadorProfile;
+
+      // Check monthly performance
+      const monthlyReferrals = await getMonthlyReferralCount(profile.userId);
+
+      if (monthlyReferrals < MINIMUM_MONTHLY_REFERRALS) {
+        // Send warning first if it's the first time this month
+        if (monthlyReferrals < 5) {
+          await REDACTED_TOKEN(
+            profile.userId,
+            profile.languageCode || 'en',
+            monthlyReferrals,
+            MINIMUM_MONTHLY_REFERRALS
+          );
         }
-        
-        processedCount++;
+
+        // Demote ambassador
+        await demoteAmbassador(profile.userId, 'insufficient_monthly_referrals');
+        demotedCount++;
+        console.log(`Demoted ambassador ${profile.userId} for insufficient referrals: ${monthlyReferrals}`);
+      } else {
+        // Update activity and check for tier upgrade
+        await updateAmbassadorActivity(profile.userId, monthlyReferrals);
+        const tierUpgraded = await checkAndUpgradeTier(profile.userId);
+        if (tierUpgraded) {
+          upgradedCount++;
+        }
       }
 
-      console.log(`Monthly review completed: ${processedCount} ambassadors reviewed, ${demotedCount} demoted, ${upgradedCount} tier upgrades`);
-      
-      // Log results
-      await db.collection('ambassador_automation_logs').add({
-        type: 'monthly_review',
-        timestamp: admin.firestore.FieldValue.serverTimestamp(),
-        results: {
-          processedCount,
-          demotedCount,
-          upgradedCount,
-        },
-      });
-
-    } catch (error) {
-      console.error('Error in monthly ambassador review:', error);
-      throw error;
+      processedCount++;
     }
-  });
+
+    console.log(`Monthly review completed: ${processedCount} ambassadors reviewed, ${demotedCount} demoted, ${upgradedCount} tier upgrades`);
+
+    // Log results
+    await db.collection('ambassador_automation_logs').add({
+      type: 'monthly_review',
+      timestamp: admin.firestore.FieldValue.serverTimestamp(),
+      results: {
+        processedCount,
+        demotedCount,
+        upgradedCount,
+      },
+    });
+
+  } catch (error) {
+    console.error('Error in monthly ambassador review:', error);
+    throw error;
+  }
+});
 
 // Firestore trigger: User referral tracking
-export const trackUserReferral = functions.firestore.onDocumentCreated(
+export const trackUserReferral = onDocumentCreated(
   'users/{userId}',
   async (event) => {
     const snap = event.data;
     const context = event;
-    
+
     if (!snap) {
       console.log('No data in document snapshot');
       return null;
     }
-    
+
     try {
       const userData = snap.data();
       const newUserId = context.params.userId;
-      
+
       // Check if user was referred by an ambassador
       const referralCode = userData.referralCode;
       if (!referralCode) return null;
@@ -204,37 +206,37 @@ export const trackUserReferral = functions.firestore.onDocumentCreated(
 
       // Track the referral
       await trackReferralForAmbassador(ambassadorId, newUserId);
-      
+
       console.log(`Tracked referral for ambassador ${ambassadorId}: new user ${newUserId}`);
-      
+
     } catch (error) {
       console.error('Error tracking user referral:', error);
     }
-    
+
     return null;
   });
 
 // HTTPS callable: Manual ambassador promotion check
-export const checkAmbassadorEligibility = functions.https.onCall(async (request) => {
+export const checkAmbassadorEligibility = onCall(async (request) => {
   // Verify authentication
   if (!request.auth) {
-    throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
   }
 
   const userId = request.data.userId || request.auth.uid;
-  
+
   try {
     const referralCount = await getUserReferralCount(userId);
     const isEligible = referralCount >= BASIC_TIER_REFERRALS;
-    
+
     let canPromote = false;
     if (isEligible) {
       const userDoc = await db.collection('users').doc(userId).get();
       const userData = userDoc.data();
-      
-      canPromote = userData && 
-                   Boolean(userData.isAdult) === true && 
-                   userData.ambassadorStatus !== 'approved' || false;
+
+      canPromote = userData &&
+        Boolean(userData.isAdult) === true &&
+        userData.ambassadorStatus !== 'approved' || false;
     }
 
     return {
@@ -243,31 +245,31 @@ export const checkAmbassadorEligibility = functions.https.onCall(async (request)
       referralCount,
       minimumRequired: BASIC_TIER_REFERRALS,
     };
-    
+
   } catch (error) {
     console.error('Error checking ambassador eligibility:', error);
-    throw new functions.https.HttpsError('internal', 'Failed to check eligibility');
+    throw new HttpsError('internal', 'Failed to check eligibility');
   }
 });
 
 // HTTPS callable: Get ambassador dashboard data
-export const getAmbassadorDashboard = functions.https.onCall(async (request) => {
+export const getAmbassadorDashboard = onCall(async (request) => {
   // Verify authentication
   if (!request.auth) {
-    throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
   }
 
   const userId = request.auth.uid;
-  
+
   try {
     // Get ambassador profile
     const profileDoc = await db.collection('ambassador_profiles').doc(userId).get();
     if (!profileDoc.exists) {
-      throw new functions.https.HttpsError('not-found', 'Ambassador profile not found');
+      throw new HttpsError('not-found', 'Ambassador profile not found');
     }
 
     const profile = profileDoc.data() as AmbassadorProfile;
-    
+
     // Get recent referrals
     const referralsSnapshot = await db.collection('ambassador_referrals')
       .where('ambassadorId', '==', userId)
@@ -276,7 +278,7 @@ export const getAmbassadorDashboard = functions.https.onCall(async (request) => 
       .get();
 
     const referrals = referralsSnapshot.docs.map(doc => doc.data());
-    
+
     // Get active rewards
     const rewardsSnapshot = await db.collection('ambassador_rewards')
       .where('ambassadorId', '==', userId)
@@ -284,10 +286,10 @@ export const getAmbassadorDashboard = functions.https.onCall(async (request) => 
       .get();
 
     const activeRewards = rewardsSnapshot.docs.map(doc => doc.data());
-    
+
     // Calculate next tier progress
     const nextTierProgress = calculateNextTierProgress(profile.totalReferrals, profile.tier);
-    
+
     return {
       profile,
       recentReferrals: referrals,
@@ -298,10 +300,10 @@ export const getAmbassadorDashboard = functions.https.onCall(async (request) => 
         required: MINIMUM_MONTHLY_REFERRALS,
       },
     };
-    
+
   } catch (error) {
     console.error('Error getting ambassador dashboard:', error);
-    throw new functions.https.HttpsError('internal', 'Failed to get dashboard data');
+    throw new HttpsError('internal', 'Failed to get dashboard data');
   }
 });
 
@@ -359,7 +361,7 @@ async function promoteToAmbassador(userId: string): Promise<boolean> {
     // Generate share link and award basic tier reward
     await generateShareLink(userId);
     await awardTierReward(userId, 'basic');
-    
+
     // Send promotion notification
     await sendPromotionNotification(userId, languageCode, 'basic');
 
@@ -401,14 +403,14 @@ async function demoteAmbassador(userId: string, reason: string): Promise<void> {
 
     // Revoke active rewards (except lifetime)
     await revokeActiveRewards(userId);
-    
+
     // Send demotion notification
     const profileDoc = await db.collection('ambassador_profiles').doc(userId).get();
     if (profileDoc.exists) {
       const profile = profileDoc.data()!;
       await sendDemotionNotification(userId, profile.languageCode || 'en', reason);
     }
-    
+
   } catch (error) {
     console.error('Error demoting ambassador:', error);
   }
@@ -442,17 +444,17 @@ async function trackReferralForAmbassador(ambassadorId: string, referredUserId: 
 
     // Check for tier upgrade
     await checkAndUpgradeTier(ambassadorId);
-    
+
     // Send referral success notification
     const ambassadorDoc = await db.collection('ambassador_profiles').doc(ambassadorId).get();
     const referredUserDoc = await db.collection('users').doc(referredUserId).get();
-    
+
     if (ambassadorDoc.exists && referredUserDoc.exists) {
       const ambassador = ambassadorDoc.data()!;
       const referredUser = referredUserDoc.data()!;
       const referredUserName = referredUser.displayName || referredUser.email || 'New User';
       const totalReferrals = ambassador.totalReferrals + 1; // +1 because this is the new referral
-      
+
       await sendReferralSuccessNotification(
         ambassadorId,
         ambassador.languageCode || 'en',
@@ -460,7 +462,7 @@ async function trackReferralForAmbassador(ambassadorId: string, referredUserId: 
         totalReferrals
       );
     }
-    
+
   } catch (error) {
     console.error('Error tracking referral:', error);
   }
@@ -470,7 +472,7 @@ async function generateShareLink(userId: string): Promise<void> {
   try {
     const shareCode = generateUniqueCode(userId);
     const shareLink = `https://app-oint.com/invite/${shareCode}`;
-    
+
     await db.collection('ambassador_profiles').doc(userId).update({
       shareLink: shareLink,
       shareCode: shareCode,
@@ -509,7 +511,7 @@ async function awardTierReward(userId: string, tier: 'basic' | 'premium' | 'life
     }
 
     const rewardId = `${userId}_${tier}_${Date.now()}`;
-    
+
     await db.collection('ambassador_rewards').doc(rewardId).set({
       id: rewardId,
       ambassadorId: userId,
@@ -520,7 +522,7 @@ async function awardTierReward(userId: string, tier: 'basic' | 'premium' | 'life
       isActive: true,
       description: getRewardDescription(rewardType),
     });
-    
+
   } catch (error) {
     console.error('Error awarding tier reward:', error);
   }
@@ -590,7 +592,7 @@ async function getUserReferralCount(userId: string): Promise<number> {
 async function getMonthlyReferralCount(userId: string): Promise<number> {
   const lastMonth = new Date();
   lastMonth.setMonth(lastMonth.getMonth() - 1);
-  
+
   const snapshot = await db.collection('ambassador_referrals')
     .where('ambassadorId', '==', userId)
     .where('isActive', '==', true)
@@ -622,9 +624,9 @@ async function checkAndUpgradeTier(userId: string): Promise<boolean> {
   try {
     const totalReferrals = await getUserReferralCount(userId);
     const profileDoc = await db.collection('ambassador_profiles').doc(userId).get();
-    
+
     if (!profileDoc.exists) return false;
-    
+
     const profile = profileDoc.data() as AmbassadorProfile;
     let newTier = profile.tier;
 
@@ -644,7 +646,7 @@ async function checkAndUpgradeTier(userId: string): Promise<boolean> {
       });
 
       await awardTierReward(userId, newTier);
-      
+
       // Send tier upgrade notification
       await sendTierUpgradeNotification(
         userId,
@@ -653,7 +655,7 @@ async function checkAndUpgradeTier(userId: string): Promise<boolean> {
         newTier,
         totalReferrals
       );
-      
+
       // Log tier upgrade
       await db.collection('ambassador_tier_upgrades').add({
         ambassadorId: userId,

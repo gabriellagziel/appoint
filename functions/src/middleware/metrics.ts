@@ -1,3 +1,4 @@
+import { NextFunction, Request, Response } from 'express';
 import client from 'prom-client';
 
 // אסוף מדדים מובנים של Node.js
@@ -11,7 +12,7 @@ export const httpRequestDurationMs = new client.Histogram({
   buckets: [50, 100, 200, 300, 400, 500, 1000],
 });
 
-export function metricsMiddleware(req, res, next) {
+export function metricsMiddleware(req: Request, res: Response, next: NextFunction) {
   const end = httpRequestDurationMs.startTimer();
   res.on('finish', () => {
     end({ method: req.method, route: req.route?.path || req.url, status_code: res.statusCode });

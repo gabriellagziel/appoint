@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
 import { useI18n } from '@/lib/i18n'
+import { useEffect, useState } from 'react'
 
 interface Webhook {
   id: string
@@ -9,7 +9,7 @@ interface Webhook {
 
 export const WebhookManager: React.FC = () => {
   const { t } = useI18n()
-  const [hooks, setHooks] = useState<Webhook[]>([])
+  const [hooks] = useState<Webhook[]>([])
   const [url, setUrl] = useState('')
   const [secret, setSecret] = useState('')
 
@@ -33,7 +33,7 @@ export const WebhookManager: React.FC = () => {
         {hooks.map((h) => (
           <li key={h.id} className="flex items-center justify-between border p-2 mt-2">
             <span className="truncate flex-1 mr-2">{h.url}</span>
-            <button className="text-red-600 text-sm" onClick={() => {}}>{t('webhook.delete')}</button>
+            <button className="text-red-600 text-sm" onClick={() => { }}>{t('webhook.delete')}</button>
           </li>
         ))}
       </ul>

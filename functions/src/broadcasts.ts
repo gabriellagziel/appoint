@@ -1,6 +1,6 @@
-import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
-import { CallableContext } from 'firebase-functions/v1/https';
+import { HttpsError, onCall } from 'firebase-functions/v2/https';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
 
 // Ensure Firebase Admin is initialized
 if (!admin.apps.length) {
@@ -69,36 +69,36 @@ interface FCMPayload {
  * Callable function to send broadcast messages
  * Triggered by admin users from the Flutter app
  */
-export const sendBroadcastMessage = functions.https.onCall(
+export const sendBroadcastMessage = onCall(
   async (request): Promise<DeliveryResult> => {
     const data = request.data as BroadcastRequest;
     // Verify admin authentication
     if (!request.auth) {
-      throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+      throw new HttpsError('unauthenticated', 'User must be authenticated');
     }
 
     // Verify admin privileges
     const userDoc = await firestore.collection('users').doc(request.auth.uid).get();
     if (!userDoc.exists || userDoc.data()?.role !== 'admin') {
-      throw new functions.https.HttpsError('permission-denied', 'Admin privileges required');
+      throw new HttpsError('permission-denied', 'Admin privileges required');
     }
 
     const { messageId, adminId } = data;
 
     try {
       console.log(`Starting broadcast delivery for message: ${messageId}`);
-      
+
       // Get broadcast message
       const messageDoc = await firestore.collection('admin_broadcasts').doc(messageId).get();
       if (!messageDoc.exists) {
-        throw new functions.https.HttpsError('not-found', 'Broadcast message not found');
+        throw new HttpsError('not-found', 'Broadcast message not found');
       }
 
       const messageData = messageDoc.data()!;
-      
+
       // Verify message is in pending status
       if (messageData.status !== 'pending') {
-        throw new functions.https.HttpsError('failed-precondition', 'Message is not in pending status');
+        throw new HttpsError('failed-precondition', 'Message is not in pending status');
       }
 
       // Get target users
@@ -116,8 +116,8 @@ export const sendBroadcastMessage = functions.https.onCall(
       const result = await sendMessagesInBatches(messageData, targetUsers, messageId);
 
       // Update final status based on results
-      const finalStatus = result.failedCount === 0 ? 'sent' : 
-                         result.deliveredCount === 0 ? 'failed' : 'partially_sent';
+      const finalStatus = result.failedCount === 0 ? 'sent' :
+        result.deliveredCount === 0 ? 'failed' : 'partially_sent';
 
       await firestore.collection('admin_broadcasts').doc(messageId).update({
         status: finalStatus,
@@ -125,7 +125,7 @@ export const sendBroadcastMessage = functions.https.onCall(
         failedCount: result.failedCount,
         retryCount: result.retryCount,
         processedAt: admin.firestore.FieldValue.serverTimestamp(),
-        ...(result.errors.length > 0 && { 
+        ...(result.errors.length > 0 && {
           failureReason: result.errors.slice(0, 5).join('; ') // Store first 5 errors
         }),
       });
@@ -135,7 +135,7 @@ export const sendBroadcastMessage = functions.https.onCall(
 
     } catch (error) {
       console.error('Broadcast delivery failed:', error);
-      
+
       // Update message status to failed
       await firestore.collection('admin_broadcasts').doc(messageId).update({
         status: 'failed',
@@ -143,11 +143,11 @@ export const sendBroadcastMessage = functions.https.onCall(
         processedAt: admin.firestore.FieldValue.serverTimestamp(),
       });
 
-      if (error instanceof functions.https.HttpsError) {
+      if (error instanceof HttpsError) {
         throw error;
       }
-      
-      throw new functions.https.HttpsError('internal', 'Failed to send broadcast message');
+
+      throw new HttpsError('internal', 'Failed to send broadcast message');
     }
   }
 );
@@ -156,85 +156,83 @@ export const sendBroadcastMessage = functions.https.onCall(
  * Scheduled function to process pending broadcast messages
  * Runs every minute to check for scheduled messages
  */
-export const processScheduledBroadcasts = functions.pubsub
-  .schedule('every 1 minutes')
-  .onRun(async (context) => {
-    console.log('Processing scheduled broadcasts...');
-    
-    try {
-      const now = admin.firestore.Timestamp.now();
-      
-      // Find scheduled messages ready to send
-      const scheduledQuery = await firestore
-        .collection('admin_broadcasts')
-        .where('status', '==', 'pending')
-        .where('scheduledFor', '<=', now)
-        .limit(10) // Process max 10 at a time
-        .get();
+export const processScheduledBroadcasts = onSchedule('every 1 minutes', async (event) => {
+  console.log('Processing scheduled broadcasts...');
 
-      if (scheduledQuery.empty) {
-        console.log('No scheduled messages to process');
-        return;
-      }
+  try {
+    const now = admin.firestore.Timestamp.now();
 
-      console.log(`Found ${scheduledQuery.size} scheduled messages to process`);
+    // Find scheduled messages ready to send
+    const scheduledQuery = await firestore
+      .collection('admin_broadcasts')
+      .where('status', '==', 'pending')
+      .where('scheduledFor', '<=', now)
+      .limit(10) // Process max 10 at a time
+      .get();
 
-      // Process each scheduled message
-      const promises = scheduledQuery.docs.map(async (doc) => {
-        const messageId = doc.id;
-        const messageData = doc.data();
-        
-        try {
-          console.log(`Processing scheduled message: ${messageId}`);
-          
-          // Get target users
-          const targetUsers = await getTargetUsers(messageData.targetingFilters);
-          
-          // Update status to sending
-          await firestore.collection('admin_broadcasts').doc(messageId).update({
-            status: 'sending',
-            actualRecipients: targetUsers.length,
-            sentAt: admin.firestore.FieldValue.serverTimestamp(),
-          });
-
-          // Send messages in batches
-          const result = await sendMessagesInBatches(messageData, targetUsers, messageId);
-
-          // Update final status
-          const finalStatus = result.failedCount === 0 ? 'sent' : 
-                             result.deliveredCount === 0 ? 'failed' : 'partially_sent';
-
-          await firestore.collection('admin_broadcasts').doc(messageId).update({
-            status: finalStatus,
-            deliveredCount: result.deliveredCount,
-            failedCount: result.failedCount,
-            retryCount: result.retryCount,
-            processedAt: admin.firestore.FieldValue.serverTimestamp(),
-            ...(result.errors.length > 0 && { 
-              failureReason: result.errors.slice(0, 5).join('; ')
-            }),
-          });
-
-          console.log(`Scheduled message ${messageId} processed: ${result.deliveredCount} delivered`);
-
-        } catch (error) {
-          console.error(`Failed to process scheduled message ${messageId}:`, error);
-          
-          await firestore.collection('admin_broadcasts').doc(messageId).update({
-            status: 'failed',
-            failureReason: error instanceof Error ? error.message : 'Scheduled processing failed',
-            processedAt: admin.firestore.FieldValue.serverTimestamp(),
-          });
-        }
-      });
-
-      await Promise.all(promises);
-      console.log('Scheduled broadcast processing completed');
-
-    } catch (error) {
-      console.error('Scheduled broadcast processing failed:', error);
+    if (scheduledQuery.empty) {
+      console.log('No scheduled messages to process');
+      return;
     }
-  });
+
+    console.log(`Found ${scheduledQuery.size} scheduled messages to process`);
+
+    // Process each scheduled message
+    const promises = scheduledQuery.docs.map(async (doc) => {
+      const messageId = doc.id;
+      const messageData = doc.data();
+
+      try {
+        console.log(`Processing scheduled message: ${messageId}`);
+
+        // Get target users
+        const targetUsers = await getTargetUsers(messageData.targetingFilters);
+
+        // Update status to sending
+        await firestore.collection('admin_broadcasts').doc(messageId).update({
+          status: 'sending',
+          actualRecipients: targetUsers.length,
+          sentAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
+
+        // Send messages in batches
+        const result = await sendMessagesInBatches(messageData, targetUsers, messageId);
+
+        // Update final status
+        const finalStatus = result.failedCount === 0 ? 'sent' :
+          result.deliveredCount === 0 ? 'failed' : 'partially_sent';
+
+        await firestore.collection('admin_broadcasts').doc(messageId).update({
+          status: finalStatus,
+          deliveredCount: result.deliveredCount,
+          failedCount: result.failedCount,
+          retryCount: result.retryCount,
+          processedAt: admin.firestore.FieldValue.serverTimestamp(),
+          ...(result.errors.length > 0 && {
+            failureReason: result.errors.slice(0, 5).join('; ')
+          }),
+        });
+
+        console.log(`Scheduled message ${messageId} processed: ${result.deliveredCount} delivered`);
+
+      } catch (error) {
+        console.error(`Failed to process scheduled message ${messageId}:`, error);
+
+        await firestore.collection('admin_broadcasts').doc(messageId).update({
+          status: 'failed',
+          failureReason: error instanceof Error ? error.message : 'Scheduled processing failed',
+          processedAt: admin.firestore.FieldValue.serverTimestamp(),
+        });
+      }
+    });
+
+    await Promise.all(promises);
+    console.log('Scheduled broadcast processing completed');
+
+  } catch (error) {
+    console.error('Scheduled broadcast processing failed:', error);
+  }
+});
 
 /**
  * Get target users based on targeting filters
@@ -273,7 +271,7 @@ async function getTargetUsers(targetingFilters: any): Promise<Array<{ id: string
     }
 
     const snapshot = await query.get();
-    
+
     // Filter users with valid FCM tokens
     const users: Array<{ id: string; fcmToken: string }> = [];
     snapshot.forEach((doc) => {
@@ -322,7 +320,7 @@ async function sendMessagesInBatches(
     console.log(`Processing batch ${i + 1}/${batches.length} with ${batch.length} users`);
 
     const batchResult = await sendBatchWithRetry(batch, basePayload, messageId);
-    
+
     result.deliveredCount += batchResult.deliveredCount;
     result.failedCount += batchResult.failedCount;
     result.retryCount += batchResult.retryCount;
@@ -365,7 +363,7 @@ async function sendBatchWithRetry(
 
     // Send to FCM
     const response = await messaging.sendEachForMulticast(message);
-    
+
     console.log(`Batch attempt ${attempt}: ${response.successCount} successful, ${response.failureCount} failed`);
 
     result.deliveredCount = response.successCount;
@@ -378,7 +376,7 @@ async function sendBatchWithRetry(
     // Handle failures
     if (response.failureCount > 0) {
       const failedUsers: Array<{ id: string; fcmToken: string; error: string }> = [];
-      
+
       response.responses.forEach((resp: any, index: number) => {
         if (!resp.success) {
           const error = resp.error?.code || 'unknown-error';
@@ -395,14 +393,14 @@ async function sendBatchWithRetry(
 
       // Retry logic for retryable errors
       if (attempt < MAX_RETRY_ATTEMPTS) {
-        const retryableUsers = failedUsers.filter(user => 
+        const retryableUsers = failedUsers.filter(user =>
           isRetryableError(user.error)
         );
 
         if (retryableUsers.length > 0) {
           console.log(`Retrying ${retryableUsers.length} failed messages (attempt ${attempt + 1})`);
           await delay(RETRY_DELAY_MS * attempt);
-          
+
           const retryResult = await sendBatchWithRetry(
             retryableUsers.map(u => ({ id: u.id, fcmToken: u.fcmToken })),
             basePayload,
@@ -422,7 +420,7 @@ async function sendBatchWithRetry(
     console.error(`Batch sending failed (attempt ${attempt}):`, error);
     result.failedCount = users.length;
     result.errors.push(`Batch error: ${error instanceof Error ? error.message : 'Unknown error'}`);
-    
+
     // Track all as failed
     await trackFailedDeliveries(
       users.map(u => ({ ...u, error: 'batch-send-error' })),
@@ -505,7 +503,7 @@ async function trackDeliveryEvents(
   event: string
 ): Promise<void> {
   const batch = firestore.batch();
-  
+
   users.forEach(user => {
     const analyticsRef = firestore.collection('broadcast_analytics').doc();
     batch.set(analyticsRef, {
@@ -532,7 +530,7 @@ async function trackFailedDeliveries(
   messageId: string
 ): Promise<void> {
   const batch = firestore.batch();
-  
+
   failedUsers.forEach(user => {
     const analyticsRef = firestore.collection('broadcast_analytics').doc();
     batch.set(analyticsRef, {
@@ -563,8 +561,8 @@ function isRetryableError(error: string): boolean {
     'network-error',
     'batch-send-error',
   ];
-  
-  return retryableErrors.some(retryableError => 
+
+  return retryableErrors.some(retryableError =>
     error.toLowerCase().includes(retryableError)
   );
 }

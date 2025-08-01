@@ -1,5 +1,7 @@
-import * as functions from 'firebase-functions/v2';
 import * as admin from 'firebase-admin';
+import { onDocumentUpdated } from 'firebase-functions/v2/firestore';
+import { onRequest } from 'firebase-functions/v2/https';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
 
 const db = admin.firestore();
 
@@ -119,7 +121,7 @@ async function assignAmbassadorRole(userId: string, countryCode: string, languag
   try {
     const key = `${countryCode}_${languageCode}`;
     const quota = ambassadorQuotas[key as keyof typeof ambassadorQuotas];
-    
+
     if (!quota) {
       console.log(`No quota defined for ${countryCode}_${languageCode}`);
       return false;
@@ -232,7 +234,7 @@ async function autoAssignAvailableSlots(): Promise<number> {
 }
 
 // HTTPS callable functions
-export const autoAssignAmbassadors = functions.https.onRequest(async (req, res) => {
+export const autoAssignAmbassadors = onRequest(async (req, res) => {
   try {
     const assignedCount = await autoAssignAvailableSlots();
     res.json({ success: true, assignedCount });
@@ -242,10 +244,10 @@ export const autoAssignAmbassadors = functions.https.onRequest(async (req, res) 
   }
 });
 
-export const getQuotaStats = functions.https.onRequest(async (req, res) => {
+export const getQuotaStats = onRequest(async (req, res) => {
   try {
     const stats: Record<string, any> = {};
-    
+
     for (const [key, quota] of Object.entries(ambassadorQuotas)) {
       const parts = key.split('_');
       const countryCode = parts[0];
@@ -271,7 +273,7 @@ export const getQuotaStats = functions.https.onRequest(async (req, res) => {
   }
 });
 
-export const assignAmbassador = functions.https.onRequest(async (req, res) => {
+export const assignAmbassador = onRequest(async (req, res) => {
   try {
     const { userId, countryCode, languageCode } = req.body;
 
@@ -281,7 +283,7 @@ export const assignAmbassador = functions.https.onRequest(async (req, res) => {
     }
 
     const success = await assignAmbassadorRole(userId, countryCode, languageCode);
-    
+
     if (success) {
       res.json({ success: true, message: 'Ambassador assigned successfully' });
     } else {
@@ -294,16 +296,16 @@ export const assignAmbassador = functions.https.onRequest(async (req, res) => {
 });
 
 // Scheduled functions
-export const scheduledAutoAssign = functions.scheduler.onSchedule('every 1 hours', async (event) => {
+export const scheduledAutoAssign = onSchedule('every 1 hours', async (event) => {
   const assignedCount = await autoAssignAvailableSlots();
   console.log(`Scheduled auto-assignment completed. Assigned ${assignedCount} ambassadors.`);
   return;
 });
 
-export const dailyQuotaReport = functions.scheduler.onSchedule('every 24 hours', async (event): Promise<void> => {
+export const dailyQuotaReport = onSchedule('every 24 hours', async (event): Promise<void> => {
   // Generate daily report
   const reportData: Record<string, any> = {};
-  
+
   for (const [key, quota] of Object.entries(ambassadorQuotas)) {
     const parts = key.split('_');
     const countryCode = parts[0];
@@ -333,7 +335,7 @@ export const dailyQuotaReport = functions.scheduler.onSchedule('every 24 hours',
 });
 
 // Firestore triggers
-export const checkAmbassadorEligibility = functions.firestore.onDocumentUpdated(
+export const checkAmbassadorEligibility = onDocumentUpdated(
   'users/{userId}',
   async (event) => {
     try {
@@ -363,7 +365,7 @@ export const checkAmbassadorEligibility = functions.firestore.onDocumentUpdated(
     }
   });
 
-export const handleAmbassadorRemoval = functions.firestore.onDocumentUpdated(
+export const handleAmbassadorRemoval = onDocumentUpdated(
   'users/{userId}',
   async (event) => {
     try {

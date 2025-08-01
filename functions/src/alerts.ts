@@ -1,5 +1,5 @@
 import * as admin from 'firebase-admin';
-import { schedule } from 'firebase-functions/v2';
+import { onSchedule } from 'firebase-functions/v2/scheduler';
 import fetch from 'node-fetch';
 
 if (!admin.apps.length) {
@@ -20,7 +20,7 @@ function sendAlert(message: string) {
   console.log('ALERT:', message);
 }
 
-export const hourlyAlerts = schedule('every 60 minutes', async (event) => {
+export const hourlyAlerts = onSchedule('every 60 minutes', async (event) => {
   const now = admin.firestore.Timestamp.now();
 
   // Quota near limit

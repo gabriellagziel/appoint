@@ -1,8 +1,6 @@
-import * as functions from 'firebase-functions';
-import Stripe from 'stripe';
 import * as admin from 'firebase-admin';
-// @ts-ignore – available only in test context, mocked by jest
-import { validate, schemas } from '../test/validation-schemas';
+import { HttpsError, onCall, onRequest } from 'firebase-functions/v2/https';
+import Stripe from 'stripe';
 
 // Utility: ensure Firebase admin is initialised and avoid "apps length" errors in tests
 const isAdminInitialised = () => Array.isArray((admin as any).apps) && (admin as any).apps.length > 0;
@@ -23,7 +21,7 @@ function getStripe(): any { // return type is the mocked Stripe SDK in tests
   }
   if (!stripeSingleton) {
     // Fallback for runtime / production
-    stripeSingleton = new Stripe(functions.config().stripe.secret_key || 'REDACTED_STRIPE_KEY', {});
+    stripeSingleton = new Stripe(process.env.STRIPE_SECRET_KEY || 'REDACTED_STRIPE_KEY', {});
   }
   return stripeSingleton;
 }
@@ -34,7 +32,7 @@ const db = admin.firestore();
 const serverTimestamp = 'serverTimestamp';
 
 // Create checkout session
-export const createCheckoutSession = functions.https.onRequest(async (req, res) => {
+export const createCheckoutSession = onRequest(async (req, res) => {
   try {
     // Enable CORS
     res.set('Access-Control-Allow-Origin', '*');
@@ -83,7 +81,7 @@ export const createCheckoutSession = functions.https.onRequest(async (req, res) 
 });
 
 // Confirm checkout session
-export const confirmSession = functions.https.onRequest(async (req, res) => {
+export const confirmSession = onRequest(async (req, res) => {
   try {
     // Enable CORS
     res.set('Access-Control-Allow-Origin', '*');
@@ -143,10 +141,10 @@ export const confirmSession = functions.https.onRequest(async (req, res) => {
 });
 
 // Handle Stripe webhooks
-export const handleCheckoutSessionCompleted = functions.https.onRequest(async (req, res) => {
+export const handleCheckoutSessionCompleted = onRequest(async (req, res) => {
   const stripe = getStripe();
   const sig = req.headers['stripe-signature'];
-  const endpointSecret = functions.config().stripe.webhook_secret || 'whsec_your_webhook_secret_here';
+  const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET || 'whsec_your_webhook_secret_here';
 
   let event: Stripe.Event;
 
@@ -306,7 +304,7 @@ async function handlePaymentFailed(invoice: Stripe.Invoice) {
 }
 
 // Cancel subscription
-export const cancelSubscription = functions.https.onRequest(async (req, res) => {
+export const cancelSubscription = onRequest(async (req, res) => {
   try {
     // Enable CORS
     res.set('Access-Control-Allow-Origin', '*');
@@ -359,12 +357,14 @@ export const cancelSubscription = functions.https.onRequest(async (req, res) => 
 });
 
 // Create payment intent with 3D Secure support
-export const createPaymentIntent = functions.https.onCall(async (data, context) => {
+export const createPaymentIntent = onCall(async (data, context) => {
   try {
-    // Validate input using test validation helper (mocked in tests)
-    const validatedData = validate(schemas.createPaymentIntent, data);
-    const { amount } = validatedData;
-    
+    // Basic validation
+    const { amount } = data.data || data;
+    if (!amount || typeof amount !== 'number' || amount <= 0) {
+      throw new HttpsError('invalid-argument', 'Amount must be a positive number');
+    }
+
     const stripe = getStripe();
     const paymentIntent = await stripe.paymentIntents.create({
       amount: Math.round(amount * 100),
@@ -384,16 +384,11 @@ export const createPaymentIntent = functions.https.onCall(async (data, context) 
     };
   } catch (error: any) {
     console.error('Error creating payment intent:', error);
-    
-    // Handle validation errors
-    if (error.code === 'invalid-argument') {
-      throw new functions.https.HttpsError(
-        'invalid-argument',
-        error.message,
-        { field: error.details?.field }
-      );
+
+    if (error instanceof HttpsError) {
+      throw error;
     }
-    
-    throw new functions.https.HttpsError('internal', 'Failed to create payment intent');
+
+    throw new HttpsError('internal', 'Failed to create payment intent');
   }
 }); 

@@ -1,17 +1,21 @@
-import { useEffect, useState } from 'react'
+import { IcsTokenCard } from '@/components/IcsTokenCard'
+import { InvoiceTable } from '@/components/InvoiceTable'
+import { LatencyChart } from '@/components/LatencyChart'
 import { Navbar } from '@/components/Navbar'
 import { UsageChart } from '@/components/UsageChart'
-import { LatencyChart } from '@/components/LatencyChart'
-import { InvoiceTable } from '@/components/InvoiceTable'
 import { WebhookManager } from '@/components/WebhookManager'
-import { IcsTokenCard } from '@/components/IcsTokenCard'
-import { useI18n, I18nContext } from '@/lib/i18n'
+import { I18nContext } from '@/lib/i18n'
 import en from '@/locales/en.json'
+import { useEffect, useState } from 'react'
 
 export default function Dashboard() {
-  const [usage, setUsage] = useState([] as any[])
-  const [latency, setLatency] = useState([] as any[])
-  const [invoices, setInvoices] = useState([] as any[])
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [usage, setUsage] = useState<{ date: string; calls: number }[]>([])
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [latency, setLatency] = useState<{ date: string; p95: number }[]>([])
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [invoices, setInvoices] = useState<{ id: string; month: string; amount: number; status: string; pdfUrl: string }[]>([])
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [token, setToken] = useState('')
 
   useEffect(() => {
@@ -23,7 +27,7 @@ export default function Dashboard() {
   }
 
   return (
-    <I18nContext.Provider value={{ t: (k: string) => (en as any)[k] || k }}>
+    <I18nContext.Provider value={{ t: (k: string) => (en as Record<string, string>)[k] || k }}>
       <main className="min-h-screen">
         <Navbar />
         <section className="p-6 space-y-8 max-w-5xl mx-auto">

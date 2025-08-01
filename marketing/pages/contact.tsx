@@ -1,14 +1,12 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { Navbar } from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Mail, Phone, MapPin, Clock } from 'lucide-react'
-import { useTranslation } from '@/lib/i18n'
+import { useI18n } from '@/lib/i18n'
+import { Clock, Mail, MapPin, Phone } from 'lucide-react'
+import Head from 'next/head'
 
 export default function ContactPage() {
-  const router = useRouter()
-  const { t } = useTranslation(router.locale)
+  const { t } = useI18n()
 
   const contactMethods = [
     {
@@ -62,10 +60,10 @@ export default function ContactPage() {
         <title>Contact - App-Oint</title>
         <meta name="description" content="Get in touch with App-Oint support team for help and questions" />
       </Head>
-      
+
       <div className="min-h-screen bg-gray-50">
         <Navbar />
-        
+
         <main className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -76,7 +74,7 @@ export default function ContactPage() {
                 Have questions about App-Oint? Need technical support? Want to explore partnerships? We are here to help and would love to hear from you.
               </p>
             </div>
-            
+
             {/* Contact Methods */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
               {contactMethods.map((method, index) => (
@@ -92,7 +90,7 @@ export default function ContactPage() {
                 </Card>
               ))}
             </div>
-            
+
             {/* Simple Contact Form */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
               <Card>
@@ -104,31 +102,31 @@ export default function ContactPage() {
                   <div className="space-y-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-                      <input 
-                        type="text" 
+                      <input
+                        type="text"
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="John Doe"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                      <input 
-                        type="email" 
+                      <input
+                        type="email"
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="john@example.com"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">Subject</label>
-                      <input 
-                        type="text" 
+                      <input
+                        type="text"
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="How can we help you?"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                      <textarea 
+                      <textarea
                         rows={4}
                         className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="Please provide details about your inquiry..."
@@ -138,7 +136,7 @@ export default function ContactPage() {
                   </div>
                 </CardContent>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <CardTitle className="text-2xl">Visit Our Office</CardTitle>
@@ -165,7 +163,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
             </div>
-            
+
             {/* FAQ Section */}
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Frequently Asked Questions</h2>
@@ -182,7 +180,7 @@ export default function ContactPage() {
                 ))}
               </div>
             </div>
-            
+
             <div className="text-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Ready to Get Started?
