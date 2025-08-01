@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App-Oint Design Mockups - Desktop & Mobile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #E5E5EA;
+            color: #141414;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 2000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #0A84FF;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: rgba(20, 20, 20, 0.7);
+        }
+
+        .mockups-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .mockup-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mockup-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #141414;
+        }
+
+        .mockup-frame {
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        /* Desktop Mockup */
+        .desktop-artboard {
+            width: 1440px;
+            height: 900px;
+            background: #E5E5EA;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .desktop-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 64px;
+            background: #E5E5EA;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .desktop-logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0A84FF;
+        }
+
+        .desktop-header-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .desktop-search {
+            padding: 8px 16px;
+            border: 1px solid #E5E5EA;
+            border-radius: 8px;
+            background: white;
+            font-size: 16px;
+            width: 240px;
+        }
+
+        .desktop-profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #0A84FF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .desktop-main-container {
+            display: grid;
+            grid-template-columns: 240px 1fr 1fr;
+            height: 900px;
+            margin-top: 64px;
+        }
+
+        .desktop-sidebar {
+            background: #E5E5EA;
+            padding: 24px 16px;
+            border-right: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .desktop-nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+        }
+
+        .desktop-nav-item:hover {
+            background: rgba(10, 132, 255, 0.1);
+            transform: scale(1.02);
+        }
+
+        .desktop-nav-item.active {
+            background: #0A84FF;
+            color: white;
+        }
+
+        .desktop-nav-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .desktop-calendar {
+            background: white;
+            padding: 24px;
+            position: relative;
+        }
+
+        .desktop-calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .desktop-calendar-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .desktop-new-meeting-btn {
+            background: #0A84FF;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+        }
+
+        .desktop-new-meeting-btn:hover {
+            background: #007AFF;
+            transform: scale(1.02);
+        }
+
+        .desktop-calendar-grid {
+            display: grid;
+            grid-template-columns: 80px repeat(5, 1fr);
+            gap: 1px;
+            background: #E5E5EA;
+        }
+
+        .desktop-time-slot {
+            background: white;
+            padding: 8px;
+            font-size: 14px;
+            color: #141414;
+            text-align: center;
+            border-bottom: 1px solid #E5E5EA;
+        }
+
+        .desktop-day-header {
+            background: white;
+            padding: 16px 8px;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 1px solid #E5E5EA;
+        }
+
+        .desktop-day-header.today {
+            background: rgba(90, 200, 250, 0.15);
+            color: #0A84FF;
+        }
+
+        .desktop-calendar-cell {
+            background: white;
+            min-height: 60px;
+            padding: 4px;
+            position: relative;
+            border-bottom: 1px solid #E5E5EA;
+        }
+
+        .desktop-meeting {
+            background: #0A84FF;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 2px;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .desktop-meeting:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .desktop-meeting.teal {
+            background: #64D2FF;
+        }
+
+        .desktop-detail-panel {
+            background: white;
+            padding: 24px;
+            border-left: 1px solid #E5E5EA;
+        }
+
+        .desktop-panel-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+
+        .desktop-upcoming-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+            margin-bottom: 16px;
+            background: white;
+            border: 1px solid #E5E5EA;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+        }
+
+        .desktop-upcoming-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .desktop-item-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: #0A84FF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .desktop-item-content {
+            flex: 1;
+        }
+
+        .desktop-item-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .desktop-item-subtitle {
+            font-size: 14px;
+            color: rgba(20, 20, 20, 0.7);
+        }
+
+        .desktop-item-time {
+            font-size: 14px;
+            color: #0A84FF;
+            font-weight: bold;
+        }
+
+        /* Mobile Mockup */
+        .mobile-artboard {
+            width: 375px;
+            height: 812px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            border-radius: 24px;
+        }
+
+        .mobile-top-bar {
+            background: white;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 100;
+        }
+
+        .mobile-today-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #141414;
+        }
+
+        .mobile-date {
+            font-size: 16px;
+            color: rgba(20, 20, 20, 0.7);
+        }
+
+        .mobile-content {
+            padding: 24px;
+            height: calc(100% - 140px);
+            overflow-y: auto;
+        }
+
+        .mobile-event-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .mobile-event-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 16px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #E5E5EA;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+            position: relative;
+        }
+
+        .mobile-event-item:hover {
+            background: #E5E5EA;
+        }
+
+        .mobile-event-item:active {
+            background: #E5E5EA;
+        }
+
+        .mobile-time-indicator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 40px;
+        }
+
+        .mobile-time-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #0A84FF;
+            margin-bottom: 8px;
+        }
+
+        .mobile-time-line {
+            width: 2px;
+            height: 60px;
+            background: #0A84FF;
+            opacity: 0.3;
+        }
+
+        .mobile-event-content {
+            flex: 1;
+        }
+
+        .mobile-event-time {
+            font-size: 14px;
+            color: #0A84FF;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .mobile-event-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #141414;
+            margin-bottom: 4px;
+        }
+
+        .mobile-event-subtitle {
+            font-size: 14px;
+            color: rgba(20, 20, 20, 0.7);
+        }
+
+        .mobile-event-status {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #28A745;
+        }
+
+        .mobile-fab {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #0A84FF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 200ms ease-in-out;
+            z-index: 1000;
+        }
+
+        .mobile-fab:hover {
+            transform: translateX(-50%) scale(1.1);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+
+        .mobile-fab:active {
+            transform: translateX(-50%) scale(0.95);
+        }
+
+        .mobile-bottom-nav {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 16px;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+        }
+
+        .mobile-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            transition: all 200ms ease-in-out;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .mobile-nav-item:hover {
+            background: rgba(10, 132, 255, 0.1);
+        }
+
+        .mobile-nav-item.active {
+            color: #0A84FF;
+        }
+
+        .mobile-nav-item:not(.active) {
+            color: rgba(20, 20, 20, 0.5);
+        }
+
+        .mobile-nav-icon {
+            font-size: 20px;
+            margin-bottom: 2px;
+        }
+
+        .mobile-nav-label {
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        /* Design Tokens Display */
+        .design-tokens {
+            margin-top: 40px;
+            padding: 24px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .tokens-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            color: #141414;
+        }
+
+        .tokens-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .token-section {
+            padding: 16px;
+            border: 1px solid #E5E5EA;
+            border-radius: 8px;
+        }
+
+        .token-section h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: #141414;
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .color-swatch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .color-box {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: 1px solid #E5E5EA;
+        }
+
+        .color-name {
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .typography-example {
+            margin-bottom: 16px;
+        }
+
+        .typography-label {
+            font-size: 12px;
+            color: rgba(20, 20, 20, 0.7);
+            margin-bottom: 4px;
+        }
+
+        .typography-text {
+            font-size: 16px;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+        }
+
+        .typography-text.heading {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .typography-text.mobile-heading {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .typography-text.mobile-body {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">App-Oint Design System</div>
+            <div class="subtitle">High-Fidelity Mockups - Desktop Web & Mobile App</div>
+        </div>
+
+        <div class="mockups-container">
+            <!-- Desktop Mockup -->
+            <div class="mockup-section">
+                <div class="mockup-title">Desktop Web (1440×900)</div>
+                <div class="mockup-frame">
+                    <div class="desktop-artboard">
+                        <!-- Desktop Header -->
+                        <div class="desktop-header">
+                            <div class="desktop-logo">APP-OINT</div>
+                            <div class="desktop-header-right">
+                                <input type="text" class="desktop-search" placeholder="Search meetings...">
+                                <div class="desktop-profile">JD</div>
+                            </div>
+                        </div>
+
+                        <!-- Desktop Main Container -->
+                        <div class="desktop-main-container">
+                            <!-- Desktop Sidebar -->
+                            <div class="desktop-sidebar">
+                                <div class="desktop-nav-item active">
+                                    <div class="desktop-nav-icon">📅</div>
+                                    <span>Calendar</span>
+                                </div>
+                                <div class="desktop-nav-item">
+                                    <div class="desktop-nav-icon">👥</div>
+                                    <span>Team</span>
+                                </div>
+                                <div class="desktop-nav-item">
+                                    <div class="desktop-nav-icon">📊</div>
+                                    <span>Analytics</span>
+                                </div>
+                                <div class="desktop-nav-item">
+                                    <div class="desktop-nav-icon">⚙️</div>
+                                    <span>Settings</span>
+                                </div>
+                            </div>
+
+                            <!-- Desktop Calendar -->
+                            <div class="desktop-calendar">
+                                <div class="desktop-calendar-header">
+                                    <div class="desktop-calendar-title">August 2025</div>
+                                    <button class="desktop-new-meeting-btn">+ New Meeting</button>
+                                </div>
+
+                                <div class="desktop-calendar-grid">
+                                    <!-- Time column -->
+                                    <div class="desktop-time-slot"></div>
+                                    <div class="desktop-day-header">Mon</div>
+                                    <div class="desktop-day-header">Tue</div>
+                                    <div class="desktop-day-header today">Wed</div>
+                                    <div class="desktop-day-header">Thu</div>
+                                    <div class="desktop-day-header">Fri</div>
+
+                                    <!-- Time slots -->
+                                    <div class="desktop-time-slot">8:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell">
+                                        <div class="desktop-meeting">Team Standup</div>
+                                    </div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+
+                                    <div class="desktop-time-slot">9:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell">
+                                        <div class="desktop-meeting teal">Client Call</div>
+                                    </div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+
+                                    <div class="desktop-time-slot">10:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell">
+                                        <div class="desktop-meeting">Product Review</div>
+                                    </div>
+                                    <div class="desktop-calendar-cell"></div>
+
+                                    <div class="desktop-time-slot">11:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell">
+                                        <div class="desktop-meeting teal">Planning</div>
+                                    </div>
+
+                                    <div class="desktop-time-slot">12:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+
+                                    <div class="desktop-time-slot">13:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+
+                                    <div class="desktop-time-slot">14:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+
+                                    <div class="desktop-time-slot">15:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+
+                                    <div class="desktop-time-slot">16:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+
+                                    <div class="desktop-time-slot">17:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+
+                                    <div class="desktop-time-slot">18:00</div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                    <div class="desktop-calendar-cell"></div>
+                                </div>
+                            </div>
+
+                            <!-- Desktop Detail Panel -->
+                            <div class="desktop-detail-panel">
+                                <div class="desktop-panel-title">Upcoming Meetings</div>
+                                
+                                <div class="desktop-upcoming-item">
+                                    <div class="desktop-item-icon">👥</div>
+                                    <div class="desktop-item-content">
+                                        <div class="desktop-item-title">Team Standup</div>
+                                        <div class="desktop-item-subtitle">Daily team sync</div>
+                                    </div>
+                                    <div class="desktop-item-time">8:00 AM</div>
+                                </div>
+
+                                <div class="desktop-upcoming-item">
+                                    <div class="desktop-item-icon">📞</div>
+                                    <div class="desktop-item-content">
+                                        <div class="desktop-item-title">Client Call</div>
+                                        <div class="desktop-item-subtitle">Project discussion</div>
+                                    </div>
+                                    <div class="desktop-item-time">9:00 AM</div>
+                                </div>
+
+                                <div class="desktop-upcoming-item">
+                                    <div class="desktop-item-icon">📋</div>
+                                    <div class="desktop-item-content">
+                                        <div class="desktop-item-title">Product Review</div>
+                                        <div class="desktop-item-subtitle">Feature planning</div>
+                                    </div>
+                                    <div class="desktop-item-time">10:00 AM</div>
+                                </div>
+
+                                <div class="desktop-upcoming-item">
+                                    <div class="desktop-item-icon">📊</div>
+                                    <div class="desktop-item-content">
+                                        <div class="desktop-item-title">Planning Session</div>
+                                        <div class="desktop-item-subtitle">Q4 strategy</div>
+                                    </div>
+                                    <div class="desktop-item-time">11:00 AM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Mockup -->
+            <div class="mockup-section">
+                <div class="mockup-title">Mobile App (375×812)</div>
+                <div class="mockup-frame">
+                    <div class="mobile-artboard">
+                        <!-- Mobile Top Bar -->
+                        <div class="mobile-top-bar">
+                            <div class="mobile-today-title">Today</div>
+                            <div class="mobile-date">Aug 1, 2025</div>
+                        </div>
+
+                        <!-- Mobile Content -->
+                        <div class="mobile-content">
+                            <div class="mobile-event-list">
+                                <div class="mobile-event-item">
+                                    <div class="mobile-time-indicator">
+                                        <div class="mobile-time-dot"></div>
+                                        <div class="mobile-time-line"></div>
+                                    </div>
+                                    <div class="mobile-event-content">
+                                        <div class="mobile-event-time">8:00 AM</div>
+                                        <div class="mobile-event-title">Team Standup</div>
+                                        <div class="mobile-event-subtitle">Daily team sync meeting</div>
+                                    </div>
+                                    <div class="mobile-event-status"></div>
+                                </div>
+
+                                <div class="mobile-event-item">
+                                    <div class="mobile-time-indicator">
+                                        <div class="mobile-time-dot"></div>
+                                        <div class="mobile-time-line"></div>
+                                    </div>
+                                    <div class="mobile-event-content">
+                                        <div class="mobile-event-time">9:00 AM</div>
+                                        <div class="mobile-event-title">Client Call</div>
+                                        <div class="mobile-event-subtitle">Project discussion with ABC Corp</div>
+                                    </div>
+                                    <div class="mobile-event-status"></div>
+                                </div>
+
+                                <div class="mobile-event-item">
+                                    <div class="mobile-time-indicator">
+                                        <div class="mobile-time-dot"></div>
+                                        <div class="mobile-time-line"></div>
+                                    </div>
+                                    <div class="mobile-event-content">
+                                        <div class="mobile-event-time">10:00 AM</div>
+                                        <div class="mobile-event-title">Product Review</div>
+                                        <div class="mobile-event-subtitle">Feature planning session</div>
+                                    </div>
+                                    <div class="mobile-event-status"></div>
+                                </div>
+
+                                <div class="mobile-event-item">
+                                    <div class="mobile-time-indicator">
+                                        <div class="mobile-time-dot"></div>
+                                        <div class="mobile-time-line"></div>
+                                    </div>
+                                    <div class="mobile-event-content">
+                                        <div class="mobile-event-time">11:00 AM</div>
+                                        <div class="mobile-event-title">Planning Session</div>
+                                        <div class="mobile-event-subtitle">Q4 strategy meeting</div>
+                                    </div>
+                                    <div class="mobile-event-status"></div>
+                                </div>
+
+                                <div class="mobile-event-item">
+                                    <div class="mobile-time-indicator">
+                                        <div class="mobile-time-dot"></div>
+                                        <div class="mobile-time-line"></div>
+                                    </div>
+                                    <div class="mobile-event-content">
+                                        <div class="mobile-event-time">2:00 PM</div>
+                                        <div class="mobile-event-title">Design Review</div>
+                                        <div class="mobile-event-subtitle">UI/UX feedback session</div>
+                                    </div>
+                                    <div class="mobile-event-status"></div>
+                                </div>
+
+                                <div class="mobile-event-item">
+                                    <div class="mobile-time-indicator">
+                                        <div class="mobile-time-dot"></div>
+                                        <div class="mobile-time-line"></div>
+                                    </div>
+                                    <div class="mobile-event-content">
+                                        <div class="mobile-event-time">3:30 PM</div>
+                                        <div class="mobile-event-title">Code Review</div>
+                                        <div class="mobile-event-subtitle">Pull request discussion</div>
+                                    </div>
+                                    <div class="mobile-event-status"></div>
+                                </div>
+
+                                <div class="mobile-event-item">
+                                    <div class="mobile-time-indicator">
+                                        <div class="mobile-time-dot"></div>
+                                        <div class="mobile-time-line"></div>
+                                    </div>
+                                    <div class="mobile-event-content">
+                                        <div class="mobile-event-time">5:00 PM</div>
+                                        <div class="mobile-event-title">End of Day</div>
+                                        <div class="mobile-event-subtitle">Wrap up and planning</div>
+                                    </div>
+                                    <div class="mobile-event-status"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile FAB -->
+                        <div class="mobile-fab">+</div>
+
+                        <!-- Mobile Bottom Navigation -->
+                        <div class="mobile-bottom-nav">
+                            <div class="mobile-nav-item">
+                                <div class="mobile-nav-icon">📅</div>
+                                <div class="mobile-nav-label">Calendar</div>
+                            </div>
+                            <div class="mobile-nav-item active">
+                                <div class="mobile-nav-icon">📋</div>
+                                <div class="mobile-nav-label">Today</div>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <div class="mobile-nav-icon">➕</div>
+                                <div class="mobile-nav-label">Add</div>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <div class="mobile-nav-icon">🔔</div>
+                                <div class="mobile-nav-label">Alerts</div>
+                            </div>
+                            <div class="mobile-nav-item">
+                                <div class="mobile-nav-icon">👤</div>
+                                <div class="mobile-nav-label">Profile</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design Tokens -->
+        <div class="design-tokens">
+            <div class="tokens-title">Design System Tokens</div>
+            <div class="tokens-grid">
+                <div class="token-section">
+                    <h3>Color Palette "Cool Blues"</h3>
+                    <div class="color-palette">
+                        <div class="color-swatch">
+                            <div class="color-box" style="background: #0A84FF;"></div>
+                            <div class="color-name">Primary Blue</div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-box" style="background: #5AC8FA;"></div>
+                            <div class="color-name">Secondary Light Blue</div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-box" style="background: #64D2FF;"></div>
+                            <div class="color-name">Accent Teal</div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-box" style="background: #141414;"></div>
+                            <div class="color-name">Neutral Dark</div>
+                        </div>
+                        <div class="color-swatch">
+                            <div class="color-box" style="background: #E5E5EA;"></div>
+                            <div class="color-name">Neutral Light</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="token-section">
+                    <h3>Typography</h3>
+                    <div class="typography-example">
+                        <div class="typography-label">Desktop Headings (24px, bold)</div>
+                        <div class="typography-text heading">Calendar Title</div>
+                    </div>
+                    <div class="typography-example">
+                        <div class="typography-label">Desktop Body (16px, regular)</div>
+                        <div class="typography-text">Meeting description text</div>
+                    </div>
+                    <div class="typography-example">
+                        <div class="typography-label">Mobile Headings (20px, bold)</div>
+                        <div class="typography-text mobile-heading">Today</div>
+                    </div>
+                    <div class="typography-example">
+                        <div class="typography-label">Mobile Body (14px, regular)</div>
+                        <div class="typography-text mobile-body">Event subtitle text</div>
+                    </div>
+                </div>
+
+                <div class="token-section">
+                    <h3>Spacing & Layout</h3>
+                    <div class="typography-example">
+                        <div class="typography-label">8-point grid system</div>
+                        <div class="typography-text">8px, 16px, 24px, 32px multiples</div>
+                    </div>
+                    <div class="typography-example">
+                        <div class="typography-label">Corner radius</div>
+                        <div class="typography-text">8px for cards & buttons</div>
+                    </div>
+                    <div class="typography-example">
+                        <div class="typography-label">Shadows</div>
+                        <div class="typography-text">Y-offset 2px, blur 8px, rgba(0,0,0,0.1)</div>
+                    </div>
+                    <div class="typography-example">
+                        <div class="typography-label">Animations</div>
+                        <div class="typography-text">200ms ease-in-out for hover/tap</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
