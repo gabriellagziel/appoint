@@ -8,10 +8,7 @@ services:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "business"
-    build_command: |
-      npm ci
-      echo 'Creating Beautiful App-Oint Business Portal...'
-      echo '<!DOCTYPE html>
+    build_command: npm ci
 <html lang="en">
 <head>
     <meta charset="UTF-8">
