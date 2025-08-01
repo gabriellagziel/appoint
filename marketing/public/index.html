@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,14 @@
         }
 
         body {
-            font-family: "Inter, -apple-system, BlinkMacSystemFont, sans-serif";
+            font-family: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif';
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             color: white;
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -53,7 +54,7 @@
 
         .dashboard {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-bottom: 50px;
         }
@@ -78,7 +79,7 @@
         .card p {
             color: #6c757d;
             line-height: 1.6;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .btn {
@@ -109,11 +110,45 @@
         }
 
         .status-badge {
-            background: #e9ecef;
-            color: #6c757d;
-            padding: 8px 12px;
-            border-radius: 6px;
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
             font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .features-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 40px;
+        }
+
+        .features-section h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature-item strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
         }
 
         .footer {
@@ -124,6 +159,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -131,85 +167,72 @@
             <div class="subtitle">Complete Appointment Management Platform</div>
             <div class="description">Streamline your business with intelligent scheduling</div>
         </div>
+
         <div class="dashboard">
             <div class="card">
-                <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                    <div style="background: #007bff; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                        <span style="font-size: 24px;">🏢</span>
-                    </div>
-                    <h3>Business</h3>
-                </div>
+                <h3>🏢 Business Portal</h3>
                 <p>Complete business management solution with appointment scheduling, customer management, analytics, and automated workflows.</p>
-                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
                     <a href="https://business.app-oint.com" class="btn btn-primary">Access Portal</a>
-                    <span class="status-badge">Live</span>
+                    <span class="status-badge">✅ Live</span>
                 </div>
             </div>
+
             <div class="card">
-                <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                    <div style="background: #28a745; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                        <span style="font-size: 24px;">🏢</span>
-                    </div>
-                    <h3>Enterprise</h3>
-                </div>
+                <h3>🏢 Enterprise Portal</h3>
                 <p>Advanced enterprise features with multi-location support, advanced reporting, custom integrations, and white-label solutions.</p>
-                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
                     <a href="https://enterprise.app-oint.com" class="btn btn-success">Access Portal</a>
-                    <span class="status-badge">Live</span>
+                    <span class="status-badge">✅ Live</span>
                 </div>
             </div>
+
             <div class="card">
-                <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                    <div style="background: #6f42c1; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                        <span style="font-size: 24px;">📱</span>
-                    </div>
-                    <h3>Mobile Apps</h3>
-                </div>
+                <h3>📱 Mobile Apps</h3>
                 <p>Native Flutter mobile applications for iOS and Android with offline capabilities, push notifications, and seamless API integration.</p>
-                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
                     <a href="/mobile" class="btn btn-purple">Download Apps</a>
-                    <span class="status-badge">Live</span>
+                    <span class="status-badge">✅ Live</span>
                 </div>
             </div>
+
             <div class="card">
-                <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                    <div style="background: #dc3545; width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                        <span style="font-size: 24px;">⚙️</span>
-                    </div>
-                    <h3>System Admin</h3>
-                </div>
+                <h3>⚙️ System Admin</h3>
                 <p>Administrative tools for system management, user administration, platform configuration, and advanced monitoring.</p>
-                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
                     <a href="/admin" class="btn btn-danger">Admin Panel</a>
-                    <span class="status-badge">Live</span>
+                    <span class="status-badge">✅ Live</span>
                 </div>
             </div>
         </div>
-        <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 16px; text-align: center; margin-top: 40px;">
-            <h3 style="color: white; margin-bottom: 15px; font-size: 1.5rem;">🚀 Why Choose App-Oint?</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
-                <div style="color: rgba(255, 255, 255, 0.9);">
-                    <strong>⚡ Lightning Fast</strong><br />
-                    <span style="font-size: 0.9rem;">Optimized for speed</span>
+
+        <div class="features-section">
+            <h3>🚀 Why Choose App-Oint?</h3>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <strong>⚡ Lightning Fast</strong>
+                    <span>Optimized for speed</span>
                 </div>
-                <div style="color: rgba(255, 255, 255, 0.9);">
-                    <strong>🔒 Enterprise Security</strong><br />
-                    <span style="font-size: 0.9rem;">Bank-level protection</span>
+                <div class="feature-item">
+                    <strong>🔒 Enterprise Security</strong>
+                    <span>Bank-level protection</span>
                 </div>
-                <div style="color: rgba(255, 255, 255, 0.9);">
-                    <strong>📊 Advanced Analytics</strong><br />
-                    <span style="font-size: 0.9rem;">Deep insights</span>
+                <div class="feature-item">
+                    <strong>📊 Advanced Analytics</strong>
+                    <span>Deep insights</span>
                 </div>
-                <div style="color: rgba(255, 255, 255, 0.9);">
-                    <strong>🌐 Global Scale</strong><br />
-                    <span style="font-size: 0.9rem;">Worldwide deployment</span>
+                <div class="feature-item">
+                    <strong>🌐 Global Scale</strong>
+                    <span>Worldwide deployment</span>
                 </div>
             </div>
         </div>
+
         <div class="footer">
             <p>© 2025 App-Oint. All rights reserved.</p>
-            <p style="font-size: 0.9rem;">Built with ❤️ for modern businesses</p>
+            <p>Built with ❤️ for modern businesses</p>
         </div>
     </div>
 </body>
+
 </html>
