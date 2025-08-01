@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node fix-imports.js",
     "build": "next build",
     "postbuild": "next-sitemap",
     "export": "next build --no-lint && mkdir -p out && cp -r .next/server/pages/* out/ && cp -r public/* out/ || true",
@@ -14,6 +15,7 @@
     "generate-translations": "node scripts/generate-translations.js"
   },
   "dependencies": {
+    "@app-oint/design-system": "file:../packages/design-system",
     "@hookform/resolvers": "^5.1.1",
     "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-slot": "^1.2.3",
@@ -33,17 +35,20 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "4.1.11",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
+    "autoprefixer": "10.4.21",
+    "eslint": "9.32.0",
     "eslint-config-next": "15.3.5",
-    "tailwindcss": "^4",
+    "postcss": "8.5.6",
+    "tailwindcss": "4.1.11",
     "tw-animate-css": "^1.3.5",
-    "typescript": "^5"
+    "typescript": "5.8.3"
   },
-  "engines": {
-    "node": ">=18.0.0 <21.0.0"
-  }
+  "cacheDirectories": [
+    ".next/cache",
+    "node_modules/.cache"
+  ]
 }

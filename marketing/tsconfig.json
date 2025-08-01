@@ -22,11 +22,14 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "./src/*"
       ]
-    }
+    },
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true
   },
   "include": [
     "next-env.d.ts",

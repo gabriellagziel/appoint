@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import type { AppProps } from 'next/app'
-import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -15,4 +14,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
 }
 
-export default MyApp 
+export default MyApp

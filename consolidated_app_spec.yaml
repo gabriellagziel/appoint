@@ -26,21 +26,7 @@ services:
     run_command: "npm start"
     http_port: 80
     health_check:
-      http_path: /business/
-    instance_count: 1
-    instance_size_slug: basic-xxs
-
-  - name: admin
-    environment_slug: node-js
-    github:
-      repo: "gabriellagziel/appoint"
-      branch: main
-    source_dir: "admin"
-    build_command: "npm ci && npm run build"
-    run_command: "npm start"
-    http_port: 80
-    health_check:
-      http_path: /admin/
+      http_path: /
     instance_count: 1
     instance_size_slug: basic-xxs
 
@@ -54,25 +40,11 @@ services:
     run_command: "npm start"
     http_port: 80
     health_check:
-      http_path: /enterprise/
+      http_path: /
     instance_count: 1
     instance_size_slug: basic-xxs
 
-  - name: api
-    environment_slug: node-js
-    github:
-      repo: "gabriellagziel/appoint"
-      branch: main
-    source_dir: "functions"
-    build_command: "npm ci && npm run build"
-    run_command: "npm start"
-    http_port: 3000
-    health_check:
-      http_path: /api/health
-    instance_count: 1
-    instance_size_slug: basic-xxs
-
-# Ingress configuration
+# Ingress configuration for routing
 ingress:
   rules:
     - match:
@@ -87,19 +59,9 @@ ingress:
         name: business
     - match:
         path:
-          prefix: "/admin"
-      component:
-        name: admin
-    - match:
-        path:
           prefix: "/enterprise"
       component:
         name: enterprise
-    - match:
-        path:
-          prefix: "/api"
-      component:
-        name: api
 
 # Domain configuration
 domains:

@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { Navbar } from '@/components/Navbar'
-import { Button } from '@/components/ui/button'
+import { Navbar } from '../src/components/Navbar'
+import { Button } from '../src/components/ui/button'
 import { RefreshCw, AlertTriangle } from 'lucide-react'
-import { useI18n } from '@/lib/i18n'
+import { useI18n } from '../src/lib/i18n'
 
 export default function Custom500() {
   const { t } = useI18n()

@@ -1,5 +1,5 @@
 {
-  "name": "admin-app", 
+  "name": "admin-app",
   "version": "1.0.0",
   "scripts": {
     "build": "mkdir -p out && echo 'Building admin app...'",
@@ -8,6 +8,7 @@
     "start": "npm run serve"
   },
   "dependencies": {
+    "@app-oint/design-system": "file:../packages/design-system",
     "serve": "^14.2.1"
   }
 }

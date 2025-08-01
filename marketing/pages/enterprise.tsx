@@ -1,7 +1,7 @@
-import { Navbar } from '@/components/Navbar'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { useI18n } from '@/lib/i18n'
+import { Navbar } from '../src/components/Navbar'
+import { Button } from '../src/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../src/components/ui/card'
+import { useI18n } from '../src/lib/i18n'
 import { Code, Database, Shield, Zap } from 'lucide-react'
 import Head from 'next/head'
 
