@@ -22,17 +22,6 @@ const nextConfig = {
       ...config.resolve.modules || []
     ]
 
-    // Disable CSS processing
-    config.module.rules.forEach((rule) => {
-      if (rule.oneOf) {
-        rule.oneOf.forEach((oneOfRule) => {
-          if (oneOfRule.test && oneOfRule.test.toString().includes('css')) {
-            oneOfRule.use = ['style-loader', 'css-loader'];
-          }
-        });
-      }
-    });
-
     return config
   },
 

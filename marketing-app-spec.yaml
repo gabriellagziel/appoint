@@ -13,7 +13,7 @@ services:
     http_port: 3000
     health_check:
       http_path: /
-      initial_delay_seconds: 30
+      initial_delay_seconds: 60
       period_seconds: 30
       timeout_seconds: 10
       success_threshold: 1
@@ -29,12 +29,6 @@ ingress:
           prefix: "/"
       component:
         name: marketing
-
-# Domain configuration
-domains:
-  - domain: app-oint.com
-    type: PRIMARY
-    zone: app-oint.com
 
 # Environment variables
 envs:
