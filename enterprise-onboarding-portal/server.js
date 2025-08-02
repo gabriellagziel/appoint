@@ -108,7 +108,7 @@ app.get('/white-label', (req, res) => {
 app.post('/api/register', async (req, res) => {
     try {
         const { companyName, email, password, plan } = req.body;
-        
+
         // Input validation
         if (!companyName || !email || !password || !plan) {
             return res.status(400).json({ error: 'All fields are required' });
@@ -132,10 +132,10 @@ app.post('/api/register', async (req, res) => {
 
         // Hash password with salt
         const hashedPassword = await bcrypt.hash(password, 12);
-        
+
         // Generate secure API key
         const apiKey = crypto.randomBytes(32).toString('hex');
-        
+
         // Create user
         const user = {
             id: crypto.randomUUID(),
