@@ -30,7 +30,6 @@ analyzer:
     unused_element: ignore
     unused_import: ignore
     unused_field: ignore
-    unused_parameter: ignore
 
 linter:
   rules:

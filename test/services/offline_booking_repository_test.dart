@@ -71,9 +71,9 @@ void main() {
       test('should initialize Hive boxes and connectivity monitoring',
           () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
+            .thenAnswer((_) async => [[ConnectivityResult.wifi]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.wifi]]));
 
         await repository.initialize();
 
@@ -82,9 +82,9 @@ void main() {
 
       test('should detect offline state', () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.none);
+            .thenAnswer((_) async => [[ConnectivityResult.none]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.none));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.none]]));
 
         await repository.initialize();
 
@@ -95,9 +95,9 @@ void main() {
     group('Adding bookings offline', () {
       test('should store booking locally when offline', () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.none);
+            .thenAnswer((_) async => [[ConnectivityResult.none]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.none));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.none]]));
 
         await repository.initialize();
 
@@ -114,7 +114,7 @@ void main() {
 
         await repository.addBooking(booking);
 
-        bookings = await repository.getBookings();
+final bookings = await repository.getBookings();
         expect(bookings.length, equals(1));
         expect(bookings.first.id, equals('test-booking-1'));
         expect(
@@ -125,9 +125,9 @@ void main() {
 
       test('should sync booking immediately when online', () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
+            .thenAnswer((_) async => [[ConnectivityResult.wifi]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.wifi]]));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -159,9 +159,9 @@ void main() {
     group('Canceling bookings offline', () {
       test('should mark booking for deletion when offline', () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.none);
+            .thenAnswer((_) async => [[ConnectivityResult.none]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.none));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.none]]));
 
         await repository.initialize();
 
@@ -192,9 +192,9 @@ void main() {
 
       test('should delete booking immediately when online', () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
+            .thenAnswer((_) async => [[ConnectivityResult.wifi]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.wifi]]));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -227,9 +227,9 @@ void main() {
       test('should throw BookingConflictException when server cancels booking',
           () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
+            .thenAnswer((_) async => [[ConnectivityResult.wifi]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.wifi]]));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -276,7 +276,7 @@ void main() {
         await repository.addBooking(localBooking);
 
         // Get bookings should return local version (repository keeps local)
-        bookings = await repository.getBookings();
+final bookings = await repository.getBookings();
         expect(bookings.length, equals(1));
         expect(bookings.first.serviceName, equals('Test Service (Local)'));
       });
@@ -284,9 +284,9 @@ void main() {
       test('should throw BookingConflictException for double-booking conflicts',
           () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
+            .thenAnswer((_) async => [[ConnectivityResult.wifi]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.wifi]]));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -333,16 +333,16 @@ void main() {
         await repository.addBooking(localBooking);
 
         // Get bookings should return local version (repository keeps local)
-        bookings = await repository.getBookings();
+final bookings = await repository.getBookings();
         expect(bookings.length, equals(1));
         expect(bookings.first.serviceName, equals('Test Service (Local)'));
       });
 
       test('should prefer remote version when remote is newer', () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
+            .thenAnswer((_) async => [[ConnectivityResult.wifi]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.wifi]]));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -390,16 +390,16 @@ void main() {
         await repository.addBooking(localBooking);
 
         // Get bookings should return local version (repository keeps local)
-        bookings = await repository.getBookings();
+final bookings = await repository.getBookings();
         expect(bookings.length, equals(1));
         expect(bookings.first.serviceName, equals('Test Service (Local)'));
       });
 
       test('should prefer local version when local is newer', () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
+            .thenAnswer((_) async => [[ConnectivityResult.wifi]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.wifi]]));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -447,7 +447,7 @@ void main() {
         await repository.addBooking(localBooking);
 
         // Get bookings should return local version (repository keeps local)
-        bookings = await repository.getBookings();
+final bookings = await repository.getBookings();
         expect(bookings.length, equals(1));
         expect(bookings.first.serviceName, equals('Test Service (Local)'));
       });
@@ -456,9 +456,9 @@ void main() {
     group('Sync pending changes', () {
       test('should sync pending operations when online', () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
+            .thenAnswer((_) async => [[ConnectivityResult.wifi]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.wifi]]));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -492,9 +492,9 @@ void main() {
 
       test('should handle sync errors gracefully', () async {
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
+            .thenAnswer((_) async => [[ConnectivityResult.wifi]]);
         when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+            .thenAnswer((_) => Stream.value([[ConnectivityResult.wifi]]));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -535,7 +535,7 @@ void main() {
         connectivityController = StreamController<ConnectivityResult>();
 
         when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.none);
+            .thenAnswer((_) async => [[ConnectivityResult.none]]);
         when(mockConnectivity.onConnectivityChanged)
             .thenAnswer((_) => connectivityController.stream);
         when(mockAuth.currentUser).thenReturn(mockUser);
@@ -560,7 +560,7 @@ void main() {
         await repository.addBooking(booking);
 
         // Simulate coming back online
-        connectivityController.add(ConnectivityResult.wifi);
+        connectivityController.add([[ConnectivityResult.wifi]]);
 
         // Wait a bit for the async operation
         await Future.delayed(const Duration(milliseconds: 500));
