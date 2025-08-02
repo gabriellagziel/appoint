@@ -1,0 +1,117 @@
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 67.0.0 (86.0.0 available)
+  _flutterfire_internals 1.3.58 (1.3.60 available)
+  analyzer 6.4.1 (8.0.0 available)
+  build 2.4.1 (3.0.0 available)
+  build_resolvers 2.4.2 (3.0.0 available)
+  build_runner 2.4.13 (2.6.0 available)
+  build_runner_core 7.3.2 (9.2.0 available)
+  built_value 8.10.1 (8.11.0 available)
+  characters 1.4.0 (1.4.1 available)
+  cloud_firestore 5.6.11 (6.0.0 available)
+  REDACTED_TOKEN 6.6.11 (7.0.0 available)
+  cloud_firestore_web 4.4.11 (5.0.0 available)
+  cloud_functions 5.6.1 (6.0.0 available)
+  REDACTED_TOKEN 5.8.1 (5.8.3 available)
+  cloud_functions_web 4.11.4 (5.0.0 available)
+  csv 5.1.1 (6.0.0 available)
+  dart_jsonwebtoken 2.17.0 (3.2.0 available)
+  dart_style 2.3.6 (3.1.1 available)
+  firebase_analytics 11.5.2 (12.0.0 available)
+  REDACTED_TOKEN 4.4.2 (5.0.0 available)
+  firebase_analytics_web 0.5.10+15 (0.6.0 available)
+  firebase_app_check 0.3.2+9 (0.4.0 available)
+  REDACTED_TOKEN 0.1.1+9 (0.2.0 available)
+  firebase_app_check_web 0.2.0+13 (0.2.0+15 available)
+  firebase_auth 5.6.2 (6.0.0 available)
+  firebase_auth_mocks 0.14.1 (0.14.2 available)
+  REDACTED_TOKEN 7.7.2 (8.0.0 available)
+  firebase_auth_web 5.15.2 (6.0.0 available)
+  firebase_core 3.15.1 (4.0.0 available)
+  firebase_core_web 2.24.1 (3.0.0 available)
+  firebase_crashlytics 4.3.9 (5.0.0 available)
+  REDACTED_TOKEN 3.8.9 (3.8.11 available)
+  firebase_dynamic_links 6.1.9 (discontinued)
+  REDACTED_TOKEN 0.2.7+9 (0.2.7+10 available)
+  firebase_messaging 15.2.9 (16.0.0 available)
+  REDACTED_TOKEN 4.6.9 (4.7.0 available)
+  firebase_messaging_web 3.10.9 (4.0.0 available)
+  firebase_performance 0.10.1+9 (0.11.0 available)
+  REDACTED_TOKEN 0.1.5+9 (0.1.5+11 available)
+  firebase_performance_web 0.1.7+15 (0.1.7+17 available)
+  firebase_remote_config 5.4.7 (6.0.0 available)
+  REDACTED_TOKEN 1.5.7 (2.0.1 available)
+  firebase_remote_config_web 1.8.7 (1.8.10 available)
+  firebase_storage 12.4.9 (13.0.0 available)
+  REDACTED_TOKEN 5.2.9 (5.2.11 available)
+  firebase_storage_web 3.10.16 (3.10.18 available)
+  fl_chart 0.65.0 (1.0.0 available)
+  flutter_gen 5.9.0 (5.11.0 available)
+  flutter_gen_core 5.9.0 (5.11.0 available)
+  flutter_lints 5.0.0 (6.0.0 available)
+  flutter_local_notifications 19.3.0 (19.4.0 available)
+  REDACTED_TOKEN 1.0.1 (1.0.2 available)
+  freezed 2.5.2 (3.2.0 available)
+  freezed_annotation 2.4.4 (3.1.0 available)
+  google_maps_flutter_android 2.16.2 (2.17.0 available)
+  image_picker_android 0.8.12+23 (0.8.12+24 available)
+  json_serializable 6.8.0 (6.10.0 available)
+  leak_tracker 10.0.9 (11.0.1 available)
+  leak_tracker_flutter_testing 3.0.9 (3.0.10 available)
+  leak_tracker_testing 3.0.1 (3.0.2 available)
+  lints 5.1.1 (6.0.0 available)
+  logger 2.6.0 (2.6.1 available)
+  mailer 6.4.1 (6.5.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  mockito 5.4.4 (5.5.0 available)
+  more 4.5.0 (4.6.0 available)
+  permission_handler 11.4.0 (12.0.1 available)
+  permission_handler_android 12.1.0 (13.0.1 available)
+  petitparser 6.1.0 (7.0.0 available)
+  pointycastle 3.9.1 (4.0.0 available)
+  process 5.0.3 (5.0.5 available)
+  rx 0.4.0 (0.5.0 available)
+  shelf_web_socket 2.0.1 (3.0.0 available)
+  source_gen 1.5.0 (3.0.0 available)
+  source_helper 1.3.5 (1.3.6 available)
+  syncfusion_flutter_charts 28.2.12 (30.1.42 available)
+  syncfusion_flutter_core 28.2.12 (30.1.42 available)
+  test_api 0.7.4 (0.7.7 available)
+  uni_links 0.5.1 (discontinued replaced by app_links)
+  vector_math 2.1.4 (2.2.0 available)
+  vm_service 15.0.0 (15.0.2 available)
+  webview_flutter_android 4.8.0 (4.8.2 available)
+  webview_flutter_wkwebview 3.22.0 (3.22.1 available)
+  xml 6.5.0 (6.6.0 available)
+Got dependencies!
+2 packages are discontinued.
+84 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing appoint...                                            
+
+warning • The operand can't be 'null', so the condition is always 'true' • accessibility/tests/semantic_labels_test.dart:418:23 • unnecessary_null_comparison
+warning • 'unused_parameter' isn't a recognized error code • analysis_options.yaml:33:5 • unrecognized_error_code
+   info • 'foregroundColor' is deprecated and shouldn't be used. use colors in eyeStyle and dataModuleStyle instead • lib/features/ambassador/ambassador_user_dashboard.dart:896:21 • deprecated_member_use
+warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:117:51 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:127:29 • dead_null_aware_expression
+warning • The annotation 'JsonKey.new' can only be used on fields or getters • lib/models/app_user.dart:22:6 • invalid_annotation_target
+warning • The annotation 'JsonSerializable.new' can only be used on classes • lib/models/service_offering.dart:8:4 • invalid_annotation_target
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:28:16 • REDACTED_TOKEN
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:38:16 • REDACTED_TOKEN
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:44:16 • REDACTED_TOKEN
+   info • 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion • lib/services/ambassador_mobile_notifications.dart:421:22 • deprecated_member_use
+   info • 'calendar' is deprecated and shouldn't be used. Use [calendarWriteOnly] and [calendarFullAccess] • lib/services/permission_service.dart:16:37 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:8:21 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:9:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:10:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:14:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:18:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:22:31 • deprecated_member_use
+warning • This default clause is covered by the previous cases • lib/widgets/auth_wrapper.dart:31:7 • unreachable_switch_default
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorFormField.validator, InlineErrorFormField.onChanged, InlineErrorFormField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:5:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPasswordField.validator, InlineErrorPasswordField.onChanged, InlineErrorPasswordField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:239:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorEmailField.onChanged, InlineErrorEmailField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:384:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPhoneField.onChanged, InlineErrorPhoneField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:519:7 • must_be_immutable
+
