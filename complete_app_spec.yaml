@@ -1,6 +1,5 @@
 name: app-oint-complete
 region: nyc1
-domain: app-oint.com
 services:
   # Marketing/Home Page
   - name: marketing

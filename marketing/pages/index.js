@@ -2,23 +2,23 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <div style={{ 
-      fontFamily: 'Arial, sans-serif', 
-      margin: 0, 
-      padding: '20px', 
-      background: '#f5f5f5', 
-      minHeight: '100vh' 
+    <div style={{
+      fontFamily: 'Arial, sans-serif',
+      margin: 0,
+      padding: '20px',
+      background: '#f5f5f5',
+      minHeight: '100vh'
     }}>
-      <div style={{ 
-        maxWidth: '800px', 
-        margin: '0 auto', 
-        background: 'white', 
-        padding: '40px', 
-        borderRadius: '8px', 
-        boxShadow: '0 2px 10px rgba(0,0,0,0.1)' 
+      <div style={{
+        maxWidth: '800px',
+        margin: '0 auto',
+        background: 'white',
+        padding: '40px',
+        borderRadius: '8px',
+        boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
       }}>
         <h1 style={{ color: '#333', marginBottom: '20px' }}>
-          App-Oint Marketing
+          App-Oint Marketing Portal
         </h1>
         <p style={{ color: '#666', lineHeight: '1.6' }}>
           Welcome to our marketing site! This is a simple, working deployment.

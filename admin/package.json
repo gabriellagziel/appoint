@@ -4,11 +4,11 @@
   "scripts": {
     "build": "mkdir -p out && echo 'Building admin app...'",
     "export": "mkdir -p out && cp public/index.html out/index.html",
-    "serve": "serve out -p ${PORT:-8082} --single",
+    "serve": "http-server out -p ${PORT:-8082}",
     "start": "npm run serve"
   },
   "dependencies": {
     "@app-oint/design-system": "file:../packages/design-system",
-    "serve": "^14.2.1"
+    "http-server": "^14.1.1"
   }
 }

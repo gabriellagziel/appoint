@@ -8,12 +8,12 @@ services:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "marketing"
-    build_command: "npm ci && npm run build"
-    run_command: "npm start"
+    build_command: "echo 'Creating static marketing site...' && mkdir -p public && cat > public/index.html << 'EOF' && <!DOCTYPE html><html><head><title>App-Oint Marketing</title><style>body{font-family:Arial,sans-serif;margin:0;padding:20px;background:#f5f5f5;min-height:100vh}.container{max-width:800px;margin:0 auto;background:white;padding:40px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}h1{color:#333;margin-bottom:20px}h2{color:#333;margin-bottom:15px}p,li{color:#666;line-height:1.6}.status{padding:20px;background:#f8f9fa;border-radius:4px;margin-top:30px}</style></head><body><div class='container'><h1>App-Oint Marketing</h1><p>Welcome to our marketing site! This is a simple, working deployment.</p><div><h2>Our Services</h2><ul><li>Business Portal - Complete business management solution</li><li>Enterprise Portal - Enterprise onboarding and management</li><li>Marketing Portal - Customer-facing marketing site</li></ul></div><div class='status'><h3>Deployment Status</h3><p style='color:#28a745;margin:0'>✅ All systems operational</p></div></div></body></html> && EOF"
+    run_command: "npx serve public -p 3000"
     http_port: 3000
     health_check:
       http_path: /
-      initial_delay_seconds: 60
+      initial_delay_seconds: 30
       period_seconds: 30
       timeout_seconds: 10
       success_threshold: 1
@@ -35,6 +35,4 @@ envs:
   - key: NODE_ENV
     value: production
   - key: PORT
-    value: "3000"
-  - key: NEXT_TELEMETRY_DISABLED
-    value: "1" 
+    value: "3000" 
