@@ -5,14 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "echo 'Marketing app built successfully'",
-    "start": "npx serve public -p 3000",
-    "serve": "serve public",
+    "start": "npx http-server public -p 3000",
+    "serve": "http-server public",
     "lint": "echo 'Linting disabled'",
     "type-check": "echo 'TypeScript disabled'",
     "generate-translations": "node scripts/generate-translations.js"
-  },
-  "dependencies": {
-    "serve": "^14.2.1"
   },
   "devDependencies": {
     "next": "15.3.5",
@@ -22,5 +19,11 @@
   "cacheDirectories": [
     ".next/cache",
     "node_modules/.cache"
-  ]
+  ],
+  "dependencies": {
+    "http-server": "14.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=24.2.0"
+  }
 }
