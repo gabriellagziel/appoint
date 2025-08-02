@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablet Dashboard - App-Oint</title>
+    <link rel="stylesheet" href="../shared-tokens.css">
+    <link rel="stylesheet" href="../components.css">
+    <style>
+        .tablet-layout {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            height: 100vh;
+            margin-top: var(--header-height);
+        }
+
+        .main-content {
+            background: white;
+            padding: var(--spacing-lg);
+            overflow-y: auto;
+        }
+
+        .calendar-compact {
+            display: grid;
+            grid-template-columns: 60px repeat(5, 1fr);
+            gap: 1px;
+            background: var(--color-neutral-light);
+        }
+
+        .calendar-time-slot {
+            font-size: 12px;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .upcoming-section {
+            margin-top: var(--spacing-lg);
+        }
+
+        .upcoming-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            background: white;
+            border: 1px solid var(--color-neutral-light);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+
+        .upcoming-item:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-level-2);
+        }
+
+        .item-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: var(--border-radius);
+            background: var(--color-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: var(--font-weight-bold);
+            font-size: 14px;
+        }
+
+        .item-content {
+            flex: 1;
+        }
+
+        .item-title {
+            font-size: var(--font-size-body);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: 2px;
+        }
+
+        .item-subtitle {
+            font-size: 12px;
+            color: var(--color-neutral-dark-70);
+        }
+
+        .item-time {
+            font-size: 12px;
+            color: var(--color-primary);
+            font-weight: var(--font-weight-bold);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">APP-OINT</a>
+        <div class="navbar-nav">
+            <input type="text" class="input" placeholder="Search..." style="width: 200px;">
+            <div class="btn btn-ghost" style="width: 36px; height: 36px; border-radius: 50%; background: var(--color-primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 14px;">JD</div>
+        </div>
+    </nav>
+
+    <!-- Tablet Layout -->
+    <div class="tablet-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-nav-item active">
+                    <span class="sidebar-nav-icon">📅</span>
+                    Calendar
+                </a>
+                <a href="#" class="sidebar-nav-item">
+                    <span class="sidebar-nav-icon">👥</span>
+                    Team
+                </a>
+                <a href="#" class="sidebar-nav-item">
+                    <span class="sidebar-nav-icon">📊</span>
+                    Analytics
+                </a>
+                <a href="#" class="sidebar-nav-item">
+                    <span class="sidebar-nav-icon">⚙️</span>
+                    Settings
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="card">
+                    <div class="card-body" style="text-align: center;">
+                        <div style="font-size: 1.5rem; font-weight: bold; color: var(--color-primary); margin-bottom: 4px;">12</div>
+                        <div style="font-size: 12px; color: var(--color-neutral-dark-70);">Today's Meetings</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body" style="text-align: center;">
+                        <div style="font-size: 1.5rem; font-weight: bold; color: var(--color-primary); margin-bottom: 4px;">8</div>
+                        <div style="font-size: 12px; color: var(--color-neutral-dark-70);">Completed</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendar -->
+            <div class="calendar">
+                <div class="calendar-header">
+                    <div class="calendar-title">August 2025</div>
+                    <button class="btn btn-primary btn-sm">+ New Meeting</button>
+                </div>
+
+                <div class="calendar-compact">
+                    <!-- Time column -->
+                    <div class="calendar-time-slot"></div>
+                    <div class="calendar-day-header">Mon</div>
+                    <div class="calendar-day-header">Tue</div>
+                    <div class="calendar-day-header today">Wed</div>
+                    <div class="calendar-day-header">Thu</div>
+                    <div class="calendar-day-header">Fri</div>
+
+                    <!-- Time slots -->
+                    <div class="calendar-time-slot">8:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell">
+                        <div class="calendar-event" style="font-size: 10px; padding: 4px 6px;">Team Standup</div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+
+                    <div class="calendar-time-slot">9:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell">
+                        <div class="calendar-event accent" style="font-size: 10px; padding: 4px 6px;">Client Call</div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+
+                    <div class="calendar-time-slot">10:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell">
+                        <div class="calendar-event" style="font-size: 10px; padding: 4px 6px;">Product Review</div>
+                    </div>
+                    <div class="calendar-cell"></div>
+
+                    <div class="calendar-time-slot">11:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell">
+                        <div class="calendar-event accent" style="font-size: 10px; padding: 4px 6px;">Planning</div>
+                    </div>
+
+                    <div class="calendar-time-slot">12:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+
+                    <div class="calendar-time-slot">13:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+
+                    <div class="calendar-time-slot">14:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+
+                    <div class="calendar-time-slot">15:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+
+                    <div class="calendar-time-slot">16:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+
+                    <div class="calendar-time-slot">17:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+
+                    <div class="calendar-time-slot">18:00</div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                </div>
+            </div>
+
+            <!-- Upcoming Section -->
+            <div class="upcoming-section">
+                <h3 class="text-heading" style="margin-bottom: var(--spacing-md);">Upcoming Meetings</h3>
+                
+                <div class="upcoming-item">
+                    <div class="item-icon">👥</div>
+                    <div class="item-content">
+                        <div class="item-title">Team Standup</div>
+                        <div class="item-subtitle">Daily team sync</div>
+                    </div>
+                    <div class="item-time">8:00 AM</div>
+                </div>
+
+                <div class="upcoming-item">
+                    <div class="item-icon">📞</div>
+                    <div class="item-content">
+                        <div class="item-title">Client Call</div>
+                        <div class="item-subtitle">Project discussion</div>
+                    </div>
+                    <div class="item-time">9:00 AM</div>
+                </div>
+
+                <div class="upcoming-item">
+                    <div class="item-icon">📋</div>
+                    <div class="item-content">
+                        <div class="item-title">Product Review</div>
+                        <div class="item-subtitle">Feature planning</div>
+                    </div>
+                    <div class="item-time">10:00 AM</div>
+                </div>
+
+                <div class="upcoming-item">
+                    <div class="item-icon">📊</div>
+                    <div class="item-content">
+                        <div class="item-title">Planning Session</div>
+                        <div class="item-subtitle">Q4 strategy</div>
+                    </div>
+                    <div class="item-time">11:00 AM</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 
