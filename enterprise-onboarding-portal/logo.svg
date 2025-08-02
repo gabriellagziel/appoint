@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background circle with cool blue gradient -->
-  <defs>
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#2a5298;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4facfe;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
   <!-- Background circle -->
-  <circle cx="256" cy="256" r="240" fill="url(#bgGradient)" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="256" cy="256" r="240" fill="white" stroke="#f0f0f0" stroke-width="2"/>
   
-  <!-- Rocket body -->
-  <ellipse cx="256" cy="280" rx="60" ry="120" fill="#ffffff"/>
+  <!-- 8 stylized human figures arranged in a circle -->
+  <!-- Top figure (Orange) -->
+  <path d="M256 80 C256 80, 240 100, 240 120 C240 140, 256 160, 256 160 C256 160, 272 140, 272 120 C272 100, 256 80, 256 80" fill="#FF8C00"/>
   
-  <!-- Rocket nose cone -->
-  <path d="M196 160 L256 120 L316 160 L256 200 Z" fill="#ffffff"/>
+  <!-- Top-right figure (Peach) -->
+  <path d="M360 120 C360 120, 340 140, 340 160 C340 180, 360 200, 360 200 C360 200, 380 180, 380 160 C380 140, 360 120, 360 120" fill="#FFB366"/>
   
-  <!-- Rocket fins -->
-  <path d="M196 360 L176 420 L216 400 L196 360 Z" fill="#ffffff"/>
-  <path d="M316 360 L336 420 L296 400 L316 360 Z" fill="#ffffff"/>
+  <!-- Right figure (Teal) -->
+  <path d="M432 256 C432 256, 412 240, 412 220 C412 200, 432 180, 432 180 C432 180, 452 200, 452 220 C452 240, 432 256, 432 256" fill="#20B2AA"/>
   
-  <!-- Rocket windows -->
-  <circle cx="256" cy="240" r="12" fill="#1e3c72"/>
-  <circle cx="256" cy="280" r="12" fill="#1e3c72"/>
-  <circle cx="256" cy="320" r="12" fill="#1e3c72"/>
+  <!-- Bottom-right figure (Purple) -->
+  <path d="M360 392 C360 392, 380 372, 380 352 C380 332, 360 312, 360 312 C360 312, 340 332, 340 352 C340 372, 360 392, 360 392" fill="#8A2BE2"/>
   
-  <!-- Rocket flame -->
-  <path d="M236 400 L256 440 L276 400 L256 380 Z" fill="#ff6b35"/>
-  <path d="M246 400 L256 430 L266 400 L256 385 Z" fill="#ff8c00"/>
+  <!-- Bottom figure (Dark Purple) -->
+  <path d="M256 432 C256 432, 272 412, 272 392 C272 372, 256 352, 256 352 C256 352, 240 372, 240 392 C240 412, 256 432, 256 432" fill="#4B0082"/>
   
-  <!-- Stars -->
-  <circle cx="120" cy="120" r="3" fill="#ffffff"/>
-  <circle cx="380" cy="140" r="2" fill="#ffffff"/>
-  <circle cx="140" cy="380" r="2" fill="#ffffff"/>
-  <circle cx="360" cy="360" r="3" fill="#ffffff"/>
-  <circle cx="80" cy="280" r="2" fill="#ffffff"/>
-  <circle cx="420" cy="320" r="2" fill="#ffffff"/>
+  <!-- Bottom-left figure (Blue) -->
+  <path d="M152 392 C152 392, 132 372, 132 352 C132 332, 152 312, 152 312 C152 312, 172 332, 172 352 C172 372, 152 392, 152 392" fill="#4169E1"/>
+  
+  <!-- Left figure (Green) -->
+  <path d="M80 256 C80 256, 100 240, 100 220 C100 200, 80 180, 80 180 C80 180, 60 200, 60 220 C60 240, 80 256, 80 256" fill="#32CD32"/>
+  
+  <!-- Top-left figure (Yellow) -->
+  <path d="M152 120 C152 120, 172 140, 172 160 C172 180, 152 200, 152 200 C152 200, 132 180, 132 160 C132 140, 152 120, 152 120" fill="#FFD700"/>
+  
+  <!-- Center connection point -->
+  <circle cx="256" cy="256" r="8" fill="#333"/>
 </svg>
