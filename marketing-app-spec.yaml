@@ -8,12 +8,12 @@ services:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "marketing"
-    build_command: "npm ci && echo 'Creating static app...' && cat > pages/_app.js << 'EOF' && export default function App({ Component, pageProps }) { return <Component {...pageProps} /> } && EOF && cat > pages/index.js << 'EOF' && export default function Home() { return ( <div style={{ fontFamily: 'Arial, sans-serif', margin: 0, padding: '20px', background: '#f5f5f5', minHeight: '100vh' }}> <div style={{ maxWidth: '800px', margin: '0 auto', background: 'white', padding: '40px', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}> <h1 style={{ color: '#333', marginBottom: '20px' }}>App-Oint Marketing</h1> <p style={{ color: '#666', lineHeight: '1.6' }}>Welcome to our marketing site! This is a simple, working deployment.</p> </div> </div> ) } && EOF && mv tsconfig.json tsconfig.json.backup 2>/dev/null || true && NEXT_TELEMETRY_DISABLED=1 npx next build --no-lint"
+    build_command: "npm ci && npm run build"
     run_command: "npm start"
-    http_port: 80
+    http_port: 3000
     health_check:
       http_path: /
-      initial_delay_seconds: 10
+      initial_delay_seconds: 30
       period_seconds: 30
       timeout_seconds: 10
       success_threshold: 1
@@ -41,8 +41,6 @@ envs:
   - key: NODE_ENV
     value: production
   - key: PORT
-    value: "80"
+    value: "3000"
   - key: NEXT_TELEMETRY_DISABLED
-    value: "1"
-  - key: NPM_CONFIG_CACHE
-    value: ".npm-cache" 
+    value: "1" 
