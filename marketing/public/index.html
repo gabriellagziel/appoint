@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App-Oint - Smart Scheduling System</title>
-    <meta name="description" content="App-Oint is a smart scheduling system for individuals, businesses, and enterprise clients.">
+    <meta name="description"
+        content="App-Oint is a smart scheduling system for individuals, businesses, and enterprise clients.">
     <style>
         * {
             margin: 0;
@@ -36,7 +38,7 @@
             height: 120px;
             margin: 0 auto 30px;
             display: block;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
         }
 
         .hero-title {
@@ -44,19 +46,19 @@
             font-weight: 300;
             color: white;
             margin-bottom: 20px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .hero-subtitle {
             font-size: 1.5rem;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255, 255, 255, 0.9);
             margin-bottom: 40px;
             font-weight: 300;
         }
 
         .description {
             font-size: 1.2rem;
-            color: rgba(255,255,255,0.8);
+            color: rgba(255, 255, 255, 0.8);
             max-width: 800px;
             margin: 0 auto 60px;
             text-align: center;
@@ -74,7 +76,7 @@
             border-radius: 16px;
             padding: 40px 30px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -82,7 +84,7 @@
 
         .portal-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
         .portal-card::before {
@@ -107,9 +109,17 @@
             color: white;
         }
 
-        .business-icon { background: linear-gradient(135deg, #1e3c72, #4facfe); }
-        .enterprise-icon { background: linear-gradient(135deg, #2a5298, #667eea); }
-        .admin-icon { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .business-icon {
+            background: linear-gradient(135deg, #1e3c72, #4facfe);
+        }
+
+        .enterprise-icon {
+            background: linear-gradient(135deg, #2a5298, #667eea);
+        }
+
+        .admin-icon {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
 
         .portal-title {
             font-size: 1.5rem;
@@ -142,14 +152,14 @@
         }
 
         .status-banner {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border-radius: 12px;
             padding: 20px;
             margin-top: 40px;
             text-align: center;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .status-text {
@@ -168,28 +178,40 @@
         }
 
         @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 2.5rem;
             }
+
             .hero-subtitle {
                 font-size: 1.2rem;
             }
+
             .portals-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
+
             .portal-card {
                 padding: 30px 20px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -197,7 +219,7 @@
             <h1 class="hero-title">App-Oint</h1>
             <p class="hero-subtitle">Smart Scheduling System</p>
             <p class="description">
-                App-Oint is a comprehensive scheduling platform for individuals, businesses, and enterprise clients. 
+                App-Oint is a comprehensive scheduling platform for individuals, businesses, and enterprise clients.
                 Choose your portal to get started with smart scheduling and management.
             </p>
         </header>
@@ -209,7 +231,8 @@
                 <p class="portal-description">
                     Manage appointments, staff, rooms, and analytics with our comprehensive business management suite.
                 </p>
-                <a href="https://app-oint-business-asit5.ondigitalocean.app" class="portal-button" target="_blank" rel="noopener">
+                <a href="https://app-oint-business-asit5.ondigitalocean.app" class="portal-button" target="_blank"
+                    rel="noopener">
                     Enter Business Portal
                 </a>
             </div>
@@ -220,7 +243,8 @@
                 <p class="portal-description">
                     Integrate scheduling & geolocation via our REST API for seamless enterprise solutions.
                 </p>
-                <a href="https://app-oint-enterprise-kpxyy.ondigitalocean.app" class="portal-button" target="_blank" rel="noopener">
+                <a href="https://app-oint-enterprise-kpxyy.ondigitalocean.app" class="portal-button" target="_blank"
+                    rel="noopener">
                     Explore API Access
                 </a>
             </div>
@@ -231,7 +255,8 @@
                 <p class="portal-description">
                     Internal system dashboard for App-Oint administrators with full system oversight.
                 </p>
-                <a href="https://app-oint-platform-3g3k2.ondigitalocean.app" class="portal-button" target="_blank" rel="noopener">
+                <a href="https://app-oint-platform-3g3k2.ondigitalocean.app" class="portal-button" target="_blank"
+                    rel="noopener">
                     Go to Admin Panel
                 </a>
             </div>
@@ -245,4 +270,5 @@
         </div>
     </div>
 </body>
+
 </html>

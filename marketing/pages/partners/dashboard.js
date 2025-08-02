@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { IcsTokenCard } from '../../src/components/IcsTokenCard'
 import { InvoiceTable } from '../../src/components/InvoiceTable'
 import { LatencyChart } from '../../src/components/LatencyChart'
@@ -6,16 +7,11 @@ import { UsageChart } from '../../src/components/UsageChart'
 import { WebhookManager } from '../../src/components/WebhookManager'
 import { I18nContext } from '../../src/lib/i18n'
 import en from '../../src/locales/en.json'
-import { useEffect, useState } from 'react'
 
 export default function Dashboard() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [usage, setUsage] = useState<{ date: string; calls: number }[]>([])
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [latency, setLatency] = useState<{ date: string; p95: number }[]>([])
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [invoices, setInvoices] = useState<{ id: string; month: string; amount: number; status: string; pdfUrl: string }[]>([])
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [usage, setUsage] = useState([])
+  const [latency, setLatency] = useState([])
+  const [invoices, setInvoices] = useState([])
   const [token, setToken] = useState('')
 
   useEffect(() => {
@@ -27,7 +23,7 @@ export default function Dashboard() {
   }
 
   return (
-    <I18nContext.Provider value={{ t: (k: string) => (en as Record<string, string>)[k] || k }}>
+    <I18nContext.Provider value={{ t: (k) => (en[k] || k) }}>
       <main className="min-h-screen">
         <Navbar />
         <section className="p-6 space-y-8 max-w-5xl mx-auto">

@@ -7,6 +7,16 @@ const nextConfig = {
   },
   trailingSlash: true,
 
+  // Completely disable TypeScript
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
+  // Disable ESLint during build
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
   // Ensure proper path resolution for DigitalOcean build environment
   webpack: (config) => {
     // Add explicit path alias resolution
@@ -30,17 +40,11 @@ const nextConfig = {
     optimizeCss: false
   },
 
-  // Completely disable TypeScript and ESLint checking for build
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // Output configuration
+  output: 'standalone',
 
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // Disable telemetry
+  telemetry: false,
+}
 
-  // Disable source maps for faster builds
-  productionBrowserSourceMaps: false,
-};
-
-module.exports = nextConfig; 
+module.exports = nextConfig 
