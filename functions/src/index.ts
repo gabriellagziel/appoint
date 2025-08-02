@@ -1,5 +1,5 @@
 import * as admin from 'firebase-admin';
-import app from './server';
+import app from './minimal-server';
 
 // Ensure admin sdk is initialised safely
 if (!admin.apps.length) {
