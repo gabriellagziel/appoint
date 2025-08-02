@@ -8,7 +8,7 @@ services:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "enterprise-onboarding-portal"
-    build_command: "npm ci"
+    build_command: "npm ci && echo \"Enterprise app rebuilt at $(date)\""
     run_command: "npx serve . -p 3000"
     http_port: 3000
     health_check:
@@ -34,4 +34,4 @@ envs:
     scope: RUN_AND_BUILD_TIME
   - key: PORT
     value: "3000"
-    scope: RUN_AND_BUILD_TIME 
+    scope: RUN_AND_BUILD_TIME

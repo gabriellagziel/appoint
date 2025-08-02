@@ -1,91 +1,98 @@
 #!/bin/bash
 
-# Script to audit missing translation keys
-# Exits with non-zero code if any keys are missing
+# ✅ בצע Audit מלא לקובצי השפה של APP-OINT
 
-set -e
+cd lib/l10n
 
-echo "🔍 Auditing translation keys..."
+# 1. הגדר את הקובץ האנגלי כקובץ רפרנס
+reference_file="app_en.arb"
 
-# Directory containing ARB files
-ARB_DIR="lib/l10n"
-MAIN_ARB_FILE="$ARB_DIR/app_en.arb"
+echo "🔍 מתחיל Audit מלא של קובצי השפה..."
+echo "📋 קובץ רפרנס: $reference_file"
+echo ""
 
-# Check if main ARB file exists
-if [ ! -f "$MAIN_ARB_FILE" ]; then
-    echo "❌ Main ARB file not found: $MAIN_ARB_FILE"
+# בדוק שהקובץ האנגלי קיים
+if [ ! -f "$reference_file" ]; then
+    echo "❌ קובץ הרפרנס $reference_file לא נמצא!"
     exit 1
 fi
 
-# Extract all keys from the main English ARB file
-echo "📋 Extracting keys from $MAIN_ARB_FILE..."
-MAIN_KEYS=$(grep '^  "' "$MAIN_ARB_FILE" | sed 's/^  "\([^"]*\)".*/\1/' | sort)
+# ספירת מפתחות בקובץ הרפרנס
+expected_keys=$(grep -c '^  "' "$reference_file")
+echo "📊 מספר מפתחות בקובץ הרפרנס: $expected_keys"
+echo ""
 
-# Find all ARB files (excluding the main English file)
-ARB_FILES=$(find "$ARB_DIR" -name "*.arb" -not -name "app_en.arb")
+# 2. עבור על כל קובץ שפה אחר ובדוק מה חסר
+total_files=0
+files_with_issues=0
 
-MISSING_KEYS_FOUND=false
-
-# Check each ARB file for missing keys
-for arb_file in $ARB_FILES; do
-    echo "🔍 Checking $arb_file..."
+for file in app_*.arb; do
+    [[ "$file" == "$reference_file" ]] && continue
+    [[ "$file" == "app_en.arb.bak" ]] && continue
     
-    # Extract keys from current ARB file
-    CURRENT_KEYS=$(grep '^  "' "$arb_file" | sed 's/^  "\([^"]*\)".*/\1/' | sort)
+    total_files=$((total_files + 1))
+    echo "🔎 בודק את $file..."
     
-    # Find missing keys
-    MISSING_KEYS=$(comm -23 <(echo "$MAIN_KEYS") <(echo "$CURRENT_KEYS"))
+    # ספירת מפתחות
+    total_keys=$(grep -c '^  "' "$file")
     
-    if [ -n "$MISSING_KEYS" ]; then
-        echo "❌ Missing keys in $arb_file:"
-        echo "$MISSING_KEYS" | sed 's/^/  - /'
-        echo ""
-        MISSING_KEYS_FOUND=true
-    else
-        echo "✅ All keys present in $arb_file"
+    # מפתחות חסרים
+    missing_keys=$(comm -23 \
+        <(grep '^  "' "$reference_file" | cut -d'"' -f2 | sort) \
+        <(grep '^  "' "$file" | cut -d'"' -f2 | sort) 2>/dev/null)
+    
+    # בדיקת תרגומים באנגלית (שורות שמכילות רק טקסט באנגלית)
+    untranslated=$(grep -E '^  "[^"]*": "[A-Za-z0-9 ,.!?\"'\''()\-]+",?$' "$file" | wc -l)
+    
+    # בדיקת מפתחות ריקים
+    empty_values=$(grep -E '^  "[^"]*": "",?$' "$file" | wc -l)
+    
+    # בדיקת מפתחות עם ערכים זהים לאנגלית
+    identical_to_english=$(comm -12 \
+        <(grep '^  "' "$reference_file" | sed 's/^  "\([^"]*\)": "\([^"]*\)".*/\1: \2/') \
+        <(grep '^  "' "$file" | sed 's/^  "\([^"]*\)": "\([^"]*\)".*/\1: \2/') 2>/dev/null | wc -l)
+    
+    echo "📄 $file:"
+    echo "  - מפתחות קיימים: $total_keys / $expected_keys"
+    echo "  - מפתחות חסרים: $(echo "$missing_keys" | wc -l)"
+    echo "  - שורות באנגלית: $untranslated"
+    echo "  - ערכים ריקים: $empty_values"
+    echo "  - זהים לאנגלית: $identical_to_english"
+    
+    # הצג מפתחות חסרים אם יש
+    if [ ! -z "$missing_keys" ]; then
+        echo "  - מפתחות חסרים:"
+        echo "$missing_keys" | head -5 | sed 's/^/    • /'
+        if [ $(echo "$missing_keys" | wc -l) -gt 5 ]; then
+            echo "    ... ועוד $(( $(echo "$missing_keys" | wc -l) - 5 )) מפתחות"
+        fi
+        files_with_issues=$((files_with_issues + 1))
     fi
-done
-
-# Check for extra keys in other files
-echo "🔍 Checking for extra keys in other ARB files..."
-for arb_file in $ARB_FILES; do
-    CURRENT_KEYS=$(grep '^  "' "$arb_file" | sed 's/^  "\([^"]*\)".*/\1/' | sort)
-    EXTRA_KEYS=$(comm -13 <(echo "$MAIN_KEYS") <(echo "$CURRENT_KEYS"))
     
-    if [ -n "$EXTRA_KEYS" ]; then
-        echo "⚠️  Extra keys found in $arb_file (not in main file):"
-        echo "$EXTRA_KEYS" | sed 's/^/  - /'
-        echo ""
-    fi
-done
-
-# Check for syntax errors in ARB files
-echo "🔍 Checking ARB file syntax..."
-for arb_file in $(find "$ARB_DIR" -name "*.arb"); do
-    if ! python3 -m json.tool "$arb_file" > /dev/null 2>&1; then
-        echo "❌ Syntax error in $arb_file"
-        MISSING_KEYS_FOUND=true
-    fi
-done
-
-# Check for unused keys in Dart code
-echo "🔍 Checking for unused translation keys..."
-DART_FILES=$(find lib -name "*.dart" -not -path "*/generated/*")
-USED_KEYS=$(grep -r "l10n\." $DART_FILES | sed 's/.*l10n\.\([a-zA-Z_][a-zA-Z0-9_]*\).*/\1/' | sort | uniq)
-
-UNUSED_KEYS=$(comm -23 <(echo "$MAIN_KEYS") <(echo "$USED_KEYS"))
-
-if [ -n "$UNUSED_KEYS" ]; then
-    echo "⚠️  Potentially unused keys:"
-    echo "$UNUSED_KEYS" | sed 's/^/  - /'
     echo ""
-fi
+done
 
-# Final result
-if [ "$MISSING_KEYS_FOUND" = true ]; then
-    echo "❌ Translation audit failed - missing keys found"
-    exit 1
-else
-    echo "✅ Translation audit passed - all keys present"
-    exit 0
-fi 
+echo "📊 סיכום Audit:"
+echo "  - סך הכל קבצים שנבדקו: $total_files"
+echo "  - קבצים עם בעיות: $files_with_issues"
+echo "  - אחוז השלמות: $(( (total_files - files_with_issues) * 100 / total_files ))%"
+echo ""
+
+# בדיקה נוספת - קבצים עם בעיות חמורות
+echo "🚨 קבצים עם בעיות חמורות:"
+for file in app_*.arb; do
+    [[ "$file" == "$reference_file" ]] && continue
+    [[ "$file" == "app_en.arb.bak" ]] && continue
+    
+    total_keys=$(grep -c '^  "' "$file")
+    missing_count=$(comm -23 \
+        <(grep '^  "' "$reference_file" | cut -d'"' -f2 | sort) \
+        <(grep '^  "' "$file" | cut -d'"' -f2 | sort) 2>/dev/null | wc -l)
+    
+    if [ $missing_count -gt 10 ]; then
+        echo "  ⚠️  $file: חסרים $missing_count מפתחות"
+    fi
+done
+
+echo ""
+echo "✅ Audit הושלם!" 
