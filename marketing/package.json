@@ -2,6 +2,12 @@
   "name": "marketing",
   "version": "0.1.0",
   "private": true,
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "edge >= 79"
+  ],
   "scripts": {
     "dev": "next dev",
     "prebuild": "node fix-imports.js",
