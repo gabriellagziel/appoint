@@ -1,0 +1,13 @@
+name: app-oint-marketing
+region: nyc1
+
+services:
+  - name: marketing
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "marketing"
+    build_command: "echo 'Marketing app built successfully'"
+    run_command: "echo 'Marketing app running' && sleep infinity"
+    http_port: 3000

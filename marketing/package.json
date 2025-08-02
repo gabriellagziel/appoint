@@ -2,15 +2,8 @@
   "name": "marketing",
   "version": "0.1.0",
   "private": true,
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead",
-    "edge >= 79"
-  ],
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node fix-imports.js",
     "build": "next build",
     "postbuild": "next-sitemap",
     "export": "next build --no-lint && mkdir -p out && cp -r .next/server/pages/* out/ && cp -r public/* out/ || true",
