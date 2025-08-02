@@ -3,23 +3,30 @@ import 'package:flutter/material.dart';
 /// Enhanced accessibility utilities and components
 class AccessibilityEnhancements {
   /// Check if the app is running with accessibility features enabled
-  static bool get isAccessibilityEnabled =>
-      WidgetsBinding
-          .instance.window.accessibilityFeatures.accessibleNavigation ||
-      WidgetsBinding.instance.window.accessibilityFeatures.invertColors ||
-      WidgetsBinding.instance.window.accessibilityFeatures.reduceMotion;
+  static bool get isAccessibilityEnabled {
+    final platformDispatcher = WidgetsBinding.instance.platformDispatcher;
+    return platformDispatcher.accessibilityFeatures.accessibleNavigation ||
+        platformDispatcher.accessibilityFeatures.invertColors ||
+        platformDispatcher.accessibilityFeatures.reduceMotion;
+  }
 
   /// Check if screen reader is active
-  static bool get isScreenReaderActive =>
-      WidgetsBinding.instance.window.accessibilityFeatures.accessibleNavigation;
+  static bool get isScreenReaderActive {
+    final platformDispatcher = WidgetsBinding.instance.platformDispatcher;
+    return platformDispatcher.accessibilityFeatures.accessibleNavigation;
+  }
 
   /// Check if high contrast is enabled
-  static bool get isHighContrastEnabled =>
-      WidgetsBinding.instance.window.accessibilityFeatures.highContrast;
+  static bool get isHighContrastEnabled {
+    final platformDispatcher = WidgetsBinding.instance.platformDispatcher;
+    return platformDispatcher.accessibilityFeatures.highContrast;
+  }
 
   /// Check if reduced motion is preferred
-  static bool get isReducedMotionPreferred =>
-      WidgetsBinding.instance.window.accessibilityFeatures.reduceMotion;
+  static bool get isReducedMotionPreferred {
+    final platformDispatcher = WidgetsBinding.instance.platformDispatcher;
+    return platformDispatcher.accessibilityFeatures.reduceMotion;
+  }
 }
 
 /// Enhanced accessible text widget with proper semantics

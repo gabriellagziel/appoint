@@ -19,7 +19,7 @@ class AppUser with _$AppUser {
     DateTime? createdAt,
     DateTime? lastLoginAt,
     Map<String, dynamic>? customClaims,
-    @JsonKey(includeFromJson: false, includeToJson: false) User? firebaseUser,
+    User? firebaseUser,
   }) = _AppUser;
 
   factory AppUser.fromJson(Map<String, dynamic> json) =>

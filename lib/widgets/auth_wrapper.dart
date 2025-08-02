@@ -28,8 +28,6 @@ class AuthWrapper extends ConsumerWidget {
         return Scaffold(
             body: Center(
                 child: Text(l10n?.clientScreenTBD ?? 'Client Screen TBD')));
-      default:
-        return const Scaffold(body: Center(child: Text('Unknown role')));
     }
   }
 }

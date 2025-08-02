@@ -893,7 +893,15 @@ class _AmbassadorUserDashboardState
                   child: QrImageView(
                     data: shareLink,
                     size: 200.0,
-                    foregroundColor: Colors.black,
+                    backgroundColor: Colors.white,
+                    eyeStyle: const QrEyeStyle(
+                      eyeShape: QrEyeShape.circle,
+                      color: Colors.black,
+                    ),
+                    dataModuleStyle: const QrDataModuleStyle(
+                      dataModuleShape: QrDataModuleShape.circle,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ],

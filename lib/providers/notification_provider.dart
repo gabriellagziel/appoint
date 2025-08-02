@@ -24,7 +24,6 @@ final uiNotificationServiceProvider = Provider<UINotificationService>((ref) {
 
 /// Concrete implementation of UINotificationService
 class ConcreteUINotificationService implements UINotificationService {
-  @override
   Future<void> showNotification({
     required String title,
     required String body,
@@ -34,37 +33,31 @@ class ConcreteUINotificationService implements UINotificationService {
     print('Showing notification: $title - $body');
   }
 
-  @override
   Future<void> hideNotification(int id) async {
     // Implementation would go here
     print('Hiding notification: $id');
   }
 
-  @override
   Future<void> clearAllNotifications() async {
     // Implementation would go here
     print('Clearing all notifications');
   }
 
-  @override
   Future<void> showSuccess(String message) async {
     // Implementation would go here
     print('Showing success: $message');
   }
 
-  @override
   Future<void> showError(String message) async {
     // Implementation would go here
     print('Showing error: $message');
   }
 
-  @override
   Future<void> showWarning(String message) async {
     // Implementation would go here
     print('Showing warning: $message');
   }
 
-  @override
   Future<void> showInfo(String message) async {
     // Implementation would go here
     print('Showing info: $message');

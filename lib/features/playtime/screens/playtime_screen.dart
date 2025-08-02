@@ -114,7 +114,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        l10n.welcomeToPlaytime ?? 'Welcome to Playtime!',
+                        l10n.welcomeToPlaytime,
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 20,
@@ -123,8 +123,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        l10n.playtimeDescription ??
-                            'Tap the play button to earn tickets and unlock rewards!',
+                        l10n.playtimeDescription,
                         style: TextStyle(
                           color: Colors.white.withAlpha((255 * 0.9).round()),
                           fontSize: 14,

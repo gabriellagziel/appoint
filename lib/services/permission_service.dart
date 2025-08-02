@@ -13,7 +13,7 @@ class PermissionService {
   }
 
   Future<bool> requestCalendarPermission() async {
-    final status = await Permission.calendar.request();
+    final status = await Permission.calendarFullAccess.request();
     await _saveStatus(_calendarKey, status);
     return status.isGranted;
   }

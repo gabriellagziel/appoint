@@ -408,14 +408,13 @@ class SemanticLabelsTest {
 
   /// Helper method to check if a ListTile has a label
   static bool _hasListTileLabel(ListTile tile) {
-    // Note: In newer Flutter versions, title and subtitle might be non-nullable
-    // This check ensures compatibility across versions
-    return tile.title != null || tile.subtitle != null;
+    // Title is non-nullable in newer Flutter versions
+    return tile.title.toString().isNotEmpty || (tile.subtitle?.toString().isNotEmpty ?? false);
   }
 
   /// Helper method to check if an ExpansionTile has a label
   static bool _hasExpansionTileLabel(ExpansionTile tile) {
-    return tile.title != null;
+    return tile.title.toString().isNotEmpty;
   }
 }
 

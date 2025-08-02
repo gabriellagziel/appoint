@@ -4,8 +4,8 @@ part 'service_offering.freezed.dart';
 part 'service_offering.g.dart';
 
 @freezed
+@JsonSerializable(explicitToJson: true)
 class ServiceOffering with _$ServiceOffering {
-  @JsonSerializable(explicitToJson: true)
   const factory ServiceOffering({
     required final String id,
     required final String businessId,

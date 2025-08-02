@@ -1,10 +1,10 @@
 import 'dart:io';
 
 import 'package:appoint/services/ambassador_notification_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// Enhanced mobile push notification service for Ambassador program
 class AmbassadorMobileNotifications {
@@ -418,7 +418,7 @@ class AmbassadorMobileNotifications {
 
   String _getColorHexForType(String type) {
     final color = _getColorForType(type);
-    return '#${color.value.toRadixString(16).substring(2)}';
+    return '#${color.toARGB32().toRadixString(16).substring(2)}';
   }
 
   bool _shouldVibrateForType(String type) {
