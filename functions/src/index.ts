@@ -1,16 +1,10 @@
 import * as admin from 'firebase-admin';
-import { onRequest } from 'firebase-functions/v2/https';
+import app from './server';
 
 // Ensure admin sdk is initialised safely
 if (!admin.apps.length) {
   admin.initializeApp();
 }
 
-// Simple health check function
-export const healthCheck = onRequest((req, res) => {
-  res.status(200).json({
-    status: 'ok',
-    timestamp: new Date().toISOString(),
-    service: 'firebase-functions'
-  });
-});
+// Export the Express app for DigitalOcean App Platform
+export default app;
