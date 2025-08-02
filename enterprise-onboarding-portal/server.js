@@ -1,185 +1,128 @@
 const express = require('express');
-const cors = require('cors');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const crypto = require('crypto');
 const nodemailer = require('nodemailer');
+const path = require('path');
+const crypto = require('crypto');
 
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 3000;
 
-// Middleware
-app.use(cors());
-app.use(express.json());
-app.use(express.static('.'));
+// Security middleware
+app.use(express.json({ limit: '10mb' }));
+app.use(express.static('public'));
 
-// In-memory storage (replace with database in production)
-const users = new Map();
-const verificationCodes = new Map();
-const apiKeys = new Map();
+// Environment variables for security
+const JWT_SECRET = process.env.JWT_SECRET || crypto.randomBytes(64).toString('hex');
+const EMAIL_USER = process.env.EMAIL_USER || 'noreply@appoint.com';
+const EMAIL_PASS = process.env.EMAIL_PASS || 'secure-password';
+const DATABASE_URL = process.env.DATABASE_URL || 'mongodb://localhost:27017/appoint-enterprise';
 
-// Email configuration (replace with actual SMTP settings)
+// Email configuration with security
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.EMAIL_USER || 'noreply@appoint.com',
-        pass: process.env.EMAIL_PASS || 'password'
+        user: EMAIL_USER,
+        pass: EMAIL_PASS
+    },
+    secure: true,
+    tls: {
+        rejectUnauthorized: false
     }
 });
 
-// JWT secret (use environment variable in production)
-const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
+// In-memory storage (replace with database in production)
+const users = new Map();
+const apiKeys = new Map();
 
-// Generate API key
-function generateApiKey() {
-    return `appoint_${crypto.randomBytes(32).toString('hex')}`;
-}
+// Security middleware
+app.use((req, res, next) => {
+    // Add security headers
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-Frame-Options', 'DENY');
+    res.setHeader('X-XSS-Protection', '1; mode=block');
+    res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+    next();
+});
 
-// Generate verification code
-function generateVerificationCode() {
-    return Math.floor(100000 + Math.random() * 900000).toString();
-}
+// Rate limiting
+const rateLimit = require('express-rate-limit');
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100 // limit each IP to 100 requests per windowMs
+});
+app.use(limiter);
 
-// Send verification email
-async function sendVerificationEmail(email, code) {
-    const mailOptions = {
-        from: 'noreply@appoint.com',
-        to: email,
-        subject: 'Verify your App-Oint Enterprise account',
-        html: `
-            <h2>Welcome to App-Oint Enterprise!</h2>
-            <p>Your verification code is: <strong>${code}</strong></p>
-            <p>This code will expire in 10 minutes.</p>
-        `
-    };
+// Authentication middleware
+const authenticateToken = (req, res, next) => {
+    const authHeader = req.headers['authorization'];
+    const token = authHeader && authHeader.split(' ')[1];
 
-    try {
-        await transporter.sendMail(mailOptions);
-        return true;
-    } catch (error) {
-        console.error('Email sending failed:', error);
-        return false;
+    if (!token) {
+        return res.status(401).json({ error: 'Access token required' });
     }
-}
 
-// Health check endpoint
-app.get('/health', (req, res) => {
-    res.json({
-        status: 'healthy',
-        service: 'enterprise',
-        timestamp: new Date().toISOString(),
-        version: '1.0.0'
-    });
-});
-
-// API Endpoints for Mobile App Integration
-app.get('/api/enterprise', (req, res) => {
-    res.json({
-        enterprise: true,
-        features: [
-            'multi-location',
-            'advanced-analytics',
-            'white-label',
-            'custom-integrations'
-        ]
-    });
-});
-
-app.get('/api/enterprise/multi-location', (req, res) => {
-    res.json({
-        locations: [
-            {
-                id: 1,
-                name: 'Headquarters',
-                address: '123 Main St, New York, NY',
-                status: 'active'
-            },
-            {
-                id: 2,
-                name: 'West Coast Office',
-                address: '456 Tech Ave, San Francisco, CA',
-                status: 'active'
-            }
-        ]
-    });
-});
-
-app.get('/api/enterprise/advanced-analytics', (req, res) => {
-    res.json({
-        analytics: {
-            totalRevenue: 500000,
-            totalAppointments: 2500,
-            customerSatisfaction: 4.8,
-            growthRate: 15.5
+    jwt.verify(token, JWT_SECRET, (err, user) => {
+        if (err) {
+            return res.status(403).json({ error: 'Invalid token' });
         }
+        req.user = user;
+        next();
     });
-});
-
-app.get('/api/enterprise/white-label', (req, res) => {
-    res.json({
-        whiteLabel: {
-            enabled: true,
-            customDomain: 'mycompany.appoint.com',
-            branding: {
-                logo: 'https://mycompany.com/logo.png',
-                colors: {
-                    primary: '#007bff',
-                    secondary: '#6c757d'
-                }
-            }
-        }
-    });
-});
-
-app.get('/api/enterprise/integrations', (req, res) => {
-    res.json({
-        integrations: [
-            {
-                name: 'Salesforce',
-                status: 'connected',
-                lastSync: '2025-08-01T10:00:00Z'
-            },
-            {
-                name: 'HubSpot',
-                status: 'connected',
-                lastSync: '2025-08-01T09:30:00Z'
-            },
-            {
-                name: 'Zapier',
-                status: 'available',
-                lastSync: null
-            }
-        ]
-    });
-});
-
-app.get('/api/enterprise/reports', (req, res) => {
-    res.json({
-        reports: [
-            {
-                id: 1,
-                name: 'Monthly Revenue Report',
-                type: 'revenue',
-                lastGenerated: '2025-08-01T00:00:00Z'
-            },
-            {
-                id: 2,
-                name: 'Customer Analytics',
-                type: 'analytics',
-                lastGenerated: '2025-08-01T06:00:00Z'
-            }
-        ]
-    });
-});
+};
 
 // Routes
-app.post('/api/enterprise/signup', async (req, res) => {
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/dashboard', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dashboard.html'));
+});
+
+app.get('/api-keys', (req, res) => {
+    res.sendFile(path.join(__dirname, 'api-keys.html'));
+});
+
+app.get('/settings', (req, res) => {
+    res.sendFile(path.join(__dirname, 'settings.html'));
+});
+
+app.get('/locations', (req, res) => {
+    res.sendFile(path.join(__dirname, 'locations.html'));
+});
+
+app.get('/analytics', (req, res) => {
+    res.sendFile(path.join(__dirname, 'analytics.html'));
+});
+
+app.get('/integrations', (req, res) => {
+    res.sendFile(path.join(__dirname, 'integrations.html'));
+});
+
+app.get('/white-label', (req, res) => {
+    res.sendFile(path.join(__dirname, 'white-label.html'));
+});
+
+// API Routes
+app.post('/api/register', async (req, res) => {
     try {
         const { companyName, email, password, plan } = req.body;
-
-        // Validate input
+        
+        // Input validation
         if (!companyName || !email || !password || !plan) {
             return res.status(400).json({ error: 'All fields are required' });
+        }
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            return res.status(400).json({ error: 'Invalid email format' });
+        }
+
+        // Password strength validation
+        if (password.length < 8) {
+            return res.status(400).json({ error: 'Password must be at least 8 characters long' });
         }
 
         // Check if user already exists
@@ -187,9 +130,12 @@ app.post('/api/enterprise/signup', async (req, res) => {
             return res.status(409).json({ error: 'User already exists' });
         }
 
-        // Hash password
-        const hashedPassword = await bcrypt.hash(password, 10);
-
+        // Hash password with salt
+        const hashedPassword = await bcrypt.hash(password, 12);
+        
+        // Generate secure API key
+        const apiKey = crypto.randomBytes(32).toString('hex');
+        
         // Create user
         const user = {
             id: crypto.randomUUID(),
@@ -197,130 +143,168 @@ app.post('/api/enterprise/signup', async (req, res) => {
             email,
             password: hashedPassword,
             plan,
-            status: 'pending',
-            createdAt: new Date().toISOString()
+            apiKey,
+            createdAt: new Date(),
+            isActive: true
         };
 
         users.set(email, user);
+        apiKeys.set(apiKey, user);
 
-        // Generate and store verification code
-        const verificationCode = generateVerificationCode();
-        verificationCodes.set(email, {
-            code: verificationCode,
-            expiresAt: new Date(Date.now() + 10 * 60 * 1000) // 10 minutes
-        });
+        // Generate JWT token
+        const token = jwt.sign(
+            { userId: user.id, email: user.email, companyName: user.companyName },
+            JWT_SECRET,
+            { expiresIn: '24h' }
+        );
 
-        // Send verification email
-        const emailSent = await sendVerificationEmail(email, verificationCode);
-
-        if (emailSent) {
-            res.status(201).json({
-                message: 'Account created successfully. Please check your email for verification.',
-                userId: user.id
-            });
-        } else {
-            res.status(500).json({ error: 'Failed to send verification email' });
-        }
-    } catch (error) {
-        console.error('Signup error:', error);
-        res.status(500).json({ error: 'Internal server error' });
-    }
-});
-
-app.post('/api/enterprise/verify', async (req, res) => {
-    try {
-        const { email, verificationCode } = req.body;
-
-        // Validate input
-        if (!email || !verificationCode) {
-            return res.status(400).json({ error: 'Email and verification code are required' });
-        }
-
-        // Check if user exists
-        const user = users.get(email);
-        if (!user) {
-            return res.status(404).json({ error: 'User not found' });
-        }
-
-        // Check verification code
-        const storedVerification = verificationCodes.get(email);
-        if (!storedVerification || storedVerification.code !== verificationCode) {
-            return res.status(400).json({ error: 'Invalid verification code' });
-        }
-
-        if (new Date() > storedVerification.expiresAt) {
-            return res.status(400).json({ error: 'Verification code expired' });
-        }
-
-        // Update user status
-        user.status = 'verified';
-        user.verifiedAt = new Date().toISOString();
-
-        // Generate API key
-        const apiKey = generateApiKey();
-        apiKeys.set(apiKey, {
-            userId: user.id,
-            email: user.email,
-            plan: user.plan,
-            createdAt: new Date().toISOString()
-        });
-
-        // Clean up verification code
-        verificationCodes.delete(email);
-
-        res.json({
-            success: true,
-            apiKey,
-            message: 'Account verified successfully'
-        });
-    } catch (error) {
-        console.error('Verification error:', error);
-        res.status(500).json({ error: 'Internal server error' });
-    }
-});
-
-app.get('/api/enterprise/usage/:apiKey', (req, res) => {
-    try {
-        const { apiKey } = req.params;
-        const keyData = apiKeys.get(apiKey);
-
-        if (!keyData) {
-            return res.status(404).json({ error: 'Invalid API key' });
-        }
-
-        // Mock usage data (replace with actual usage tracking)
-        const usage = {
-            apiKey,
-            plan: keyData.plan,
-            currentMonth: {
-                calls: Math.floor(Math.random() * 1000),
-                limit: getPlanLimit(keyData.plan)
-            },
-            lastUpdated: new Date().toISOString()
+        // Send welcome email
+        const mailOptions = {
+            from: EMAIL_USER,
+            to: email,
+            subject: 'Welcome to Appoint Enterprise',
+            html: `
+                <h2>Welcome to Appoint Enterprise!</h2>
+                <p>Your account has been successfully created.</p>
+                <p><strong>Company:</strong> ${companyName}</p>
+                <p><strong>Plan:</strong> ${plan}</p>
+                <p>Your API key: <code>${apiKey}</code></p>
+                <p>Keep this API key secure and don't share it with anyone.</p>
+            `
         };
 
-        res.json(usage);
+        await transporter.sendMail(mailOptions);
+
+        res.status(201).json({
+            message: 'Registration successful',
+            token,
+            apiKey,
+            user: {
+                id: user.id,
+                companyName: user.companyName,
+                email: user.email,
+                plan: user.plan
+            }
+        });
+
     } catch (error) {
-        console.error('Usage error:', error);
+        console.error('Registration error:', error);
         res.status(500).json({ error: 'Internal server error' });
     }
 });
 
-function getPlanLimit(plan) {
-    const limits = {
-        free: 1000,
-        starter: 10000,
-        professional: 100000,
-        enterprise: 1000000
-    };
-    return limits[plan] || 1000;
-}
+app.post('/api/login', async (req, res) => {
+    try {
+        const { email, password } = req.body;
 
-// Serve the main application
-app.get('*', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
+        if (!email || !password) {
+            return res.status(400).json({ error: 'Email and password required' });
+        }
+
+        const user = users.get(email);
+        if (!user) {
+            return res.status(401).json({ error: 'Invalid credentials' });
+        }
+
+        const isValidPassword = await bcrypt.compare(password, user.password);
+        if (!isValidPassword) {
+            return res.status(401).json({ error: 'Invalid credentials' });
+        }
+
+        const token = jwt.sign(
+            { userId: user.id, email: user.email, companyName: user.companyName },
+            JWT_SECRET,
+            { expiresIn: '24h' }
+        );
+
+        res.json({
+            message: 'Login successful',
+            token,
+            user: {
+                id: user.id,
+                companyName: user.companyName,
+                email: user.email,
+                plan: user.plan
+            }
+        });
+
+    } catch (error) {
+        console.error('Login error:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+// Protected routes
+app.get('/api/user', authenticateToken, (req, res) => {
+    const user = users.get(req.user.email);
+    if (!user) {
+        return res.status(404).json({ error: 'User not found' });
+    }
+
+    res.json({
+        id: user.id,
+        companyName: user.companyName,
+        email: user.email,
+        plan: user.plan,
+        createdAt: user.createdAt
+    });
+});
+
+app.get('/api/analytics', authenticateToken, (req, res) => {
+    // Mock analytics data
+    res.json({
+        totalAppointments: 1247,
+        monthlyRevenue: 45230,
+        activeLocations: 12,
+        uptimeSLA: 99.9,
+        recentActivity: [
+            { type: 'appointment', count: 45, date: new Date() },
+            { type: 'revenue', amount: 1250, date: new Date() },
+            { type: 'location', name: 'New Branch', date: new Date() }
+        ]
+    });
+});
+
+app.get('/api/locations', authenticateToken, (req, res) => {
+    // Mock locations data
+    res.json([
+        {
+            id: 1,
+            name: 'Headquarters',
+            address: '123 Main St, New York, NY',
+            status: 'active',
+            appointments: 456
+        },
+        {
+            id: 2,
+            name: 'West Coast Office',
+            address: '456 Tech Ave, San Francisco, CA',
+            status: 'active',
+            appointments: 234
+        },
+        {
+            id: 3,
+            name: 'European Branch',
+            address: '789 Innovation St, London, UK',
+            status: 'active',
+            appointments: 567
+        }
+    ]);
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({ error: 'Something went wrong!' });
+});
+
+// 404 handler
+app.use((req, res) => {
+    res.status(404).json({ error: 'Route not found' });
 });
 
 app.listen(PORT, () => {
-    console.log(`Enterprise onboarding portal running on port ${PORT}`);
+    console.log(`🚀 Enterprise portal running on port ${PORT}`);
+    console.log(`🔒 Security features enabled`);
+    console.log(`📧 Email configured: ${EMAIL_USER}`);
 }); 

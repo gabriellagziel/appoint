@@ -39,7 +39,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Appoint"
         android:requestLegacyExternalStorage="true"
-        android:usesCleartextTraffic="false">
+        android:usesCleartextTraffic="true">
         
         <!-- Main Flutter Activity -->
         <activity
