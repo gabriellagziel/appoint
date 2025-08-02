@@ -7,7 +7,66 @@
     <title>App-Oint - Smart Scheduling System</title>
     <meta name="description"
         content="App-Oint is a smart scheduling system for individuals, businesses, and enterprise clients.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /* ===== COOL BLUES DESIGN SYSTEM TOKENS ===== */
+        :root {
+            /* ===== COLORS ===== */
+            --color-primary: #0A84FF;
+            --color-secondary: #5AC8FA;
+            --color-accent: #64D2FF;
+            --color-neutral-dark: #141414;
+            --color-neutral-light: #E5E5EA;
+
+            /* Color variations */
+            --color-primary-hover: #007AFF;
+            --color-primary-light: rgba(10, 132, 255, 0.1);
+            --color-secondary-light: rgba(90, 200, 250, 0.15);
+            --color-neutral-dark-70: rgba(20, 20, 20, 0.7);
+            --color-neutral-dark-50: rgba(20, 20, 20, 0.5);
+
+            /* ===== TYPOGRAPHY ===== */
+            --font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+            /* Desktop Typography */
+            --font-size-heading-desktop: 24px;
+            --font-size-body-desktop: 16px;
+            --font-weight-bold: bold;
+            --font-weight-regular: normal;
+            --line-height: 1.4;
+            --letter-spacing: 0.5px;
+
+            /* Mobile Typography */
+            --font-size-heading-mobile: 20px;
+            --font-size-body-mobile: 14px;
+
+            /* ===== SPACING & LAYOUT ===== */
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-xxl: 40px;
+
+            /* ===== BORDER RADIUS ===== */
+            --border-radius: 8px;
+            --border-radius-pill: 24px;
+            --border-radius-circle: 50%;
+
+            /* ===== SHADOWS ===== */
+            --shadow-level-1: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-level-2: 0 4px 12px rgba(0, 0, 0, 0.15);
+            --shadow-level-3: 0 6px 16px rgba(0, 0, 0, 0.2);
+
+            /* ===== ANIMATIONS ===== */
+            --transition-fast: 200ms ease-in-out;
+            --transition-medium: 300ms ease-in-out;
+
+            /* ===== BREAKPOINTS ===== */
+            --breakpoint-mobile: 600px;
+            --breakpoint-tablet: 960px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -15,76 +74,78 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4facfe 100%);
+            font-family: var(--font-family);
+            font-size: var(--font-size-body-desktop);
+            line-height: var(--line-height);
+            letter-spacing: var(--letter-spacing);
+            color: var(--color-neutral-dark);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%);
             min-height: 100vh;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: var(--spacing-xl);
         }
 
         .header {
             text-align: center;
-            padding: 40px 0;
+            padding: var(--spacing-xxl) 0;
         }
 
         .logo {
             width: 120px;
             height: 120px;
-            margin: 0 auto 30px;
+            margin: 0 auto var(--spacing-xl);
             display: block;
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+            filter: drop-shadow(var(--shadow-level-1));
         }
 
         .hero-title {
             font-size: 3.5rem;
-            font-weight: 300;
+            font-weight: var(--font-weight-bold);
             color: white;
-            margin-bottom: 20px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: var(--spacing-lg);
+            text-shadow: var(--shadow-level-1);
         }
 
         .hero-subtitle {
             font-size: 1.5rem;
             color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 40px;
-            font-weight: 300;
+            margin-bottom: var(--spacing-xxl);
+            font-weight: 500;
         }
 
         .description {
             font-size: 1.2rem;
             color: rgba(255, 255, 255, 0.8);
             max-width: 800px;
-            margin: 0 auto 60px;
+            margin: 0 auto var(--spacing-xxl);
             text-align: center;
         }
 
         .portals-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xxl);
         }
 
         .portal-card {
             background: white;
-            border-radius: 16px;
-            padding: 40px 30px;
+            border-radius: var(--border-radius);
+            padding: var(--spacing-xxl) var(--spacing-xl);
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+            box-shadow: var(--shadow-level-1);
+            transition: var(--transition-fast);
             position: relative;
             overflow: hidden;
         }
 
         .portal-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            box-shadow: var(--shadow-level-2);
         }
 
         .portal-card::before {
@@ -94,14 +155,14 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #1e3c72, #4facfe);
+            background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
         }
 
         .portal-icon {
             width: 80px;
             height: 80px;
-            margin: 0 auto 20px;
-            border-radius: 50%;
+            margin: 0 auto var(--spacing-lg);
+            border-radius: var(--border-radius-circle);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -110,103 +171,90 @@
         }
 
         .business-icon {
-            background: linear-gradient(135deg, #1e3c72, #4facfe);
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
         }
 
         .enterprise-icon {
-            background: linear-gradient(135deg, #2a5298, #667eea);
+            background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
         }
 
         .admin-icon {
-            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
         }
 
         .portal-title {
             font-size: 1.5rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 15px;
+            font-weight: var(--font-weight-bold);
+            color: var(--color-neutral-dark);
+            margin-bottom: var(--spacing-md);
         }
 
         .portal-description {
-            color: #666;
-            margin-bottom: 25px;
-            line-height: 1.6;
+            color: var(--color-neutral-dark-70);
+            margin-bottom: var(--spacing-xl);
+            line-height: var(--line-height);
         }
 
         .portal-button {
             display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #1e3c72, #4facfe);
+            padding: var(--spacing-sm) var(--spacing-xl);
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: var(--border-radius-pill);
             font-weight: 500;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(30, 60, 114, 0.4);
+            transition: var(--transition-fast);
+            box-shadow: var(--shadow-level-1);
         }
 
         .portal-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(30, 60, 114, 0.6);
+            box-shadow: var(--shadow-level-2);
+            background: linear-gradient(135deg, var(--color-primary-hover), var(--color-accent));
         }
 
-        .status-banner {
-            background: rgba(255, 255, 255, 0.1);
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 40px;
+        .brand-section {
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: var(--spacing-xxl);
+            padding: var(--spacing-xxl);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
 
-        .status-text {
-            color: white;
+        .brand-tagline {
             font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--spacing-sm);
         }
 
-        .status-indicator {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            background: #4ade80;
-            border-radius: 50%;
-            margin-right: 10px;
-            animation: pulse 2s infinite;
+        .brand-slogan {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 500;
         }
 
-        @keyframes pulse {
-            0% {
-                opacity: 1;
+        @media (max-width: 600px) {
+            body {
+                font-size: var(--font-size-body-mobile);
             }
-
-            50% {
-                opacity: 0.5;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @media (max-width: 768px) {
+            
             .hero-title {
                 font-size: 2.5rem;
             }
-
+            
             .hero-subtitle {
                 font-size: 1.2rem;
             }
-
+            
+            .container {
+                padding: var(--spacing-md);
+            }
+            
             .portals-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .portal-card {
-                padding: 30px 20px;
+                gap: var(--spacing-lg);
             }
         }
     </style>
@@ -214,59 +262,51 @@
 
 <body>
     <div class="container">
-        <header class="header">
+        <div class="header">
             <img src="/logo.svg" alt="App-Oint Logo" class="logo">
             <h1 class="hero-title">App-Oint</h1>
             <p class="hero-subtitle">Smart Scheduling System</p>
             <p class="description">
-                App-Oint is a comprehensive scheduling platform for individuals, businesses, and enterprise clients.
-                Choose your portal to get started with smart scheduling and management.
+                App-Oint is a comprehensive scheduling platform designed for individuals, businesses, and enterprise clients. 
+                Streamline your appointments, manage your time efficiently, and connect with your clients seamlessly.
             </p>
-        </header>
+        </div>
 
         <div class="portals-grid">
             <div class="portal-card">
-                <div class="portal-icon business-icon">🏢</div>
-                <h2 class="portal-title">Business Portal</h2>
+                <div class="portal-icon business-icon">💼</div>
+                <h3 class="portal-title">Business Portal</h3>
                 <p class="portal-description">
-                    Manage appointments, staff, rooms, and analytics with our comprehensive business management suite.
+                    Complete business management solution with appointment scheduling, customer management, 
+                    analytics, and automated workflows.
                 </p>
-                <a href="https://app-oint-business-asit5.ondigitalocean.app" class="portal-button" target="_blank"
-                    rel="noopener">
-                    Enter Business Portal
-                </a>
+                <a href="https://business.app-oint.com" class="portal-button" target="_blank" rel="noopener">Access Business Portal</a>
             </div>
 
             <div class="portal-card">
-                <div class="portal-icon enterprise-icon">⚡</div>
-                <h2 class="portal-title">Enterprise Portal</h2>
+                <div class="portal-icon enterprise-icon">🏢</div>
+                <h3 class="portal-title">Enterprise Portal</h3>
                 <p class="portal-description">
-                    Integrate scheduling & geolocation via our REST API for seamless enterprise solutions.
+                    Advanced enterprise features with multi-location support, advanced reporting, 
+                    white-labeling, and API integrations.
                 </p>
-                <a href="https://app-oint-enterprise-kpxyy.ondigitalocean.app" class="portal-button" target="_blank"
-                    rel="noopener">
-                    Explore API Access
-                </a>
+                <a href="https://enterprise.app-oint.com" class="portal-button" target="_blank" rel="noopener">Access Enterprise Portal</a>
             </div>
 
             <div class="portal-card">
-                <div class="portal-icon admin-icon">🛡️</div>
-                <h2 class="portal-title">Admin Panel</h2>
+                <div class="portal-icon admin-icon">⚙️</div>
+                <h3 class="portal-title">Admin Panel</h3>
                 <p class="portal-description">
-                    Internal system dashboard for App-Oint administrators with full system oversight.
+                    Administrative dashboard for system management, user administration, 
+                    configuration, and monitoring.
                 </p>
-                <a href="https://app-oint-platform-3g3k2.ondigitalocean.app" class="portal-button" target="_blank"
-                    rel="noopener">
-                    Go to Admin Panel
-                </a>
+                <a href="https://admin.app-oint.com" class="portal-button" target="_blank" rel="noopener">Access Admin Panel</a>
             </div>
         </div>
 
-        <div class="status-banner">
-            <p class="status-text">
-                <span class="status-indicator"></span>
-                All systems operational - All portals deployed successfully
-            </p>
+        <div class="brand-section">
+            <p class="brand-tagline">Time Organized</p>
+            <p class="brand-slogan">Set • Send • Done</p>
         </div>
     </div>
 </body>
