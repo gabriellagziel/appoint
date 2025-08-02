@@ -4,65 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App-Oint - Appointment Scheduling</title>
+    <title>App-Oint - Appointment Scheduler</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* ===== COOL BLUES DESIGN SYSTEM TOKENS ===== */
         :root {
-            /* ===== COLORS ===== */
             --color-primary: #0A84FF;
             --color-secondary: #5AC8FA;
             --color-accent: #64D2FF;
             --color-neutral-dark: #141414;
             --color-neutral-light: #E5E5EA;
-
-            /* Color variations */
-            --color-primary-hover: #007AFF;
-            --color-primary-light: rgba(10, 132, 255, 0.1);
-            --color-secondary-light: rgba(90, 200, 250, 0.15);
-            --color-neutral-dark-70: rgba(20, 20, 20, 0.7);
-            --color-neutral-dark-50: rgba(20, 20, 20, 0.5);
-
-            /* ===== TYPOGRAPHY ===== */
             --font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            --font-size-heading-desktop: 24px;
-            --font-size-body-desktop: 16px;
-            --font-weight-bold: bold;
-            --font-weight-regular: normal;
-            --line-height: 1.4;
-            --letter-spacing: 0.5px;
-
-            /* ===== SPACING & LAYOUT ===== */
-            --spacing-xs: 4px;
             --spacing-sm: 8px;
             --spacing-md: 16px;
             --spacing-lg: 24px;
             --spacing-xl: 32px;
-            --spacing-xxl: 40px;
-
-            /* ===== BORDER RADIUS ===== */
             --border-radius: 8px;
-            --border-radius-pill: 24px;
-            --border-radius-circle: 50%;
-
-            /* ===== SHADOWS ===== */
             --shadow-level-1: 0 2px 8px rgba(0, 0, 0, 0.1);
             --shadow-level-2: 0 4px 12px rgba(0, 0, 0, 0.15);
-            --shadow-level-3: 0 6px 16px rgba(0, 0, 0, 0.2);
-
-            /* ===== ANIMATIONS ===== */
             --transition-fast: 200ms ease-in-out;
-            --transition-medium: 300ms ease-in-out;
-
-            /* ===== BREAKPOINTS ===== */
-            --breakpoint-mobile: 600px;
-            --breakpoint-tablet: 960px;
-
-            /* ===== LAYOUT ===== */
             --header-height: 64px;
             --sidebar-width: 240px;
-            --fab-size: 56px;
-            --bottom-nav-height: 80px;
         }
 
         * {
@@ -73,16 +34,12 @@
 
         body {
             font-family: var(--font-family);
-            font-size: var(--font-size-body-desktop);
-            line-height: var(--line-height);
-            letter-spacing: var(--letter-spacing);
-            color: var(--color-neutral-dark);
             background: var(--color-neutral-light);
             height: 100vh;
             overflow: hidden;
         }
 
-        /* ===== DESKTOP LAYOUT (1440×900) ===== */
+        /* Desktop Layout: 3-column grid */
         .app-container {
             display: grid;
             grid-template-columns: var(--sidebar-width) 2fr 1fr;
@@ -91,7 +48,7 @@
             margin: 0 auto;
         }
 
-        /* ===== HEADER ===== */
+        /* Header */
         .header {
             position: fixed;
             top: 0;
@@ -108,12 +65,6 @@
             box-shadow: var(--shadow-level-1);
         }
 
-        .header-left {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-lg);
-        }
-
         .logo {
             width: 40px;
             height: 40px;
@@ -121,8 +72,8 @@
         }
 
         .logo-text {
-            font-size: var(--font-size-heading-desktop);
-            font-weight: var(--font-weight-bold);
+            font-size: 24px;
+            font-weight: bold;
             color: var(--color-primary);
         }
 
@@ -130,7 +81,7 @@
             display: flex;
             align-items: center;
             background: var(--color-neutral-light);
-            border-radius: var(--border-radius-pill);
+            border-radius: 24px;
             padding: var(--spacing-sm) var(--spacing-lg);
             width: 300px;
         }
@@ -139,35 +90,28 @@
             border: none;
             background: transparent;
             outline: none;
-            font-size: var(--font-size-body-desktop);
-            color: var(--color-neutral-dark);
+            font-size: 16px;
             width: 100%;
         }
 
-        .header-right {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-lg);
-        }
-
-        .profile-button {
-            width: 40px;
-            height: 40px;
-            border-radius: var(--border-radius-circle);
+        .new-meeting-btn {
             background: var(--color-primary);
-            border: none;
             color: white;
-            font-weight: var(--font-weight-bold);
+            border: none;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: 24px;
+            font-weight: bold;
             cursor: pointer;
             transition: var(--transition-fast);
         }
 
-        .profile-button:hover {
+        .new-meeting-btn:hover {
+            background: #007AFF;
             transform: scale(1.02);
             box-shadow: var(--shadow-level-2);
         }
 
-        /* ===== SIDEBAR ===== */
+        /* Sidebar */
         .sidebar {
             background: white;
             border-right: 1px solid var(--color-neutral-light);
@@ -185,11 +129,11 @@
             margin-bottom: var(--spacing-sm);
             cursor: pointer;
             transition: var(--transition-fast);
-            color: var(--color-neutral-dark-70);
+            color: rgba(20, 20, 20, 0.7);
         }
 
         .nav-item:hover {
-            background: var(--color-primary-light);
+            background: rgba(10, 132, 255, 0.1);
             color: var(--color-primary);
         }
 
@@ -198,12 +142,7 @@
             color: white;
         }
 
-        .nav-icon {
-            width: 20px;
-            height: 20px;
-        }
-
-        /* ===== CALENDAR ===== */
+        /* Calendar */
         .calendar-section {
             margin-top: var(--header-height);
             padding: var(--spacing-xl);
@@ -219,26 +158,9 @@
         }
 
         .calendar-title {
-            font-size: var(--font-size-heading-desktop);
-            font-weight: var(--font-weight-bold);
+            font-size: 24px;
+            font-weight: bold;
             color: var(--color-neutral-dark);
-        }
-
-        .new-meeting-btn {
-            background: var(--color-primary);
-            color: white;
-            border: none;
-            padding: var(--spacing-sm) var(--spacing-lg);
-            border-radius: var(--border-radius-pill);
-            font-weight: var(--font-weight-bold);
-            cursor: pointer;
-            transition: var(--transition-fast);
-        }
-
-        .new-meeting-btn:hover {
-            background: var(--color-primary-hover);
-            transform: scale(1.02);
-            box-shadow: var(--shadow-level-2);
         }
 
         .calendar-grid {
@@ -259,11 +181,11 @@
         }
 
         .calendar-day.current {
-            background: var(--color-secondary-light);
+            background: rgba(90, 200, 250, 0.15);
         }
 
         .day-header {
-            font-weight: var(--font-weight-bold);
+            font-weight: bold;
             margin-bottom: var(--spacing-sm);
             color: var(--color-neutral-dark);
         }
@@ -271,7 +193,7 @@
         .time-slot {
             background: var(--color-primary);
             color: white;
-            padding: var(--spacing-xs) var(--spacing-sm);
+            padding: 4px var(--spacing-sm);
             border-radius: var(--border-radius);
             font-size: 12px;
             margin-bottom: var(--spacing-xs);
@@ -280,11 +202,11 @@
         }
 
         .time-slot:hover {
-            background: var(--color-primary-hover);
+            background: #007AFF;
             transform: scale(1.02);
         }
 
-        /* ===== DETAIL PANEL ===== */
+        /* Detail Panel */
         .detail-panel {
             margin-top: var(--header-height);
             padding: var(--spacing-xl);
@@ -293,8 +215,8 @@
         }
 
         .panel-title {
-            font-size: var(--font-size-heading-desktop);
-            font-weight: var(--font-weight-bold);
+            font-size: 24px;
+            font-weight: bold;
             color: var(--color-neutral-dark);
             margin-bottom: var(--spacing-lg);
         }
@@ -315,23 +237,23 @@
         }
 
         .meeting-time {
-            font-weight: var(--font-weight-bold);
+            font-weight: bold;
             color: var(--color-primary);
             margin-bottom: var(--spacing-sm);
         }
 
         .meeting-title {
-            font-weight: var(--font-weight-bold);
+            font-weight: bold;
             color: var(--color-neutral-dark);
             margin-bottom: var(--spacing-sm);
         }
 
         .meeting-participants {
-            color: var(--color-neutral-dark-70);
+            color: rgba(20, 20, 20, 0.7);
             font-size: 14px;
         }
 
-        /* ===== RESPONSIVE DESIGN ===== */
+        /* Responsive */
         @media (max-width: 960px) {
             .app-container {
                 grid-template-columns: 200px 1fr;
@@ -353,62 +275,55 @@
                 top: var(--header-height);
                 height: calc(100vh - var(--header-height));
                 z-index: 999;
-                transition: var(--transition-medium);
+                transition: 300ms ease-in-out;
             }
 
             .sidebar.open {
                 left: 0;
-            }
-
-            .calendar-section {
-                margin-left: 0;
             }
         }
     </style>
 </head>
 
 <body>
-    <!-- ===== HEADER ===== -->
+    <!-- Header -->
     <header class="header">
-        <div class="header-left">
+        <div style="display: flex; align-items: center; gap: var(--spacing-lg);">
             <img src="/logo.svg" alt="App-Oint Logo" class="logo">
             <span class="logo-text">App-Oint</span>
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="Search meetings, people...">
             </div>
         </div>
-        <div class="header-right">
-            <button class="profile-button">A</button>
-        </div>
+        <button class="new-meeting-btn">+ New Meeting</button>
     </header>
 
-    <!-- ===== MAIN APP CONTAINER ===== -->
+    <!-- Main App Container -->
     <div class="app-container">
-        <!-- ===== SIDEBAR ===== -->
+        <!-- Sidebar -->
         <nav class="sidebar">
             <div class="nav-item active">
-                <span class="nav-icon">📅</span>
+                <span>📅</span>
                 <span>Calendar</span>
             </div>
             <div class="nav-item">
-                <span class="nav-icon">👥</span>
+                <span>👥</span>
                 <span>People</span>
             </div>
             <div class="nav-item">
-                <span class="nav-icon">📊</span>
+                <span>📊</span>
                 <span>Analytics</span>
             </div>
             <div class="nav-item">
-                <span class="nav-icon">⚙️</span>
+                <span>⚙️</span>
                 <span>Settings</span>
             </div>
         </nav>
 
-        <!-- ===== CALENDAR SECTION ===== -->
+        <!-- Calendar Section -->
         <main class="calendar-section">
             <div class="calendar-header">
                 <h1 class="calendar-title">This Week</h1>
-                <button class="new-meeting-btn">+ New Meeting</button>
             </div>
 
             <div class="calendar-grid">
@@ -437,7 +352,7 @@
             </div>
         </main>
 
-        <!-- ===== DETAIL PANEL ===== -->
+        <!-- Detail Panel -->
         <aside class="detail-panel">
             <h2 class="panel-title">Upcoming Meetings</h2>
 
@@ -462,13 +377,7 @@
     </div>
 
     <script>
-        // Mobile sidebar toggle
-        function toggleSidebar() {
-            const sidebar = document.querySelector('.sidebar');
-            sidebar.classList.toggle('open');
-        }
-
-        // Add click handlers for navigation
+        // Navigation
         document.querySelectorAll('.nav-item').forEach(item => {
             item.addEventListener('click', function () {
                 document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
@@ -476,7 +385,7 @@
             });
         });
 
-        // Add hover effects for meeting cards
+        // Meeting cards hover
         document.querySelectorAll('.meeting-card').forEach(card => {
             card.addEventListener('mouseenter', function () {
                 this.style.transform = 'scale(1.02)';
@@ -489,7 +398,7 @@
             });
         });
 
-        // Add click handlers for time slots
+        // Time slots
         document.querySelectorAll('.time-slot').forEach(slot => {
             slot.addEventListener('click', function () {
                 alert('Meeting details: ' + this.textContent);
