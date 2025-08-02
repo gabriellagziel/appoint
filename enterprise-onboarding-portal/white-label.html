@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Label Configuration - App-Oint Enterprise</title>
     <style>
+        :root {
+            --color-primary: #0A84FF;
+            --color-secondary: #5AC8FA;
+            --color-accent: #64D2FF;
+            --color-neutral-dark: #141414;
+            --color-neutral-light: #E5E5EA;
+            --font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+            --border-radius: 8px;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
         * {
             margin: 0;
             padding: 0;
@@ -14,7 +24,7 @@
 
         body {
             font-family: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif';
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4facfe 100%);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%);
             min-height: 100vh;
             color: white;
         }

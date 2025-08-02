@@ -21,10 +21,10 @@ android {
 
     signingConfigs {
         create("release") {
-            keyAlias = System.getenv("ANDROID_KEY_ALIAS") ?: "release"
-            keyPassword = System.getenv("ANDROID_KEY_PASSWORD") ?: ""
-            storeFile = System.getenv("ANDROID_KEYSTORE_PATH")?.let { file(it) } ?: file("keystore.jks")
-            storePassword = System.getenv("ANDROID_KEYSTORE_PASSWORD") ?: ""
+            keyAlias = System.getenv("ANDROID_KEY_ALIAS") ?: "appoint_release"
+            keyPassword = System.getenv("ANDROID_KEY_PASSWORD") ?: "appoint123"
+            storeFile = System.getenv("ANDROID_KEYSTORE_PATH")?.let { file(it) } ?: file("release.keystore")
+            storePassword = System.getenv("ANDROID_KEYSTORE_PASSWORD") ?: "appoint123"
         }
     }
 
@@ -41,9 +41,15 @@ android {
             signingConfig = signingConfigs.getByName("release")
             isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            isDebuggable = false
+            isJniDebuggable = false
+            isRenderscriptDebuggable = false
+            isPseudoLocalesEnabled = false
+            isZipAlignEnabled = true
         }
         debug {
             signingConfig = signingConfigs.getByName("debug")
+            isDebuggable = true
         }
     }
 }
