@@ -1,0 +1,201 @@
+/* ===== COOL BLUES DESIGN SYSTEM TOKENS ===== */
+
+:root {
+  /* ===== COLORS ===== */
+  --color-primary: #0A84FF;
+  --color-secondary: #5AC8FA;
+  --color-accent: #64D2FF;
+  --color-neutral-dark: #141414;
+  --color-neutral-light: #E5E5EA;
+  
+  /* Color variations */
+  --color-primary-hover: #007AFF;
+  --color-primary-light: rgba(10, 132, 255, 0.1);
+  --color-secondary-light: rgba(90, 200, 250, 0.15);
+  --color-neutral-dark-70: rgba(20, 20, 20, 0.7);
+  --color-neutral-dark-50: rgba(20, 20, 20, 0.5);
+  
+  /* ===== TYPOGRAPHY ===== */
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Desktop Typography */
+  --font-size-heading-desktop: 24px;
+  --font-size-body-desktop: 16px;
+  --font-weight-bold: bold;
+  --font-weight-regular: normal;
+  --line-height: 1.4;
+  --letter-spacing: 0.5px;
+  
+  /* Mobile Typography */
+  --font-size-heading-mobile: 20px;
+  --font-size-body-mobile: 14px;
+  
+  /* ===== SPACING & LAYOUT ===== */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 40px;
+  
+  /* ===== BORDER RADIUS ===== */
+  --border-radius: 8px;
+  --border-radius-pill: 24px;
+  --border-radius-circle: 50%;
+  
+  /* ===== SHADOWS ===== */
+  --shadow-level-1: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-level-2: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-level-3: 0 6px 16px rgba(0, 0, 0, 0.2);
+  
+  /* ===== ANIMATIONS ===== */
+  --transition-fast: 200ms ease-in-out;
+  --transition-medium: 300ms ease-in-out;
+  
+  /* ===== BREAKPOINTS ===== */
+  --breakpoint-mobile: 600px;
+  --breakpoint-tablet: 960px;
+  
+  /* ===== LAYOUT ===== */
+  --header-height: 64px;
+  --sidebar-width: 240px;
+  --fab-size: 56px;
+  --bottom-nav-height: 80px;
+}
+
+/* ===== RESPONSIVE UTILITIES ===== */
+@media (max-width: 600px) {
+  :root {
+    --font-size-heading: var(--font-size-heading-mobile);
+    --font-size-body: var(--font-size-body-mobile);
+  }
+}
+
+@media (min-width: 601px) {
+  :root {
+    --font-size-heading: var(--font-size-heading-desktop);
+    --font-size-body: var(--font-size-body-desktop);
+  }
+}
+
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-neutral-dark);
+  background: var(--color-neutral-light);
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-heading {
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+
+.text-body {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-neutral-dark {
+  color: var(--color-neutral-dark);
+}
+
+.text-neutral-dark-70 {
+  color: var(--color-neutral-dark-70);
+}
+
+.text-neutral-dark-50 {
+  color: var(--color-neutral-dark-50);
+}
+
+.bg-primary {
+  background: var(--color-primary);
+}
+
+.bg-secondary {
+  background: var(--color-secondary);
+}
+
+.bg-accent {
+  background: var(--color-accent);
+}
+
+.bg-neutral-light {
+  background: var(--color-neutral-light);
+}
+
+.bg-white {
+  background: white;
+}
+
+.shadow-level-1 {
+  box-shadow: var(--shadow-level-1);
+}
+
+.shadow-level-2 {
+  box-shadow: var(--shadow-level-2);
+}
+
+.shadow-level-3 {
+  box-shadow: var(--shadow-level-3);
+}
+
+.rounded {
+  border-radius: var(--border-radius);
+}
+
+.rounded-pill {
+  border-radius: var(--border-radius-pill);
+}
+
+.rounded-circle {
+  border-radius: var(--border-radius-circle);
+}
+
+.transition-fast {
+  transition: var(--transition-fast);
+}
+
+.transition-medium {
+  transition: var(--transition-medium);
+}
+
+/* ===== SPACING UTILITIES ===== */
+.p-xs { padding: var(--spacing-xs); }
+.p-sm { padding: var(--spacing-sm); }
+.p-md { padding: var(--spacing-md); }
+.p-lg { padding: var(--spacing-lg); }
+.p-xl { padding: var(--spacing-xl); }
+
+.m-xs { margin: var(--spacing-xs); }
+.m-sm { margin: var(--spacing-sm); }
+.m-md { margin: var(--spacing-md); }
+.m-lg { margin: var(--spacing-lg); }
+.m-xl { margin: var(--spacing-xl); }
+
+.gap-xs { gap: var(--spacing-xs); }
+.gap-sm { gap: var(--spacing-sm); }
+.gap-md { gap: var(--spacing-md); }
+.gap-lg { gap: var(--spacing-lg); }
+.gap-xl { gap: var(--spacing-xl); } 
