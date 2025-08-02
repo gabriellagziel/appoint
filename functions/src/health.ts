@@ -1,82 +1,22 @@
-import * as admin from 'firebase-admin';
-import { onRequest } from 'firebase-functions/v2/https';
+import { Request, Response } from 'express';
 
-// Named exports for health endpoints
-export function liveness(req: any, res: any) {
+// Liveness probe - checks if the application is alive
+export const liveness = (req: Request, res: Response) => {
   res.status(200).json({
-    status: 'alive',
+    status: 'ok',
     timestamp: new Date().toISOString(),
-    service: 'firebase-functions',
-    uptime: process.uptime()
+    service: 'appoint-functions',
+    type: 'liveness'
   });
-}
+};
 
-export function readiness(req: any, res: any) {
-  // Perform readiness checks
-  try {
-    // Check if Firestore is accessible
-    const db = admin.firestore();
-    if (!db) {
-      throw new Error('Firestore not available');
-    }
-
-    const healthStatus = {
-      status: 'ready',
-      timestamp: new Date().toISOString(),
-      service: 'firebase-functions',
-      version: '1.0.0',
-      environment: process.env.NODE_ENV || 'development',
-      uptime: process.uptime(),
-      memory: process.memoryUsage(),
-    };
-
-    res.status(200).json(healthStatus);
-  } catch (error) {
-    console.error('Readiness check failed:', error);
-    res.status(503).json({
-      status: 'not ready',
-      timestamp: new Date().toISOString(),
-      message: 'Readiness check failed'
-    });
-  }
-}
-
-export const status = onRequest((req, res) => {
-  // Set CORS headers
-  res.set('Access-Control-Allow-Origin', '*');
-  res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-
-  // Handle preflight requests
-  if (req.method === 'OPTIONS') {
-    res.status(204).send('');
-    return;
-  }
-
-  // Only allow GET requests for health checks
-  if (req.method !== 'GET') {
-    res.status(405).json({ error: 'Method not allowed' });
-    return;
-  }
-
-  try {
-    const healthStatus = {
-      status: 'ok',
-      timestamp: new Date().toISOString(),
-      service: 'firebase-functions',
-      version: '1.0.0',
-      environment: process.env.NODE_ENV || 'development',
-      uptime: process.uptime(),
-      memory: process.memoryUsage(),
-    };
-
-    res.status(200).json(healthStatus);
-  } catch (error) {
-    console.error('Health check failed:', error);
-    res.status(500).json({
-      status: 'error',
-      timestamp: new Date().toISOString(),
-      message: 'Health check failed'
-    });
-  }
-});
+// Readiness probe - checks if the application is ready to serve requests
+export const readiness = (req: Request, res: Response) => {
+  // Add any additional checks here (database connectivity, etc.)
+  res.status(200).json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    service: 'appoint-functions',
+    type: 'readiness'
+  });
+};
