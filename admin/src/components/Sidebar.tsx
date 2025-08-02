@@ -1,17 +1,27 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import {
+  BarChart3,
+  CreditCard,
+  Flag,
+  Gavel,
+  Gift,
+  Globe,
+  Home,
+  Key,
+  List,
+  Megaphone,
+  Menu,
+  MessageSquare,
+  Settings,
+  Shield,
+  Users,
+  Users2
+} from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { 
-  Users, 
-  Settings, 
-  BarChart3, 
-  Home,
-  Menu,
-  List
-} from "lucide-react"
 import { Logo } from "./Logo"
 
 interface SidebarProps {
@@ -23,6 +33,17 @@ const navigation = [
   { name: "Dashboard", href: "/admin", icon: Home },
   { name: "Users", href: "/admin/users", icon: Users },
   { name: "Analytics", href: "/admin/analytics", icon: BarChart3 },
+  { name: "Free Passes", href: "/admin/free-passes", icon: Gift },
+  { name: "Ambassador Program", href: "/admin/ambassadors", icon: Users2 },
+  { name: "Business Accounts", href: "/admin/business", icon: Shield },
+  { name: "Billing & Revenue", href: "/admin/billing", icon: CreditCard },
+  { name: "Security & Abuse", href: "/admin/security", icon: Shield },
+  { name: "API Admin", href: "/admin/api", icon: Key },
+  { name: "Localization", href: "/admin/localization", icon: Globe },
+  { name: "Feature Flags", href: "/admin/features", icon: Flag },
+  { name: "Legal & Compliance", href: "/admin/legal", icon: Gavel },
+  { name: "Admin Communication", href: "/admin/communication", icon: MessageSquare },
+  { name: "Broadcasts", href: "/admin/broadcasts", icon: Megaphone },
   { name: "Features", href: "/FEATURE_INVENTORY.md", icon: List, external: true },
   { name: "Settings", href: "/admin/settings", icon: Settings },
 ]
@@ -34,7 +55,7 @@ export function Sidebar({ isOpen, onToggle }: SidebarProps) {
     <>
       {/* Mobile overlay */}
       {isOpen && (
-        <div 
+        <div
           className="fixed inset-0 z-40 bg-black bg-opacity-50 lg:hidden"
           onClick={onToggle}
         />
@@ -63,10 +84,10 @@ export function Sidebar({ isOpen, onToggle }: SidebarProps) {
           <nav className="flex-1 px-4 py-6 space-y-2">
             {navigation.map((item) => {
               const isActive = pathname === item.href
-              const linkProps = item.external 
+              const linkProps = item.external
                 ? { href: item.href, target: "_blank", rel: "noopener noreferrer" }
                 : { href: item.href }
-              
+
               return (
                 <Link
                   key={item.name}

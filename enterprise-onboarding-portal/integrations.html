@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Integrations - App-Oint Enterprise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif';
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            opacity: 0.8;
+            margin-bottom: 40px;
+        }
+
+        .integrations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            color: #2c3e50;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .integration-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .integration-info h4 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        .integration-info p {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🚀 App-Oint Enterprise</div>
+            <div class="nav-links">
+                <a href="dashboard.html" class="nav-link">📊 Dashboard</a>
+                <a href="locations.html" class="nav-link">🏢 Locations</a>
+                <a href="analytics.html" class="nav-link">📈 Analytics</a>
+                <a href="integrations.html" class="nav-link">🔗 Integrations</a>
+                <a href="white-label.html" class="nav-link">🎨 White Label</a>
+                <a href="api-keys.html" class="nav-link">🔑 API Keys</a>
+                <a href="settings.html" class="nav-link">⚙️ Settings</a>
+            </div>
+        </div>
+
+        <h1 class="page-title">🔗 Custom Integrations</h1>
+        <p class="page-subtitle">Seamless integration with your existing systems</p>
+
+        <div class="integrations-grid">
+            <div class="card">
+                <h3>📊 CRM Integrations</h3>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>Salesforce</h4>
+                        <p>Customer data synchronization</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>HubSpot</h4>
+                        <p>Lead management integration</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>Pipedrive</h4>
+                        <p>Pipeline management</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>💼 ERP Integrations</h3>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>SAP</h4>
+                        <p>Enterprise resource planning</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>Oracle NetSuite</h4>
+                        <p>Financial management</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>Microsoft Dynamics</h4>
+                        <p>Business process automation</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>💳 Payment Integrations</h3>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>Stripe</h4>
+                        <p>Payment processing</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>PayPal</h4>
+                        <p>Digital payments</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>Square</h4>
+                        <p>Point of sale</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📧 Communication Integrations</h3>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>Slack</h4>
+                        <p>Team notifications</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>Microsoft Teams</h4>
+                        <p>Collaboration platform</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+                <div class="integration-item">
+                    <div class="integration-info">
+                        <h4>Zapier</h4>
+                        <p>Workflow automation</p>
+                    </div>
+                    <div class="status-badge">Connected</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

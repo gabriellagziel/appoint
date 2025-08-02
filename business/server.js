@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 const app = express();
 const PORT = process.env.PORT || 80;
 
@@ -8,6 +10,15 @@ const PORT = process.env.PORT || 80;
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'dist')));
+
+// In-memory storage (replace with database in production)
+const users = new Map();
+const JWT_SECRET = process.env.JWT_SECRET || 'business-secret-key';
+
+// Generate JWT token
+function generateToken(userId) {
+    return jwt.sign({ userId }, JWT_SECRET, { expiresIn: '24h' });
+}
 
 // Health check endpoint
 app.get('/health', (req, res) => {
@@ -87,6 +98,86 @@ app.get('/api/payments', (req, res) => {
             }
         ]
     });
+});
+
+// Authentication endpoints
+app.post('/api/auth/login', async (req, res) => {
+    try {
+        const { email, password } = req.body;
+
+        // Validate input
+        if (!email || !password) {
+            return res.status(400).json({ error: 'Email and password are required' });
+        }
+
+        // Check if user exists (for demo, accept any valid email/password)
+        if (email && password) {
+            const userId = Math.floor(Math.random() * 1000);
+            const token = generateToken(userId);
+
+            res.json({
+                success: true,
+                token,
+                user: {
+                    id: userId,
+                    email,
+                    name: 'Business User'
+                }
+            });
+        } else {
+            res.status(401).json({ error: 'Invalid credentials' });
+        }
+    } catch (error) {
+        console.error('Login error:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+app.post('/api/auth/register', async (req, res) => {
+    try {
+        const { email, password, name } = req.body;
+
+        // Validate input
+        if (!email || !password || !name) {
+            return res.status(400).json({ error: 'Email, password, and name are required' });
+        }
+
+        // Check if user already exists
+        if (users.has(email)) {
+            return res.status(409).json({ error: 'User already exists' });
+        }
+
+        // Hash password
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        // Create user
+        const userId = Math.floor(Math.random() * 1000);
+        const user = {
+            id: userId,
+            email,
+            name,
+            password: hashedPassword,
+            createdAt: new Date().toISOString()
+        };
+
+        users.set(email, user);
+
+        // Generate token
+        const token = generateToken(userId);
+
+        res.status(201).json({
+            success: true,
+            token,
+            user: {
+                id: userId,
+                email,
+                name
+            }
+        });
+    } catch (error) {
+        console.error('Registration error:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
 });
 
 app.post('/api/appointments', (req, res) => {

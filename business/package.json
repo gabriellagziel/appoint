@@ -2,7 +2,7 @@
   "name": "business-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "mkdir -p dist && cp -r public/* dist/ && echo 'Business app built successfully'",
+    "build": "mkdir -p dist && cp -r public/* dist/ && cp *.html dist/ && echo 'Business app built successfully'",
     "export": "mkdir -p out && cp public/index.html out/index.html",
     "start": "node server.js"
   },
@@ -10,6 +10,8 @@
     "express": "^4.18.2",
     "cors": "^2.8.5",
     "serve": "^14.2.1",
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2"
   }
 }
