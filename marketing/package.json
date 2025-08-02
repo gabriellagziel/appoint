@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "echo 'Marketing app built successfully'",
-    "start": "npx http-server public -p 3000",
+    "start": "npx http-server public -p 8080",
     "serve": "http-server public",
     "lint": "echo 'Linting disabled'",
     "type-check": "echo 'TypeScript disabled'",
