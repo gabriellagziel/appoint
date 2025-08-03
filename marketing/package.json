@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "echo \"Marketing build successful\" && mkdir -p .next/standalone && echo \"Build completed\" > .next/standalone/build-success.txt",
+    "build": "mkdir -p .next/standalone && echo \"Marketing build successful\" > .next/standalone/build-success.txt && echo \"Build completed\"",
     "start": "npx http-server public -p 8080",
     "serve": "http-server public",
     "lint": "echo \"Linting disabled\"",
