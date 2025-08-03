@@ -1,22 +1,61 @@
-import { NextResponse } from "next/server"
+import { getToken } from "next-auth/jwt"
 import type { NextRequest } from "next/server"
+import { NextResponse } from "next/server"
 import { isMobileOrTablet } from "./utils/deviceDetection"
 
-// Mock admin check - replace with actual authentication logic
-function isAdminUser(request: NextRequest): boolean {
-  // For demo purposes, we'll assume admin access
-  // In real implementation, check JWT token, session, etc.
-  const adminHeader = request.headers.get('x-admin-user')
-  const adminCookie = request.cookies.get('admin-session')
-  
-  // For now, allow access (replace with real auth logic)
-  return true
+// Admin UIDs - loaded from environment variables in production
+const getAdminUids = (): string[] => {
+  const envUids = process.env.ADMIN_UID_WHITELIST
+  if (envUids) {
+    return envUids.split(',').map(uid => uid.trim())
+  }
+
+  // Fallback for development
+  return [
+    "admin_001",
+    "admin_002",
+    "admin_003"
+  ]
 }
 
-export function middleware(request: NextRequest) {
+// Check if user is admin
+async function isAdminUser(request: NextRequest): Promise<boolean> {
+  try {
+    const adminUids = getAdminUids()
+
+    // Check for admin header (for API routes)
+    const adminHeader = request.headers.get('x-admin-user')
+    if (adminHeader && adminUids.includes(adminHeader)) {
+      return true
+    }
+
+    // Check for admin session cookie
+    const adminCookie = request.cookies.get('admin-session')
+    if (adminCookie && adminUids.includes(adminCookie.value)) {
+      return true
+    }
+
+    // Check NextAuth JWT token
+    const token = await getToken({
+      req: request,
+      secret: process.env.NEXTAUTH_SECRET
+    })
+
+    if (token?.role === 'admin' || adminUids.includes(token?.sub || '')) {
+      return true
+    }
+
+    return false
+  } catch (error) {
+    console.error('Admin check error:', error)
+    return false
+  }
+}
+
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   const userAgent = request.headers.get('user-agent') || ''
-  
+
   // Skip middleware for static files and API routes
   if (
     pathname.startsWith('/_next') ||
@@ -28,22 +67,26 @@ export function middleware(request: NextRequest) {
     return NextResponse.next()
   }
 
-  // Check if user is admin
-  if (!isAdminUser(request)) {
-    // Redirect to auth page (implement as needed)
-    const loginUrl = new URL('/auth/login', request.url)
-    loginUrl.searchParams.set('callbackUrl', pathname)
-    return NextResponse.redirect(loginUrl)
+  // Check if accessing admin routes
+  if (pathname.startsWith('/admin') || pathname === '/') {
+    const isAdmin = await isAdminUser(request)
+
+    if (!isAdmin) {
+      // Redirect to auth page
+      const loginUrl = new URL('/auth/login', request.url)
+      loginUrl.searchParams.set('callbackUrl', pathname)
+      return NextResponse.redirect(loginUrl)
+    }
   }
 
   // Device-based routing
   const isMobile = isMobileOrTablet(userAgent)
-  
+
   // If accessing root on mobile, redirect to quick dashboard
   if (pathname === '/' && isMobile) {
     return NextResponse.redirect(new URL('/quick', request.url))
   }
-  
+
   // If accessing quick dashboard on desktop, show desktop version
   if (pathname === '/quick' && !isMobile) {
     // Allow access but add a header to indicate desktop access

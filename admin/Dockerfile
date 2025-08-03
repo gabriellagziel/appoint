@@ -1,92 +1,59 @@
-# Multi-stage Dockerfile for Admin Static Site
-# Optimized for production deployment with health checks
+# Use the official Node.js runtime as the base image
+FROM node:18-alpine AS base
 
-# Stage 1: Build Stage (Node.js for build tools)
-FROM node:22-alpine AS builder
+# Install dependencies only when needed
+FROM base AS deps
+# Check https://github.com/nodejs/docker-node/tree/REDACTED_TOKEN#nodealpine to understand why libc6-compat might be needed.
+RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-# Install build dependencies if needed
-RUN apk add --no-cache \
-    curl \
-    git
+# Install dependencies based on the preferred package manager
+COPY package.json package-lock.json* ./
+RUN npm ci --only=production
 
-# Copy package files
-COPY package*.json ./
-
-# Install dependencies (if any)
-RUN npm ci --only=production && npm cache clean --force
-
-# Copy source files
-COPY public/ ./public/
-COPY *.conf ./
-
-# Build the application (prepare static files)
-RUN npm run export
-
-# Stage 2: Development (optional, for development mode)
-FROM node:22-alpine AS development
+# Rebuild the source code only when needed
+FROM base AS builder
 WORKDIR /app
-
-# Install runtime dependencies
-RUN apk add --no-cache curl
-
-# Copy package files and install all dependencies
-COPY package*.json ./
-RUN npm ci
-
-# Copy source files
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Build for development
-RUN npm run export
+# Next.js collects completely anonymous telemetry data about general usage.
+# Learn more here: https://nextjs.org/telemetry
+# Uncomment the following line in case you want to disable telemetry during the build.
+ENV NEXT_TELEMETRY_DISABLED 1
 
-ENV NODE_ENV=development
-EXPOSE 8082
+RUN npm run build
 
-# Use serve for development
-CMD ["npm", "run", "serve"]
+# Production image, copy all the files and run next
+FROM base AS runner
+WORKDIR /app
 
-# Stage 3: Production Runtime (Nginx)
-FROM nginx:1.25-alpine AS production
+ENV NODE_ENV production
+# Uncomment the following line in case you want to disable telemetry during runtime.
+ENV NEXT_TELEMETRY_DISABLED 1
 
-# Install dependencies for health checks and monitoring
-RUN apk add --no-cache \
-    curl \
-    tzdata \
-    tini \
-    && rm -rf /var/cache/apk/*
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
 
-# Create non-root user for better security
-RUN addgroup -g 1001 -S admin && \
-    adduser -S admin -u 1001 -G admin
+COPY --from=builder /app/public ./public
 
-# Copy built static files from builder stage
-COPY --from=builder --chown=admin:admin /app/out /var/www/html
+# Set the correct permission for prerender cache
+RUN mkdir .next
+RUN chown nextjs:nodejs .next
 
-# Copy nginx configuration
-COPY --chown=admin:admin nginx.conf /etc/nginx/nginx.conf
+# Automatically leverage output traces to reduce image size
+# https://nextjs.org/docs/advanced-features/output-file-tracing
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Create health check endpoint
-RUN echo '<!DOCTYPE html><html><head><title>Health Check</title></head><body><h1>OK</h1><p>Admin service is healthy</p><script>window.healthStatus = "healthy";</script></body></html>' > /var/www/html/health.html
+USER nextjs
 
-# Create logs directory and set permissions
-RUN mkdir -p /var/log/nginx /var/cache/nginx /var/run \
-    && chown -R admin:admin /var/www/html /var/log/nginx /var/cache/nginx /var/run \
-    && chmod -R 755 /var/www/html
+EXPOSE 3000
 
-# Set environment variables
-ENV NGINX_ENVSUBST_OUTPUT_DIR=/etc/nginx
-ENV NGINX_PORT=8082
+ENV PORT 3000
+# set hostname to localhost
+ENV HOSTNAME "0.0.0.0"
 
-# Expose port
-EXPOSE 8082
-
-# Health check - test both main page and health endpoint
-HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
-    CMD curl -f http://localhost:8082/health.html && curl -f http://localhost:8082/ || exit 1
-
-# Use tini for proper signal handling
-ENTRYPOINT ["/sbin/tini", "--"]
-
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# server.js is created by next build from the standalone output
+# https://nextjs.org/docs/pages/api-reference/next-config-js/output
+CMD ["node", "server.js"]
