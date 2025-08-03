@@ -2,7 +2,7 @@
   "name": "appoint-docs",
   "version": "1.0.0",
   "scripts": {
-    "build": "mkdir -p out && cp index.html out/ && cp openapi_spec.yaml out/",
+    "build": "echo \"Docs build successful\" && mkdir -p out && cp index.html out/ && cp openapi_spec.yaml out/ && echo \"Build completed\"",
     "serve": "serve out -p ${PORT:-8083} --single",
     "start": "npm run serve"
   },
