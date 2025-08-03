@@ -1,12 +1,12 @@
 "use client"
 
-import { useState } from "react"
 import { AdminLayout } from "@/components/AdminLayout"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { useState } from "react"
 
 export default function SettingsPage() {
   const [formData, setFormData] = useState({
@@ -63,17 +63,22 @@ export default function SettingsPage() {
                   <Label htmlFor="timezone">Timezone</Label>
                   <Select
                     value={formData.timezone}
-                    onChange={(e) => setFormData({ ...formData, timezone: e.target.value })}
+                    onValueChange={(value) => setFormData({ ...formData, timezone: value })}
                   >
-                    <SelectItem value="">Select timezone</SelectItem>
-                    <SelectItem value="UTC">UTC</SelectItem>
-                    <SelectItem value="America/New_York">Eastern Time</SelectItem>
-                    <SelectItem value="America/Chicago">Central Time</SelectItem>
-                    <SelectItem value="America/Denver">Mountain Time</SelectItem>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select timezone" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="">Select timezone</SelectItem>
+                      <SelectItem value="UTC">UTC</SelectItem>
+                      <SelectItem value="America/New_York">Eastern Time</SelectItem>
+                      <SelectItem value="America/Chicago">Central Time</SelectItem>
+                      <SelectItem value="America/Denver">Mountain Time</SelectItem>
                       <SelectItem value="America/Los_Angeles">Pacific Time</SelectItem>
                       <SelectItem value="Europe/London">London</SelectItem>
                       <SelectItem value="Europe/Paris">Paris</SelectItem>
                       <SelectItem value="Asia/Tokyo">Tokyo</SelectItem>
+                    </SelectContent>
                   </Select>
                 </div>
               </CardContent>
@@ -134,20 +139,30 @@ export default function SettingsPage() {
                 <div className="space-y-2">
                   <Label htmlFor="passwordPolicy">Password Policy</Label>
                   <Select defaultValue="strong">
-                    <SelectItem value="">Select password policy</SelectItem>
-                    <SelectItem value="weak">Weak (6+ characters)</SelectItem>
-                    <SelectItem value="medium">Medium (8+ characters)</SelectItem>
-                    <SelectItem value="strong">Strong (12+ characters)</SelectItem>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select password policy" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="">Select password policy</SelectItem>
+                      <SelectItem value="weak">Weak (6+ characters)</SelectItem>
+                      <SelectItem value="medium">Medium (8+ characters)</SelectItem>
+                      <SelectItem value="strong">Strong (12+ characters)</SelectItem>
+                    </SelectContent>
                   </Select>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="twoFactor">Two-Factor Authentication</Label>
                   <Select defaultValue="enabled">
-                    <SelectItem value="">Select 2FA setting</SelectItem>
-                    <SelectItem value="enabled">Enabled</SelectItem>
-                    <SelectItem value="disabled">Disabled</SelectItem>
-                    <SelectItem value="optional">Optional</SelectItem>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select 2FA setting" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="">Select 2FA setting</SelectItem>
+                      <SelectItem value="enabled">Enabled</SelectItem>
+                      <SelectItem value="disabled">Disabled</SelectItem>
+                      <SelectItem value="optional">Optional</SelectItem>
+                    </SelectContent>
                   </Select>
                 </div>
               </CardContent>
