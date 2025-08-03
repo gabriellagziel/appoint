@@ -44,7 +44,6 @@ const nextConfig = {
   output: 'standalone',
 
   // Disable telemetry
-  telemetry: false,
 }
 
 module.exports = nextConfig 
