@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Key Management - App-Oint Enterprise</title>
+    <style>
+        :root {
+            --color-primary: #0A84FF;
+            --color-secondary: #5AC8FA;
+            --color-accent: #64D2FF;
+            --color-neutral-dark: #141414;
+            --color-neutral-light: #E5E5EA;
+            --font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+            --border-radius: 8px;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif';
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%);
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            opacity: 0.8;
+            margin-bottom: 40px;
+        }
+
+        .api-keys-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            color: #2c3e50;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .api-key-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .key-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .key-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .key-status {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .status-active {
+            background: #28a745;
+            color: white;
+        }
+
+        .status-inactive {
+            background: #dc3545;
+            color: white;
+        }
+
+        .key-value {
+            background: #e9ecef;
+            padding: 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            margin: 10px 0;
+            word-break: break-all;
+        }
+
+        .key-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .action-btn {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+        }
+
+        .generate-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .usage-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="/logo.svg" alt="App-Oint Logo" style="width: 60px; height: 60px; margin-right: 15px;">
+                App-Oint Enterprise
+            </div>
+            <div class="nav-links">
+                <a href="dashboard.html" class="nav-link">📊 Dashboard</a>
+                <a href="locations.html" class="nav-link">🏢 Locations</a>
+                <a href="analytics.html" class="nav-link">📈 Analytics</a>
+                <a href="integrations.html" class="nav-link">🔗 Integrations</a>
+                <a href="white-label.html" class="nav-link">🎨 White Label</a>
+                <a href="api-keys.html" class="nav-link">🔑 API Keys</a>
+                <a href="settings.html" class="nav-link">⚙️ Settings</a>
+            </div>
+        </div>
+
+        <h1 class="page-title">🔑 API Key Management</h1>
+        <p class="page-subtitle">Manage API keys for programmatic access</p>
+
+        <div class="usage-stats">
+            <div class="stat-item">
+                <div class="stat-value">5</div>
+                <div class="stat-label">Active API Keys</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">1,247</div>
+                <div class="stat-label">API Calls Today</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">89.2%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">2.3ms</div>
+                <div class="stat-label">Avg Response Time</div>
+            </div>
+        </div>
+
+        <div class="api-keys-grid">
+            <div class="card">
+                <h3>🔑 Generate New API Key</h3>
+                <form id="generateKeyForm">
+                    <div class="form-group">
+                        <label for="keyName">Key Name</label>
+                        <input type="text" id="keyName" required placeholder="e.g., Production API Key">
+                    </div>
+                    <div class="form-group">
+                        <label for="keyPermissions">Permissions</label>
+                        <select id="keyPermissions" required>
+                            <option value="read">Read Only</option>
+                            <option value="write">Read & Write</option>
+                            <option value="admin">Full Access</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="keyExpiry">Expiry Date</label>
+                        <input type="date" id="keyExpiry">
+                    </div>
+                    <button type="submit" class="generate-btn">Generate API Key</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>📋 Active API Keys</h3>
+                <div class="api-key-item">
+                    <div class="key-header">
+                        <div class="key-name">Production API Key</div>
+                        <div class="key-status status-active">Active</div>
+                    </div>
+                    <div class="key-value">REDACTED_TOKEN</div>
+                    <div style="font-size: 0.9rem; color: #6c757d; margin-bottom: 10px;">
+                        Created: 2025-01-15 | Expires: 2026-01-15 | Calls: 1,247 today
+                    </div>
+                    <div class="key-actions">
+                        <button class="action-btn btn-secondary">View Usage</button>
+                        <button class="action-btn btn-danger">Revoke</button>
+                    </div>
+                </div>
+
+                <div class="api-key-item">
+                    <div class="key-header">
+                        <div class="key-name">Development API Key</div>
+                        <div class="key-status status-active">Active</div>
+                    </div>
+                    <div class="key-value">REDACTED_TOKEN</div>
+                    <div style="font-size: 0.9rem; color: #6c757d; margin-bottom: 10px;">
+                        Created: 2025-01-10 | Expires: 2025-07-10 | Calls: 234 today
+                    </div>
+                    <div class="key-actions">
+                        <button class="action-btn btn-secondary">View Usage</button>
+                        <button class="action-btn btn-danger">Revoke</button>
+                    </div>
+                </div>
+
+                <div class="api-key-item">
+                    <div class="key-header">
+                        <div class="key-name">Webhook Key</div>
+                        <div class="key-status status-active">Active</div>
+                    </div>
+                    <div class="key-value">REDACTED_TOKEN</div>
+                    <div style="font-size: 0.9rem; color: #6c757d; margin-bottom: 10px;">
+                        Created: 2025-01-05 | Expires: Never | Calls: 89 today
+                    </div>
+                    <div class="key-actions">
+                        <button class="action-btn btn-secondary">View Usage</button>
+                        <button class="action-btn btn-danger">Revoke</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📊 API Usage Analytics</h3>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                    <h4 style="margin-bottom: 15px; color: #2c3e50;">Top Endpoints</h4>
+                    <div style="margin-bottom: 10px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                            <span>GET /api/appointments</span>
+                            <span>456 calls</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 8px; border-radius: 4px;">
+                            <div style="background: #667eea; height: 100%; width: 75%; border-radius: 4px;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                            <span>POST /api/appointments</span>
+                            <span>234 calls</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 8px; border-radius: 4px;">
+                            <div style="background: #28a745; height: 100%; width: 45%; border-radius: 4px;"></div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 10px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                            <span>GET /api/customers</span>
+                            <span>189 calls</span>
+                        </div>
+                        <div style="background: #e9ecef; height: 8px; border-radius: 4px;">
+                            <div style="background: #ffc107; height: 100%; width: 35%; border-radius: 4px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('generateKeyForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const keyName = document.getElementById('keyName').value;
+            const permissions = document.getElementById('keyPermissions').value;
+
+            if (keyName) {
+                const newKey = 'appoint_' + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+                alert(`New API key generated: ${newKey}\n\nPlease save this key securely as it won't be shown again.`);
+                document.getElementById('generateKeyForm').reset();
+            } else {
+                alert('Please enter a key name.');
+            }
+        });
+
+        // Add click handlers for action buttons
+        document.querySelectorAll('.action-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const action = this.textContent.toLowerCase();
+                const keyName = this.closest('.api-key-item').querySelector('.key-name').textContent;
+
+                if (action === 'view usage') {
+                    alert(`Usage analytics for ${keyName} would be displayed here`);
+                } else if (action === 'revoke') {
+                    if (confirm(`Are you sure you want to revoke ${keyName}?`)) {
+                        alert(`${keyName} has been revoked`);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

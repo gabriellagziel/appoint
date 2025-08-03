@@ -18,15 +18,8 @@
 # Keep Google Maps
 -keep class com.google.android.gms.maps.** { *; }
 
-# Obfuscate package names
--repackageclasses ''
-
-# Remove logging in production
--assumenosideeffects class android.util.Log {
-    public static *** d(...);
-    public static *** v(...);
-    public static *** i(...);
-}
+# Keep Play Core classes
+-keep class com.google.android.play.core.** { *; }
 
 # Keep important classes
 -keep class com.appoint.app.** { *; }
