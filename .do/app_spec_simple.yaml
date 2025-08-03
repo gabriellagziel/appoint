@@ -1,0 +1,42 @@
+name: app-oint-complete
+region: nyc1
+services:
+  # Marketing/Home Page
+  - name: marketing
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "marketing"
+    build_command: "npm install && npm run build"
+    run_command: "npm start"
+    routes:
+      - path: /
+    health_check:
+      http_path: /
+    instance_count: 1
+    instance_size_slug: basic-xxs
+
+  # Business Portal
+  - name: business
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "business"
+    build_command: "npm install && npm run build"
+    run_command: "npm start"
+    routes:
+      - path: /business
+      - path: /business/*
+    health_check:
+      http_path: /business/
+    instance_count: 1
+    instance_size_slug: basic-xxs
+
+# Environment variables
+envs:
+  - key: NODE_ENV
+    value: production
+  - key: PORT
+    value: "8080"
