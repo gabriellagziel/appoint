@@ -1,10 +1,10 @@
 {
-  "name": "admin-app", 
+  "name": "admin-app",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev -p 8082",
     "build": "next build",
-    "start": "next start -p 8082",
+    "start": "node .next/standalone/server.js",
     "export": "next build && next export",
     "serve": "serve out -p ${PORT:-8082} --single",
     "test": "jest",
@@ -19,29 +19,33 @@
     "health": "curl -f http://localhost:8082/health || exit 1"
   },
   "dependencies": {
-    "next": "^14.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "next-auth": "^4.24.0",
-    "lucide-react": "^0.292.0",
-    "recharts": "^2.8.0",
+    "@radix-ui/react-progress": "^1.1.7",
+    "@radix-ui/react-select": "^2.2.5",
+    "@radix-ui/react-tabs": "^1.1.12",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "tailwind-merge": "^2.0.0",
-    "serve": "^14.2.1"
+    "firebase": "^12.0.0",
+    "lucide-react": "^0.292.0",
+    "next": "^14.0.0",
+    "next-auth": "^4.24.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.8.0",
+    "serve": "^14.2.1",
+    "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "typescript": "^5.0.0",
-    "tailwindcss": "^3.3.0",
     "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.0",
     "eslint": "^8.0.0",
     "eslint-config-next": "^14.0.0",
+    "express": "^4.18.2",
     "jest": "^29.7.0",
+    "postcss": "^8.4.0",
     "supertest": "^6.3.3",
-    "express": "^4.18.2"
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.0.0"
   }
 }
