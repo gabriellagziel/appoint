@@ -7,7 +7,7 @@
         "node": "18.x"
     },
     "scripts": {
-        "build": "echo 'Enterprise app built successfully'",
+        "build": "exit 0",
         "start": "node index.js",
         "dev": "nodemon index.js",
         "test": "jest"
