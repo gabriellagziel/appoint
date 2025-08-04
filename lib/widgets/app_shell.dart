@@ -116,6 +116,16 @@ final List<MenuItem> personalMenuItems = [
     route: '/dashboard',
   ),
   const MenuItem(
+    label: 'Discover',
+    icon: Icons.search,
+    route: '/discover',
+  ),
+  const MenuItem(
+    label: 'Invitations',
+    icon: Icons.inbox,
+    route: '/invitations',
+  ),
+  const MenuItem(
     label: 'Calendar',
     icon: Icons.calendar_today,
     route: '/google/calendar',
