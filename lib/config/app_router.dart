@@ -19,6 +19,7 @@ import 'package:appoint/features/family/screens/permissions_screen.dart';
 import 'package:appoint/features/family/widgets/invitation_modal.dart';
 import 'package:appoint/features/invite/invite_detail_screen.dart';
 import 'package:appoint/features/invite/invite_list_screen.dart';
+import 'package:appoint/features/invite/guest_meeting_view.dart';
 import 'package:appoint/features/profile/user_profile_screen.dart';
 import 'package:appoint/features/search/screens/search_screen.dart';
 import 'package:appoint/features/studio_business/entry/studio_entry_screen.dart';
@@ -33,6 +34,11 @@ import 'package:appoint/features/studio_business/screens/business_connect_screen
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import 'package:appoint/features/studio_business/screens/clients_screen.dart'
     as studio_clients;
+import 'package:appoint/features/invitations/invitation_list_screen.dart';
+import 'package:appoint/features/invitations/invitation_detail_screen.dart';
+import 'package:appoint/features/discovery/business_discovery_screen.dart';
+import 'package:appoint/features/discovery/business_profile_screen.dart';
+import 'package:appoint/features/discovery/business_map_screen.dart';
 import 'package:appoint/features/studio_business/screens/external_meetings_screen.dart';
 import 'package:appoint/features/studio_business/screens/invoices_screen.dart';
 import 'package:appoint/features/studio_business/screens/messages_screen.dart';
@@ -180,6 +186,39 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         name: 'bookingRequest',
         builder: (context, final state) => const BookingRequestScreen(),
       ),
+      // Invitation Routes
+      GoRoute(
+        path: '/invitations',
+        name: 'invitations',
+        builder: (context, final state) => const InvitationListScreen(),
+      ),
+      GoRoute(
+        path: '/invitations/:id',
+        name: 'invitationDetail',
+        builder: (context, final state) {
+          final invitationId = state.pathParameters['id']!;
+          return InvitationDetailScreen(invitationId: invitationId);
+        },
+      ),
+      // Business Discovery Routes
+      GoRoute(
+        path: '/discover',
+        name: 'businessDiscovery',
+        builder: (context, final state) => const BusinessDiscoveryScreen(),
+      ),
+      GoRoute(
+        path: '/business/:id',
+        name: 'businessProfile',
+        builder: (context, final state) {
+          final businessId = state.pathParameters['id']!;
+          return BusinessProfileScreen(businessId: businessId);
+        },
+      ),
+      GoRoute(
+        path: '/map',
+        name: 'businessMap',
+        builder: (context, final state) => const BusinessMapScreen(),
+      ),
       GoRoute(
         path: '/booking/details',
         name: 'bookingDetails',
@@ -197,6 +236,24 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/invite/list',
         name: 'inviteList',
         builder: (context, final state) => const InviteListScreen(),
+      ),
+      GoRoute(
+        path: '/guest/meeting',
+        name: 'guestMeeting',
+        builder: (context, final state) {
+          final args = state.extra! as Map<String, dynamic>;
+          return GuestMeetingView(
+            appointmentId: args['appointmentId'] as String,
+            creatorId: args['creatorId'] as String,
+            shareId: args['shareId'] as String?,
+            source: args['source'] != null 
+                ? InviteSource.values.firstWhere(
+                    (e) => e.name == args['source'],
+                    orElse: () => InviteSource.whatsapp_group,
+                  )
+                : InviteSource.whatsapp_group,
+          );
+        },
       ),
 
       // Studio & Business Routes
