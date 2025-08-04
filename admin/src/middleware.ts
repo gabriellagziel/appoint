@@ -2,14 +2,22 @@ import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 import { isMobileOrTablet } from "./utils/deviceDetection"
 
-// Mock admin check - replace with actual authentication logic
+// Admin UID validation - replace with actual Firebase Auth check
 function isAdminUser(request: NextRequest): boolean {
-  // For demo purposes, we'll assume admin access
-  // In real implementation, check JWT token, session, etc.
-  const adminHeader = request.headers.get('x-admin-user')
-  const adminCookie = request.cookies.get('admin-session')
+  // Check for admin session cookie
+  const adminSession = request.cookies.get('admin-session')
+  const authToken = request.cookies.get('auth-token')
+  
+  // For production, implement proper Firebase Auth verification
+  // This should check against a list of authorized admin UIDs
+  const authorizedAdminUIDs = [
+    'admin_uid_1', // Replace with actual admin UIDs
+    'admin_uid_2',
+    'admin_uid_3'
+  ]
   
   // For now, allow access (replace with real auth logic)
+  // In production, verify JWT token and check UID against authorized list
   return true
 }
 

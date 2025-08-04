@@ -1,5 +1,4 @@
 import { Providers } from "@/components/Providers"
-import { ThemeProvider } from "@app-oint/design-system"
 import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
@@ -56,11 +55,9 @@ export default function RootLayout({
         <meta name="msapplication-tap-highlight" content="no" />
       </head>
       <body className={`${inter.className} bg-gray-50 min-h-screen`}>
-        <ThemeProvider defaultTheme="light">
-          <Providers>
-            {children}
-          </Providers>
-        </ThemeProvider>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   )
