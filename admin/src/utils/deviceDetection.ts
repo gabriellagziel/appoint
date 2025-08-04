@@ -1,12 +1,12 @@
 import { headers } from 'next/headers'
 
 export function isMobileDevice(userAgent?: string): boolean {
-  const ua = userAgent || getUserAgent()
+  const ua = userAgent || ''
   return /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(ua.toLowerCase())
 }
 
 export function isTabletDevice(userAgent?: string): boolean {
-  const ua = userAgent || getUserAgent()
+  const ua = userAgent || ''
   return /ipad|tablet|(android(?!.*mobile))/i.test(ua.toLowerCase())
 }
 
@@ -14,9 +14,9 @@ export function isMobileOrTablet(userAgent?: string): boolean {
   return isMobileDevice(userAgent) || isTabletDevice(userAgent)
 }
 
-export function getUserAgent(): string {
+export async function getUserAgent(): Promise<string> {
   try {
-    const headersList = headers()
+    const headersList = await headers()
     return headersList.get('user-agent') || ''
   } catch {
     // Fallback for client-side
@@ -24,8 +24,8 @@ export function getUserAgent(): string {
   }
 }
 
-export function getDeviceType(userAgent?: string): 'mobile' | 'tablet' | 'desktop' {
-  const ua = userAgent || getUserAgent()
+export async function getDeviceType(userAgent?: string): Promise<'mobile' | 'tablet' | 'desktop'> {
+  const ua = userAgent || await getUserAgent()
   
   if (isMobileDevice(ua)) return 'mobile'
   if (isTabletDevice(ua)) return 'tablet'

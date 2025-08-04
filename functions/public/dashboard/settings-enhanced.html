@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - App-Oint Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .sidebar-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar-item.active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Enhanced loading animations */
+        .loading-spinner {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Enhanced focus states */
+        .enhanced-focus:focus {
+            outline: 2px solid #8b5cf6;
+            outline-offset: 2px;
+        }
+
+        /* Success/error animations */
+        .success-flash {
+            animation: successFlash 0.5s ease-in-out;
+        }
+
+        @keyframes successFlash {
+
+            0%,
+            100% {
+                background-color: transparent;
+            }
+
+            50% {
+                background-color: #dcfce7;
+            }
+        }
+
+        .error-flash {
+            animation: errorFlash 0.5s ease-in-out;
+        }
+
+        @keyframes errorFlash {
+
+            0%,
+            100% {
+                background-color: transparent;
+            }
+
+            50% {
+                background-color: #fef2f2;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <script>
+        // Auto-setup authentication for testing
+        if (!localStorage.getItem('user')) {
+            localStorage.setItem('user', JSON.stringify({
+                email: 'admin@app-oint.com',
+                name: 'Admin User'
+            }));
+        }
+    </script>
+
+    <!-- Header -->
+    <header class="gradient-header text-white p-4 shadow-lg" role="banner">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="text-2xl font-bold" aria-label="App-Oint Logo">App-Oint</div>
+                <div class="text-sm opacity-90">Enterprise Dashboard</div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span id="user-email" class="text-sm" aria-label="Current user email"></span>
+                <button onclick="logout()"
+                    class="bg-white bg-opacity-20 px-3 py-1 rounded text-sm hover:bg-opacity-30 transition duration-200"
+                    aria-label="Logout from dashboard">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <nav class="w-64 bg-white shadow-lg" role="navigation" aria-label="Main navigation">
+            <div class="p-4">
+                <div class="space-y-2">
+                    <a href="/dashboard/usage.html"
+                        class="sidebar-item w-full text-left p-3 rounded-lg flex items-center space-x-3 text-gray-700 hover:text-purple-600 transition duration-200"
+                        aria-label="View usage and quotas">
+                        <i class="fas fa-chart-line w-5" aria-hidden="true"></i>
+                        <span>Usage & Quotas</span>
+                    </a>
+                    <a href="/dashboard/api-keys.html"
+                        class="sidebar-item w-full text-left p-3 rounded-lg flex items-center space-x-3 text-gray-700 hover:text-purple-600 transition duration-200"
+                        aria-label="Manage API keys">
+                        <i class="fas fa-key w-5" aria-hidden="true"></i>
+                        <span>API Keys</span>
+                    </a>
+                    <a href="/dashboard/billing.html"
+                        class="sidebar-item w-full text-left p-3 rounded-lg flex items-center space-x-3 text-gray-700 hover:text-purple-600 transition duration-200"
+                        aria-label="View billing information">
+                        <i class="fas fa-credit-card w-5" aria-hidden="true"></i>
+                        <span>Billing</span>
+                    </a>
+                    <a href="/dashboard/analytics.html"
+                        class="sidebar-item w-full text-left p-3 rounded-lg flex items-center space-x-3 text-gray-700 hover:text-purple-600 transition duration-200"
+                        aria-label="View analytics">
+                        <i class="fas fa-chart-bar w-5" aria-hidden="true"></i>
+                        <span>Analytics</span>
+                    </a>
+                    <a href="/dashboard/security.html"
+                        class="sidebar-item w-full text-left p-3 rounded-lg flex items-center space-x-3 text-gray-700 hover:text-purple-600 transition duration-200"
+                        aria-label="Security settings">
+                        <i class="fas fa-shield-alt w-5" aria-hidden="true"></i>
+                        <span>Security</span>
+                    </a>
+                    <a href="/dashboard/support.html"
+                        class="sidebar-item w-full text-left p-3 rounded-lg flex items-center space-x-3 text-gray-700 hover:text-purple-600 transition duration-200"
+                        aria-label="Get support">
+                        <i class="fas fa-headset w-5" aria-hidden="true"></i>
+                        <span>Support</span>
+                    </a>
+                    <a href="/dashboard/settings.html"
+                        class="sidebar-item w-full text-left p-3 rounded-lg flex items-center space-x-3 text-purple-600 bg-purple-50"
+                        aria-label="Settings page - current" aria-current="page">
+                        <i class="fas fa-cog w-5" aria-hidden="true"></i>
+                        <span>Settings</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto" role="main">
+            <div class="p-6">
+                <div id="content">
+                    <div class="text-center py-12">
+                        <div class="loading-spinner rounded-full h-12 w-12 border-b-2 border-purple-600 mx-auto"
+                            role="status" aria-label="Loading settings data"></div>
+                        <p class="mt-4 text-gray-600">Loading settings data...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Set user email
+        const user = JSON.parse(localStorage.getItem('user') || '{}');
+        document.getElementById('user-email').textContent = user.email || 'admin@app-oint.com';
+
+        // Enhanced logout function with confirmation
+        function logout() {
+            if (confirm('Are you sure you want to logout?')) {
+                localStorage.removeItem('user');
+                window.location.href = '/auth.html';
+            }
+        }
+
+        // Enhanced form validation
+        function validateForm(formData) {
+            const errors = [];
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.email)) {
+                errors.push('Please enter a valid email address');
+            }
+
+            // Phone validation
+            const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+            if (!phoneRegex.test(formData.phone.replace(/[\s\-\(\)]/g, ''))) {
+                errors.push('Please enter a valid phone number');
+            }
+
+            // URL validation
+            if (formData.website && !isValidUrl(formData.website)) {
+                errors.push('Please enter a valid website URL');
+            }
+
+            // Required fields
+            if (!formData.companyName.trim()) {
+                errors.push('Company name is required');
+            }
+
+            return errors;
+        }
+
+        function isValidUrl(string) {
+            try {
+                new URL(string);
+                return true;
+            } catch (_) {
+                return false;
+            }
+        }
+
+        // Enhanced save function with validation and feedback
+        function saveSettings() {
+            const formData = {
+                companyName: document.getElementById('company-name').value,
+                email: document.getElementById('company-email').value,
+                phone: document.getElementById('company-phone').value,
+                website: document.getElementById('company-website').value,
+                street: document.getElementById('company-street').value,
+                city: document.getElementById('company-city').value,
+                state: document.getElementById('company-state').value,
+                zip: document.getElementById('company-zip').value
+            };
+
+            const errors = validateForm(formData);
+
+            if (errors.length > 0) {
+                showError(errors.join('\n'));
+                return;
+            }
+
+            // Show loading state
+            const saveButton = document.querySelector('[onclick="saveSettings()"]');
+            const originalText = saveButton.innerHTML;
+            saveButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Saving...';
+            saveButton.disabled = true;
+
+            // Simulate API call
+            setTimeout(() => {
+                showSuccess('Settings saved successfully!');
+                saveButton.innerHTML = originalText;
+                saveButton.disabled = false;
+            }, 1500);
+        }
+
+        function showSuccess(message) {
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 success-flash';
+            notification.innerHTML = `<i class="fas fa-check mr-2"></i>${message}`;
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        function showError(message) {
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 error-flash';
+            notification.innerHTML = `<i class="fas fa-exclamation-triangle mr-2"></i>${message}`;
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+
+        // Enhanced data loading with error handling
+        fetch('/mock/company-settings.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load settings data');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const { company, notifications, preferences, integrations, apiSettings } = data;
+
+                document.getElementById('content').innerHTML = `
+                    <div class="space-y-6">
+                        <!-- Header -->
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h1 class="text-2xl font-bold text-gray-900">Settings</h1>
+                                <p class="text-gray-600">Manage your account and preferences</p>
+                            </div>
+                            <button onclick="saveSettings()" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition duration-200 flex items-center space-x-2 enhanced-focus" aria-label="Save all settings changes">
+                                <i class="fas fa-save"></i>
+                                <span>Save Changes</span>
+                            </button>
+                        </div>
+
+                        <!-- Company Information -->
+                        <section class="card bg-white p-6 rounded-lg" aria-labelledby="company-info-heading">
+                            <h2 id="company-info-heading" class="text-lg font-semibold text-gray-900 mb-4">Company Information</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="company-name" class="block text-sm font-medium text-gray-700 mb-2">Company Name *</label>
+                                    <input id="company-name" type="text" value="${company.name}" required class="w-full px-3 py-2 border border-gray-300 rounded-md enhanced-focus focus:ring-2 focus:ring-purple-500" aria-describedby="company-name-help">
+                                    <p id="company-name-help" class="text-xs text-gray-500 mt-1">Enter your company's legal name</p>
+                                </div>
+                                <div>
+                                    <label for="company-email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                                    <input id="company-email" type="email" value="${company.email}" required class="w-full px-3 py-2 border border-gray-300 rounded-md enhanced-focus focus:ring-2 focus:ring-purple-500" aria-describedby="company-email-help">
+                                    <p id="company-email-help" class="text-xs text-gray-500 mt-1">Primary contact email</p>
+                                </div>
+                                <div>
+                                    <label for="company-phone" class="block text-sm font-medium text-gray-700 mb-2">Phone *</label>
+                                    <input id="company-phone" type="tel" value="${company.phone}" required class="w-full px-3 py-2 border border-gray-300 rounded-md enhanced-focus focus:ring-2 focus:ring-purple-500" aria-describedby="company-phone-help">
+                                    <p id="company-phone-help" class="text-xs text-gray-500 mt-1">Include country code if international</p>
+                                </div>
+                                <div>
+                                    <label for="company-website" class="block text-sm font-medium text-gray-700 mb-2">Website</label>
+                                    <input id="company-website" type="url" value="${company.website}" class="w-full px-3 py-2 border border-gray-300 rounded-md enhanced-focus focus:ring-2 focus:ring-purple-500" aria-describedby="company-website-help">
+                                    <p id="company-website-help" class="text-xs text-gray-500 mt-1">Include https:// for external links</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Address -->
+                        <section class="card bg-white p-6 rounded-lg" aria-labelledby="address-heading">
+                            <h2 id="address-heading" class="text-lg font-semibold text-gray-900 mb-4">Address</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="company-street" class="block text-sm font-medium text-gray-700 mb-2">Street Address</label>
+                                    <input id="company-street" type="text" value="${company.address.street}" class="w-full px-3 py-2 border border-gray-300 rounded-md enhanced-focus focus:ring-2 focus:ring-purple-500">
+                                </div>
+                                <div>
+                                    <label for="company-city" class="block text-sm font-medium text-gray-700 mb-2">City</label>
+                                    <input id="company-city" type="text" value="${company.address.city}" class="w-full px-3 py-2 border border-gray-300 rounded-md enhanced-focus focus:ring-2 focus:ring-purple-500">
+                                </div>
+                                <div>
+                                    <label for="company-state" class="block text-sm font-medium text-gray-700 mb-2">State/Province</label>
+                                    <input id="company-state" type="text" value="${company.address.state}" class="w-full px-3 py-2 border border-gray-300 rounded-md enhanced-focus focus:ring-2 focus:ring-purple-500">
+                                </div>
+                                <div>
+                                    <label for="company-zip" class="block text-sm font-medium text-gray-700 mb-2">ZIP/Postal Code</label>
+                                    <input id="company-zip" type="text" value="${company.address.zip}" class="w-full px-3 py-2 border border-gray-300 rounded-md enhanced-focus focus:ring-2 focus:ring-purple-500">
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Notifications -->
+                        <section class="card bg-white p-6 rounded-lg" aria-labelledby="notifications-heading">
+                            <h2 id="notifications-heading" class="text-lg font-semibold text-gray-900 mb-4">Notification Preferences</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-medium text-gray-900">Usage Alerts</div>
+                                        <div class="text-sm text-gray-600">Get notified when approaching limits</div>
+                                    </div>
+                                    <label class="relative inline-flex items-center cursor-pointer" aria-label="Toggle usage alerts">
+                                        <input type="checkbox" ${notifications.email.usageAlerts ? 'checked' : ''} class="sr-only peer">
+                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+                                    </label>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-medium text-gray-900">Billing Alerts</div>
+                                        <div class="text-sm text-gray-600">Get notified about billing changes</div>
+                                    </div>
+                                    <label class="relative inline-flex items-center cursor-pointer" aria-label="Toggle billing alerts">
+                                        <input type="checkbox" ${notifications.email.billingAlerts ? 'checked' : ''} class="sr-only peer">
+                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+                                    </label>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <div class="font-medium text-gray-900">Security Alerts</div>
+                                        <div class="text-sm text-gray-600">Get notified about security events</div>
+                                    </div>
+                                    <label class="relative inline-flex items-center cursor-pointer" aria-label="Toggle security alerts">
+                                        <input type="checkbox" ${notifications.email.securityAlerts ? 'checked' : ''} class="sr-only peer">
+                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Integrations -->
+                        <section class="card bg-white p-6 rounded-lg" aria-labelledby="integrations-heading">
+                            <h2 id="integrations-heading" class="text-lg font-semibold text-gray-900 mb-4">Integrations</h2>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fab fa-stripe text-blue-600 text-xl" aria-hidden="true"></i>
+                                        <div>
+                                            <div class="font-medium text-gray-900">Stripe</div>
+                                            <div class="text-sm text-gray-600">Payment processing</div>
+                                        </div>
+                                    </div>
+                                    <span class="inline-flex items-center px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                                        Connected
+                                    </span>
+                                </div>
+                                <div class="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fab fa-slack text-purple-600 text-xl" aria-hidden="true"></i>
+                                        <div>
+                                            <div class="font-medium text-gray-900">Slack</div>
+                                            <div class="text-sm text-gray-600">Team notifications</div>
+                                        </div>
+                                    </div>
+                                    <button class="text-purple-600 hover:text-purple-700 font-medium text-sm enhanced-focus" aria-label="Connect Slack integration">
+                                        Connect
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                `;
+            })
+            .catch(error => {
+                console.error('Error loading settings:', error);
+                document.getElementById('content').innerHTML = `
+                    <div class="text-center py-12">
+                        <i class="fas fa-exclamation-triangle text-red-500 text-4xl mb-4"></i>
+                        <h2 class="text-xl font-semibold text-gray-900 mb-2">Error Loading Settings</h2>
+                        <p class="text-gray-600 mb-4">Unable to load your settings. Please try again.</p>
+                        <button onclick="location.reload()" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition duration-200 enhanced-focus">
+                            <i class="fas fa-redo mr-2"></i>Retry
+                        </button>
+                    </div>
+                `;
+            });
+    </script>
+</body>
+
+</html>

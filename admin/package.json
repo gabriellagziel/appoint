@@ -2,18 +2,33 @@
   "name": "admin-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "mkdir -p out && echo 'Building admin app...'",
-    "export": "mkdir -p out && cp public/index.html out/index.html",
-    "serve": "http-server out -p ${PORT:-8082}",
-    "start": "npm run serve"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@app-oint/design-system": "file:../packages/design-system",
-    "http-server": "^14.1.1"
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-select": "^2.0.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.263.1",
+    "next": "^15.4.5",
+    "next-auth": "^4.24.11",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "recharts": "^3.1.0",
+    "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "autoprefixer": "^10.4.21",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.0.0"
   }
 }
