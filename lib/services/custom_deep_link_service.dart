@@ -23,10 +23,6 @@ class CustomDeepLinkService {
 
   /// Initialize deep link handling
   Future<void> initialize() async {
-    if (kIsWeb) {
-      // Deep linking is not supported on web
-      return;
-    }
     try {
       // Handle initial link if app was opened from a link
       initialUri = await getInitialUri();
@@ -57,21 +53,14 @@ class CustomDeepLinkService {
           // Removed debug print: debugPrint('App link error: $error');
         },
       );
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error initializing deep links: $e');
     }
   }
 
   /// Handle incoming deep links
   Future<void> _handleDeepLink(Uri uri) async {
-    // Deep link handling is disabled on web. The implementation has been
-    // commented out to prevent runtime errors when links are triggered.
-    // If deep linking support is required, restore the code below and
-    // ensure proper configuration for each platform.
-    /*
     try {
-      // Removed debug print: debugPrint('Handling deep link: $uri');
-
       // Let WhatsApp service handle the link first for analytics
       await _whatsappService.handleDeepLink(uri);
 
@@ -95,8 +84,20 @@ class CustomDeepLinkService {
             break;
           case 'invite':
             if (pathSegments.length >= 2) {
-              final inviteId = pathSegments[1];
-              await _navigateToInvite(inviteId);
+              final appointmentId = pathSegments[1];
+              final creatorId = queryParams['creatorId'];
+              final shareId = queryParams['shareId'];
+              final source = queryParams['source'];
+              final groupShare = queryParams['group_share'];
+              final guestAccepted = queryParams['guest_accepted'];
+
+              // Handle guest view for web
+              if (kIsWeb) {
+                await _navigateToGuestView(appointmentId, creatorId, shareId, source);
+              } else {
+                // Handle registered user invite
+                await _navigateToInvite(appointmentId, creatorId, shareId, source);
+              }
             }
             break;
           case 'booking':
@@ -109,15 +110,12 @@ class CustomDeepLinkService {
             // Removed debug print: debugPrint('Unknown deep link path: ${pathSegments[0]}');
         }
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error handling deep link: $e');
     }
-    */
   }
 
-  // Navigate helper methods are kept for potential future use. They are
-  // commented out to silence analysis warnings.
-  /*
+  // Navigate helper methods
   Future<void> _navigateToMeeting(
     String meetingId,
     String? creatorId,
@@ -139,14 +137,45 @@ class CustomDeepLinkService {
     }
   }
 
-  Future<void> _navigateToInvite(String inviteId) async {
+  Future<void> _navigateToInvite(
+    String appointmentId,
+    String? creatorId,
+    String? shareId,
+    String? source,
+  ) async {
     if (_navigatorKey?.currentState != null) {
       _navigatorKey!.currentState!.pushNamed(
         '/invite/details',
-        arguments: {'inviteId': inviteId},
+        arguments: {
+          'appointmentId': appointmentId,
+          'creatorId': creatorId,
+          'shareId': shareId,
+          'source': source,
+        },
       );
     } else {
-      // Removed debug print: debugPrint('Navigator key not set, cannot navigate to invite: \$inviteId');
+      // Removed debug print: debugPrint('Navigator key not set, cannot navigate to invite: \$appointmentId');
+    }
+  }
+
+  Future<void> _navigateToGuestView(
+    String appointmentId,
+    String? creatorId,
+    String? shareId,
+    String? source,
+  ) async {
+    if (_navigatorKey?.currentState != null) {
+      _navigatorKey!.currentState!.pushNamed(
+        '/guest/meeting',
+        arguments: {
+          'appointmentId': appointmentId,
+          'creatorId': creatorId ?? '',
+          'shareId': shareId,
+          'source': source,
+        },
+      );
+    } else {
+      // Removed debug print: debugPrint('Navigator key not set, cannot navigate to guest view: \$appointmentId');
     }
   }
 
@@ -160,7 +189,6 @@ class CustomDeepLinkService {
       // Removed debug print: debugPrint('Navigator key not set, cannot navigate to booking: \$bookingId');
     }
   }
-  */
 
   /// Create a deep link for a meeting using custom URL scheme
   Future<String> createMeetingLink({
