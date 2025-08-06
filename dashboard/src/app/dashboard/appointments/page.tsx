@@ -1,32 +1,36 @@
 'use client'
 export const dynamic = 'force-dynamic'
 
-import { useEffect, useState } from 'react'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Button } from "@/components/ui/button"
+import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Badge } from "@/components/ui/badge"
-import { useSession } from 'next-auth/react'
-import { getAppointments, Appointment, updateAppointment, deleteAppointment } from '@/lib/appointments'
-import { Plus, Edit, Trash2, CheckCircle, XCircle } from 'lucide-react'
+import { Button } from "@/components/ui/button"
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import { useAuth } from '@/contexts/AuthContext'
+import { Appointment, deleteAppointment, getAppointments, updateAppointmentStatus } from '@/services/appointments_service'
+import { AlertCircle, CheckCircle, Edit, Loader2, Plus, Trash2, XCircle } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 export default function AppointmentsListPage() {
-  const sessionState = useSession()
+  const { user } = useAuth()
   const [appointments, setAppointments] = useState<Appointment[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    if (sessionState.data?.user?.id) {
+    if (user?.businessId) {
       loadAppointments()
     }
-  }, [sessionState.data?.user?.id])
+  }, [user?.businessId])
 
   const loadAppointments = async () => {
     try {
       setLoading(true)
-      const data = await getAppointments(sessionState.data?.user?.id as string)
+      setError(null)
+      const data = await getAppointments(user!.businessId!)
       setAppointments(data)
     } catch (error) {
       console.error('Error loading appointments:', error)
+      setError('Failed to load appointments. Please try again.')
     } finally {
       setLoading(false)
     }
@@ -34,10 +38,11 @@ export default function AppointmentsListPage() {
 
   const handleStatusUpdate = async (appointmentId: string, newStatus: 'confirmed' | 'cancelled') => {
     try {
-      await updateAppointment(appointmentId, { status: newStatus })
+      await updateAppointmentStatus(appointmentId, newStatus)
       await loadAppointments() // Reload data
     } catch (error) {
       console.error('Error updating appointment:', error)
+      setError('Failed to update appointment status. Please try again.')
     }
   }
 
@@ -48,6 +53,7 @@ export default function AppointmentsListPage() {
         await loadAppointments() // Reload data
       } catch (error) {
         console.error('Error deleting appointment:', error)
+        setError('Failed to delete appointment. Please try again.')
       }
     }
   }
@@ -65,20 +71,22 @@ export default function AppointmentsListPage() {
     }
   }
 
-  // Handle case when session is undefined (SSR)
-  if (!sessionState) return <p>Loading...</p>
-
-  if (sessionState.status === 'loading') return <p>Loading...</p>
-  if (sessionState.status === 'unauthenticated') return <p>Not authenticated</p>
-
-  const user = sessionState.data?.user
+  if (!user) {
+    return (
+      <div className="p-6">
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="p-6">
       <div className="flex justify-between items-center mb-6">
         <div>
           <h1 className="text-2xl font-bold">Appointments</h1>
-          <p className="text-gray-600">Welcome, {user?.name}</p>
+          <p className="text-gray-600">Welcome, {user.displayName || user.email}</p>
         </div>
         <Button onClick={() => window.location.href = '/dashboard/appointments/new'}>
           <Plus className="w-4 h-4 mr-2" />
@@ -86,9 +94,19 @@ export default function AppointmentsListPage() {
         </Button>
       </div>
 
+      {error && (
+        <Alert variant="destructive" className="mb-6">
+          <AlertCircle className="h-4 w-4" />
+          <AlertDescription>{error}</AlertDescription>
+        </Alert>
+      )}
+
       {loading ? (
         <div className="flex justify-center items-center h-64">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+          <div className="flex items-center space-x-2">
+            <Loader2 className="h-6 w-6 animate-spin" />
+            <span>Loading appointments...</span>
+          </div>
         </div>
       ) : appointments.length === 0 ? (
         <div className="text-center py-12">

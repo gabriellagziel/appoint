@@ -3,62 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App-Oint - Working Deployment</title>
+    <title>App-Oint – Time Organized</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 20px;
-            background: #f5f5f5;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
             min-height: 100vh;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
-        h1 {
-            color: #333;
+        .logo {
+            width: 48px;
+            height: 48px;
             margin-bottom: 20px;
         }
-        p {
-            color: #666;
-            line-height: 1.6;
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 10px;
         }
-        .status {
-            margin-top: 30px;
-            padding: 20px;
-            background: #d4edda;
-            border-radius: 4px;
-            color: #155724;
+        .subtitle {
+            font-size: 24px;
+            font-weight: 600;
+            color: #0ea5e9;
+            margin-bottom: 10px;
+        }
+        .slogan {
+            font-size: 20px;
+            color: #6b7280;
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background-color: #0ea5e9;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #0284c7;
+        }
+        .btn-secondary {
+            background-color: white;
+            color: #0ea5e9;
+            border: 1px solid #0ea5e9;
+        }
+        .btn-secondary:hover {
+            background-color: #f8fafc;
+        }
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .nav-logo img {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 16px;
+        }
+        .nav-buttons a {
+            color: #6b7280;
+            text-decoration: none;
+        }
+        .nav-buttons .btn-primary {
+            padding: 8px 16px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎉 App-Oint Deployment Success!</h1>
-        <p>Welcome to our working deployment! This is a simple, static deployment that demonstrates the system is operational.</p>
-        
-        <div class="status">
-            <h3>✅ Deployment Status</h3>
-            <p><strong>All systems operational!</strong></p>
-            <p>Marketing Portal: ✅ Working</p>
-            <p>Business Portal: ✅ Working</p>
-            <p>Enterprise Portal: ✅ Working</p>
-            <p>API Services: ✅ Working</p>
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <img src="/logo.svg" alt="App-Oint Logo">
+                App-Oint
+            </div>
+            <div class="nav-buttons">
+                <a href="/login">Login</a>
+                <a href="/signup" class="btn-primary">Sign Up</a>
+            </div>
         </div>
+    </nav>
+
+    <div class="container" style="margin-top: 100px;">
+        <img src="/logo.svg" alt="App-Oint Logo" class="logo">
+        <h1>App-Oint</h1>
+        <div class="subtitle">Time Organized</div>
+        <div class="slogan">Set – Send – Done.</div>
         
-        <div style="margin-top: 30px;">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Business Portal - Complete business management solution</li>
-                <li>Enterprise Portal - Enterprise onboarding and management</li>
-                <li>Marketing Portal - Customer-facing marketing site</li>
-                <li>API Services - Backend functionality</li>
-            </ul>
+        <div>
+            <a href="#" class="btn btn-primary">Download on iOS</a>
+            <a href="#" class="btn btn-primary">Download on Android</a>
+            <a href="/app" class="btn btn-secondary">Use Web App</a>
         </div>
     </div>
 </body>

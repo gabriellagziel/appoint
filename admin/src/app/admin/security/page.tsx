@@ -6,83 +6,232 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { AlertTriangle, Ban, CheckCircle, Eye, Shield, TrendingUp } from "lucide-react"
-import { useState } from "react"
-
-// Mock security data
-const mockSecurityEvents = [
-    {
-        id: 1,
-        type: "suspicious_login",
-        severity: "medium",
-        user: "john@example.com",
-        description: "Multiple failed login attempts from unknown IP",
-        timestamp: "2024-01-20 14:30",
-        status: "investigating",
-        location: "192.168.1.100"
-    },
-    {
-        id: 2,
-        type: "spam_detected",
-        severity: "high",
-        user: "spammer@fake.com",
-        description: "Mass message sending detected",
-        timestamp: "2024-01-20 13:15",
-        status: "blocked",
-        location: "10.0.0.50"
-    },
-    {
-        id: 3,
-        type: "data_breach_attempt",
-        severity: "critical",
-        user: "admin@system.com",
-        description: "Unauthorized access attempt to admin panel",
-        timestamp: "2024-01-20 12:45",
-        status: "resolved",
-        location: "203.0.113.0"
-    }
-]
-
-const mockAbuseReports = [
-    {
-        id: 1,
-        reporter: "user123@example.com",
-        reportedUser: "abuser@spam.com",
-        reason: "Harassment",
-        description: "Sending inappropriate messages",
-        timestamp: "2024-01-20 15:30",
-        status: "pending",
-        priority: "high"
-    },
-    {
-        id: 2,
-        reporter: "business@company.com",
-        reportedUser: "fake@scam.com",
-        reason: "Fraud",
-        description: "Attempting to scam users",
-        timestamp: "2024-01-20 14:20",
-        status: "investigating",
-        priority: "critical"
-    }
-]
+import {
+    blockUser,
+    fetchAbuseReports,
+    fetchSecurityEvents,
+    getSecurityStats,
+    updateAbuseReportStatus,
+    updateSecurityEventStatus,
+    type AbuseReport,
+    type SecurityEvent,
+    type SecurityFilters
+} from "@/services/security_service"
+import { AlertTriangle, CheckCircle, Eye, Filter, RefreshCw, Shield, TrendingUp } from "lucide-react"
+import { useEffect, useState } from "react"
 
 export default function SecurityPage() {
-    const [selectedSeverity, setSelectedSeverity] = useState("all")
-    const [selectedStatus, setSelectedStatus] = useState("all")
-
-    const filteredEvents = mockSecurityEvents.filter(event => {
-        if (selectedSeverity !== "all" && event.severity !== selectedSeverity) return false
-        if (selectedStatus !== "all" && event.status !== selectedStatus) return false
-        return true
+    const [events, setEvents] = useState<SecurityEvent[]>([])
+    const [reports, setReports] = useState<AbuseReport[]>([])
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState("")
+    const [stats, setStats] = useState({
+        totalEvents: 0,
+        activeThreats: 0,
+        resolvedEvents: 0,
+        criticalEvents: 0,
+        totalReports: 0,
+        pendingReports: 0,
+        resolvedReports: 0,
     })
+    const [filters, setFilters] = useState<SecurityFilters>({
+        severity: "all",
+        status: "all",
+        type: "all",
+        search: "",
+    })
+
+    const fetchData = async () => {
+        setLoading(true)
+        setError("")
+        try {
+            const [eventsResponse, reportsData, statsData] = await Promise.all([
+                fetchSecurityEvents(filters),
+                fetchAbuseReports(filters),
+                getSecurityStats(),
+            ])
+            setEvents(eventsResponse.events)
+            setReports(reportsData)
+            setStats(statsData)
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Failed to fetch security data")
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    useEffect(() => {
+        fetchData()
+    }, [filters])
+
+    const handleEventStatusUpdate = async (eventId: string, newStatus: string) => {
+        try {
+            await updateSecurityEventStatus(eventId, newStatus)
+            await fetchData() // Refresh data
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Failed to update event status")
+        }
+    }
+
+    const handleReportStatusUpdate = async (reportId: string, newStatus: string, adminNotes?: string) => {
+        try {
+            await updateAbuseReportStatus(reportId, newStatus, adminNotes)
+            await fetchData() // Refresh data
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Failed to update report status")
+        }
+    }
+
+    const handleBlockUser = async (userId: string, reason: string) => {
+        if (!confirm(`Are you sure you want to block user ${userId}?`)) return
+
+        try {
+            await blockUser(userId, reason)
+            await fetchData() // Refresh data
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Failed to block user")
+        }
+    }
+
+    const getSeverityColor = (severity: string) => {
+        switch (severity) {
+            case "critical": return "destructive"
+            case "high": return "destructive"
+            case "medium": return "secondary"
+            case "low": return "default"
+            default: return "default"
+        }
+    }
+
+    const getStatusColor = (status: string) => {
+        switch (status) {
+            case "resolved": return "default"
+            case "investigating": return "secondary"
+            case "blocked": return "destructive"
+            case "false_positive": return "outline"
+            default: return "default"
+        }
+    }
+
+    if (loading && events.length === 0 && reports.length === 0) {
+        return (
+            <AdminLayout>
+                <div className="space-y-6">
+                    <div>
+                        <h1 className="text-3xl font-bold text-gray-900">Security & Abuse Monitoring</h1>
+                        <p className="text-gray-600">Monitor security threats and handle abuse reports</p>
+                    </div>
+                    <div className="flex items-center justify-center h-64">
+                        <div className="text-center">
+                            <RefreshCw className="h-8 w-8 animate-spin text-blue-500 mx-auto mb-4" />
+                            <p className="text-gray-600">Loading security data...</p>
+                        </div>
+                    </div>
+                </div>
+            </AdminLayout>
+        )
+    }
 
     return (
         <AdminLayout>
             <div className="space-y-6">
-                <div>
-                    <h1 className="text-3xl font-bold text-gray-900">Security & Abuse Monitoring</h1>
-                    <p className="text-gray-600">Monitor security threats and handle abuse reports</p>
+                <div className="flex items-center justify-between">
+                    <div>
+                        <h1 className="text-3xl font-bold text-gray-900">Security & Abuse Monitoring</h1>
+                        <p className="text-gray-600">Monitor security threats and handle abuse reports</p>
+                    </div>
+                    <Button onClick={fetchData} disabled={loading}>
+                        <RefreshCw className={`h-4 w-4 mr-2 ${loading ? 'animate-spin' : ''}`} />
+                        Refresh
+                    </Button>
                 </div>
+
+                {error && (
+                    <Card className="border-red-200 bg-red-50">
+                        <CardContent className="pt-6">
+                            <p className="text-red-600">{error}</p>
+                        </CardContent>
+                    </Card>
+                )}
+
+                {/* Filters */}
+                <Card>
+                    <CardHeader>
+                        <CardTitle className="flex items-center gap-2">
+                            <Filter className="h-5 w-5" />
+                            Filters
+                        </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <div>
+                                <label className="text-sm font-medium">Search</label>
+                                <input
+                                    type="text"
+                                    placeholder="Search events/reports..."
+                                    value={filters.search || ""}
+                                    onChange={(e) => setFilters({ ...filters, search: e.target.value })}
+                                    className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md"
+                                />
+                            </div>
+                            <div>
+                                <label className="text-sm font-medium">Severity</label>
+                                <Select
+                                    value={filters.severity || "all"}
+                                    onValueChange={(value) => setFilters({ ...filters, severity: value })}
+                                >
+                                    <SelectTrigger className="mt-1">
+                                        <SelectValue />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="all">All Severity</SelectItem>
+                                        <SelectItem value="critical">Critical</SelectItem>
+                                        <SelectItem value="high">High</SelectItem>
+                                        <SelectItem value="medium">Medium</SelectItem>
+                                        <SelectItem value="low">Low</SelectItem>
+                                    </SelectContent>
+                                </Select>
+                            </div>
+                            <div>
+                                <label className="text-sm font-medium">Status</label>
+                                <Select
+                                    value={filters.status || "all"}
+                                    onValueChange={(value) => setFilters({ ...filters, status: value })}
+                                >
+                                    <SelectTrigger className="mt-1">
+                                        <SelectValue />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="all">All Status</SelectItem>
+                                        <SelectItem value="investigating">Investigating</SelectItem>
+                                        <SelectItem value="resolved">Resolved</SelectItem>
+                                        <SelectItem value="blocked">Blocked</SelectItem>
+                                        <SelectItem value="false_positive">False Positive</SelectItem>
+                                    </SelectContent>
+                                </Select>
+                            </div>
+                            <div>
+                                <label className="text-sm font-medium">Type</label>
+                                <Select
+                                    value={filters.type || "all"}
+                                    onValueChange={(value) => setFilters({ ...filters, type: value })}
+                                >
+                                    <SelectTrigger className="mt-1">
+                                        <SelectValue />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="all">All Types</SelectItem>
+                                        <SelectItem value="suspicious_login">Suspicious Login</SelectItem>
+                                        <SelectItem value="spam_detected">Spam Detected</SelectItem>
+                                        <SelectItem value="data_breach_attempt">Data Breach Attempt</SelectItem>
+                                        <SelectItem value="unauthorized_access">Unauthorized Access</SelectItem>
+                                        <SelectItem value="rate_limit_exceeded">Rate Limit Exceeded</SelectItem>
+                                    </SelectContent>
+                                </Select>
+                            </div>
+                        </div>
+                    </CardContent>
+                </Card>
 
                 {/* Security Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -92,7 +241,7 @@ export default function SecurityPage() {
                             <AlertTriangle className="h-4 w-4 text-muted-foreground" />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">12</div>
+                            <div className="text-2xl font-bold">{stats.activeThreats}</div>
                             <div className="flex items-center text-xs text-red-600">
                                 <TrendingUp className="h-3 w-3 mr-1" />
                                 +3 from yesterday
@@ -102,42 +251,41 @@ export default function SecurityPage() {
 
                     <Card>
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Blocked Users</CardTitle>
-                            <Ban className="h-4 w-4 text-muted-foreground" />
-                        </CardHeader>
-                        <CardContent>
-                            <div className="text-2xl font-bold">89</div>
-                            <div className="flex items-center text-xs text-green-600">
-                                <TrendingUp className="h-3 w-3 mr-1" />
-                                +5 this week
-                            </div>
-                        </CardContent>
-                    </Card>
-
-                    <Card>
-                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Abuse Reports</CardTitle>
+                            <CardTitle className="text-sm font-medium">Critical Events</CardTitle>
                             <Shield className="h-4 w-4 text-muted-foreground" />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">23</div>
-                            <div className="flex items-center text-xs text-orange-600">
-                                <TrendingUp className="h-3 w-3 mr-1" />
-                                +7 from last week
+                            <div className="text-2xl font-bold">{stats.criticalEvents}</div>
+                            <div className="flex items-center text-xs text-red-600">
+                                <AlertTriangle className="h-3 w-3 mr-1" />
+                                Requires immediate attention
                             </div>
                         </CardContent>
                     </Card>
 
                     <Card>
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Resolved Issues</CardTitle>
+                            <CardTitle className="text-sm font-medium">Resolved Events</CardTitle>
                             <CheckCircle className="h-4 w-4 text-muted-foreground" />
                         </CardHeader>
                         <CardContent>
-                            <div className="text-2xl font-bold">156</div>
+                            <div className="text-2xl font-bold">{stats.resolvedEvents}</div>
                             <div className="flex items-center text-xs text-green-600">
-                                <TrendingUp className="h-3 w-3 mr-1" />
-                                +12 this month
+                                <CheckCircle className="h-3 w-3 mr-1" />
+                                Successfully handled
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card>
+                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                            <CardTitle className="text-sm font-medium">Total Reports</CardTitle>
+                            <Eye className="h-4 w-4 text-muted-foreground" />
+                        </CardHeader>
+                        <CardContent>
+                            <div className="text-2xl font-bold">{stats.totalReports}</div>
+                            <div className="flex items-center text-xs text-gray-600">
+                                {stats.pendingReports} pending review
                             </div>
                         </CardContent>
                     </Card>
@@ -146,251 +294,148 @@ export default function SecurityPage() {
                 {/* Security Events */}
                 <Card>
                     <CardHeader>
-                        <div className="flex justify-between items-center">
-                            <CardTitle>Security Events</CardTitle>
-                            <div className="flex space-x-2">
-                                <Select value={selectedSeverity} onValueChange={setSelectedSeverity}>
-                                    <SelectTrigger className="w-32">
-                                        <SelectValue />
-                                    </SelectTrigger>
-                                    <SelectContent>
-                                        <SelectItem value="all">All Severity</SelectItem>
-                                        <SelectItem value="low">Low</SelectItem>
-                                        <SelectItem value="medium">Medium</SelectItem>
-                                        <SelectItem value="high">High</SelectItem>
-                                        <SelectItem value="critical">Critical</SelectItem>
-                                    </SelectContent>
-                                </Select>
-                                <Select value={selectedStatus} onValueChange={setSelectedStatus}>
-                                    <SelectTrigger className="w-32">
-                                        <SelectValue />
-                                    </SelectTrigger>
-                                    <SelectContent>
-                                        <SelectItem value="all">All Status</SelectItem>
-                                        <SelectItem value="investigating">Investigating</SelectItem>
-                                        <SelectItem value="resolved">Resolved</SelectItem>
-                                        <SelectItem value="blocked">Blocked</SelectItem>
-                                    </SelectContent>
-                                </Select>
-                            </div>
-                        </div>
+                        <CardTitle>Security Events ({events.length})</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <Table>
-                            <TableHeader>
-                                <TableRow>
-                                    <TableHead>Type</TableHead>
-                                    <TableHead>Severity</TableHead>
-                                    <TableHead>User</TableHead>
-                                    <TableHead>Description</TableHead>
-                                    <TableHead>Location</TableHead>
-                                    <TableHead>Timestamp</TableHead>
-                                    <TableHead>Status</TableHead>
-                                    <TableHead>Actions</TableHead>
-                                </TableRow>
-                            </TableHeader>
-                            <TableBody>
-                                {filteredEvents.map((event) => (
-                                    <TableRow key={event.id}>
-                                        <TableCell className="font-medium">{event.type.replace('_', ' ')}</TableCell>
-                                        <TableCell>
-                                            <Badge variant={
-                                                event.severity === "critical" ? "destructive" :
-                                                    event.severity === "high" ? "default" :
-                                                        event.severity === "medium" ? "secondary" : "outline"
-                                            }>
-                                                {event.severity}
-                                            </Badge>
-                                        </TableCell>
-                                        <TableCell>{event.user}</TableCell>
-                                        <TableCell>{event.description}</TableCell>
-                                        <TableCell>{event.location}</TableCell>
-                                        <TableCell>{event.timestamp}</TableCell>
-                                        <TableCell>
-                                            <Badge variant={
-                                                event.status === "resolved" ? "default" :
-                                                    event.status === "investigating" ? "secondary" : "destructive"
-                                            }>
-                                                {event.status}
-                                            </Badge>
-                                        </TableCell>
-                                        <TableCell>
-                                            <div className="flex space-x-2">
-                                                <button className="text-sm text-blue-600 hover:text-blue-800">Investigate</button>
-                                                <button className="text-sm text-red-600 hover:text-red-800">Block</button>
-                                            </div>
-                                        </TableCell>
+                        {events.length === 0 ? (
+                            <div className="text-center py-8">
+                                <p className="text-gray-500">No security events found</p>
+                            </div>
+                        ) : (
+                            <Table>
+                                <TableHeader>
+                                    <TableRow>
+                                        <TableHead>Type</TableHead>
+                                        <TableHead>User</TableHead>
+                                        <TableHead>Description</TableHead>
+                                        <TableHead>Severity</TableHead>
+                                        <TableHead>Status</TableHead>
+                                        <TableHead>Location</TableHead>
+                                        <TableHead>Timestamp</TableHead>
+                                        <TableHead>Actions</TableHead>
                                     </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
+                                </TableHeader>
+                                <TableBody>
+                                    {events.map((event) => (
+                                        <TableRow key={event.id}>
+                                            <TableCell className="font-medium">{event.type.replace('_', ' ')}</TableCell>
+                                            <TableCell>{event.user}</TableCell>
+                                            <TableCell>{event.description}</TableCell>
+                                            <TableCell>
+                                                <Badge variant={getSeverityColor(event.severity)}>
+                                                    {event.severity}
+                                                </Badge>
+                                            </TableCell>
+                                            <TableCell>
+                                                <Select
+                                                    value={event.status}
+                                                    onValueChange={(value) => handleEventStatusUpdate(event.id, value)}
+                                                >
+                                                    <SelectTrigger className="w-24">
+                                                        <SelectValue />
+                                                    </SelectTrigger>
+                                                    <SelectContent>
+                                                        <SelectItem value="investigating">Investigating</SelectItem>
+                                                        <SelectItem value="resolved">Resolved</SelectItem>
+                                                        <SelectItem value="blocked">Blocked</SelectItem>
+                                                        <SelectItem value="false_positive">False Positive</SelectItem>
+                                                    </SelectContent>
+                                                </Select>
+                                            </TableCell>
+                                            <TableCell>{event.location}</TableCell>
+                                            <TableCell>
+                                                {event.timestamp.toLocaleDateString()}
+                                            </TableCell>
+                                            <TableCell>
+                                                <div className="flex space-x-2">
+                                                    <Button
+                                                        variant="outline"
+                                                        size="sm"
+                                                        onClick={() => handleBlockUser(event.user, event.description)}
+                                                    >
+                                                        Block User
+                                                    </Button>
+                                                </div>
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        )}
                     </CardContent>
                 </Card>
 
                 {/* Abuse Reports */}
                 <Card>
                     <CardHeader>
-                        <CardTitle>Abuse Reports</CardTitle>
+                        <CardTitle>Abuse Reports ({reports.length})</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <Table>
-                            <TableHeader>
-                                <TableRow>
-                                    <TableHead>Reporter</TableHead>
-                                    <TableHead>Reported User</TableHead>
-                                    <TableHead>Reason</TableHead>
-                                    <TableHead>Description</TableHead>
-                                    <TableHead>Priority</TableHead>
-                                    <TableHead>Timestamp</TableHead>
-                                    <TableHead>Status</TableHead>
-                                    <TableHead>Actions</TableHead>
-                                </TableRow>
-                            </TableHeader>
-                            <TableBody>
-                                {mockAbuseReports.map((report) => (
-                                    <TableRow key={report.id}>
-                                        <TableCell className="font-medium">{report.reporter}</TableCell>
-                                        <TableCell>{report.reportedUser}</TableCell>
-                                        <TableCell>{report.reason}</TableCell>
-                                        <TableCell>{report.description}</TableCell>
-                                        <TableCell>
-                                            <Badge variant={
-                                                report.priority === "critical" ? "destructive" :
-                                                    report.priority === "high" ? "default" : "secondary"
-                                            }>
-                                                {report.priority}
-                                            </Badge>
-                                        </TableCell>
-                                        <TableCell>{report.timestamp}</TableCell>
-                                        <TableCell>
-                                            <Badge variant={
-                                                report.status === "resolved" ? "default" :
-                                                    report.status === "investigating" ? "secondary" : "outline"
-                                            }>
-                                                {report.status}
-                                            </Badge>
-                                        </TableCell>
-                                        <TableCell>
-                                            <div className="flex space-x-2">
-                                                <button className="text-sm text-blue-600 hover:text-blue-800">Review</button>
-                                                <button className="text-sm text-red-600 hover:text-red-800">Ban</button>
-                                            </div>
-                                        </TableCell>
+                        {reports.length === 0 ? (
+                            <div className="text-center py-8">
+                                <p className="text-gray-500">No abuse reports found</p>
+                            </div>
+                        ) : (
+                            <Table>
+                                <TableHeader>
+                                    <TableRow>
+                                        <TableHead>Reporter</TableHead>
+                                        <TableHead>Reported User</TableHead>
+                                        <TableHead>Reason</TableHead>
+                                        <TableHead>Description</TableHead>
+                                        <TableHead>Priority</TableHead>
+                                        <TableHead>Status</TableHead>
+                                        <TableHead>Timestamp</TableHead>
+                                        <TableHead>Actions</TableHead>
                                     </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
-                    </CardContent>
-                </Card>
-
-                {/* Security Dashboard */}
-                <Card>
-                    <CardHeader>
-                        <CardTitle>Security Dashboard</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div className="space-y-4">
-                                <h3 className="font-semibold">Threat Types</h3>
-                                <div className="space-y-2">
-                                    <div className="flex justify-between">
-                                        <span>Login Attempts</span>
-                                        <span className="font-medium">45%</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span>Spam/Abuse</span>
-                                        <span className="font-medium">32%</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span>Data Breach</span>
-                                        <span className="font-medium">18%</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span>Other</span>
-                                        <span className="font-medium">5%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="space-y-4">
-                                <h3 className="font-semibold">Geographic Threats</h3>
-                                <div className="space-y-2">
-                                    <div className="flex justify-between">
-                                        <span>North America</span>
-                                        <span className="font-medium">38%</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span>Europe</span>
-                                        <span className="font-medium">29%</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span>Asia</span>
-                                        <span className="font-medium">25%</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span>Other</span>
-                                        <span className="font-medium">8%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="space-y-4">
-                                <h3 className="font-semibold">Response Times</h3>
-                                <div className="space-y-2">
-                                    <div className="flex justify-between">
-                                        <span>Critical Issues</span>
-                                        <span className="font-medium">2.3 min</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span>High Priority</span>
-                                        <span className="font-medium">15.7 min</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span>Medium Priority</span>
-                                        <span className="font-medium">1.2 hours</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span>Low Priority</span>
-                                        <span className="font-medium">4.5 hours</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </CardContent>
-                </Card>
-
-                {/* Quick Actions */}
-                <Card>
-                    <CardHeader>
-                        <CardTitle>Quick Actions</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                            <Button variant="outline" className="h-20">
-                                <div className="text-center">
-                                    <Eye className="h-6 w-6 mx-auto mb-2" />
-                                    <div>Monitor Activity</div>
-                                </div>
-                            </Button>
-                            <Button variant="outline" className="h-20">
-                                <div className="text-center">
-                                    <Ban className="h-6 w-6 mx-auto mb-2" />
-                                    <div>Block User</div>
-                                </div>
-                            </Button>
-                            <Button variant="outline" className="h-20">
-                                <div className="text-center">
-                                    <Shield className="h-6 w-6 mx-auto mb-2" />
-                                    <div>Security Scan</div>
-                                </div>
-                            </Button>
-                            <Button variant="outline" className="h-20">
-                                <div className="text-center">
-                                    <AlertTriangle className="h-6 w-6 mx-auto mb-2" />
-                                    <div>Report Issue</div>
-                                </div>
-                            </Button>
-                        </div>
+                                </TableHeader>
+                                <TableBody>
+                                    {reports.map((report) => (
+                                        <TableRow key={report.id}>
+                                            <TableCell>{report.reporter}</TableCell>
+                                            <TableCell>{report.reportedUser}</TableCell>
+                                            <TableCell className="capitalize">{report.reason.replace('_', ' ')}</TableCell>
+                                            <TableCell>{report.description}</TableCell>
+                                            <TableCell>
+                                                <Badge variant={getSeverityColor(report.priority)}>
+                                                    {report.priority}
+                                                </Badge>
+                                            </TableCell>
+                                            <TableCell>
+                                                <Select
+                                                    value={report.status}
+                                                    onValueChange={(value) => handleReportStatusUpdate(report.id, value)}
+                                                >
+                                                    <SelectTrigger className="w-24">
+                                                        <SelectValue />
+                                                    </SelectTrigger>
+                                                    <SelectContent>
+                                                        <SelectItem value="pending">Pending</SelectItem>
+                                                        <SelectItem value="investigating">Investigating</SelectItem>
+                                                        <SelectItem value="resolved">Resolved</SelectItem>
+                                                        <SelectItem value="dismissed">Dismissed</SelectItem>
+                                                    </SelectContent>
+                                                </Select>
+                                            </TableCell>
+                                            <TableCell>
+                                                {report.timestamp.toLocaleDateString()}
+                                            </TableCell>
+                                            <TableCell>
+                                                <div className="flex space-x-2">
+                                                    <Button
+                                                        variant="outline"
+                                                        size="sm"
+                                                        onClick={() => handleBlockUser(report.reportedUser, report.description)}
+                                                    >
+                                                        Block User
+                                                    </Button>
+                                                </div>
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        )}
                     </CardContent>
                 </Card>
             </div>

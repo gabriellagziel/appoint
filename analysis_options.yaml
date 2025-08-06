@@ -1,0 +1,140 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Prefer const constructors
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_const_declarations: true
+    
+    # Prefer final variables
+    prefer_final_fields: true
+    prefer_final_locals: true
+    
+    # Avoid unnecessary containers
+    avoid_unnecessary_containers: true
+    
+    # Prefer sized box over container
+    sized_box_for_whitespace: true
+    
+    # Prefer relative imports
+    prefer_relative_imports: true
+    
+    # Avoid unnecessary new
+    unnecessary_new: true
+    
+    # Avoid unnecessary const
+    unnecessary_const: true
+    
+    # Prefer single quotes
+    prefer_single_quotes: true
+    
+    # Prefer trailing commas
+    prefer_trailing_commas: true
+    
+    # Avoid empty statements
+    avoid_empty_else: true
+    
+    # Prefer if null operators
+    prefer_if_null_operators: true
+    
+    # Prefer conditional expressions
+    prefer_conditional_expressions: true
+    
+    # Avoid unnecessary null checks
+    avoid_unnecessary_null_checks: true
+    
+    # Prefer collection if
+    prefer_collection_literals: true
+    
+    # Prefer spread collections
+    prefer_spread_collections: true
+    
+    # Prefer for elements
+    prefer_for_elements_to_map_fromIterable: true
+    
+    # Prefer iterable whereType
+    prefer_iterable_whereType: true
+    
+    # Prefer iterable forEach
+    prefer_iterable_whereType: true
+    
+    # Prefer iterable any
+    prefer_iterable_any: true
+    
+    # Prefer iterable every
+    prefer_iterable_every: true
+    
+    # Prefer iterable firstWhere
+    prefer_iterable_firstWhere: true
+    
+    # Prefer iterable lastWhere
+    prefer_iterable_lastWhere: true
+    
+    # Prefer iterable singleWhere
+    prefer_iterable_singleWhere: true
+    
+    # Prefer iterable where
+    prefer_iterable_where: true
+    
+    # Prefer iterable map
+    prefer_iterable_map: true
+    
+    # Prefer iterable reduce
+    prefer_iterable_reduce: true
+    
+    # Prefer iterable fold
+    prefer_iterable_fold: true
+    
+    # Prefer iterable expand
+    prefer_iterable_expand: true
+    
+    # Prefer iterable join
+    prefer_iterable_join: true
+    
+    # Prefer iterable toList
+    prefer_iterable_toList: true
+    
+    # Prefer iterable toSet
+    prefer_iterable_toSet: true
+    
+    # Prefer iterable cast
+    prefer_iterable_cast: true
+    
+    # Prefer iterable skip
+    prefer_iterable_skip: true
+    
+    # Prefer iterable take
+    prefer_iterable_take: true
+    
+    # Prefer iterable skipWhile
+    prefer_iterable_skipWhile: true
+    
+    # Prefer iterable takeWhile
+    prefer_iterable_takeWhile: true
+    
+    # Prefer iterable whereType
+    prefer_iterable_whereType: true
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/generated_plugin_registrant.dart"
+  
+  errors:
+    # Treat missing required parameters as a warning (not a hint)
+    missing_required_param: warning
+    missing_return: warning
+    
+    # Treat missing returns as a warning
+    missing_return: warning
+    
+    # Allow having TODOs in the code
+    todo: ignore
+    
+    # Allow having print statements in the code
+    avoid_print: ignore
+    
+    # Allow having debugPrint statements in the code
+    avoid_print: ignore 

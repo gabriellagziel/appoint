@@ -36,14 +36,16 @@
     "url": "https://github.com/gabriellagziel/appoint/issues"
   },
   "dependencies": {
-    "axios": "^1.6.0"
+    "@octokit/rest": "^22.0.0",
+    "axios": "^1.6.0",
+    "firebase-admin": "^13.4.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "jest": "^29.0.0",
     "@types/jest": "^29.0.0",
-    "ts-jest": "^29.0.0"
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
   },
   "engines": {
     "node": ">=16.0.0"

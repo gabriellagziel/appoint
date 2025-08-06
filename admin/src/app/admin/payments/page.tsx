@@ -1,88 +1,94 @@
 "use client"
 
 import { AdminLayout } from "@/components/AdminLayout"
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { CreditCard, DollarSign, Search, TrendingUp } from "lucide-react"
-import { useState } from "react"
-
-// Mock payment data
-const mockPayments = [
-    {
-        id: 1,
-        transactionId: "TXN_001234",
-        businessName: "Downtown Dental",
-        customerName: "John Smith",
-        amount: 150.00,
-        currency: "USD",
-        status: "completed",
-        method: "credit_card",
-        date: "2024-01-15 10:30",
-        fee: 4.50,
-        netAmount: 145.50
-    },
-    {
-        id: 2,
-        transactionId: "TXN_001235",
-        businessName: "City Spa",
-        customerName: "Sarah Johnson",
-        amount: 120.00,
-        currency: "USD",
-        status: "pending",
-        method: "paypal",
-        date: "2024-01-15 11:45",
-        fee: 3.60,
-        netAmount: 116.40
-    },
-    {
-        id: 3,
-        transactionId: "TXN_001236",
-        businessName: "Tech Solutions",
-        customerName: "Mike Davis",
-        amount: 200.00,
-        currency: "USD",
-        status: "failed",
-        method: "bank_transfer",
-        date: "2024-01-15 14:20",
-        fee: 6.00,
-        netAmount: 194.00
-    },
-    {
-        id: 4,
-        transactionId: "TXN_001237",
-        businessName: "Green Gardens",
-        customerName: "Lisa Wilson",
-        amount: 300.00,
-        currency: "USD",
-        status: "completed",
-        method: "credit_card",
-        date: "2024-01-15 16:15",
-        fee: 9.00,
-        netAmount: 291.00
-    },
-    {
-        id: 5,
-        transactionId: "TXN_001238",
-        businessName: "Legal Associates",
-        customerName: "Robert Brown",
-        amount: 250.00,
-        currency: "USD",
-        status: "refunded",
-        method: "credit_card",
-        date: "2024-01-15 09:00",
-        fee: 7.50,
-        netAmount: 242.50
-    }
-]
+import {
+    deletePayment,
+    fetchPayments,
+    getPaymentStats,
+    processRefund,
+    updatePaymentStatus,
+    type Payment,
+    type PaymentFilters
+} from "@/services/payments_service"
+import { CreditCard, DollarSign, Filter, RefreshCw, TrendingUp } from "lucide-react"
+import { useEffect, useState } from "react"
 
 export default function PaymentsPage() {
-    const [filterStatus, setFilterStatus] = useState("all")
-    const [filterMethod, setFilterMethod] = useState("all")
-    const [searchTerm, setSearchTerm] = useState("")
+    const [payments, setPayments] = useState<Payment[]>([])
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState("")
+    const [stats, setStats] = useState({
+        total: 0,
+        completed: 0,
+        pending: 0,
+        failed: 0,
+        refunded: 0,
+        totalAmount: 0,
+        totalFees: 0,
+        totalNetAmount: 0,
+    })
+    const [filters, setFilters] = useState<PaymentFilters>({
+        status: "all",
+        method: "all",
+        search: "",
+    })
+
+    const fetchData = async () => {
+        setLoading(true)
+        setError("")
+        try {
+            const [paymentsResponse, statsData] = await Promise.all([
+                fetchPayments(filters),
+                getPaymentStats(),
+            ])
+            setPayments(paymentsResponse.payments)
+            setStats(statsData)
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Failed to fetch payments")
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    useEffect(() => {
+        fetchData()
+    }, [filters])
+
+    const handleStatusUpdate = async (paymentId: string, newStatus: string) => {
+        try {
+            await updatePaymentStatus(paymentId, newStatus)
+            await fetchData() // Refresh data
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Failed to update payment status")
+        }
+    }
+
+    const handleRefund = async (paymentId: string) => {
+        if (!confirm("Are you sure you want to process a refund for this payment?")) return
+
+        try {
+            await processRefund(paymentId)
+            await fetchData() // Refresh data
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Failed to process refund")
+        }
+    }
+
+    const handleDeletePayment = async (paymentId: string) => {
+        if (!confirm("Are you sure you want to delete this payment?")) return
+
+        try {
+            await deletePayment(paymentId)
+            await fetchData() // Refresh data
+        } catch (err) {
+            setError(err instanceof Error ? err.message : "Failed to delete payment")
+        }
+    }
 
     const getStatusColor = (status: string) => {
         switch (status) {
@@ -99,105 +105,78 @@ export default function PaymentsPage() {
             case "credit_card": return <CreditCard className="h-4 w-4" />
             case "paypal": return <CreditCard className="h-4 w-4" />
             case "bank_transfer": return <CreditCard className="h-4 w-4" />
+            case "stripe": return <CreditCard className="h-4 w-4" />
             default: return <CreditCard className="h-4 w-4" />
         }
     }
 
-    const filteredPayments = mockPayments.filter(payment => {
-        if (filterStatus !== "all" && payment.status !== filterStatus) return false
-        if (filterMethod !== "all" && payment.method !== filterMethod) return false
-        if (searchTerm && !payment.customerName.toLowerCase().includes(searchTerm.toLowerCase()) &&
-            !payment.businessName.toLowerCase().includes(searchTerm.toLowerCase()) &&
-            !payment.transactionId.toLowerCase().includes(searchTerm.toLowerCase())) return false
-        return true
-    })
-
-    const totalRevenue = mockPayments
-        .filter(p => p.status === "completed")
-        .reduce((sum, p) => sum + p.amount, 0)
-
-    const totalFees = mockPayments
-        .filter(p => p.status === "completed")
-        .reduce((sum, p) => sum + p.fee, 0)
-
-    const handleViewDetails = (paymentId: number) => {
-        console.log(`Viewing payment ${paymentId}`)
-    }
-
-    const handleRefund = (paymentId: number) => {
-        console.log(`Processing refund for payment ${paymentId}`)
+    if (loading && payments.length === 0) {
+        return (
+            <AdminLayout>
+                <div className="space-y-6">
+                    <div>
+                        <h1 className="text-3xl font-bold text-gray-900">Payments</h1>
+                        <p className="text-gray-600">Monitor and manage payment transactions</p>
+                    </div>
+                    <div className="flex items-center justify-center h-64">
+                        <div className="text-center">
+                            <RefreshCw className="h-8 w-8 animate-spin text-blue-500 mx-auto mb-4" />
+                            <p className="text-gray-600">Loading payments...</p>
+                        </div>
+                    </div>
+                </div>
+            </AdminLayout>
+        )
     }
 
     return (
         <AdminLayout>
             <div className="space-y-6">
-                <div>
-                    <h1 className="text-3xl font-bold text-gray-900">Payment Management</h1>
-                    <p className="text-gray-600">Monitor transactions, refunds, and payment processing</p>
+                <div className="flex items-center justify-between">
+                    <div>
+                        <h1 className="text-3xl font-bold text-gray-900">Payments</h1>
+                        <p className="text-gray-600">Monitor and manage payment transactions</p>
+                    </div>
+                    <Button onClick={fetchData} disabled={loading}>
+                        <RefreshCw className={`h-4 w-4 mr-2 ${loading ? 'animate-spin' : ''}`} />
+                        Refresh
+                    </Button>
                 </div>
 
-                {/* Stats */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <Card>
-                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
-                            <DollarSign className="h-4 w-4 text-muted-foreground" />
-                        </CardHeader>
-                        <CardContent>
-                            <div className="text-2xl font-bold">${totalRevenue.toFixed(2)}</div>
-                            <p className="text-xs text-gray-500">This month</p>
+                {error && (
+                    <Card className="border-red-200 bg-red-50">
+                        <CardContent className="pt-6">
+                            <p className="text-red-600">{error}</p>
                         </CardContent>
                     </Card>
-
-                    <Card>
-                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Processing Fees</CardTitle>
-                            <TrendingUp className="h-4 w-4 text-muted-foreground" />
-                        </CardHeader>
-                        <CardContent>
-                            <div className="text-2xl font-bold">${totalFees.toFixed(2)}</div>
-                            <p className="text-xs text-gray-500">This month</p>
-                        </CardContent>
-                    </Card>
-
-                    <Card>
-                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Successful Transactions</CardTitle>
-                            <CreditCard className="h-4 w-4 text-muted-foreground" />
-                        </CardHeader>
-                        <CardContent>
-                            <div className="text-2xl font-bold">
-                                {mockPayments.filter(p => p.status === "completed").length}
-                            </div>
-                            <p className="text-xs text-gray-500">This month</p>
-                        </CardContent>
-                    </Card>
-
-                    <Card>
-                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                            <CardTitle className="text-sm font-medium">Failed Transactions</CardTitle>
-                            <CreditCard className="h-4 w-4 text-muted-foreground" />
-                        </CardHeader>
-                        <CardContent>
-                            <div className="text-2xl font-bold">
-                                {mockPayments.filter(p => p.status === "failed").length}
-                            </div>
-                            <p className="text-xs text-gray-500">This month</p>
-                        </CardContent>
-                    </Card>
-                </div>
+                )}
 
                 {/* Filters */}
                 <Card>
                     <CardHeader>
-                        <CardTitle>Filters</CardTitle>
+                        <CardTitle className="flex items-center gap-2">
+                            <Filter className="h-5 w-5" />
+                            Filters
+                        </CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <div className="flex gap-4">
-                            <div className="flex-1">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <label className="text-sm font-medium">Search</label>
+                                <Input
+                                    placeholder="Search payments..."
+                                    value={filters.search || ""}
+                                    onChange={(e) => setFilters({ ...filters, search: e.target.value })}
+                                    className="mt-1"
+                                />
+                            </div>
+                            <div>
                                 <label className="text-sm font-medium">Status</label>
-                                <Select value={filterStatus} onValueChange={setFilterStatus}>
-                                    <SelectTrigger>
+                                <Select
+                                    value={filters.status || "all"}
+                                    onValueChange={(value) => setFilters({ ...filters, status: value })}
+                                >
+                                    <SelectTrigger className="mt-1">
                                         <SelectValue />
                                     </SelectTrigger>
                                     <SelectContent>
@@ -209,10 +188,13 @@ export default function PaymentsPage() {
                                     </SelectContent>
                                 </Select>
                             </div>
-                            <div className="flex-1">
-                                <label className="text-sm font-medium">Payment Method</label>
-                                <Select value={filterMethod} onValueChange={setFilterMethod}>
-                                    <SelectTrigger>
+                            <div>
+                                <label className="text-sm font-medium">Method</label>
+                                <Select
+                                    value={filters.method || "all"}
+                                    onValueChange={(value) => setFilters({ ...filters, method: value })}
+                                >
+                                    <SelectTrigger className="mt-1">
                                         <SelectValue />
                                     </SelectTrigger>
                                     <SelectContent>
@@ -220,90 +202,206 @@ export default function PaymentsPage() {
                                         <SelectItem value="credit_card">Credit Card</SelectItem>
                                         <SelectItem value="paypal">PayPal</SelectItem>
                                         <SelectItem value="bank_transfer">Bank Transfer</SelectItem>
+                                        <SelectItem value="stripe">Stripe</SelectItem>
                                     </SelectContent>
                                 </Select>
-                            </div>
-                            <div className="flex-1">
-                                <label className="text-sm font-medium">Search</label>
-                                <div className="relative">
-                                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                                    <Input
-                                        placeholder="Search transactions..."
-                                        value={searchTerm}
-                                        onChange={(e) => setSearchTerm(e.target.value)}
-                                        className="pl-10"
-                                    />
-                                </div>
                             </div>
                         </div>
                     </CardContent>
                 </Card>
 
+                {/* Stats Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <Card>
+                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                            <CardTitle className="text-sm font-medium">Total Payments</CardTitle>
+                            <CreditCard className="h-4 w-4 text-muted-foreground" />
+                        </CardHeader>
+                        <CardContent>
+                            <div className="text-2xl font-bold">{stats.total}</div>
+                            <div className="flex items-center text-xs text-green-600">
+                                <TrendingUp className="h-3 w-3 mr-1" />
+                                +12.5% from last month
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card>
+                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                            <CardTitle className="text-sm font-medium">Completed</CardTitle>
+                            <DollarSign className="h-4 w-4 text-muted-foreground" />
+                        </CardHeader>
+                        <CardContent>
+                            <div className="text-2xl font-bold">{stats.completed}</div>
+                            <div className="flex items-center text-xs text-green-600">
+                                <TrendingUp className="h-3 w-3 mr-1" />
+                                {stats.total > 0 ? Math.round((stats.completed / stats.total) * 100) : 0}% success rate
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card>
+                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                            <CardTitle className="text-sm font-medium">Total Amount</CardTitle>
+                            <DollarSign className="h-4 w-4 text-muted-foreground" />
+                        </CardHeader>
+                        <CardContent>
+                            <div className="text-2xl font-bold">${stats.totalAmount.toLocaleString()}</div>
+                            <div className="flex items-center text-xs text-green-600">
+                                <TrendingUp className="h-3 w-3 mr-1" />
+                                +8.2% from last month
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card>
+                        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                            <CardTitle className="text-sm font-medium">Net Revenue</CardTitle>
+                            <DollarSign className="h-4 w-4 text-muted-foreground" />
+                        </CardHeader>
+                        <CardContent>
+                            <div className="text-2xl font-bold">${stats.totalNetAmount.toLocaleString()}</div>
+                            <div className="flex items-center text-xs text-gray-600">
+                                Fees: ${stats.totalFees.toLocaleString()}
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
+
+                {/* Status Distribution */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="text-sm font-medium">Pending</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="text-2xl font-bold">{stats.pending}</div>
+                            <div className="text-xs text-gray-500">
+                                {stats.total > 0 ? Math.round((stats.pending / stats.total) * 100) : 0}% of payments
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="text-sm font-medium">Failed</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="text-2xl font-bold">{stats.failed}</div>
+                            <div className="text-xs text-gray-500">
+                                {stats.total > 0 ? Math.round((stats.failed / stats.total) * 100) : 0}% of payments
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="text-sm font-medium">Refunded</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="text-2xl font-bold">{stats.refunded}</div>
+                            <div className="text-xs text-gray-500">
+                                {stats.total > 0 ? Math.round((stats.refunded / stats.total) * 100) : 0}% of payments
+                            </div>
+                        </CardContent>
+                    </Card>
+
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="text-sm font-medium">Success Rate</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="text-2xl font-bold">
+                                {stats.total > 0 ? Math.round((stats.completed / stats.total) * 100) : 0}%
+                            </div>
+                            <div className="text-xs text-gray-500">
+                                Completed payments
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
+
                 {/* Payments Table */}
                 <Card>
                     <CardHeader>
-                        <CardTitle>Transactions</CardTitle>
+                        <CardTitle>All Payments ({payments.length})</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <Table>
-                            <TableHeader>
-                                <TableRow>
-                                    <TableHead>Transaction ID</TableHead>
-                                    <TableHead>Business</TableHead>
-                                    <TableHead>Customer</TableHead>
-                                    <TableHead>Amount</TableHead>
-                                    <TableHead>Method</TableHead>
-                                    <TableHead>Status</TableHead>
-                                    <TableHead>Date</TableHead>
-                                    <TableHead>Actions</TableHead>
-                                </TableRow>
-                            </TableHeader>
-                            <TableBody>
-                                {filteredPayments.map((payment) => (
-                                    <TableRow key={payment.id}>
-                                        <TableCell className="font-medium">{payment.transactionId}</TableCell>
-                                        <TableCell>{payment.businessName}</TableCell>
-                                        <TableCell>{payment.customerName}</TableCell>
-                                        <TableCell>
-                                            <div className="font-medium">${payment.amount.toFixed(2)}</div>
-                                            <div className="text-sm text-gray-500">Fee: ${payment.fee.toFixed(2)}</div>
-                                        </TableCell>
-                                        <TableCell>
-                                            <div className="flex items-center gap-2">
-                                                {getMethodIcon(payment.method)}
-                                                <span className="capitalize">{payment.method.replace('_', ' ')}</span>
-                                            </div>
-                                        </TableCell>
-                                        <TableCell>
-                                            <Badge variant={getStatusColor(payment.status)}>
-                                                {payment.status}
-                                            </Badge>
-                                        </TableCell>
-                                        <TableCell>{payment.date}</TableCell>
-                                        <TableCell>
-                                            <div className="flex space-x-2">
-                                                <Button
-                                                    variant="outline"
-                                                    size="sm"
-                                                    onClick={() => handleViewDetails(payment.id)}
+                        {payments.length === 0 ? (
+                            <div className="text-center py-8">
+                                <p className="text-gray-500">No payments found</p>
+                            </div>
+                        ) : (
+                            <Table>
+                                <TableHeader>
+                                    <TableRow>
+                                        <TableHead>Transaction ID</TableHead>
+                                        <TableHead>Business</TableHead>
+                                        <TableHead>Customer</TableHead>
+                                        <TableHead>Amount</TableHead>
+                                        <TableHead>Method</TableHead>
+                                        <TableHead>Status</TableHead>
+                                        <TableHead>Date</TableHead>
+                                        <TableHead>Actions</TableHead>
+                                    </TableRow>
+                                </TableHeader>
+                                <TableBody>
+                                    {payments.map((payment) => (
+                                        <TableRow key={payment.id}>
+                                            <TableCell className="font-medium">{payment.transactionId}</TableCell>
+                                            <TableCell>{payment.businessName}</TableCell>
+                                            <TableCell>{payment.customerName}</TableCell>
+                                            <TableCell>${payment.amount.toFixed(2)}</TableCell>
+                                            <TableCell>
+                                                <div className="flex items-center gap-2">
+                                                    {getMethodIcon(payment.method)}
+                                                    <span className="capitalize">{payment.method.replace('_', ' ')}</span>
+                                                </div>
+                                            </TableCell>
+                                            <TableCell>
+                                                <Select
+                                                    value={payment.status}
+                                                    onValueChange={(value) => handleStatusUpdate(payment.id, value)}
                                                 >
-                                                    View
-                                                </Button>
-                                                {payment.status === "completed" && (
+                                                    <SelectTrigger className="w-24">
+                                                        <SelectValue />
+                                                    </SelectTrigger>
+                                                    <SelectContent>
+                                                        <SelectItem value="completed">Completed</SelectItem>
+                                                        <SelectItem value="pending">Pending</SelectItem>
+                                                        <SelectItem value="failed">Failed</SelectItem>
+                                                        <SelectItem value="refunded">Refunded</SelectItem>
+                                                    </SelectContent>
+                                                </Select>
+                                            </TableCell>
+                                            <TableCell>
+                                                {payment.date.toLocaleDateString()}
+                                            </TableCell>
+                                            <TableCell>
+                                                <div className="flex space-x-2">
+                                                    {payment.status === 'completed' && (
+                                                        <Button
+                                                            variant="outline"
+                                                            size="sm"
+                                                            onClick={() => handleRefund(payment.id)}
+                                                        >
+                                                            Refund
+                                                        </Button>
+                                                    )}
                                                     <Button
                                                         variant="outline"
                                                         size="sm"
-                                                        onClick={() => handleRefund(payment.id)}
+                                                        onClick={() => handleDeletePayment(payment.id)}
                                                     >
-                                                        Refund
+                                                        Delete
                                                     </Button>
-                                                )}
-                                            </div>
-                                        </TableCell>
-                                    </TableRow>
-                                ))}
-                            </TableBody>
-                        </Table>
+                                                </div>
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        )}
                     </CardContent>
                 </Card>
             </div>

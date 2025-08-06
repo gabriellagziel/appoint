@@ -1,5 +1,16 @@
-import DashboardLayout from "@/components/DashboardLayout"
+import { ProtectedRoute } from '@/components/ProtectedRoute';
+import { SubscriptionCheck } from '@/components/SubscriptionCheck';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
-  return <DashboardLayout>{children}</DashboardLayout>
+export default function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <ProtectedRoute>
+      <SubscriptionCheck>
+        {children}
+      </SubscriptionCheck>
+    </ProtectedRoute>
+  );
 } 

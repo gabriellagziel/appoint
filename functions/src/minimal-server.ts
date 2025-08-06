@@ -1,5 +1,6 @@
 import cors from 'cors';
 import express from 'express';
+import { getPublicStatus } from './health/publicStatus';
 
 const app = express();
 const PORT = parseInt(process.env.PORT || '8080', 10);
@@ -26,6 +27,9 @@ app.get('/api/health', (req, res) => {
         type: 'liveness'
     });
 });
+
+// Public health status endpoint
+app.get('/api/status', getPublicStatus);
 
 // API routes
 app.get('/api/status', (req, res) => {

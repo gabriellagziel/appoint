@@ -5,10 +5,11 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
+    "dev": "ts-node src/local-server.ts",
     "test": "jest"
   },
   "dependencies": {
+    "@octokit/rest": "^22.0.0",
     "archiver": "^7.0.1",
     "cors": "^2.8.5",
     "csv-parse": "^6.1.0",

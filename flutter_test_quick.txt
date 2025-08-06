@@ -1,3 +1,0 @@
-Cannot negate option "--no-coverage".
-
-Run 'flutter -h' (or 'flutter <command> -h') for available flutter commands and options.

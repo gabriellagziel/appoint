@@ -53,6 +53,11 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="msapplication-TileColor" content="#3b82f6" />
         <meta name="msapplication-tap-highlight" content="no" />
+        {/* SYSTEM_TAG: 🔐 App-Oint Admin Panel */}
+        {/* SYSTEM_TAG: 📦 Type = Firebase-powered internal dashboard */}
+        {/* SYSTEM_TAG: 🧠 Purpose = Moderation, Analytics, User Management */}
+        {/* SYSTEM_TAG: 🔒 Protected by Firebase Auth with Admin role */}
+        {/* SYSTEM_TAG: 🚫 Not part of user-facing site */}
       </head>
       <body className={`${inter.className} bg-gray-50 min-h-screen`}>
         <Providers>

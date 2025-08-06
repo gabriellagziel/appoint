@@ -15,6 +15,7 @@ const storage = admin.storage().bucket();
 const BUSINESS_COLLECTION = 'business_accounts';
 const BUSINESS_SUBSCRIPTIONS_COLLECTION = 'business_subscriptions';
 const INVOICE_COLLECTION = 'invoices';
+const USAGE_COLLECTION = 'usage_logs'; // Added missing constant
 
 interface PricingModel {
   pricingModel: 'per_call' | 'flat' | 'tiered';
@@ -166,6 +167,89 @@ async function sendInvoiceEmail({
       },
     ],
   });
+}
+
+/**
+ * Generate monthly invoice for a business
+ */
+export async function generateMonthlyInvoice(businessId: string, businessData: any) {
+  try {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1;
+
+    // Get usage for the month
+    const startOfMonth = new Date(year, month - 1, 1);
+    const endOfMonth = new Date(year, month, 0, 23, 59, 59, 999);
+
+    const usageSnap = await db
+      .collection(USAGE_COLLECTION)
+      .where('businessId', '==', businessId)
+      .where('timestamp', '>=', startOfMonth)
+      .where('timestamp', '<=', endOfMonth)
+      .get();
+
+    const totalUsage = usageSnap.size;
+
+    if (totalUsage === 0) {
+      console.log(`No usage for business ${businessId} in ${month}/${year}`);
+      return;
+    }
+
+    // Calculate amount based on pricing model
+    const pricingModel = businessData.pricingModel || 'per_call';
+    const amount = calculateAmount(totalUsage, {
+      pricingModel,
+      baseRate: businessData.baseRate || 0.01,
+      monthlyFlat: businessData.monthlyFlat,
+      tier: businessData.tier
+    });
+
+    // Generate invoice PDF
+    const pdfBuffer = await generateInvoicePDF({
+      businessName: businessData.name,
+      businessId,
+      apiKey: businessData.apiKey,
+      usage: totalUsage,
+      amount,
+      dueDate: new Date(year, month, 15), // Due on 15th of next month
+    });
+
+    // Upload to storage
+    const filename = `invoice-${year}-${month.toString().padStart(2, '0')}.pdf`;
+    const filePath = `invoices/${businessId}/${filename}`;
+    const file = storage.file(filePath);
+    await file.save(pdfBuffer, { contentType: 'application/pdf' });
+
+    // Create invoice record
+    const invoiceRef = await db.collection(INVOICE_COLLECTION).add({
+      businessId,
+      businessName: businessData.name,
+      month,
+      year,
+      usage: totalUsage,
+      amount,
+      status: 'pending',
+      dueDate: new Date(year, month, 15),
+      createdAt: admin.firestore.FieldValue.serverTimestamp(),
+      filePath,
+      pricingModel,
+      baseRate: businessData.baseRate || 0.01,
+    });
+
+    // Send invoice email
+    await sendInvoiceEmail({
+      to: businessData.email,
+      pdfBuffer,
+      filename: `invoice-${invoiceRef.id}.pdf`,
+    });
+
+    console.log(`Invoice generated for business ${businessId}: ${invoiceRef.id}`);
+    return invoiceRef.id;
+  } catch (error) {
+    console.error(`Error generating invoice for business ${businessId}:`, error);
+    throw error;
+  }
 }
 
 // Monthly billing job for API usage (existing)

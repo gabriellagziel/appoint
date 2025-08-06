@@ -4,18 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enterprise Login - App-Oint</title>
+    <title>Sign In - App-Oint Enterprise API</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --color-primary: #0A84FF;
-            --color-secondary: #5AC8FA;
-            --color-accent: #64D2FF;
-            --color-neutral-dark: #141414;
-            --color-neutral-light: #E5E5EA;
-            --font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-            --border-radius: 8px;
-            --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
         * {
             margin: 0;
             padding: 0;
@@ -23,25 +14,23 @@
         }
 
         body {
-            font-family: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif';
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%);
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #0f172a;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            padding: 20px;
         }
 
-        .login-container {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+        .login-card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
             width: 100%;
-            max-width: 500px;
-            color: #2c3e50;
         }
 
         .logo {
@@ -50,111 +39,66 @@
         }
 
         .logo h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            background: linear-gradient(45deg, #0A84FF, #64D2FF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0f172a;
         }
 
         .logo p {
-            color: #6c757d;
-            font-size: 1.1rem;
-        }
-
-        .enterprise-badge {
-            display: inline-block;
-            background: linear-gradient(45deg, #0A84FF, #64D2FF);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-left: 10px;
+            color: #64748b;
+            font-size: 0.9rem;
         }
 
         .form-group {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 8px;
             font-weight: 600;
-            color: #2c3e50;
+            margin-bottom: 8px;
+            color: #374151;
         }
 
         .form-group input {
             width: 100%;
-            padding: 15px;
-            border: 2px solid #e9ecef;
-            border-radius: 10px;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
             font-size: 1rem;
-            transition: all 0.3s ease;
-            background: white;
+            transition: border-color 0.3s ease;
         }
 
         .form-group input:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            border-color: #3b82f6;
         }
 
         .login-btn {
             width: 100%;
-            padding: 15px;
-            background: linear-gradient(45deg, #0A84FF, #64D2FF);
+            background: #3b82f6;
             color: white;
+            padding: 14px 24px;
             border: none;
-            border-radius: 10px;
-            font-size: 1.1rem;
+            border-radius: 8px;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
-            margin-bottom: 20px;
+            transition: background 0.3s ease;
         }
 
         .login-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+            background: #2563eb;
         }
 
-        .enterprise-features {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        .enterprise-features h4 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-
-        .feature-list {
-            list-style: none;
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-
-        .feature-list li {
-            margin-bottom: 8px;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .feature-list li:before {
-            content: '✅';
-            position: absolute;
-            left: 0;
+        .login-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
         }
 
         .divider {
             text-align: center;
-            margin: 25px 0;
+            margin: 20px 0;
             position: relative;
         }
 
@@ -165,243 +109,131 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: #e9ecef;
+            background: #e5e7eb;
         }
 
         .divider span {
             background: white;
-            padding: 0 15px;
-            color: #6c757d;
+            padding: 0 16px;
+            color: #64748b;
             font-size: 0.9rem;
-        }
-
-        .sso-options {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
-        .sso-btn {
-            flex: 1;
-            padding: 12px;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            background: white;
-            color: #2c3e50;
-            text-decoration: none;
-            text-align: center;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .sso-btn:hover {
-            border-color: #667eea;
-            background: #f8f9fa;
-        }
-
-        .signup-link {
-            text-align: center;
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-
-        .signup-link a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .signup-link a:hover {
-            text-decoration: underline;
-        }
-
-        .error-message {
-            background: #f8d7da;
-            color: #721c24;
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            display: none;
-        }
-
-        .success-message {
-            background: #d4edda;
-            color: #155724;
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            display: none;
         }
 
         .back-link {
-            position: absolute;
-            top: 30px;
-            left: 30px;
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            text-align: center;
+            margin-top: 20px;
         }
 
-        .back-link:hover {
+        .back-link a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link a:hover {
             text-decoration: underline;
         }
 
-        .api-key-section {
-            margin-top: 20px;
-            padding: 15px;
-            background: #e3f2fd;
+        .demo-credentials {
+            background: #f0f9ff;
+            border: 1px solid #0ea5e9;
             border-radius: 8px;
-            border-left: 4px solid #2196f3;
+            padding: 16px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
         }
 
-        .api-key-section h4 {
-            color: #1976d2;
-            margin-bottom: 10px;
+        .demo-credentials h3 {
+            color: #0c4a6e;
+            margin-bottom: 8px;
             font-size: 1rem;
         }
 
-        .api-key-section p {
-            color: #424242;
-            font-size: 0.9rem;
-            line-height: 1.4;
+        .demo-credentials p {
+            color: #0369a1;
+            margin-bottom: 4px;
         }
     </style>
 </head>
 
 <body>
-    <a href="index.html" class="back-link">← Back to Enterprise Portal</a>
-
-    <div class="login-container">
+    <div class="login-card">
         <div class="logo">
-            <img src="/logo.svg" alt="App-Oint Logo" style="width: 80px; height: 80px; margin-bottom: 20px;">
-            <h1>App-Oint<span class="enterprise-badge">ENTERPRISE</span></h1>
-            <p>Enterprise Portal Login</p>
+            <h1>App-Oint</h1>
+            <p>Enterprise API Dashboard</p>
         </div>
 
-        <div class="error-message" id="errorMessage">
-            Invalid credentials. Please try again.
-        </div>
-
-        <div class="success-message" id="successMessage">
-            Login successful! Redirecting to Enterprise Dashboard...
+        <div class="demo-credentials">
+            <h3>🔑 Demo Credentials</h3>
+            <p><strong>Username:</strong> supreamleader1972</p>
+            <p><strong>Password:</strong> AbuAmir!2012</p>
         </div>
 
         <form id="loginForm">
             <div class="form-group">
-                <label for="email">Enterprise Email</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your enterprise email">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" name="username" required>
             </div>
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required placeholder="Enter your password">
+                <input type="password" id="password" name="password" required>
             </div>
 
-            <button type="submit" class="login-btn">Sign In to Enterprise</button>
+            <button type="submit" class="login-btn" id="loginBtn">Sign In</button>
         </form>
 
-        <div class="enterprise-features">
-            <h4>🔒 Enterprise Security Features</h4>
-            <ul class="feature-list">
-                <li>SSO Integration (SAML/OAuth 2.0)</li>
-                <li>Multi-factor Authentication</li>
-                <li>Advanced Role-based Access Control</li>
-                <li>Audit Logging & Compliance</li>
-                <li>API Key Management</li>
-            </ul>
-        </div>
-
         <div class="divider">
-            <span>or continue with</span>
+            <span>or</span>
         </div>
 
-        <div class="sso-options">
-            <a href="#" class="sso-btn" onclick="ssoLogin('saml')">
-                <span>🔐 SAML SSO</span>
-            </a>
-            <a href="#" class="sso-btn" onclick="ssoLogin('oauth')">
-                <span>🔑 OAuth 2.0</span>
-            </a>
-        </div>
-
-        <div class="api-key-section">
-            <h4>🔑 API Key Access</h4>
-            <p>Enterprise users can also authenticate using API keys for programmatic access to our REST API endpoints.
-            </p>
-        </div>
-
-        <div class="signup-link">
-            Need an Enterprise account? <a href="#" onclick="showEnterpriseSignup()">Contact Sales</a>
+        <div class="back-link">
+            <a href="/">← Back to API Overview</a>
         </div>
     </div>
 
     <script>
-        document.getElementById('loginForm').addEventListener('submit', function (e) {
+        document.getElementById('loginForm').addEventListener('submit', async function (e) {
             e.preventDefault();
 
-            const email = document.getElementById('email').value;
+            const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
+            const loginBtn = document.getElementById('loginBtn');
 
-            // Hide any existing messages
-            document.getElementById('errorMessage').style.display = 'none';
-            document.getElementById('successMessage').style.display = 'none';
-
-            // Simple validation
-            if (!email || !password) {
-                showError('Please fill in all fields');
-                return;
-            }
-
-            // Simulate enterprise login process
-            simulateEnterpriseLogin(email, password);
-        });
-
-        function simulateEnterpriseLogin(email, password) {
             // Show loading state
-            const loginBtn = document.querySelector('.login-btn');
-            const originalText = loginBtn.textContent;
-            loginBtn.textContent = 'Authenticating...';
+            loginBtn.textContent = 'Signing In...';
             loginBtn.disabled = true;
 
-            // Simulate API call with enterprise features
-            setTimeout(() => {
-                // For demo purposes, accept any email/password combination
-                if (email && password) {
-                    showSuccess();
-                    setTimeout(() => {
-                        // Redirect to enterprise dashboard
-                        window.location.href = 'dashboard.html';
-                    }, 1500);
-                } else {
-                    showError('Invalid enterprise credentials');
-                }
+            // Demo login validation
+            if (username === 'supreamleader1972' && password === 'AbuAmir!2012') {
+                // Store session data
+                localStorage.setItem('userLoggedIn', 'true');
+                localStorage.setItem('userData', JSON.stringify({
+                    username: username,
+                    companyName: 'Demo Enterprise',
+                    email: 'demo@enterprise.com'
+                }));
 
-                // Reset button
-                loginBtn.textContent = originalText;
+                // Success - redirect to dashboard
+                setTimeout(() => {
+                    window.location.href = '/dashboard.html';
+                }, 1000);
+            } else {
+                // Error
+                alert('Invalid credentials. Please use the demo credentials shown above.');
+                loginBtn.textContent = 'Sign In';
                 loginBtn.disabled = false;
-            }, 2000);
+            }
+        });
+
+        // Auto-fill demo credentials
+        function fillDemoCredentials() {
+            document.getElementById('username').value = 'supreamleader1972';
+            document.getElementById('password').value = 'AbuAmir!2012';
         }
 
-        function showError(message) {
-            const errorDiv = document.getElementById('errorMessage');
-            errorDiv.textContent = message;
-            errorDiv.style.display = 'block';
-        }
-
-        function showSuccess() {
-            document.getElementById('successMessage').style.display = 'block';
-        }
-
-        function ssoLogin(provider) {
-            alert(`Enterprise SSO login with ${provider.toUpperCase()} would be implemented here`);
-        }
-
-        function showEnterpriseSignup() {
-            alert('Enterprise signup would redirect to sales team contact form');
-        }
+        // Auto-fill on page load
+        document.addEventListener('DOMContentLoaded', fillDemoCredentials);
     </script>
 </body>
 

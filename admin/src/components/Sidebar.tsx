@@ -44,6 +44,7 @@ const navigation = [
   { name: "Broadcasts", href: "/admin/broadcasts", icon: Megaphone },
   { name: "Notifications", href: "/admin/notifications", icon: Bell },
   { name: "Business Accounts", href: "/admin/business", icon: Shield },
+  { name: "Registrations", href: "/admin/business/registrations", icon: ClipboardList },
   { name: "Billing & Revenue", href: "/admin/billing", icon: CreditCard },
   { name: "Security & Abuse", href: "/admin/security", icon: Shield },
   { name: "API Admin", href: "/admin/api", icon: Key },
@@ -74,8 +75,8 @@ export function Sidebar({ isOpen, onToggle }: SidebarProps) {
 
       {/* Sidebar */}
       <div className={cn(
-        "fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-200 ease-in-out lg:translate-x-0 lg:static lg:inset-0",
-        isOpen ? "translate-x-0" : "-translate-x-full"
+        "w-64 bg-white shadow-lg lg:block",
+        isOpen ? "block" : "hidden lg:block"
       )}>
         <div className="flex h-full flex-col">
           {/* Header */}

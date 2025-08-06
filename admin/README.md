@@ -1,158 +1,257 @@
-# App-Oint Admin Dashboard
+# App-Oint Admin Panel
 
-A Next.js admin dashboard with authentication, layout components, and full deployment configuration.
+A comprehensive admin panel for managing the App-Oint platform, built with Next.js, TypeScript, and Firebase.
 
 ## Features
 
-- **Authentication**: NextAuth.js with role-based access control
-- **Responsive Layout**: Sidebar navigation with mobile support
-- **Admin Pages**: Dashboard, Users, Settings, Analytics
-- **Protected Routes**: Middleware protection for admin routes
-- **Modern UI**: Built with Tailwind CSS and shadcn/ui components
-- **Deployment Ready**: GitHub Actions CI/CD and DigitalOcean App Platform
+- **User Management**: View, edit, and manage user accounts
+- **Business Management**: Monitor business accounts and subscription plans
+- **Payment Tracking**: Track transactions and manage refunds
+- **Analytics Dashboard**: Real-time analytics and performance metrics
+- **Security Monitoring**: Monitor security threats and abuse reports
+- **Flag Management**: Review and handle content/user flags
+- **Real-time Data**: All data is fetched from Firebase Firestore
+
+## Tech Stack
+
+- **Frontend**: Next.js 14, React 18, TypeScript
+- **Styling**: Tailwind CSS, Radix UI components
+- **Backend**: Firebase (Firestore, Auth)
+- **Charts**: Recharts
+- **Authentication**: NextAuth.js
+
+## Prerequisites
+
+- Node.js 18+
+- npm or yarn
+- Firebase project with Firestore enabled
 
 ## Installation
 
-```bash
-cd admin
-npm install
-```
+1. **Clone the repository**
 
-## Development
+   ```bash
+   git clone <repository-url>
+   cd admin
+   ```
 
-To run the development server:
+2. **Install dependencies**
 
-```bash
-npm run dev
-```
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Set up environment variables**
 
-## Authentication
+   ```bash
+   cp env.example .env.local
+   ```
 
-### Demo Credentials
-- **Username**: `admin`
-- **Password**: `admin123`
+   Edit `.env.local` with your Firebase configuration:
 
-### Protecting Routes
-The admin dashboard uses NextAuth.js middleware to protect routes:
+   ```env
+   NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=123456789
+   NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+   
+   NEXTAUTH_URL=http://localhost:3000
+   NEXTAUTH_SECRET=your_nextauth_secret
+   ```
+
+4. **Set up Firebase**
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
+   - Enable Firestore Database
+   - Create the following collections:
+     - `users`
+     - `businesses`
+     - `payments`
+     - `security_events`
+     - `abuse_reports`
+     - `flags`
+
+5. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+6. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Firebase Collections Structure
+
+### Users Collection
 
 ```typescript
-// middleware.ts
-export const config = {
-  matcher: ["/admin/:path*"]
+{
+  id: string,
+  name: string,
+  email: string,
+  phone?: string,
+  role: 'user' | 'admin' | 'moderator' | 'business',
+  status: 'active' | 'inactive' | 'suspended',
+  type: 'mobile' | 'business',
+  createdAt: Date,
+  lastActive: Date,
+  profileImage?: string,
+  businessId?: string
 }
 ```
 
-All routes under `/admin` require authentication and admin role.
+### Businesses Collection
 
-## Building for Production
-
-To build the application:
-
-```bash
-npm run build
-npm run start
+```typescript
+{
+  id: string,
+  name: string,
+  owner: string,
+  email: string,
+  plan: 'basic' | 'premium' | 'enterprise',
+  status: 'active' | 'suspended' | 'pending',
+  employees: number,
+  locations: number,
+  monthlyRevenue: number,
+  joinedAt: Date,
+  lastActive: Date,
+  businessId?: string,
+  phone?: string,
+  address?: string,
+  industry?: string
+}
 ```
 
-## Deployment
+### Payments Collection
 
-### GitHub Actions
+```typescript
+{
+  id: string,
+  transactionId: string,
+  businessName: string,
+  customerName: string,
+  amount: number,
+  currency: string,
+  status: 'completed' | 'pending' | 'failed' | 'refunded',
+  method: 'credit_card' | 'paypal' | 'bank_transfer' | 'stripe',
+  date: Date,
+  fee: number,
+  netAmount: number,
+  businessId?: string,
+  customerId?: string,
+  description?: string,
+  receiptUrl?: string
+}
+```
 
-The admin dashboard is automatically deployed via GitHub Actions when changes are pushed to the `main` branch.
+## Available Scripts
 
-### DigitalOcean App Platform
-
-1. Install the DigitalOcean CLI:
-   ```bash
-   brew install doctl
-   ```
-
-2. Authenticate with DigitalOcean:
-   ```bash
-   doctl auth init
-   ```
-
-3. Deploy the admin dashboard:
-   ```bash
-   doctl apps create --spec admin_app_spec.yaml
-   ```
-
-4. Update the app after changes:
-   ```bash
-   doctl apps update <APP_ID> --spec admin_app_spec.yaml
-   ```
-
-### DNS Setup
-
-1. Add A/ALIAS records for `admin.app-oint.com` in your domain registrar's DNS settings
-2. Point to the addresses provided by DigitalOcean after app creation
-3. Enable Automatic HTTPS in the DigitalOcean App Platform dashboard
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run test` - Run tests
+- `npm run test:watch` - Run tests in watch mode
 
 ## Project Structure
 
 ```
 admin/
 ├── src/
-│   ├── app/
-│   │   ├── admin/
-│   │   │   ├── page.tsx              # Dashboard
-│   │   │   ├── users/
-│   │   │   │   └── page.tsx          # Users management
-│   │   │   ├── settings/
-│   │   │   │   └── page.tsx          # Settings form
-│   │   │   └── analytics/
-│   │   │       └── page.tsx          # Analytics dashboard
-│   │   ├── auth/
-│   │   │   └── signin/
-│   │   │       └── page.tsx          # Sign in page
-│   │   ├── api/
-│   │   │   └── auth/
-│   │   │       └── [...nextauth]/
-│   │   │           └── route.ts      # NextAuth API
-│   │   ├── layout.tsx                # Root layout
-│   │   └── globals.css               # Global styles
-│   ├── components/
-│   │   ├── AdminLayout.tsx           # Main layout wrapper
-│   │   ├── Sidebar.tsx               # Navigation sidebar
-│   │   ├── TopNav.tsx                # Top navigation
-│   │   ├── Providers.tsx             # NextAuth provider
-│   │   └── ui/                       # shadcn/ui components
-│   ├── lib/
-│   │   └── utils.ts                  # Utility functions
-│   └── middleware.ts                 # Route protection
-├── .github/workflows/
-│   └── admin-deploy.yml              # GitHub Actions
-├── package.json                      # Dependencies and scripts
-├── next.config.js                    # Next.js config
-├── .gitignore                        # Ignore files
-└── README.md                         # This file
-admin_app_spec.yaml                   # DigitalOcean App Platform spec
+│   ├── app/                    # Next.js app directory
+│   │   ├── admin/             # Admin pages
+│   │   │   ├── users/         # User management
+│   │   │   ├── business/      # Business management
+│   │   │   ├── payments/      # Payment tracking
+│   │   │   ├── analytics/     # Analytics dashboard
+│   │   │   ├── security/      # Security monitoring
+│   │   │   └── flags/         # Flag management
+│   │   ├── api/               # API routes
+│   │   └── auth/              # Authentication pages
+│   ├── components/            # Reusable components
+│   │   ├── ui/               # UI components
+│   │   └── ...               # Other components
+│   ├── services/             # Firebase services
+│   │   ├── users_service.ts
+│   │   ├── business_service.ts
+│   │   ├── payments_service.ts
+│   │   ├── analytics_service.ts
+│   │   ├── security_service.ts
+│   │   └── flags_service.ts
+│   ├── lib/                  # Utilities
+│   │   ├── firebase.ts       # Firebase configuration
+│   │   └── utils.ts          # Utility functions
+│   └── types/                # TypeScript types
+├── public/                   # Static assets
+├── test/                     # Test files
+└── ...                       # Configuration files
 ```
 
-## Technologies Used
+## Features Overview
 
-- [Next.js](https://nextjs.org/) - React framework
-- [TypeScript](https://www.typescriptlang.org/) - Type safety
-- [NextAuth.js](https://next-auth.js.org/) - Authentication
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
-- [shadcn/ui](https://ui.shadcn.com/) - UI components
-- [Lucide React](https://lucide.dev/) - Icons
+### User Management
 
-## Environment Variables
+- View all users with filtering and search
+- Update user roles and status
+- Delete users (soft delete)
+- View user statistics
 
-Create a `.env.local` file in the admin directory:
+### Business Management
 
-```env
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your-secret-key-here
-```
+- Monitor business accounts
+- Track subscription plans
+- View revenue statistics
+- Manage business status
 
-For production, set these in your DigitalOcean App Platform environment variables.
+### Payment Tracking
 
-## Security Notes
+- View all transactions
+- Process refunds
+- Track payment statistics
+- Filter by status and method
 
-- Replace the mock authentication in `[...nextauth]/route.ts` with real authentication logic
-- Use strong, unique secrets for `NEXTAUTH_SECRET`
-- Implement proper user management and role assignment
-- Add rate limiting and additional security measures for production use
+### Analytics Dashboard
+
+- Real-time user growth charts
+- Revenue tracking
+- Geographic distribution
+- Performance metrics
+
+### Security Monitoring
+
+- Monitor security events
+- Handle abuse reports
+- Block suspicious users
+- Track threat statistics
+
+### Flag Management
+
+- Review content and user flags
+- Assign flags to admins
+- Resolve or dismiss flags
+- Track flag statistics
+
+## Security Features
+
+- **Authentication**: NextAuth.js integration
+- **Authorization**: Role-based access control
+- **Data Validation**: TypeScript interfaces
+- **Error Handling**: Comprehensive error handling
+- **Loading States**: User-friendly loading indicators
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+For support, please contact the development team or create an issue in the repository.
