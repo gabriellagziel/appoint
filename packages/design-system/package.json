@@ -10,19 +10,21 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "@octokit/rest": "^22.0.0",
+    "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "tailwind-merge": "^3.3.1",
-    "@radix-ui/react-slot": "^1.2.3",
-    "lucide-react": "^0.525.0"
+    "firebase-admin": "^13.4.0",
+    "lucide-react": "^0.525.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "typescript": "^5",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   },
   "peerDependencies": {
     "react": "^19.0.0",

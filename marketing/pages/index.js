@@ -12,7 +12,7 @@ const SectionHero = () => (
             <span className="text-blue-600">back-and-forths</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            App-Oint doesn't just schedule — it understands your rhythm. 
+            App-Oint doesn't just schedule — it understands your rhythm.
             From open calls to multi-location businesses, we built this for the chaos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -313,33 +313,31 @@ const SectionTestimonials = () => (
 
 const SectionPricing = () => {
   const [billingCycle, setBillingCycle] = useState('monthly')
-  
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
           <p className="text-xl text-gray-600">Choose the plan that fits your needs. All plans include our core features.</p>
-          
+
           <div className="flex justify-center mt-8">
             <div className="bg-white rounded-lg p-1 flex">
               <button
                 onClick={() => setBillingCycle('monthly')}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                  billingCycle === 'monthly' 
-                    ? 'bg-blue-600 text-white' 
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${billingCycle === 'monthly'
+                    ? 'bg-blue-600 text-white'
                     : 'text-gray-600 hover:text-gray-900'
-                }`}
+                  }`}
               >
                 Monthly
               </button>
               <button
                 onClick={() => setBillingCycle('yearly')}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                  billingCycle === 'yearly' 
-                    ? 'bg-blue-600 text-white' 
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${billingCycle === 'yearly'
+                    ? 'bg-blue-600 text-white'
                     : 'text-gray-600 hover:text-gray-900'
-                }`}
+                  }`}
               >
                 Yearly
                 <span className="ml-1 text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Save 20%</span>
@@ -347,7 +345,7 @@ const SectionPricing = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="grid md:grid-cols-4 gap-8">
           {/* Free Plan */}
           <div className="bg-white rounded-xl shadow-md p-8">
@@ -577,7 +575,7 @@ const SectionIntegrations = () => (
 
 const Footer = () => {
   const [language, setLanguage] = useState('en')
-  
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -588,7 +586,7 @@ const Footer = () => {
               <span className="text-xl font-bold">App-Oint</span>
             </div>
             <p className="text-gray-400">
-              Your time is too valuable to waste on back-and-forths. 
+              Your time is too valuable to waste on back-and-forths.
               AI-enhanced. Human-centered. Scheduling done right.
             </p>
           </div>
@@ -620,12 +618,12 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400">&copy; 2024 App-Oint. All rights reserved.</p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <select 
-              value={language} 
+            <select
+              value={language}
               onChange={(e) => setLanguage(e.target.value)}
               className="bg-gray-800 text-white px-3 py-1 rounded text-sm"
             >
@@ -664,23 +662,23 @@ export default function Home() {
         <meta name="description" content="From personal scheduling to enterprise APIs — organize your time with AI-enhanced smart appointments. Set – Send – Done." />
         <meta name="keywords" content="appointments, scheduling, calendar, booking, business, API, enterprise" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
+
         {/* Open Graph */}
         <meta property="og:title" content="App-Oint — Time Organized" />
         <meta property="og:description" content="From personal scheduling to enterprise APIs — organize your time with AI-enhanced smart appointments." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://app-oint.com" />
         <meta property="og:image" content="https://app-oint.com/og-image.png" />
-        
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="App-Oint — Time Organized" />
         <meta name="twitter:description" content="From personal scheduling to enterprise APIs — organize your time with AI-enhanced smart appointments." />
         <meta name="twitter:image" content="https://app-oint.com/og-image.png" />
-        
+
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
-        
+
         {/* Analytics Placeholders */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
         <script

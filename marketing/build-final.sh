@@ -11,16 +11,16 @@ node fix-imports.js
 echo "Installing dependencies..."
 npm ci
 
-# Temporarily comment out CSS import in _app.tsx
+# Temporarily comment out CSS import in _app.js
 echo "Temporarily commenting out CSS import..."
-sed -i.backup "s|import '../styles/globals.css'|// import '../styles/globals.css'|" pages/_app.tsx
+sed -i.backup "s|import '../styles/globals.css'|// import '../styles/globals.css'|" pages/_app.js
 
 # Build with all checks disabled
 echo "Building application..."
 NEXT_TELEMETRY_DISABLED=1 npx next build --no-lint
 
-# Restore _app.tsx
-echo "Restoring _app.tsx..."
-mv pages/_app.tsx.backup pages/_app.tsx
+# Restore _app.js
+echo "Restoring _app.js..."
+mv pages/_app.js.backup pages/_app.js
 
 echo "Build completed successfully!" 

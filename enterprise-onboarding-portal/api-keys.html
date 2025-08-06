@@ -16,6 +16,7 @@
             --border-radius: 8px;
             --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
+
         * {
             margin: 0;
             padding: 0;
@@ -250,6 +251,7 @@
                 <a href="integrations.html" class="nav-link">🔗 Integrations</a>
                 <a href="white-label.html" class="nav-link">🎨 White Label</a>
                 <a href="api-keys.html" class="nav-link">🔑 API Keys</a>
+                <a href="billing.html" class="nav-link">🧾 Billing</a>
                 <a href="settings.html" class="nav-link">⚙️ Settings</a>
             </div>
         </div>
@@ -384,37 +386,139 @@
         </div>
     </div>
 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="firebase-client-config.js"></script>
+    <script src="js/ui-helpers.js"></script>
+
     <script>
-        document.getElementById('generateKeyForm').addEventListener('submit', function (e) {
+        // Authentication state management
+        FirebaseClient.auth.onAuthStateChanged((user) => {
+            if (!user) {
+                window.location.href = '/login';
+                return;
+            }
+
+            // Load API keys
+            loadApiKeys();
+        });
+
+        async function loadApiKeys() {
+            try {
+                UIHelpers.showLoading('api-keys-list', 'Loading API keys...');
+                const response = await FirebaseClient.api.get('/api/keys/list');
+                displayApiKeys(response.apiKeys);
+            } catch (error) {
+                console.error('Failed to load API keys:', error);
+                UIHelpers.showError('api-keys-list', 'Failed to load API keys', () => loadApiKeys());
+            }
+        }
+
+        function displayApiKeys(apiKeys) {
+            const container = document.querySelector('.api-keys-list');
+            if (!container) return;
+
+            if (apiKeys.length === 0) {
+                UIHelpers.showEmpty('api-keys-list', 'No API keys found. Generate your first API key above.');
+                return;
+            }
+
+            container.innerHTML = apiKeys.map(key => `
+                <div class="api-key-item" data-key-id="${key.id}">
+                    <div class="key-header">
+                        <div class="key-name">${key.label}</div>
+                        <div class="key-status status-${key.isActive ? 'active' : 'inactive'}">${key.isActive ? 'Active' : 'Inactive'}</div>
+                    </div>
+                    <div class="key-value">${key.id}</div>
+                    <div style="font-size: 0.9rem; color: #6c757d; margin-bottom: 10px;">
+                        Created: ${UIHelpers.formatDate(key.createdAt)} | 
+                        Expires: ${key.expiryDate ? UIHelpers.formatDate(key.expiryDate) : 'Never'} | 
+                        Calls: ${key.usageCount || 0} today
+                    </div>
+                    <div class="key-actions">
+                        <button class="action-btn btn-secondary" onclick="viewUsage('${key.id}')">View Usage</button>
+                        <button class="action-btn btn-warning" onclick="regenerateKey('${key.id}')">Regenerate</button>
+                        <button class="action-btn btn-danger" onclick="revokeKey('${key.id}')">Revoke</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Generate new API key
+        document.getElementById('generateKeyForm').addEventListener('submit', async function (e) {
             e.preventDefault();
 
             const keyName = document.getElementById('keyName').value;
-            const permissions = document.getElementById('keyPermissions').value;
+            const keyPermissions = document.getElementById('keyPermissions').value;
+            const keyExpiry = document.getElementById('keyExpiry').value;
 
-            if (keyName) {
-                const newKey = 'appoint_' + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-                alert(`New API key generated: ${newKey}\n\nPlease save this key securely as it won't be shown again.`);
+            if (!keyName || !keyPermissions) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            try {
+                const response = await FirebaseClient.api.post('/api/keys/generate', {
+                    label: keyName,
+                    permissions: keyPermissions,
+                    expiryDate: keyExpiry || null
+                });
+
+                // Show success message with the new key
+                alert(`New API key generated: ${response.apiKey}\n\nPlease save this key securely as it won't be shown again.`);
+
+                // Reset form
                 document.getElementById('generateKeyForm').reset();
-            } else {
-                alert('Please enter a key name.');
+
+                // Reload API keys
+                loadApiKeys();
+
+            } catch (error) {
+                console.error('Failed to generate API key:', error);
+                alert('Failed to generate API key. Please try again.');
             }
         });
 
-        // Add click handlers for action buttons
-        document.querySelectorAll('.action-btn').forEach(btn => {
-            btn.addEventListener('click', function () {
-                const action = this.textContent.toLowerCase();
-                const keyName = this.closest('.api-key-item').querySelector('.key-name').textContent;
+        // View usage for specific key
+        async function viewUsage(apiKey) {
+            try {
+                const response = await FirebaseClient.api.get(`/api/usage/api-key/${apiKey}`);
+                // In a real implementation, you might show this in a modal
+                alert(`Usage for ${response.apiKey}:\nTotal calls: ${response.usageLogs.length}`);
+            } catch (error) {
+                console.error('Failed to load usage:', error);
+                alert('Failed to load usage data.');
+            }
+        }
 
-                if (action === 'view usage') {
-                    alert(`Usage analytics for ${keyName} would be displayed here`);
-                } else if (action === 'revoke') {
-                    if (confirm(`Are you sure you want to revoke ${keyName}?`)) {
-                        alert(`${keyName} has been revoked`);
-                    }
+        // Regenerate API key
+        async function regenerateKey(apiKey) {
+            if (confirm('Are you sure you want to regenerate this API key? The old key will be invalidated.')) {
+                try {
+                    const response = await FirebaseClient.api.post(`/api/keys/${apiKey}/regenerate`);
+                    alert(`New API key: ${response.newApiKey}\n\nPlease save this key securely.`);
+                    loadApiKeys();
+                } catch (error) {
+                    console.error('Failed to regenerate API key:', error);
+                    alert('Failed to regenerate API key.');
                 }
-            });
-        });
+            }
+        }
+
+        // Revoke API key
+        async function revokeKey(apiKey) {
+            if (confirm('Are you sure you want to revoke this API key? This action cannot be undone.')) {
+                try {
+                    await FirebaseClient.api.delete(`/api/keys/${apiKey}`);
+                    loadApiKeys();
+                } catch (error) {
+                    console.error('Failed to revoke API key:', error);
+                    alert('Failed to revoke API key.');
+                }
+            }
+        }
     </script>
 </body>
 

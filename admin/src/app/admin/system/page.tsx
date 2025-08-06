@@ -1,10 +1,8 @@
 "use client"
 
-import { AdminLayout } from "@/components/AdminLayout"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Activity, AlertTriangle, CheckCircle, Clock, Database, Server, Users } from "lucide-react"
 import { useState } from "react"
@@ -58,7 +56,7 @@ export default function SystemPage() {
   }
 
   return (
-    <AdminLayout>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
@@ -100,33 +98,33 @@ export default function SystemPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Active Users</CardTitle>
-              <Users className="h-4 w-4 text-muted-foreground" />
+              <Users className="h-4 w-4 text-gray-400" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{mockSystemStatus.activeUsers}</div>
-              <p className="text-xs text-gray-500">Currently online</p>
+              <div className="text-2xl font-bold">{mockSystemStatus.activeUsers.toLocaleString()}</div>
+              <p className="text-xs text-gray-500">Current online users</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">CPU Usage</CardTitle>
-              <Server className="h-4 w-4 text-muted-foreground" />
+              <Server className="h-4 w-4 text-gray-400" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{mockSystemStatus.cpuUsage}%</div>
-              <Progress value={mockSystemStatus.cpuUsage} className="mt-2" />
+              <p className="text-xs text-gray-500">Average CPU usage</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium">Memory Usage</CardTitle>
-              <Database className="h-4 w-4 text-muted-foreground" />
+              <Database className="h-4 w-4 text-gray-400" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{mockSystemStatus.memoryUsage}%</div>
-              <Progress value={mockSystemStatus.memoryUsage} className="mt-2" />
+              <p className="text-xs text-gray-500">RAM utilization</p>
             </CardContent>
           </Card>
         </div>
@@ -144,7 +142,6 @@ export default function SystemPage() {
                   <TableHead>Status</TableHead>
                   <TableHead>Response Time</TableHead>
                   <TableHead>Uptime</TableHead>
-                  <TableHead>Actions</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -161,11 +158,6 @@ export default function SystemPage() {
                     </TableCell>
                     <TableCell>{service.responseTime}ms</TableCell>
                     <TableCell>{service.uptime}</TableCell>
-                    <TableCell>
-                      <Button variant="outline" size="sm">
-                        Details
-                      </Button>
-                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -189,59 +181,15 @@ export default function SystemPage() {
                       <p className="text-sm text-gray-500">{alert.timestamp}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Badge variant={alert.resolved ? "default" : "secondary"}>
-                      {alert.resolved ? "Resolved" : "Active"}
-                    </Badge>
-                    {!alert.resolved && (
-                      <Button variant="outline" size="sm">
-                        Resolve
-                      </Button>
-                    )}
-                  </div>
+                  <Badge variant={alert.resolved ? "default" : "secondary"}>
+                    {alert.resolved ? "Resolved" : "Active"}
+                  </Badge>
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
-
-        {/* Performance Metrics */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <Card>
-            <CardHeader>
-              <CardTitle>Disk Usage</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div>
-                  <div className="flex justify-between text-sm">
-                    <span>Used</span>
-                    <span>{mockSystemStatus.diskUsage}%</span>
-                  </div>
-                  <Progress value={mockSystemStatus.diskUsage} className="mt-2" />
-                </div>
-                <div className="text-sm text-gray-500">
-                  782 GB used of 1 TB total
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Network Latency</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div className="text-2xl font-bold">{mockSystemStatus.networkLatency}ms</div>
-                <div className="text-sm text-gray-500">
-                  Average response time across all regions
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
-    </AdminLayout>
-  )
+    </div>
+  );
 } 

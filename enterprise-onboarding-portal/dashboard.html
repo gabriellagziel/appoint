@@ -16,6 +16,7 @@
             --border-radius: 8px;
             --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
+
         * {
             margin: 0;
             padding: 0;
@@ -230,159 +231,383 @@
         .logout-btn:hover {
             background: rgba(220, 53, 69, 1);
         }
+
+        /* Loading and error states */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .error {
+            background: rgba(220, 53, 69, 0.2);
+            color: #dc3545;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        /* Mobile responsiveness improvements */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .nav-link {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .metric-item {
+                padding: 15px;
+            }
+
+            .metric-value {
+                font-size: 1.5rem;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .user-info {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Accessibility improvements */
+        .nav-link:focus,
+        .action-btn:focus {
+            outline: 2px solid rgba(255, 255, 255, 0.8);
+            outline-offset: 2px;
+        }
+
+        .metric-item:focus-within {
+            outline: 2px solid rgba(255, 255, 255, 0.8);
+            outline-offset: 2px;
+        }
+
+        /* Loading animation */
+        .loading::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="header">
+        <header class="header" role="banner">
             <div>
                 <div class="logo">
                     <img src="/logo.svg" alt="App-Oint Logo" style="width: 60px; height: 60px; margin-right: 15px;">
                     App-Oint Enterprise
                 </div>
-                <div class="nav-links">
-                    <a href="dashboard.html" class="nav-link">📊 Dashboard</a>
+                <nav class="nav-links" role="navigation" aria-label="Main navigation">
+                    <a href="dashboard.html" class="nav-link" aria-current="page">📊 Dashboard</a>
                     <a href="locations.html" class="nav-link">🏢 Locations</a>
                     <a href="analytics.html" class="nav-link">📈 Analytics</a>
                     <a href="integrations.html" class="nav-link">🔗 Integrations</a>
                     <a href="white-label.html" class="nav-link">🎨 White Label</a>
                     <a href="api-keys.html" class="nav-link">🔑 API Keys</a>
+                    <a href="billing.html" class="nav-link">🧾 Billing</a>
                     <a href="settings.html" class="nav-link">⚙️ Settings</a>
-                </div>
+                </nav>
             </div>
             <div class="user-info">
-                <div class="user-avatar">JD</div>
+                <div class="user-avatar" aria-label="User avatar">JD</div>
                 <div>
-                    <div>John Doe</div>
-                    <div style="font-size: 0.8rem; opacity: 0.8;">Enterprise Admin</div>
+                    <div id="user-name">John Doe</div>
+                    <div style="font-size: 0.8rem; opacity: 0.8;" id="user-role">Enterprise Admin</div>
                 </div>
-                <button class="logout-btn" onclick="logout()">Logout</button>
+                <button class="logout-btn" onclick="logout()" aria-label="Logout">Logout</button>
             </div>
-        </div>
+        </header>
 
-        <div class="metric-grid">
-            <div class="metric">
-                <div class="metric-value">12</div>
-                <div class="metric-label">Active Locations</div>
-            </div>
-            <div class="metric">
-                <div class="metric-value">1,247</div>
-                <div class="metric-label">Total Appointments</div>
-            </div>
-            <div class="metric">
-                <div class="metric-value">$45,230</div>
-                <div class="metric-label">Monthly Revenue</div>
-            </div>
-            <div class="metric">
-                <div class="metric-value">99.9%</div>
-                <div class="metric-label">Uptime SLA</div>
-            </div>
-        </div>
+        <main role="main">
+            <section class="metric-grid" aria-label="Key metrics">
+                <div class="metric" id="total-appointments">
+                    <div class="metric-value">12</div>
+                    <div class="metric-label">Active Locations</div>
+                </div>
+                <div class="metric" id="total-appointments">
+                    <div class="metric-value">1,247</div>
+                    <div class="metric-label">Total Appointments</div>
+                </div>
+                <div class="metric" id="monthly-revenue">
+                    <div class="metric-value">$45,230</div>
+                    <div class="metric-label">Monthly Revenue</div>
+                </div>
+                <div class="metric" id="uptime-sla">
+                    <div class="metric-value">99.9%</div>
+                    <div class="metric-label">Uptime SLA</div>
+                </div>
+            </section>
 
-        <div class="dashboard-grid">
-            <div class="card">
-                <h3>🏢 Multi-Location Management</h3>
-                <p>Centralized control over all your business locations with real-time synchronization and unified
-                    reporting.</p>
-                <div class="status-badge">✅ Active</div>
-            </div>
+            <section id="analytics-section" aria-label="Analytics and features">
+                <div class="dashboard-grid">
+                    <div class="card">
+                        <h3>🏢 Multi-Location Management</h3>
+                        <p>Centralized control over all your business locations with real-time synchronization and
+                            unified
+                            reporting.</p>
+                        <div class="status-badge">✅ Active</div>
+                    </div>
 
-            <div class="card">
-                <h3>📊 Advanced Analytics</h3>
-                <p>Deep business intelligence with custom reports, predictive analytics, and performance insights across
-                    all locations.</p>
-                <div class="status-badge">✅ Live</div>
-            </div>
+                    <div class="card">
+                        <h3>📊 Advanced Analytics</h3>
+                        <p>Deep business intelligence with custom reports, predictive analytics, and performance
+                            insights across
+                            all locations.</p>
+                        <div class="status-badge">✅ Live</div>
+                    </div>
 
-            <div class="card">
-                <h3>🎨 White-Label Solutions</h3>
-                <p>Custom branding and white-label options to match your company's identity and requirements.</p>
-                <div class="status-badge">✅ Configured</div>
-            </div>
+                    <div class="card">
+                        <h3>🎨 White-Label Solutions</h3>
+                        <p>Custom branding and white-label options to match your company's identity and requirements.
+                        </p>
+                        <div class="status-badge">✅ Configured</div>
+                    </div>
 
-            <div class="card">
-                <h3>🔗 Custom Integrations</h3>
-                <p>Seamless integration with your existing systems, CRM, ERP, and third-party applications.</p>
-                <div class="status-badge">✅ Connected</div>
-            </div>
-        </div>
+                    <div class="card">
+                        <h3>🔗 Custom Integrations</h3>
+                        <p>Seamless integration with your existing systems, CRM, ERP, and third-party applications.</p>
+                        <div class="status-badge">✅ Connected</div>
+                    </div>
+                </div>
 
-        <div class="locations-section">
-            <h3>📍 Active Locations</h3>
-            <div class="location-item">
-                <div class="location-info">
-                    <h4>Headquarters</h4>
-                    <p>123 Main St, New York, NY</p>
+                <div class="locations-section">
+                    <h3>📍 Active Locations</h3>
+                    <div class="location-item">
+                        <div class="location-info">
+                            <h4>Headquarters</h4>
+                            <p>123 Main St, New York, NY</p>
+                        </div>
+                        <div class="status-badge">Active</div>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-info">
+                            <h4>West Coast Office</h4>
+                            <p>456 Tech Ave, San Francisco, CA</p>
+                        </div>
+                        <div class="status-badge">Active</div>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-info">
+                            <h4>European Branch</h4>
+                            <p>789 Innovation St, London, UK</p>
+                        </div>
+                        <div class="status-badge">Active</div>
+                    </div>
                 </div>
-                <div class="status-badge">Active</div>
-            </div>
-            <div class="location-item">
-                <div class="location-info">
-                    <h4>West Coast Office</h4>
-                    <p>456 Tech Ave, San Francisco, CA</p>
-                </div>
-                <div class="status-badge">Active</div>
-            </div>
-            <div class="location-item">
-                <div class="location-info">
-                    <h4>European Branch</h4>
-                    <p>789 Innovation St, London, UK</p>
-                </div>
-                <div class="status-badge">Active</div>
-            </div>
-        </div>
 
-        <div class="api-section">
-            <h3>🔌 Enterprise API Endpoints</h3>
-            <div class="api-grid">
-                <div class="api-item">
-                    <strong>GET /api/enterprise</strong>
-                    <span>Enterprise features overview</span>
+                <div class="api-section">
+                    <h3>🔌 Enterprise API Endpoints</h3>
+                    <div class="api-grid">
+                        <div class="api-item">
+                            <strong>GET /api/enterprise</strong>
+                            <span>Enterprise features overview</span>
+                        </div>
+                        <div class="api-item">
+                            <strong>GET /api/enterprise/multi-location</strong>
+                            <span>Location management data</span>
+                        </div>
+                        <div class="api-item">
+                            <strong>GET /api/enterprise/advanced-analytics</strong>
+                            <span>Analytics and reporting data</span>
+                        </div>
+                        <div class="api-item">
+                            <strong>GET /api/enterprise/white-label</strong>
+                            <span>Branding configuration</span>
+                        </div>
+                        <div class="api-item">
+                            <strong>POST /api/enterprise/integrations</strong>
+                            <span>Custom integration setup</span>
+                        </div>
+                        <div class="api-item">
+                            <strong>GET /api/enterprise/usage</strong>
+                            <span>API usage and limits</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="api-item">
-                    <strong>GET /api/enterprise/multi-location</strong>
-                    <span>Location management data</span>
-                </div>
-                <div class="api-item">
-                    <strong>GET /api/enterprise/advanced-analytics</strong>
-                    <span>Analytics and reporting data</span>
-                </div>
-                <div class="api-item">
-                    <strong>GET /api/enterprise/white-label</strong>
-                    <span>Branding configuration</span>
-                </div>
-                <div class="api-item">
-                    <strong>POST /api/enterprise/integrations</strong>
-                    <span>Custom integration setup</span>
-                </div>
-                <div class="api-item">
-                    <strong>GET /api/enterprise/usage</strong>
-                    <span>API usage and limits</span>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="firebase-client-config.js"></script>
+    <script src="js/ui-helpers.js"></script>
+    <script src="js/test-frontend.js"></script>
+    <script src="js/qa-test.js"></script>
+
     <script>
-        function logout() {
-            if (confirm('Are you sure you want to logout?')) {
-                window.location.href = 'login.html';
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if user is logged in
+            const isLoggedIn = localStorage.getItem('userLoggedIn');
+            if (!isLoggedIn) {
+                // Redirect to login if not authenticated
+                window.location.href = '/login.html';
+                return;
+            }
+
+            // Load user data
+            const userData = JSON.parse(localStorage.getItem('userData') || '{}');
+            updateUserInfo(userData);
+
+            // Load dashboard data
+            loadAnalytics();
+        });
+
+        async function loadUserData() {
+            try {
+                const userData = await FirebaseClient.api.get('/api/user');
+                updateUserInfo(userData);
+            } catch (error) {
+                console.error('Failed to load user data:', error);
+                UIHelpers.showError('user-info', 'Failed to load user information', () => loadUserData());
             }
         }
 
-        // Simulate real-time data updates
-        setInterval(() => {
-            // Update metrics with random variations
-            const metrics = document.querySelectorAll('.metric-value');
-            metrics.forEach(metric => {
-                if (metric.textContent.includes('$')) {
-                    const currentValue = parseInt(metric.textContent.replace(/[$,]/g, ''));
-                    const variation = Math.floor(Math.random() * 100) - 50;
-                    metric.textContent = '$' + (currentValue + variation).toLocaleString();
+        function updateUserInfo(userData) {
+            const userAvatar = document.querySelector('.user-avatar');
+            const userName = document.querySelector('.user-info div:first-child');
+            const userEmail = document.querySelector('.user-info div:last-child');
+
+            if (userAvatar) {
+                userAvatar.textContent = userData.companyName ? userData.companyName.charAt(0).toUpperCase() : 'U';
+            }
+            if (userName) {
+                userName.textContent = userData.companyName || 'Enterprise User';
+            }
+            if (userEmail) {
+                userEmail.textContent = userData.email || 'user@enterprise.com';
+            }
+        }
+
+        async function loadAnalytics() {
+            try {
+                UIHelpers.showLoading('analytics-section', 'Loading analytics...');
+                const analytics = await FirebaseClient.api.get('/api/analytics');
+                updateAnalytics(analytics);
+            } catch (error) {
+                console.error('Failed to load analytics:', error);
+                UIHelpers.showError('analytics-section', 'Failed to load analytics data', () => loadAnalytics());
+            }
+        }
+
+        function updateAnalytics(data) {
+            const analyticsSection = document.getElementById('analytics-section');
+            if (!analyticsSection) return;
+
+            // Update metrics
+            const metrics = {
+                'total-appointments': data.totalAppointments,
+                'monthly-revenue': UIHelpers.formatCurrency(data.monthlyRevenue),
+                'active-locations': data.activeLocations,
+                'uptime-sla': data.uptimeSLA + '%'
+            };
+
+            Object.keys(metrics).forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.textContent = metrics[id];
                 }
             });
-        }, 30000); // Update every 30 seconds
+
+            // Update API usage if available
+            if (data.apiUsage) {
+                const usageElement = document.getElementById('api-usage');
+                if (usageElement) {
+                    usageElement.innerHTML = `
+                        <div class="usage-item">
+                            <span class="usage-label">API Calls:</span>
+                            <span class="usage-value">${data.apiUsage.totalCalls.toLocaleString()}</span>
+                        </div>
+                        <div class="usage-item">
+                            <span class="usage-label">Success Rate:</span>
+                            <span class="usage-value">${data.apiUsage.successRate.toFixed(1)}%</span>
+                        </div>
+                        <div class="usage-item">
+                            <span class="usage-label">Remaining:</span>
+                            <span class="usage-value">${data.apiUsage.remainingCalls.toLocaleString()}</span>
+                        </div>
+                    `;
+                }
+            }
+
+            // Update recent activity
+            if (data.recentActivity) {
+                const activityElement = document.getElementById('recent-activity');
+                if (activityElement) {
+                    activityElement.innerHTML = data.recentActivity.map(activity => `
+                        <div class="activity-item">
+                            <span class="activity-type">${activity.type}</span>
+                            <span class="activity-value">${activity.count || activity.amount}</span>
+                            <span class="activity-date">${UIHelpers.formatDate(activity.date)}</span>
+                        </div>
+                    `).join('');
+                }
+            }
+        }
+
+        function logout() {
+            if (confirm('Are you sure you want to logout?')) {
+                // Clear any stored session data
+                localStorage.removeItem('userLoggedIn');
+                localStorage.removeItem('userData');
+
+                // Redirect to landing page
+                window.location.href = '/';
+            }
+        }
+
+        // Real-time updates every 30 seconds
+        setInterval(() => {
+            if (FirebaseClient.auth.getCurrentUser()) {
+                loadAnalytics();
+            }
+        }, 30000);
     </script>
 </body>
 

@@ -1,29 +1,32 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
 const path = require('path');
 const crypto = require('crypto');
+require('dotenv').config();
+
+// Import Firebase configuration and middleware
+const { admin, collections, SUBSCRIPTION_PLANS } = require('./firebase-dev');
+const { authenticateFirebaseToken, authenticateApiKey, rateLimitApiKey, logApiUsage } = require('./middleware/auth');
+
+// Import route modules
+const apiKeysRouter = require('./routes/api_keys');
+const usageRouter = require('./routes/usage');
+const invoicesRouter = require('./routes/invoices');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Security middleware
 app.use(express.json({ limit: '10mb' }));
-app.use(express.static('public'));
+app.use(express.static(__dirname));
 
-// Environment variables for security
-const JWT_SECRET = process.env.JWT_SECRET || crypto.randomBytes(64).toString('hex');
-const EMAIL_USER = process.env.EMAIL_USER || 'noreply@appoint.com';
-const EMAIL_PASS = process.env.EMAIL_PASS || 'secure-password';
-const DATABASE_URL = process.env.DATABASE_URL || 'mongodb://localhost:27017/appoint-enterprise';
-
-// Email configuration with security
+// Email configuration
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: EMAIL_USER,
-        pass: EMAIL_PASS
+        user: process.env.EMAIL_USER || 'noreply@appoint.com',
+        pass: process.env.EMAIL_PASS || 'secure-password'
     },
     secure: true,
     tls: {
@@ -31,13 +34,8 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-// In-memory storage (replace with database in production)
-const users = new Map();
-const apiKeys = new Map();
-
-// Security middleware
+// Security headers middleware
 app.use((req, res, next) => {
-    // Add security headers
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('X-Frame-Options', 'DENY');
     res.setHeader('X-XSS-Protection', '1; mode=block');
@@ -48,30 +46,12 @@ app.use((req, res, next) => {
 // Rate limiting
 const rateLimit = require('express-rate-limit');
 const limiter = rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 100 // limit each IP to 100 requests per windowMs
+    windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS) || 15 * 60 * 1000,
+    max: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS) || 100
 });
 app.use(limiter);
 
-// Authentication middleware
-const authenticateToken = (req, res, next) => {
-    const authHeader = req.headers['authorization'];
-    const token = authHeader && authHeader.split(' ')[1];
-
-    if (!token) {
-        return res.status(401).json({ error: 'Access token required' });
-    }
-
-    jwt.verify(token, JWT_SECRET, (err, user) => {
-        if (err) {
-            return res.status(403).json({ error: 'Invalid token' });
-        }
-        req.user = user;
-        next();
-    });
-};
-
-// Routes
+// HTML Routes (serve static pages)
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
@@ -104,7 +84,20 @@ app.get('/white-label', (req, res) => {
     res.sendFile(path.join(__dirname, 'white-label.html'));
 });
 
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'login.html'));
+});
+
+app.get('/billing', (req, res) => {
+    res.sendFile(path.join(__dirname, 'billing.html'));
+});
+
 // API Routes
+app.use('/api/keys', apiKeysRouter);
+app.use('/api/usage', usageRouter);
+app.use('/api/invoices', invoicesRouter);
+
+// Firebase Authentication Routes
 app.post('/api/register', async (req, res) => {
     try {
         const { companyName, email, password, plan } = req.body;
@@ -125,42 +118,40 @@ app.post('/api/register', async (req, res) => {
             return res.status(400).json({ error: 'Password must be at least 8 characters long' });
         }
 
-        // Check if user already exists
-        if (users.has(email)) {
+        // Check if user already exists in Firebase Auth
+        try {
+            await admin.auth().getUserByEmail(email);
             return res.status(409).json({ error: 'User already exists' });
+        } catch (error) {
+            // User doesn't exist, continue with registration
         }
 
-        // Hash password with salt
-        const hashedPassword = await bcrypt.hash(password, 12);
+        // Create user in Firebase Auth
+        const userRecord = await admin.auth().createUser({
+            email,
+            password,
+            displayName: companyName
+        });
 
-        // Generate secure API key
-        const apiKey = crypto.randomBytes(32).toString('hex');
-
-        // Create user
-        const user = {
-            id: crypto.randomUUID(),
+        // Create user document in Firestore
+        const userData = {
+            uid: userRecord.uid,
             companyName,
             email,
-            password: hashedPassword,
-            plan,
-            apiKey,
+            subscriptionPlan: plan,
             createdAt: new Date(),
-            isActive: true
+            isActive: true,
+            isAdmin: false
         };
 
-        users.set(email, user);
-        apiKeys.set(apiKey, user);
+        await collections.users.doc(userRecord.uid).set(userData);
 
-        // Generate JWT token
-        const token = jwt.sign(
-            { userId: user.id, email: user.email, companyName: user.companyName },
-            JWT_SECRET,
-            { expiresIn: '24h' }
-        );
+        // Generate custom token for client-side authentication
+        const customToken = await admin.auth().createCustomToken(userRecord.uid);
 
         // Send welcome email
         const mailOptions = {
-            from: EMAIL_USER,
+            from: process.env.EMAIL_USER || 'noreply@appoint.com',
             to: email,
             subject: 'Welcome to Appoint Enterprise',
             html: `
@@ -168,8 +159,7 @@ app.post('/api/register', async (req, res) => {
                 <p>Your account has been successfully created.</p>
                 <p><strong>Company:</strong> ${companyName}</p>
                 <p><strong>Plan:</strong> ${plan}</p>
-                <p>Your API key: <code>${apiKey}</code></p>
-                <p>Keep this API key secure and don't share it with anyone.</p>
+                <p>You can now log in to your dashboard and start using our API services.</p>
             `
         };
 
@@ -177,13 +167,12 @@ app.post('/api/register', async (req, res) => {
 
         res.status(201).json({
             message: 'Registration successful',
-            token,
-            apiKey,
+            customToken,
             user: {
-                id: user.id,
-                companyName: user.companyName,
-                email: user.email,
-                plan: user.plan
+                uid: userRecord.uid,
+                companyName,
+                email,
+                plan
             }
         });
 
@@ -201,95 +190,165 @@ app.post('/api/login', async (req, res) => {
             return res.status(400).json({ error: 'Email and password required' });
         }
 
-        const user = users.get(email);
-        if (!user) {
+        // Get user from Firebase Auth
+        const userRecord = await admin.auth().getUserByEmail(email);
+
+        // Get user data from Firestore
+        const userDoc = await collections.users.doc(userRecord.uid).get();
+        if (!userDoc.exists) {
             return res.status(401).json({ error: 'Invalid credentials' });
         }
 
-        const isValidPassword = await bcrypt.compare(password, user.password);
-        if (!isValidPassword) {
-            return res.status(401).json({ error: 'Invalid credentials' });
+        const userData = userDoc.data();
+        if (!userData.isActive) {
+            return res.status(401).json({ error: 'Account is suspended' });
         }
 
-        const token = jwt.sign(
-            { userId: user.id, email: user.email, companyName: user.companyName },
-            JWT_SECRET,
-            { expiresIn: '24h' }
-        );
+        // Generate custom token for client-side authentication
+        const customToken = await admin.auth().createCustomToken(userRecord.uid);
 
         res.json({
             message: 'Login successful',
-            token,
+            customToken,
             user: {
-                id: user.id,
-                companyName: user.companyName,
-                email: user.email,
-                plan: user.plan
+                uid: userRecord.uid,
+                companyName: userData.companyName,
+                email: userData.email,
+                plan: userData.subscriptionPlan
             }
         });
 
     } catch (error) {
         console.error('Login error:', error);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(401).json({ error: 'Invalid credentials' });
     }
 });
 
-// Protected routes
-app.get('/api/user', authenticateToken, (req, res) => {
-    const user = users.get(req.user.email);
-    if (!user) {
-        return res.status(404).json({ error: 'User not found' });
-    }
-
-    res.json({
-        id: user.id,
-        companyName: user.companyName,
-        email: user.email,
-        plan: user.plan,
-        createdAt: user.createdAt
-    });
-});
-
-app.get('/api/analytics', authenticateToken, (req, res) => {
-    // Mock analytics data
-    res.json({
-        totalAppointments: 1247,
-        monthlyRevenue: 45230,
-        activeLocations: 12,
-        uptimeSLA: 99.9,
-        recentActivity: [
-            { type: 'appointment', count: 45, date: new Date() },
-            { type: 'revenue', amount: 1250, date: new Date() },
-            { type: 'location', name: 'New Branch', date: new Date() }
-        ]
-    });
-});
-
-app.get('/api/locations', authenticateToken, (req, res) => {
-    // Mock locations data
-    res.json([
-        {
-            id: 1,
-            name: 'Headquarters',
-            address: '123 Main St, New York, NY',
-            status: 'active',
-            appointments: 456
-        },
-        {
-            id: 2,
-            name: 'West Coast Office',
-            address: '456 Tech Ave, San Francisco, CA',
-            status: 'active',
-            appointments: 234
-        },
-        {
-            id: 3,
-            name: 'European Branch',
-            address: '789 Innovation St, London, UK',
-            status: 'active',
-            appointments: 567
+// Protected user profile route
+app.get('/api/user', authenticateFirebaseToken, async (req, res) => {
+    try {
+        const userDoc = await collections.users.doc(req.user.uid).get();
+        if (!userDoc.exists) {
+            return res.status(404).json({ error: 'User not found' });
         }
-    ]);
+
+        const userData = userDoc.data();
+        res.json({
+            uid: userData.uid,
+            companyName: userData.companyName,
+            email: userData.email,
+            subscriptionPlan: userData.subscriptionPlan,
+            createdAt: userData.createdAt,
+            isAdmin: userData.isAdmin || false
+        });
+
+    } catch (error) {
+        console.error('Get user error:', error);
+        res.status(500).json({ error: 'Failed to get user data' });
+    }
+});
+
+// Analytics endpoint (protected)
+app.get('/api/analytics', authenticateFirebaseToken, async (req, res) => {
+    try {
+        const userId = req.user.uid;
+
+        // Get user's subscription plan
+        const userDoc = await collections.users.doc(userId).get();
+        const userData = userDoc.data();
+        const plan = userData.subscriptionPlan || 'basic';
+        const planData = SUBSCRIPTION_PLANS[plan];
+
+        // Get current month's usage
+        const now = new Date();
+        const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+        const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+
+        const usageSnapshot = await collections.usageLogs
+            .where('userId', '==', userId)
+            .where('timestamp', '>=', startOfMonth)
+            .where('timestamp', '<=', endOfMonth)
+            .get();
+
+        let totalCalls = 0;
+        let successfulCalls = 0;
+        usageSnapshot.forEach(doc => {
+            const data = doc.data();
+            totalCalls++;
+            if (data.statusCode >= 200 && data.statusCode < 300) {
+                successfulCalls++;
+            }
+        });
+
+        // Mock analytics data (replace with real data)
+        res.json({
+            totalAppointments: 1247,
+            monthlyRevenue: 45230,
+            activeLocations: 12,
+            uptimeSLA: 99.9,
+            apiUsage: {
+                totalCalls,
+                successfulCalls,
+                successRate: totalCalls > 0 ? (successfulCalls / totalCalls) * 100 : 0,
+                planLimit: planData.monthlyApiCalls,
+                remainingCalls: Math.max(0, planData.monthlyApiCalls - totalCalls)
+            },
+            recentActivity: [
+                { type: 'appointment', count: 45, date: new Date() },
+                { type: 'revenue', amount: 1250, date: new Date() },
+                { type: 'location', name: 'New Branch', date: new Date() }
+            ]
+        });
+
+    } catch (error) {
+        console.error('Analytics error:', error);
+        res.status(500).json({ error: 'Failed to get analytics' });
+    }
+});
+
+// Locations endpoint (protected)
+app.get('/api/locations', authenticateFirebaseToken, async (req, res) => {
+    try {
+        // Mock locations data (replace with real data from Firestore)
+        res.json([
+            {
+                id: 1,
+                name: 'Headquarters',
+                address: '123 Main St, New York, NY',
+                status: 'active',
+                appointments: 456
+            },
+            {
+                id: 2,
+                name: 'West Coast Office',
+                address: '456 Tech Ave, San Francisco, CA',
+                status: 'active',
+                appointments: 234
+            },
+            {
+                id: 3,
+                name: 'European Branch',
+                address: '789 Innovation St, London, UK',
+                status: 'active',
+                appointments: 567
+            }
+        ]);
+
+    } catch (error) {
+        console.error('Locations error:', error);
+        res.status(500).json({ error: 'Failed to get locations' });
+    }
+});
+
+// Health check endpoint
+app.get('/api/status', (req, res) => {
+    res.json({
+        status: 'operational',
+        service: 'enterprise-onboarding',
+        version: '2.0.0',
+        timestamp: new Date().toISOString(),
+        firebase: 'connected'
+    });
 });
 
 // Error handling middleware
@@ -305,6 +364,7 @@ app.use((req, res) => {
 
 app.listen(PORT, () => {
     console.log(`🚀 Enterprise portal running on port ${PORT}`);
-    console.log(`🔒 Security features enabled`);
-    console.log(`📧 Email configured: ${EMAIL_USER}`);
+    console.log(`🔒 Firebase integration enabled`);
+    console.log(`📧 Email configured: ${process.env.EMAIL_USER || 'noreply@appoint.com'}`);
+    console.log(`🌐 Environment: ${process.env.NODE_ENV || 'development'}`);
 }); 

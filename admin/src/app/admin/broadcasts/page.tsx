@@ -119,7 +119,7 @@ export default function BroadcastsPage() {
                   ))}
                 </select>
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="recipients">Recipients</Label>
                 <select

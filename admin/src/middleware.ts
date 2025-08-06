@@ -1,57 +1,57 @@
-import { NextResponse } from "next/server"
-import type { NextRequest } from "next/server"
-import { isMobileOrTablet } from "./utils/deviceDetection"
+import type { NextRequest } from "next/server";
+import { NextResponse } from "next/server";
+import { isMobileOrTablet } from "./utils/deviceDetection";
 
-// Admin UID validation - replace with actual Firebase Auth check
-function isAdminUser(request: NextRequest): boolean {
-  // Check for admin session cookie
-  const adminSession = request.cookies.get('admin-session')
-  const authToken = request.cookies.get('auth-token')
-  
-  // For production, implement proper Firebase Auth verification
-  // This should check against a list of authorized admin UIDs
-  const authorizedAdminUIDs = [
-    'admin_uid_1', // Replace with actual admin UIDs
-    'admin_uid_2',
-    'admin_uid_3'
-  ]
-  
-  // For now, allow access (replace with real auth logic)
-  // In production, verify JWT token and check UID against authorized list
-  return true
+// Admin route protection
+function isAdminRoute(pathname: string): boolean {
+  return pathname.startsWith('/admin') && pathname !== '/admin/login';
+}
+
+// Check if user is authenticated (simplified for middleware)
+function isAuthenticated(request: NextRequest): boolean {
+  // Check for Firebase auth token in cookies
+  const authToken = request.cookies.get('firebase-auth-token');
+  const sessionToken = request.cookies.get('session-token');
+
+  // In production, verify the JWT token with Firebase Admin SDK
+  // For now, we'll let the client-side auth handle this
+  return !!authToken || !!sessionToken;
 }
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   const userAgent = request.headers.get('user-agent') || ''
-  
+
   // Skip middleware for static files and API routes
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
     pathname.includes('.') ||
     pathname === '/manifest.json' ||
-    pathname === '/icon.svg'
+    pathname === '/icon.svg' ||
+    pathname === '/favicon.ico'
   ) {
     return NextResponse.next()
   }
 
-  // Check if user is admin
-  if (!isAdminUser(request)) {
-    // Redirect to auth page (implement as needed)
-    const loginUrl = new URL('/auth/login', request.url)
-    loginUrl.searchParams.set('callbackUrl', pathname)
-    return NextResponse.redirect(loginUrl)
-  }
+  // TEMPORARILY DISABLED: Admin route protection for testing
+  // if (isAdminRoute(pathname)) {
+  //   // Redirect to admin login if not authenticated
+  //   if (!isAuthenticated(request)) {
+  //     const loginUrl = new URL('/admin/login', request.url)
+  //     loginUrl.searchParams.set('callbackUrl', pathname)
+  //     return NextResponse.redirect(loginUrl)
+  //   }
+  // }
 
   // Device-based routing
   const isMobile = isMobileOrTablet(userAgent)
-  
+
   // If accessing root on mobile, redirect to quick dashboard
   if (pathname === '/' && isMobile) {
     return NextResponse.redirect(new URL('/quick', request.url))
   }
-  
+
   // If accessing quick dashboard on desktop, show desktop version
   if (pathname === '/quick' && !isMobile) {
     // Allow access but add a header to indicate desktop access
