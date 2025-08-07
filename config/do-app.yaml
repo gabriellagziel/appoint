@@ -32,3 +32,28 @@ services:
     registry: registry.digitalocean.com
     repository: appoint/flutter-ci
     tag: latest
+- name: admin-panel
+  environment_slug: node-js
+  github:
+    repo: "gabriellagziel/appoint-web-only"
+    branch: main
+  source_dir: "admin"
+  build_command: "npm ci && npm run build --prefix admin"
+  run_command: "npm start --prefix admin"
+  http_port: 3000
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  health_check:
+    http_path: /health
+    initial_delay_seconds: 10
+    period_seconds: 30
+    timeout_seconds: 5
+    success_threshold: 1
+    failure_threshold: 3
+  routes:
+    - path: /admin
+  envs:
+    - key: NODE_ENV
+      value: "production"
+    - key: PORT
+      value: "3000"
