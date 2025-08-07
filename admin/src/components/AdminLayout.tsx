@@ -1,49 +1,54 @@
-"use client"
+import React from 'react';
+import { Sidebar, TopBar } from '../../../components/shared';
 
-import { useState } from "react"
-import { Sidebar } from "./Sidebar"
-import { TopNav } from "./TopNav"
-
-interface AdminLayoutProps {
-  children: React.ReactNode
+export interface AdminLayoutProps {
+  children: React.ReactNode;
+  sidebarItems: Array<{
+    id: string;
+    label: string;
+    icon?: React.ReactNode;
+    active?: boolean;
+    onClick?: () => void;
+  }>;
+  title?: string;
+  subtitle?: string;
+  actions?: React.ReactNode;
+  userMenu?: React.ReactNode;
 }
 
-export function AdminLayout({ children }: AdminLayoutProps) {
-  const [sidebarOpen, setSidebarOpen] = useState(false)
-
+const AdminLayout: React.FC<AdminLayoutProps> = ({
+  children,
+  sidebarItems,
+  title,
+  subtitle,
+  actions,
+  userMenu,
+}) => {
   return (
-    <div className="min-h-screen bg-gray-50 flex">
+    <div className="flex h-screen bg-gray-50">
+      {/* Sidebar */}
       <Sidebar
-        isOpen={sidebarOpen}
-        onToggle={() => setSidebarOpen(!sidebarOpen)}
+        items={sidebarItems}
+        className="hidden md:flex"
       />
-
-      <div className="flex-1 flex flex-col min-h-screen">
-        <TopNav onSidebarToggle={() => setSidebarOpen(!sidebarOpen)} />
-
-        <main className="p-4 lg:p-8 flex-grow">
-          <div className="mx-auto max-w-7xl">
-            {children}
-          </div>
+      
+      {/* Main Content */}
+      <div className="flex-1 flex flex-col overflow-hidden">
+        {/* Top Bar */}
+        <TopBar
+          title={title}
+          subtitle={subtitle}
+          actions={actions}
+          userMenu={userMenu}
+        />
+        
+        {/* Page Content */}
+        <main className="flex-1 overflow-y-auto p-6">
+          {children}
         </main>
-
-        {/* Attribution - Required for all admin screens */}
-        <footer className="bg-gray-50 border-t border-gray-200 mt-auto">
-          <div className="px-4 py-3 text-center">
-            <p className="text-xs text-gray-500">
-              Powered by{" "}
-              <a
-                href="https://app-oint.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold text-blue-600 hover:text-blue-800 no-underline hover:underline"
-              >
-                APP-OINT
-              </a>
-            </p>
-          </div>
-        </footer>
       </div>
     </div>
-  )
-} 
+  );
+};
+
+export default AdminLayout; 

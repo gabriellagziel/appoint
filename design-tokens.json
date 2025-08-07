@@ -1,0 +1,216 @@
+{
+  "colors": {
+    "primary": {
+      "value": "#0A84FF",
+      "type": "color"
+    },
+    "secondary": {
+      "value": "#5AC8FA",
+      "type": "color"
+    },
+    "accent": {
+      "value": "#FFD560",
+      "type": "color"
+    },
+    "background": {
+      "value": "#F9FAFB",
+      "type": "color"
+    },
+    "text": {
+      "value": "#1C1C1E",
+      "type": "color"
+    },
+    "danger": {
+      "value": "#FF3B30",
+      "type": "color"
+    },
+    "success": {
+      "value": "#34C759",
+      "type": "color"
+    },
+    "warning": {
+      "value": "#FF9500",
+      "type": "color"
+    },
+    "neutral": {
+      "50": "#FAFAFA",
+      "100": "#F5F5F5",
+      "200": "#E5E5E5",
+      "300": "#D4D4D4",
+      "400": "#A3A3A3",
+      "500": "#737373",
+      "600": "#525252",
+      "700": "#404040",
+      "800": "#262626",
+      "900": "#171717"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "sans": {
+        "value": "Inter, system-ui, sans-serif",
+        "type": "fontFamily"
+      },
+      "mono": {
+        "value": "JetBrains Mono, monospace",
+        "type": "fontFamily"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "value": "12px",
+        "type": "fontSize"
+      },
+      "sm": {
+        "value": "14px",
+        "type": "fontSize"
+      },
+      "base": {
+        "value": "16px",
+        "type": "fontSize"
+      },
+      "lg": {
+        "value": "18px",
+        "type": "fontSize"
+      },
+      "xl": {
+        "value": "20px",
+        "type": "fontSize"
+      },
+      "2xl": {
+        "value": "24px",
+        "type": "fontSize"
+      },
+      "3xl": {
+        "value": "30px",
+        "type": "fontSize"
+      },
+      "4xl": {
+        "value": "36px",
+        "type": "fontSize"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "value": "400",
+        "type": "fontWeight"
+      },
+      "medium": {
+        "value": "500",
+        "type": "fontWeight"
+      },
+      "semibold": {
+        "value": "600",
+        "type": "fontWeight"
+      },
+      "bold": {
+        "value": "700",
+        "type": "fontWeight"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "value": "1.25",
+        "type": "lineHeight"
+      },
+      "normal": {
+        "value": "1.5",
+        "type": "lineHeight"
+      },
+      "relaxed": {
+        "value": "1.75",
+        "type": "lineHeight"
+      }
+    }
+  },
+  "spacing": {
+    "0": {
+      "value": "0px",
+      "type": "spacing"
+    },
+    "1": {
+      "value": "4px",
+      "type": "spacing"
+    },
+    "2": {
+      "value": "8px",
+      "type": "spacing"
+    },
+    "3": {
+      "value": "12px",
+      "type": "spacing"
+    },
+    "4": {
+      "value": "16px",
+      "type": "spacing"
+    },
+    "5": {
+      "value": "20px",
+      "type": "spacing"
+    },
+    "6": {
+      "value": "24px",
+      "type": "spacing"
+    },
+    "8": {
+      "value": "32px",
+      "type": "spacing"
+    },
+    "10": {
+      "value": "40px",
+      "type": "spacing"
+    },
+    "12": {
+      "value": "48px",
+      "type": "spacing"
+    },
+    "16": {
+      "value": "64px",
+      "type": "spacing"
+    },
+    "20": {
+      "value": "80px",
+      "type": "spacing"
+    }
+  },
+  "borderRadius": {
+    "sm": {
+      "value": "4px",
+      "type": "borderRadius"
+    },
+    "md": {
+      "value": "8px",
+      "type": "borderRadius"
+    },
+    "lg": {
+      "value": "12px",
+      "type": "borderRadius"
+    },
+    "xl": {
+      "value": "16px",
+      "type": "borderRadius"
+    },
+    "full": {
+      "value": "9999px",
+      "type": "borderRadius"
+    }
+  },
+  "shadows": {
+    "sm": {
+      "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "type": "shadow"
+    },
+    "md": {
+      "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "type": "shadow"
+    },
+    "lg": {
+      "value": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      "type": "shadow"
+    },
+    "xl": {
+      "value": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      "type": "shadow"
+    }
+  }
+}

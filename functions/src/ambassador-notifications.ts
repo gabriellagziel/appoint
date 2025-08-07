@@ -12,6 +12,9 @@ export enum AmbassadorNotificationType {
   PERFORMANCE_WARNING = 'performance_warning',
   DEMOTION = 'ambassador_demotion',
   REFERRAL_SUCCESS = 'referral_success',
+  PENDING_APPROVAL = 'pending_approval',
+  APPROVAL = 'approval',
+  REJECTION = 'rejection',
 }
 
 // Notification templates interface
@@ -59,6 +62,24 @@ const DEFAULT_TEMPLATES: Record<AmbassadorNotificationType, NotificationTemplate
     body: "{referredUserName} joined through your referral! You now have {totalReferrals} total referrals.",
     emailSubject: "New Referral Success!",
     emailBody: "Great news! {referredUserName} has joined through your referral link. You now have {totalReferrals} total referrals."
+  },
+  [AmbassadorNotificationType.PENDING_APPROVAL]: {
+    title: "Ambassador Application Submitted",
+    body: "Your ambassador application is under review. We'll notify you within 48 hours of our decision.",
+    emailSubject: "Ambassador Application Received",
+    emailBody: "Thank you for applying to become an ambassador! Your application is currently under review and we'll notify you of our decision within 48 hours."
+  },
+  [AmbassadorNotificationType.APPROVAL]: {
+    title: "Ambassador Application Approved! 🎉",
+    body: "Congratulations! Your ambassador application has been approved. You can now start sharing your referral link.",
+    emailSubject: "Ambassador Application Approved",
+    emailBody: "Great news! Your ambassador application has been approved. You can now start sharing your referral link and earning rewards."
+  },
+  [AmbassadorNotificationType.REJECTION]: {
+    title: "Ambassador Application Update",
+    body: "Your ambassador application was not approved at this time. Reason: {reason}. You can reapply in 30 days.",
+    emailSubject: "Ambassador Application Update",
+    emailBody: "Thank you for your interest in our ambassador program. Unfortunately, your application was not approved at this time. Reason: {reason}. You can reapply in 30 days."
   }
 };
 
@@ -436,4 +457,52 @@ export async function sendReferralSuccessNotification(
     sendEmail: false, // Usually don't email for every referral
     sendInApp: true,
   });
+}
+
+export async function sendPendingApprovalNotification(userId: string, languageCode: string): Promise<void> {
+  try {
+    await sendNotificationHelper({
+      userId,
+      type: AmbassadorNotificationType.PENDING_APPROVAL,
+      languageCode,
+      data: {},
+      sendPush: true,
+      sendEmail: true,
+      sendInApp: true,
+    });
+  } catch (error) {
+    console.error('Error sending pending approval notification:', error);
+  }
+}
+
+export async function sendApprovalNotification(userId: string, languageCode: string): Promise<void> {
+  try {
+    await sendNotificationHelper({
+      userId,
+      type: AmbassadorNotificationType.APPROVAL,
+      languageCode,
+      data: {},
+      sendPush: true,
+      sendEmail: true,
+      sendInApp: true,
+    });
+  } catch (error) {
+    console.error('Error sending approval notification:', error);
+  }
+}
+
+export async function sendRejectionNotification(userId: string, languageCode: string, reason: string): Promise<void> {
+  try {
+    await sendNotificationHelper({
+      userId,
+      type: AmbassadorNotificationType.REJECTION,
+      languageCode,
+      data: { reason },
+      sendPush: true,
+      sendEmail: true,
+      sendInApp: true,
+    });
+  } catch (error) {
+    console.error('Error sending rejection notification:', error);
+  }
 }

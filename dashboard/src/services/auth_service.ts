@@ -83,4 +83,12 @@ export const convertToAuthUser = (user: User): AuthUser => {
     displayName: user.displayName,
     businessId: user.uid // For now, use UID as businessId
   };
+};
+
+/**
+ * Get user business ID
+ */
+export const getUserBusinessId = (): string | null => {
+  const user = getCurrentUser();
+  return user ? user.uid : null;
 }; 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App-Oint Map Preview</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style> 
+    html, body, #map { 
+      height: 100%; 
+      margin: 0; 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    } 
+    .leaflet-popup-content {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // Get parameters from URL
+    const params = new URLSearchParams(window.location.search);
+    const lat = parseFloat(params.get('lat')) || 37.7749;
+    const lng = parseFloat(params.get('lng')) || -122.4194;
+    const zoom = parseInt(params.get('zoom')) || 15;
+    const address = params.get('address') || 'Meeting location';
+    
+    // Initialize map
+    const map = L.map('map').setView([lat, lng], zoom);
+    
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+    
+    // Add marker with popup
+    const marker = L.marker([lat, lng]).addTo(map);
+    marker.bindPopup(address).openPopup();
+    
+    // Handle parent window communication
+    window.addEventListener('message', function(event) {
+      if (event.data.type === 'updateLocation') {
+        const { latitude, longitude, address: newAddress, zoom: newZoom } = event.data;
+        map.setView([latitude, longitude], newZoom || 15);
+        marker.setLatLng([latitude, longitude]);
+        marker.bindPopup(newAddress || 'Meeting location').openPopup();
+      }
+    });
+    
+    // Notify parent that map is ready
+    if (window.parent !== window) {
+      window.parent.postMessage({ type: 'mapReady' }, '*');
+    }
+  </script>
+</body>
+</html>
