@@ -53,3 +53,4 @@ admin/node_modules/
 functions/node_modules/
 docs/node_modules/
 node_modules/
+*.tar.gz
