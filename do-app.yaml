@@ -137,18 +137,15 @@ services:
       memory_percent: 75
 
 static_sites:
-  - name: docs
+  - name: docs-site
     github:
-      repo: "gabriellagziel/appoint"
-      branch: feature/web-only
+      repo: "gabriellagziel/appoint-web-only"
+      branch: main
     source_dir: "docs"
-    build_command: "echo 'Building documentation site...'"
-    output_dir: "."
     routes:
       - path: /docs
-    envs:
-      - key: NODE_ENV
-        value: "production"
+    build_command: "npm ci && npm run build --prefix docs"
+    output_dir: "docs"
 
 databases:
   - name: appoint-redis
