@@ -6,25 +6,28 @@
     "prepare": "husky install",
     "pre-commit": "husky add .husky/pre-commit \"npm run pre-commit-hook\"",
     "pre-commit-hook": "npm run lint",
-    "lint": "npm run lint:marketing && npm run lint:user && npm run lint:business && npm run lint:enterprise && npm run lint:admin",
+    "lint": "npm run lint:marketing && npm run lint:business && npm run lint:enterprise && npm run lint:admin && npm run lint:dashboard",
     "lint:marketing": "cd marketing && npm run lint",
-    "lint:user": "cd user && npm run lint",
     "lint:business": "cd business && npm run lint",
     "lint:enterprise": "cd enterprise-onboarding-portal && npm run lint",
     "lint:admin": "cd admin && npm run lint",
-    "build": "npm run build:marketing && npm run build:user && npm run build:business && npm run build:enterprise && npm run build:admin",
+    "lint:dashboard": "cd dashboard && npm run lint",
+    "build": "npm run build:functions && npm run build:marketing && npm run build:business && npm run build:enterprise && npm run build:admin && npm run build:dashboard",
+    "build:functions": "cd functions && npm run build",
     "build:marketing": "cd marketing && npm run build",
-    "build:user": "cd user && npm run build",
     "build:business": "cd business && npm run build",
     "build:enterprise": "cd enterprise-onboarding-portal && npm run build",
     "build:admin": "cd admin && npm run build",
-    "dev": "echo 'Use npm run dev:marketing, dev:user, etc. to start individual apps'",
+    "build:dashboard": "cd dashboard && npm run build",
+    "dev": "echo 'Use npm run dev:marketing, dev:business, etc. to start individual apps'",
     "dev:marketing": "cd marketing && npm run dev",
-    "dev:user": "cd user && npm run dev",
     "dev:business": "cd business && npm run dev",
     "dev:enterprise": "cd enterprise-onboarding-portal && npm run dev",
     "dev:admin": "cd admin && npm run dev",
-    "setup-hooks": "npm install && husky install && chmod +x .husky/pre-commit"
+    "dev:dashboard": "cd dashboard && npm run dev",
+    "setup-hooks": "npm install && husky install && chmod +x .husky/pre-commit",
+    "clean": "rm -rf node_modules package-lock.json && npm install",
+    "clean:all": "npm run clean && cd functions && npm run clean && cd ../admin && npm run clean && cd ../business && npm run clean && cd ../dashboard && npm run clean && cd ../enterprise-onboarding-portal && npm run clean && cd ../marketing && npm run clean"
   },
   "husky": {
     "hooks": {
@@ -54,6 +57,7 @@
     "@octokit/rest": "^22.0.0",
     "express": "^5.1.0",
     "firebase-admin": "^13.4.0",
-    "ioredis": "^5.7.0"
+    "ioredis": "^5.7.0",
+    "typescript": "^5.9.2"
   }
 }

@@ -1,0 +1,167 @@
+ingress:
+  rules:
+  - component:
+      name: marketing
+    match:
+      path:
+        prefix: /
+  - component:
+      name: business-portal
+    match:
+      path:
+        prefix: /business
+  - component:
+      name: enterprise-onboarding
+    match:
+      path:
+        prefix: /enterprise
+  - component:
+      name: admin-panel
+    match:
+      path:
+        prefix: /admin
+  - component:
+      name: api
+    match:
+      path:
+        prefix: /api
+  - component:
+      name: docs-site
+    match:
+      path:
+        prefix: /docs
+name: app-oint-web-platform
+region: nyc
+services:
+- build_command: npm ci && npm run build
+  environment_slug: node-js
+  envs:
+  - key: NODE_ENV
+    scope: RUN_AND_BUILD_TIME
+    value: production
+  - key: PORT
+    scope: RUN_AND_BUILD_TIME
+    value: "3000"
+  github:
+    branch: main
+    repo: gabriellagziel/appoint
+  health_check:
+    failure_threshold: 3
+    http_path: /
+    initial_delay_seconds: 30
+    period_seconds: 30
+    success_threshold: 1
+    timeout_seconds: 10
+  http_port: 3000
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: marketing
+  run_command: npm start
+  source_dir: marketing
+- build_command: npm ci && npm run build --prefix business
+  environment_slug: node-js
+  envs:
+  - key: NODE_ENV
+    scope: RUN_AND_BUILD_TIME
+    value: production
+  - key: PORT
+    scope: RUN_AND_BUILD_TIME
+    value: "3000"
+  github:
+    branch: main
+    repo: gabriellagziel/appoint
+  health_check:
+    failure_threshold: 3
+    http_path: /health
+    initial_delay_seconds: 10
+    period_seconds: 30
+    success_threshold: 1
+    timeout_seconds: 5
+  http_port: 3000
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: business-portal
+  run_command: npm start --prefix business
+  source_dir: business
+- build_command: npm ci && npm run build --prefix enterprise-onboarding-portal
+  environment_slug: node-js
+  envs:
+  - key: NODE_ENV
+    scope: RUN_AND_BUILD_TIME
+    value: production
+  - key: PORT
+    scope: RUN_AND_BUILD_TIME
+    value: "3000"
+  github:
+    branch: main
+    repo: gabriellagziel/appoint
+  health_check:
+    failure_threshold: 3
+    http_path: /health
+    initial_delay_seconds: 10
+    period_seconds: 30
+    success_threshold: 1
+    timeout_seconds: 5
+  http_port: 3000
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: enterprise-onboarding
+  run_command: npm start --prefix enterprise-onboarding-portal
+  source_dir: enterprise-onboarding-portal
+- build_command: npm ci && npm run build --prefix admin
+  environment_slug: node-js
+  envs:
+  - key: NODE_ENV
+    scope: RUN_AND_BUILD_TIME
+    value: production
+  - key: PORT
+    scope: RUN_AND_BUILD_TIME
+    value: "3000"
+  github:
+    branch: main
+    repo: gabriellagziel/appoint
+  health_check:
+    failure_threshold: 3
+    http_path: /health
+    initial_delay_seconds: 10
+    period_seconds: 30
+    success_threshold: 1
+    timeout_seconds: 5
+  http_port: 3000
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: admin-panel
+  run_command: npm start --prefix admin
+  source_dir: admin
+- environment_slug: node-js
+  envs:
+  - key: NODE_ENV
+    scope: RUN_AND_BUILD_TIME
+    value: production
+  - key: PORT
+    scope: RUN_AND_BUILD_TIME
+    value: "8080"
+  github:
+    branch: main
+    repo: gabriellagziel/appoint
+  health_check:
+    failure_threshold: 3
+    http_path: /health/liveness
+    initial_delay_seconds: 10
+    period_seconds: 30
+    success_threshold: 1
+    timeout_seconds: 5
+  http_port: 8080
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: api
+  run_command: npm start
+  source_dir: functions
+static_sites:
+- build_command: echo 'Static site ready'
+  github:
+    branch: main
+    repo: gabriellagziel/appoint
+  name: docs-site
+  output_dir: .
+  source_dir: docs

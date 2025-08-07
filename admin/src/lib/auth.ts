@@ -28,6 +28,8 @@ const MOCK_ADMIN_USER: AdminUser = {
     providerData: [],
     refreshToken: 'mock-refresh-token',
     tenantId: null,
+    phoneNumber: null,
+    providerId: 'password',
     delete: async () => { },
     getIdToken: async () => 'mock-token',
     getIdTokenResult: async () => ({} as any),

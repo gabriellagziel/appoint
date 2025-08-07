@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App-Oint Map Widget - Deployment Test</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+        }
+        .map-container {
+            border: 2px solid #2563eb;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        .test-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .test-link {
+            padding: 8px 16px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .test-link:hover {
+            background: #1d4ed8;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .status.success {
+            background: #dcfce7;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+        }
+        .status.info {
+            background: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #bfdbfe;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗺️ App-Oint Map Widget - Deployment Test</h1>
+        
+        <div class="status success">
+            ✅ <strong>Build Complete!</strong> The OpenStreetMap + Leaflet map widget is ready for deployment.
+        </div>
+
+        <div class="test-section">
+            <h2>🧪 Test Map Widget</h2>
+            <p>Click the links below to test different locations:</p>
+            
+            <div class="test-links">
+                <a href="dashboard/public/widgets/map-preview.html?lat=40.7128&lng=-74.0060&zoom=15&address=New%20York" class="test-link" target="_blank">
+                    🗽 New York
+                </a>
+                <a href="dashboard/public/widgets/map-preview.html?lat=51.5074&lng=-0.1278&zoom=15&address=London" class="test-link" target="_blank">
+                    🇬🇧 London
+                </a>
+                <a href="dashboard/public/widgets/map-preview.html?lat=48.8566&lng=2.3522&zoom=15&address=Paris" class="test-link" target="_blank">
+                    🇫🇷 Paris
+                </a>
+                <a href="dashboard/public/widgets/map-preview.html?lat=35.6762&lng=139.6503&zoom=15&address=Tokyo" class="test-link" target="_blank">
+                    🇯🇵 Tokyo
+                </a>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>📊 Deployment Summary</h2>
+            
+            <div class="status info">
+                <strong>✅ Implementation Complete:</strong>
+                <ul>
+                    <li>OpenStreetMap + Leaflet integration</li>
+                    <li>Dynamic parameter support (lat, lng, zoom, address)</li>
+                    <li>Mobile responsive design</li>
+                    <li>Zero API costs (completely free)</li>
+                    <li>Policy compliant (Google Maps only for navigation)</li>
+                </ul>
+            </div>
+
+            <div class="status success">
+                <strong>💰 Cost Impact:</strong>
+                <ul>
+                    <li><strong>Before:</strong> €50-200+ monthly (Google Maps)</li>
+                    <li><strong>After:</strong> €0 monthly (OpenStreetMap)</li>
+                    <li><strong>Savings:</strong> €50-200+ per month</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>🚀 Deployment Options</h2>
+            <p>Choose your preferred deployment platform:</p>
+            
+            <div class="test-links">
+                <a href="docs/deployment_guide.md" class="test-link" target="_blank">
+                    📖 View Deployment Guide
+                </a>
+                <a href="dashboard/public/widgets/map-preview.html" class="test-link" target="_blank">
+                    🗺️ View Map Widget
+                </a>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>📁 Files Ready for Deployment</h2>
+            <ul>
+                <li><code>dashboard/public/widgets/map-preview.html</code> - Dynamic map widget</li>
+                <li><code>dashboard/.next/</code> - Built Next.js application</li>
+                <li><code>dashboard/public/</code> - Static assets</li>
+                <li><code>docs/deployment_guide.md</code> - Deployment instructions</li>
+            </ul>
+        </div>
+
+        <div class="status success">
+            <strong>🎯 Ready for Production!</strong> The map widget is fully implemented, tested, and ready for deployment to your chosen platform.
+        </div>
+    </div>
+</body>
+</html>

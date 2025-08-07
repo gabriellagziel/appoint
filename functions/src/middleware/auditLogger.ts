@@ -28,3 +28,4 @@ export const auditLogMiddleware = (req: Request, res: Response, next: NextFuncti
 
     next();
 };
+
