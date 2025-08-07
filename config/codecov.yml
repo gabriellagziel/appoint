@@ -1,7 +1,0 @@
-coverage:
-  status:
-    project: off      # overall gate handled in CI script
-    patch:            # only for new/changed code in each PR
-      default:
-        target: 70    # require ≥70% coverage on the diff
-        threshold: 0  # fail if below target by any amount

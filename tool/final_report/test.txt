@@ -1,1087 +1,0 @@
-00:00 +0: loading /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart                                                                                                                      00:01 +0: loading /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart                                                                                                                      Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:02 +0: loading /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart                                                                                                                      00:03 +0: loading /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart                                                                                                                      00:04 +0: loading /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart                                                                                                                      00:05 +0: loading /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart                                                                                                                      Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:05 +0: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: (setUpAll)                                                                                                                  00:05 +0: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially                                                           00:06 +0: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially                                                           00:06 +0: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially                                                           
-[Mock] firebaseMessagingChannel: method=Messaging#requestPermission, arguments={appName: [DEFAULT], permissions: {alert: true, announcement: false, badge: true, carPlay: false, criticalAlert: false, provisional: false, sound: true}}
-00:08 +0 -1: /Users/a/Documents/APP-OINT/test/playtime/playtime_provider_test.dart: (setUpAll) [E]                                                                                                     
-  PlatformException(channel-error, Unable to establish connection on channel., null, null)
-  package:REDACTED_TOKEN/src/pigeon/messages.pigeon.dart 210:7  FirebaseCoreHostApi.initializeCore
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/playtime/playtime_provider_test.dart -p vm --plain-name '(setUpAll)'
-00:08 +0 -1: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially                                                        00:08 +0 -1: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially                                                        
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following _TypeError was thrown running a test:
-Null check operator used on a null value
-
-When the exception was thrown, this was the stack:
-#0      MethodChannelFirebaseMessaging.requestPermission (package:REDACTED_TOKEN/src/method_channel/method_channel_messaging.dart:309:52)
-<asynchronous suspension>
-#1      NotificationService.initialize (package:appoint/services/notification_service.dart:16:5)
-<asynchronous suspension>
-#2      _AmbassadorDashboardScreenState._initializeNotifications (package:appoint/features/ambassador_dashboard_screen.dart:61:5)
-<asynchronous suspension>
-
-The test description was:
-  should display loading state initially
-════════════════════════════════════════════════════════════════════════════════════════════════════
-00:08 +0 -2: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially [E]                                                    
-  Test failed. See exception logs above.
-  The test description was: should display loading state initially
-  
-00:08 +0 -2: loading /Users/a/Documents/APP-OINT/test/integration/full_flow_test.dart                                                                                                                  00:08 +0 -2: /Users/a/Documents/APP-OINT/test/integration/full_flow_test.dart: (suite)                                                                                                                 00:08 +0 -2: /Users/a/Documents/APP-OINT/test/integration/full_flow_test.dart: (suite)                                                                                                                 
-  Skip: Integration test not yet implemented
-00:08 +0 ~1 -2: /Users/a/Documents/APP-OINT/test/integration/full_flow_test.dart: (suite)                                                                                                              00:08 +0 ~1 -2: loading /Users/a/Documents/APP-OINT/test/features/playtime/playtime_service_test.dart                                                                                                  
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart -p vm --plain-name 'Ambassador Dashboard Tests should display loading state initially'
-00:08 +0 ~1 -2: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display data table with ambassador stats                                            00:08 +0 ~1 -2: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display data table with ambassador stats                                            
-[Mock] firebaseMessagingChannel: method=Messaging#requestPermission, arguments={appName: [DEFAULT], permissions: {alert: true, announcement: false, badge: true, carPlay: false, criticalAlert: false, provisional: false, sound: true}}
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following _TypeError was thrown running a test:
-Null check operator used on a null value
-
-When the exception was thrown, this was the stack:
-#0      MethodChannelFirebaseMessaging.requestPermission (package:REDACTED_TOKEN/src/method_channel/method_channel_messaging.dart:309:52)
-<asynchronous suspension>
-#1      NotificationService.initialize (package:appoint/services/notification_service.dart:16:5)
-<asynchronous suspension>
-#2      _AmbassadorDashboardScreenState._initializeNotifications (package:appoint/features/ambassador_dashboard_screen.dart:61:5)
-<asynchronous suspension>
-
-The test description was:
-  should display data table with ambassador stats
-════════════════════════════════════════════════════════════════════════════════════════════════════
-00:09 +0 ~1 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display data table with ambassador stats [E]                                        
-  Test failed. See exception logs above.
-  The test description was: should display data table with ambassador stats
-  
-Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-/var/folders/n0/9g50fmnj0lz5tmjch2zlf6l80000gn/T/flutter_tools.NIsKSx/flutter_test_listener.tdPHCP/listener.dart:21:21: Error: Undefined name 'main'.
-  await Future(test.main);
-                    ^^^^
-00:09 +0 ~1 -4: loading /Users/a/Documents/APP-OINT/test/features/playtime/playtime_service_test.dart [E]                                                                                              
-  Failed to load "/Users/a/Documents/APP-OINT/test/features/playtime/playtime_service_test.dart":
-  Compilation failed for testPath=/Users/a/Documents/APP-OINT/test/features/playtime/playtime_service_test.dart: /var/folders/n0/9g50fmnj0lz5tmjch2zlf6l80000gn/T/flutter_tools.NIsKSx/flutter_test_listener.tdPHCP/listener.dart:21:21: Error: Undefined name 'main'.
-    await Future(test.main);
-                      ^^^^
-  .
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/playtime/playtime_service_test.dart -p vm --plain-name 'loading /Users/a/Documents/APP-OINT/test/features/playtime/playtime_service_test.dart'
-00:09 +0 ~1 -4: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                          00:09 +0 ~1 -4: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: (suite)                                                                                                         00:09 +0 ~1 -4: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: (suite)                                                                                                         
-  Skip: Pending Firebase setup conflicts
-00:09 +0 ~2 -4: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: (suite)                                                                                                         00:09 +0 ~2 -4: loading /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart                                                                                                       00:09 +0 ~2 -4: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: (suite)                                                                                                      00:09 +0 ~2 -4: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: (suite)                                                                                                      
-  Skip: Pending Firebase setup conflicts
-00:09 +0 ~3 -4: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: (suite)                                                                                                      00:09 +0 ~3 -4: loading /Users/a/Documents/APP-OINT/test/features/business/business_dashboard_screen_test.dart                                                                                         00:09 +0 ~3 -4: /Users/a/Documents/APP-OINT/test/features/business/business_dashboard_screen_test.dart: (suite)                                                                                        00:09 +0 ~3 -4: /Users/a/Documents/APP-OINT/test/features/business/business_dashboard_screen_test.dart: (suite)                                                                                        
-  Skip: Pending Firebase setup conflicts
-00:09 +0 ~4 -4: /Users/a/Documents/APP-OINT/test/features/business/business_dashboard_screen_test.dart: (suite)                                                                                        00:09 +0 ~4 -4: loading /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart                                                                                                   00:09 +0 ~4 -4: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: (suite)                                                                                                  00:09 +0 ~4 -4: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: (suite)                                                                                                  
-  Skip: Pending Firebase setup conflicts
-00:09 +0 ~5 -4: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: (suite)                                                                                                  00:09 +0 ~5 -4: loading /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart                                                                                                            00:09 +0 ~5 -4: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: (suite)                                                                                                           00:09 +0 ~5 -4: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: (suite)                                                                                                           
-  Skip: Pending Firebase setup conflicts
-00:09 +0 ~6 -4: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: (suite)                                                                                                           00:09 +0 ~6 -4: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart                                                                                                   00:09 +0 ~6 -5: loading /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart [E]                                                                                                            
-  Error: the Dart compiler exited unexpectedly.
-  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
-  package:flutter_tools/src/compile.dart 907:11    DefaultResidentCompiler._compile.<fn>
-  dart:async/zone.dart 1538:47                     _rootRunUnary
-  dart:async/zone.dart 1429:19                     _CustomZone.runUnary
-  dart:async/future_impl.dart 951:45               Future._propagateToListeners.handleValueCallback
-  dart:async/future_impl.dart 980:13               Future._propagateToListeners
-  dart:async/future_impl.dart 865:9                Future._propagateToListeners
-  dart:async/future_impl.dart 723:5                Future._completeWithValue
-  dart:async/future_impl.dart 807:7                Future._asyncCompleteWithValue.<fn>
-  dart:async/zone.dart 1525:13                     _rootRun
-  dart:async/zone.dart 1422:19                     _CustomZone.run
-  dart:async/zone.dart 1321:7                      _CustomZone.runGuarded
-  dart:async/zone.dart 1362:23                     _CustomZone.bindCallbackGuarded.<fn>
-  dart:async/schedule_microtask.dart 40:21         _microtaskLoop
-  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
-  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
-  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
-  
-Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:14 +0 ~6 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart                                                                                                   00:14 +0 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated                               00:15 +0 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated                               00:16 +0 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated                               00:16 +1 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated                               00:16 +1 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests BroadcastSystemDemoScreen can be instantiated                                   00:16 +2 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests BroadcastSystemDemoScreen can be instantiated                                   00:16 +2 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests ErrorLogsDemoScreen can be instantiated                                         00:16 +3 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests ErrorLogsDemoScreen can be instantiated                                         00:16 +3 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests Admin Demo Panel renders all demo screens correctly                             00:16 +4 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests Admin Demo Panel renders all demo screens correctly                             00:16 +4 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControl provider works correctly                                    00:16 +5 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControl provider works correctly                                    00:16 +5 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests BroadcastMessage provider works correctly                                       00:16 +6 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests BroadcastMessage provider works correctly                                       00:16 +6 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests ErrorLog provider works correctly                                               00:16 +7 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests ErrorLog provider works correctly                                               00:17 +7 ~6 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart                                                                                                      00:18 +7 ~6 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart                                                                                                      Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:19 +7 ~6 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart                                                                                                      00:20 +7 ~6 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart                                                                                                      00:20 +7 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: ... System Tests BroadcastMessage Model Tests should create broadcast message with all required fields      00:20 +8 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: ... System Tests BroadcastMessage Model Tests should create broadcast message with all required fields      00:20 +8 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: ... System Tests BroadcastMessage Model Tests should create broadcast message with targeting filters        00:20 +9 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: ... System Tests BroadcastMessage Model Tests should create broadcast message with targeting filters        00:20 +9 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessage Model Tests should create poll message with options           00:20 +10 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessage Model Tests should create poll message with options          00:20 +10 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessage Model Tests should handle different message types            00:20 +11 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessage Model Tests should handle different message types            00:20 +11 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastTargetingFilters Tests should create filters with all properties     00:20 +12 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastTargetingFilters Tests should create filters with all properties     00:20 +12 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastTargetingFilters Tests should handle empty filters                   00:20 +13 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastTargetingFilters Tests should handle empty filters                   00:20 +13 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageStatus Tests should have correct enum values                  00:20 +14 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageStatus Tests should have correct enum values                  00:20 +14 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageStatus Tests should convert to string correctly               00:20 +15 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageStatus Tests should convert to string correctly               00:20 +15 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageType Tests should have correct enum values                    00:20 +16 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageType Tests should have correct enum values                    00:20 +16 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageType Tests should convert to string correctly                 00:20 +17 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageType Tests should convert to string correctly                 00:20 +17 ~6 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart                                                                                              00:20 +17 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart: (suite)                                                                                             00:20 +17 ~6 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart: (suite)                                                                                             
-  Skip: Pending Firebase setup conflicts
-00:20 +17 ~7 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart: (suite)                                                                                             00:20 +17 ~7 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart                                                                                             00:21 +17 ~7 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart                                                                                             Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:22 +17 ~7 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart                                                                                             00:23 +17 ~7 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart                                                                                             00:24 +17 ~7 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart                                                                                             00:25 +17 ~7 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart                                                                                             00:26 +17 ~7 -5: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart                                                                                             00:26 +17 ~7 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: (setUpAll)                                                                                         00:26 +17 ~7 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Dashboard loads with stats                                     00:27 +17 ~7 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Dashboard loads with stats                                     00:28 +17 ~7 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Dashboard loads with stats                                     00:29 +17 ~7 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Dashboard loads with stats                                     00:29 +18 ~7 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Dashboard loads with stats                                     00:29 +18 ~7 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Broadcast screen loads                                         00:29 +18 ~7 -5: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Broadcast screen loads                                         
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following TestFailure was thrown running a test:
-Expected: exactly one matching candidate
-  Actual: _TextWidgetFinder:<Found 0 widgets with text "Test content": []>
-   Which: means none were found but one was expected
-
-When the exception was thrown, this was the stack:
-#4      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart:153:7)
-<asynchronous suspension>
-#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-<asynchronous suspension>
-#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-<asynchronous suspension>
-<asynchronous suspension>
-(elided one frame from package:stack_trace)
-
-This was caught by the test expectation on the following line:
-  file:///Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart line 153
-The test description was:
-  Admin Broadcast screen loads
-════════════════════════════════════════════════════════════════════════════════════════════════════
-00:29 +18 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Broadcast screen loads [E]                                     
-  Test failed. See exception logs above.
-  The test description was: Admin Broadcast screen loads
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart -p vm --plain-name 'Admin Panel Integration Tests Admin Broadcast screen loads'
-00:29 +18 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Monetization screen loads                                      00:29 +19 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Monetization screen loads                                      00:29 +19 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin service methods work correctly                                 00:29 +20 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin service methods work correctly                                 00:29 +20 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin providers work correctly                                       00:29 +21 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin providers work correctly                                       00:29 +21 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: (tearDownAll)                                                                                      00:29 +21 ~7 -6: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart                                                                                                   00:30 +21 ~7 -6: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart                                                                                                   Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:31 +21 ~7 -6: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart                                                                                                   00:32 +21 ~7 -6: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart                                                                                                   00:32 +21 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Admin Demo Panel renders all navigation tiles correctly                         00:33 +21 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Admin Demo Panel renders all navigation tiles correctly                         00:34 +21 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Admin Demo Panel renders all navigation tiles correctly                         00:34 +22 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Admin Demo Panel renders all navigation tiles correctly                         00:34 +22 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Monetization Control Demo Screen renders correctly                              00:34 +23 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Monetization Control Demo Screen renders correctly                              00:34 +23 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Broadcast System Demo Screen renders correctly                                  00:34 +24 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Broadcast System Demo Screen renders correctly                                  00:34 +24 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Error Logs Demo Screen renders correctly                                        00:34 +25 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Error Logs Demo Screen renders correctly                                        00:34 +25 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works                    00:35 +25 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works                    00:36 +25 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works                    00:37 +25 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works                    00:37 +25 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works                    
-
-Warning: A call to tap() with finder "Found 1 widget with text "Error & Activity Logs": [
-  Text("Error & Activity Logs", inherit: true, size: 16.0, weight: 700, textAlign: center, dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery, _ScrollableScope]),
-]" derived an Offset (Offset(204.0, 614.5)) that would not hit test on the specified widget.
-Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
-Indeed, Offset(204.0, 614.5) is outside the bounds of the root of the render tree, Size(800.0, 600.0).
-The finder corresponds to this RenderBox: RenderParagraph#e6430 relayoutBoundary=up1
-The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#0c727(_ReusableRenderView#0508e), HitTestEntry<HitTestTarget>#cb8ee(<REDACTED_TOKEN>))
-#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2077:25)
-#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1861:12)
-#2      WidgetController.tap (package:flutter_test/src/controller.dart:1041:7)
-#3      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart:134:20)
-<asynchronous suspension>
-#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-<asynchronous suspension>
-#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-<asynchronous suspension>
-#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
-<asynchronous suspension>
-To silence this warning, pass "warnIfMissed: false" to "tap()".
-To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
-
-00:37 +26 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works                    00:37 +26 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Monetization Control Provider works correctly                                   00:37 +27 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Monetization Control Provider works correctly                                   00:37 +27 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Broadcast Message Provider works correctly                                      00:37 +28 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Broadcast Message Provider works correctly                                      00:37 +28 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Error Log Provider works correctly                                              00:37 +29 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Error Log Provider works correctly                                              00:37 +29 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Admin Demo Panel UI elements are properly styled                                00:37 +30 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Admin Demo Panel UI elements are properly styled                                00:37 +30 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Demo screens have proper app bar and navigation                                 00:37 +30 ~7 -6: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display data table with ambassador stats                                           
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following assertion was thrown running a test (but after the test had completed):
-pumpAndSettle timed out
-
-When the exception was thrown, this was the stack:
-#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:718:11)
-<asynchronous suspension>
-#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
-<asynchronous suspension>
-#2      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart:92:7)
-<asynchronous suspension>
-#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-<asynchronous suspension>
-#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-<asynchronous suspension>
-<asynchronous suspension>
-(elided one frame from package:stack_trace)
-════════════════════════════════════════════════════════════════════════════════════════════════════
-00:37 +30 ~7 -6: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display data table with ambassador stats [E]                                       
-  Test failed. See exception logs above.
-  The test description was: should display data table with ambassador stats
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart -p vm --plain-name 'Ambassador Dashboard Tests should display data table with ambassador stats'
-00:38 +30 ~7 -6: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by country                                                             
-[Mock] firebaseMessagingChannel: method=Messaging#requestPermission, arguments={appName: [DEFAULT], permissions: {alert: true, announcement: false, badge: true, carPlay: false, criticalAlert: false, provisional: false, sound: true}}
-00:38 +31 ~7 -6: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by country                                                             00:38 +31 ~7 -6: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: (suite)                                                                                                         
-  Skip: Pending Firebase setup conflicts
-00:38 +31 ~8 -6: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by country                                                             00:38 +31 ~8 -6: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by country                                                             
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following _TypeError was thrown running a test:
-Null check operator used on a null value
-
-When the exception was thrown, this was the stack:
-#0      MethodChannelFirebaseMessaging.requestPermission (package:REDACTED_TOKEN/src/method_channel/method_channel_messaging.dart:309:52)
-<asynchronous suspension>
-#1      NotificationService.initialize (package:appoint/services/notification_service.dart:16:5)
-<asynchronous suspension>
-#2      _AmbassadorDashboardScreenState._initializeNotifications (package:appoint/features/ambassador_dashboard_screen.dart:61:5)
-<asynchronous suspension>
-
-The test description was:
-  should filter data by country
-════════════════════════════════════════════════════════════════════════════════════════════════════
-00:38 +31 ~8 -7: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by country [E]                                                         
-  Test failed. See exception logs above.
-  The test description was: should filter data by country
-  
-Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:40 +31 ~8 -7: loading /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart                                                                                           00:40 +31 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests filters chart data based on country filter                      00:40 +32 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests filters chart data based on country filter                      00:40 +32 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests filters chart data based on language filter                     00:40 +33 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests filters chart data based on language filter                     00:40 +33 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests calculates total ambassadors correctly                          00:40 +34 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests calculates total ambassadors correctly                          00:40 +34 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests calculates total referrals correctly                            00:40 +35 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests calculates total referrals correctly                            00:40 +35 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests calculates average survey score correctly                       00:40 +36 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests calculates average survey score correctly                       00:40 +36 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests chart data max value calculation                                00:40 +37 ~8 -7: /Users/a/Documents/APP-OINT/test/features/ambassador/ambassador_dashboard_test.dart: Ambassador Dashboard Logic Tests chart data max value calculation                                00:40 +37 ~8 -7: loading /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart                                                                                   00:41 +37 ~8 -7: loading /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart                                                                                   00:42 +37 ~8 -7: loading /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart                                                                                   Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:43 +37 ~8 -7: loading /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart                                                                                   00:44 +37 ~8 -7: loading /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart                                                                                   00:44 +37 ~8 -7: /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart: BusinessProfileScreen renders correctly                                                  00:45 +37 ~8 -7: /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart: BusinessProfileScreen renders correctly                                                  00:46 +37 ~8 -7: /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart: BusinessProfileScreen renders correctly                                                  00:46 +37 ~8 -7: /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart: BusinessProfileScreen renders correctly                                                  
-══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
-The following FirebaseException was thrown building BusinessProfileScreen(dirty, dependencies:
-[UncontrolledProviderScope], state: _ConsumerState#ff113):
-[core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-
-The relevant error-causing widget was:
-  BusinessProfileScreen
-  BusinessProfileScreen:file:///Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart:12:19
-
-When the exception was thrown, this was the stack:
-#1      _ProviderStateSubscription.read (package:riverpod/src/framework/provider_base.dart:181:28)
-#2      ConsumerStatefulElement.watch (package:flutter_riverpod/src/consumer.dart:568:8)
-#3      BusinessProfileScreen.build (package:appoint/features/studio_business/screens/business_profile_screen.dart:10:25)
-#4      _ConsumerState.build (package:flutter_riverpod/src/consumer.dart:476:19)
-#5      StatefulElement.build (package:flutter/src/widgets/framework.dart:5823:27)
-#6      ConsumerStatefulElement.build (package:flutter_riverpod/src/consumer.dart:539:20)
-#7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5715:15)
-#8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#9      Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#10     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5697:5)
-#11     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5865:11)
-#12     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5691:5)
-...     Normal element mounting (228 frames)
-#240    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4539:16)
-#241    MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7159:36)
-#242    MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7175:32)
-...     Normal element mounting (463 frames)
-#705    REDACTED_TOKEN.mount (package:flutter_riverpod/src/framework.dart:315:11)
-...     Normal element mounting (9 frames)
-#714    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4539:16)
-#715    Element.updateChild (package:flutter/src/widgets/framework.dart:3998:20)
-#716    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#717    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#718    ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#719    _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
-#720    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#721    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#722    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#723    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#724    StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#725    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#726    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#727    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#728    ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#729    _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
-#730    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#731    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#732    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#733    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#734    StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#735    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#736    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#737    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#738    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#739    StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#740    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#741    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#742    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#743    ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#744    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#745    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#746    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#747    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#748    StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#749    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#750    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#751    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#752    ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#753    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#754    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#755    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#756    ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#757    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#758    _RawViewElement._updateChild (package:flutter/src/widgets/view.dart:481:16)
-#759    _RawViewElement.update (package:flutter/src/widgets/view.dart:569:5)
-#760    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#761    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#762    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#763    StatelessElement.update (package:flutter/src/widgets/framework.dart:5787:5)
-#764    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#765    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#766    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#767    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#768    StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#769    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#770    RootElement._rebuild (package:flutter/src/widgets/binding.dart:1698:16)
-#771    RootElement.update (package:flutter/src/widgets/binding.dart:1676:5)
-#772    RootElement.performRebuild (package:flutter/src/widgets/binding.dart:1690:7)
-#773    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#774    BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2694:15)
-#775    BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2752:11)
-#776    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3056:18)
-#777    REDACTED_TOKEN.drawFrame (package:flutter_test/src/binding.dart:1515:19)
-#778    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
-#779    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1438:15)
-#780    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1351:9)
-#781    REDACTED_TOKEN.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1340:9)
-#784    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#785    REDACTED_TOKEN.pump (package:flutter_test/src/binding.dart:1329:27)
-#786    WidgetTester.pumpWidget.<anonymous closure> (package:flutter_test/src/widget_tester.dart:599:22)
-#789    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#790    WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:596:27)
-#791    main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart:9:20)
-#792    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:29)
-#793    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-#795    MethodChannelFirebase.app (package:REDACTED_TOKEN/src/method_channel/method_channel_firebase.dart:195:5)
-#796    Firebase.app (package:firebase_core/src/firebase.dart:56:41)
-#797    FirebaseFirestore.instance (package:cloud_firestore/src/firestore.dart:33:21)
-#798    new BusinessProfileService (package:appoint/services/business_profile_service.dart:6:40)
-#799    new BusinessProfileNotifier (package:appoint/features/studio_business/providers/business_profile_provider.dart:15:20)
-#800    businessProfileProvider.<anonymous closure> (package:appoint/features/studio_business/providers/business_profile_provider.dart:7:12)
-#801    ProviderContainer.listen (package:riverpod/src/framework/container.dart:280:21)
-#802    ConsumerStatefulElement.watch.<anonymous closure> (package:flutter_riverpod/src/consumer.dart:564:25)
-#803    _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:674:23)
-#804    ConsumerStatefulElement.watch (package:flutter_riverpod/src/consumer.dart:557:26)
-#805    BusinessProfileScreen.build (package:appoint/features/studio_business/screens/business_profile_screen.dart:10:25)
-#806    _ConsumerState.build (package:flutter_riverpod/src/consumer.dart:476:19)
-#807    StatefulElement.build (package:flutter/src/widgets/framework.dart:5823:27)
-#808    ConsumerStatefulElement.build (package:flutter_riverpod/src/consumer.dart:539:20)
-#809    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5715:15)
-#810    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#811    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#812    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5697:5)
-#813    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5865:11)
-#814    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5691:5)
-...     Normal element mounting (228 frames)
-#1042   Element.inflateWidget (package:flutter/src/widgets/framework.dart:4539:16)
-#1043   MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7159:36)
-#1044   MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7175:32)
-...     Normal element mounting (463 frames)
-#1507   REDACTED_TOKEN.mount (package:flutter_riverpod/src/framework.dart:315:11)
-...     Normal element mounting (9 frames)
-#1516   Element.inflateWidget (package:flutter/src/widgets/framework.dart:4539:16)
-#1517   Element.updateChild (package:flutter/src/widgets/framework.dart:3998:20)
-#1518   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1519   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1520   ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#1521   _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
-#1522   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1523   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1524   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#1525   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1526   StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#1527   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1528   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1529   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1530   ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#1531   _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
-#1532   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1533   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1534   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#1535   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1536   StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#1537   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1538   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1539   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#1540   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1541   StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#1542   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1543   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1544   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1545   ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#1546   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1547   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1548   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#1549   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1550   StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#1551   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1552   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1553   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1554   ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#1555   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1556   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1557   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1558   ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#1559   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1560   _RawViewElement._updateChild (package:flutter/src/widgets/view.dart:481:16)
-#1561   _RawViewElement.update (package:flutter/src/widgets/view.dart:569:5)
-#1562   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1563   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1564   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1565   StatelessElement.update (package:flutter/src/widgets/framework.dart:5787:5)
-#1566   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1567   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1568   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#1569   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1570   StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#1571   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1572   RootElement._rebuild (package:flutter/src/widgets/binding.dart:1698:16)
-#1573   RootElement.update (package:flutter/src/widgets/binding.dart:1676:5)
-#1574   RootElement.performRebuild (package:flutter/src/widgets/binding.dart:1690:7)
-#1575   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1576   BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2694:15)
-#1577   BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2752:11)
-#1578   BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3056:18)
-#1579   REDACTED_TOKEN.drawFrame (package:flutter_test/src/binding.dart:1515:19)
-#1580   RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
-#1581   SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1438:15)
-#1582   SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1351:9)
-#1583   REDACTED_TOKEN.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1340:9)
-#1586   TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#1587   REDACTED_TOKEN.pump (package:flutter_test/src/binding.dart:1329:27)
-#1588   WidgetTester.pumpWidget.<anonymous closure> (package:flutter_test/src/widget_tester.dart:599:22)
-#1591   TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#1592   WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:596:27)
-#1593   main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart:9:20)
-#1594   testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:29)
-#1596   testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:190:25)
-#1597   TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:19)
-#1599   TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1053:5)
-#1602   TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1038:10)
-#1603   REDACTED_TOKEN.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:1573:24)
-#1604   FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
-#1609   withClock (package:clock/src/default.dart:52:10)
-#1610   FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
-#1615   FakeAsync.run (package:fake_async/fake_async.dart:181:52)
-#1616   REDACTED_TOKEN.runTest (package:flutter_test/src/binding.dart:1570:15)
-#1617   testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:185:24)
-#1618   Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:229:19)
-#1620   Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:228:9)
-#1625   Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:227:13)
-#1626   Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:258:17)
-#1631   Invoker._waitForOutstandingCallbacks (package:test_api/src/backend/invoker.dart:254:5)
-#1632   Invoker._onRun.<anonymous closure>.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:394:17)
-#1634   Invoker._onRun.<anonymous closure>.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:392:11)
-#1639   Invoker._onRun.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:383:9)
-#1640   Invoker._guardIfGuarded (package:test_api/src/backend/invoker.dart:426:15)
-#1641   Invoker._onRun.<anonymous closure> (package:test_api/src/backend/invoker.dart:382:7)
-#1648   Invoker._onRun (package:test_api/src/backend/invoker.dart:381:11)
-#1649   LiveTestController.run (package:test_api/src/backend/live_test_controller.dart:153:11)
-#1650   RemoteListener._runLiveTest.<anonymous closure> (package:test_api/src/backend/remote_listener.dart:273:16)
-#1655   RemoteListener._runLiveTest (package:test_api/src/backend/remote_listener.dart:272:5)
-#1656   RemoteListener._serializeTest.<anonymous closure> (package:test_api/src/backend/remote_listener.dart:220:7)
-#1674   _GuaranteeSink.add (package:stream_channel/src/guarantee_channel.dart:125:12)
-#1675   new _MultiChannel.<anonymous closure> (package:stream_channel/src/multi_channel.dart:159:31)
-#1677   CastStreamSubscription._onData (dart:_internal/async_cast.dart:96:11)
-#1703   new _WebSocketImpl._fromSocket.<anonymous closure> (dart:_http/websocket_impl.dart:1258:31)
-#1709   _WebSocketProtocolTransformer._messageFrameEnd (dart:_http/websocket_impl.dart:348:23)
-#1710   _WebSocketProtocolTransformer.add (dart:_http/websocket_impl.dart:238:46)
-#1718   _Socket._onData (dart:io-patch/socket_patch.dart:2907:41)
-#1725   new _RawSocket.<anonymous closure> (dart:io-patch/socket_patch.dart:2326:31)
-#1726   _NativeSocket.issueReadEvent.issue (dart:io-patch/socket_patch.dart:1649:14)
-(elided 108 frames from dart:async and package:stack_trace)
-
-════════════════════════════════════════════════════════════════════════════════════════════════════
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following TestFailure was thrown running a test:
-Expected: exactly one matching candidate
-  Actual: _TextWidgetFinder:<Found 0 widgets with text "Business Profile": []>
-   Which: means none were found but one was expected
-
-When the exception was thrown, this was the stack:
-#4      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart:18:7)
-<asynchronous suspension>
-#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-<asynchronous suspension>
-#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-<asynchronous suspension>
-<asynchronous suspension>
-(elided one frame from package:stack_trace)
-
-This was caught by the test expectation on the following line:
-  file:///Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart line 18
-The test description was:
-  renders correctly
-════════════════════════════════════════════════════════════════════════════════════════════════════
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following message was thrown:
-Multiple exceptions (2) were detected during the running of the current test, and at least one was
-unexpected.
-════════════════════════════════════════════════════════════════════════════════════════════════════
-00:46 +37 ~8 -8: /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart: BusinessProfileScreen renders correctly [E]                                              
-  Test failed. See exception logs above.
-  The test description was: renders correctly
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart -p vm --plain-name 'BusinessProfileScreen renders correctly'
-00:46 +37 ~8 -8: /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart: BusinessProfileScreen shows loading indicator when profile is null                       00:46 +37 ~8 -8: /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart: BusinessProfileScreen shows loading indicator when profile is null                       
-══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
-The following FirebaseException was thrown building BusinessProfileScreen(dirty, dependencies:
-[UncontrolledProviderScope], state: _ConsumerState#3b86d):
-[core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-
-The relevant error-causing widget was:
-  BusinessProfileScreen
-  BusinessProfileScreen:file:///Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart:34:19
-
-When the exception was thrown, this was the stack:
-#1      _ProviderStateSubscription.read (package:riverpod/src/framework/provider_base.dart:181:28)
-#2      ConsumerStatefulElement.watch (package:flutter_riverpod/src/consumer.dart:568:8)
-#3      BusinessProfileScreen.build (package:appoint/features/studio_business/screens/business_profile_screen.dart:10:25)
-#4      _ConsumerState.build (package:flutter_riverpod/src/consumer.dart:476:19)
-#5      StatefulElement.build (package:flutter/src/widgets/framework.dart:5823:27)
-#6      ConsumerStatefulElement.build (package:flutter_riverpod/src/consumer.dart:539:20)
-#7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5715:15)
-#8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#9      Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#10     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5697:5)
-#11     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5865:11)
-#12     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5691:5)
-...     Normal element mounting (228 frames)
-#240    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4539:16)
-#241    MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7159:36)
-#242    MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7175:32)
-...     Normal element mounting (463 frames)
-#705    REDACTED_TOKEN.mount (package:flutter_riverpod/src/framework.dart:315:11)
-...     Normal element mounting (9 frames)
-#714    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4539:16)
-#715    Element.updateChild (package:flutter/src/widgets/framework.dart:3998:20)
-#716    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#717    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#718    ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#719    _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
-#720    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#721    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#722    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#723    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#724    StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#725    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#726    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#727    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#728    ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#729    _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
-#730    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#731    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#732    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#733    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#734    StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#735    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#736    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#737    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#738    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#739    StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#740    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#741    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#742    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#743    ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#744    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#745    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#746    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#747    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#748    StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#749    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#750    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#751    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#752    ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#753    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#754    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#755    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#756    ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#757    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#758    _RawViewElement._updateChild (package:flutter/src/widgets/view.dart:481:16)
-#759    _RawViewElement.update (package:flutter/src/widgets/view.dart:569:5)
-#760    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#761    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#762    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#763    StatelessElement.update (package:flutter/src/widgets/framework.dart:5787:5)
-#764    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#765    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#766    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#767    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#768    StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#769    Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#770    RootElement._rebuild (package:flutter/src/widgets/binding.dart:1698:16)
-#771    RootElement.update (package:flutter/src/widgets/binding.dart:1676:5)
-#772    RootElement.performRebuild (package:flutter/src/widgets/binding.dart:1690:7)
-#773    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#774    BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2694:15)
-#775    BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2752:11)
-#776    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3056:18)
-#777    REDACTED_TOKEN.drawFrame (package:flutter_test/src/binding.dart:1515:19)
-#778    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
-#779    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1438:15)
-#780    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1351:9)
-#781    REDACTED_TOKEN.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1340:9)
-#784    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#785    REDACTED_TOKEN.pump (package:flutter_test/src/binding.dart:1329:27)
-#786    WidgetTester.pumpWidget.<anonymous closure> (package:flutter_test/src/widget_tester.dart:599:22)
-#789    TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#790    WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:596:27)
-#791    main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart:31:20)
-#792    testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:29)
-#793    TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-#795    MethodChannelFirebase.app (package:REDACTED_TOKEN/src/method_channel/method_channel_firebase.dart:195:5)
-#796    Firebase.app (package:firebase_core/src/firebase.dart:56:41)
-#797    FirebaseFirestore.instance (package:cloud_firestore/src/firestore.dart:33:21)
-#798    new BusinessProfileService (package:appoint/services/business_profile_service.dart:6:40)
-#799    new BusinessProfileNotifier (package:appoint/features/studio_business/providers/business_profile_provider.dart:15:20)
-#800    businessProfileProvider.<anonymous closure> (package:appoint/features/studio_business/providers/business_profile_provider.dart:7:12)
-#801    ProviderContainer.listen (package:riverpod/src/framework/container.dart:280:21)
-#802    ConsumerStatefulElement.watch.<anonymous closure> (package:flutter_riverpod/src/consumer.dart:564:25)
-#803    _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:674:23)
-#804    ConsumerStatefulElement.watch (package:flutter_riverpod/src/consumer.dart:557:26)
-#805    BusinessProfileScreen.build (package:appoint/features/studio_business/screens/business_profile_screen.dart:10:25)
-#806    _ConsumerState.build (package:flutter_riverpod/src/consumer.dart:476:19)
-#807    StatefulElement.build (package:flutter/src/widgets/framework.dart:5823:27)
-#808    ConsumerStatefulElement.build (package:flutter_riverpod/src/consumer.dart:539:20)
-#809    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5715:15)
-#810    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#811    Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#812    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5697:5)
-#813    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5865:11)
-#814    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5691:5)
-...     Normal element mounting (228 frames)
-#1042   Element.inflateWidget (package:flutter/src/widgets/framework.dart:4539:16)
-#1043   MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7159:36)
-#1044   MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7175:32)
-...     Normal element mounting (463 frames)
-#1507   REDACTED_TOKEN.mount (package:flutter_riverpod/src/framework.dart:315:11)
-...     Normal element mounting (9 frames)
-#1516   Element.inflateWidget (package:flutter/src/widgets/framework.dart:4539:16)
-#1517   Element.updateChild (package:flutter/src/widgets/framework.dart:3998:20)
-#1518   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1519   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1520   ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#1521   _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
-#1522   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1523   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1524   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#1525   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1526   StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#1527   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1528   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1529   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1530   ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#1531   _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
-#1532   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1533   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1534   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#1535   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1536   StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#1537   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1538   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1539   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#1540   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1541   StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#1542   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1543   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1544   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1545   ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#1546   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1547   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1548   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#1549   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1550   StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#1551   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1552   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1553   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1554   ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#1555   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1556   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1557   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1558   ProxyElement.update (package:flutter/src/widgets/framework.dart:6041:5)
-#1559   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1560   _RawViewElement._updateChild (package:flutter/src/widgets/view.dart:481:16)
-#1561   _RawViewElement.update (package:flutter/src/widgets/view.dart:569:5)
-#1562   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1563   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1564   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1565   StatelessElement.update (package:flutter/src/widgets/framework.dart:5787:5)
-#1566   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1567   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5738:16)
-#1568   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5874:11)
-#1569   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1570   StatefulElement.update (package:flutter/src/widgets/framework.dart:5899:5)
-#1571   Element.updateChild (package:flutter/src/widgets/framework.dart:3982:15)
-#1572   RootElement._rebuild (package:flutter/src/widgets/binding.dart:1698:16)
-#1573   RootElement.update (package:flutter/src/widgets/binding.dart:1676:5)
-#1574   RootElement.performRebuild (package:flutter/src/widgets/binding.dart:1690:7)
-#1575   Element.rebuild (package:flutter/src/widgets/framework.dart:5427:7)
-#1576   BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2694:15)
-#1577   BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2752:11)
-#1578   BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3056:18)
-#1579   REDACTED_TOKEN.drawFrame (package:flutter_test/src/binding.dart:1515:19)
-#1580   RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
-#1581   SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1438:15)
-#1582   SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1351:9)
-#1583   REDACTED_TOKEN.pump.<anonymous closure> (package:flutter_test/src/binding.dart:1340:9)
-#1586   TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#1587   REDACTED_TOKEN.pump (package:flutter_test/src/binding.dart:1329:27)
-#1588   WidgetTester.pumpWidget.<anonymous closure> (package:flutter_test/src/widget_tester.dart:599:22)
-#1591   TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#1592   WidgetTester.pumpWidget (package:flutter_test/src/widget_tester.dart:596:27)
-#1593   main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart:31:20)
-#1594   testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:29)
-#1596   testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:190:25)
-#1597   TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:19)
-#1599   TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1053:5)
-#1602   TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1038:10)
-#1603   REDACTED_TOKEN.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:1573:24)
-#1604   FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
-#1609   withClock (package:clock/src/default.dart:52:10)
-#1610   FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
-#1615   FakeAsync.run (package:fake_async/fake_async.dart:181:52)
-#1616   REDACTED_TOKEN.runTest (package:flutter_test/src/binding.dart:1570:15)
-#1617   testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:185:24)
-#1618   Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:229:19)
-#1620   Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:228:9)
-#1625   Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:227:13)
-#1626   Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:258:17)
-#1631   Invoker._waitForOutstandingCallbacks (package:test_api/src/backend/invoker.dart:254:5)
-#1632   Invoker._onRun.<anonymous closure>.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:394:17)
-#1634   Invoker._onRun.<anonymous closure>.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:392:11)
-#1639   Invoker._onRun.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:383:9)
-#1640   Invoker._guardIfGuarded (package:test_api/src/backend/invoker.dart:426:15)
-#1641   Invoker._onRun.<anonymous closure> (package:test_api/src/backend/invoker.dart:382:7)
-#1648   Invoker._onRun (package:test_api/src/backend/invoker.dart:381:11)
-#1649   LiveTestController.run (package:test_api/src/backend/live_test_controller.dart:153:11)
-#1650   RemoteListener._runLiveTest.<anonymous closure> (package:test_api/src/backend/remote_listener.dart:273:16)
-#1655   RemoteListener._runLiveTest (package:test_api/src/backend/remote_listener.dart:272:5)
-#1656   RemoteListener._serializeTest.<anonymous closure> (package:test_api/src/backend/remote_listener.dart:220:7)
-#1674   _GuaranteeSink.add (package:stream_channel/src/guarantee_channel.dart:125:12)
-#1675   new _MultiChannel.<anonymous closure> (package:stream_channel/src/multi_channel.dart:159:31)
-#1677   CastStreamSubscription._onData (dart:_internal/async_cast.dart:96:11)
-#1703   new _WebSocketImpl._fromSocket.<anonymous closure> (dart:_http/websocket_impl.dart:1258:31)
-#1709   _WebSocketProtocolTransformer._messageFrameEnd (dart:_http/websocket_impl.dart:348:23)
-#1710   _WebSocketProtocolTransformer.add (dart:_http/websocket_impl.dart:238:46)
-#1718   _Socket._onData (dart:io-patch/socket_patch.dart:2907:41)
-#1725   new _RawSocket.<anonymous closure> (dart:io-patch/socket_patch.dart:2326:31)
-#1726   _NativeSocket.issueReadEvent.issue (dart:io-patch/socket_patch.dart:1649:14)
-(elided 108 frames from dart:async and package:stack_trace)
-
-════════════════════════════════════════════════════════════════════════════════════════════════════
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following TestFailure was thrown running a test:
-Expected: exactly one matching candidate
-  Actual: _TypeWidgetFinder:<Found 0 widgets with type "CircularProgressIndicator": []>
-   Which: means none were found but one was expected
-
-When the exception was thrown, this was the stack:
-#4      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart:40:7)
-<asynchronous suspension>
-#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-<asynchronous suspension>
-#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-<asynchronous suspension>
-<asynchronous suspension>
-(elided one frame from package:stack_trace)
-
-This was caught by the test expectation on the following line:
-  file:///Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart line 40
-The test description was:
-  shows loading indicator when profile is null
-════════════════════════════════════════════════════════════════════════════════════════════════════
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following message was thrown:
-Multiple exceptions (2) were detected during the running of the current test, and at least one was
-unexpected.
-════════════════════════════════════════════════════════════════════════════════════════════════════
-00:46 +37 ~8 -9: /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart: BusinessProfileScreen shows loading indicator when profile is null [E]                   
-  Test failed. See exception logs above.
-  The test description was: shows loading indicator when profile is null
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/studio_business/business_profile_screen_test.dart -p vm --plain-name 'BusinessProfileScreen shows loading indicator when profile is null'
-00:46 +37 ~8 -9: loading /Users/a/Documents/APP-OINT/test/features/studio_business/business_dashboard_screen_test.dart                                                                                 00:47 +37 ~8 -9: loading /Users/a/Documents/APP-OINT/test/features/studio_business/business_dashboard_screen_test.dart                                                                                 Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:48 +37 ~8 -9: loading /Users/a/Documents/APP-OINT/test/features/studio_business/business_dashboard_screen_test.dart                                                                                 00:49 +37 ~8 -9: loading /Users/a/Documents/APP-OINT/test/features/studio_business/business_dashboard_screen_test.dart                                                                                 00:49 +37 ~8 -9: /Users/a/Documents/APP-OINT/test/features/studio_business/business_dashboard_screen_test.dart: BusinessDashboardScreen renders correctly                                              00:50 +37 ~8 -9: /Users/a/Documents/APP-OINT/test/features/studio_business/business_dashboard_screen_test.dart: BusinessDashboardScreen renders correctly                                              00:50 +38 ~8 -9: /Users/a/Documents/APP-OINT/test/features/studio_business/business_dashboard_screen_test.dart: BusinessDashboardScreen renders correctly                                              00:50 +38 ~8 -9: loading /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart                                                                                                                00:50 +38 ~8 -9: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: (suite)                                                                                                               00:50 +38 ~8 -9: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: (suite)                                                                                                               
-  Skip: Pending Firebase setup conflicts
-00:50 +38 ~9 -9: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: (suite)                                                                                                               00:50 +38 ~9 -9: loading /Users/a/Documents/APP-OINT/test/models/appointment_test.dart                                                                                                                 00:50 +38 ~9 -9: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: (suite)                                                                                                                00:50 +38 ~9 -9: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: (suite)                                                                                                                
-  Skip: Pending Firebase setup conflicts
-00:50 +38 ~10 -9: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: (suite)                                                                                                               00:50 +38 ~10 -9: loading /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart                                                                                                    00:50 +38 ~10 -9: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: (suite)                                                                                                   00:50 +38 ~10 -9: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: (suite)                                                                                                   
-  Skip: Pending Firebase setup conflicts
-00:50 +38 ~11 -9: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: (suite)                                                                                                   00:50 +38 ~11 -9: loading /Users/a/Documents/APP-OINT/test/widget_test.dart                                                                                                                            00:51 +38 ~11 -9: loading /Users/a/Documents/APP-OINT/test/widget_test.dart                                                                                                                            00:52 +38 ~11 -9: loading /Users/a/Documents/APP-OINT/test/widget_test.dart                                                                                                                            Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:53 +38 ~11 -9: loading /Users/a/Documents/APP-OINT/test/widget_test.dart                                                                                                                            00:53 +38 ~11 -9: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                    00:54 +38 ~11 -9: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                    00:54 +39 ~11 -9: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                    00:54 +39 ~11 -9: loading /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart                                                                                                                    00:54 +39 ~11 -9: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: (suite)                                                                                                                   00:54 +39 ~11 -9: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: (suite)                                                                                                                   
-  Skip: Pending Firebase setup conflicts
-00:54 +39 ~12 -9: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: (suite)                                                                                                                   00:54 +39 ~12 -9: loading /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart                                                                                                          00:55 +39 ~12 -9: loading /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart                                                                                                          Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:56 +39 ~12 -9: loading /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart                                                                                                          00:56 +39 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: (setUpAll)                                                                                                      00:57 +39 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: (setUpAll)                                                                                                      00:57 +39 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should return correct quota for valid country-language combination                 00:57 +40 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should return correct quota for valid country-language combination                 00:57 +40 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should return 0 for invalid country-language combination                           00:57 +41 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should return 0 for invalid country-language combination                           00:57 +41 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have correct total global quota                                             00:57 +42 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have correct total global quota                                             00:57 +42 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should include all major regions                                                   00:57 +43 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should include all major regions                                                   00:57 +43 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have reasonable quota distribution                                          00:57 +44 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have reasonable quota distribution                                          00:57 +44 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should handle edge cases in quota calculations                                     00:57 +45 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should handle edge cases in quota calculations                                     00:57 +45 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have correct quota for specific countries                                   00:57 +46 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have correct quota for specific countries                                   00:57 +46 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have exactly 50 country-language combinations                               00:57 +47 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have exactly 50 country-language combinations                               00:57 +47 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have no duplicate keys                                                      00:57 +48 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have no duplicate keys                                                      00:57 +48 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have all quotas as positive integers                                        00:57 +49 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have all quotas as positive integers                                        00:57 +49 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have correct key format (country_language)                                  00:57 +50 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have correct key format (country_language)                                  00:57 +50 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should match exact quota requirements from specification                           00:57 +51 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should match exact quota requirements from specification                           00:57 +51 ~12 -9: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: (tearDownAll)                                                                                                   00:57 +51 ~12 -9: loading /Users/a/Documents/APP-OINT/test/family_integration_test.dart                                                                                                                00:58 +51 ~12 -9: loading /Users/a/Documents/APP-OINT/test/family_integration_test.dart                                                                                                                Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or `dartPluginClass`.
-
-Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline implementation.
-Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` or `dartPluginClass`.
-
-00:59 +51 ~12 -9: loading /Users/a/Documents/APP-OINT/test/family_integration_test.dart                                                                                                                00:59 +51 ~12 -9: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink model should serialize correctly                                                  00:59 +52 ~12 -9: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink model should serialize correctly                                                  00:59 +52 ~12 -9: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink should categorize status correctly                                                00:59 +53 ~12 -9: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink should categorize status correctly                                                00:59 +53 ~12 -9: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink should handle different statuses                                                  00:59 +54 ~12 -9: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink should handle different statuses                                                  00:59 +54 ~12 -9: loading /Users/a/Documents/APP-OINT/test/otp_flow_test.dart                                                                                                                          00:59 +54 ~12 -9: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: (suite)                                                                                                                         00:59 +54 ~12 -9: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: (suite)                                                                                                                         
-  Skip: Pending Firebase setup conflicts
-00:59 +54 ~13 -9: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: (suite)                                                                                                                         00:59 +54 ~13 -9: loading /Users/a/Documents/APP-OINT/test/booking_service_test.dart                                                                                                                   00:59 +54 ~13 -9: /Users/a/Documents/APP-OINT/test/booking_service_test.dart: (suite)                                                                                                                  00:59 +54 ~13 -9: /Users/a/Documents/APP-OINT/test/booking_service_test.dart: (suite)                                                                                                                  
-  Skip: Pending Firebase setup conflicts
-00:59 +54 ~14 -9: /Users/a/Documents/APP-OINT/test/booking_service_test.dart: (suite)                                                                                                                  00:59 +54 ~14 -9: loading /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart                                                                                                            00:59 +54 ~14 -9: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: (suite)                                                                                                           00:59 +54 ~14 -9: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: (suite)                                                                                                           
-  Skip: Pending Firebase setup conflicts
-00:59 +54 ~15 -9: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: (suite)                                                                                                           00:59 +54 ~15 -9: loading /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart                                                                                                        00:59 +54 ~15 -9: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (suite)                                                                                                       00:59 +54 ~15 -9: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (suite)                                                                                                       
-  Skip: Pending Firebase setup conflicts
-00:59 +54 ~16 -9: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (suite)                                                                                                       01:00 +54 ~16 -9: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (suite)                                                                                                       01:01 +54 ~16 -9: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (suite)                                                                                                       01:02 +54 ~16 -9: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (suite)                                                                                                       01:03 +54 ~16 -9: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (suite)                                                                                                       01:03 +54 ~16 -9: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by country                                                            
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following assertion was thrown running a test (but after the test had completed):
-pumpAndSettle timed out
-
-When the exception was thrown, this was the stack:
-#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:718:11)
-<asynchronous suspension>
-#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
-<asynchronous suspension>
-#2      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart:151:7)
-<asynchronous suspension>
-#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-<asynchronous suspension>
-#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-<asynchronous suspension>
-<asynchronous suspension>
-(elided one frame from package:stack_trace)
-════════════════════════════════════════════════════════════════════════════════════════════════════
-01:03 +54 ~16 -9: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by country [E]                                                        
-  Test failed. See exception logs above.
-  The test description was: should filter data by country
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart -p vm --plain-name 'Ambassador Dashboard Tests should filter data by country'
-01:03 +54 ~16 -9: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by language                                                           01:03 +54 ~16 -9: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by language                                                           
-[Mock] firebaseMessagingChannel: method=Messaging#requestPermission, arguments={appName: [DEFAULT], permissions: {alert: true, announcement: false, badge: true, carPlay: false, criticalAlert: false, provisional: false, sound: true}}
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following _TypeError was thrown running a test:
-Null check operator used on a null value
-
-When the exception was thrown, this was the stack:
-#0      MethodChannelFirebaseMessaging.requestPermission (package:REDACTED_TOKEN/src/method_channel/method_channel_messaging.dart:309:52)
-<asynchronous suspension>
-#1      NotificationService.initialize (package:appoint/services/notification_service.dart:16:5)
-<asynchronous suspension>
-#2      _AmbassadorDashboardScreenState._initializeNotifications (package:appoint/features/ambassador_dashboard_screen.dart:61:5)
-<asynchronous suspension>
-
-The test description was:
-  should filter data by language
-════════════════════════════════════════════════════════════════════════════════════════════════════
-01:03 +54 ~16 -10: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by language [E]                                                      
-  Test failed. See exception logs above.
-  The test description was: should filter data by language
-  
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following assertion was thrown running a test (but after the test had completed):
-pumpAndSettle timed out
-
-When the exception was thrown, this was the stack:
-#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:718:11)
-<asynchronous suspension>
-#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
-<asynchronous suspension>
-#2      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart:218:7)
-<asynchronous suspension>
-#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-<asynchronous suspension>
-#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-<asynchronous suspension>
-<asynchronous suspension>
-(elided one frame from package:stack_trace)
-════════════════════════════════════════════════════════════════════════════════════════════════════
-  Test failed. See exception logs above.
-  The test description was: should filter data by language
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart -p vm --plain-name 'Ambassador Dashboard Tests should filter data by language'
-01:23 +54 ~16 -10: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should clear filters when clear button is pressed                                       01:23 +54 ~16 -10: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should clear filters when clear button is pressed                                       
-[Mock] firebaseMessagingChannel: method=Messaging#requestPermission, arguments={appName: [DEFAULT], permissions: {alert: true, announcement: false, badge: true, carPlay: false, criticalAlert: false, provisional: false, sound: true}}
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following _TypeError was thrown running a test:
-Null check operator used on a null value
-
-When the exception was thrown, this was the stack:
-#0      MethodChannelFirebaseMessaging.requestPermission (package:REDACTED_TOKEN/src/method_channel/method_channel_messaging.dart:309:52)
-<asynchronous suspension>
-#1      NotificationService.initialize (package:appoint/services/notification_service.dart:16:5)
-<asynchronous suspension>
-#2      _AmbassadorDashboardScreenState._initializeNotifications (package:appoint/features/ambassador_dashboard_screen.dart:61:5)
-<asynchronous suspension>
-
-The test description was:
-  should clear filters when clear button is pressed
-════════════════════════════════════════════════════════════════════════════════════════════════════
-01:23 +54 ~16 -11: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should clear filters when clear button is pressed [E]                                   
-  Test failed. See exception logs above.
-  The test description was: should clear filters when clear button is pressed
-  
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following assertion was thrown running a test (but after the test had completed):
-pumpAndSettle timed out
-
-When the exception was thrown, this was the stack:
-#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:718:11)
-<asynchronous suspension>
-#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
-<asynchronous suspension>
-#2      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart:273:7)
-<asynchronous suspension>
-#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-<asynchronous suspension>
-#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-<asynchronous suspension>
-<asynchronous suspension>
-(elided one frame from package:stack_trace)
-════════════════════════════════════════════════════════════════════════════════════════════════════
-  Test failed. See exception logs above.
-  The test description was: should clear filters when clear button is pressed
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart -p vm --plain-name 'Ambassador Dashboard Tests should clear filters when clear button is pressed'
-01:42 +54 ~16 -11: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display chart when data is available                                             01:43 +54 ~16 -11: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display chart when data is available                                             01:43 +54 ~16 -11: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display chart when data is available                                             
-[Mock] firebaseMessagingChannel: method=Messaging#requestPermission, arguments={appName: [DEFAULT], permissions: {alert: true, announcement: false, badge: true, carPlay: false, criticalAlert: false, provisional: false, sound: true}}
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following _TypeError was thrown running a test:
-Null check operator used on a null value
-
-When the exception was thrown, this was the stack:
-#0      MethodChannelFirebaseMessaging.requestPermission (package:REDACTED_TOKEN/src/method_channel/method_channel_messaging.dart:309:52)
-<asynchronous suspension>
-#1      NotificationService.initialize (package:appoint/services/notification_service.dart:16:5)
-<asynchronous suspension>
-#2      _AmbassadorDashboardScreenState._initializeNotifications (package:appoint/features/ambassador_dashboard_screen.dart:61:5)
-<asynchronous suspension>
-
-The test description was:
-  should display chart when data is available
-════════════════════════════════════════════════════════════════════════════════════════════════════
-01:43 +54 ~16 -12: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display chart when data is available [E]                                         
-  Test failed. See exception logs above.
-  The test description was: should display chart when data is available
-  
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following assertion was thrown running a test (but after the test had completed):
-pumpAndSettle timed out
-
-When the exception was thrown, this was the stack:
-#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:718:11)
-<asynchronous suspension>
-#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
-<asynchronous suspension>
-#2      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart:321:7)
-<asynchronous suspension>
-#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-<asynchronous suspension>
-#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-<asynchronous suspension>
-<asynchronous suspension>
-(elided one frame from package:stack_trace)
-════════════════════════════════════════════════════════════════════════════════════════════════════
-  Test failed. See exception logs above.
-  The test description was: should display chart when data is available
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart -p vm --plain-name 'Ambassador Dashboard Tests should display chart when data is available'
-02:02 +54 ~16 -12: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display error state when service fails                                           02:02 +54 ~16 -12: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display error state when service fails                                           
-[Mock] firebaseMessagingChannel: method=Messaging#requestPermission, arguments={appName: [DEFAULT], permissions: {alert: true, announcement: false, badge: true, carPlay: false, criticalAlert: false, provisional: false, sound: true}}
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following _TypeError was thrown running a test:
-Null check operator used on a null value
-
-When the exception was thrown, this was the stack:
-#0      MethodChannelFirebaseMessaging.requestPermission (package:REDACTED_TOKEN/src/method_channel/method_channel_messaging.dart:309:52)
-<asynchronous suspension>
-#1      NotificationService.initialize (package:appoint/services/notification_service.dart:16:5)
-<asynchronous suspension>
-#2      _AmbassadorDashboardScreenState._initializeNotifications (package:appoint/features/ambassador_dashboard_screen.dart:61:5)
-<asynchronous suspension>
-
-The test description was:
-  should display error state when service fails
-════════════════════════════════════════════════════════════════════════════════════════════════════
-02:02 +54 ~16 -13: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display error state when service fails [E]                                       
-  Test failed. See exception logs above.
-  The test description was: should display error state when service fails
-  
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following assertion was thrown running a test (but after the test had completed):
-pumpAndSettle timed out
-
-When the exception was thrown, this was the stack:
-#0      WidgetTester.pumpAndSettle.<anonymous closure> (package:flutter_test/src/widget_tester.dart:718:11)
-<asynchronous suspension>
-#1      TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
-<asynchronous suspension>
-#2      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart:341:7)
-<asynchronous suspension>
-#3      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-<asynchronous suspension>
-#4      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-<asynchronous suspension>
-<asynchronous suspension>
-(elided one frame from package:stack_trace)
-════════════════════════════════════════════════════════════════════════════════════════════════════
-  Test failed. See exception logs above.
-  The test description was: should display error state when service fails
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart -p vm --plain-name 'Ambassador Dashboard Tests should display error state when service fails'
-02:05 +54 ~16 -13: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Data Provider Tests should load data successfully                                                       02:05 +55 ~16 -13: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Data Provider Tests should load data successfully                                                       02:05 +55 ~16 -13: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Data Provider Tests should update filters and reload data                                               02:05 +56 ~16 -13: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Data Provider Tests should update filters and reload data                                               02:05 +56 ~16 -13: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Data Provider Tests should clear filters and reload data                                                02:05 +57 ~16 -13: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Data Provider Tests should clear filters and reload data                                                02:05 +57 ~16 -13: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: (tearDownAll)                                                                                                      02:05 +57 ~16 -13: Some tests failed.                                                                                                                                                                  
