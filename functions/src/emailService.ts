@@ -3,49 +3,49 @@ import * as nodemailer from 'nodemailer';
 
 // Initialize Firebase Admin if not already initialised
 if (!admin.apps.length) {
-    admin.initializeApp();
+  admin.initializeApp();
 }
 
 // Email configuration
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-        user: process.env.EMAIL_USER || 'noreply@appoint.com',
-        pass: process.env.EMAIL_PASS || 'secure-password'
-    },
-    secure: true,
-    tls: {
-        rejectUnauthorized: false
-    }
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER || 'noreply@appoint.com',
+    pass: process.env.EMAIL_PASS || 'secure-password'
+  },
+  secure: true,
+  tls: {
+    rejectUnauthorized: false
+  }
 });
 
 interface ApiKeyEmailData {
-    companyName: string;
-    contactName: string;
-    email: string;
-    apiKey: string;
-    businessId: string;
-    monthlyQuota: number;
-    dashboardUrl: string;
+  companyName: string;
+  contactName: string;
+  email: string;
+  apiKey: string;
+  businessId: string;
+  monthlyQuota: number;
+  dashboardUrl: string;
 }
 
 interface WelcomeEmailData {
-    companyName: string;
-    contactName: string;
-    email: string;
-    plan: string;
-    dashboardUrl: string;
+  companyName: string;
+  contactName: string;
+  email: string;
+  plan: string;
+  dashboardUrl: string;
 }
 
 /**
  * Send API key email to newly registered business
  */
 export async function sendApiKeyEmail(data: ApiKeyEmailData): Promise<void> {
-    const { companyName, contactName, email, apiKey, businessId, monthlyQuota, dashboardUrl } = data;
+  const { companyName, contactName, email, apiKey, businessId, monthlyQuota, dashboardUrl } = data;
 
-    const subject = `Your App-Oint Enterprise API Access - ${companyName}`;
+  const subject = `Your App-Oint Enterprise API Access - ${companyName}`;
 
-    const htmlBody = `
+  const htmlBody = `
     <!DOCTYPE html>
     <html>
     <head>
@@ -126,7 +126,7 @@ curl -X POST https://api.app-oint.com/v1/appointments \\<br>
     </html>
   `;
 
-    const textBody = `
+  const textBody = `
 Welcome to App-Oint Enterprise!
 
 Hello ${contactName},
@@ -166,52 +166,52 @@ SUPPORT:
 This email was sent to ${email} for ${companyName}
   `;
 
-    const mailOptions = {
-        from: process.env.EMAIL_USER || 'noreply@appoint.com',
-        to: email,
-        subject: subject,
-        html: htmlBody,
-        text: textBody
-    };
+  const mailOptions = {
+    from: process.env.EMAIL_USER || 'noreply@appoint.com',
+    to: email,
+    subject: subject,
+    html: htmlBody,
+    text: textBody
+  };
 
-    try {
-        await transporter.sendMail(mailOptions);
-        console.log(`✅ API key email sent to ${email} for ${companyName}`);
+  try {
+    await transporter.sendMail(mailOptions);
+    console.log(`✅ API key email sent to ${email} for ${companyName}`);
 
-        // Log email sent to Firestore
-        await admin.firestore().collection('email_logs').add({
-            type: 'api_key_email',
-            businessId: businessId,
-            email: email,
-            sentAt: admin.firestore.FieldValue.serverTimestamp(),
-            success: true
-        });
-    } catch (error) {
-        console.error('❌ Failed to send API key email:', error);
+    // Log email sent to Firestore
+    await admin.firestore().collection('email_logs').add({
+      type: 'api_key_email',
+      businessId: businessId,
+      email: email,
+      sentAt: admin.firestore.FieldValue.serverTimestamp(),
+      success: true
+    });
+  } catch (error) {
+    console.error('❌ Failed to send API key email:', error);
 
-        // Log failed email attempt
-        await admin.firestore().collection('email_logs').add({
-            type: 'api_key_email',
-            businessId: businessId,
-            email: email,
-            sentAt: admin.firestore.FieldValue.serverTimestamp(),
-            success: false,
-            error: error instanceof Error ? error.message : 'Unknown error'
-        });
+    // Log failed email attempt
+    await admin.firestore().collection('email_logs').add({
+      type: 'api_key_email',
+      businessId: businessId,
+      email: email,
+      sentAt: admin.firestore.FieldValue.serverTimestamp(),
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error'
+    });
 
-        throw error;
-    }
+    throw error;
+  }
 }
 
 /**
  * Send welcome email to newly registered business
  */
 export async function sendWelcomeEmail(data: WelcomeEmailData): Promise<void> {
-    const { companyName, contactName, email, plan, dashboardUrl } = data;
+  const { companyName, contactName, email, plan, dashboardUrl } = data;
 
-    const subject = `Welcome to App-Oint Enterprise - ${companyName}`;
+  const subject = `Welcome to App-Oint Enterprise - ${companyName}`;
 
-    const htmlBody = `
+  const htmlBody = `
     <!DOCTYPE html>
     <html>
     <head>
@@ -275,7 +275,7 @@ export async function sendWelcomeEmail(data: WelcomeEmailData): Promise<void> {
     </html>
   `;
 
-    const textBody = `
+  const textBody = `
 Welcome to App-Oint Enterprise!
 
 Hello ${contactName},
@@ -306,57 +306,57 @@ Our support team is here to help:
 This email was sent to ${email} for ${companyName}
   `;
 
-    const mailOptions = {
-        from: process.env.EMAIL_USER || 'noreply@appoint.com',
-        to: email,
-        subject: subject,
-        html: htmlBody,
-        text: textBody
-    };
+  const mailOptions = {
+    from: process.env.EMAIL_USER || 'noreply@appoint.com',
+    to: email,
+    subject: subject,
+    html: htmlBody,
+    text: textBody
+  };
 
-    try {
-        await transporter.sendMail(mailOptions);
-        console.log(`✅ Welcome email sent to ${email} for ${companyName}`);
+  try {
+    await transporter.sendMail(mailOptions);
+    console.log(`✅ Welcome email sent to ${email} for ${companyName}`);
 
-        // Log email sent to Firestore
-        await admin.firestore().collection('email_logs').add({
-            type: 'welcome_email',
-            email: email,
-            companyName: companyName,
-            sentAt: admin.firestore.FieldValue.serverTimestamp(),
-            success: true
-        });
-    } catch (error) {
-        console.error('❌ Failed to send welcome email:', error);
+    // Log email sent to Firestore
+    await admin.firestore().collection('email_logs').add({
+      type: 'welcome_email',
+      email: email,
+      companyName: companyName,
+      sentAt: admin.firestore.FieldValue.serverTimestamp(),
+      success: true
+    });
+  } catch (error) {
+    console.error('❌ Failed to send welcome email:', error);
 
-        // Log failed email attempt
-        await admin.firestore().collection('email_logs').add({
-            type: 'welcome_email',
-            email: email,
-            companyName: companyName,
-            sentAt: admin.firestore.FieldValue.serverTimestamp(),
-            success: false,
-            error: error instanceof Error ? error.message : 'Unknown error'
-        });
+    // Log failed email attempt
+    await admin.firestore().collection('email_logs').add({
+      type: 'welcome_email',
+      email: email,
+      companyName: companyName,
+      sentAt: admin.firestore.FieldValue.serverTimestamp(),
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error'
+    });
 
-        throw error;
-    }
+    throw error;
+  }
 }
 
 /**
  * Send invoice email with PDF attachment
  */
 export async function sendInvoiceEmail(
-    to: string,
-    pdfBuffer: Buffer,
-    filename: string,
-    isOverageInvoice = false
+  to: string,
+  pdfBuffer: Buffer,
+  filename: string,
+  isOverageInvoice = false
 ): Promise<void> {
-    const subject = isOverageInvoice
-        ? 'App-Oint Enterprise - Map Usage Invoice'
-        : 'App-Oint Enterprise - Monthly Invoice';
+  const subject = isOverageInvoice
+    ? 'App-Oint Enterprise - Map Usage Invoice'
+    : 'App-Oint Enterprise - Monthly Invoice';
 
-    const htmlBody = `
+  const htmlBody = `
     <!DOCTYPE html>
     <html>
     <head>
@@ -415,7 +415,7 @@ export async function sendInvoiceEmail(
     </html>
   `;
 
-    const textBody = `
+  const textBody = `
 Invoice Available
 
 Hello,
@@ -442,46 +442,46 @@ If you have any questions about this invoice, please contact our billing team:
 © 2025 App-Oint. All rights reserved.
   `;
 
-    const mailOptions = {
-        from: process.env.EMAIL_USER || 'noreply@appoint.com',
-        to: to,
-        subject: subject,
-        html: htmlBody,
-        text: textBody,
-        attachments: [
-            {
-                filename: filename,
-                content: pdfBuffer,
-                contentType: 'application/pdf'
-            }
-        ]
-    };
+  const mailOptions = {
+    from: process.env.EMAIL_USER || 'noreply@appoint.com',
+    to: to,
+    subject: subject,
+    html: htmlBody,
+    text: textBody,
+    attachments: [
+      {
+        filename: filename,
+        content: pdfBuffer,
+        contentType: 'application/pdf'
+      }
+    ]
+  };
 
-    try {
-        await transporter.sendMail(mailOptions);
-        console.log(`✅ Invoice email sent to ${to}`);
+  try {
+    await transporter.sendMail(mailOptions);
+    console.log(`✅ Invoice email sent to ${to}`);
 
-        // Log email sent to Firestore
-        await admin.firestore().collection('email_logs').add({
-            type: 'invoice_email',
-            email: to,
-            filename: filename,
-            sentAt: admin.firestore.FieldValue.serverTimestamp(),
-            success: true
-        });
-    } catch (error) {
-        console.error('❌ Failed to send invoice email:', error);
+    // Log email sent to Firestore
+    await admin.firestore().collection('email_logs').add({
+      type: 'invoice_email',
+      email: to,
+      filename: filename,
+      sentAt: admin.firestore.FieldValue.serverTimestamp(),
+      success: true
+    });
+  } catch (error) {
+    console.error('❌ Failed to send invoice email:', error);
 
-        // Log failed email attempt
-        await admin.firestore().collection('email_logs').add({
-            type: 'invoice_email',
-            email: to,
-            filename: filename,
-            sentAt: admin.firestore.FieldValue.serverTimestamp(),
-            success: false,
-            error: error instanceof Error ? error.message : 'Unknown error'
-        });
+    // Log failed email attempt
+    await admin.firestore().collection('email_logs').add({
+      type: 'invoice_email',
+      email: to,
+      filename: filename,
+      sentAt: admin.firestore.FieldValue.serverTimestamp(),
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error'
+    });
 
-        throw error;
-    }
+    throw error;
+  }
 } 
