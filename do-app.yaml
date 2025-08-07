@@ -28,22 +28,22 @@ services:
       - key: PORT
         value: "3000"
 
-  - name: business
+  - name: business-portal
     environment_slug: node-js
     github:
-      repo: "gabriellagziel/appoint"
-      branch: feature/web-only
+      repo: "gabriellagziel/appoint-web-only"
+      branch: main
     source_dir: "business"
-    build_command: "npm ci && npm run build"
-    run_command: "npm start"
-    http_port: 3001
+    build_command: "npm ci && npm run build --prefix business"
+    run_command: "npm start --prefix business"
+    http_port: 3000
     instance_count: 1
     instance_size_slug: basic-xxs
     health_check:
       http_path: /health
       initial_delay_seconds: 10
       period_seconds: 30
-      timeout_seconds: 10
+      timeout_seconds: 5
       success_threshold: 1
       failure_threshold: 3
     routes:
@@ -52,7 +52,7 @@ services:
       - key: NODE_ENV
         value: "production"
       - key: PORT
-        value: "3001"
+        value: "3000"
 
   - name: enterprise-onboarding-portal
     environment_slug: node-js
