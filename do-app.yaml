@@ -54,22 +54,22 @@ services:
       - key: PORT
         value: "3000"
 
-  - name: enterprise-onboarding-portal
+  - name: enterprise-onboarding
     environment_slug: node-js
     github:
-      repo: "gabriellagziel/appoint"
-      branch: feature/web-only
+      repo: "gabriellagziel/appoint-web-only"
+      branch: main
     source_dir: "enterprise-onboarding-portal"
-    build_command: "npm ci && npm run build"
-    run_command: "npm start"
-    http_port: 3002
+    build_command: "npm ci && npm run build --prefix enterprise-onboarding-portal"
+    run_command: "npm start --prefix enterprise-onboarding-portal"
+    http_port: 3000
     instance_count: 1
     instance_size_slug: basic-xxs
     health_check:
-      http_path: /
+      http_path: /health
       initial_delay_seconds: 10
       period_seconds: 30
-      timeout_seconds: 10
+      timeout_seconds: 5
       success_threshold: 1
       failure_threshold: 3
     routes:
@@ -78,24 +78,24 @@ services:
       - key: NODE_ENV
         value: "production"
       - key: PORT
-        value: "3002"
+        value: "3000"
 
-  - name: admin
+  - name: admin-panel
     environment_slug: node-js
     github:
-      repo: "gabriellagziel/appoint"
-      branch: feature/web-only
+      repo: "gabriellagziel/appoint-web-only"
+      branch: main
     source_dir: "admin"
-    build_command: "npm ci && npm run build"
-    run_command: "npm start"
-    http_port: 3003
+    build_command: "npm ci && npm run build --prefix admin"
+    run_command: "npm start --prefix admin"
+    http_port: 3000
     instance_count: 1
     instance_size_slug: basic-xxs
     health_check:
       http_path: /health
       initial_delay_seconds: 10
       period_seconds: 30
-      timeout_seconds: 10
+      timeout_seconds: 5
       success_threshold: 1
       failure_threshold: 3
     routes:
@@ -104,7 +104,7 @@ services:
       - key: NODE_ENV
         value: "production"
       - key: PORT
-        value: "3003"
+        value: "3000"
 
   - name: api
     environment_slug: node-js
