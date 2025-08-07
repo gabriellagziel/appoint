@@ -51,4 +51,29 @@ services:
       - key: NODE_ENV
         value: "production"
       - key: PORT
+        value: "3000"
+  - name: enterprise-onboarding
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint-web-only"
+      branch: main
+    source_dir: "enterprise-onboarding-portal"
+    build_command: "npm ci && npm run build --prefix enterprise-onboarding-portal"
+    run_command: "npm start --prefix enterprise-onboarding-portal"
+    http_port: 3000
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /health
+      initial_delay_seconds: 10
+      period_seconds: 30
+      timeout_seconds: 5
+      success_threshold: 1
+      failure_threshold: 3
+    routes:
+      - path: /enterprise
+    envs:
+      - key: NODE_ENV
+        value: "production"
+      - key: PORT
         value: "3000" 
