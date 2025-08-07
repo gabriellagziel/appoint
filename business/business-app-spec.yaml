@@ -1,0 +1,21 @@
+name: app-oint-business
+region: nyc1
+
+services:
+  - name: business-web
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "business"
+    build_command: echo "No build needed"
+    run_command: npx serve . -p 8080
+    http_port: 8080
+    instance_count: 1
+    instance_size_slug: basic-xxs
+
+# Domain configuration
+domains:
+  - domain: business.app-oint.com
+    type: PRIMARY
+    zone: app-oint.com

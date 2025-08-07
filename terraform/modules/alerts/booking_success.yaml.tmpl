@@ -1,0 +1,17 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: booking-success-rate
+  namespace: ${namespace}
+spec:
+  groups:
+  - name: booking-success
+    rules:
+    - alert: BookingSuccessRateLow
+      expr: (sum(rate(booking_success_total[10m])) / sum(rate(booking_requests_total[10m]))) * 100 < ${booking_success_target}
+      for: 10m
+      labels:
+        severity: critical
+      annotations:
+        summary: "Booking success rate below ${booking_success_target}%"
+        description: "Booking success rate has been < ${booking_success_target}% for 10 minutes."

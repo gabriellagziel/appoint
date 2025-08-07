@@ -1,0 +1,10 @@
+
+> admin-app@1.0.0 serve
+> serve out -p ${PORT:-8082} --single
+
+ INFO  Accepting connections at http://localhost:59237
+
+ INFO  Gracefully shutting down. Please wait...
+2025 3:55:18 PM ::1 Returned 200 in 613 ms
+
+ INFO  Gracefully shutting down. Please wait...

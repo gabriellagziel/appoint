@@ -1,0 +1,29 @@
+stages:
+  - test
+
+flutter_tests:
+  stage: test
+  image: "cirrusci/flutter:stable"
+  variables:
+    CI: "true"
+  before_script:
+    - chmod +x readiness_check.sh
+  script:
+    - ./readiness_check.sh flutter
+  artifacts:
+    paths:
+      - build/app/outputs/flutter-apk/app-release.apk
+    expire_in: 1 week
+
+website_tests:
+  stage: test
+  image: "node:18"
+  variables:
+    CI: "true"
+    PORT: "3000"
+  before_script:
+    # Ensure curl is available (node base image typically has it, but install if missing)
+    - if ! command -v curl >/dev/null; then apt-get update -qq && apt-get install -y --no-install-recommends curl; fi
+    - chmod +x readiness_check.sh
+  script:
+    - ./readiness_check.sh website

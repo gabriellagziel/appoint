@@ -1,0 +1,1046 @@
+00:00 +0: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart                                                                                                                      00:01 +0: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart                                                                                                                      00:02 +0: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart                                                                                                                      00:03 +0: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart                                                                                                                      00:04 +0: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart                                                                                                                      test/firebase_test_helper.dart:11:48: Error: Type 'FirebaseAuth' not found.
+class MockFirebaseAuth extends Mock implements FirebaseAuth {}
+                                               ^^^^^^^^^^^^
+test/firebase_test_helper.dart:13:40: Error: Type 'User' not found.
+class MockUser extends Mock implements User {}
+                                       ^^^^
+test/firebase_test_helper.dart:15:50: Error: Type 'UserCredential' not found.
+class MockUserCredential extends Mock implements UserCredential {}
+                                                 ^^^^^^^^^^^^^^
+test/ambassador_dashboard_test.dart:470:30: Error: Property 'stats' cannot be accessed on 'AmbassadorData?' because it is potentially null.
+ - 'AmbassadorData' is from 'package:appoint/models/ambassador_stats.dart' ('lib/models/ambassador_stats.dart').
+Try accessing using ?. instead.
+          expect(state.value.stats, equals(mockStats));
+                             ^^^^^
+test/firebase_test_helper.dart:78:25: Error: The getter 'uid' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'uid'.
+    when(() => mockUser.uid).thenReturn('test-user-id');
+                        ^^^
+test/firebase_test_helper.dart:79:25: Error: The getter 'email' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'email'.
+    when(() => mockUser.email).thenReturn('test@example.com');
+                        ^^^^^
+test/firebase_test_helper.dart:80:25: Error: The getter 'displayName' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'displayName'.
+    when(() => mockUser.displayName).thenReturn('Test User');
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:81:25: Error: The getter 'photoURL' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'photoURL'.
+    when(() => mockUser.photoURL).thenReturn('https://example.com/photo.jpg');
+                        ^^^^^^^^
+test/firebase_test_helper.dart:82:25: Error: The getter 'isAnonymous' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'isAnonymous'.
+    when(() => mockUser.isAnonymous).thenReturn(false);
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:83:25: Error: The getter 'emailVerified' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'emailVerified'.
+    when(() => mockUser.emailVerified).thenReturn(true);
+                        ^^^^^^^^^^^^^
+test/firebase_test_helper.dart:86:35: Error: The getter 'user' isn't defined for the class 'MockUserCredential'.
+ - 'MockUserCredential' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'user'.
+    when(() => mockUserCredential.user).thenReturn(mockUser);
+                                  ^^^^
+test/firebase_test_helper.dart:89:25: Error: The getter 'currentUser' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'currentUser'.
+    when(() => mockAuth.currentUser).thenReturn(mockUser);
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:90:25: Error: The method 'authStateChanges' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'authStateChanges'.
+    when(() => mockAuth.authStateChanges())
+                        ^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:92:25: Error: The method 'userChanges' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'userChanges'.
+    when(() => mockAuth.userChanges())
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:94:25: Error: The method 'signInWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'signInWithEmailAndPassword'.
+    when(() => mockAuth.signInWithEmailAndPassword(any(), any()))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:96:25: Error: The method 'createUserWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'createUserWithEmailAndPassword'.
+    when(() => mockAuth.createUserWithEmailAndPassword(any(), any()))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:98:25: Error: The method 'signOut' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'signOut'.
+    when(() => mockAuth.signOut()).thenAnswer((_) async {});
+                        ^^^^^^^
+test/firebase_test_helper.dart:108:60: Error: The argument type 'MockCollectionReference' can't be assigned to the parameter type 'CollectionReference<Map<String, dynamic>>'.
+ - 'MockCollectionReference' is from 'test/firebase_test_helper.dart'.
+ - 'CollectionReference' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+ - 'Map' is from 'dart:core'.
+    when(() => mockFirestore.collection(any())).thenReturn(mockCollection);
+                                                           ^
+test/firebase_test_helper.dart:132:52: Error: A value of type 'MockDocumentSnapshot' can't be assigned to a variable of type 'QueryDocumentSnapshot<Object?>'.
+ - 'MockDocumentSnapshot' is from 'test/firebase_test_helper.dart'.
+ - 'QueryDocumentSnapshot' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+ - 'Object' is from 'dart:core'.
+    when(() => mockQuerySnapshot.docs).thenReturn([mockDocumentSnapshot]);
+                                                   ^
+00:05 +0: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart                                                                                                                      00:06 +0: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart                                                                                                                      00:07 +0: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart                                                                                                                      00:07 +0 -1: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart [E]                                                                                                               
+  Failed to load "/Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart":
+  Compilation failed for testPath=/Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart: test/firebase_test_helper.dart:11:48: Error: Type 'FirebaseAuth' not found.
+  class MockFirebaseAuth extends Mock implements FirebaseAuth {}
+                                                 ^^^^^^^^^^^^
+  test/firebase_test_helper.dart:13:40: Error: Type 'User' not found.
+  class MockUser extends Mock implements User {}
+                                         ^^^^
+  test/firebase_test_helper.dart:15:50: Error: Type 'UserCredential' not found.
+  class MockUserCredential extends Mock implements UserCredential {}
+                                                   ^^^^^^^^^^^^^^
+  test/ambassador_dashboard_test.dart:470:30: Error: Property 'stats' cannot be accessed on 'AmbassadorData?' because it is potentially null.
+   - 'AmbassadorData' is from 'package:appoint/models/ambassador_stats.dart' ('lib/models/ambassador_stats.dart').
+  Try accessing using ?. instead.
+            expect(state.value.stats, equals(mockStats));
+                               ^^^^^
+  test/firebase_test_helper.dart:78:25: Error: The getter 'uid' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'uid'.
+      when(() => mockUser.uid).thenReturn('test-user-id');
+                          ^^^
+  test/firebase_test_helper.dart:79:25: Error: The getter 'email' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'email'.
+      when(() => mockUser.email).thenReturn('test@example.com');
+                          ^^^^^
+  test/firebase_test_helper.dart:80:25: Error: The getter 'displayName' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'displayName'.
+      when(() => mockUser.displayName).thenReturn('Test User');
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:81:25: Error: The getter 'photoURL' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'photoURL'.
+      when(() => mockUser.photoURL).thenReturn('https://example.com/photo.jpg');
+                          ^^^^^^^^
+  test/firebase_test_helper.dart:82:25: Error: The getter 'isAnonymous' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'isAnonymous'.
+      when(() => mockUser.isAnonymous).thenReturn(false);
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:83:25: Error: The getter 'emailVerified' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'emailVerified'.
+      when(() => mockUser.emailVerified).thenReturn(true);
+                          ^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:86:35: Error: The getter 'user' isn't defined for the class 'MockUserCredential'.
+   - 'MockUserCredential' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'user'.
+      when(() => mockUserCredential.user).thenReturn(mockUser);
+                                    ^^^^
+  test/firebase_test_helper.dart:89:25: Error: The getter 'currentUser' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'currentUser'.
+      when(() => mockAuth.currentUser).thenReturn(mockUser);
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:90:25: Error: The method 'authStateChanges' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'authStateChanges'.
+      when(() => mockAuth.authStateChanges())
+                          ^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:92:25: Error: The method 'userChanges' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'userChanges'.
+      when(() => mockAuth.userChanges())
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:94:25: Error: The method 'signInWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'signInWithEmailAndPassword'.
+      when(() => mockAuth.signInWithEmailAndPassword(any(), any()))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:96:25: Error: The method 'createUserWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'createUserWithEmailAndPassword'.
+      when(() => mockAuth.createUserWithEmailAndPassword(any(), any()))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:98:25: Error: The method 'signOut' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'signOut'.
+      when(() => mockAuth.signOut()).thenAnswer((_) async {});
+                          ^^^^^^^
+  test/firebase_test_helper.dart:108:60: Error: The argument type 'MockCollectionReference' can't be assigned to the parameter type 'CollectionReference<Map<String, dynamic>>'.
+   - 'MockCollectionReference' is from 'test/firebase_test_helper.dart'.
+   - 'CollectionReference' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+   - 'Map' is from 'dart:core'.
+      when(() => mockFirestore.collection(any())).thenReturn(mockCollection);
+                                                             ^
+  test/firebase_test_helper.dart:132:52: Error: A value of type 'MockDocumentSnapshot' can't be assigned to a variable of type 'QueryDocumentSnapshot<Object?>'.
+   - 'MockDocumentSnapshot' is from 'test/firebase_test_helper.dart'.
+   - 'QueryDocumentSnapshot' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+   - 'Object' is from 'dart:core'.
+      when(() => mockQuerySnapshot.docs).thenReturn([mockDocumentSnapshot]);
+                                                     ^
+  .
+
+To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart -p vm --plain-name 'loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart'
+  Error: the Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 907:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone.dart 1538:47                     _rootRunUnary
+  dart:async/zone.dart 1429:19                     _CustomZone.runUnary
+  dart:async/future_impl.dart 951:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 980:13               Future._propagateToListeners
+  dart:async/future_impl.dart 865:9                Future._propagateToListeners
+  dart:async/future_impl.dart 723:5                Future._completeWithValue
+  dart:async/future_impl.dart 807:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone.dart 1525:13                     _rootRun
+  dart:async/zone.dart 1422:19                     _CustomZone.run
+  dart:async/zone.dart 1321:7                      _CustomZone.runGuarded
+  dart:async/zone.dart 1362:23                     _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:21         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  
+test/firebase_test_helper.dart:11:48: Error: Type 'FirebaseAuth' not found.
+class MockFirebaseAuth extends Mock implements FirebaseAuth {}
+                                               ^^^^^^^^^^^^
+test/firebase_test_helper.dart:13:40: Error: Type 'User' not found.
+class MockUser extends Mock implements User {}
+                                       ^^^^
+test/firebase_test_helper.dart:15:50: Error: Type 'UserCredential' not found.
+class MockUserCredential extends Mock implements UserCredential {}
+                                                 ^^^^^^^^^^^^^^
+test/ui/edit_profile_screen_test.dart:27:7: Error: Setter not found: 'bioField'.
+      bioField = find.byType(TextFormField);
+      ^^^^^^^^
+test/ui/edit_profile_screen_test.dart:28:24: Error: Undefined name 'bioField'.
+      await tester.tap(bioField);
+                       ^^^^^^^^
+test/ui/edit_profile_screen_test.dart:29:30: Error: Undefined name 'bioField'.
+      await tester.enterText(bioField, 'a' * 10);
+                             ^^^^^^^^
+test/ui/edit_profile_screen_test.dart:33:30: Error: Undefined name 'bioField'.
+      await tester.enterText(bioField, 'b' * 200);
+                             ^^^^^^^^
+test/ui/edit_profile_screen_test.dart:36:48: Error: Undefined name 'bioField'.
+      textField = tester.widget<TextFormField>(bioField);
+                                               ^^^^^^^^
+test/ui/edit_profile_screen_test.dart:36:7: Error: Setter not found: 'textField'.
+      textField = tester.widget<TextFormField>(bioField);
+      ^^^^^^^^^
+test/ui/edit_profile_screen_test.dart:37:14: Error: Undefined name 'textField'.
+      expect(textField.controller!.text.length, lessThanOrEqualTo(150));
+             ^^^^^^^^^
+test/firebase_test_helper.dart:78:25: Error: The getter 'uid' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'uid'.
+    when(() => mockUser.uid).thenReturn('test-user-id');
+                        ^^^
+test/firebase_test_helper.dart:79:25: Error: The getter 'email' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'email'.
+    when(() => mockUser.email).thenReturn('test@example.com');
+                        ^^^^^
+test/firebase_test_helper.dart:80:25: Error: The getter 'displayName' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'displayName'.
+    when(() => mockUser.displayName).thenReturn('Test User');
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:81:25: Error: The getter 'photoURL' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'photoURL'.
+    when(() => mockUser.photoURL).thenReturn('https://example.com/photo.jpg');
+                        ^^^^^^^^
+test/firebase_test_helper.dart:82:25: Error: The getter 'isAnonymous' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'isAnonymous'.
+    when(() => mockUser.isAnonymous).thenReturn(false);
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:83:25: Error: The getter 'emailVerified' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'emailVerified'.
+    when(() => mockUser.emailVerified).thenReturn(true);
+                        ^^^^^^^^^^^^^
+test/firebase_test_helper.dart:86:35: Error: The getter 'user' isn't defined for the class 'MockUserCredential'.
+ - 'MockUserCredential' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'user'.
+    when(() => mockUserCredential.user).thenReturn(mockUser);
+                                  ^^^^
+test/firebase_test_helper.dart:89:25: Error: The getter 'currentUser' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'currentUser'.
+    when(() => mockAuth.currentUser).thenReturn(mockUser);
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:90:25: Error: The method 'authStateChanges' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'authStateChanges'.
+    when(() => mockAuth.authStateChanges())
+                        ^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:92:25: Error: The method 'userChanges' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'userChanges'.
+    when(() => mockAuth.userChanges())
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:94:25: Error: The method 'signInWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'signInWithEmailAndPassword'.
+    when(() => mockAuth.signInWithEmailAndPassword(any(), any()))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:96:25: Error: The method 'createUserWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'createUserWithEmailAndPassword'.
+    when(() => mockAuth.createUserWithEmailAndPassword(any(), any()))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:98:25: Error: The method 'signOut' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'signOut'.
+    when(() => mockAuth.signOut()).thenAnswer((_) async {});
+                        ^^^^^^^
+test/firebase_test_helper.dart:108:60: Error: The argument type 'MockCollectionReference' can't be assigned to the parameter type 'CollectionReference<Map<String, dynamic>>'.
+ - 'MockCollectionReference' is from 'test/firebase_test_helper.dart'.
+ - 'CollectionReference' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+ - 'Map' is from 'dart:core'.
+    when(() => mockFirestore.collection(any())).thenReturn(mockCollection);
+                                                           ^
+test/firebase_test_helper.dart:132:52: Error: A value of type 'MockDocumentSnapshot' can't be assigned to a variable of type 'QueryDocumentSnapshot<Object?>'.
+ - 'MockDocumentSnapshot' is from 'test/firebase_test_helper.dart'.
+ - 'QueryDocumentSnapshot' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+ - 'Object' is from 'dart:core'.
+    when(() => mockQuerySnapshot.docs).thenReturn([mockDocumentSnapshot]);
+                                                   ^
+00:14 +0 -2: loading /Users/a/Desktop/ga/appoint/test/ui/edit_profile_screen_test.dart [E]                                                                                                             
+  Failed to load "/Users/a/Desktop/ga/appoint/test/ui/edit_profile_screen_test.dart":
+  Compilation failed for testPath=/Users/a/Desktop/ga/appoint/test/ui/edit_profile_screen_test.dart: test/firebase_test_helper.dart:11:48: Error: Type 'FirebaseAuth' not found.
+  class MockFirebaseAuth extends Mock implements FirebaseAuth {}
+                                                 ^^^^^^^^^^^^
+  test/firebase_test_helper.dart:13:40: Error: Type 'User' not found.
+  class MockUser extends Mock implements User {}
+                                         ^^^^
+  test/firebase_test_helper.dart:15:50: Error: Type 'UserCredential' not found.
+  class MockUserCredential extends Mock implements UserCredential {}
+                                                   ^^^^^^^^^^^^^^
+  test/ui/edit_profile_screen_test.dart:27:7: Error: Setter not found: 'bioField'.
+        bioField = find.byType(TextFormField);
+        ^^^^^^^^
+  test/ui/edit_profile_screen_test.dart:28:24: Error: Undefined name 'bioField'.
+        await tester.tap(bioField);
+                         ^^^^^^^^
+  test/ui/edit_profile_screen_test.dart:29:30: Error: Undefined name 'bioField'.
+        await tester.enterText(bioField, 'a' * 10);
+                               ^^^^^^^^
+  test/ui/edit_profile_screen_test.dart:33:30: Error: Undefined name 'bioField'.
+        await tester.enterText(bioField, 'b' * 200);
+                               ^^^^^^^^
+  test/ui/edit_profile_screen_test.dart:36:48: Error: Undefined name 'bioField'.
+        textField = tester.widget<TextFormField>(bioField);
+                                                 ^^^^^^^^
+  test/ui/edit_profile_screen_test.dart:36:7: Error: Setter not found: 'textField'.
+        textField = tester.widget<TextFormField>(bioField);
+        ^^^^^^^^^
+  test/ui/edit_profile_screen_test.dart:37:14: Error: Undefined name 'textField'.
+        expect(textField.controller!.text.length, lessThanOrEqualTo(150));
+               ^^^^^^^^^
+  test/firebase_test_helper.dart:78:25: Error: The getter 'uid' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'uid'.
+      when(() => mockUser.uid).thenReturn('test-user-id');
+                          ^^^
+  test/firebase_test_helper.dart:79:25: Error: The getter 'email' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'email'.
+      when(() => mockUser.email).thenReturn('test@example.com');
+                          ^^^^^
+  test/firebase_test_helper.dart:80:25: Error: The getter 'displayName' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'displayName'.
+      when(() => mockUser.displayName).thenReturn('Test User');
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:81:25: Error: The getter 'photoURL' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'photoURL'.
+      when(() => mockUser.photoURL).thenReturn('https://example.com/photo.jpg');
+                          ^^^^^^^^
+  test/firebase_test_helper.dart:82:25: Error: The getter 'isAnonymous' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'isAnonymous'.
+      when(() => mockUser.isAnonymous).thenReturn(false);
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:83:25: Error: The getter 'emailVerified' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'emailVerified'.
+      when(() => mockUser.emailVerified).thenReturn(true);
+                          ^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:86:35: Error: The getter 'user' isn't defined for the class 'MockUserCredential'.
+   - 'MockUserCredential' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'user'.
+      when(() => mockUserCredential.user).thenReturn(mockUser);
+                                    ^^^^
+  test/firebase_test_helper.dart:89:25: Error: The getter 'currentUser' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'currentUser'.
+      when(() => mockAuth.currentUser).thenReturn(mockUser);
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:90:25: Error: The method 'authStateChanges' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'authStateChanges'.
+      when(() => mockAuth.authStateChanges())
+                          ^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:92:25: Error: The method 'userChanges' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'userChanges'.
+      when(() => mockAuth.userChanges())
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:94:25: Error: The method 'signInWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'signInWithEmailAndPassword'.
+      when(() => mockAuth.signInWithEmailAndPassword(any(), any()))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:96:25: Error: The method 'createUserWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'createUserWithEmailAndPassword'.
+      when(() => mockAuth.createUserWithEmailAndPassword(any(), any()))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:98:25: Error: The method 'signOut' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'signOut'.
+      when(() => mockAuth.signOut()).thenAnswer((_) async {});
+                          ^^^^^^^
+  test/firebase_test_helper.dart:108:60: Error: The argument type 'MockCollectionReference' can't be assigned to the parameter type 'CollectionReference<Map<String, dynamic>>'.
+   - 'MockCollectionReference' is from 'test/firebase_test_helper.dart'.
+   - 'CollectionReference' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+   - 'Map' is from 'dart:core'.
+      when(() => mockFirestore.collection(any())).thenReturn(mockCollection);
+                                                             ^
+  test/firebase_test_helper.dart:132:52: Error: A value of type 'MockDocumentSnapshot' can't be assigned to a variable of type 'QueryDocumentSnapshot<Object?>'.
+   - 'MockDocumentSnapshot' is from 'test/firebase_test_helper.dart'.
+   - 'QueryDocumentSnapshot' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+   - 'Object' is from 'dart:core'.
+      when(() => mockQuerySnapshot.docs).thenReturn([mockDocumentSnapshot]);
+                                                     ^
+  .
+
+To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Desktop/ga/appoint/test/ui/edit_profile_screen_test.dart -p vm --plain-name 'loading /Users/a/Desktop/ga/appoint/test/ui/edit_profile_screen_test.dart'
+00:14 +0 -2: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart [E]                                                                                                               
+  Error: the Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 907:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone.dart 1538:47                     _rootRunUnary
+  dart:async/future_impl.dart 951:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 980:13               Future._propagateToListeners
+  dart:async/future_impl.dart 865:9                Future._propagateToListeners
+  dart:async/future_impl.dart 723:5                Future._completeWithValue
+  dart:async/future_impl.dart 807:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone.dart 1525:13                     _rootRun
+  dart:async/zone.dart 1422:19                     _CustomZone.run
+  dart:async/zone.dart 1321:7                      _CustomZone.runGuarded
+  dart:async/zone.dart 1362:23                     _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:21         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  
+00:20 +0 -2: loading /Users/a/Desktop/ga/appoint/test/ui/comments/comment_item_test.dart                                                                                                               00:20 +0 -2: /Users/a/Desktop/ga/appoint/test/ui/comments/comment_item_test.dart: CommentItem should display comment text                                                                              00:21 +0 -2: /Users/a/Desktop/ga/appoint/test/ui/comments/comment_item_test.dart: CommentItem should display comment text                                                                              00:22 +0 -2: /Users/a/Desktop/ga/appoint/test/ui/comments/comment_item_test.dart: CommentItem should display comment text                                                                              00:22 +1 -2: /Users/a/Desktop/ga/appoint/test/ui/comments/comment_item_test.dart: CommentItem should display comment text                                                                              00:22 +1 -2: /Users/a/Desktop/ga/appoint/test/ui/comments/comment_item_test.dart: CommentItem should have correct comment properties                                                                   00:22 +2 -2: /Users/a/Desktop/ga/appoint/test/ui/comments/comment_item_test.dart: CommentItem should have correct comment properties                                                                   00:22 +2 -2: loading /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart                                                                                                               00:22 +2 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper semantics for basic widgets                                        00:23 +2 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper semantics for basic widgets                                        00:24 +2 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper semantics for basic widgets                                        00:24 +3 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper semantics for basic widgets                                        00:24 +3 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper semantics for form fields                                          00:25 +3 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper semantics for form fields                                          00:25 +4 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper semantics for form fields                                          00:25 +4 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper semantics for IconButton                                           00:25 +5 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper semantics for IconButton                                           00:25 +5 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper contrast for text                                                  00:26 +5 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper contrast for text                                                  00:26 +6 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper contrast for text                                                  00:27 +6 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper contrast for text                                                  test/l10n/localization_test.dart:24:15: Error: Setter not found: 'l10n'.
+              l10n = AppLocalizations.of(context)!;
+              ^^^^
+test/l10n/localization_test.dart:28:26: Error: Undefined name 'l10n'.
+                    Text(l10n.adminBroadcast),
+                         ^^^^
+test/l10n/localization_test.dart:29:26: Error: Undefined name 'l10n'.
+                    Text(l10n.noBroadcastMessages),
+                         ^^^^
+test/l10n/localization_test.dart:30:26: Error: Undefined name 'l10n'.
+                    Text(l10n.contentLibrary),
+                         ^^^^
+test/l10n/localization_test.dart:31:26: Error: Undefined name 'l10n'.
+                    Text(l10n.sendNow),
+                         ^^^^
+test/l10n/localization_test.dart:32:26: Error: Undefined name 'l10n'.
+                    Text(l10n.details),
+                         ^^^^
+test/l10n/localization_test.dart:33:26: Error: Undefined name 'l10n'.
+                    Text(l10n.composeBroadcastMessage),
+                         ^^^^
+test/l10n/localization_test.dart:34:26: Error: Undefined name 'l10n'.
+                    Text(l10n.checkingPermissions),
+                         ^^^^
+test/l10n/localization_test.dart:35:26: Error: Undefined name 'l10n'.
+                    Text(l10n.mediaOptional),
+                         ^^^^
+test/l10n/localization_test.dart:36:26: Error: Undefined name 'l10n'.
+                    Text(l10n.pickImage),
+                         ^^^^
+test/l10n/localization_test.dart:37:26: Error: Undefined name 'l10n'.
+                    Text(l10n.pickVideo),
+                         ^^^^
+test/l10n/localization_test.dart:38:26: Error: Undefined name 'l10n'.
+                    Text(l10n.pollOptions),
+                         ^^^^
+test/l10n/localization_test.dart:39:26: Error: Undefined name 'l10n'.
+                    Text(l10n.targetingFilters),
+                         ^^^^
+test/l10n/localization_test.dart:40:26: Error: Undefined name 'l10n'.
+                    Text(l10n.scheduling),
+                         ^^^^
+test/l10n/localization_test.dart:41:26: Error: Undefined name 'l10n'.
+                    Text(l10n.scheduleForLater),
+                         ^^^^
+test/l10n/localization_test.dart:42:26: Error: Undefined name 'l10n'.
+                    Text(l10n.messageSavedSuccessfully),
+                         ^^^^
+test/l10n/localization_test.dart:43:26: Error: Undefined name 'l10n'.
+                    Text(l10n.messageSentSuccessfully),
+                         ^^^^
+test/l10n/localization_test.dart:44:26: Error: Undefined name 'l10n'.
+                    Text(l10n.close),
+                         ^^^^
+test/l10n/localization_test.dart:91:15: Error: Setter not found: 'l10n'.
+              l10n = AppLocalizations.of(context)!;
+              ^^^^
+test/l10n/localization_test.dart:95:26: Error: Undefined name 'l10n'.
+                    Text(l10n.type('Test Type')),
+                         ^^^^
+test/l10n/localization_test.dart:96:26: Error: Undefined name 'l10n'.
+                    Text(l10n.content('Test Content')),
+                         ^^^^
+test/l10n/localization_test.dart:97:26: Error: Undefined name 'l10n'.
+                    Text(l10n.status('Active')),
+                         ^^^^
+test/l10n/localization_test.dart:98:26: Error: Undefined name 'l10n'.
+                    Text(l10n.recipients(5)),
+                         ^^^^
+test/l10n/localization_test.dart:99:26: Error: Undefined name 'l10n'.
+                    Text(l10n.opened(10)),
+                         ^^^^
+test/l10n/localization_test.dart:100:26: Error: Undefined name 'l10n'.
+                    Text(l10n.created('2024-01-01')),
+                         ^^^^
+test/l10n/localization_test.dart:101:26: Error: Undefined name 'l10n'.
+                    Text(l10n.scheduled('2024-01-02')),
+                         ^^^^
+test/l10n/localization_test.dart:102:26: Error: Undefined name 'l10n'.
+                    Text(l10n.errorCheckingPermissions('Test Error')),
+                         ^^^^
+test/l10n/localization_test.dart:103:26: Error: Undefined name 'l10n'.
+                    Text(l10n.errorSavingMessage('Test Error')),
+                         ^^^^
+test/l10n/localization_test.dart:104:26: Error: Undefined name 'l10n'.
+                    Text(l10n.errorSendingMessage('Test Error')),
+                         ^^^^
+test/l10n/localization_test.dart:105:26: Error: Undefined name 'l10n'.
+                    Text(l10n.link('https://example.com')),
+                         ^^^^
+test/l10n/localization_test.dart:106:26: Error: Undefined name 'l10n'.
+                    Text(l10n.clicked(5)),
+                         ^^^^
+00:28 +6 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper contrast for text                                                  00:29 +6 -2: /Users/a/Desktop/ga/appoint/test/accessibility_standalone_test.dart: Standalone Accessibility Tests should have proper contrast for text                                                  00:29 +6 -3: loading /Users/a/Desktop/ga/appoint/test/l10n/localization_test.dart [E]                                                                                                                  
+  Failed to load "/Users/a/Desktop/ga/appoint/test/l10n/localization_test.dart":
+  Compilation failed for testPath=/Users/a/Desktop/ga/appoint/test/l10n/localization_test.dart: test/l10n/localization_test.dart:24:15: Error: Setter not found: 'l10n'.
+                l10n = AppLocalizations.of(context)!;
+                ^^^^
+  test/l10n/localization_test.dart:28:26: Error: Undefined name 'l10n'.
+                      Text(l10n.adminBroadcast),
+                           ^^^^
+  test/l10n/localization_test.dart:29:26: Error: Undefined name 'l10n'.
+                      Text(l10n.noBroadcastMessages),
+                           ^^^^
+  test/l10n/localization_test.dart:30:26: Error: Undefined name 'l10n'.
+                      Text(l10n.contentLibrary),
+                           ^^^^
+  test/l10n/localization_test.dart:31:26: Error: Undefined name 'l10n'.
+                      Text(l10n.sendNow),
+                           ^^^^
+  test/l10n/localization_test.dart:32:26: Error: Undefined name 'l10n'.
+                      Text(l10n.details),
+                           ^^^^
+  test/l10n/localization_test.dart:33:26: Error: Undefined name 'l10n'.
+                      Text(l10n.composeBroadcastMessage),
+                           ^^^^
+  test/l10n/localization_test.dart:34:26: Error: Undefined name 'l10n'.
+                      Text(l10n.checkingPermissions),
+                           ^^^^
+  test/l10n/localization_test.dart:35:26: Error: Undefined name 'l10n'.
+                      Text(l10n.mediaOptional),
+                           ^^^^
+  test/l10n/localization_test.dart:36:26: Error: Undefined name 'l10n'.
+                      Text(l10n.pickImage),
+                           ^^^^
+  test/l10n/localization_test.dart:37:26: Error: Undefined name 'l10n'.
+                      Text(l10n.pickVideo),
+                           ^^^^
+  test/l10n/localization_test.dart:38:26: Error: Undefined name 'l10n'.
+                      Text(l10n.pollOptions),
+                           ^^^^
+  test/l10n/localization_test.dart:39:26: Error: Undefined name 'l10n'.
+                      Text(l10n.targetingFilters),
+                           ^^^^
+  test/l10n/localization_test.dart:40:26: Error: Undefined name 'l10n'.
+                      Text(l10n.scheduling),
+                           ^^^^
+  test/l10n/localization_test.dart:41:26: Error: Undefined name 'l10n'.
+                      Text(l10n.scheduleForLater),
+                           ^^^^
+  test/l10n/localization_test.dart:42:26: Error: Undefined name 'l10n'.
+                      Text(l10n.messageSavedSuccessfully),
+                           ^^^^
+  test/l10n/localization_test.dart:43:26: Error: Undefined name 'l10n'.
+                      Text(l10n.messageSentSuccessfully),
+                           ^^^^
+  test/l10n/localization_test.dart:44:26: Error: Undefined name 'l10n'.
+                      Text(l10n.close),
+                           ^^^^
+  test/l10n/localization_test.dart:91:15: Error: Setter not found: 'l10n'.
+                l10n = AppLocalizations.of(context)!;
+                ^^^^
+  test/l10n/localization_test.dart:95:26: Error: Undefined name 'l10n'.
+                      Text(l10n.type('Test Type')),
+                           ^^^^
+  test/l10n/localization_test.dart:96:26: Error: Undefined name 'l10n'.
+                      Text(l10n.content('Test Content')),
+                           ^^^^
+  test/l10n/localization_test.dart:97:26: Error: Undefined name 'l10n'.
+                      Text(l10n.status('Active')),
+                           ^^^^
+  test/l10n/localization_test.dart:98:26: Error: Undefined name 'l10n'.
+                      Text(l10n.recipients(5)),
+                           ^^^^
+  test/l10n/localization_test.dart:99:26: Error: Undefined name 'l10n'.
+                      Text(l10n.opened(10)),
+                           ^^^^
+  test/l10n/localization_test.dart:100:26: Error: Undefined name 'l10n'.
+                      Text(l10n.created('2024-01-01')),
+                           ^^^^
+  test/l10n/localization_test.dart:101:26: Error: Undefined name 'l10n'.
+                      Text(l10n.scheduled('2024-01-02')),
+                           ^^^^
+  test/l10n/localization_test.dart:102:26: Error: Undefined name 'l10n'.
+                      Text(l10n.errorCheckingPermissions('Test Error')),
+                           ^^^^
+  test/l10n/localization_test.dart:103:26: Error: Undefined name 'l10n'.
+                      Text(l10n.errorSavingMessage('Test Error')),
+                           ^^^^
+  test/l10n/localization_test.dart:104:26: Error: Undefined name 'l10n'.
+                      Text(l10n.errorSendingMessage('Test Error')),
+                           ^^^^
+  test/l10n/localization_test.dart:105:26: Error: Undefined name 'l10n'.
+                      Text(l10n.link('https://example.com')),
+                           ^^^^
+  test/l10n/localization_test.dart:106:26: Error: Undefined name 'l10n'.
+                      Text(l10n.clicked(5)),
+                           ^^^^
+  .
+
+To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Desktop/ga/appoint/test/l10n/localization_test.dart -p vm --plain-name 'loading /Users/a/Desktop/ga/appoint/test/l10n/localization_test.dart'
+00:30 +6 -3: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart [E]                                                                                                               
+  Error: the Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 907:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone.dart 1538:47                     _rootRunUnary
+  dart:async/future_impl.dart 951:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 980:13               Future._propagateToListeners
+  dart:async/future_impl.dart 865:9                Future._propagateToListeners
+  dart:async/future_impl.dart 723:5                Future._completeWithValue
+  dart:async/future_impl.dart 807:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone.dart 1525:13                     _rootRun
+  dart:async/zone.dart 1422:19                     _CustomZone.run
+  dart:async/zone.dart 1321:7                      _CustomZone.runGuarded
+  dart:async/zone.dart 1362:23                     _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:21         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  
+test/firebase_test_helper.dart:11:48: Error: Type 'FirebaseAuth' not found.
+class MockFirebaseAuth extends Mock implements FirebaseAuth {}
+                                               ^^^^^^^^^^^^
+test/firebase_test_helper.dart:13:40: Error: Type 'User' not found.
+class MockUser extends Mock implements User {}
+                                       ^^^^
+test/firebase_test_helper.dart:15:50: Error: Type 'UserCredential' not found.
+class MockUserCredential extends Mock implements UserCredential {}
+                                                 ^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:78:25: Error: The getter 'uid' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'uid'.
+    when(() => mockUser.uid).thenReturn('test-user-id');
+                        ^^^
+test/firebase_test_helper.dart:79:25: Error: The getter 'email' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'email'.
+    when(() => mockUser.email).thenReturn('test@example.com');
+                        ^^^^^
+test/firebase_test_helper.dart:80:25: Error: The getter 'displayName' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'displayName'.
+    when(() => mockUser.displayName).thenReturn('Test User');
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:81:25: Error: The getter 'photoURL' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'photoURL'.
+    when(() => mockUser.photoURL).thenReturn('https://example.com/photo.jpg');
+                        ^^^^^^^^
+test/firebase_test_helper.dart:82:25: Error: The getter 'isAnonymous' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'isAnonymous'.
+    when(() => mockUser.isAnonymous).thenReturn(false);
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:83:25: Error: The getter 'emailVerified' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'emailVerified'.
+    when(() => mockUser.emailVerified).thenReturn(true);
+                        ^^^^^^^^^^^^^
+test/firebase_test_helper.dart:86:35: Error: The getter 'user' isn't defined for the class 'MockUserCredential'.
+ - 'MockUserCredential' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'user'.
+    when(() => mockUserCredential.user).thenReturn(mockUser);
+                                  ^^^^
+test/firebase_test_helper.dart:89:25: Error: The getter 'currentUser' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'currentUser'.
+    when(() => mockAuth.currentUser).thenReturn(mockUser);
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:90:25: Error: The method 'authStateChanges' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'authStateChanges'.
+    when(() => mockAuth.authStateChanges())
+                        ^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:92:25: Error: The method 'userChanges' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'userChanges'.
+    when(() => mockAuth.userChanges())
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:94:25: Error: The method 'signInWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'signInWithEmailAndPassword'.
+    when(() => mockAuth.signInWithEmailAndPassword(any(), any()))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:96:25: Error: The method 'createUserWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'createUserWithEmailAndPassword'.
+    when(() => mockAuth.createUserWithEmailAndPassword(any(), any()))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:98:25: Error: The method 'signOut' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'signOut'.
+    when(() => mockAuth.signOut()).thenAnswer((_) async {});
+                        ^^^^^^^
+test/firebase_test_helper.dart:108:60: Error: The argument type 'MockCollectionReference' can't be assigned to the parameter type 'CollectionReference<Map<String, dynamic>>'.
+ - 'MockCollectionReference' is from 'test/firebase_test_helper.dart'.
+ - 'CollectionReference' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+ - 'Map' is from 'dart:core'.
+    when(() => mockFirestore.collection(any())).thenReturn(mockCollection);
+                                                           ^
+test/firebase_test_helper.dart:132:52: Error: A value of type 'MockDocumentSnapshot' can't be assigned to a variable of type 'QueryDocumentSnapshot<Object?>'.
+ - 'MockDocumentSnapshot' is from 'test/firebase_test_helper.dart'.
+ - 'QueryDocumentSnapshot' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+ - 'Object' is from 'dart:core'.
+    when(() => mockQuerySnapshot.docs).thenReturn([mockDocumentSnapshot]);
+                                                   ^
+00:36 +6 -4: loading /Users/a/Desktop/ga/appoint/test/playtime/playtime_provider_test.dart [E]                                                                                                         
+  Failed to load "/Users/a/Desktop/ga/appoint/test/playtime/playtime_provider_test.dart":
+  Compilation failed for testPath=/Users/a/Desktop/ga/appoint/test/playtime/playtime_provider_test.dart: test/firebase_test_helper.dart:11:48: Error: Type 'FirebaseAuth' not found.
+  class MockFirebaseAuth extends Mock implements FirebaseAuth {}
+                                                 ^^^^^^^^^^^^
+  test/firebase_test_helper.dart:13:40: Error: Type 'User' not found.
+  class MockUser extends Mock implements User {}
+                                         ^^^^
+  test/firebase_test_helper.dart:15:50: Error: Type 'UserCredential' not found.
+  class MockUserCredential extends Mock implements UserCredential {}
+                                                   ^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:78:25: Error: The getter 'uid' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'uid'.
+      when(() => mockUser.uid).thenReturn('test-user-id');
+                          ^^^
+  test/firebase_test_helper.dart:79:25: Error: The getter 'email' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'email'.
+      when(() => mockUser.email).thenReturn('test@example.com');
+                          ^^^^^
+  test/firebase_test_helper.dart:80:25: Error: The getter 'displayName' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'displayName'.
+      when(() => mockUser.displayName).thenReturn('Test User');
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:81:25: Error: The getter 'photoURL' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'photoURL'.
+      when(() => mockUser.photoURL).thenReturn('https://example.com/photo.jpg');
+                          ^^^^^^^^
+  test/firebase_test_helper.dart:82:25: Error: The getter 'isAnonymous' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'isAnonymous'.
+      when(() => mockUser.isAnonymous).thenReturn(false);
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:83:25: Error: The getter 'emailVerified' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'emailVerified'.
+      when(() => mockUser.emailVerified).thenReturn(true);
+                          ^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:86:35: Error: The getter 'user' isn't defined for the class 'MockUserCredential'.
+   - 'MockUserCredential' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'user'.
+      when(() => mockUserCredential.user).thenReturn(mockUser);
+                                    ^^^^
+  test/firebase_test_helper.dart:89:25: Error: The getter 'currentUser' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'currentUser'.
+      when(() => mockAuth.currentUser).thenReturn(mockUser);
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:90:25: Error: The method 'authStateChanges' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'authStateChanges'.
+      when(() => mockAuth.authStateChanges())
+                          ^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:92:25: Error: The method 'userChanges' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'userChanges'.
+      when(() => mockAuth.userChanges())
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:94:25: Error: The method 'signInWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'signInWithEmailAndPassword'.
+      when(() => mockAuth.signInWithEmailAndPassword(any(), any()))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:96:25: Error: The method 'createUserWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'createUserWithEmailAndPassword'.
+      when(() => mockAuth.createUserWithEmailAndPassword(any(), any()))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:98:25: Error: The method 'signOut' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'signOut'.
+      when(() => mockAuth.signOut()).thenAnswer((_) async {});
+                          ^^^^^^^
+  test/firebase_test_helper.dart:108:60: Error: The argument type 'MockCollectionReference' can't be assigned to the parameter type 'CollectionReference<Map<String, dynamic>>'.
+   - 'MockCollectionReference' is from 'test/firebase_test_helper.dart'.
+   - 'CollectionReference' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+   - 'Map' is from 'dart:core'.
+      when(() => mockFirestore.collection(any())).thenReturn(mockCollection);
+                                                             ^
+  test/firebase_test_helper.dart:132:52: Error: A value of type 'MockDocumentSnapshot' can't be assigned to a variable of type 'QueryDocumentSnapshot<Object?>'.
+   - 'MockDocumentSnapshot' is from 'test/firebase_test_helper.dart'.
+   - 'QueryDocumentSnapshot' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+   - 'Object' is from 'dart:core'.
+      when(() => mockQuerySnapshot.docs).thenReturn([mockDocumentSnapshot]);
+                                                     ^
+  .
+
+To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Desktop/ga/appoint/test/playtime/playtime_provider_test.dart -p vm --plain-name 'loading /Users/a/Desktop/ga/appoint/test/playtime/playtime_provider_test.dart'
+00:36 +6 -4: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart [E]                                                                                                               
+  Error: the Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 907:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone.dart 1538:47                     _rootRunUnary
+  dart:async/future_impl.dart 951:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 980:13               Future._propagateToListeners
+  dart:async/future_impl.dart 865:9                Future._propagateToListeners
+  dart:async/future_impl.dart 723:5                Future._completeWithValue
+  dart:async/future_impl.dart 807:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone.dart 1525:13                     _rootRun
+  dart:async/zone.dart 1422:19                     _CustomZone.run
+  dart:async/zone.dart 1321:7                      _CustomZone.runGuarded
+  dart:async/zone.dart 1362:23                     _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:21         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  
+test/firebase_test_helper.dart:11:48: Error: Type 'FirebaseAuth' not found.
+class MockFirebaseAuth extends Mock implements FirebaseAuth {}
+                                               ^^^^^^^^^^^^
+test/firebase_test_helper.dart:13:40: Error: Type 'User' not found.
+class MockUser extends Mock implements User {}
+                                       ^^^^
+test/firebase_test_helper.dart:15:50: Error: Type 'UserCredential' not found.
+class MockUserCredential extends Mock implements UserCredential {}
+                                                 ^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:78:25: Error: The getter 'uid' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'uid'.
+    when(() => mockUser.uid).thenReturn('test-user-id');
+                        ^^^
+test/firebase_test_helper.dart:79:25: Error: The getter 'email' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'email'.
+    when(() => mockUser.email).thenReturn('test@example.com');
+                        ^^^^^
+test/firebase_test_helper.dart:80:25: Error: The getter 'displayName' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'displayName'.
+    when(() => mockUser.displayName).thenReturn('Test User');
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:81:25: Error: The getter 'photoURL' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'photoURL'.
+    when(() => mockUser.photoURL).thenReturn('https://example.com/photo.jpg');
+                        ^^^^^^^^
+test/firebase_test_helper.dart:82:25: Error: The getter 'isAnonymous' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'isAnonymous'.
+    when(() => mockUser.isAnonymous).thenReturn(false);
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:83:25: Error: The getter 'emailVerified' isn't defined for the class 'MockUser'.
+ - 'MockUser' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'emailVerified'.
+    when(() => mockUser.emailVerified).thenReturn(true);
+                        ^^^^^^^^^^^^^
+test/firebase_test_helper.dart:86:35: Error: The getter 'user' isn't defined for the class 'MockUserCredential'.
+ - 'MockUserCredential' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'user'.
+    when(() => mockUserCredential.user).thenReturn(mockUser);
+                                  ^^^^
+test/firebase_test_helper.dart:89:25: Error: The getter 'currentUser' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'currentUser'.
+    when(() => mockAuth.currentUser).thenReturn(mockUser);
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:90:25: Error: The method 'authStateChanges' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'authStateChanges'.
+    when(() => mockAuth.authStateChanges())
+                        ^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:92:25: Error: The method 'userChanges' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'userChanges'.
+    when(() => mockAuth.userChanges())
+                        ^^^^^^^^^^^
+test/firebase_test_helper.dart:94:25: Error: The method 'signInWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'signInWithEmailAndPassword'.
+    when(() => mockAuth.signInWithEmailAndPassword(any(), any()))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:96:25: Error: The method 'createUserWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'createUserWithEmailAndPassword'.
+    when(() => mockAuth.createUserWithEmailAndPassword(any(), any()))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test/firebase_test_helper.dart:98:25: Error: The method 'signOut' isn't defined for the class 'MockFirebaseAuth'.
+ - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+Try correcting the name to the name of an existing method, or defining a method named 'signOut'.
+    when(() => mockAuth.signOut()).thenAnswer((_) async {});
+                        ^^^^^^^
+test/firebase_test_helper.dart:108:60: Error: The argument type 'MockCollectionReference' can't be assigned to the parameter type 'CollectionReference<Map<String, dynamic>>'.
+ - 'MockCollectionReference' is from 'test/firebase_test_helper.dart'.
+ - 'CollectionReference' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+ - 'Map' is from 'dart:core'.
+    when(() => mockFirestore.collection(any())).thenReturn(mockCollection);
+                                                           ^
+test/firebase_test_helper.dart:132:52: Error: A value of type 'MockDocumentSnapshot' can't be assigned to a variable of type 'QueryDocumentSnapshot<Object?>'.
+ - 'MockDocumentSnapshot' is from 'test/firebase_test_helper.dart'.
+ - 'QueryDocumentSnapshot' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+ - 'Object' is from 'dart:core'.
+    when(() => mockQuerySnapshot.docs).thenReturn([mockDocumentSnapshot]);
+                                                   ^
+00:43 +6 -5: loading /Users/a/Desktop/ga/appoint/test/integration/full_flow_test.dart [E]                                                                                                              
+  Failed to load "/Users/a/Desktop/ga/appoint/test/integration/full_flow_test.dart":
+  Compilation failed for testPath=/Users/a/Desktop/ga/appoint/test/integration/full_flow_test.dart: test/firebase_test_helper.dart:11:48: Error: Type 'FirebaseAuth' not found.
+  class MockFirebaseAuth extends Mock implements FirebaseAuth {}
+                                                 ^^^^^^^^^^^^
+  test/firebase_test_helper.dart:13:40: Error: Type 'User' not found.
+  class MockUser extends Mock implements User {}
+                                         ^^^^
+  test/firebase_test_helper.dart:15:50: Error: Type 'UserCredential' not found.
+  class MockUserCredential extends Mock implements UserCredential {}
+                                                   ^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:78:25: Error: The getter 'uid' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'uid'.
+      when(() => mockUser.uid).thenReturn('test-user-id');
+                          ^^^
+  test/firebase_test_helper.dart:79:25: Error: The getter 'email' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'email'.
+      when(() => mockUser.email).thenReturn('test@example.com');
+                          ^^^^^
+  test/firebase_test_helper.dart:80:25: Error: The getter 'displayName' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'displayName'.
+      when(() => mockUser.displayName).thenReturn('Test User');
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:81:25: Error: The getter 'photoURL' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'photoURL'.
+      when(() => mockUser.photoURL).thenReturn('https://example.com/photo.jpg');
+                          ^^^^^^^^
+  test/firebase_test_helper.dart:82:25: Error: The getter 'isAnonymous' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'isAnonymous'.
+      when(() => mockUser.isAnonymous).thenReturn(false);
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:83:25: Error: The getter 'emailVerified' isn't defined for the class 'MockUser'.
+   - 'MockUser' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'emailVerified'.
+      when(() => mockUser.emailVerified).thenReturn(true);
+                          ^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:86:35: Error: The getter 'user' isn't defined for the class 'MockUserCredential'.
+   - 'MockUserCredential' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'user'.
+      when(() => mockUserCredential.user).thenReturn(mockUser);
+                                    ^^^^
+  test/firebase_test_helper.dart:89:25: Error: The getter 'currentUser' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing getter, or defining a getter or field named 'currentUser'.
+      when(() => mockAuth.currentUser).thenReturn(mockUser);
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:90:25: Error: The method 'authStateChanges' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'authStateChanges'.
+      when(() => mockAuth.authStateChanges())
+                          ^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:92:25: Error: The method 'userChanges' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'userChanges'.
+      when(() => mockAuth.userChanges())
+                          ^^^^^^^^^^^
+  test/firebase_test_helper.dart:94:25: Error: The method 'signInWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'signInWithEmailAndPassword'.
+      when(() => mockAuth.signInWithEmailAndPassword(any(), any()))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:96:25: Error: The method 'createUserWithEmailAndPassword' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'createUserWithEmailAndPassword'.
+      when(() => mockAuth.createUserWithEmailAndPassword(any(), any()))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  test/firebase_test_helper.dart:98:25: Error: The method 'signOut' isn't defined for the class 'MockFirebaseAuth'.
+   - 'MockFirebaseAuth' is from 'test/firebase_test_helper.dart'.
+  Try correcting the name to the name of an existing method, or defining a method named 'signOut'.
+      when(() => mockAuth.signOut()).thenAnswer((_) async {});
+                          ^^^^^^^
+  test/firebase_test_helper.dart:108:60: Error: The argument type 'MockCollectionReference' can't be assigned to the parameter type 'CollectionReference<Map<String, dynamic>>'.
+   - 'MockCollectionReference' is from 'test/firebase_test_helper.dart'.
+   - 'CollectionReference' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+   - 'Map' is from 'dart:core'.
+      when(() => mockFirestore.collection(any())).thenReturn(mockCollection);
+                                                             ^
+  test/firebase_test_helper.dart:132:52: Error: A value of type 'MockDocumentSnapshot' can't be assigned to a variable of type 'QueryDocumentSnapshot<Object?>'.
+   - 'MockDocumentSnapshot' is from 'test/firebase_test_helper.dart'.
+   - 'QueryDocumentSnapshot' is from 'package:cloud_firestore/cloud_firestore.dart' ('../../../.pub-cache/hosted/pub.dev/cloud_firestore-5.6.11/lib/cloud_firestore.dart').
+   - 'Object' is from 'dart:core'.
+      when(() => mockQuerySnapshot.docs).thenReturn([mockDocumentSnapshot]);
+                                                     ^
+  .
+
+To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Desktop/ga/appoint/test/integration/full_flow_test.dart -p vm --plain-name 'loading /Users/a/Desktop/ga/appoint/test/integration/full_flow_test.dart'
+00:43 +6 -5: loading /Users/a/Desktop/ga/appoint/test/ambassador_dashboard_test.dart [E]                                                                                                               
+  Error: the Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 907:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone.dart 1538:47                     _rootRunUnary
+  dart:async/future_impl.dart 951:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 980:13               Future._propagateToListeners
+  dart:async/future_impl.dart 865:9                Future._propagateToListeners
+  dart:async/future_impl.dart 723:5                Future._completeWithValue
+  dart:async/future_impl.dart 807:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone.dart 1525:13                     _rootRun
+  dart:async/zone.dart 1422:19                     _CustomZone.run
+  dart:async/zone.dart 1321:7                      _CustomZone.runGuarded
+  dart:async/zone.dart 1362:23                     _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:21         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  

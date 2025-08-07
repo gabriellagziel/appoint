@@ -1,0 +1,48 @@
+{
+  // Disable all YAML schema and validation
+  "yaml.schemas": [],
+  "yaml.validate": false,
+  // Treat GitHub Actions workflows as plain text
+  "files.associations": {
+    "**/.github/workflows/*.yml": "plaintext"
+  },
+  // Disable markdown linting and hide Markdown files
+  "markdownlint.enable": false,
+  "files.exclude": {
+    "**/*.md": true,
+    "**/.dart_tool": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/*.g.dart": true,
+    "**/*.freezed.dart": true
+  },
+  "search.exclude": {
+    "**/*.md": true,
+    "**/.dart_tool": true,
+    "**/build": true,
+    "**/coverage": true
+  },
+  // Disable spell checking
+  "cSpell.enabled": false,
+  "dart.analysisServerFolding": true,
+  "dart.autoImportCompletions": true,
+  "dart.checkForSdkUpdates": false,
+  "dart.closingLabels": true,
+  "dart.completeFunctionCalls": true,
+  "dart.enableSdkFormatter": true,
+  "dart.enableSnippets": true,
+  "dart.lineLength": 80,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.showInspectorNotificationsForWidgetErrors": true,
+  "dart.testRunner": "flutter",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "cmake.sourceDirectory": "/Users/a/Documents/APP-OINT/linux",
+  "dart.analysis.showLints": false,
+  "dart.analysis.showTodos": false,
+  "dart.analysis.showWarnings": false
+}

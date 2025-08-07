@@ -1,0 +1,9 @@
+docs:
+  - '**/*.md'
+  - 'docs/**'
+flutter:
+  - 'lib/**'
+  - 'test/**'
+  - 'integration_test/**'
+ci:
+  - '.github/**'

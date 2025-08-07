@@ -1,0 +1,357 @@
+{
+    "name": "Cool Blues Design System",
+    "version": "1.0.0",
+    "description": "Cross-platform design system for App-Oint with Cool Blues theme",
+    "tokens": {
+        "colors": {
+            "primary": {
+                "value": "#0A84FF",
+                "type": "color",
+                "description": "Primary brand color"
+            },
+            "secondary": {
+                "value": "#5AC8FA",
+                "type": "color",
+                "description": "Secondary brand color"
+            },
+            "accent": {
+                "value": "#64D2FF",
+                "type": "color",
+                "description": "Accent color for highlights"
+            },
+            "neutralDark": {
+                "value": "#141414",
+                "type": "color",
+                "description": "Dark neutral color"
+            },
+            "neutralLight": {
+                "value": "#E5E5EA",
+                "type": "color",
+                "description": "Light neutral color"
+            },
+            "primaryHover": {
+                "value": "#007AFF",
+                "type": "color",
+                "description": "Primary color hover state"
+            },
+            "primaryLight": {
+                "value": "rgba(10, 132, 255, 0.1)",
+                "type": "color",
+                "description": "Light primary color for backgrounds"
+            },
+            "secondaryLight": {
+                "value": "rgba(90, 200, 250, 0.15)",
+                "type": "color",
+                "description": "Light secondary color for backgrounds"
+            },
+            "neutralDark70": {
+                "value": "rgba(20, 20, 20, 0.7)",
+                "type": "color",
+                "description": "70% opacity dark neutral"
+            },
+            "neutralDark50": {
+                "value": "rgba(20, 20, 20, 0.5)",
+                "type": "color",
+                "description": "50% opacity dark neutral"
+            },
+            "white": {
+                "value": "#FFFFFF",
+                "type": "color",
+                "description": "Pure white"
+            },
+            "success": {
+                "value": "#28A745",
+                "type": "color",
+                "description": "Success state color"
+            }
+        },
+        "typography": {
+            "fontFamily": {
+                "value": "\"Inter\", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+                "type": "fontFamily",
+                "description": "Primary font family"
+            },
+            "fontSize": {
+                "headingDesktop": {
+                    "value": "24px",
+                    "type": "fontSize",
+                    "description": "Desktop heading size"
+                },
+                "headingMobile": {
+                    "value": "20px",
+                    "type": "fontSize",
+                    "description": "Mobile heading size"
+                },
+                "bodyDesktop": {
+                    "value": "16px",
+                    "type": "fontSize",
+                    "description": "Desktop body text size"
+                },
+                "bodyMobile": {
+                    "value": "14px",
+                    "type": "fontSize",
+                    "description": "Mobile body text size"
+                }
+            },
+            "fontWeight": {
+                "bold": {
+                    "value": "bold",
+                    "type": "fontWeight",
+                    "description": "Bold font weight"
+                },
+                "regular": {
+                    "value": "normal",
+                    "type": "fontWeight",
+                    "description": "Regular font weight"
+                }
+            },
+            "lineHeight": {
+                "value": "1.4",
+                "type": "lineHeight",
+                "description": "Standard line height"
+            },
+            "letterSpacing": {
+                "value": "0.5px",
+                "type": "letterSpacing",
+                "description": "Standard letter spacing"
+            }
+        },
+        "spacing": {
+            "xs": {
+                "value": "4px",
+                "type": "spacing",
+                "description": "Extra small spacing"
+            },
+            "sm": {
+                "value": "8px",
+                "type": "spacing",
+                "description": "Small spacing"
+            },
+            "md": {
+                "value": "16px",
+                "type": "spacing",
+                "description": "Medium spacing"
+            },
+            "lg": {
+                "value": "24px",
+                "type": "spacing",
+                "description": "Large spacing"
+            },
+            "xl": {
+                "value": "32px",
+                "type": "spacing",
+                "description": "Extra large spacing"
+            },
+            "xxl": {
+                "value": "40px",
+                "type": "spacing",
+                "description": "Double extra large spacing"
+            }
+        },
+        "borderRadius": {
+            "default": {
+                "value": "8px",
+                "type": "borderRadius",
+                "description": "Default border radius"
+            },
+            "pill": {
+                "value": "24px",
+                "type": "borderRadius",
+                "description": "Pill shape border radius"
+            },
+            "circle": {
+                "value": "50%",
+                "type": "borderRadius",
+                "description": "Circle shape border radius"
+            }
+        },
+        "shadows": {
+            "level1": {
+                "value": "0 2px 8px rgba(0, 0, 0, 0.1)",
+                "type": "shadow",
+                "description": "Level 1 shadow for cards"
+            },
+            "level2": {
+                "value": "0 4px 12px rgba(0, 0, 0, 0.15)",
+                "type": "shadow",
+                "description": "Level 2 shadow for elevated elements"
+            },
+            "level3": {
+                "value": "0 6px 16px rgba(0, 0, 0, 0.2)",
+                "type": "shadow",
+                "description": "Level 3 shadow for modals"
+            }
+        },
+        "animations": {
+            "duration": {
+                "fast": {
+                    "value": "200ms",
+                    "type": "duration",
+                    "description": "Fast animation duration"
+                },
+                "medium": {
+                    "value": "300ms",
+                    "type": "duration",
+                    "description": "Medium animation duration"
+                }
+            },
+            "easing": {
+                "easeInOut": {
+                    "value": "ease-in-out",
+                    "type": "easing",
+                    "description": "Standard easing function"
+                }
+            },
+            "transition": {
+                "fast": {
+                    "value": "200ms ease-in-out",
+                    "type": "transition",
+                    "description": "Fast transition"
+                },
+                "medium": {
+                    "value": "300ms ease-in-out",
+                    "type": "transition",
+                    "description": "Medium transition"
+                }
+            }
+        },
+        "breakpoints": {
+            "mobile": {
+                "value": "600px",
+                "type": "breakpoint",
+                "description": "Mobile breakpoint"
+            },
+            "tablet": {
+                "value": "960px",
+                "type": "breakpoint",
+                "description": "Tablet breakpoint"
+            }
+        },
+        "layout": {
+            "headerHeight": {
+                "value": "64px",
+                "type": "size",
+                "description": "Header height"
+            },
+            "sidebarWidth": {
+                "value": "240px",
+                "type": "size",
+                "description": "Desktop sidebar width"
+            },
+            "sidebarWidthTablet": {
+                "value": "200px",
+                "type": "size",
+                "description": "Tablet sidebar width"
+            },
+            "fabSize": {
+                "value": "56px",
+                "type": "size",
+                "description": "Floating action button size"
+            },
+            "bottomNavHeight": {
+                "value": "80px",
+                "type": "size",
+                "description": "Bottom navigation height"
+            }
+        },
+        "artboards": {
+            "desktop": {
+                "width": "1440px",
+                "height": "900px",
+                "description": "Desktop web artboard"
+            },
+            "tablet": {
+                "width": "768px",
+                "height": "1024px",
+                "description": "Tablet artboard"
+            },
+            "mobile": {
+                "width": "375px",
+                "height": "812px",
+                "description": "Mobile app artboard"
+            }
+        }
+    },
+    "components": {
+        "button": {
+            "variants": [
+                "primary",
+                "secondary",
+                "outline",
+                "ghost"
+            ],
+            "sizes": [
+                "sm",
+                "md",
+                "lg"
+            ],
+            "states": [
+                "default",
+                "hover",
+                "active",
+                "disabled"
+            ]
+        },
+        "card": {
+            "variants": [
+                "default",
+                "elevated",
+                "outlined"
+            ],
+            "sections": [
+                "header",
+                "body",
+                "footer"
+            ]
+        },
+        "input": {
+            "types": [
+                "text",
+                "email",
+                "password",
+                "search",
+                "select"
+            ],
+            "states": [
+                "default",
+                "focus",
+                "error",
+                "disabled"
+            ]
+        },
+        "modal": {
+            "variants": [
+                "default",
+                "drawer",
+                "fullscreen"
+            ],
+            "animations": [
+                "slide",
+                "fade",
+                "scale"
+            ]
+        },
+        "navigation": {
+            "desktop": [
+                "navbar",
+                "sidebar"
+            ],
+            "mobile": [
+                "bottomNav",
+                "topDrawer"
+            ]
+        },
+        "calendar": {
+            "views": [
+                "week",
+                "month",
+                "list"
+            ],
+            "elements": [
+                "grid",
+                "events",
+                "timeSlots"
+            ]
+        }
+    }
+}

@@ -1,0 +1,107 @@
+name: app-oint-perfect
+services:
+- name: web-app
+  source_dir: /
+  github:
+    repo: gabriellagziel/appoint
+    branch: main
+    deploy_on_push: true
+  build_command: |
+    echo "Building Flutter web app..."
+    flutter pub get
+    flutter build web --release --web-renderer html --base-href /
+    echo "Build completed successfully"
+  run_command: |
+    cd build/web
+    python3 -m http.server 8080
+  environment_slug: flutter
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  http_port: 8080
+  routes:
+  - path: /
+    preserve_path_prefix: false
+  - path: /admin
+    preserve_path_prefix: false
+  - path: /business
+    preserve_path_prefix: false
+  - path: /dashboard
+    preserve_path_prefix: false
+  - path: /profile
+    preserve_path_prefix: false
+  - path: /settings
+    preserve_path_prefix: false
+  - path: /booking
+    preserve_path_prefix: false
+  - path: /appointments
+    preserve_path_prefix: false
+  - path: /services
+    preserve_path_prefix: false
+  - path: /providers
+    preserve_path_prefix: false
+  - path: /calendar
+    preserve_path_prefix: false
+  envs:
+  - key: FLUTTER_WEB_RENDERER
+    value: html
+  - key: FLUTTER_WEB_USE_SKIA
+    value: false
+
+- name: api-service
+  source_dir: /dashboard
+  github:
+    repo: gabriellagziel/appoint
+    branch: main
+    deploy_on_push: true
+  build_command: |
+    echo "Installing API dependencies..."
+    npm install
+    echo "API build completed"
+  run_command: |
+    npm start
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  http_port: 3000
+  routes:
+  - path: /api
+    preserve_path_prefix: true
+  envs:
+  - key: NODE_ENV
+    value: production
+
+static_sites:
+- name: static-assets
+  source_dir: /web
+  github:
+    repo: gabriellagziel/appoint
+    branch: main
+    deploy_on_push: true
+  build_command: |
+    echo "Preparing static assets..."
+    mkdir -p _site
+    cp -r public/* _site/ 2>/dev/null || true
+    cp robots.txt _site/ 2>/dev/null || true
+    cp sitemap.xml _site/ 2>/dev/null || true
+    cp manifest.json _site/ 2>/dev/null || true
+    echo "Static assets prepared"
+  output_dir: /_site
+  routes:
+  - path: /robots.txt
+  - path: /sitemap.xml
+  - path: /manifest.json
+
+domains:
+- domain: app-oint.com
+  type: PRIMARY
+- domain: api.app-oint.com
+  type: ALIAS
+- domain: admin.app-oint.com
+  type: ALIAS
+
+# Add database if needed
+# databases:
+# - engine: MONGODB
+#   name: app-oint-db
+#   num_nodes: 1
+#   size: db-s-1vcpu-1gb

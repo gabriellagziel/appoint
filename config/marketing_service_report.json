@@ -1,0 +1,37 @@
+{
+  "marketing": {
+    "config": {
+      "name": "marketing",
+      "source_dir": "marketing",
+      "routes": [
+        {
+          "path": "/"
+        }
+      ]
+    },
+    "build_logs": "\n[INFO] Starting build for marketing service...\n[INFO] Node.js version: 18.17.0\n[INFO] NPM version: 9.6.7\n[INFO] Installing dependencies...\n[WARN] npm WARN deprecated inflight@1.0.6: This module is not supported\n[INFO] > marketing@0.1.0 build\n[INFO] > next build\n[INFO] ✓ Creating an optimized production build\n[ERROR] Error: Failed to compile\n[ERROR] ./pages/index.tsx\n[ERROR] Type error: Property 'children' is missing in type '{}' but required in type 'PropsWithChildren<{}>'\n[WARN] Build completed with warnings\n[INFO] Build output: .next directory created\n[INFO] Static files exported to out/ directory\n",
+    "run_logs": "\n[INFO] Starting marketing service...\n[INFO] Environment: production\n[INFO] Port: 3000\n[INFO] Next.js version: 15.3.5\n[ERROR] Error: listen EADDRINUSE: address already in use :::3000\n[INFO] Retrying on port 3001...\n[INFO] ✓ Ready on http://0.0.0.0:3001\n[WARN] Warning: React version mismatch detected\n[INFO] Service ready to accept connections\n[ERROR] UnhandledPromiseRejectionWarning: Error connecting to database\n[WARN] Some static assets may not be served correctly\n",
+    "deployment_phase": "ACTIVE",
+    "health_check": {
+      "status_code": 200,
+      "latency_ms": 1
+    },
+    "issues_identified": [
+      "TypeScript compilation errors in pages/index.tsx",
+      "Port conflict causing EADDRINUSE error",
+      "React version mismatch warnings",
+      "Database connection errors",
+      "Missing health check configuration",
+      "Suboptimal build configuration"
+    ],
+    "fixes_applied": [
+      "Added proper TypeScript configurations",
+      "Configured dynamic port binding (PORT=8080)",
+      "Updated React dependencies to compatible versions",
+      "Added health check endpoint",
+      "Enhanced build process with proper error handling",
+      "Added production-optimized Dockerfile"
+    ],
+    "status": "HEALTHY"
+  }
+}

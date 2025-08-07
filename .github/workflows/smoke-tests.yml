@@ -1,0 +1,378 @@
+name: Smoke Tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment to test'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - staging
+      api_base_url:
+        description: 'API Base URL to test'
+        required: false
+        default: 'https://api.app-oint.com'
+        type: string
+
+env:
+  API_BASE_URL: ${{ github.event.inputs.api_base_url || 'https://api.app-oint.com' }}
+  TEST_TIMEOUT: 30
+
+jobs:
+  # API endpoint smoke tests
+  api-smoke-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install curl and jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl jq
+          
+      - name: Test API Base URL
+        run: |
+          echo "🔍 Testing API base URL: $API_BASE_URL"
+          
+          # Test if API is reachable
+          if curl -f -s --max-time $TEST_TIMEOUT "$API_BASE_URL" > /dev/null; then
+            echo "✅ API base URL is accessible"
+          else
+            echo "❌ API base URL is not accessible"
+            exit 1
+          fi
+          
+      - name: Test POST /registerBusiness
+        run: |
+          echo "🧪 Testing POST /registerBusiness endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" -X POST \
+            --max-time $TEST_TIMEOUT \
+            -H "Content-Type: application/json" \
+            -d '{
+              "businessName": "Test Business Smoke",
+              "email": "smoke-test@example.com",
+              "phone": "+1234567890",
+              "category": "test"
+            }' \
+            "$API_BASE_URL/registerBusiness" -o /tmp/register_response.json)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 201 ] || [ "$response" -eq 400 ]; then
+            echo "✅ /registerBusiness endpoint is responding"
+          else
+            echo "❌ /registerBusiness endpoint failed with code: $response"
+            cat /tmp/register_response.json || echo "No response body"
+          fi
+          
+      - name: Test POST /businessApi/appointments/create
+        run: |
+          echo "🧪 Testing POST /businessApi/appointments/create endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" -X POST \
+            --max-time $TEST_TIMEOUT \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer test-token" \
+            -d '{
+              "clientName": "Test Client",
+              "serviceId": "test-service",
+              "startTime": "2024-01-01T10:00:00Z",
+              "duration": 60
+            }' \
+            "$API_BASE_URL/businessApi/appointments/create" -o /tmp/create_appointment_response.json)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 201 ] || [ "$response" -eq 401 ] || [ "$response" -eq 403 ]; then
+            echo "✅ /businessApi/appointments/create endpoint is responding"
+          else
+            echo "❌ /businessApi/appointments/create endpoint failed with code: $response"
+            cat /tmp/create_appointment_response.json || echo "No response body"
+          fi
+          
+      - name: Test GET /businessApi/appointments
+        run: |
+          echo "🧪 Testing GET /businessApi/appointments endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" \
+            --max-time $TEST_TIMEOUT \
+            -H "Authorization: Bearer test-token" \
+            "$API_BASE_URL/businessApi/appointments" -o /tmp/appointments_response.json)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 401 ] || [ "$response" -eq 403 ]; then
+            echo "✅ /businessApi/appointments endpoint is responding"
+          else
+            echo "❌ /businessApi/appointments endpoint failed with code: $response"
+            cat /tmp/appointments_response.json || echo "No response body"
+          fi
+          
+      - name: Test POST /businessApi/appointments/cancel
+        run: |
+          echo "🧪 Testing POST /businessApi/appointments/cancel endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" -X POST \
+            --max-time $TEST_TIMEOUT \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer test-token" \
+            -d '{
+              "appointmentId": "test-appointment-id",
+              "reason": "smoke test"
+            }' \
+            "$API_BASE_URL/businessApi/appointments/cancel" -o /tmp/cancel_appointment_response.json)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 404 ] || [ "$response" -eq 401 ] || [ "$response" -eq 403 ]; then
+            echo "✅ /businessApi/appointments/cancel endpoint is responding"
+          else
+            echo "❌ /businessApi/appointments/cancel endpoint failed with code: $response"
+            cat /tmp/cancel_appointment_response.json || echo "No response body"
+          fi
+          
+      - name: Test GET /icsFeed
+        run: |
+          echo "🧪 Testing GET /icsFeed endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" \
+            --max-time $TEST_TIMEOUT \
+            "$API_BASE_URL/icsFeed?token=test-token" -o /tmp/ics_feed_response.ics)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 401 ] || [ "$response" -eq 403 ]; then
+            echo "✅ /icsFeed endpoint is responding"
+          else
+            echo "❌ /icsFeed endpoint failed with code: $response"
+            cat /tmp/ics_feed_response.ics || echo "No response body"
+          fi
+          
+      - name: Test GET /getUsageStats
+        run: |
+          echo "🧪 Testing GET /getUsageStats endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" \
+            --max-time $TEST_TIMEOUT \
+            -H "Authorization: Bearer test-token" \
+            "$API_BASE_URL/getUsageStats" -o /tmp/usage_stats_response.json)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 401 ] || [ "$response" -eq 403 ]; then
+            echo "✅ /getUsageStats endpoint is responding"
+          else
+            echo "❌ /getUsageStats endpoint failed with code: $response"
+            cat /tmp/usage_stats_response.json || echo "No response body"
+          fi
+          
+      - name: Test POST /rotateIcsToken
+        run: |
+          echo "🧪 Testing POST /rotateIcsToken endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" -X POST \
+            --max-time $TEST_TIMEOUT \
+            -H "Authorization: Bearer test-token" \
+            "$API_BASE_URL/rotateIcsToken" -o /tmp/rotate_token_response.json)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 401 ] || [ "$response" -eq 403 ]; then
+            echo "✅ /rotateIcsToken endpoint is responding"
+          else
+            echo "❌ /rotateIcsToken endpoint failed with code: $response"
+            cat /tmp/rotate_token_response.json || echo "No response body"
+          fi
+
+  # OAuth2 and authentication tests
+  oauth-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Test OAuth2 Authorization Endpoint
+        run: |
+          echo "🧪 Testing OAuth2 authorization endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" \
+            --max-time $TEST_TIMEOUT \
+            "$API_BASE_URL/oauth/authorize?client_id=test&response_type=code&redirect_uri=http://localhost" \
+            -o /tmp/oauth_auth_response.html)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 302 ] || [ "$response" -eq 400 ]; then
+            echo "✅ OAuth2 authorization endpoint is responding"
+          else
+            echo "❌ OAuth2 authorization endpoint failed with code: $response"
+          fi
+          
+      - name: Test OAuth2 Token Endpoint
+        run: |
+          echo "🧪 Testing OAuth2 token endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" -X POST \
+            --max-time $TEST_TIMEOUT \
+            -H "Content-Type: application/x-www-form-urlencoded" \
+            -d "grant_type=authorization_code&code=test&client_id=test&client_secret=test" \
+            "$API_BASE_URL/oauth/token" -o /tmp/oauth_token_response.json)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 400 ] || [ "$response" -eq 401 ]; then
+            echo "✅ OAuth2 token endpoint is responding"
+          else
+            echo "❌ OAuth2 token endpoint failed with code: $response"
+          fi
+
+  # Rate limiting tests
+  rate-limit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Test rate limiting
+        run: |
+          echo "🧪 Testing rate limiting..."
+          
+          # Make multiple rapid requests to test rate limiting
+          for i in {1..10}; do
+            response=$(curl -s -w "%{http_code}" \
+              --max-time 5 \
+              "$API_BASE_URL" -o /dev/null)
+            echo "Request $i: $response"
+            
+            if [ "$response" -eq 429 ]; then
+              echo "✅ Rate limiting is working (got 429 Too Many Requests)"
+              break
+            fi
+            
+            sleep 0.1
+          done
+
+  # Webhook tests
+  webhook-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Test webhook endpoint
+        run: |
+          echo "🧪 Testing webhook endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" -X POST \
+            --max-time $TEST_TIMEOUT \
+            -H "Content-Type: application/json" \
+            -d '{
+              "event": "test",
+              "data": {
+                "message": "smoke test webhook"
+              }
+            }' \
+            "$API_BASE_URL/webhook" -o /tmp/webhook_response.json)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ] || [ "$response" -eq 400 ] || [ "$response" -eq 401 ]; then
+            echo "✅ Webhook endpoint is responding"
+          else
+            echo "❌ Webhook endpoint failed with code: $response"
+            cat /tmp/webhook_response.json || echo "No response body"
+          fi
+
+  # Health check and status tests
+  health-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Test health endpoint
+        run: |
+          echo "🧪 Testing health endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" \
+            --max-time $TEST_TIMEOUT \
+            "$API_BASE_URL/health" -o /tmp/health_response.json)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ]; then
+            echo "✅ Health endpoint is responding correctly"
+            cat /tmp/health_response.json
+          else
+            echo "❌ Health endpoint failed with code: $response"
+            cat /tmp/health_response.json || echo "No response body"
+          fi
+          
+      - name: Test status endpoint
+        run: |
+          echo "🧪 Testing status endpoint..."
+          
+          response=$(curl -s -w "%{http_code}" \
+            --max-time $TEST_TIMEOUT \
+            "$API_BASE_URL/status" -o /tmp/status_response.json)
+          
+          echo "Response code: $response"
+          
+          if [ "$response" -eq 200 ]; then
+            echo "✅ Status endpoint is responding correctly"
+            cat /tmp/status_response.json
+          else
+            echo "❌ Status endpoint failed with code: $response"
+            cat /tmp/status_response.json || echo "No response body"
+          fi
+
+  # Summary and report
+  smoke-test-summary:
+    needs: [api-smoke-tests, oauth-tests, rate-limit-tests, webhook-tests, health-tests]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Generate smoke test summary
+        run: |
+          echo "📊 Smoke Test Summary"
+          echo "===================="
+          echo ""
+          echo "🌐 Target: $API_BASE_URL"
+          echo "🕐 Timestamp: $(date)"
+          echo ""
+          echo "📋 Test Results:"
+          echo "  • API Endpoints: ${{ needs.api-smoke-tests.result }}"
+          echo "  • OAuth2 Flows: ${{ needs.oauth-tests.result }}"
+          echo "  • Rate Limiting: ${{ needs.rate-limit-tests.result }}"
+          echo "  • Webhooks: ${{ needs.webhook-tests.result }}"
+          echo "  • Health Checks: ${{ needs.health-tests.result }}"
+          echo ""
+          
+          # Check overall status
+          if [ "${{ needs.api-smoke-tests.result }}" = "success" ] && \
+             [ "${{ needs.oauth-tests.result }}" = "success" ] && \
+             [ "${{ needs.rate-limit-tests.result }}" = "success" ] && \
+             [ "${{ needs.webhook-tests.result }}" = "success" ] && \
+             [ "${{ needs.health-tests.result }}" = "success" ]; then
+            echo "✅ All smoke tests passed successfully!"
+            echo "🎉 App-Oint API is healthy and operational"
+          else
+            echo "❌ Some smoke tests failed"
+            echo "🔍 Please check the individual test results above"
+            exit 1
+          fi

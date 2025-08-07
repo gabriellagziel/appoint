@@ -1,0 +1,188 @@
+Resolving dependencies...
+Downloading packages...
+  _fe_analyzer_shared 67.0.0 (82.0.0 available)
+  _flutterfire_internals 1.3.35 (1.3.56 available)
+  analyzer 6.4.1 (7.4.5 available)
+  bloc 8.1.4 (9.0.0 available)
+  build 2.4.1 (2.4.2 available)
+  build_config 1.1.1 (1.1.2 available)
+  build_daemon 4.0.1 (4.0.4 available)
+  build_resolvers 2.4.2 (2.4.4 available)
+  build_runner 2.4.9 (2.4.15 available)
+  build_runner_core 7.3.0 (8.0.0 available)
+  checked_yaml 2.0.3 (2.0.4 available)
+  cloud_firestore 4.17.5 (5.6.9 available)
+  cloud_firestore_platform_interface 6.2.5 (6.6.9 available)
+  cloud_firestore_web 3.12.5 (4.4.9 available)
+  cloud_functions 4.7.6 (5.5.2 available)
+  cloud_functions_platform_interface 5.5.28 (5.7.2 available)
+  cloud_functions_web 4.9.6 (4.11.2 available)
+  code_builder 4.10.0 (4.10.1 available)
+  convert 3.1.1 (3.1.2 available)
+  crypto 3.0.3 (3.0.6 available)
+  dart_style 2.3.6 (3.1.0 available)
+  firebase_auth 4.20.0 (5.6.0 available)
+  firebase_auth_platform_interface 7.3.0 (7.7.0 available)
+  firebase_auth_web 5.12.0 (5.15.0 available)
+  firebase_core 2.32.0 (3.14.0 available)
+  firebase_core_web 2.17.5 (2.23.0 available)
+  firebase_messaging 14.9.4 (15.2.7 available)
+  firebase_messaging_platform_interface 4.5.37 (4.6.7 available)
+  firebase_messaging_web 3.8.7 (3.10.7 available)
+  flutter_bloc 8.1.6 (9.1.1 available)
+  freezed 2.5.2 (3.0.6 available)
+  freezed_annotation 2.4.4 (3.0.0 available)
+  graphs 2.3.1 (2.3.2 available)
+  http_parser 4.0.2 (4.1.2 available)
+  io 1.0.4 (1.0.5 available)
+  js 0.7.1 (0.7.2 available)
+  json_serializable 6.8.0 (6.9.5 available)
+  leak_tracker 10.0.9 (11.0.1 available)
+  leak_tracker_flutter_testing 3.0.9 (3.0.10 available)
+  leak_tracker_testing 3.0.1 (3.0.2 available)
+  logging 1.2.0 (1.3.0 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  mime 1.0.6 (2.0.0 available)
+  package_config 2.1.0 (2.2.0 available)
+  pub_semver 2.1.4 (2.2.0 available)
+  pubspec_parse 1.4.0 (1.5.0 available)
+  shelf 1.4.1 (1.4.2 available)
+  shelf_web_socket 1.0.4 (3.0.0 available)
+  source_gen 1.5.0 (2.0.0 available)
+  source_helper 1.3.4 (1.3.5 available)
+  test_api 0.7.4 (0.7.6 available)
+  timing 1.0.1 (1.0.2 available)
+  typed_data 1.3.2 (1.4.0 available)
+  vector_math 2.1.4 (2.2.0 available)
+  vm_service 15.0.0 (15.0.2 available)
+  web 0.5.1 (1.1.1 available)
+  web_socket_channel 2.4.5 (3.0.3 available)
+  yaml 3.1.2 (3.1.3 available)
+Got dependencies!
+59 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing APP-OINT...                                           
+
+  error • Undefined name 'DateTime' • lib/features/booking/booking_confirm_screen.dart:70:60 • undefined_identifier
+  error • Undefined class 'DateTime' • lib/features/booking/booking_request_screen.dart:6:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/booking_request_screen.dart:24:3 • undefined_class
+  error • Undefined name 'DateTime' • lib/features/booking/booking_request_screen.dart:37:20 • undefined_identifier
+  error • Undefined name 'DateTime' • lib/features/booking/booking_request_screen.dart:38:18 • undefined_identifier
+  error • Undefined name 'DateTime' • lib/features/booking/booking_request_screen.dart:39:17 • undefined_identifier
+  error • The method 'DateTime' isn't defined for the type '_BookingRequestScreenState' • lib/features/booking/booking_request_screen.dart:49:11 • undefined_method
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.dart:12:35 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.dart:13:35 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:25:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:27:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:41:28 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:42:28 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/features/booking/domain/entities/booking.freezed.dart:70:18 • cast_to_non_type
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/features/booking/domain/entities/booking.freezed.dart:74:18 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:88:28 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:89:28 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/features/booking/domain/entities/booking.freezed.dart:115:18 • cast_to_non_type
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/features/booking/domain/entities/booking.freezed.dart:119:18 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:139:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:142:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:184:43 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:185:43 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:193:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/domain/entities/booking.freezed.dart:196:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/models/booking.dart:2:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/screens/booking_screen.dart:14:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/booking/screens/booking_screen.dart:19:11 • undefined_class
+  error • Undefined name 'DateTime' • lib/features/booking/screens/booking_screen.dart:21:20 • undefined_identifier
+  error • Undefined name 'DateTime' • lib/features/booking/screens/booking_screen.dart:22:18 • undefined_identifier
+  error • Undefined name 'DateTime' • lib/features/booking/screens/booking_screen.dart:23:17 • undefined_identifier
+  error • Undefined class 'DateTime' • lib/features/booking/screens/booking_screen.dart:46:13 • undefined_class
+  error • The method 'DateTime' isn't defined for the type '_BookingScreenState' • lib/features/booking/screens/booking_screen.dart:46:40 • undefined_method
+  error • Undefined name 'DateTime' • lib/features/booking/screens/booking_screen.dart:143:17 • undefined_identifier
+  error • Undefined name 'DateTime' • lib/features/booking/screens/booking_screen.dart:143:62 • undefined_identifier
+  error • Undefined name 'DateTime' • lib/features/business/screens/business_dashboard_screen.dart:68:17 • undefined_identifier
+  error • Undefined name 'DateTime' • lib/features/business/screens/business_dashboard_screen.dart:68:62 • undefined_identifier
+  error • Undefined class 'DateTime' • lib/features/studio/studio_booking_screen.dart:11:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/features/studio/studio_booking_screen.dart:30:3 • undefined_class
+  error • Undefined name 'DateTime' • lib/features/studio/studio_booking_screen.dart:36:20 • undefined_identifier
+  error • Undefined name 'DateTime' • lib/features/studio/studio_booking_screen.dart:37:18 • undefined_identifier
+  error • Undefined name 'DateTime' • lib/features/studio/studio_booking_screen.dart:38:17 • undefined_identifier
+  error • The method 'DateTime' isn't defined for the type 'StudioConfirmScreen' • lib/features/studio/studio_confirm_screen.dart:16:25 • undefined_method
+  error • Undefined class 'DateTime' • lib/models/appointment.dart:13:9 • undefined_class
+warning • The annotation 'JsonKey.new' can only be used on fields or getters • lib/models/booking.dart:10:6 • invalid_annotation_target
+  error • Undefined class 'DateTime' • lib/models/booking.dart:10:61 • undefined_class
+warning • The annotation 'JsonKey.new' can only be used on fields or getters • lib/models/booking.dart:11:6 • invalid_annotation_target
+  error • Undefined class 'DateTime' • lib/models/booking.dart:11:61 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.dart:18:1 • undefined_class
+  error • Undefined name 'DateTime' • lib/models/booking.dart:18:36 • undefined_identifier
+  error • Undefined class 'DateTime' • lib/models/booking.dart:19:16 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:25:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:27:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:41:54 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:42:54 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/models/booking.freezed.dart:70:18 • cast_to_non_type
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/models/booking.freezed.dart:74:18 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:88:54 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:89:54 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/models/booking.freezed.dart:115:18 • cast_to_non_type
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/models/booking.freezed.dart:119:18 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:139:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:142:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:185:22 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:187:22 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:195:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/booking.freezed.dart:198:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/calendar_event.dart:6:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/calendar_event.dart:7:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/calendar_event.dart:21:5 • undefined_class
+  error • The name 'DateTime' isn't defined, so it can't be used in an 'is' expression • lib/models/calendar_event.dart:22:16 • type_test_with_undefined_name
+  error • Undefined name 'DateTime' • lib/models/calendar_event.dart:23:31 • undefined_identifier
+  error • Undefined name 'DateTime' • lib/models/calendar_event.dart:28:16 • undefined_identifier
+warning • The declaration '_dateToIso' isn't referenced • lib/models/staff_availability.dart:13:8 • unused_element
+  error • Undefined class 'DateTime' • lib/models/staff_availability.dart:13:19 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/staff_availability.dart:19:35 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/staff_availability.freezed.dart:25:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/staff_availability.freezed.dart:44:28 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/models/staff_availability.freezed.dart:73:18 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/models/staff_availability.freezed.dart:92:28 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/models/staff_availability.freezed.dart:119:18 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/models/staff_availability.freezed.dart:144:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/staff_availability.freezed.dart:198:43 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/staff_availability.freezed.dart:209:3 • undefined_class
+warning • The annotation 'JsonKey.new' can only be used on fields or getters • lib/models/tmp_test.dart:10:6 • invalid_annotation_target
+  error • Undefined class 'DateTime' • lib/models/tmp_test.dart:10:61 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/tmp_test.dart:16:1 • undefined_class
+  error • Undefined name 'DateTime' • lib/models/tmp_test.dart:16:36 • undefined_identifier
+  error • Undefined class 'DateTime' • lib/models/tmp_test.dart:17:16 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/tmp_test.freezed.dart:25:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/tmp_test.freezed.dart:39:54 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/models/tmp_test.freezed.dart:65:18 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/models/tmp_test.freezed.dart:78:54 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/models/tmp_test.freezed.dart:101:18 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/models/tmp_test.freezed.dart:120:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/tmp_test.freezed.dart:159:22 • undefined_class
+  error • Undefined class 'DateTime' • lib/models/tmp_test.freezed.dart:167:3 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/providers/studio_provider.dart:20:73 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/services/appointment_service.dart:13:14 • undefined_class
+  error • Undefined name 'DateTime' • lib/services/appointment_service.dart:39:20 • undefined_identifier
+  error • Undefined class 'DateTime' • lib/services/calendar_service.dart:60:7 • undefined_class
+  error • Undefined class 'DateTime' • lib/services/calendar_service.dart:60:22 • undefined_class
+  error • Undefined class 'DateTime' • lib/services/calendar_service.dart:77:7 • undefined_class
+  error • Undefined class 'DateTime' • lib/services/calendar_service.dart:77:22 • undefined_class
+  error • Undefined class 'DateTime' • lib/services/studio_service.dart:15:63 • undefined_class
+  error • Undefined class 'DateTime' • lib/tmp_test.dart:12:35 • undefined_class
+  error • Undefined class 'DateTime' • lib/tmp_test.freezed.dart:25:3 • undefined_class
+  error • Undefined class 'DateTime' • lib/tmp_test.freezed.dart:37:46 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/tmp_test.freezed.dart:63:18 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/tmp_test.freezed.dart:74:46 • undefined_class
+  error • The name 'DateTime' isn't a type, so it can't be used in an 'as' expression • lib/tmp_test.freezed.dart:97:18 • cast_to_non_type
+  error • Undefined class 'DateTime' • lib/tmp_test.freezed.dart:114:9 • undefined_class
+  error • Undefined class 'DateTime' • lib/tmp_test.freezed.dart:152:43 • undefined_class
+  error • Undefined class 'DateTime' • lib/tmp_test.freezed.dart:160:3 • undefined_class
+warning • The library 'dart:core' doesn't export a member with the shown name 'DateTime' • lib/utils/datetime_converter.dart:1:25 • undefined_shown_name
+  error • The name 'DateTime' isn't a type, so it can't be used as a type argument • lib/utils/datetime_converter.dart:5:50 • non_type_as_type_argument
+  error • Undefined class 'DateTime' • lib/utils/datetime_converter.dart:9:3 • undefined_class
+  error • Undefined name 'DateTime' • lib/utils/datetime_converter.dart:9:37 • undefined_identifier
+  error • Undefined class 'DateTime' • lib/utils/datetime_converter.dart:12:17 • undefined_class
+warning • This default clause is covered by the previous cases • lib/widgets/auth_wrapper.dart:22:7 • unreachable_switch_default
+  error • The name 'App' isn't a class • test/widget_test.dart:6:35 • creation_with_non_type
+

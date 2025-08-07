@@ -1,0 +1,98 @@
+# Translation TODO List
+Generated on: Wed Jun 18 01:57:15 CEST 2025
+
+Total TODO items found: lib/l10n/app_ar.arb:181
+lib/l10n/app_bg.arb:181
+lib/l10n/app_cs.arb:181
+lib/l10n/app_da.arb:181
+lib/l10n/app_de.arb:181
+lib/l10n/app_en.arb:0
+lib/l10n/app_es.arb:181
+lib/l10n/app_fi.arb:181
+lib/l10n/app_fr.arb:181
+lib/l10n/app_he.arb:178
+lib/l10n/app_hu.arb:181
+lib/l10n/app_id.arb:181
+lib/l10n/app_it.arb:181
+lib/l10n/app_ja.arb:181
+lib/l10n/app_ko.arb:181
+lib/l10n/app_lt.arb:181
+lib/l10n/app_ms.arb:181
+lib/l10n/app_nl.arb:181
+lib/l10n/app_no.arb:181
+lib/l10n/app_pl.arb:181
+lib/l10n/app_pt.arb:181
+lib/l10n/app_ro.arb:181
+lib/l10n/app_ru.arb:181
+lib/l10n/app_sk.arb:181
+lib/l10n/app_sl.arb:181
+lib/l10n/app_sr.arb:181
+lib/l10n/app_sv.arb:181
+lib/l10n/app_th.arb:181
+lib/l10n/app_tr.arb:181
+lib/l10n/app_uk.arb:181
+lib/l10n/app_vi.arb:181
+lib/l10n/app_zh.arb:181
+
+## ar
+
+## bg
+
+## cs
+
+## da
+
+## de
+
+## es
+
+## fi
+
+## fr
+
+## he
+
+## hu
+
+## id
+
+## it
+
+## ja
+
+## ko
+
+## lt
+
+## ms
+
+## nl
+
+## no
+
+## pl
+
+## pt
+
+## ro
+
+## ru
+
+## sk
+
+## sl
+
+## sr
+
+## sv
+
+## th
+
+## tr
+
+## uk
+
+## vi
+
+## zh
+

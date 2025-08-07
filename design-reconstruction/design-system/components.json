@@ -1,0 +1,219 @@
+{
+    "components": {
+        "Button": {
+            "description": "Primary interactive component with multiple variants",
+            "variants": {
+                "default": {
+                    "description": "Primary button with blue background",
+                    "className": "bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl",
+                    "usage": "Main call-to-action buttons"
+                },
+                "outline": {
+                    "description": "Secondary button with border",
+                    "className": "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground",
+                    "usage": "Secondary actions"
+                },
+                "ghost": {
+                    "description": "Minimal button with hover effects",
+                    "className": "hover:bg-accent hover:text-accent-foreground",
+                    "usage": "Navigation and subtle interactions"
+                },
+                "destructive": {
+                    "description": "Error state button",
+                    "className": "bg-destructive text-white shadow-xs hover:bg-destructive/90",
+                    "usage": "Delete and destructive actions"
+                }
+            },
+            "sizes": {
+                "sm": {
+                    "description": "Small button",
+                    "className": "h-8 rounded-md gap-1.5 px-3"
+                },
+                "default": {
+                    "description": "Standard button size",
+                    "className": "h-9 px-4 py-2"
+                },
+                "lg": {
+                    "description": "Large button",
+                    "className": "h-10 rounded-md px-6"
+                },
+                "icon": {
+                    "description": "Icon-only button",
+                    "className": "size-9"
+                }
+            }
+        },
+        "Card": {
+            "description": "Container component for content sections",
+            "variants": {
+                "default": {
+                    "description": "Standard card with shadow",
+                    "className": "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm"
+                },
+                "hover": {
+                    "description": "Card with hover effects",
+                    "className": "group hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 hover:scale-[1.02] cursor-pointer border-gray-200/50 bg-white/80 backdrop-blur-sm"
+                },
+                "featured": {
+                    "description": "Featured card with accent border",
+                    "className": "relative border-blue-500 shadow-lg"
+                }
+            },
+            "subcomponents": {
+                "CardHeader": {
+                    "description": "Card header section",
+                    "className": "grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6"
+                },
+                "CardTitle": {
+                    "description": "Card title text",
+                    "className": "leading-none font-semibold"
+                },
+                "CardDescription": {
+                    "description": "Card description text",
+                    "className": "text-muted-foreground text-sm"
+                },
+                "CardContent": {
+                    "description": "Card content section",
+                    "className": "px-6"
+                },
+                "CardFooter": {
+                    "description": "Card footer section",
+                    "className": "flex items-center px-6"
+                }
+            }
+        },
+        "Navbar": {
+            "description": "Main navigation component",
+            "className": "bg-white shadow-sm border-b",
+            "responsive": {
+                "desktop": {
+                    "description": "Desktop navigation menu",
+                    "className": "hidden md:flex items-center space-x-6"
+                },
+                "mobile": {
+                    "description": "Mobile navigation menu",
+                    "className": "md:hidden"
+                }
+            },
+            "elements": {
+                "logo": {
+                    "description": "Brand logo and name",
+                    "className": "flex-shrink-0"
+                },
+                "nav-links": {
+                    "description": "Navigation links",
+                    "className": "text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                },
+                "mobile-menu": {
+                    "description": "Mobile menu button",
+                    "className": "md:hidden"
+                }
+            }
+        },
+        "LanguageSwitcher": {
+            "description": "Language selection component",
+            "className": "language-switcher",
+            "scrollbar": {
+                "description": "Custom scrollbar styling",
+                "className": "max-h-96::-webkit-scrollbar"
+            }
+        },
+        "Form": {
+            "description": "Form components for data input",
+            "subcomponents": {
+                "Input": {
+                    "description": "Text input field",
+                    "className": "flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors"
+                },
+                "Label": {
+                    "description": "Form field labels",
+                    "className": "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                }
+            }
+        },
+        "Hero": {
+            "description": "Hero section component",
+            "className": "container mx-auto px-4 py-16",
+            "elements": {
+                "logo": {
+                    "description": "Hero logo",
+                    "className": "mx-auto"
+                },
+                "title": {
+                    "description": "Hero title",
+                    "className": "text-5xl font-light text-gray-900 mb-4 tracking-tight"
+                },
+                "subtitle": {
+                    "description": "Hero subtitle",
+                    "className": "text-xl text-gray-600 font-light space-x-4"
+                },
+                "description": {
+                    "description": "Hero description",
+                    "className": "text-lg text-gray-700 max-w-2xl mx-auto mb-16 leading-relaxed"
+                }
+            }
+        }
+    },
+    "icons": {
+        "lucide-react": {
+            "description": "Primary icon library",
+            "icons": [
+                "Briefcase",
+                "Server",
+                "Shield",
+                "Calendar",
+                "Users",
+                "BarChart3",
+                "Palette",
+                "MessageSquare",
+                "CreditCard",
+                "Check",
+                "Menu",
+                "X"
+            ]
+        },
+        "custom": {
+            "description": "Custom SVG icons",
+            "icons": [
+                "logo.svg",
+                "globe.svg",
+                "file.svg",
+                "window.svg"
+            ]
+        }
+    },
+    "layouts": {
+        "container": {
+            "description": "Main content container",
+            "className": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        },
+        "grid": {
+            "description": "Grid layout system",
+            "variants": {
+                "1-col": {
+                    "className": "grid grid-cols-1"
+                },
+                "2-col": {
+                    "className": "grid grid-cols-1 md:grid-cols-2"
+                },
+                "3-col": {
+                    "className": "grid grid-cols-1 md:grid-cols-3"
+                }
+            }
+        },
+        "flex": {
+            "description": "Flexbox layout utilities",
+            "variants": {
+                "center": {
+                    "className": "flex items-center justify-center"
+                },
+                "between": {
+                    "className": "flex justify-between items-center"
+                },
+                "col": {
+                    "className": "flex flex-col"
+                }
+            }
+        }
+    }
+}

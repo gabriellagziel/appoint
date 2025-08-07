@@ -1,0 +1,88 @@
+{
+  "project_info": {
+    "project_number": "944776470711",
+    "project_id": "app-oint-core",
+    "storage_bucket": "app-oint-core.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944776470711:android:f0e7c50f8f9d4f5dc66d32",
+        "android_client_info": {
+          "package_name": "com.appoint.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944776470711-7hlbv8tlpq9dju8967pg88v6as328ca6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB93HTXwFbJOcBCCpmNrx6yfLrpYq-Ehk"
+        },
+        {
+          "current_key": "AIzaSyBCVGdHlE_hO5YW7MjTd32bUD5P-O6D41A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944776470711-4n1uempl299dbkhlu14nth6b37cmeubo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "944776470711-gesa0ohpcjc72ts15doeih54klglqij0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appoint"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944776470711:android:18eda6eda7b13730c66d32",
+        "android_client_info": {
+          "package_name": "com.gabriellagziel.appoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944776470711-7hlbv8tlpq9dju8967pg88v6as328ca6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB93HTXwFbJOcBCCpmNrx6yfLrpYq-Ehk"
+        },
+        {
+          "current_key": "AIzaSyBCVGdHlE_hO5YW7MjTd32bUD5P-O6D41A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944776470711-4n1uempl299dbkhlu14nth6b37cmeubo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "944776470711-gesa0ohpcjc72ts15doeih54klglqij0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appoint"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

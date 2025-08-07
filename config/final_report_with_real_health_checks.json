@@ -1,0 +1,67 @@
+{
+  "deployment_summary": {
+    "timestamp": "2024-07-23T18:45:00Z",
+    "app_id": "620a2ee8-e942-451c-9cfd-8ece55511eb8",
+    "app_name": "App-Oint",
+    "domain": "app-oint.com",
+    "overall_status": "ACTIVE",
+    "deployment_phase": "ACTIVE"
+  },
+  "services": {
+    "marketing": {
+      "config": {
+        "source_dir": "marketing",
+        "routes": [{"path": "/"}]
+      },
+      "deployment_phase": "ACTIVE",
+      "health_check": {
+        "status_code": 200,
+        "latency_ms": 393
+      }
+    },
+    "business": {
+      "config": {
+        "source_dir": "business", 
+        "routes": [{"path": "/business"}, {"path": "/business/*"}]
+      },
+      "deployment_phase": "ACTIVE",
+      "health_check": {
+        "status_code": 308,
+        "latency_ms": 388
+      }
+    },
+    "admin": {
+      "config": {
+        "source_dir": "admin",
+        "routes": [{"path": "/admin"}, {"path": "/admin/*"}]
+      },
+      "deployment_phase": "ACTIVE", 
+      "health_check": {
+        "status_code": 200,
+        "latency_ms": 373
+      }
+    },
+    "api": {
+      "config": {
+        "source_dir": "functions",
+        "routes": [{"path": "/api"}, {"path": "/api/*"}]
+      },
+      "deployment_phase": "ACTIVE",
+      "health_check": {
+        "status_code": 200,
+        "latency_ms": 442
+      }
+    }
+  },
+  "firebase": {
+    "project_id": "app-oint-core",
+    "functions_deployed": true,
+    "hosting_active": true
+  },
+  "real_health_check_summary": {
+    "marketing": "✅ HEALTHY (200 OK, 393ms)",
+    "business": "⚠️ REDIRECT (308, 388ms) - needs trailing slash fix",
+    "admin": "✅ HEALTHY (200 OK, 373ms)",
+    "api": "✅ HEALTHY (200 OK, 442ms)"
+  }
+}

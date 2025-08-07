@@ -1,0 +1,17 @@
+name: app-oint-simple
+region: nyc1
+static_sites:
+  - name: marketing
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "marketing/public"
+    build_command: "echo \"Static build successful\""
+    output_dir: "."
+    routes:
+      - path: /
+
+# Environment variables
+envs:
+  - key: NODE_ENV
+    value: production

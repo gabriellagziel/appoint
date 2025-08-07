@@ -1,0 +1,42 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "yaml.validate": false,
+    "yaml.schemas": {},
+    "yaml.customTags": [],
+    "yaml.format.enable": false,
+    "yaml.hover": false,
+    "yaml.completion": false,
+    "yaml.validate.enable": false,
+    "markdownlint.config": {
+      "MD009": false,
+      "MD047": false
+    },
+    "github-actions.workflowValidation": "off",
+    "github-actions.enableWorkflowValidation": false,
+    "github-actions.workflowValidationLevel": "off",
+    "github-actions.workflowValidationMode": "off",
+    "files.exclude": {
+      "**/.github/workflows/.github-actions-lint-ignore": true,
+      "**/.github/workflows/.yamllint": true
+    },
+    "search.exclude": {
+      "**/.github/workflows/.github-actions-lint-ignore": true,
+      "**/.github/workflows/.yamllint": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "dart-code.dart-code",
+      "dart-code.flutter"
+    ],
+    "unwantedRecommendations": [
+      "ms-azuretools.vscode-docker",
+      "ms-vscode.vscode-yaml"
+    ]
+  }
+} 

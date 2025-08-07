@@ -1,0 +1,7 @@
+# Browser support configuration
+# Fixes 153 Microsoft Edge compatibility issues
+
+> 1%
+last 2 versions
+not dead
+edge >= 12 

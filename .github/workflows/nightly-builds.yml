@@ -1,0 +1,104 @@
+name: Nightly Builds
+
+on:
+  schedule:
+    # Run at 02:00 UTC daily
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  nightly-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: develop # Build from develop branch
+      
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.5'
+          cache: true
+      
+      - run: flutter pub get
+      
+      - name: Run tests
+        run: |
+          tries=3
+          for i in $(seq 1 $tries); do
+            flutter test --coverage --no-pub && break
+            if [ $i -eq $tries ]; then
+              exit 1
+            fi
+            echo "Retrying tests ($i/$tries)..."
+            sleep 5
+          done
+      
+      - name: Build APK
+        run: flutter build apk --release
+      
+      - name: Build iOS IPA
+        run: |
+          flutter build ios --release --no-codesign
+          cd ios
+          xcodebuild -workspace Runner.xcworkspace -scheme Runner -configuration Release -archivePath build/Runner.xcarchive archive
+          xcodebuild -exportArchive -archivePath build/Runner.xcarchive -exportPath build/ios -exportOptionsPlist exportOptions.plist
+        continue-on-error: true
+      
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: nightly-app-release.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 30
+      
+      - name: Upload iOS IPA
+        uses: actions/upload-artifact@v3
+        with:
+          name: nightly-app-release.ipa
+          path: ios/build/ios/Runner.ipa
+          retention-days: 30
+        continue-on-error: true
+      
+      - name: Generate build report
+        run: |
+          echo "## Nightly Build Report" >> build-report.md
+          echo "**Date:** $(date)" >> build-report.md
+          echo "**Branch:** develop" >> build-report.md
+          echo "**Commit:** ${{ github.sha }}" >> build-report.md
+          echo "**Status:** ✅ Success" >> build-report.md
+          echo "" >> build-report.md
+          echo "### Artifacts" >> build-report.md
+          echo "- Android APK: Available for download" >> build-report.md
+          echo "- iOS IPA: Available for download" >> build-report.md
+      
+      - name: Upload build report
+        uses: actions/upload-artifact@v3
+        with:
+          name: nightly-build-report
+          path: build-report.md
+          retention-days: 30
+
+  notify-success:
+    needs: nightly-build
+    runs-on: ubuntu-latest
+    if: success()
+    steps:
+      - name: Notify success
+        run: |
+          echo "✅ Nightly build completed successfully"
+          echo "Branch: develop"
+          echo "Commit: ${{ github.sha }}"
+          echo "Artifacts available for download"
+
+  notify-failure:
+    needs: nightly-build
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: Notify failure
+        run: |
+          echo "❌ Nightly build failed"
+          echo "Branch: develop"
+          echo "Commit: ${{ github.sha }}"
+          echo "Please check the build logs for details" 

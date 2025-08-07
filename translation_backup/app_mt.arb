@@ -1,0 +1,785 @@
+{
+  "@@locale": "mt",
+  "@about": {
+    "description": "About navigation label"
+  },
+  "@accept": {
+    "description": "Description"
+  },
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "@add": {
+    "description": "Description"
+  },
+  "@adminBroadcast": {
+    "description": "adminBroadcast description"
+  },
+  "@adminScreenTBD": {
+    "description": "Description"
+  },
+  "@appTitle": {
+    "description": "Description"
+  },
+  "@back": {
+    "description": "Description"
+  },
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "@cancelInvite": {
+    "description": "Description"
+  },
+  "@cancelInviteConfirmation": {
+    "description": "Description"
+  },
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "@choose": {
+    "description": "Description"
+  },
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "@clientScreenTBD": {
+    "description": "Description"
+  },
+  "@close": {
+    "description": "close description"
+  },
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "@confirm": {
+    "description": "Description"
+  },
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "@content": {
+    "description": "content description"
+  },
+  "@copy": {
+    "description": "Description"
+  },
+  "@createGame": {
+    "description": "Description"
+  },
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "@createNew": {
+    "description": "Description"
+  },
+  "@createVirtualSession": {
+    "description": "Description"
+  },
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "@created": {
+    "description": "created description"
+  },
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "@cut": {
+    "description": "Description"
+  },
+  "@dashboard": {
+    "description": "Description"
+  },
+  "@decline": {
+    "description": "Description"
+  },
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "@delete": {
+    "description": "Description"
+  },
+  "@details": {
+    "description": "details description"
+  },
+  "@done": {
+    "description": "Description"
+  },
+  "@download": {
+    "description": "Description"
+  },
+  "@edit": {
+    "description": "Description"
+  },
+  "@email": {
+    "description": "Description"
+  },
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "@enterGroupName": {
+    "description": "Description"
+  },
+  "@error": {
+    "description": "Description"
+  },
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "@errorLoadingProfile": {
+    "description": "Description"
+  },
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "@familyDashboard": {
+    "description": "Description"
+  },
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "@forgotPassword": {
+    "description": "Description"
+  },
+  "@groupNameOptional": {
+    "description": "Description"
+  },
+  "@home": {
+    "description": "Description"
+  },
+  "@invite": {
+    "description": "Description"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "@invited": {
+    "description": "Description"
+  },
+  "@knownGroupDetected": {
+    "description": "Description"
+  },
+  "@link": {
+    "description": "link description"
+  },
+  "@loading": {
+    "description": "Description"
+  },
+  "@login": {
+    "description": "Description"
+  },
+  "@logout": {
+    "description": "Description"
+  },
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "@myInvites": {
+    "description": "Description"
+  },
+  "@myProfile": {
+    "description": "Description"
+  },
+  "@next": {
+    "description": "Description"
+  },
+  "@no": {
+    "description": "Description"
+  },
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
+  },
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "@noInvites": {
+    "description": "Description"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "@noResults": {
+    "description": "Description"
+  },
+  "@noSessionsYet": {
+    "description": "Description"
+  },
+  "@notificationSettings": {
+    "description": "Description"
+  },
+  "@notifications": {
+    "description": "Description"
+  },
+  "@ok": {
+    "description": "Description"
+  },
+  "@opened": {
+    "description": "opened description"
+  },
+  "@otpResentSuccessfully": {
+    "description": "Description"
+  },
+  "@participants": {
+    "description": "Description"
+  },
+  "@password": {
+    "description": "Description"
+  },
+  "@paste": {
+    "description": "Description"
+  },
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Description"
+  },
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "@playtimeGameApproved": {
+    "description": "Description"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Description"
+  },
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "@playtimeReject": {
+    "description": "Description"
+  },
+  "@playtimeTitle": {
+    "description": "Description"
+  },
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "@previous": {
+    "description": "Description"
+  },
+  "@profile": {
+    "description": "Description"
+  },
+  "@quickActions": {
+    "description": "Description"
+  },
+  "@recentGames": {
+    "description": "Description"
+  },
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "@redo": {
+    "description": "Description"
+  },
+  "@refresh": {
+    "description": "Description"
+  },
+  "@removeChild": {
+    "description": "Description"
+  },
+  "@requestType": {
+    "description": "requestType description"
+  },
+  "@retry": {
+    "description": "Description"
+  },
+  "@revoke": {
+    "description": "Description"
+  },
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "@save": {
+    "description": "save description"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "@scheduleMessage": {
+    "description": "Description"
+  },
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "@search": {
+    "description": "Description"
+  },
+  "@select": {
+    "description": "Description"
+  },
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "@settings": {
+    "description": "Description"
+  },
+  "@share": {
+    "description": "Description"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Description"
+  },
+  "@signUp": {
+    "description": "Description"
+  },
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "@status": {
+    "description": "status description"
+  },
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "@success": {
+    "description": "Description"
+  },
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "@type": {
+    "description": "type description"
+  },
+  "@undo": {
+    "description": "Description"
+  },
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "@upload": {
+    "description": "Description"
+  },
+  "@viewAll": {
+    "description": "Description"
+  },
+  "@welcome": {
+    "description": "Description"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "@yes": {
+    "description": "yes description"
+  },
+  "@yesCancel": {
+    "description": "Description"
+  },
+  "about": "[MT] About",
+  "accept": "[MT] Accept",
+  "accessRevokedSuccessfully": "[MT] Access revoked successfully",
+  "add": "[MT] Add",
+  "adminBroadcast": "[MT] Admin Broadcast",
+  "adminScreenTBD": "[MT] Admin screen coming soon",
+  "appTitle": "[MT] APP-OINT",
+  "back": "[MT] Back",
+  "cancel": "[MT] Cancel",
+  "cancelInvite": "[MT] Cancel Invite",
+  "cancelInviteConfirmation": "[MT] Are you sure you want to cancel this invite?",
+  "checkingPermissions": "[MT] Checking permissions...",
+  "choose": "[MT] Choose",
+  "clicked": "[MT] Clicked",
+  "clientScreenTBD": "[MT] Client screen coming soon",
+  "close": "[MT] Close",
+  "composeBroadcastMessage": "[MT] Compose Broadcast Message",
+  "confirm": "[MT] Confirm",
+  "confirmPassword": "[MT] Confirm Password",
+  "connectedChildren": "[MT] Connected Children",
+  "content": "[MT] Content",
+  "copy": "[MT] Copy",
+  "createGame": "[MT] Create Game",
+  "createLiveSession": "[MT] Create Live Session",
+  "createNew": "[MT] Create New",
+  "createVirtualSession": "[MT] Create Virtual Session",
+  "createYourFirstGame": "[MT] Create your first game",
+  "createYourFirstSession": "[MT] Create your first session",
+  "created": "[MT] Created",
+  "customizeMessage": "[MT] Customize Message",
+  "cut": "[MT] Cut",
+  "dashboard": "[MT] Dashboard",
+  "decline": "[MT] Decline",
+  "defaultShareMessage": "[MT] Let's meet via Appoint!",
+  "delete": "[MT] Delete",
+  "details": "[MT] Details",
+  "done": "[MT] Done",
+  "download": "[MT] Download",
+  "edit": "[MT] Edit",
+  "email": "[MT] Email",
+  "enableNotifications": "[MT] Enable Notifications",
+  "enterGroupName": "[MT] Enter group name",
+  "error": "[MT] Error",
+  "errorCheckingPermissions": "[MT] Error checking permissions",
+  "errorLoadingFamilyLinks": "[MT] Error loading family links",
+  "errorLoadingInvites": "[MT] Error loading invites",
+  "errorLoadingPrivacyRequests": "[MT] Error loading privacy requests",
+  "errorLoadingProfile": "[MT] Error loading profile",
+  "errorSavingMessage": "[MT] Error saving message",
+  "errorSendingMessage": "[MT] Error sending message",
+  "failedToActionPrivacyRequest": "[MT] Failed to action privacy request",
+  "failedToCancelInvite": "[MT] Failed to cancel invite",
+  "failedToResendOtp": "[MT] Failed to resend OTP",
+  "failedToRevokeAccess": "[MT] Failed to revoke access",
+  "familyDashboard": "[MT] Family Dashboard",
+  "familyMembers": "[MT] Family Members",
+  "fcmToken": "[MT] FCM Token",
+  "forgotPassword": "[MT] Forgot Password?",
+  "groupNameOptional": "[MT] Group Name (Optional)",
+  "home": "[MT] Home",
+  "invite": "[MT] Invite",
+  "inviteCancelledSuccessfully": "[MT] Invite cancelled successfully",
+  "inviteDetail": "[MT] Invite Details",
+  "invited": "[MT] Invited",
+  "knownGroupDetected": "[MT] Known group detected",
+  "link": "[MT] Link",
+  "loading": "[MT] Loading...",
+  "login": "[MT] Login",
+  "logout": "[MT] Logout",
+  "managePermissions": "[MT] Manage Permissions",
+  "mediaOptional": "[MT] Media (Optional)",
+  "meetingReadyMessage": "[MT] Your meeting is ready! Join now",
+  "meetingSharedSuccessfully": "[MT] Meeting shared successfully",
+  "messageSavedSuccessfully": "[MT] Message saved successfully",
+  "messageSentSuccessfully": "[MT] Message sent successfully",
+  "myInvites": "[MT] My Invites",
+  "myProfile": "[MT] My Profile",
+  "next": "[MT] Next",
+  "no": "[MT] No",
+  "noBroadcastMessages": "[MT] No messages yet",
+  "noFamilyMembersYet": "[MT] No family members yet",
+  "noGamesYet": "[MT] No games yet",
+  "noInvites": "[MT] No invites",
+  "noPermissionForBroadcast": "[MT] No permission for broadcast",
+  "noProfileFound": "[MT] No profile found",
+  "noResults": "[MT] No results found",
+  "noSessionsYet": "[MT] No sessions yet",
+  "notificationSettings": "[MT] Notification Settings",
+  "notifications": "[MT] Notifications",
+  "ok": "[MT] OK",
+  "opened": "[MT] Opened",
+  "otpResentSuccessfully": "[MT] OTP resent successfully",
+  "participants": "[MT] Participants",
+  "password": "[MT] Password",
+  "paste": "[MT] Paste",
+  "pendingInvites": "[MT] Pending Invites",
+  "pickImage": "[MT] Pick Image",
+  "pickVideo": "[MT] Pick Video",
+  "playtimeAdminPanelTitle": "[MT] Playtime Games – Admin",
+  "playtimeApprove": "[MT] Approve",
+  "playtimeChooseFriends": "[MT] Choose friends to invite",
+  "playtimeChooseGame": "[MT] Choose a game",
+  "playtimeChooseTime": "[MT] Choose a time",
+  "playtimeCreate": "[MT] Create",
+  "playtimeCreateSession": "[MT] Create a Playtime Session",
+  "playtimeDescription": "[MT] Enjoy live or virtual games with your friends!",
+  "playtimeEnterGameName": "[MT] Enter game name",
+  "playtimeGameApproved": "[MT] Game approved",
+  "playtimeGameDeleted": "[MT] Game deleted",
+  "playtimeGameRejected": "[MT] Game rejected",
+  "playtimeHub": "[MT] Playtime Hub",
+  "playtimeLandingChooseMode": "[MT] Choose your play mode:",
+  "playtimeLive": "[MT] Live Play",
+  "playtimeLiveScheduled": "[MT] Live playtime scheduled!",
+  "playtimeModeLive": "[MT] Live Play",
+  "playtimeModeVirtual": "[MT] Virtual Play",
+  "playtimeNoSessions": "[MT] No playtime sessions found.",
+  "playtimeParentDashboardTitle": "[MT] Playtime Dashboard",
+  "playtimeReject": "[MT] Reject",
+  "playtimeTitle": "[MT] Playtime",
+  "playtimeVirtual": "[MT] Virtual Play",
+  "playtimeVirtualStarted": "[MT] Virtual playtime started!",
+  "pleaseLoginForFamilyFeatures": "[MT] Please login to access family features",
+  "pleaseLoginToViewProfile": "[MT] Please log in to view your profile.",
+  "pollOptions": "[MT] Poll Options",
+  "previous": "[MT] Previous",
+  "profile": "[MT] Profile",
+  "quickActions": "[MT] Quick Actions",
+  "recentGames": "[MT] Recent Games",
+  "recipients": "[MT] Recipients",
+  "redo": "[MT] Redo",
+  "refresh": "[MT] Refresh",
+  "removeChild": "[MT] Remove Child",
+  "requestType": "[MT] Request Type",
+  "retry": "[MT] Retry",
+  "revoke": "[MT] Revoke",
+  "revokeAccess": "[MT] Revoke Access",
+  "revokeAccessConfirmation": "[MT] Are you sure you want to revoke access?",
+  "save": "[MT] Save",
+  "saveGroupForRecognition": "[MT] Save Group for Recognition",
+  "scheduleForLater": "[MT] Schedule for Later",
+  "scheduleMessage": "[MT] Schedule Message",
+  "scheduled": "[MT] Scheduled",
+  "scheduledFor": "[MT] Scheduled for",
+  "scheduling": "[MT] Scheduling",
+  "search": "[MT] Search",
+  "select": "[MT] Select",
+  "sendNow": "[MT] Send Now",
+  "settings": "[MT] Settings",
+  "share": "[MT] Share",
+  "shareOnWhatsApp": "[MT] Share on WhatsApp",
+  "signUp": "[MT] Sign Up",
+  "staffScreenTBD": "[MT] Staff screen coming soon",
+  "status": "[MT] Status",
+  "statusColon": "[MT] Status:",
+  "success": "[MT] Success",
+  "targetingFilters": "[MT] Targeting Filters",
+  "type": "[MT] Type",
+  "undo": "[MT] Undo",
+  "upcomingSessions": "[MT] Upcoming Sessions",
+  "upload": "[MT] Upload",
+  "viewAll": "[MT] View All",
+  "welcome": "[MT] Welcome",
+  "welcomeToPlaytime": "[MT] Welcome to Playtime",
+  "yes": "[MT] Yes",
+  "yesCancel": "[MT] Yes, Cancel",
+  "errorEstimatingRecipients": "errorEstimatingRecipients (TRANSLATE)",
+  "@errorEstimatingRecipients": {
+    "description": "errorEstimatingRecipients description"
+  },
+  "errorPickingImage": "errorPickingImage (TRANSLATE)",
+  "@errorPickingImage": {
+    "description": "errorPickingImage description"
+  },
+  "errorPickingVideo": "errorPickingVideo (TRANSLATE)",
+  "@errorPickingVideo": {
+    "description": "errorPickingVideo description"
+  },
+  "organizations": "organizations (TRANSLATE)",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "members": "members (TRANSLATE)",
+  "@members": {
+    "description": "members description"
+  },
+  "users": "users (TRANSLATE)",
+  "@users": {
+    "description": "users description"
+  },
+  "noUsers": "noUsers (TRANSLATE)",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "changeRole": "changeRole (TRANSLATE)",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "totalAppointments": "totalAppointments (TRANSLATE)",
+  "@totalAppointments": {
+    "description": "totalAppointments description"
+  },
+  "completedAppointments": "completedAppointments (TRANSLATE)",
+  "@completedAppointments": {
+    "description": "completedAppointments description"
+  },
+  "revenue": "revenue (TRANSLATE)",
+  "@revenue": {
+    "description": "revenue description"
+  },
+  "errorLoadingStats": "errorLoadingStats (TRANSLATE)",
+  "@errorLoadingStats": {
+    "description": "errorLoadingStats description"
+  },
+  "appointment": "appointment (TRANSLATE)",
+  "@appointment": {
+    "description": "appointment description"
+  },
+  "from": "from (TRANSLATE)",
+  "@from": {
+    "description": "from description"
+  },
+  "phone": "phone (TRANSLATE)",
+  "@phone": {
+    "description": "phone description"
+  },
+  "noRouteDefined": "noRouteDefined (TRANSLATE)",
+  "@noRouteDefined": {
+    "description": "noRouteDefined description"
+  },
+  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "@meetingDetails": {
+    "description": "meetingDetails description"
+  },
+  "meetingId": "meetingId (TRANSLATE)",
+  "@meetingId": {
+    "description": "meetingId description"
+  },
+  "creator": "creator (TRANSLATE)",
+  "@creator": {
+    "description": "creator description"
+  },
+  "context": "context (TRANSLATE)",
+  "@context": {
+    "description": "context description"
+  },
+  "group": "group (TRANSLATE)",
+  "@group": {
+    "description": "group description"
+  },
+  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "@requestPrivateSession": {
+    "description": "requestPrivateSession description"
+  },
+  "privacyRequestSent": "privacyRequestSent (TRANSLATE)",
+  "@privacyRequestSent": {
+    "description": "privacyRequestSent description"
+  },
+  "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
+  "@failedToSendPrivacyRequest": {
+    "description": "failedToSendPrivacyRequest description"
+  },
+  "adminMetrics": "Admin Metrics",
+  "@adminMetrics": {
+    "description": "Description"
+  },
+  "overview": "Overview",
+  "@overview": {
+    "description": "Description"
+  },
+  "bookings": "Bookings",
+  "@bookings": {
+    "description": "Description"
+  },
+  "contentLibrary": "Content Library"
+}
