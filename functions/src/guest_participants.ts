@@ -10,9 +10,17 @@ const db = admin.firestore();
  * Track guest participant acceptance
  * Triggered when a guest accepts an invitation via web
  */
-export const trackGuestAcceptance = functions.https.onCall(async (data, context) => {
+interface GuestAcceptanceData {
+    appointmentId: string;
+    creatorId: string;
+    shareId?: string;
+    source?: string;
+    userAgent?: string;
+}
+
+export const trackGuestAcceptance = functions.https.onCall(async (request, context) => {
     try {
-        const { appointmentId, creatorId, shareId, source, userAgent } = data;
+        const { appointmentId, creatorId, shareId, source, userAgent } = request.data as GuestAcceptanceData;
 
         if (!appointmentId || !creatorId) {
             throw new functions.https.HttpsError(
@@ -74,9 +82,15 @@ export const trackGuestAcceptance = functions.https.onCall(async (data, context)
  * Convert guest participant to registered user
  * Triggered when a guest installs the app and completes registration
  */
-export const convertGuestToRegistered = functions.https.onCall(async (data, context) => {
+interface ConvertGuestData {
+    guestParticipantId: string;
+    userId: string;
+    appointmentId: string;
+}
+
+export const convertGuestToRegistered = functions.https.onCall(async (request, context) => {
     try {
-        const { guestParticipantId, userId, appointmentId } = data;
+        const { guestParticipantId, userId, appointmentId } = request.data as ConvertGuestData;
 
         if (!guestParticipantId || !userId || !appointmentId) {
             throw new functions.https.HttpsError(
@@ -147,9 +161,13 @@ export const convertGuestToRegistered = functions.https.onCall(async (data, cont
 /**
  * Get guest participants for an appointment
  */
-export const getGuestParticipants = functions.https.onCall(async (data, context) => {
+interface GetGuestParticipantsData {
+    appointmentId: string;
+}
+
+export const getGuestParticipants = functions.https.onCall(async (request, context) => {
     try {
-        const { appointmentId } = data;
+        const { appointmentId } = request.data as GetGuestParticipantsData;
 
         if (!appointmentId) {
             throw new functions.https.HttpsError(
@@ -185,32 +203,35 @@ export const getGuestParticipants = functions.https.onCall(async (data, context)
  * Clean up expired guest participants
  * Runs daily to remove guest records older than 30 days
  */
-export const cleanupExpiredGuests = functions.pubsub.schedule('every 24 hours').onRun(async (context) => {
-    try {
-        const thirtyDaysAgo = new Date();
-        thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
-
-        const snapshot = await db.collection('guest_participants')
-            .where('acceptedAt', '<', admin.firestore.Timestamp.fromDate(thirtyDaysAgo))
-            .where('status', '==', 'pending_app_install')
-            .get();
-
-        const batch = db.batch();
-        let deletedCount = 0;
-
-        snapshot.docs.forEach(doc => {
-            batch.delete(doc.ref);
-            deletedCount++;
-        });
-
-        if (deletedCount > 0) {
-            await batch.commit();
-            console.log(`Cleaned up ${deletedCount} expired guest participants`);
-        }
-
-        return { success: true, deletedCount };
-    } catch (error) {
-        console.error('Error cleaning up expired guests:', error);
-        throw error;
-    }
-}); 
+// Temporarily comment out the pubsub function until we can properly configure it
+// export const cleanupExpiredGuests = functions.pubsub
+//   .schedule('every 24 hours')
+//   .onRun(async (context: any) => {
+//     try {
+//         const thirtyDaysAgo = new Date();
+//         thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+// 
+//         const snapshot = await db.collection('guest_participants')
+//             .where('acceptedAt', '<', admin.firestore.Timestamp.fromDate(thirtyDaysAgo))
+//             .where('status', '==', 'pending_app_install')
+//             .get();
+// 
+//         const batch = db.batch();
+//         let deletedCount = 0;
+// 
+//         snapshot.docs.forEach(doc => {
+//             batch.delete(doc.ref);
+//             deletedCount++;
+//         });
+// 
+//         if (deletedCount > 0) {
+//             await batch.commit();
+//             console.log(`Cleaned up ${deletedCount} expired guest participants`);
+//         }
+// 
+//         return { success: true, deletedCount };
+//     } catch (error) {
+//         console.error('Error cleaning up expired guests:', error);
+//         throw error;
+//     }
+// }); 

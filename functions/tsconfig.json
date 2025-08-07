@@ -1,16 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "lib": ["ES2020"],
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext"],
     "strict": true,
     "esModuleInterop": true,
-    "outDir": "dist",
-    "rootDir": "src",
     "skipLibCheck": true,
-    "REDACTED_TOKEN": true
+    "REDACTED_TOKEN": true,
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
   },
   "include": [
-    "src"
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }

@@ -30,6 +30,7 @@ import {
   MoreHorizontal
 } from 'lucide-react'
 
+
 interface MeetingDetails {
   id: string
   title: string
@@ -101,30 +102,21 @@ export default function MeetingDetailsPage() {
         },
         {
           userId: 'user-2',
-          email: 'jane.smith@company.com',
-          displayName: 'Jane Smith',
+          email: 'sarah.smith@company.com',
+          displayName: 'Sarah Smith',
           status: 'confirmed',
           role: 'participant',
-          isRunningLate: false,
+          isRunningLate: true,
+          lateReason: 'Traffic delay',
+          estimatedArrival: '2024-01-15T14:15:00Z',
           avatarUrl: undefined
         },
         {
           userId: 'user-3',
           email: 'mike.johnson@company.com',
           displayName: 'Mike Johnson',
-          status: 'late',
-          role: 'participant',
-          isRunningLate: true,
-          lateReason: 'Traffic jam on highway',
-          estimatedArrival: '2024-01-15T14:15:00Z',
-          avatarUrl: undefined
-        },
-        {
-          userId: 'user-4',
-          email: 'sarah.wilson@company.com',
-          displayName: 'Sarah Wilson',
-          status: 'pending',
-          role: 'participant',
+          status: 'confirmed',
+          role: 'coHost',
           isRunningLate: false,
           avatarUrl: undefined
         }
@@ -132,63 +124,44 @@ export default function MeetingDetailsPage() {
       location: {
         latitude: 37.7749,
         longitude: -122.4194,
-        address: 'Conference Room A, 123 Business St, San Francisco, CA'
+        address: '123 Main Street, San Francisco, CA 94105'
       },
       chatId: 'chat-123',
       customForms: [
         {
           id: 'form-1',
-          title: 'Pre-meeting Survey',
-          description: 'Please share your priorities for this meeting',
+          title: 'Meeting Preferences',
+          description: 'Please indicate your preferences for the meeting format',
           type: 'survey',
-          isRequired: false
+          isRequired: true
         }
       ],
       isLocationTrackingEnabled: true,
-      reminderMinutes: 60
+      reminderMinutes: 15
     }
 
-    setTimeout(() => {
-      setMeeting(mockMeeting)
-      setLoading(false)
-    }, 1000)
+    setMeeting(mockMeeting)
+    setLoading(false)
   }, [meetingId])
 
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center h-64">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
-      </div>
-    )
-  }
-
-  if (!meeting) {
-    return (
-      <div className="text-center py-8">
-        <h2 className="text-xl font-semibold">Meeting not found</h2>
-        <p className="text-gray-600 mt-2">The meeting you're looking for doesn't exist.</p>
-      </div>
-    )
-  }
-
-  const currentParticipant = meeting.participants.find(p => p.userId === currentUser.id)
-  const isUpcoming = new Date(meeting.scheduledAt) > new Date()
-  const isActive = new Date() >= new Date(meeting.scheduledAt) && new Date() <= new Date(meeting.endTime)
-  const isCompleted = new Date() > new Date(meeting.endTime)
-
   const getMeetingStatusBadge = () => {
-    if (isCompleted) return <Badge variant="secondary">Completed</Badge>
-    if (isActive) return <Badge className="bg-green-500">Live</Badge>
-    if (isUpcoming) return <Badge className="bg-blue-500">Upcoming</Badge>
-    return <Badge variant="outline">Past</Badge>
+    const now = new Date()
+    const startTime = new Date(meeting?.scheduledAt || '')
+    const endTime = new Date(meeting?.endTime || '')
+
+    if (now < startTime) {
+      return <Badge className="bg-blue-500">Upcoming</Badge>
+    } else if (now >= startTime && now <= endTime) {
+      return <Badge className="bg-green-500">In Progress</Badge>
+    } else {
+      return <Badge className="bg-gray-500">Completed</Badge>
+    }
   }
 
   const getParticipantStatusIcon = (participant: MeetingParticipant) => {
     switch (participant.status) {
       case 'confirmed':
-        return participant.isRunningLate ? 
-          <AlertCircle className="h-4 w-4 text-orange-500" /> : 
-          <CheckCircle className="h-4 w-4 text-green-500" />
+        return <CheckCircle className="h-4 w-4 text-green-500" />
       case 'declined':
         return <XCircle className="h-4 w-4 text-red-500" />
       case 'late':
@@ -201,41 +174,35 @@ export default function MeetingDetailsPage() {
   }
 
   const getParticipantStatusText = (participant: MeetingParticipant) => {
-    if (participant.isRunningLate) return 'Running late'
     switch (participant.status) {
-      case 'confirmed': return 'Confirmed'
-      case 'declined': return 'Declined'
-      case 'late': return 'Running late'
-      case 'arrived': return 'Arrived'
-      default: return 'Pending'
+      case 'confirmed':
+        return 'Confirmed'
+      case 'declined':
+        return 'Declined'
+      case 'late':
+        return 'Running Late'
+      case 'arrived':
+        return 'Arrived'
+      default:
+        return 'Pending'
     }
   }
 
   const handleStatusChange = async (status: string) => {
-    // Mock API call
-    console.log(`Updating status to: ${status}`)
-    if (currentParticipant) {
-      currentParticipant.status = status as any
-      setMeeting({...meeting})
-    }
+    // In real app, update status via API
+    console.log('Status changed to:', status)
   }
 
   const handleMarkAsLate = async () => {
-    // Mock API call
-    console.log(`Marking as late: ${lateReason}, ${delayMinutes[0]} minutes`)
-    if (currentParticipant) {
-      currentParticipant.status = 'late'
-      currentParticipant.isRunningLate = true
-      currentParticipant.lateReason = lateReason
-      setMeeting({...meeting})
-    }
+    // In real app, update late status via API
+    console.log('Marked as late:', { reason: lateReason, delay: delayMinutes[0] })
     setIsLateDialogOpen(false)
     setLateReason('')
     setDelayMinutes([15])
   }
 
   const openDirections = () => {
-    if (meeting.location) {
+    if (meeting?.location) {
       const url = `https://www.google.com/maps/dir/?api=1&destination=${meeting.location.latitude},${meeting.location.longitude}`
       window.open(url, '_blank')
     }
@@ -247,6 +214,7 @@ export default function MeetingDetailsPage() {
   }
 
   const formatDuration = () => {
+    if (!meeting) return ''
     const start = new Date(meeting.scheduledAt)
     const end = new Date(meeting.endTime)
     const duration = (end.getTime() - start.getTime()) / (1000 * 60) // minutes
@@ -254,6 +222,39 @@ export default function MeetingDetailsPage() {
     const minutes = duration % 60
     return hours > 0 ? `${hours}h ${minutes}m` : `${minutes}m`
   }
+
+  if (loading) {
+    return (
+      <div className="container mx-auto p-6 max-w-6xl">
+        <div className="animate-pulse">
+          <div className="h-8 bg-gray-200 rounded w-1/3 mb-4"></div>
+          <div className="h-4 bg-gray-200 rounded w-1/2 mb-6"></div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="lg:col-span-2">
+              <div className="h-64 bg-gray-200 rounded"></div>
+            </div>
+            <div className="space-y-4">
+              <div className="h-32 bg-gray-200 rounded"></div>
+              <div className="h-32 bg-gray-200 rounded"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  if (!meeting) {
+    return (
+      <div className="container mx-auto p-6 max-w-6xl">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-gray-900 mb-2">Meeting Not Found</h1>
+          <p className="text-gray-600">The meeting you're looking for doesn't exist or you don't have permission to view it.</p>
+        </div>
+      </div>
+    )
+  }
+
+  const currentParticipant = meeting.participants.find(p => p.userId === currentUser.id)
 
   return (
     <div className="container mx-auto p-6 max-w-6xl">
@@ -342,60 +343,20 @@ export default function MeetingDetailsPage() {
                   )}
                 </CardContent>
               </Card>
-
-              {/* Participants Summary for Group Meetings */}
-              {meeting.type !== 'oneOnOne' && (
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Participant Status</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex gap-8">
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-green-600">
-                          {meeting.participants.filter(p => p.status === 'confirmed').length}
-                        </div>
-                        <div className="text-sm text-gray-600">Confirmed</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-orange-600">
-                          {meeting.participants.filter(p => p.isRunningLate).length}
-                        </div>
-                        <div className="text-sm text-gray-600">Late</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-gray-600">
-                          {meeting.participants.filter(p => p.status === 'pending').length}
-                        </div>
-                        <div className="text-sm text-gray-600">Pending</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-red-600">
-                          {meeting.participants.filter(p => p.status === 'declined').length}
-                        </div>
-                        <div className="text-sm text-gray-600">Declined</div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              )}
             </TabsContent>
 
             <TabsContent value="participants" className="space-y-4">
               {meeting.participants.map((participant) => (
                 <Card key={participant.userId}>
                   <CardContent className="p-4">
-                    <div className="flex items-center gap-4">
-                      <Avatar>
+                    <div className="flex items-start gap-4">
+                      <Avatar className="h-10 w-10">
                         <AvatarImage src={participant.avatarUrl} />
-                        <AvatarFallback>{participant.displayName[0]}</AvatarFallback>
+                        <AvatarFallback>{participant.displayName.charAt(0)}</AvatarFallback>
                       </Avatar>
                       <div className="flex-1">
-                        <div className="flex items-center gap-2">
-                          <h3 className="font-medium">{participant.displayName}</h3>
-                          {participant.userId === currentUser.id && (
-                            <Badge variant="outline" className="text-xs">You</Badge>
-                          )}
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="font-medium">{participant.displayName}</span>
                           {participant.role === 'host' && (
                             <Badge className="text-xs bg-orange-500">Host</Badge>
                           )}
@@ -436,15 +397,14 @@ export default function MeetingDetailsPage() {
                     <CardDescription>{meeting.location.address}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="bg-gray-100 h-64 rounded-lg flex items-center justify-center mb-4">
-                      {/* In a real app, integrate with Google Maps */}
-                      <div className="text-center">
-                        <MapPin className="h-8 w-8 mx-auto mb-2 text-gray-500" />
-                        <p className="text-sm text-gray-600">Interactive map would be here</p>
-                        <p className="text-xs text-gray-500 mt-1">
-                          {meeting.location.latitude}, {meeting.location.longitude}
-                        </p>
-                      </div>
+                    <div className="mb-4">
+                      <iframe
+                        src={`/widgets/map-preview.html?lat=${meeting.location.latitude}&lng=${meeting.location.longitude}&zoom=15&address=${encodeURIComponent(meeting.location.address || 'Meeting location')}`}
+                        width="100%"
+                        height="300"
+                        style={{ border: 'none', borderRadius: '8px' }}
+                        title="Map Preview"
+                      />
                     </div>
                     <Button onClick={openDirections} className="w-full">
                       <Navigation className="h-4 w-4 mr-2" />
@@ -507,88 +467,67 @@ export default function MeetingDetailsPage() {
                   </div>
                 )}
 
-                {!isCompleted && (
-                  <div className="space-y-2">
-                    {currentParticipant.status === 'pending' && (
-                      <>
-                        <Button 
-                          className="w-full" 
-                          onClick={() => handleStatusChange('confirmed')}
-                        >
-                          <CheckCircle className="h-4 w-4 mr-2" />
-                          Confirm Attendance
-                        </Button>
-                        <Button 
-                          variant="outline" 
-                          className="w-full"
-                          onClick={() => handleStatusChange('declined')}
-                        >
-                          <XCircle className="h-4 w-4 mr-2" />
-                          Decline
-                        </Button>
-                      </>
-                    )}
-                    
-                    {currentParticipant.status === 'confirmed' && !currentParticipant.isRunningLate && (
-                      <Dialog open={isLateDialogOpen} onOpenChange={setIsLateDialogOpen}>
-                        <DialogTrigger asChild>
-                          <Button variant="outline" className="w-full">
-                            <AlertCircle className="h-4 w-4 mr-2" />
-                            I'm Running Late
-                          </Button>
-                        </DialogTrigger>
-                        <DialogContent>
-                          <DialogHeader>
-                            <DialogTitle>Update Your Status</DialogTitle>
-                            <DialogDescription>
-                              Let other participants know you're running late
-                            </DialogDescription>
-                          </DialogHeader>
-                          <div className="space-y-4">
-                            <div>
-                              <Label htmlFor="reason">Reason (optional)</Label>
-                              <Textarea
-                                id="reason"
-                                placeholder="Traffic, delayed train, etc."
-                                value={lateReason}
-                                onChange={(e) => setLateReason(e.target.value)}
-                              />
-                            </div>
-                            <div>
-                              <Label>Expected delay: {delayMinutes[0]} minutes</Label>
-                              <Slider
-                                value={delayMinutes}
-                                onValueChange={setDelayMinutes}
-                                max={60}
-                                min={5}
-                                step={5}
-                                className="mt-2"
-                              />
-                            </div>
-                          </div>
-                          <DialogFooter>
-                            <Button variant="outline" onClick={() => setIsLateDialogOpen(false)}>
-                              Cancel
-                            </Button>
-                            <Button onClick={handleMarkAsLate}>
-                              Notify Participants
-                            </Button>
-                          </DialogFooter>
-                        </DialogContent>
-                      </Dialog>
-                    )}
-                    
-                    {currentParticipant.isRunningLate && isUpcoming && (
-                      <Button 
-                        className="w-full" 
-                        onClick={() => handleStatusChange('arrived')}
-                      >
-                        <UserCheck className="h-4 w-4 mr-2" />
-                        I've Arrived
+                <div className="space-y-2">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="w-full"
+                    onClick={() => handleStatusChange('arrived')}
+                  >
+                    Mark as Arrived
+                  </Button>
+                  
+                  <Dialog open={isLateDialogOpen} onOpenChange={setIsLateDialogOpen}>
+                    <DialogTrigger asChild>
+                      <Button variant="outline" size="sm" className="w-full">
+                        Mark as Running Late
                       </Button>
-                    )}
-                  </div>
-                )}
+                    </DialogTrigger>
+                    <DialogContent>
+                      <DialogHeader>
+                        <DialogTitle>Mark as Running Late</DialogTitle>
+                        <DialogDescription>
+                          Let others know you'll be late and provide a reason.
+                        </DialogDescription>
+                      </DialogHeader>
+                      <div className="space-y-4">
+                        <div>
+                          <Label htmlFor="delay">Delay (minutes)</Label>
+                          <Slider
+                            id="delay"
+                            value={delayMinutes}
+                            onValueChange={setDelayMinutes}
+                            max={60}
+                            min={5}
+                            step={5}
+                            className="mt-2"
+                          />
+                          <p className="text-sm text-gray-500 mt-1">
+                            {delayMinutes[0]} minutes delay
+                          </p>
+                        </div>
+                        <div>
+                          <Label htmlFor="reason">Reason (optional)</Label>
+                          <Textarea
+                            id="reason"
+                            placeholder="e.g., Traffic, public transport delay..."
+                            value={lateReason}
+                            onChange={(e) => setLateReason(e.target.value)}
+                            className="mt-2"
+                          />
+                        </div>
+                      </div>
+                      <DialogFooter>
+                        <Button variant="outline" onClick={() => setIsLateDialogOpen(false)}>
+                          Cancel
+                        </Button>
+                        <Button onClick={handleMarkAsLate}>
+                          Mark as Late
+                        </Button>
+                      </DialogFooter>
+                    </DialogContent>
+                  </Dialog>
+                </div>
               </CardContent>
             </Card>
           )}
@@ -599,26 +538,31 @@ export default function MeetingDetailsPage() {
               <CardTitle>Quick Actions</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
-              {meeting.chatId && (
-                <Button variant="outline" className="w-full justify-start">
-                  <MessageCircle className="h-4 w-4 mr-2" />
-                  Open Chat
-                </Button>
-              )}
-              {meeting.location && (
-                <Button variant="outline" className="w-full justify-start" onClick={openDirections}>
-                  <Navigation className="h-4 w-4 mr-2" />
-                  Get Directions
-                </Button>
-              )}
-              <Button variant="outline" className="w-full justify-start">
+              <Button variant="outline" size="sm" className="w-full justify-start">
+                <Phone className="h-4 w-4 mr-2" />
+                Call Host
+              </Button>
+              <Button variant="outline" size="sm" className="w-full justify-start">
+                <MessageCircle className="h-4 w-4 mr-2" />
+                Send Message
+              </Button>
+              <Button variant="outline" size="sm" className="w-full justify-start">
                 <Calendar className="h-4 w-4 mr-2" />
-                Add to Calendar
+                Reschedule
               </Button>
-              <Button variant="outline" className="w-full justify-start">
-                <Share className="h-4 w-4 mr-2" />
-                Share Meeting
-              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Meeting Notes */}
+          <Card>
+            <CardHeader>
+              <CardTitle>Notes</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Textarea 
+                placeholder="Add your meeting notes here..."
+                className="min-h-[100px]"
+              />
             </CardContent>
           </Card>
         </div>

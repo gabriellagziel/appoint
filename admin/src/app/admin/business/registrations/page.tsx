@@ -517,7 +517,7 @@ export default function BusinessRegistrationsPage() {
                                 <AlertDialogFooter>
                                   <AlertDialogCancel>Cancel</AlertDialogCancel>
                                   <AlertDialogAction
-                                    variant="destructive"
+                                    className="bg-red-600 hover:bg-red-700 text-white"
                                     onClick={() => handleReject(business.id, 'Incomplete documentation')}
                                   >
                                     Reject

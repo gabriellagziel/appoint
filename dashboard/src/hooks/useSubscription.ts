@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useAuth } from '@/contexts/AuthContext'
-import { getBusinessSubscription, Subscription } from '@/services/subscription_service'
-import { getPlan, Plan } from '@/services/pricing_service'
+import { getBusinessSubscription } from '@/services/subscription_service'
+import { getPlan, Plan, Subscription } from '@/services/pricing_service'
 
 export const useSubscription = () => {
   const { user } = useAuth()
