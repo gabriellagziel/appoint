@@ -2,6 +2,58 @@ name: app-oint-web-platform
 region: nyc1
 
 services:
+  - name: marketing
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: feature/web-only
+    source_dir: "marketing"
+    build_command: "npm ci && npm run build"
+    run_command: "npm start"
+    http_port: 3000
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /
+      initial_delay_seconds: 30
+      period_seconds: 30
+      timeout_seconds: 10
+      success_threshold: 1
+      failure_threshold: 3
+    routes:
+      - path: /
+    envs:
+      - key: NODE_ENV
+        value: "production"
+      - key: PORT
+        value: "3000"
+
+  - name: business-portal
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: feature/web-only
+    source_dir: "business"
+    build_command: "npm ci && npm run build --prefix business"
+    run_command: "npm start --prefix business"
+    http_port: 3000
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /health
+      initial_delay_seconds: 10
+      period_seconds: 30
+      timeout_seconds: 5
+      success_threshold: 1
+      failure_threshold: 3
+    routes:
+      - path: /business
+    envs:
+      - key: NODE_ENV
+        value: "production"
+      - key: PORT
+        value: "3000"
+
   - name: enterprise-onboarding
     environment_slug: node-js
     github:
@@ -27,3 +79,65 @@ services:
         value: "production"
       - key: PORT
         value: "3000"
+
+  - name: admin-panel
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: feature/web-only
+    source_dir: "admin"
+    build_command: "npm ci && npm run build --prefix admin"
+    run_command: "npm start --prefix admin"
+    http_port: 3000
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /health
+      initial_delay_seconds: 10
+      period_seconds: 30
+      timeout_seconds: 5
+      success_threshold: 1
+      failure_threshold: 3
+    routes:
+      - path: /admin
+    envs:
+      - key: NODE_ENV
+        value: "production"
+      - key: PORT
+        value: "3000"
+
+  - name: api
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: feature/web-only
+    source_dir: "functions"
+    run_command: "npm start"
+    http_port: 8080
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /health/liveness
+      initial_delay_seconds: 10
+      period_seconds: 30
+      timeout_seconds: 5
+      success_threshold: 1
+      failure_threshold: 3
+    routes:
+      - path: /api
+    envs:
+      - key: NODE_ENV
+        value: "production"
+      - key: PORT
+        value: "8080"
+
+static_sites:
+  - name: docs-site
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: feature/web-only
+    source_dir: "docs"
+    routes:
+      - path: /docs
+    build_command: "npm ci && npm run build --prefix docs"
+    output_dir: "docs"
