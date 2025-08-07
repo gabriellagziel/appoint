@@ -41,7 +41,7 @@ export default function NewAppointmentPage() {
         throw new Error('User not authenticated')
       }
 
-      const businessId = getUserBusinessId(user)
+      const businessId = getUserBusinessId()
       if (!businessId) {
         throw new Error('Business ID not found')
       }

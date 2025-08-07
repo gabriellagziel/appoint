@@ -412,7 +412,8 @@ export async function getUserStats(): Promise<{
         const users = querySnapshot.docs.map(doc => ({
             ...doc.data(),
             createdAt: doc.data().createdAt?.toDate() || new Date(),
-        }));
+            status: doc.data().status || 'active',
+        })) as User[];
 
         const now = new Date();
         const thisMonth = new Date(now.getFullYear(), now.getMonth(), 1);

@@ -2,6 +2,7 @@ import * as admin from 'firebase-admin';
 import { onDocumentUpdated } from 'firebase-functions/v2/firestore';
 import { onRequest } from 'firebase-functions/v2/https';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
+import { HttpsError, onCall } from 'firebase-functions/v2/https';
 
 const db = admin.firestore();
 
@@ -404,3 +405,756 @@ export const handleAmbassadorRemoval = onDocumentUpdated(
       return;
     }
   });
+
+// Get all ambassadors with filters
+export const getAmbassadors = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { filters } = request.data;
+    let query = db.collection('ambassador_profiles');
+
+    if (filters?.status && filters.status !== 'all') {
+      query = query.where('status', '==', filters.status);
+    }
+    if (filters?.tier && filters.tier !== 'all') {
+      query = query.where('tier', '==', filters.tier);
+    }
+    if (filters?.country && filters.country !== 'all') {
+      query = query.where('countryCode', '==', filters.country);
+    }
+    if (filters?.language && filters.language !== 'all') {
+      query = query.where('languageCode', '==', filters.language);
+    }
+
+    const snapshot = await query.get();
+    const ambassadors = [];
+
+    for (const doc of snapshot.docs) {
+      const data = doc.data();
+      
+      // Get user details
+      const userDoc = await db.collection('users').doc(data.userId).get();
+      const userData = userDoc.exists ? userDoc.data() : {};
+
+      ambassadors.push({
+        id: doc.id,
+        userId: data.userId,
+        name: userData.displayName || userData.email || 'Unknown',
+        email: userData.email || '',
+        country: data.countryCode,
+        language: data.languageCode,
+        status: data.status,
+        tier: data.tier,
+        referrals: data.totalReferrals || 0,
+        monthlyReferrals: data.monthlyReferrals || 0,
+        totalReferrals: data.totalReferrals || 0,
+        joinedAt: data.assignedAt?.toDate?.()?.toISOString() || data.assignedAt,
+        shareCode: data.shareCode,
+        rejectionReason: data.rejectionReason,
+      });
+    }
+
+    return ambassadors;
+  } catch (error) {
+    console.error('Error getting ambassadors:', error);
+    throw new HttpsError('internal', 'Failed to get ambassadors');
+  }
+});
+
+// Get pending ambassadors
+export const getPendingAmbassadors = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const snapshot = await db.collection('ambassador_pending').get();
+    const pendingAmbassadors = [];
+
+    for (const doc of snapshot.docs) {
+      const data = doc.data();
+      
+      // Get user details
+      const userDoc = await db.collection('users').doc(data.userId).get();
+      const userData = userDoc.exists ? userDoc.data() : {};
+
+      pendingAmbassadors.push({
+        userId: data.userId,
+        name: userData.displayName || userData.email || 'Unknown',
+        email: userData.email || '',
+        country: data.countryCode,
+        language: data.languageCode,
+        referralCount: data.referralCount || 0,
+        pendingSince: data.pendingSince?.toDate?.()?.toISOString() || data.pendingSince,
+      });
+    }
+
+    return pendingAmbassadors;
+  } catch (error) {
+    console.error('Error getting pending ambassadors:', error);
+    throw new HttpsError('internal', 'Failed to get pending ambassadors');
+  }
+});
+
+// Get ambassador flags
+export const getAmbassadorFlags = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const snapshot = await db.collection('ambassador_flags').get();
+    const flags = [];
+
+    for (const doc of snapshot.docs) {
+      const data = doc.data();
+      flags.push({
+        userId: data.userId,
+        flagType: data.flagType,
+        reason: data.reason,
+        flaggedAt: data.flaggedAt?.toDate?.()?.toISOString() || data.flaggedAt,
+        reviewed: data.reviewed || false,
+        reviewedBy: data.reviewedBy,
+        reviewedAt: data.reviewedAt?.toDate?.()?.toISOString() || data.reviewedAt,
+      });
+    }
+
+    return flags;
+  } catch (error) {
+    console.error('Error getting ambassador flags:', error);
+    throw new HttpsError('internal', 'Failed to get ambassador flags');
+  }
+});
+
+// Review ambassador flag
+export const reviewAmbassadorFlag = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { userId, reviewedBy } = request.data;
+    
+    if (!userId || !reviewedBy) {
+      throw new HttpsError('invalid-argument', 'User ID and reviewer are required');
+    }
+
+    const now = admin.firestore.Timestamp.now();
+    
+    await db.collection('ambassador_flags')
+      .where('userId', '==', userId)
+      .where('reviewed', '==', false)
+      .get()
+      .then(snapshot => {
+        const batch = db.batch();
+        snapshot.docs.forEach(doc => {
+          batch.update(doc.ref, {
+            reviewed: true,
+            reviewedBy: reviewedBy,
+            reviewedAt: now,
+          });
+        });
+        return batch.commit();
+      });
+
+    return { success: true, message: 'Flag reviewed successfully' };
+  } catch (error) {
+    console.error('Error reviewing ambassador flag:', error);
+    throw new HttpsError('internal', 'Failed to review flag');
+  }
+});
+
+// Get ambassador statistics
+export const getAmbassadorStats = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const [ambassadorsSnapshot, pendingSnapshot] = await Promise.all([
+      db.collection('ambassador_profiles').get(),
+      db.collection('ambassador_pending').get(),
+    ]);
+
+    const ambassadors = ambassadorsSnapshot.docs.map(doc => doc.data());
+    const pending = pendingSnapshot.docs.map(doc => doc.data());
+
+    const totalAmbassadors = ambassadors.length;
+    const activeAmbassadors = ambassadors.filter(a => a.status === 'approved').length;
+    const pendingAmbassadors = pending.length;
+    const totalReferrals = ambassadors.reduce((sum, a) => sum + (a.totalReferrals || 0), 0);
+    const monthlyReferrals = ambassadors.reduce((sum, a) => sum + (a.monthlyReferrals || 0), 0);
+    const averageReferrals = totalAmbassadors > 0 ? totalReferrals / totalAmbassadors : 0;
+
+    const tierDistribution = {
+      basic: ambassadors.filter(a => a.tier === 'basic').length,
+      premium: ambassadors.filter(a => a.tier === 'premium').length,
+      lifetime: ambassadors.filter(a => a.tier === 'lifetime').length,
+    };
+
+    return {
+      totalAmbassadors,
+      activeAmbassadors,
+      pendingAmbassadors,
+      totalReferrals,
+      monthlyReferrals,
+      averageReferrals: Math.round(averageReferrals * 100) / 100,
+      tierDistribution,
+    };
+  } catch (error) {
+    console.error('Error getting ambassador stats:', error);
+    throw new HttpsError('internal', 'Failed to get ambassador stats');
+  }
+});
+
+// Promote ambassador tier
+export const promoteAmbassadorTier = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { userId, newTier } = request.data;
+    
+    if (!userId || !newTier) {
+      throw new HttpsError('invalid-argument', 'User ID and new tier are required');
+    }
+
+    const validTiers = ['basic', 'premium', 'lifetime'];
+    if (!validTiers.includes(newTier)) {
+      throw new HttpsError('invalid-argument', 'Invalid tier');
+    }
+
+    await db.collection('ambassador_profiles').doc(userId).update({
+      tier: newTier,
+      tierChangedAt: admin.firestore.FieldValue.serverTimestamp(),
+      lastActivityDate: admin.firestore.FieldValue.serverTimestamp(),
+    });
+
+    // Log tier upgrade
+    await db.collection('ambassador_tier_upgrades').add({
+      ambassadorId: userId,
+      previousTier: 'manual_promotion',
+      newTier: newTier,
+      upgradedAt: admin.firestore.FieldValue.serverTimestamp(),
+      upgradedBy: request.auth.uid,
+      reason: 'Manual promotion by admin',
+    });
+
+    return { success: true, message: `Ambassador promoted to ${newTier} tier` };
+  } catch (error) {
+    console.error('Error promoting ambassador tier:', error);
+    throw new HttpsError('internal', 'Failed to promote ambassador tier');
+  }
+});
+
+// Demote ambassador
+export const demoteAmbassador = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { userId, reason } = request.data;
+    
+    if (!userId || !reason) {
+      throw new HttpsError('invalid-argument', 'User ID and reason are required');
+    }
+
+    const now = admin.firestore.Timestamp.now();
+
+    await db.runTransaction(async (transaction) => {
+      // Update user status
+      transaction.update(db.collection('users').doc(userId), {
+        ambassadorStatus: 'inactive',
+        role: 'client',
+        ambassadorRemovedAt: now,
+        updatedAt: now,
+      });
+
+      // Update ambassador profile
+      transaction.update(db.collection('ambassador_profiles').doc(userId), {
+        status: 'inactive',
+        statusChangedAt: now,
+        lastActivityDate: now,
+      });
+
+      // Log demotion
+      transaction.set(db.collection('ambassador_demotions').doc(), {
+        ambassadorId: userId,
+        reason: reason,
+        demotedAt: now,
+        demotedBy: request.auth.uid,
+      });
+    });
+
+    return { success: true, message: 'Ambassador demoted successfully' };
+  } catch (error) {
+    console.error('Error demoting ambassador:', error);
+    throw new HttpsError('internal', 'Failed to demote ambassador');
+  }
+});
+
+// Send mass message to ambassadors
+export const sendAmbassadorMassMessage = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { message, filters } = request.data;
+    
+    if (!message) {
+      throw new HttpsError('invalid-argument', 'Message is required');
+    }
+
+    let query = db.collection('ambassador_profiles').where('status', '==', 'approved');
+
+    if (filters?.tier && filters.tier !== 'all') {
+      query = query.where('tier', '==', filters.tier);
+    }
+    if (filters?.country && filters.country !== 'all') {
+      query = query.where('countryCode', '==', filters.country);
+    }
+
+    const snapshot = await query.get();
+    const userIds = snapshot.docs.map(doc => doc.data().userId);
+
+    // Create notifications for all ambassadors
+    const batch = db.batch();
+    userIds.forEach(userId => {
+      const notificationRef = db.collection('notifications').doc();
+      batch.set(notificationRef, {
+        userId: userId,
+        type: 'admin_message',
+        title: 'Admin Message',
+        body: message,
+        createdAt: admin.firestore.FieldValue.serverTimestamp(),
+        read: false,
+      });
+    });
+
+    await batch.commit();
+
+    return { 
+      success: true, 
+      message: `Message sent to ${userIds.length} ambassadors` 
+    };
+  } catch (error) {
+    console.error('Error sending mass message:', error);
+    throw new HttpsError('internal', 'Failed to send mass message');
+  }
+});
+
+// Get automation logs
+export const getAmbassadorAutomationLogs = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { limit = 100 } = request.data;
+    
+    const snapshot = await db.collection('ambassador_automation_logs')
+      .orderBy('timestamp', 'desc')
+      .limit(limit)
+      .get();
+
+    return snapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data(),
+      timestamp: doc.data().timestamp?.toDate?.()?.toISOString() || doc.data().timestamp,
+    }));
+  } catch (error) {
+    console.error('Error getting automation logs:', error);
+    throw new HttpsError('internal', 'Failed to get automation logs');
+  }
+});
+
+// Get tier upgrade logs
+export const getAmbassadorTierUpgradeLogs = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { limit = 100 } = request.data;
+    
+    const snapshot = await db.collection('ambassador_tier_upgrades')
+      .orderBy('upgradedAt', 'desc')
+      .limit(limit)
+      .get();
+
+    return snapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data(),
+      upgradedAt: doc.data().upgradedAt?.toDate?.()?.toISOString() || doc.data().upgradedAt,
+    }));
+  } catch (error) {
+    console.error('Error getting tier upgrade logs:', error);
+    throw new HttpsError('internal', 'Failed to get tier upgrade logs');
+  }
+});
+
+// Get fraud logs
+export const getAmbassadorFraudLogs = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { limit = 100 } = request.data;
+    
+    const snapshot = await db.collection('ambassador_flags')
+      .orderBy('flaggedAt', 'desc')
+      .limit(limit)
+      .get();
+
+    return snapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data(),
+      flaggedAt: doc.data().flaggedAt?.toDate?.()?.toISOString() || doc.data().flaggedAt,
+      reviewedAt: doc.data().reviewedAt?.toDate?.()?.toISOString() || doc.data().reviewedAt,
+    }));
+  } catch (error) {
+    console.error('Error getting fraud logs:', error);
+    throw new HttpsError('internal', 'Failed to get fraud logs');
+  }
+});
+
+// Export ambassadors to CSV
+export const exportAmbassadorsToCSV = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { filters } = request.data;
+    let query = db.collection('ambassador_profiles');
+
+    if (filters?.status && filters.status !== 'all') {
+      query = query.where('status', '==', filters.status);
+    }
+    if (filters?.tier && filters.tier !== 'all') {
+      query = query.where('tier', '==', filters.tier);
+    }
+    if (filters?.country && filters.country !== 'all') {
+      query = query.where('countryCode', '==', filters.country);
+    }
+    if (filters?.language && filters.language !== 'all') {
+      query = query.where('languageCode', '==', filters.language);
+    }
+
+    const snapshot = await query.get();
+    const ambassadors = [];
+
+    for (const doc of snapshot.docs) {
+      const data = doc.data();
+      
+      // Get user details
+      const userDoc = await db.collection('users').doc(data.userId).get();
+      const userData = userDoc.exists ? userDoc.data() : {};
+
+      ambassadors.push({
+        name: userData.displayName || userData.email || 'Unknown',
+        email: userData.email || '',
+        country: data.countryCode,
+        language: data.languageCode,
+        status: data.status,
+        tier: data.tier,
+        totalReferrals: data.totalReferrals || 0,
+        monthlyReferrals: data.monthlyReferrals || 0,
+        joinedAt: data.assignedAt?.toDate?.()?.toISOString() || data.assignedAt,
+        shareCode: data.shareCode,
+      });
+    }
+
+    // Convert to CSV
+    const headers = ['Name', 'Email', 'Country', 'Language', 'Status', 'Tier', 'Total Referrals', 'Monthly Referrals', 'Joined At', 'Share Code'];
+    const csvRows = [headers.join(',')];
+    
+    ambassadors.forEach(ambassador => {
+      const row = [
+        ambassador.name,
+        ambassador.email,
+        ambassador.country,
+        ambassador.language,
+        ambassador.status,
+        ambassador.tier,
+        ambassador.totalReferrals,
+        ambassador.monthlyReferrals,
+        ambassador.joinedAt,
+        ambassador.shareCode || '',
+      ].map(field => `"${field}"`).join(',');
+      csvRows.push(row);
+    });
+
+    return csvRows.join('\n');
+  } catch (error) {
+    console.error('Error exporting ambassadors:', error);
+    throw new HttpsError('internal', 'Failed to export ambassadors');
+  }
+});
+
+// Get ambassador details
+export const getAmbassadorDetails = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { userId } = request.data;
+    
+    if (!userId) {
+      throw new HttpsError('invalid-argument', 'User ID is required');
+    }
+
+    const [profileDoc, userDoc] = await Promise.all([
+      db.collection('ambassador_profiles').doc(userId).get(),
+      db.collection('users').doc(userId).get(),
+    ]);
+
+    if (!profileDoc.exists) {
+      throw new HttpsError('not-found', 'Ambassador profile not found');
+    }
+
+    const profile = profileDoc.data();
+    const userData = userDoc.exists ? userDoc.data() : {};
+
+    return {
+      ...profile,
+      name: userData.displayName || userData.email || 'Unknown',
+      email: userData.email || '',
+    };
+  } catch (error) {
+    console.error('Error getting ambassador details:', error);
+    throw new HttpsError('internal', 'Failed to get ambassador details');
+  }
+});
+
+// Update ambassador settings
+export const updateAmbassadorSettings = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { userId, settings } = request.data;
+    
+    if (!userId || !settings) {
+      throw new HttpsError('invalid-argument', 'User ID and settings are required');
+    }
+
+    const updateData: any = {
+      lastActivityDate: admin.firestore.FieldValue.serverTimestamp(),
+    };
+
+    if (settings.status) {
+      updateData.status = settings.status;
+      updateData.statusChangedAt = admin.firestore.FieldValue.serverTimestamp();
+    }
+    if (settings.tier) {
+      updateData.tier = settings.tier;
+      updateData.tierChangedAt = admin.firestore.FieldValue.serverTimestamp();
+    }
+
+    await db.collection('ambassador_profiles').doc(userId).update(updateData);
+
+    return { success: true, message: 'Ambassador settings updated successfully' };
+  } catch (error) {
+    console.error('Error updating ambassador settings:', error);
+    throw new HttpsError('internal', 'Failed to update ambassador settings');
+  }
+});
+
+// Get ambassador performance
+export const getAmbassadorPerformance = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { userId } = request.data;
+    
+    if (!userId) {
+      throw new HttpsError('invalid-argument', 'User ID is required');
+    }
+
+    const [profileDoc, referralsSnapshot] = await Promise.all([
+      db.collection('ambassador_profiles').doc(userId).get(),
+      db.collection('ambassador_referrals')
+        .where('ambassadorId', '==', userId)
+        .where('isActive', '==', true)
+        .get(),
+    ]);
+
+    if (!profileDoc.exists) {
+      throw new HttpsError('not-found', 'Ambassador profile not found');
+    }
+
+    const profile = profileDoc.data();
+    const referrals = referralsSnapshot.docs.map(doc => doc.data());
+
+    // Calculate performance metrics
+    const totalReferrals = referrals.length;
+    const monthlyReferrals = profile.monthlyReferrals || 0;
+    const conversionRate = totalReferrals > 0 ? (monthlyReferrals / totalReferrals) * 100 : 0;
+    const averageReferralsPerMonth = totalReferrals > 0 ? totalReferrals / 12 : 0;
+
+    // Calculate tier progress
+    const currentTier = profile.tier;
+    let required = 0;
+    switch (currentTier) {
+      case 'basic':
+        required = 50; // Premium tier
+        break;
+      case 'premium':
+        required = 1000; // Lifetime tier
+        break;
+      default:
+        required = 0;
+    }
+
+    const tierProgress = {
+      current: totalReferrals,
+      required: required,
+      progress: required > 0 ? Math.min((totalReferrals / required) * 100, 100) : 100,
+    };
+
+    return {
+      totalReferrals,
+      monthlyReferrals,
+      conversionRate: Math.round(conversionRate * 100) / 100,
+      averageReferralsPerMonth: Math.round(averageReferralsPerMonth * 100) / 100,
+      tierProgress,
+    };
+  } catch (error) {
+    console.error('Error getting ambassador performance:', error);
+    throw new HttpsError('internal', 'Failed to get ambassador performance');
+  }
+});
+
+// Flag ambassador for review
+export const flagAmbassador = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { userId, flagType, reason } = request.data;
+    
+    if (!userId || !flagType || !reason) {
+      throw new HttpsError('invalid-argument', 'User ID, flag type, and reason are required');
+    }
+
+    const now = admin.firestore.Timestamp.now();
+    
+    await db.collection('ambassador_flags').add({
+      userId: userId,
+      flagType: flagType,
+      reason: reason,
+      flaggedAt: now,
+      reviewed: false,
+      flaggedBy: request.auth.uid,
+    });
+
+    return { success: true, message: 'Ambassador flagged for review' };
+  } catch (error) {
+    console.error('Error flagging ambassador:', error);
+    throw new HttpsError('internal', 'Failed to flag ambassador');
+  }
+});
+
+// Get ambassador rewards
+export const getAmbassadorRewards = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { userId } = request.data;
+    
+    if (!userId) {
+      throw new HttpsError('invalid-argument', 'User ID is required');
+    }
+
+    const snapshot = await db.collection('ambassador_rewards')
+      .where('ambassadorId', '==', userId)
+      .orderBy('earnedAt', 'desc')
+      .get();
+
+    return snapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data(),
+      earnedAt: doc.data().earnedAt?.toDate?.()?.toISOString() || doc.data().earnedAt,
+      expiresAt: doc.data().expiresAt?.toDate?.()?.toISOString() || doc.data().expiresAt,
+    }));
+  } catch (error) {
+    console.error('Error getting ambassador rewards:', error);
+    throw new HttpsError('internal', 'Failed to get ambassador rewards');
+  }
+});
+
+// Award reward to ambassador
+export const awardAmbassadorReward = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { userId, rewardType, description } = request.data;
+    
+    if (!userId || !rewardType) {
+      throw new HttpsError('invalid-argument', 'User ID and reward type are required');
+    }
+
+    const now = admin.firestore.Timestamp.now();
+    const rewardId = `${userId}_${rewardType}_${Date.now()}`;
+
+    await db.collection('ambassador_rewards').doc(rewardId).set({
+      id: rewardId,
+      ambassadorId: userId,
+      type: rewardType,
+      tier: 'basic',
+      earnedAt: now,
+      expiresAt: admin.firestore.Timestamp.fromDate(new Date(2099, 11, 31)),
+      isActive: true,
+      description: description || `Manual reward: ${rewardType}`,
+      awardedBy: request.auth.uid,
+    });
+
+    return { success: true, message: 'Reward awarded successfully' };
+  } catch (error) {
+    console.error('Error awarding reward:', error);
+    throw new HttpsError('internal', 'Failed to award reward');
+  }
+});
+
+// Revoke ambassador reward
+export const revokeAmbassadorReward = onCall(async (request) => {
+  if (!request.auth) {
+    throw new HttpsError('unauthenticated', 'User must be authenticated');
+  }
+
+  try {
+    const { userId, rewardId } = request.data;
+    
+    if (!userId || !rewardId) {
+      throw new HttpsError('invalid-argument', 'User ID and reward ID are required');
+    }
+
+    await db.collection('ambassador_rewards').doc(rewardId).update({
+      isActive: false,
+      revokedAt: admin.firestore.FieldValue.serverTimestamp(),
+      revokedBy: request.auth.uid,
+    });
+
+    return { success: true, message: 'Reward revoked successfully' };
+  } catch (error) {
+    console.error('Error revoking reward:', error);
+    throw new HttpsError('internal', 'Failed to revoke reward');
+  }
+});

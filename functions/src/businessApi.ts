@@ -724,3 +724,18 @@ export const resetMonthlyQuotas = onSchedule('0 0 1 * *', async () => {
     }
   }
 });
+
+// Export functions for testing
+export const generateBusinessApiKey = generateApiKey;
+export const recordApiUsage = logUsage;
+
+// Export billing functions (these will be implemented in billingEngine.ts)
+export const generateMonthlyInvoice = async (businessId: string, businessData: any) => {
+  // This will be implemented in billingEngine.ts
+  console.log('Generating monthly invoice for business:', businessId);
+};
+
+export const checkOverdueInvoices = async () => {
+  // This will be implemented in billingEngine.ts
+  console.log('Checking overdue invoices');
+};
