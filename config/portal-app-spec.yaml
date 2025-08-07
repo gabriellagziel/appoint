@@ -1,0 +1,48 @@
+name: app-oint-portal
+region: nyc1
+
+services:
+  - name: portal
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "marketing"
+    build_command: "npm ci && echo 'Creating App-Oint Portal...' && cat > pages/_app.js << 'EOF' && export default function App({ Component, pageProps }) { return <Component {...pageProps} /> } && EOF && cat > pages/index.js << 'EOF' && export default function Home() { return ( <div style={{ fontFamily: 'Arial, sans-serif', margin: 0, padding: '20px', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', minHeight: '100vh' }}> <div style={{ maxWidth: '1200px', margin: '0 auto', background: 'white', padding: '40px', borderRadius: '12px', boxShadow: '0 8px 32px rgba(0,0,0,0.1)' }}> <header style={{ textAlign: 'center', marginBottom: '40px' }}> <h1 style={{ color: '#333', fontSize: '2.5rem', marginBottom: '10px' }}>App-Oint</h1> <p style={{ color: '#666', fontSize: '1.2rem' }}>Complete Appointment Management Platform</p> </header> <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginBottom: '40px' }}> <div style={{ background: '#f8f9fa', padding: '30px', borderRadius: '8px', border: '2px solid #e9ecef' }}> <h2 style={{ color: '#495057', marginBottom: '15px' }}>🏢 Business</h2> <p style={{ color: '#6c757d', marginBottom: '20px' }}>Complete business management solution with appointment scheduling, customer management, and analytics.</p> <a href='https://business.app-oint.com' style={{ display: 'inline-block', background: '#007bff', color: 'white', padding: '12px 24px', borderRadius: '6px', textDecoration: 'none', fontWeight: 'bold' }}>Access Business Portal</a> </div> <div style={{ background: '#f8f9fa', padding: '30px', borderRadius: '8px', border: '2px solid #e9ecef' }}> <h2 style={{ color: '#495057', marginBottom: '15px' }}>🏢 Enterprise</h2> <p style={{ color: '#6c757d', marginBottom: '20px' }}>Advanced enterprise features with multi-location support, advanced reporting, and custom integrations.</p> <a href='https://enterprise.app-oint.com' style={{ display: 'inline-block', background: '#28a745', color: 'white', padding: '12px 24px', borderRadius: '6px', textDecoration: 'none', fontWeight: 'bold' }}>Access Enterprise Portal</a> </div> <div style={{ background: '#f8f9fa', padding: '30px', borderRadius: '8px', border: '2px solid #e9ecef' }}> <h2 style={{ color: '#495057', marginBottom: '15px' }}>📱 Mobile Apps</h2> <p style={{ color: '#6c757d', marginBottom: '20px' }}>Native mobile applications for iOS and Android with offline capabilities and push notifications.</p> <a href='#' style={{ display: 'inline-block', background: '#6f42c1', color: 'white', padding: '12px 24px', borderRadius: '6px', textDecoration: 'none', fontWeight: 'bold' }}>Download Mobile Apps</a> </div> <div style={{ background: '#f8f9fa', padding: '30px', borderRadius: '8px', border: '2px solid #e9ecef' }}> <h2 style={{ color: '#495057', marginBottom: '15px' }}>⚙️ System Admin</h2> <p style={{ color: '#6c757d', marginBottom: '20px' }}>Administrative tools for system management, user administration, and platform configuration.</p> <a href='#' style={{ display: 'inline-block', background: '#dc3545', color: 'white', padding: '12px 24px', borderRadius: '6px', textDecoration: 'none', fontWeight: 'bold' }}>Access Admin Panel</a> </div> </div> <footer style={{ textAlign: 'center', padding: '20px', borderTop: '1px solid #e9ecef', color: '#6c757d' }}> <p>© 2025 App-Oint. All rights reserved.</p> </footer> </div> </div> ) } && EOF && mv tsconfig.json tsconfig.json.backup 2>/dev/null || true && NEXT_TELEMETRY_DISABLED=1 npx next build --no-lint"
+    run_command: "npm start"
+    http_port: 80
+    health_check:
+      http_path: /
+      initial_delay_seconds: 10
+      period_seconds: 30
+      timeout_seconds: 10
+      success_threshold: 1
+      failure_threshold: 3
+    instance_count: 1
+    instance_size_slug: basic-xxs
+
+# Ingress configuration for routing
+ingress:
+  rules:
+    - match:
+        path:
+          prefix: "/"
+      component:
+        name: portal
+
+# Domain configuration
+domains:
+  - domain: app-oint.com
+    type: PRIMARY
+    zone: app-oint.com
+
+# Environment variables
+envs:
+  - key: NODE_ENV
+    value: production
+  - key: PORT
+    value: "80"
+  - key: NEXT_TELEMETRY_DISABLED
+    value: "1"
+  - key: NPM_CONFIG_CACHE
+    value: ".npm-cache" 

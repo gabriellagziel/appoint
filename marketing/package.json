@@ -1,0 +1,42 @@
+{
+  "name": "marketing",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "echo \"TypeScript disabled\"",
+    "generate-translations": "node scripts/generate-translations.js"
+  },
+  "devDependencies": {
+    "@types/node": "24.1.0",
+    "@types/react": "19.1.9",
+    "autoprefixer": "10.4.21",
+    "next": "15.4.5",
+    "postcss": "8.5.6",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.9.2"
+  },
+  "cacheDirectories": [
+    ".next/cache",
+    "node_modules/.cache"
+  ],
+  "dependencies": {
+    "@octokit/rest": "22.0.0",
+    "@radix-ui/react-slot": "1.2.3",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "firebase-admin": "13.4.0",
+    "http-server": "14.1.1",
+    "lucide-react": "0.536.0",
+    "recharts": "3.1.0",
+    "tailwind-merge": "3.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=24.2.0"
+  }
+}

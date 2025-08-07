@@ -1,0 +1,37 @@
+{
+  "name": "Flutter App",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "postCreateCommand": "flutter --version && dart --version && which flutter && which dart && dart pub get",
+  "containerEnv": {
+    "ALLOWED_HOSTS": "storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio.com"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dart-code.dart-code",
+        "dart-code.flutter"
+      ]
+    },
+    "codespaces": {
+      "security": {
+        "allowedDomains": [
+          "storage.googleapis.com",
+          "dart.dev",
+          "pub.dev",
+          "firebase-public.firebaseio.com"
+        ]
+      }
+    }
+  },
+  "features": {},
+  "containerEnv": {
+    "REDACTED_TOKEN": "storage.googleapis.com,dart.dev,pub.dev,firebase-public.firebaseio.com"
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.pub-cache,target=/root/.pub-cache,type=bind"
+  ],
+  "postStartCommand": "curl --fail https://storage.googleapis.com && curl --fail https://dart.dev && curl --fail https://pub.dev && curl --fail https://firebase-public.firebaseio.com"
+}

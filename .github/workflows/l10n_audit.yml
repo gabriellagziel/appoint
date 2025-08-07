@@ -1,0 +1,20 @@
+name: L10n Audit
+
+on: [push, pull_request]
+
+jobs:
+  l10n_audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.5'
+          channel: 'stable'
+          cache: true
+      - name: Install deps
+        run: flutter pub get
+      - name: Run L10n Audit
+        run: python3 tools/l10n_audit.py 
