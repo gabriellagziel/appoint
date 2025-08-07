@@ -12,8 +12,9 @@ class GroupMembershipService {
   /// הצטרפות לקבוצה באמצעות קוד הזמנה
   Future<UserGroup> joinGroup(String inviteCode, String userId) async {
     try {
-      final group = await _groupSharingService.joinGroupFromCode(inviteCode, userId);
-      
+      final group =
+          await _groupSharingService.joinGroupFromCode(inviteCode, userId);
+
       // Log membership action
       await _logMembershipAction(
         groupId: group.id,
@@ -21,7 +22,7 @@ class GroupMembershipService {
         action: 'joined',
         performedBy: userId,
       );
-      
+
       return group;
     } catch (e) {
       throw Exception('Failed to join group: $e');
@@ -32,7 +33,7 @@ class GroupMembershipService {
   Future<void> leaveGroup(String groupId, String userId) async {
     try {
       await _groupSharingService.leaveGroup(groupId, userId);
-      
+
       // Log membership action
       await _logMembershipAction(
         groupId: groupId,
@@ -46,14 +47,15 @@ class GroupMembershipService {
   }
 
   /// הוספת חברים לקבוצה (רק למנהלים)
-  Future<void> addMembers(String groupId, List<String> userIds, String performedBy) async {
+  Future<void> addMembers(
+      String groupId, List<String> userIds, String performedBy) async {
     if (!await _permissionService.canManageMembers(groupId, performedBy)) {
       throw Exception('Insufficient permissions to add members');
     }
 
     try {
       await _groupSharingService.addGroupMembers(groupId, userIds);
-      
+
       // Log membership actions
       for (final userId in userIds) {
         await _logMembershipAction(
@@ -69,14 +71,15 @@ class GroupMembershipService {
   }
 
   /// הסרת חברים מהקבוצה (רק למנהלים)
-  Future<void> removeMembers(String groupId, List<String> userIds, String performedBy) async {
+  Future<void> removeMembers(
+      String groupId, List<String> userIds, String performedBy) async {
     if (!await _permissionService.canManageMembers(groupId, performedBy)) {
       throw Exception('Insufficient permissions to remove members');
     }
 
     try {
       await _groupSharingService.removeGroupMembers(groupId, userIds);
-      
+
       // Log membership actions
       for (final userId in userIds) {
         await _logMembershipAction(
@@ -92,14 +95,15 @@ class GroupMembershipService {
   }
 
   /// הוספת מנהל לקבוצה (רק ליוצר)
-  Future<void> addAdmin(String groupId, String userId, String performedBy) async {
+  Future<void> addAdmin(
+      String groupId, String userId, String performedBy) async {
     if (!await _permissionService.canManageAdmins(groupId, performedBy)) {
       throw Exception('Insufficient permissions to add admin');
     }
 
     try {
       await _groupSharingService.addGroupAdmin(groupId, userId);
-      
+
       // Log membership action
       await _logMembershipAction(
         groupId: groupId,
@@ -113,14 +117,15 @@ class GroupMembershipService {
   }
 
   /// הסרת מנהל מהקבוצה (רק ליוצר)
-  Future<void> removeAdmin(String groupId, String userId, String performedBy) async {
+  Future<void> removeAdmin(
+      String groupId, String userId, String performedBy) async {
     if (!await _permissionService.canManageAdmins(groupId, performedBy)) {
       throw Exception('Insufficient permissions to remove admin');
     }
 
     try {
       await _groupSharingService.removeGroupAdmin(groupId, userId);
-      
+
       // Log membership action
       await _logMembershipAction(
         groupId: groupId,
@@ -134,7 +139,8 @@ class GroupMembershipService {
   }
 
   /// קבלת היסטוריית חברות בקבוצה
-  Future<List<Map<String, dynamic>>> getMembershipHistory(String groupId) async {
+  Future<List<Map<String, dynamic>>> getMembershipHistory(
+      String groupId) async {
     final query = await _firestore
         .collection('group_membership_history')
         .where('groupId', isEqualTo: groupId)
@@ -156,7 +162,8 @@ class GroupMembershipService {
   }
 
   /// קבלת היסטוריית חברות של משתמש
-  Future<List<Map<String, dynamic>>> getUserMembershipHistory(String userId) async {
+  Future<List<Map<String, dynamic>>> getUserMembershipHistory(
+      String userId) async {
     final query = await _firestore
         .collection('group_membership_history')
         .where('userId', isEqualTo: userId)
@@ -183,14 +190,15 @@ class GroupMembershipService {
     if (group == null) return {};
 
     final history = await getMembershipHistory(groupId);
-    
+
     final stats = <String, dynamic>{
       'totalMembers': group.memberCount,
       'totalAdmins': group.adminCount,
       'totalActions': history.length,
       'recentJoins': history.where((h) => h['action'] == 'joined').length,
       'recentLeaves': history.where((h) => h['action'] == 'left').length,
-      'recentAdminChanges': history.where((h) => h['action'].toString().contains('admin')).length,
+      'recentAdminChanges':
+          history.where((h) => h['action'].toString().contains('admin')).length,
     };
 
     return stats;
