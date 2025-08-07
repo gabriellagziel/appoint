@@ -46,3 +46,10 @@ logs/
 # Generated files
 *.g.dart
 *.freezed.dart
+marketing/node_modules/
+business/node_modules/
+enterprise-onboarding-portal/node_modules/
+admin/node_modules/
+functions/node_modules/
+docs/node_modules/
+node_modules/
