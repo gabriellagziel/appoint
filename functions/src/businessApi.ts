@@ -290,7 +290,7 @@ businessApiApp.use(async (req, res, next) => {
 
 // Apply enterprise middleware
 businessApiApp.use(ipWhitelistMiddleware);
-businessApiApp.use(rateLimitMiddleware);
+businessApiApp.use(rateLimitMiddleware());
 businessApiApp.use(auditLogMiddleware);
 
 // After body parser
