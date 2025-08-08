@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../controllers/meeting_controller.dart';
+import '../../../services/auth/auth_providers.dart';
 
 class MeetingChat extends ConsumerStatefulWidget {
   final String meetingId;
@@ -16,8 +17,7 @@ class _MeetingChatState extends ConsumerState<MeetingChat> {
   @override
   Widget build(BuildContext context) {
     final state = ref.watch(meetingControllerProvider(widget.meetingId));
-    // TODO: get userId from auth provider
-    const userId = 'CURRENT_USER_ID';
+    final userId = ref.watch(currentUserIdProvider);
 
     return Card(
       child: Column(
@@ -39,15 +39,20 @@ class _MeetingChatState extends ConsumerState<MeetingChat> {
             padding: const EdgeInsets.all(8),
             child: Row(
               children: [
-                Expanded(child: TextField(controller: _c, decoration: const InputDecoration(hintText: 'Message...'))),
+                Expanded(
+                    child: TextField(
+                        controller: _c,
+                        decoration:
+                            const InputDecoration(hintText: 'Message...'))),
                 IconButton(
                   icon: const Icon(Icons.send),
-                  onPressed: () {
+                  onPressed: (userId == null || _c.text.trim().isEmpty) ? null : () {
                     final t = _c.text.trim();
-                    if (t.isNotEmpty) {
-                      ref.read(meetingControllerProvider(widget.meetingId).notifier).sendMessage(userId, t);
-                      _c.clear();
-                    }
+                    ref
+                        .read(meetingControllerProvider(widget.meetingId)
+                            .notifier)
+                        .sendMessage(userId!, t);
+                    _c.clear();
                   },
                 ),
               ],
