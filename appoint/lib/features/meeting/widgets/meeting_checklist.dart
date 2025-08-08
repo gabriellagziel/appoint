@@ -5,11 +5,14 @@ import '../controllers/meeting_controller.dart';
 class MeetingChecklist extends ConsumerWidget {
   final String meetingId;
   final Map<String, dynamic> meeting;
-  const MeetingChecklist({super.key, required this.meetingId, required this.meeting});
+  const MeetingChecklist(
+      {super.key, required this.meetingId, required this.meeting});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final items = (meeting['checklist'] as List?)?.cast<Map<String, dynamic>>() ?? const [];
+    final items =
+        (meeting['checklist'] as List?)?.cast<Map<String, dynamic>>() ??
+            const [];
     if (items.isEmpty) return const SizedBox.shrink();
     return Card(
       child: Column(
@@ -20,7 +23,9 @@ class MeetingChecklist extends ConsumerWidget {
           return CheckboxListTile(
             title: Text(label),
             value: done,
-            onChanged: (v) => ref.read(meetingControllerProvider(meetingId).notifier).toggleChecklistItem(id, v ?? false),
+            onChanged: (v) => ref
+                .read(meetingControllerProvider(meetingId).notifier)
+                .toggleChecklistItem(id, v ?? false),
           );
         }).toList(),
       ),

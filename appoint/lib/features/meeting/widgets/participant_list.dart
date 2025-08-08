@@ -13,10 +13,12 @@ class ParticipantList extends StatelessWidget {
           final status = p['status'] ?? 'pending';
           final arrived = p['arrived'] == true;
           return ListTile(
-            leading: CircleAvatar(child: Text(name.toString().substring(0,1).toUpperCase())),
+            leading: CircleAvatar(
+                child: Text(name.toString().substring(0, 1).toUpperCase())),
             title: Text(name),
             subtitle: Text('Status: $status'),
-            trailing: arrived ? const Icon(Icons.check_circle) : const SizedBox(),
+            trailing:
+                arrived ? const Icon(Icons.check_circle) : const SizedBox(),
           );
         }).toList(),
       ),

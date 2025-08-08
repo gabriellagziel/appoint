@@ -23,9 +23,12 @@ class MeetingHeader extends StatelessWidget {
             Text(title, style: Theme.of(context).textTheme.headlineSmall),
             if (when != null) Text(when.toDate().toString()),
             if (isVirtual && virtualUrl != null)
-              TextButton(onPressed: () {/* launch URL */}, child: const Text('Join')),
+              TextButton(
+                  onPressed: () {/* launch URL */}, child: const Text('Join')),
             if (!isVirtual && location != null)
-              TextButton(onPressed: () {/* open OSS map deeplink */}, child: const Text('Go')),
+              TextButton(
+                  onPressed: () {/* open OSS map deeplink */},
+                  child: const Text('Go')),
           ],
         ),
       ),

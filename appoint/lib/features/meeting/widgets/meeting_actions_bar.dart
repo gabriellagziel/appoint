@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../controllers/meeting_controller.dart';
+import '../../../services/auth/auth_providers.dart';
 
 class MeetingActionsBar extends ConsumerWidget {
   final String meetingId;
@@ -8,36 +9,127 @@ class MeetingActionsBar extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // TODO: get userId from auth provider
-    const userId = 'CURRENT_USER_ID';
+    final userId = ref.watch(currentUserIdProvider);
 
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(12),
         child: Wrap(spacing: 8, children: [
-          ElevatedButton(onPressed: () => ref.read(meetingControllerProvider(meetingId).notifier).rsvp(userId, 'accepted'), child: const Text('Accept')),
-          OutlinedButton(onPressed: () => ref.read(meetingControllerProvider(meetingId).notifier).rsvp(userId, 'declined'), child: const Text('Decline')),
-          TextButton(onPressed: () => ref.read(meetingControllerProvider(meetingId).notifier).markArrived(userId, true), child: const Text("I've Arrived")),
+          ElevatedButton(
+              onPressed: userId == null ? null
+                  : () => ref
+                      .read(meetingControllerProvider(meetingId).notifier)
+                      .rsvp(userId, 'accepted'),
+              child: const Text('Accept')),
+          OutlinedButton(
+              onPressed: userId == null ? null
+                  : () => ref
+                      .read(meetingControllerProvider(meetingId).notifier)
+                      .rsvp(userId, 'declined'),
+              child: const Text('Decline')),
           TextButton(
-            onPressed: () async {
-              final reason = await showDialog<String>(context: context, builder: (_) {
-                String v = '';
-                return AlertDialog(
-                  title: const Text("I'm late"),
-                  content: TextField(onChanged: (t)=> v = t, decoration: const InputDecoration(hintText: 'Optional reason')),
-                  actions: [TextButton(onPressed: ()=> Navigator.pop(context), child: const Text('Cancel')),
-                    ElevatedButton(onPressed: ()=> Navigator.pop(context, v), child: const Text('Send'))],
-                );
-              });
-              if (reason != null) {
-                // naive: store reason via chat system
-                await ref.read(meetingControllerProvider(meetingId).notifier).sendMessage(userId, "I'm late${reason.isNotEmpty ? ': $reason' : ''}");
-              }
-            },
+              onPressed: userId == null ? null
+                  : () => ref
+                      .read(meetingControllerProvider(meetingId).notifier)
+                      .markArrived(userId, true),
+              child: const Text("I've Arrived")),
+          TextButton(
+            onPressed: userId == null ? null
+                : () async {
+                    final reason = await showDialog<String>(
+                        context: context,
+                        builder: (_) {
+                          String v = '';
+                          return AlertDialog(
+                            title: const Text("I'm late"),
+                            content: TextField(
+                                onChanged: (t) => v = t,
+                                decoration: const InputDecoration(
+                                    hintText: 'Optional reason')),
+                            actions: [
+                              TextButton(
+                                  onPressed: () => Navigator.pop(context),
+                                  child: const Text('Cancel')),
+                              ElevatedButton(
+                                  onPressed: () => Navigator.pop(context, v),
+                                  child: const Text('Send'))
+                            ],
+                          );
+                        });
+                    if (reason != null) {
+                      // naive: store reason via chat system
+                      await ref
+                          .read(meetingControllerProvider(meetingId).notifier)
+                          .sendMessage(userId,
+                              "I'm late${reason.isNotEmpty ? ': $reason' : ''}");
+                    }
+                  },
             child: const Text("I'm Late"),
           ),
         ]),
       ),
     );
+  }
+
+  Future<void> _shareInvite(BuildContext context, String meetingId) async {
+    try {
+      // Generate or get existing invite link for this meeting
+      final inviteService = GroupInviteService();
+      final inviteLink = await inviteService.generateInviteLink(meetingId);
+      
+      if (inviteLink != null) {
+        await ShareService.shareInviteLink(inviteLink, src: 'meeting_details');
+      } else {
+        // Fallback: create a new invite link
+        final newLink = GroupInviteLink(
+          meetingId: meetingId,
+          token: 'temp_${DateTime.now().millisecondsSinceEpoch}',
+          expiresAt: DateTime.now().add(const Duration(days: 7)),
+          url: 'https://app-oint.com/join?token=temp_${DateTime.now().millisecondsSinceEpoch}',
+          singleUse: false,
+        );
+        await ShareService.shareInviteLink(newLink, src: 'meeting_details');
+      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to share invite: ${e.toString()}'),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
+  }
+
+  Future<void> _showLateDialog(BuildContext context, WidgetRef ref, String userId) async {
+    final reason = await showDialog<String>(
+      context: context,
+      builder: (_) {
+        String v = '';
+        return AlertDialog(
+          title: const Text("I'm late"),
+          content: TextField(
+            onChanged: (t) => v = t,
+            decoration: const InputDecoration(hintText: 'Optional reason'),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Cancel'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.pop(context, v),
+              child: const Text('Send'),
+            ),
+          ],
+        );
+      },
+    );
+    
+    if (reason != null) {
+      // naive: store reason via chat system
+      await ref
+          .read(meetingControllerProvider(meetingId).notifier)
+          .sendMessage(userId, "I'm late${reason.isNotEmpty ? ': $reason' : ''}");
+    }
   }
 }
