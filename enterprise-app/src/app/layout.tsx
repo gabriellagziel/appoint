@@ -14,7 +14,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "App-Oint Enterprise Portal",
-  description: "Business registration, key management, and usage analytics for enterprise customers",
+  description: "API-based scheduling for enterprise clients. Registration, API keys, usage analytics, invoicing.",
+  metadataBase: new URL("https://enterprise.app-oint.com"),
+  openGraph: {
+    title: "App-Oint Enterprise Portal",
+    description: "API-based scheduling for enterprise clients.",
+    url: "https://enterprise.app-oint.com",
+    siteName: "App-Oint Enterprise",
+    images: [{ url: "/og-enterprise.png", width: 1200, height: 630, alt: "App-Oint Enterprise" }],
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "App-Oint Enterprise Portal",
+    description: "API-based scheduling for enterprise clients.",
+    images: ["/og-enterprise.png"]
+  },
+  icons: { icon: "/favicon.ico" }
 };
 
 export default function RootLayout({

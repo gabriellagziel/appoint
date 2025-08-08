@@ -108,9 +108,11 @@ export default function HomePage() {
               <Link href="/login" className="text-neutral-600 hover:text-neutral-900">
                 Sign In
               </Link>
-              <Button variant="primary" size="sm">
-                Get Started
-              </Button>
+              <Link href="/register">
+                <Button variant="primary" size="sm">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -129,12 +131,16 @@ export default function HomePage() {
             calendar sync, and location services.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="primary" size="lg" icon={ArrowRight}>
-              Start Building
-            </Button>
-            <Button variant="outline" size="lg">
-              View Documentation
-            </Button>
+            <Link href="/register">
+              <Button variant="primary" size="lg" icon={ArrowRight}>
+                Start Building
+              </Button>
+            </Link>
+            <Link href="/docs">
+              <Button variant="outline" size="lg">
+                View Documentation
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -199,9 +205,11 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <Button variant={plan.popular ? 'primary' : 'outline'} className="w-full">
-                  Get Started
-                </Button>
+                <Link href="/register">
+                  <Button variant={plan.popular ? 'primary' : 'outline'} className="w-full">
+                    Get Started
+                  </Button>
+                </Link>
               </div>
             ))}
           </div>
@@ -268,9 +276,11 @@ export default function HomePage() {
           <p className="text-xl text-primary-100 mb-8">
             Join thousands of businesses using App-Oint to deliver exceptional scheduling experiences.
           </p>
-          <Button variant="secondary" size="lg" icon={ArrowRight}>
-            Get Started Now
-          </Button>
+          <Link href="/register">
+            <Button variant="secondary" size="lg" icon={ArrowRight}>
+              Get Started Now
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -285,15 +295,18 @@ export default function HomePage() {
               <span className="text-lg font-bold">App-Oint</span>
             </div>
             <div className="flex space-x-6 text-sm">
+              <Link href="/docs" className="text-neutral-300 hover:text-white">
+                Documentation
+              </Link>
               <Link href="/terms" className="text-neutral-300 hover:text-white">
                 Terms
               </Link>
               <Link href="/privacy" className="text-neutral-300 hover:text-white">
                 Privacy
               </Link>
-              <Link href="/support" className="text-neutral-300 hover:text-white">
+              <a href="mailto:support@app-oint.com" className="text-neutral-300 hover:text-white">
                 Support
-              </Link>
+              </a>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-neutral-800 text-center text-sm text-neutral-400">
