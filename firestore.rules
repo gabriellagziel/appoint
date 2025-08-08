@@ -1,161 +1,327 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    
-    // User metadata collection - PWA tracking data
-    match /user_meta/{userId} {
-      // Allow users to read and write their own PWA metadata
-      allow read, write: if request.auth != null 
-                         && request.auth.uid == userId
-                         && isValidUserMeta();
-      
-      // Helper function to validate user_meta document structure
-      function isValidUserMeta() {
-        let data = request.resource.data;
-        return data.keys().hasAll(['userId', 'userPwaPromptCount', 'hasInstalledPwa', 'createdAt', 'updatedAt'])
-               && data.userId is string
-               && data.userPwaPromptCount is number
-               && data.hasInstalledPwa is bool
-               && data.createdAt is timestamp
-               && data.updatedAt is timestamp
-               && data.userId == userId; // Ensure userId matches document ID
-      }
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
     }
     
-    // Alternative structure if using nested user documents
-    // match /users/{userId}/meta/{docId} {
-    //   allow read, write: if request.auth != null 
-    //                      && request.auth.uid == userId;
-    // }
-    
-    // Playtime-related collections with PWA integration
-    match /playtime_games/{gameId} {
-      // Public read access for games
-      allow read: if true;
-      // Only authenticated users can create/update (admins in real app)
-      allow write: if request.auth != null;
+    function isAdmin() {
+      return isAuthenticated() && 
+        (request.auth.token.admin == true || 
+         request.auth.token.role == 'admin' ||
+         request.auth.uid in get(/databases/$(database)/documents/admin_config/admins).data.adminUids);
     }
     
-    match /playtime_sessions/{sessionId} {
-      // Users can read sessions they're involved in
-      allow read: if request.auth != null 
-                     && (request.auth.uid == resource.data.creatorId
-                         || request.auth.uid in resource.data.participantIds);
-      
-      // Users can create sessions
-      allow create: if request.auth != null 
-                       && request.auth.uid == request.resource.data.creatorId;
-      
-      // Only creators can update their sessions
-      allow update: if request.auth != null 
-                       && request.auth.uid == resource.data.creatorId;
-      
-      // Only creators can delete their sessions
-      allow delete: if request.auth != null 
-                       && request.auth.uid == resource.data.creatorId;
+    function isOwner() {
+      return isAuthenticated() && 
+        (request.auth.token.role == 'owner' ||
+         request.auth.uid in get(/databases/$(database)/documents/admin_config/owners).data.ownerUids);
     }
     
-    match /playtime_backgrounds/{backgroundId} {
-      // Public read access for backgrounds
-      allow read: if true;
-      // Only authenticated users can upload (admins approve in real app)
-      allow write: if request.auth != null;
+    function isSuperAdmin() {
+      return isAdmin() || isOwner();
     }
     
-    // Meetings collection with PWA tracking integration
-    match /meetings/{meetingId} {
-      // Users can read meetings they're involved in
-      allow read: if request.auth != null 
-                     && (request.auth.uid == resource.data.organizerId
-                         || request.auth.uid in resource.data.participantIds);
-      
-      // Users can create meetings
-      allow create: if request.auth != null 
-                       && request.auth.uid == request.resource.data.organizerId
-                       && isValidMeeting();
-      
-      // Only organizers can update their meetings
-      allow update: if request.auth != null 
-                       && request.auth.uid == resource.data.organizerId
-                       && isValidMeeting();
-      
-      // Only organizers can delete their meetings
-      allow delete: if request.auth != null 
-                       && request.auth.uid == resource.data.organizerId;
-      
-      function isValidMeeting() {
-        let data = request.resource.data;
-        return data.keys().hasAll(['id', 'organizerId', 'title', 'startTime', 'endTime', 'meetingType', 'createdAt'])
-               && data.organizerId is string
-               && data.title is string
-               && data.startTime is timestamp
-               && data.endTime is timestamp
-               && data.meetingType in ['personal', 'event', 'playtime']
-               && data.createdAt is timestamp;
-      }
+    function isChildAccount(userId) {
+      return get(/databases/$(database)/documents/users/$(userId)).data.age < 13;
     }
     
-    // Analytics events (if storing in Firestore instead of external service)
-    match /analytics_events/{eventId} {
-      // Users can only create analytics events, not read/update/delete
-      allow create: if request.auth != null 
-                       && request.resource.data.userId == request.auth.uid;
-      
-      // Admins can read analytics (add admin check in real app)
-      allow read: if request.auth != null 
-                     && isAdmin();
-      
-      function isAdmin() {
-        // Implement admin check logic
-        // For now, allow any authenticated user (change in production)
-        return request.auth != null;
-      }
+    function requiresParentApproval(userId) {
+      return isChildAccount(userId) || 
+        (get(/databases/$(database)/documents/users/$(userId)).data.age < 18);
     }
     
-    // Family links and relationships
-    match /family_links/{linkId} {
-      allow read, write: if request.auth != null 
-                            && (request.auth.uid == resource.data.parentId
-                                || request.auth.uid == resource.data.childId);
+    // AUDIT: Helper functions for meeting-group integration
+    function isGroupMemberByMeeting(meetingId) {
+      let meeting = get(/databases/$(database)/documents/meetings/$(meetingId));
+      return meeting.data.groupId != null && 
+             get(/databases/$(database)/documents/user_groups/$(meeting.data.groupId)).data.members[request.auth.uid] != null || 
+             get(/databases/$(database)/documents/user_groups/$(meeting.data.groupId)).data.admins[request.auth.uid] != null ||
+             get(/databases/$(database)/documents/user_groups/$(meeting.data.groupId)).data.ownerId == request.auth.uid;
     }
     
-    // User profiles
+    function isValidGuestToken(token, meetingId) {
+      return token != null && 
+             get(/databases/$(database)/documents/guest_tokens/$(token)).data.isActive == true &&
+             get(/databases/$(database)/documents/guest_tokens/$(token)).data.expiresAt > request.time &&
+             get(/databases/$(database)/documents/guest_tokens/$(token)).data.claims.meetingId == meetingId;
+    }
+    
+    function isOwnerOfRsvp() {
+      return request.auth != null && request.auth.uid == resource.data.userId;
+    }
+
+    // System Configuration
+    match /admin_config/{docId} {
+      allow read: if isAuthenticated();
+      allow write: if isSuperAdmin();
+    }
+    
+    // Admin Logs - Critical for audit trail
+    match /admin_logs/{logId} {
+      allow create: if isSuperAdmin();
+      allow read: if isSuperAdmin();
+      allow update, delete: if false; // Immutable audit trail
+    }
+    
+    // User Management
     match /users/{userId} {
-      allow read, write: if request.auth != null 
-                            && request.auth.uid == userId;
+      // Users can read their own data
+      allow read: if isAuthenticated() && 
+        (request.auth.uid == userId || isSuperAdmin());
+      
+      // Users can update their own basic info
+      allow update: if isAuthenticated() && 
+        (request.auth.uid == userId || isSuperAdmin()) &&
+        // Prevent users from modifying critical admin fields
+        !('status' in resource.data.diff(request.resource.data).affectedKeys()) &&
+        !('isPremium' in resource.data.diff(request.resource.data).affectedKeys()) &&
+        !('adsDisabled' in resource.data.diff(request.resource.data).affectedKeys());
+      
+      // Only admins can modify critical user fields
+      allow update: if isSuperAdmin() && 
+        ('status' in resource.data.diff(request.resource.data).affectedKeys() ||
+         'isPremium' in resource.data.diff(request.resource.data).affectedKeys() ||
+         'adsDisabled' in resource.data.diff(request.resource.data).affectedKeys());
+      
+      // Only super admins can delete users
+      allow delete: if isOwner();
     }
     
-    // Admin-only collections
-    match /admin/{document=**} {
-      allow read, write: if request.auth != null 
-                            && isAdmin();
+    // Ad Impressions - Revenue tracking
+    match /ad_impressions/{impressionId} {
+      allow read: if isSuperAdmin() || 
+        (isAuthenticated() && request.auth.uid == resource.data.userId);
+      allow create: if isAuthenticated(); // Created by client
+      allow update, delete: if isSuperAdmin();
     }
     
-    // Default deny rule for all other documents
-    match /{document=**} {
-      allow read, write: if false;
+    // Premium Conversions - Revenue tracking
+    match /premium_conversions/{conversionId} {
+      allow read: if isSuperAdmin() || 
+        (isAuthenticated() && request.auth.uid == resource.data.userId);
+      allow create: if isAuthenticated();
+      allow update, delete: if isSuperAdmin();
+    }
+    
+    // COPPA Compliance - Child accounts
+    match /users/{userId}/parent_approvals/{approvalId} {
+      allow read: if isAuthenticated() && 
+        (request.auth.uid == userId || 
+         request.auth.uid == resource.data.parentUid ||
+         isSuperAdmin());
+      allow create: if isAuthenticated() && 
+        (request.auth.uid == userId || isSuperAdmin());
+      allow update: if isAuthenticated() && 
+        (request.auth.uid == resource.data.parentUid || isSuperAdmin());
+      allow delete: if isSuperAdmin();
+    }
+    
+    // Group Management (existing structure)
+    match /user_groups/{groupId} {
+      allow read: if isAuthenticated() && 
+        (resource.data.members[request.auth.uid] != null ||
+         resource.data.admins[request.auth.uid] != null ||
+         resource.data.ownerId == request.auth.uid ||
+         isSuperAdmin());
+      allow write: if isAuthenticated() && 
+        (resource.data.ownerId == request.auth.uid ||
+         resource.data.admins[request.auth.uid] != null ||
+         isSuperAdmin());
+    }
+    
+    // Group Votes
+    match /user_groups/{groupId}/votes/{voteId} {
+      allow read: if isAuthenticated() && 
+        (get(/databases/$(database)/documents/user_groups/$(groupId)).data.members[request.auth.uid] != null ||
+         get(/databases/$(database)/documents/user_groups/$(groupId)).data.admins[request.auth.uid] != null ||
+         get(/databases/$(database)/documents/user_groups/$(groupId)).data.ownerId == request.auth.uid ||
+         isSuperAdmin());
+      allow create: if isAuthenticated() && 
+        (get(/databases/$(database)/documents/user_groups/$(groupId)).data.admins[request.auth.uid] != null ||
+         get(/databases/$(database)/documents/user_groups/$(groupId)).data.ownerId == request.auth.uid ||
+         isSuperAdmin());
+      allow update: if isAuthenticated() && 
+        (get(/databases/$(database)/documents/user_groups/$(groupId)).data.admins[request.auth.uid] != null ||
+         get(/databases/$(database)/documents/user_groups/$(groupId)).data.ownerId == request.auth.uid ||
+         isSuperAdmin());
+    }
+    
+    // Group Audit Events
+    match /user_groups/{groupId}/audit/{eventId} {
+      allow read: if isAuthenticated() && 
+        (get(/databases/$(database)/documents/user_groups/$(groupId)).data.members[request.auth.uid] != null ||
+         get(/databases/$(database)/documents/user_groups/$(groupId)).data.admins[request.auth.uid] != null ||
+         get(/databases/$(database)/documents/user_groups/$(groupId)).data.ownerId == request.auth.uid ||
+         isSuperAdmin());
+      allow create: if isAuthenticated() && 
+        (get(/databases/$(database)/documents/user_groups/$(groupId)).data.admins[request.auth.uid] != null ||
+         get(/databases/$(database)/documents/user_groups/$(groupId)).data.ownerId == request.auth.uid ||
+         isSuperAdmin());
+      allow update, delete: if false; // Immutable audit trail
+    }
+    
+    // Group Invites - AUDIT: Add security rules for group_invites collection
+    match /group_invites/{inviteId} {
+      allow read: if isAuthenticated() && 
+        (resource.data.createdBy == request.auth.uid ||
+         get(/databases/$(database)/documents/user_groups/$(resource.data.groupId)).data.members[request.auth.uid] != null ||
+         isSuperAdmin());
+      allow create: if isAuthenticated() && 
+        get(/databases/$(database)/documents/user_groups/$(resource.data.groupId)).data.admins[request.auth.uid] != null;
+      allow update: if isAuthenticated() && 
+        resource.data.createdBy == request.auth.uid;
+      allow delete: if isSuperAdmin();
+    }
+    
+    // Share Links - AUDIT: Add security rules for meeting sharing
+    match /share_links/{linkId} {
+      allow read: if request.auth != null && request.auth.token.isAdmin == true; // internal admin only
+      allow create: if isAuthenticated();  // created by signed-in user
+      allow update: if isAuthenticated() && resource.data.createdBy == request.auth.uid; // allow revoke
+      allow delete: if false;
+    }
+    
+    // Meetings - AUDIT: Add security rules for meeting access
+    match /meetings/{meetingId} {
+      // קריאה: מותרת למשתתף או לפגישה ציבורית
+      allow read: if isGroupMemberByMeeting(meetingId) || 
+                   resource.data.visibility.allowGuestsRSVP == true ||
+                   resource.data.public == true;
+      
+      // כתיבה למסמך הפגישה עצמו: רק בעלי הרשאה
+      allow create: if isAuthenticated();
+      allow update, delete: if isAuthenticated() && (
+        resource.data.hostId == request.auth.uid ||
+        isGroupMemberByMeeting(meetingId)
+      );
+
+      // --- participants subcollection ---
+      match /participants/{userId} {
+        // קריאה: מותרת למשתתף או לפגישה ציבורית
+        allow get, list: if isGroupMemberByMeeting(meetingId) || 
+                         get(/databases/$(database)/documents/meetings/$(meetingId)).data.public == true;
+
+        // כתיבה: כל משתמש רשאי לעדכן את המסמך של עצמו בלבד
+        allow create, update: if isAuthenticated() && 
+                              request.auth.uid == userId && 
+                              (isGroupMemberByMeeting(meetingId) || 
+                               get(/databases/$(database)/documents/meetings/$(meetingId)).data.public == true);
+
+        // מחיקה: רק מארח
+        allow delete: if isAuthenticated() && 
+                      get(/databases/$(database)/documents/meetings/$(meetingId)).data.hostId == request.auth.uid;
+      }
+
+      // --- chat subcollection ---
+      match /chat/{messageId} {
+        // קריאה: מותרת למשתתף (לא ציבורי כברירת מחדל)
+        allow get, list: if isGroupMemberByMeeting(meetingId);
+
+        // כתיבה: רק משתתפים מחוברים
+        allow create: if isAuthenticated() && isGroupMemberByMeeting(meetingId) &&
+          request.resource.data.senderId == request.auth.uid &&
+          request.resource.data.text is string &&
+          request.resource.data.text.size() > 0 &&
+          request.resource.data.createdAt == request.time;
+
+        // עדכון/מחיקה: רק המוסר/מארח
+        allow update, delete: if isAuthenticated() && (
+          resource.data.senderId == request.auth.uid ||
+          get(/databases/$(database)/documents/meetings/$(meetingId)).data.hostId == request.auth.uid
+        );
+      }
+
+      // --- checklist subcollection ---
+      match /checklist/{itemId} {
+        // קריאה: מותרת למשתתפים או public
+        allow get, list: if isGroupMemberByMeeting(meetingId) || 
+                         get(/databases/$(database)/documents/meetings/$(meetingId)).data.public == true;
+
+        // כתיבה: משתתפים בלבד (סימון done/undone)
+        allow create, update: if isAuthenticated() && isGroupMemberByMeeting(meetingId) &&
+          request.resource.data.keys().hasOnly(['label','done','updatedAt']) &&
+          request.resource.data.label is string &&
+          request.resource.data.done is bool &&
+          request.resource.data.updatedAt == request.time;
+
+        // מחיקה: רק מארח
+        allow delete: if isAuthenticated() && 
+                      get(/databases/$(database)/documents/meetings/$(meetingId)).data.hostId == request.auth.uid;
+      }
+    }
+    
+    // Meeting RSVP - AUDIT: Add security rules for RSVP submissions
+    match /meetings/{meetingId}/rsvp/{rsvpId} {
+      allow create: if isGroupMemberByMeeting(meetingId)
+                     || (isValidGuestToken(request.resource.data.guestToken, meetingId) == true);
+      allow update: if isOwnerOfRsvp() || isGroupMemberByMeeting(meetingId);
+      allow delete: if false;
+    }
+    
+    // Guest Tokens - AUDIT: Add security rules for guest token validation
+    match /guest_tokens/{tokenId} {
+      allow read: if request.auth != null && request.auth.token.isAdmin == true; // admin only
+      allow create: if isAuthenticated();
+      allow update: if isAuthenticated() && resource.data.createdBy == request.auth.uid;
+      allow delete: if false;
+    }
+    
+    // Rate Limits - AUDIT: Add security rules for rate limiting
+    match /rate_limits/{limitId} {
+      allow read: if request.auth != null && request.auth.token.isAdmin == true; // admin only
+      allow create: if true; // Allow rate limit tracking
+      allow update, delete: if false;
+    }
+    
+    // Rate Limit Hits - AUDIT: Add security rules for rate limit monitoring
+    match /rate_limit_hits/{hitId} {
+      allow read: if request.auth != null && request.auth.token.isAdmin == true; // admin only
+      allow create: if true; // Allow rate limit hit tracking
+      allow update, delete: if false;
+    }
+    
+    // Playtime Games - COPPA compliance
+    match /playtime_games/{gameId} {
+      allow read: if isAuthenticated();
+      allow write: if isSuperAdmin();
+    }
+    
+    // Playtime Sessions - COPPA compliance
+    match /playtime_sessions/{sessionId} {
+      allow read: if isAuthenticated() && 
+        (request.auth.uid == resource.data.userId ||
+         request.auth.uid == resource.data.parentUid ||
+         isSuperAdmin());
+      allow create: if isAuthenticated();
+      allow update: if isAuthenticated() && 
+        (request.auth.uid == resource.data.userId ||
+         request.auth.uid == resource.data.parentUid ||
+         isSuperAdmin());
+      allow delete: if isSuperAdmin();
+    }
+    
+    // Analytics - Admin only
+    match /analytics/{docId} {
+      allow read, write: if isSuperAdmin();
+    }
+    
+    // Feature Flags - Admin only
+    match /feature_flags/{flagId} {
+      allow read: if isAuthenticated();
+      allow write: if isSuperAdmin();
+    }
+    
+    // System Metrics - Admin only
+    match /system_metrics/{metricId} {
+      allow read, write: if isSuperAdmin();
+    }
+    
+    // Public Meetings - Direct access for unauthenticated users
+    match /public_meetings/{meetingId} {
+      allow read: if true; // Public read access
+      allow write: if false; // No write access for public
     }
   }
-}
-
-// Additional helper functions that can be used across rules
-function isAuthenticated() {
-  return request.auth != null;
-}
-
-function isOwner(userId) {
-  return request.auth != null && request.auth.uid == userId;
-}
-
-function isValidTimestamp(timestamp) {
-  return timestamp is timestamp 
-         && timestamp <= request.time 
-         && timestamp >= request.time - duration.value(1, 'h'); // Within last hour
-}
-
-function hasValidUserClaims() {
-  return request.auth != null 
-         && request.auth.token != null
-         && 'email_verified' in request.auth.token
-         && request.auth.token.email_verified == true;
 }
