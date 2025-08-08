@@ -51,6 +51,22 @@ service cloud.firestore {
     function isOwnerOfRsvp() {
       return request.auth != null && request.auth.uid == resource.data.userId;
     }
+    
+    // Advanced meeting functions
+    function isHost(meetingId) {
+      return isAuthenticated() &&
+        get(/databases/$(database)/documents/meetings/$(meetingId)).data.hostId == request.auth.uid;
+    }
+    
+    function meetingField(meetingId, field) {
+      return get(/databases/$(database)/documents/meetings/$(meetingId)).data[field];
+    }
+    
+    function hasRole(meetingId, role) {
+      return isAuthenticated() &&
+        exists(/databases/$(database)/documents/meetings/$(meetingId)/roles/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/meetings/$(meetingId)/roles/$(request.auth.uid)).data.role == role;
+    }
 
     // System Configuration
     match /admin_config/{docId} {
@@ -216,20 +232,23 @@ service cloud.firestore {
 
       // --- chat subcollection ---
       match /chat/{messageId} {
-        // קריאה: מותרת למשתתף (לא ציבורי כברירת מחדל)
-        allow get, list: if isGroupMemberByMeeting(meetingId);
+        // קריאה: מותרת למשתתף או אם publicReadChat מופעל
+        allow get, list: if isGroupMemberByMeeting(meetingId) || 
+                         (meetingField(meetingId, 'publicReadChat') == true);
 
         // כתיבה: רק משתתפים מחוברים
         allow create: if isAuthenticated() && isGroupMemberByMeeting(meetingId) &&
           request.resource.data.senderId == request.auth.uid &&
           request.resource.data.text is string &&
           request.resource.data.text.size() > 0 &&
+          request.resource.data.text.size() <= 2000 &&
           request.resource.data.createdAt == request.time;
 
-        // עדכון/מחיקה: רק המוסר/מארח
+        // עדכון/מחיקה: המוסר/מארח/cohost
         allow update, delete: if isAuthenticated() && (
           resource.data.senderId == request.auth.uid ||
-          get(/databases/$(database)/documents/meetings/$(meetingId)).data.hostId == request.auth.uid
+          isHost(meetingId) ||
+          hasRole(meetingId, "cohost")
         );
       }
 
@@ -239,16 +258,36 @@ service cloud.firestore {
         allow get, list: if isGroupMemberByMeeting(meetingId) || 
                          get(/databases/$(database)/documents/meetings/$(meetingId)).data.public == true;
 
-        // כתיבה: משתתפים בלבד (סימון done/undone)
-        allow create, update: if isAuthenticated() && isGroupMemberByMeeting(meetingId) &&
+        // כתיבה: משתתפים/מארח/cohost (סימון done/undone)
+        allow create, update: if isAuthenticated() && (
+          isGroupMemberByMeeting(meetingId) || 
+          isHost(meetingId) || 
+          hasRole(meetingId, "cohost")
+        ) &&
           request.resource.data.keys().hasOnly(['label','done','updatedAt']) &&
           request.resource.data.label is string &&
+          request.resource.data.label.size() <= 200 &&
           request.resource.data.done is bool &&
           request.resource.data.updatedAt == request.time;
 
+        // מחיקה: מארח/cohost
+        allow delete: if isAuthenticated() && (
+          isHost(meetingId) || 
+          hasRole(meetingId, "cohost")
+        );
+      }
+      
+      // --- roles subcollection ---
+      match /roles/{userId} {
+        // קריאה: מותרת למשתתפים
+        allow get, list: if isGroupMemberByMeeting(meetingId);
+        
+        // כתיבה: רק מארח
+        allow create, update: if isAuthenticated() && isHost(meetingId) &&
+          request.resource.data.role in ['host', 'cohost', 'editor'];
+        
         // מחיקה: רק מארח
-        allow delete: if isAuthenticated() && 
-                      get(/databases/$(database)/documents/meetings/$(meetingId)).data.hostId == request.auth.uid;
+        allow delete: if isAuthenticated() && isHost(meetingId);
       }
     }
     
