@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../services/navigation/meeting_links.dart';
 
 class MeetingHeader extends StatelessWidget {
   final Map<String, dynamic> meeting;
@@ -24,10 +25,14 @@ class MeetingHeader extends StatelessWidget {
             if (when != null) Text(when.toDate().toString()),
             if (isVirtual && virtualUrl != null)
               TextButton(
-                  onPressed: () {/* launch URL */}, child: const Text('Join')),
-            if (!isVirtual && location != null)
+                  onPressed: () => openVirtualUrl(virtualUrl), child: const Text('Join')),
+            if (!isVirtual && meeting['lat'] != null && meeting['lng'] != null)
               TextButton(
-                  onPressed: () {/* open OSS map deeplink */},
+                  onPressed: () => openMap(
+                    lat: meeting['lat'], 
+                    lng: meeting['lng'], 
+                    label: meeting['location']
+                  ),
                   child: const Text('Go')),
           ],
         ),
