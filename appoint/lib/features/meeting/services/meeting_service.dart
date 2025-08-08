@@ -65,9 +65,6 @@ class MeetingService {
 
   Future<void> toggleChecklistItem(String id, String itemId, bool done) =>
       toggleChecklistItemSub(id, itemId, done);
-}
-  Future<void> toggleChecklistItem(String id, String itemId, bool done) =>
-      toggleChecklistItemSub(id, itemId, done);
       
   // Role management
   Stream<List<Map<String, dynamic>>> watchRoles(String id) => _db
@@ -85,4 +82,19 @@ class MeetingService {
       
   Future<void> removeRole(String id, String userId) =>
       _db.collection('meetings').doc(id).collection('roles').doc(userId).delete();
+}
+  Future<void> removeRole(String id, String userId) =>
+      _db.collection('meetings').doc(id).collection('roles').doc(userId).delete();
+      
+  // Checklist management
+  Future<void> addChecklistItem(String id, String label) =>
+      _db.collection('meetings').doc(id).collection('checklist').add({
+        'label': label,
+        'done': false,
+        'createdAt': FieldValue.serverTimestamp(),
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+      
+  Future<void> removeChecklistItem(String id, String itemId) =>
+      _db.collection('meetings').doc(id).collection('checklist').doc(itemId).delete();
 }
