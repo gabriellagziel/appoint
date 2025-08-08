@@ -11,7 +11,6 @@ class MeetingHeader extends StatelessWidget {
     final when = meeting['startsAt']; // Timestamp
     final isVirtual = meeting['isVirtual'] == true;
     final virtualUrl = meeting['virtualUrl'];
-    final location = meeting['location'];
 
     return Card(
       child: Padding(
