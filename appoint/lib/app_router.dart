@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'features/group/ui/screens/group_join_screen.dart';
 import 'features/group/ui/screens/group_management_screen.dart';
 import 'features/group/ui/screens/group_details_screen.dart';
 import 'features/meeting_public/screens/public_meeting_screen.dart';
+import 'features/invite/route/join_route.dart';
+import 'features/invite/controllers/invite_controller.dart';
+import 'features/meeting/screens/meeting_details_screen.dart';
 
 final router = GoRouter(
   initialLocation: '/',
@@ -15,6 +19,36 @@ final router = GoRouter(
           child: Text('App-Oint Home'),
         ),
       ),
+    ),
+
+    // Join Route - Full screen, no bottom nav
+    GoRoute(
+      path: '/join',
+      name: 'Join',
+      builder: (context, state) {
+        final token = state.uri.queryParameters['token'];
+        final src = state.uri.queryParameters['src'];
+        
+        if (token == null || token.isEmpty) {
+          return const Scaffold(
+            body: Center(
+              child: Text('Invalid invite link'),
+            ),
+          );
+        }
+
+        // Initialize invite controller with token and src
+        return Consumer(
+          builder: (context, ref, child) {
+            // Load the invite when the route is accessed
+            WidgetsBinding.instance.addPostFrameCallback((_) {
+              ref.read(inviteControllerProvider.notifier).load(token, src: src);
+            });
+            
+            return const JoinRoute();
+          },
+        );
+      },
     ),
 
     // Group Sharing Routes
@@ -61,6 +95,16 @@ final router = GoRouter(
           child: Text('Create Meeting Flow'),
         ),
       ),
+    ),
+
+    // Meeting Details Route
+    GoRoute(
+      path: '/meeting/:meetingId',
+      name: 'MeetingDetails',
+      builder: (context, state) {
+        final meetingId = state.pathParameters['meetingId']!;
+        return MeetingDetailsScreen(meetingId: meetingId);
+      },
     ),
 
     // Public Meeting Route
