@@ -6,6 +6,7 @@ import '../widgets/participant_list.dart';
 import '../widgets/meeting_checklist.dart';
 import '../widgets/meeting_chat.dart';
 import '../widgets/meeting_actions_bar.dart';
+import '../../../services/auth/auth_providers.dart';
 
 class MeetingDetailsScreen extends ConsumerWidget {
   final String meetingId;
@@ -13,6 +14,16 @@ class MeetingDetailsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final userId = ref.watch(currentUserIdProvider);
+    
+    // Redirect unauthenticated users to public meeting page
+    if (userId == null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        Navigator.of(context).pushReplacementNamed('/m/$meetingId');
+      });
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
+    
     final state = ref.watch(meetingControllerProvider(meetingId));
     if (state.loading) {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
