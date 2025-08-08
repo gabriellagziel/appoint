@@ -32,8 +32,17 @@ class MeetingService {
         'createdAt': FieldValue.serverTimestamp(),
       });
 
+  Stream<List<Map<String, dynamic>>> watchChecklist(String id) =>
+      _db.collection('meetings').doc(id).collection('checklist')
+        .orderBy('updatedAt', descending: false)
+        .snapshots().map((s) => s.docs.map((d) => {'id': d.id, ...d.data()}).toList());
+
+  Future<void> toggleChecklistItemSub(String id, String itemId, bool done) =>
+      _db.collection('meetings').doc(id).collection('checklist').doc(itemId).set({
+        'done': done,
+        'updatedAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+
   Future<void> toggleChecklistItem(String id, String itemId, bool done) =>
-      _db.collection('meetings').doc(id).set({
-        'checklist': FieldValue.arrayUnion([{'id': itemId, 'done': done}])
-      }, SetOptions(merge: true)); // TODO: replace with proper per-item update
+      toggleChecklistItemSub(id, itemId, done);
 }
