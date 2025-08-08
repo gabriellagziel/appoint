@@ -24,10 +24,11 @@ mixin _$FamilyLink {
   String get parentId => throw _privateConstructorUsedError;
   String get childId => throw _privateConstructorUsedError;
   String get status =>
-      throw _privateConstructorUsedError; // 'pending', 'active', 'revoked'
+      throw _privateConstructorUsedError; // 'pending', 'active', 'inactive'
   DateTime get invitedAt => throw _privateConstructorUsedError;
-  List<DateTime>? get consentedAt => throw _privateConstructorUsedError;
+  List<DateTime> get consentedAt => throw _privateConstructorUsedError;
   String? get notes => throw _privateConstructorUsedError;
+  DateTime? get lastActivityAt => throw _privateConstructorUsedError;
 
   /// Serializes this FamilyLink to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -51,8 +52,9 @@ abstract class $FamilyLinkCopyWith<$Res> {
       String childId,
       String status,
       DateTime invitedAt,
-      List<DateTime>? consentedAt,
-      String? notes});
+      List<DateTime> consentedAt,
+      String? notes,
+      DateTime? lastActivityAt});
 }
 
 /// @nodoc
@@ -75,8 +77,9 @@ class _$FamilyLinkCopyWithImpl<$Res, $Val extends FamilyLink>
     Object? childId = null,
     Object? status = null,
     Object? invitedAt = null,
-    Object? consentedAt = freezed,
+    Object? consentedAt = null,
     Object? notes = freezed,
+    Object? lastActivityAt = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -99,14 +102,18 @@ class _$FamilyLinkCopyWithImpl<$Res, $Val extends FamilyLink>
           ? _value.invitedAt
           : invitedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      consentedAt: freezed == consentedAt
+      consentedAt: null == consentedAt
           ? _value.consentedAt
           : consentedAt // ignore: cast_nullable_to_non_nullable
-              as List<DateTime>?,
+              as List<DateTime>,
       notes: freezed == notes
           ? _value.notes
           : notes // ignore: cast_nullable_to_non_nullable
               as String?,
+      lastActivityAt: freezed == lastActivityAt
+          ? _value.lastActivityAt
+          : lastActivityAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
     ) as $Val);
   }
 }
@@ -125,8 +132,9 @@ abstract class _$$FamilyLinkImplCopyWith<$Res>
       String childId,
       String status,
       DateTime invitedAt,
-      List<DateTime>? consentedAt,
-      String? notes});
+      List<DateTime> consentedAt,
+      String? notes,
+      DateTime? lastActivityAt});
 }
 
 /// @nodoc
@@ -147,8 +155,9 @@ class __$$FamilyLinkImplCopyWithImpl<$Res>
     Object? childId = null,
     Object? status = null,
     Object? invitedAt = null,
-    Object? consentedAt = freezed,
+    Object? consentedAt = null,
     Object? notes = freezed,
+    Object? lastActivityAt = freezed,
   }) {
     return _then(_$FamilyLinkImpl(
       id: null == id
@@ -171,14 +180,18 @@ class __$$FamilyLinkImplCopyWithImpl<$Res>
           ? _value.invitedAt
           : invitedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      consentedAt: freezed == consentedAt
+      consentedAt: null == consentedAt
           ? _value._consentedAt
           : consentedAt // ignore: cast_nullable_to_non_nullable
-              as List<DateTime>?,
+              as List<DateTime>,
       notes: freezed == notes
           ? _value.notes
           : notes // ignore: cast_nullable_to_non_nullable
               as String?,
+      lastActivityAt: freezed == lastActivityAt
+          ? _value.lastActivityAt
+          : lastActivityAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
     ));
   }
 }
@@ -192,8 +205,9 @@ class _$FamilyLinkImpl implements _FamilyLink {
       required this.childId,
       required this.status,
       required this.invitedAt,
-      final List<DateTime>? consentedAt,
-      this.notes})
+      required final List<DateTime> consentedAt,
+      this.notes,
+      this.lastActivityAt})
       : _consentedAt = consentedAt;
 
   factory _$FamilyLinkImpl.fromJson(Map<String, dynamic> json) =>
@@ -207,25 +221,25 @@ class _$FamilyLinkImpl implements _FamilyLink {
   final String childId;
   @override
   final String status;
-// 'pending', 'active', 'revoked'
+// 'pending', 'active', 'inactive'
   @override
   final DateTime invitedAt;
-  final List<DateTime>? _consentedAt;
+  final List<DateTime> _consentedAt;
   @override
-  List<DateTime>? get consentedAt {
-    final value = _consentedAt;
-    if (value == null) return null;
+  List<DateTime> get consentedAt {
     if (_consentedAt is EqualUnmodifiableListView) return _consentedAt;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
+    return EqualUnmodifiableListView(_consentedAt);
   }
 
   @override
   final String? notes;
+  @override
+  final DateTime? lastActivityAt;
 
   @override
   String toString() {
-    return 'FamilyLink(id: $id, parentId: $parentId, childId: $childId, status: $status, invitedAt: $invitedAt, consentedAt: $consentedAt, notes: $notes)';
+    return 'FamilyLink(id: $id, parentId: $parentId, childId: $childId, status: $status, invitedAt: $invitedAt, consentedAt: $consentedAt, notes: $notes, lastActivityAt: $lastActivityAt)';
   }
 
   @override
@@ -242,13 +256,23 @@ class _$FamilyLinkImpl implements _FamilyLink {
                 other.invitedAt == invitedAt) &&
             const DeepCollectionEquality()
                 .equals(other._consentedAt, _consentedAt) &&
-            (identical(other.notes, notes) || other.notes == notes));
+            (identical(other.notes, notes) || other.notes == notes) &&
+            (identical(other.lastActivityAt, lastActivityAt) ||
+                other.lastActivityAt == lastActivityAt));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, parentId, childId, status,
-      invitedAt, const DeepCollectionEquality().hash(_consentedAt), notes);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      parentId,
+      childId,
+      status,
+      invitedAt,
+      const DeepCollectionEquality().hash(_consentedAt),
+      notes,
+      lastActivityAt);
 
   /// Create a copy of FamilyLink
   /// with the given fields replaced by the non-null parameter values.
@@ -273,8 +297,9 @@ abstract class _FamilyLink implements FamilyLink {
       required final String childId,
       required final String status,
       required final DateTime invitedAt,
-      final List<DateTime>? consentedAt,
-      final String? notes}) = _$FamilyLinkImpl;
+      required final List<DateTime> consentedAt,
+      final String? notes,
+      final DateTime? lastActivityAt}) = _$FamilyLinkImpl;
 
   factory _FamilyLink.fromJson(Map<String, dynamic> json) =
       _$FamilyLinkImpl.fromJson;
@@ -286,278 +311,20 @@ abstract class _FamilyLink implements FamilyLink {
   @override
   String get childId;
   @override
-  String get status; // 'pending', 'active', 'revoked'
+  String get status; // 'pending', 'active', 'inactive'
   @override
   DateTime get invitedAt;
   @override
-  List<DateTime>? get consentedAt;
+  List<DateTime> get consentedAt;
   @override
   String? get notes;
+  @override
+  DateTime? get lastActivityAt;
 
   /// Create a copy of FamilyLink
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FamilyLinkImplCopyWith<_$FamilyLinkImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-FamilyOverview _$FamilyOverviewFromJson(Map<String, dynamic> json) {
-  return _FamilyOverview.fromJson(json);
-}
-
-/// @nodoc
-mixin _$FamilyOverview {
-  String get parentId => throw _privateConstructorUsedError;
-  List<FamilyLink> get connectedChildren => throw _privateConstructorUsedError;
-  List<FamilyLink> get pendingInvites => throw _privateConstructorUsedError;
-  int get totalSessions => throw _privateConstructorUsedError;
-  int get completedReminders => throw _privateConstructorUsedError;
-
-  /// Serializes this FamilyOverview to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of FamilyOverview
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $FamilyOverviewCopyWith<FamilyOverview> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $FamilyOverviewCopyWith<$Res> {
-  factory $FamilyOverviewCopyWith(
-          FamilyOverview value, $Res Function(FamilyOverview) then) =
-      _$FamilyOverviewCopyWithImpl<$Res, FamilyOverview>;
-  @useResult
-  $Res call(
-      {String parentId,
-      List<FamilyLink> connectedChildren,
-      List<FamilyLink> pendingInvites,
-      int totalSessions,
-      int completedReminders});
-}
-
-/// @nodoc
-class _$FamilyOverviewCopyWithImpl<$Res, $Val extends FamilyOverview>
-    implements $FamilyOverviewCopyWith<$Res> {
-  _$FamilyOverviewCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of FamilyOverview
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? parentId = null,
-    Object? connectedChildren = null,
-    Object? pendingInvites = null,
-    Object? totalSessions = null,
-    Object? completedReminders = null,
-  }) {
-    return _then(_value.copyWith(
-      parentId: null == parentId
-          ? _value.parentId
-          : parentId // ignore: cast_nullable_to_non_nullable
-              as String,
-      connectedChildren: null == connectedChildren
-          ? _value.connectedChildren
-          : connectedChildren // ignore: cast_nullable_to_non_nullable
-              as List<FamilyLink>,
-      pendingInvites: null == pendingInvites
-          ? _value.pendingInvites
-          : pendingInvites // ignore: cast_nullable_to_non_nullable
-              as List<FamilyLink>,
-      totalSessions: null == totalSessions
-          ? _value.totalSessions
-          : totalSessions // ignore: cast_nullable_to_non_nullable
-              as int,
-      completedReminders: null == completedReminders
-          ? _value.completedReminders
-          : completedReminders // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$FamilyOverviewImplCopyWith<$Res>
-    implements $FamilyOverviewCopyWith<$Res> {
-  factory _$$FamilyOverviewImplCopyWith(_$FamilyOverviewImpl value,
-          $Res Function(_$FamilyOverviewImpl) then) =
-      __$$FamilyOverviewImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String parentId,
-      List<FamilyLink> connectedChildren,
-      List<FamilyLink> pendingInvites,
-      int totalSessions,
-      int completedReminders});
-}
-
-/// @nodoc
-class __$$FamilyOverviewImplCopyWithImpl<$Res>
-    extends _$FamilyOverviewCopyWithImpl<$Res, _$FamilyOverviewImpl>
-    implements _$$FamilyOverviewImplCopyWith<$Res> {
-  __$$FamilyOverviewImplCopyWithImpl(
-      _$FamilyOverviewImpl _value, $Res Function(_$FamilyOverviewImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of FamilyOverview
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? parentId = null,
-    Object? connectedChildren = null,
-    Object? pendingInvites = null,
-    Object? totalSessions = null,
-    Object? completedReminders = null,
-  }) {
-    return _then(_$FamilyOverviewImpl(
-      parentId: null == parentId
-          ? _value.parentId
-          : parentId // ignore: cast_nullable_to_non_nullable
-              as String,
-      connectedChildren: null == connectedChildren
-          ? _value._connectedChildren
-          : connectedChildren // ignore: cast_nullable_to_non_nullable
-              as List<FamilyLink>,
-      pendingInvites: null == pendingInvites
-          ? _value._pendingInvites
-          : pendingInvites // ignore: cast_nullable_to_non_nullable
-              as List<FamilyLink>,
-      totalSessions: null == totalSessions
-          ? _value.totalSessions
-          : totalSessions // ignore: cast_nullable_to_non_nullable
-              as int,
-      completedReminders: null == completedReminders
-          ? _value.completedReminders
-          : completedReminders // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$FamilyOverviewImpl implements _FamilyOverview {
-  const _$FamilyOverviewImpl(
-      {required this.parentId,
-      required final List<FamilyLink> connectedChildren,
-      required final List<FamilyLink> pendingInvites,
-      required this.totalSessions,
-      required this.completedReminders})
-      : _connectedChildren = connectedChildren,
-        _pendingInvites = pendingInvites;
-
-  factory _$FamilyOverviewImpl.fromJson(Map<String, dynamic> json) =>
-      _$$FamilyOverviewImplFromJson(json);
-
-  @override
-  final String parentId;
-  final List<FamilyLink> _connectedChildren;
-  @override
-  List<FamilyLink> get connectedChildren {
-    if (_connectedChildren is EqualUnmodifiableListView)
-      return _connectedChildren;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_connectedChildren);
-  }
-
-  final List<FamilyLink> _pendingInvites;
-  @override
-  List<FamilyLink> get pendingInvites {
-    if (_pendingInvites is EqualUnmodifiableListView) return _pendingInvites;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_pendingInvites);
-  }
-
-  @override
-  final int totalSessions;
-  @override
-  final int completedReminders;
-
-  @override
-  String toString() {
-    return 'FamilyOverview(parentId: $parentId, connectedChildren: $connectedChildren, pendingInvites: $pendingInvites, totalSessions: $totalSessions, completedReminders: $completedReminders)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$FamilyOverviewImpl &&
-            (identical(other.parentId, parentId) ||
-                other.parentId == parentId) &&
-            const DeepCollectionEquality()
-                .equals(other._connectedChildren, _connectedChildren) &&
-            const DeepCollectionEquality()
-                .equals(other._pendingInvites, _pendingInvites) &&
-            (identical(other.totalSessions, totalSessions) ||
-                other.totalSessions == totalSessions) &&
-            (identical(other.completedReminders, completedReminders) ||
-                other.completedReminders == completedReminders));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      parentId,
-      const DeepCollectionEquality().hash(_connectedChildren),
-      const DeepCollectionEquality().hash(_pendingInvites),
-      totalSessions,
-      completedReminders);
-
-  /// Create a copy of FamilyOverview
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$FamilyOverviewImplCopyWith<_$FamilyOverviewImpl> get copyWith =>
-      __$$FamilyOverviewImplCopyWithImpl<_$FamilyOverviewImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$FamilyOverviewImplToJson(
-      this,
-    );
-  }
-}
-
-abstract class _FamilyOverview implements FamilyOverview {
-  const factory _FamilyOverview(
-      {required final String parentId,
-      required final List<FamilyLink> connectedChildren,
-      required final List<FamilyLink> pendingInvites,
-      required final int totalSessions,
-      required final int completedReminders}) = _$FamilyOverviewImpl;
-
-  factory _FamilyOverview.fromJson(Map<String, dynamic> json) =
-      _$FamilyOverviewImpl.fromJson;
-
-  @override
-  String get parentId;
-  @override
-  List<FamilyLink> get connectedChildren;
-  @override
-  List<FamilyLink> get pendingInvites;
-  @override
-  int get totalSessions;
-  @override
-  int get completedReminders;
-
-  /// Create a copy of FamilyOverview
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$FamilyOverviewImplCopyWith<_$FamilyOverviewImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

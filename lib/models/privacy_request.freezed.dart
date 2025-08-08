@@ -22,14 +22,15 @@ PrivacyRequest _$PrivacyRequestFromJson(Map<String, dynamic> json) {
 mixin _$PrivacyRequest {
   String get id => throw _privateConstructorUsedError;
   String get childId => throw _privateConstructorUsedError;
-  String get type =>
-      throw _privateConstructorUsedError; // 'private_session', 'data_access', etc.
+  String get parentId => throw _privateConstructorUsedError;
+  String get requestType =>
+      throw _privateConstructorUsedError; // 'data_access', 'account_deletion', 'permission_change'
   String get status =>
       throw _privateConstructorUsedError; // 'pending', 'approved', 'denied'
   DateTime get requestedAt => throw _privateConstructorUsedError;
   DateTime? get respondedAt => throw _privateConstructorUsedError;
-  String? get parentResponse => throw _privateConstructorUsedError;
   String? get reason => throw _privateConstructorUsedError;
+  String? get parentResponse => throw _privateConstructorUsedError;
 
   /// Serializes this PrivacyRequest to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -50,12 +51,13 @@ abstract class $PrivacyRequestCopyWith<$Res> {
   $Res call(
       {String id,
       String childId,
-      String type,
+      String parentId,
+      String requestType,
       String status,
       DateTime requestedAt,
       DateTime? respondedAt,
-      String? parentResponse,
-      String? reason});
+      String? reason,
+      String? parentResponse});
 }
 
 /// @nodoc
@@ -75,12 +77,13 @@ class _$PrivacyRequestCopyWithImpl<$Res, $Val extends PrivacyRequest>
   $Res call({
     Object? id = null,
     Object? childId = null,
-    Object? type = null,
+    Object? parentId = null,
+    Object? requestType = null,
     Object? status = null,
     Object? requestedAt = null,
     Object? respondedAt = freezed,
-    Object? parentResponse = freezed,
     Object? reason = freezed,
+    Object? parentResponse = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -91,9 +94,13 @@ class _$PrivacyRequestCopyWithImpl<$Res, $Val extends PrivacyRequest>
           ? _value.childId
           : childId // ignore: cast_nullable_to_non_nullable
               as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
+      parentId: null == parentId
+          ? _value.parentId
+          : parentId // ignore: cast_nullable_to_non_nullable
+              as String,
+      requestType: null == requestType
+          ? _value.requestType
+          : requestType // ignore: cast_nullable_to_non_nullable
               as String,
       status: null == status
           ? _value.status
@@ -107,13 +114,13 @@ class _$PrivacyRequestCopyWithImpl<$Res, $Val extends PrivacyRequest>
           ? _value.respondedAt
           : respondedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      parentResponse: freezed == parentResponse
-          ? _value.parentResponse
-          : parentResponse // ignore: cast_nullable_to_non_nullable
-              as String?,
       reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
+              as String?,
+      parentResponse: freezed == parentResponse
+          ? _value.parentResponse
+          : parentResponse // ignore: cast_nullable_to_non_nullable
               as String?,
     ) as $Val);
   }
@@ -130,12 +137,13 @@ abstract class _$$PrivacyRequestImplCopyWith<$Res>
   $Res call(
       {String id,
       String childId,
-      String type,
+      String parentId,
+      String requestType,
       String status,
       DateTime requestedAt,
       DateTime? respondedAt,
-      String? parentResponse,
-      String? reason});
+      String? reason,
+      String? parentResponse});
 }
 
 /// @nodoc
@@ -153,12 +161,13 @@ class __$$PrivacyRequestImplCopyWithImpl<$Res>
   $Res call({
     Object? id = null,
     Object? childId = null,
-    Object? type = null,
+    Object? parentId = null,
+    Object? requestType = null,
     Object? status = null,
     Object? requestedAt = null,
     Object? respondedAt = freezed,
-    Object? parentResponse = freezed,
     Object? reason = freezed,
+    Object? parentResponse = freezed,
   }) {
     return _then(_$PrivacyRequestImpl(
       id: null == id
@@ -169,9 +178,13 @@ class __$$PrivacyRequestImplCopyWithImpl<$Res>
           ? _value.childId
           : childId // ignore: cast_nullable_to_non_nullable
               as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
+      parentId: null == parentId
+          ? _value.parentId
+          : parentId // ignore: cast_nullable_to_non_nullable
+              as String,
+      requestType: null == requestType
+          ? _value.requestType
+          : requestType // ignore: cast_nullable_to_non_nullable
               as String,
       status: null == status
           ? _value.status
@@ -185,13 +198,13 @@ class __$$PrivacyRequestImplCopyWithImpl<$Res>
           ? _value.respondedAt
           : respondedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      parentResponse: freezed == parentResponse
-          ? _value.parentResponse
-          : parentResponse // ignore: cast_nullable_to_non_nullable
-              as String?,
       reason: freezed == reason
           ? _value.reason
           : reason // ignore: cast_nullable_to_non_nullable
+              as String?,
+      parentResponse: freezed == parentResponse
+          ? _value.parentResponse
+          : parentResponse // ignore: cast_nullable_to_non_nullable
               as String?,
     ));
   }
@@ -203,12 +216,13 @@ class _$PrivacyRequestImpl implements _PrivacyRequest {
   const _$PrivacyRequestImpl(
       {required this.id,
       required this.childId,
-      required this.type,
+      required this.parentId,
+      required this.requestType,
       required this.status,
       required this.requestedAt,
       this.respondedAt,
-      this.parentResponse,
-      this.reason});
+      this.reason,
+      this.parentResponse});
 
   factory _$PrivacyRequestImpl.fromJson(Map<String, dynamic> json) =>
       _$$PrivacyRequestImplFromJson(json);
@@ -218,8 +232,10 @@ class _$PrivacyRequestImpl implements _PrivacyRequest {
   @override
   final String childId;
   @override
-  final String type;
-// 'private_session', 'data_access', etc.
+  final String parentId;
+  @override
+  final String requestType;
+// 'data_access', 'account_deletion', 'permission_change'
   @override
   final String status;
 // 'pending', 'approved', 'denied'
@@ -228,13 +244,13 @@ class _$PrivacyRequestImpl implements _PrivacyRequest {
   @override
   final DateTime? respondedAt;
   @override
-  final String? parentResponse;
-  @override
   final String? reason;
+  @override
+  final String? parentResponse;
 
   @override
   String toString() {
-    return 'PrivacyRequest(id: $id, childId: $childId, type: $type, status: $status, requestedAt: $requestedAt, respondedAt: $respondedAt, parentResponse: $parentResponse, reason: $reason)';
+    return 'PrivacyRequest(id: $id, childId: $childId, parentId: $parentId, requestType: $requestType, status: $status, requestedAt: $requestedAt, respondedAt: $respondedAt, reason: $reason, parentResponse: $parentResponse)';
   }
 
   @override
@@ -244,21 +260,24 @@ class _$PrivacyRequestImpl implements _PrivacyRequest {
             other is _$PrivacyRequestImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.childId, childId) || other.childId == childId) &&
-            (identical(other.type, type) || other.type == type) &&
+            (identical(other.parentId, parentId) ||
+                other.parentId == parentId) &&
+            (identical(other.requestType, requestType) ||
+                other.requestType == requestType) &&
             (identical(other.status, status) || other.status == status) &&
             (identical(other.requestedAt, requestedAt) ||
                 other.requestedAt == requestedAt) &&
             (identical(other.respondedAt, respondedAt) ||
                 other.respondedAt == respondedAt) &&
+            (identical(other.reason, reason) || other.reason == reason) &&
             (identical(other.parentResponse, parentResponse) ||
-                other.parentResponse == parentResponse) &&
-            (identical(other.reason, reason) || other.reason == reason));
+                other.parentResponse == parentResponse));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, childId, type, status,
-      requestedAt, respondedAt, parentResponse, reason);
+  int get hashCode => Object.hash(runtimeType, id, childId, parentId,
+      requestType, status, requestedAt, respondedAt, reason, parentResponse);
 
   /// Create a copy of PrivacyRequest
   /// with the given fields replaced by the non-null parameter values.
@@ -281,12 +300,13 @@ abstract class _PrivacyRequest implements PrivacyRequest {
   const factory _PrivacyRequest(
       {required final String id,
       required final String childId,
-      required final String type,
+      required final String parentId,
+      required final String requestType,
       required final String status,
       required final DateTime requestedAt,
       final DateTime? respondedAt,
-      final String? parentResponse,
-      final String? reason}) = _$PrivacyRequestImpl;
+      final String? reason,
+      final String? parentResponse}) = _$PrivacyRequestImpl;
 
   factory _PrivacyRequest.fromJson(Map<String, dynamic> json) =
       _$PrivacyRequestImpl.fromJson;
@@ -296,7 +316,10 @@ abstract class _PrivacyRequest implements PrivacyRequest {
   @override
   String get childId;
   @override
-  String get type; // 'private_session', 'data_access', etc.
+  String get parentId;
+  @override
+  String
+      get requestType; // 'data_access', 'account_deletion', 'permission_change'
   @override
   String get status; // 'pending', 'approved', 'denied'
   @override
@@ -304,9 +327,9 @@ abstract class _PrivacyRequest implements PrivacyRequest {
   @override
   DateTime? get respondedAt;
   @override
-  String? get parentResponse;
-  @override
   String? get reason;
+  @override
+  String? get parentResponse;
 
   /// Create a copy of PrivacyRequest
   /// with the given fields replaced by the non-null parameter values.

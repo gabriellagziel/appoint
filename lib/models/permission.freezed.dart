@@ -22,11 +22,14 @@ Permission _$PermissionFromJson(Map<String, dynamic> json) {
 mixin _$Permission {
   String get id => throw _privateConstructorUsedError;
   String get familyLinkId => throw _privateConstructorUsedError;
-  String get category =>
-      throw _privateConstructorUsedError; // 'profile', 'playtime', 'reminders', etc.
-  String get accessLevel =>
-      throw _privateConstructorUsedError; // 'read', 'write', 'none'
-  DateTime? get lastModified => throw _privateConstructorUsedError;
+  String get grantedTo => throw _privateConstructorUsedError; // childId
+  String get grantedBy => throw _privateConstructorUsedError; // parentId
+  String get permissionType =>
+      throw _privateConstructorUsedError; // 'calendar_view', 'reminder_assign', 'data_access'
+  bool get isGranted => throw _privateConstructorUsedError;
+  DateTime get grantedAt => throw _privateConstructorUsedError;
+  DateTime? get revokedAt => throw _privateConstructorUsedError;
+  String? get notes => throw _privateConstructorUsedError;
 
   /// Serializes this Permission to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -47,9 +50,13 @@ abstract class $PermissionCopyWith<$Res> {
   $Res call(
       {String id,
       String familyLinkId,
-      String category,
-      String accessLevel,
-      DateTime? lastModified});
+      String grantedTo,
+      String grantedBy,
+      String permissionType,
+      bool isGranted,
+      DateTime grantedAt,
+      DateTime? revokedAt,
+      String? notes});
 }
 
 /// @nodoc
@@ -69,9 +76,13 @@ class _$PermissionCopyWithImpl<$Res, $Val extends Permission>
   $Res call({
     Object? id = null,
     Object? familyLinkId = null,
-    Object? category = null,
-    Object? accessLevel = null,
-    Object? lastModified = freezed,
+    Object? grantedTo = null,
+    Object? grantedBy = null,
+    Object? permissionType = null,
+    Object? isGranted = null,
+    Object? grantedAt = null,
+    Object? revokedAt = freezed,
+    Object? notes = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -82,18 +93,34 @@ class _$PermissionCopyWithImpl<$Res, $Val extends Permission>
           ? _value.familyLinkId
           : familyLinkId // ignore: cast_nullable_to_non_nullable
               as String,
-      category: null == category
-          ? _value.category
-          : category // ignore: cast_nullable_to_non_nullable
+      grantedTo: null == grantedTo
+          ? _value.grantedTo
+          : grantedTo // ignore: cast_nullable_to_non_nullable
               as String,
-      accessLevel: null == accessLevel
-          ? _value.accessLevel
-          : accessLevel // ignore: cast_nullable_to_non_nullable
+      grantedBy: null == grantedBy
+          ? _value.grantedBy
+          : grantedBy // ignore: cast_nullable_to_non_nullable
               as String,
-      lastModified: freezed == lastModified
-          ? _value.lastModified
-          : lastModified // ignore: cast_nullable_to_non_nullable
+      permissionType: null == permissionType
+          ? _value.permissionType
+          : permissionType // ignore: cast_nullable_to_non_nullable
+              as String,
+      isGranted: null == isGranted
+          ? _value.isGranted
+          : isGranted // ignore: cast_nullable_to_non_nullable
+              as bool,
+      grantedAt: null == grantedAt
+          ? _value.grantedAt
+          : grantedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      revokedAt: freezed == revokedAt
+          ? _value.revokedAt
+          : revokedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
+      notes: freezed == notes
+          ? _value.notes
+          : notes // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -109,9 +136,13 @@ abstract class _$$PermissionImplCopyWith<$Res>
   $Res call(
       {String id,
       String familyLinkId,
-      String category,
-      String accessLevel,
-      DateTime? lastModified});
+      String grantedTo,
+      String grantedBy,
+      String permissionType,
+      bool isGranted,
+      DateTime grantedAt,
+      DateTime? revokedAt,
+      String? notes});
 }
 
 /// @nodoc
@@ -129,9 +160,13 @@ class __$$PermissionImplCopyWithImpl<$Res>
   $Res call({
     Object? id = null,
     Object? familyLinkId = null,
-    Object? category = null,
-    Object? accessLevel = null,
-    Object? lastModified = freezed,
+    Object? grantedTo = null,
+    Object? grantedBy = null,
+    Object? permissionType = null,
+    Object? isGranted = null,
+    Object? grantedAt = null,
+    Object? revokedAt = freezed,
+    Object? notes = freezed,
   }) {
     return _then(_$PermissionImpl(
       id: null == id
@@ -142,18 +177,34 @@ class __$$PermissionImplCopyWithImpl<$Res>
           ? _value.familyLinkId
           : familyLinkId // ignore: cast_nullable_to_non_nullable
               as String,
-      category: null == category
-          ? _value.category
-          : category // ignore: cast_nullable_to_non_nullable
+      grantedTo: null == grantedTo
+          ? _value.grantedTo
+          : grantedTo // ignore: cast_nullable_to_non_nullable
               as String,
-      accessLevel: null == accessLevel
-          ? _value.accessLevel
-          : accessLevel // ignore: cast_nullable_to_non_nullable
+      grantedBy: null == grantedBy
+          ? _value.grantedBy
+          : grantedBy // ignore: cast_nullable_to_non_nullable
               as String,
-      lastModified: freezed == lastModified
-          ? _value.lastModified
-          : lastModified // ignore: cast_nullable_to_non_nullable
+      permissionType: null == permissionType
+          ? _value.permissionType
+          : permissionType // ignore: cast_nullable_to_non_nullable
+              as String,
+      isGranted: null == isGranted
+          ? _value.isGranted
+          : isGranted // ignore: cast_nullable_to_non_nullable
+              as bool,
+      grantedAt: null == grantedAt
+          ? _value.grantedAt
+          : grantedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      revokedAt: freezed == revokedAt
+          ? _value.revokedAt
+          : revokedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
+      notes: freezed == notes
+          ? _value.notes
+          : notes // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -164,9 +215,13 @@ class _$PermissionImpl implements _Permission {
   const _$PermissionImpl(
       {required this.id,
       required this.familyLinkId,
-      required this.category,
-      required this.accessLevel,
-      this.lastModified});
+      required this.grantedTo,
+      required this.grantedBy,
+      required this.permissionType,
+      required this.isGranted,
+      required this.grantedAt,
+      this.revokedAt,
+      this.notes});
 
   factory _$PermissionImpl.fromJson(Map<String, dynamic> json) =>
       _$$PermissionImplFromJson(json);
@@ -176,17 +231,26 @@ class _$PermissionImpl implements _Permission {
   @override
   final String familyLinkId;
   @override
-  final String category;
-// 'profile', 'playtime', 'reminders', etc.
+  final String grantedTo;
+// childId
   @override
-  final String accessLevel;
-// 'read', 'write', 'none'
+  final String grantedBy;
+// parentId
   @override
-  final DateTime? lastModified;
+  final String permissionType;
+// 'calendar_view', 'reminder_assign', 'data_access'
+  @override
+  final bool isGranted;
+  @override
+  final DateTime grantedAt;
+  @override
+  final DateTime? revokedAt;
+  @override
+  final String? notes;
 
   @override
   String toString() {
-    return 'Permission(id: $id, familyLinkId: $familyLinkId, category: $category, accessLevel: $accessLevel, lastModified: $lastModified)';
+    return 'Permission(id: $id, familyLinkId: $familyLinkId, grantedTo: $grantedTo, grantedBy: $grantedBy, permissionType: $permissionType, isGranted: $isGranted, grantedAt: $grantedAt, revokedAt: $revokedAt, notes: $notes)';
   }
 
   @override
@@ -197,18 +261,25 @@ class _$PermissionImpl implements _Permission {
             (identical(other.id, id) || other.id == id) &&
             (identical(other.familyLinkId, familyLinkId) ||
                 other.familyLinkId == familyLinkId) &&
-            (identical(other.category, category) ||
-                other.category == category) &&
-            (identical(other.accessLevel, accessLevel) ||
-                other.accessLevel == accessLevel) &&
-            (identical(other.lastModified, lastModified) ||
-                other.lastModified == lastModified));
+            (identical(other.grantedTo, grantedTo) ||
+                other.grantedTo == grantedTo) &&
+            (identical(other.grantedBy, grantedBy) ||
+                other.grantedBy == grantedBy) &&
+            (identical(other.permissionType, permissionType) ||
+                other.permissionType == permissionType) &&
+            (identical(other.isGranted, isGranted) ||
+                other.isGranted == isGranted) &&
+            (identical(other.grantedAt, grantedAt) ||
+                other.grantedAt == grantedAt) &&
+            (identical(other.revokedAt, revokedAt) ||
+                other.revokedAt == revokedAt) &&
+            (identical(other.notes, notes) || other.notes == notes));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-      runtimeType, id, familyLinkId, category, accessLevel, lastModified);
+  int get hashCode => Object.hash(runtimeType, id, familyLinkId, grantedTo,
+      grantedBy, permissionType, isGranted, grantedAt, revokedAt, notes);
 
   /// Create a copy of Permission
   /// with the given fields replaced by the non-null parameter values.
@@ -230,9 +301,13 @@ abstract class _Permission implements Permission {
   const factory _Permission(
       {required final String id,
       required final String familyLinkId,
-      required final String category,
-      required final String accessLevel,
-      final DateTime? lastModified}) = _$PermissionImpl;
+      required final String grantedTo,
+      required final String grantedBy,
+      required final String permissionType,
+      required final bool isGranted,
+      required final DateTime grantedAt,
+      final DateTime? revokedAt,
+      final String? notes}) = _$PermissionImpl;
 
   factory _Permission.fromJson(Map<String, dynamic> json) =
       _$PermissionImpl.fromJson;
@@ -242,11 +317,20 @@ abstract class _Permission implements Permission {
   @override
   String get familyLinkId;
   @override
-  String get category; // 'profile', 'playtime', 'reminders', etc.
+  String get grantedTo; // childId
   @override
-  String get accessLevel; // 'read', 'write', 'none'
+  String get grantedBy; // parentId
   @override
-  DateTime? get lastModified;
+  String
+      get permissionType; // 'calendar_view', 'reminder_assign', 'data_access'
+  @override
+  bool get isGranted;
+  @override
+  DateTime get grantedAt;
+  @override
+  DateTime? get revokedAt;
+  @override
+  String? get notes;
 
   /// Create a copy of Permission
   /// with the given fields replaced by the non-null parameter values.

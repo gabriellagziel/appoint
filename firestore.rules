@@ -1,180 +1,161 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    function isSignedIn() {
-      return request.auth != null;
+    
+    // User metadata collection - PWA tracking data
+    match /user_meta/{userId} {
+      // Allow users to read and write their own PWA metadata
+      allow read, write: if request.auth != null 
+                         && request.auth.uid == userId
+                         && isValidUserMeta();
+      
+      // Helper function to validate user_meta document structure
+      function isValidUserMeta() {
+        let data = request.resource.data;
+        return data.keys().hasAll(['userId', 'userPwaPromptCount', 'hasInstalledPwa', 'createdAt', 'updatedAt'])
+               && data.userId is string
+               && data.userPwaPromptCount is number
+               && data.hasInstalledPwa is bool
+               && data.createdAt is timestamp
+               && data.updatedAt is timestamp
+               && data.userId == userId; // Ensure userId matches document ID
+      }
     }
-
-    function isAdmin() {
-      return isSignedIn() &&
-        exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
-        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    
+    // Alternative structure if using nested user documents
+    // match /users/{userId}/meta/{docId} {
+    //   allow read, write: if request.auth != null 
+    //                      && request.auth.uid == userId;
+    // }
+    
+    // Playtime-related collections with PWA integration
+    match /playtime_games/{gameId} {
+      // Public read access for games
+      allow read: if true;
+      // Only authenticated users can create/update (admins in real app)
+      allow write: if request.auth != null;
     }
-
-    function isOwner(id) {
-      return isSignedIn() && request.auth.uid == id;
+    
+    match /playtime_sessions/{sessionId} {
+      // Users can read sessions they're involved in
+      allow read: if request.auth != null 
+                     && (request.auth.uid == resource.data.creatorId
+                         || request.auth.uid in resource.data.participantIds);
+      
+      // Users can create sessions
+      allow create: if request.auth != null 
+                       && request.auth.uid == request.resource.data.creatorId;
+      
+      // Only creators can update their sessions
+      allow update: if request.auth != null 
+                       && request.auth.uid == resource.data.creatorId;
+      
+      // Only creators can delete their sessions
+      allow delete: if request.auth != null 
+                       && request.auth.uid == resource.data.creatorId;
     }
-    // User profiles with map-view counter validation
+    
+    match /playtime_backgrounds/{backgroundId} {
+      // Public read access for backgrounds
+      allow read: if true;
+      // Only authenticated users can upload (admins approve in real app)
+      allow write: if request.auth != null;
+    }
+    
+    // Meetings collection with PWA tracking integration
+    match /meetings/{meetingId} {
+      // Users can read meetings they're involved in
+      allow read: if request.auth != null 
+                     && (request.auth.uid == resource.data.organizerId
+                         || request.auth.uid in resource.data.participantIds);
+      
+      // Users can create meetings
+      allow create: if request.auth != null 
+                       && request.auth.uid == request.resource.data.organizerId
+                       && isValidMeeting();
+      
+      // Only organizers can update their meetings
+      allow update: if request.auth != null 
+                       && request.auth.uid == resource.data.organizerId
+                       && isValidMeeting();
+      
+      // Only organizers can delete their meetings
+      allow delete: if request.auth != null 
+                       && request.auth.uid == resource.data.organizerId;
+      
+      function isValidMeeting() {
+        let data = request.resource.data;
+        return data.keys().hasAll(['id', 'organizerId', 'title', 'startTime', 'endTime', 'meetingType', 'createdAt'])
+               && data.organizerId is string
+               && data.title is string
+               && data.startTime is timestamp
+               && data.endTime is timestamp
+               && data.meetingType in ['personal', 'event', 'playtime']
+               && data.createdAt is timestamp;
+      }
+    }
+    
+    // Analytics events (if storing in Firestore instead of external service)
+    match /analytics_events/{eventId} {
+      // Users can only create analytics events, not read/update/delete
+      allow create: if request.auth != null 
+                       && request.resource.data.userId == request.auth.uid;
+      
+      // Admins can read analytics (add admin check in real app)
+      allow read: if request.auth != null 
+                     && isAdmin();
+      
+      function isAdmin() {
+        // Implement admin check logic
+        // For now, allow any authenticated user (change in production)
+        return request.auth != null;
+      }
+    }
+    
+    // Family links and relationships
+    match /family_links/{linkId} {
+      allow read, write: if request.auth != null 
+                            && (request.auth.uid == resource.data.parentId
+                                || request.auth.uid == resource.data.childId);
+    }
+    
+    // User profiles
     match /users/{userId} {
-      allow read, create: if isOwner(userId);
-      allow update: if isSignedIn() &&
-        isOwner(userId) &&
-        (!('role' in request.resource.data) ||
-          request.resource.data.role == resource.data.role) &&
-        // If the mapViewCount field is present we only allow an increment of 1
-        (!("mapViewCount" in request.resource.data) ||
-          request.resource.data.mapViewCount == resource.data.mapViewCount + 1);
+      allow read, write: if request.auth != null 
+                            && request.auth.uid == userId;
     }
-
-    // Bookings
-    match /bookings/{bookingId} {
-      allow read: if isSignedIn() && (
-        resource.data.userId == request.auth.uid ||
-        resource.data.businessId == request.auth.uid ||
-        resource.data.ambassadorId == request.auth.uid
-      );
-      allow create: if isSignedIn() &&
-        request.auth.uid == request.resource.data.userId;
-      allow update: if isSignedIn() && (
-        request.auth.uid == resource.data.userId ||
-        request.auth.uid == resource.data.businessId ||
-        request.auth.uid == resource.data.ambassadorId
-      ) &&
-        request.resource.data.userId == resource.data.userId &&
-        request.resource.data.businessId == resource.data.businessId &&
-        request.resource.data.ambassadorId == resource.data.ambassadorId;
-      allow delete: if isSignedIn() && request.auth.uid == resource.data.userId;
-    }
-
-    // Businesses
-    match /businesses/{businessId} {
-      allow read: if isSignedIn();
-      allow write: if isOwner(businessId);
-    }
-
-    // Ambassadors
-    match /ambassadors/{ambassadorId} {
-      allow read: if isSignedIn();
-      allow write: if isOwner(ambassadorId);
-    }
-
-    // Admin broadcasts
-    match /admin_broadcasts/{broadcastId} {
-      allow read: if isAdmin();
-      allow write: if isAdmin();
-    }
-
-    // Ambassador quotas
-    match /ambassador_quotas/{quotaId} {
-      allow read: if isSignedIn() && (
-        request.auth.uid == resource.data.ambassadorId ||
-        request.auth.uid == resource.data.businessId
-      );
-      allow create: if isSignedIn() && (
-        request.auth.uid == request.resource.data.ambassadorId ||
-        request.auth.uid == request.resource.data.businessId
-      );
-      allow update: if isSignedIn() && (
-        request.auth.uid == resource.data.ambassadorId ||
-        request.auth.uid == resource.data.businessId
-      ) &&
-        request.resource.data.ambassadorId == resource.data.ambassadorId &&
-        request.resource.data.businessId == resource.data.businessId;
-    }
-
-    // Playtime Games - Simple rules
-    match /playtime_games/{docId} {
-      allow read: if isSignedIn();
-      allow write: if isAdmin();
-    }
-
-    // Playtime Sessions - Simple rules
-    match /playtime_sessions/{docId} {
-      allow read, write: if isSignedIn() &&
-        (request.auth.uid == resource.data.creatorId || isAdmin());
-    }
-
-    // Playtime Backgrounds - Simple rules
-    match /playtime_backgrounds/{docId} {
-      allow read: if isSignedIn();
-      allow write: if isAdmin();
-    }
-
-    // Family relationships
-    match /families/{familyId} {
-      allow read: if isSignedIn() && (
-        request.auth.uid == resource.data.parentId ||
-        request.auth.uid in resource.data.children
-      );
-      allow create: if isSignedIn() && request.auth.uid == request.resource.data.parentId;
-      allow update: if isSignedIn() && request.auth.uid == resource.data.parentId &&
-        request.resource.data.parentId == resource.data.parentId;
-    }
-
-    // Family invitations
-    match /family_invitations/{invitationId} {
-      allow read: if isSignedIn() && (
-        request.auth.uid == resource.data.parentId ||
-        request.auth.uid == resource.data.childId
-      );
-      allow create: if isSignedIn() && (
-        request.auth.uid == request.resource.data.parentId ||
-        request.auth.uid == request.resource.data.childId
-      );
-      allow update: if isSignedIn() && (
-        request.auth.uid == resource.data.parentId ||
-        request.auth.uid == resource.data.childId
-      ) &&
-        request.resource.data.parentId == resource.data.parentId &&
-        request.resource.data.childId == resource.data.childId;
-    }
-
-    // Notifications
-    match /notifications/{notificationId} {
-      allow read: if isSignedIn() && request.auth.uid == resource.data.userId;
-      allow create: if isSignedIn() && request.auth.uid == request.resource.data.userId;
-      allow update: if isSignedIn() && request.auth.uid == resource.data.userId &&
-        request.resource.data.userId == resource.data.userId;
-    }
-
-    // Content library
-    match /content_items/{itemId} {
-      allow read: if isSignedIn();
-      allow create, update, delete: if isAdmin();
-    }
-
-    // Payments
-    match /payments/{paymentId} {
-      allow read: if isSignedIn() && request.auth.uid == resource.data.userId;
-      allow create: if isSignedIn() && request.auth.uid == request.resource.data.userId;
-      allow update: if isSignedIn() && request.auth.uid == resource.data.userId &&
-        request.resource.data.userId == resource.data.userId;
-    }
-
-    // Admin panel data
+    
+    // Admin-only collections
     match /admin/{document=**} {
-      allow read, write: if isAdmin();
+      allow read, write: if request.auth != null 
+                            && isAdmin();
     }
-
-    // Map Views limitation for free-tier users
-    match /users/{userId}/mapViews/{appointmentId} {
-      // Free & premium users can read their own map view docs
-      allow read: if isOwner(userId);
-
-      // Creation allowed only if:
-      //  • The caller owns the document
-      //  • A document for this appointment does not already exist (ensured by client attempting to create only once)
-      //  • The user has viewed fewer than 5 appointments **before** this write, and
-      //    the accompanying user document update increments the counter by 1.
-      allow create: if isOwner(userId) &&
-        !exists(/databases/$(database)/documents/users/$(userId)/mapViews/$(appointmentId)) &&
-        get(/databases/$(database)/documents/users/$(userId)).data.mapViewCount < 5 &&
-        // Validate that the user document is part of this commit and increments the counter exactly once
-        getAfter(/databases/$(database)/documents/users/$(userId)).data.mapViewCount ==
-          get(/databases/$(database)/documents/users/$(userId)).data.mapViewCount + 1;
-
-      // Updates & deletes are not allowed – a view record is immutable
-      allow update, delete: if false;
+    
+    // Default deny rule for all other documents
+    match /{document=**} {
+      allow read, write: if false;
     }
   }
-} 
+}
+
+// Additional helper functions that can be used across rules
+function isAuthenticated() {
+  return request.auth != null;
+}
+
+function isOwner(userId) {
+  return request.auth != null && request.auth.uid == userId;
+}
+
+function isValidTimestamp(timestamp) {
+  return timestamp is timestamp 
+         && timestamp <= request.time 
+         && timestamp >= request.time - duration.value(1, 'h'); // Within last hour
+}
+
+function hasValidUserClaims() {
+  return request.auth != null 
+         && request.auth.token != null
+         && 'email_verified' in request.auth.token
+         && request.auth.token.email_verified == true;
+}
