@@ -67,13 +67,3 @@ final meetingControllerProvider =
   c.init();
   return c;
 });
-  Future<void> toggleChecklistItem(String itemId, bool done) =>
-      ref.read(meetingServiceProvider).toggleChecklistItem(meetingId, itemId, done);
-      
-  // Role management
-  Future<void> assignRole(String userId, String role) =>
-      ref.read(meetingServiceProvider).assignRole(meetingId, userId, role);
-      
-  Future<void> removeRole(String userId) =>
-      ref.read(meetingServiceProvider).removeRole(meetingId, userId);
-}
