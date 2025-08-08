@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enterprise.app-oint.com/sitemap.xml

@@ -1,0 +1,78 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAdmin() {
+      return request.auth != null && request.auth.token.role == 'admin';
+    }
+    
+    function isOwner(clientId) {
+      return request.auth != null && request.auth.uid == clientId;
+    }
+    
+    function isFunction() {
+      return request.auth != null && request.auth.token.isFunction == true;
+    }
+
+    // Enterprise Applications - Public create with validation, admin read/write
+    match /enterprise_applications/{appId} {
+      allow create: if request.auth != null && 
+        request.resource.data.keys().hasAll(['businessName', 'contactName', 'email', 'phone', 'industry', 'expectedMeetings']) &&
+        request.resource.data.email is string &&
+        request.resource.data.email.matches('^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$') &&
+        request.resource.data.status == 'pending';
+      allow read, write: if isAdmin() || isOwner(resource.data.clientId);
+    }
+
+    // Enterprise Clients - Owner read/write, admin full access
+    match /enterprise_clients/{clientId} {
+      allow read: if isOwner(clientId) || isAdmin();
+      allow write: if isAdmin() || (isOwner(clientId) && !('tier' in request.resource.data));
+    }
+
+    // Enterprise Usage - Owner read, admin read/write, functions write
+    match /enterprise_usage/{clientId} {
+      allow read: if isOwner(clientId) || isAdmin();
+      allow write: if isAdmin() || isFunction();
+    }
+
+    // Enterprise Logs - Owner read, admin read/write, functions write
+    match /enterprise_logs/{logId} {
+      allow read: if isOwner(resource.data.clientId) || isAdmin();
+      allow write: if isAdmin() || isFunction();
+    }
+
+    // Enterprise Flags - Owner read, admin read/write
+    match /enterprise_flags/{clientId} {
+      allow read: if isOwner(clientId) || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // API Keys - Owner read/write, admin full access
+    match /api_keys/{keyId} {
+      allow read, write: if isOwner(resource.data.userId) || isAdmin();
+    }
+
+    // Invoices - Owner read, admin read/write
+    match /invoices/{invoiceId} {
+      allow read: if isOwner(resource.data.businessId) || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // Usage Logs - System write only, admin read
+    match /usage_logs/{logId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin() || isFunction();
+    }
+
+    // Admin users collection
+    match /admin_users/{userId} {
+      allow read, write: if isAdmin();
+    }
+
+    // Default deny all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
