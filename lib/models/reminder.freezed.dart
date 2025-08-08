@@ -23,20 +23,19 @@ mixin _$Reminder {
   String get id => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
-  DateTime get scheduledAt => throw _privateConstructorUsedError;
-  String get ownerId =>
-      throw _privateConstructorUsedError; // who created the reminder
-  String? get assigneeId =>
-      throw _privateConstructorUsedError; // who the reminder is for (nullable)
-  String? get familyId =>
-      throw _privateConstructorUsedError; // family context (nullable)
-  ReminderType get type => throw _privateConstructorUsedError;
-  ReminderRecurrence get recurrence => throw _privateConstructorUsedError;
+  DateTime get dueDate => throw _privateConstructorUsedError;
+  String get ownerId => throw _privateConstructorUsedError;
+  String? get assigneeId => throw _privateConstructorUsedError;
+  String? get familyId => throw _privateConstructorUsedError;
+  String get visibility =>
+      throw _privateConstructorUsedError; // 'private', 'family'
+  String get priority =>
+      throw _privateConstructorUsedError; // 'low', 'medium', 'high'
   bool? get isCompleted => throw _privateConstructorUsedError;
   DateTime? get completedAt => throw _privateConstructorUsedError;
+  String? get notes => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
-  Map<String, dynamic>? get metadata => throw _privateConstructorUsedError;
 
   /// Serializes this Reminder to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -57,17 +56,17 @@ abstract class $ReminderCopyWith<$Res> {
       {String id,
       String title,
       String description,
-      DateTime scheduledAt,
+      DateTime dueDate,
       String ownerId,
       String? assigneeId,
       String? familyId,
-      ReminderType type,
-      ReminderRecurrence recurrence,
+      String visibility,
+      String priority,
       bool? isCompleted,
       DateTime? completedAt,
+      String? notes,
       DateTime? createdAt,
-      DateTime? updatedAt,
-      Map<String, dynamic>? metadata});
+      DateTime? updatedAt});
 }
 
 /// @nodoc
@@ -88,17 +87,17 @@ class _$ReminderCopyWithImpl<$Res, $Val extends Reminder>
     Object? id = null,
     Object? title = null,
     Object? description = null,
-    Object? scheduledAt = null,
+    Object? dueDate = null,
     Object? ownerId = null,
     Object? assigneeId = freezed,
     Object? familyId = freezed,
-    Object? type = null,
-    Object? recurrence = null,
+    Object? visibility = null,
+    Object? priority = null,
     Object? isCompleted = freezed,
     Object? completedAt = freezed,
+    Object? notes = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? metadata = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -113,9 +112,9 @@ class _$ReminderCopyWithImpl<$Res, $Val extends Reminder>
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      scheduledAt: null == scheduledAt
-          ? _value.scheduledAt
-          : scheduledAt // ignore: cast_nullable_to_non_nullable
+      dueDate: null == dueDate
+          ? _value.dueDate
+          : dueDate // ignore: cast_nullable_to_non_nullable
               as DateTime,
       ownerId: null == ownerId
           ? _value.ownerId
@@ -129,14 +128,14 @@ class _$ReminderCopyWithImpl<$Res, $Val extends Reminder>
           ? _value.familyId
           : familyId // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as ReminderType,
-      recurrence: null == recurrence
-          ? _value.recurrence
-          : recurrence // ignore: cast_nullable_to_non_nullable
-              as ReminderRecurrence,
+      visibility: null == visibility
+          ? _value.visibility
+          : visibility // ignore: cast_nullable_to_non_nullable
+              as String,
+      priority: null == priority
+          ? _value.priority
+          : priority // ignore: cast_nullable_to_non_nullable
+              as String,
       isCompleted: freezed == isCompleted
           ? _value.isCompleted
           : isCompleted // ignore: cast_nullable_to_non_nullable
@@ -145,6 +144,10 @@ class _$ReminderCopyWithImpl<$Res, $Val extends Reminder>
           ? _value.completedAt
           : completedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
+      notes: freezed == notes
+          ? _value.notes
+          : notes // ignore: cast_nullable_to_non_nullable
+              as String?,
       createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
@@ -153,10 +156,6 @@ class _$ReminderCopyWithImpl<$Res, $Val extends Reminder>
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      metadata: freezed == metadata
-          ? _value.metadata
-          : metadata // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
     ) as $Val);
   }
 }
@@ -173,17 +172,17 @@ abstract class _$$ReminderImplCopyWith<$Res>
       {String id,
       String title,
       String description,
-      DateTime scheduledAt,
+      DateTime dueDate,
       String ownerId,
       String? assigneeId,
       String? familyId,
-      ReminderType type,
-      ReminderRecurrence recurrence,
+      String visibility,
+      String priority,
       bool? isCompleted,
       DateTime? completedAt,
+      String? notes,
       DateTime? createdAt,
-      DateTime? updatedAt,
-      Map<String, dynamic>? metadata});
+      DateTime? updatedAt});
 }
 
 /// @nodoc
@@ -202,17 +201,17 @@ class __$$ReminderImplCopyWithImpl<$Res>
     Object? id = null,
     Object? title = null,
     Object? description = null,
-    Object? scheduledAt = null,
+    Object? dueDate = null,
     Object? ownerId = null,
     Object? assigneeId = freezed,
     Object? familyId = freezed,
-    Object? type = null,
-    Object? recurrence = null,
+    Object? visibility = null,
+    Object? priority = null,
     Object? isCompleted = freezed,
     Object? completedAt = freezed,
+    Object? notes = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? metadata = freezed,
   }) {
     return _then(_$ReminderImpl(
       id: null == id
@@ -227,9 +226,9 @@ class __$$ReminderImplCopyWithImpl<$Res>
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      scheduledAt: null == scheduledAt
-          ? _value.scheduledAt
-          : scheduledAt // ignore: cast_nullable_to_non_nullable
+      dueDate: null == dueDate
+          ? _value.dueDate
+          : dueDate // ignore: cast_nullable_to_non_nullable
               as DateTime,
       ownerId: null == ownerId
           ? _value.ownerId
@@ -243,14 +242,14 @@ class __$$ReminderImplCopyWithImpl<$Res>
           ? _value.familyId
           : familyId // ignore: cast_nullable_to_non_nullable
               as String?,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as ReminderType,
-      recurrence: null == recurrence
-          ? _value.recurrence
-          : recurrence // ignore: cast_nullable_to_non_nullable
-              as ReminderRecurrence,
+      visibility: null == visibility
+          ? _value.visibility
+          : visibility // ignore: cast_nullable_to_non_nullable
+              as String,
+      priority: null == priority
+          ? _value.priority
+          : priority // ignore: cast_nullable_to_non_nullable
+              as String,
       isCompleted: freezed == isCompleted
           ? _value.isCompleted
           : isCompleted // ignore: cast_nullable_to_non_nullable
@@ -259,6 +258,10 @@ class __$$ReminderImplCopyWithImpl<$Res>
           ? _value.completedAt
           : completedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
+      notes: freezed == notes
+          ? _value.notes
+          : notes // ignore: cast_nullable_to_non_nullable
+              as String?,
       createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
@@ -267,10 +270,6 @@ class __$$ReminderImplCopyWithImpl<$Res>
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      metadata: freezed == metadata
-          ? _value._metadata
-          : metadata // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>?,
     ));
   }
 }
@@ -282,18 +281,17 @@ class _$ReminderImpl implements _Reminder {
       {required this.id,
       required this.title,
       required this.description,
-      required this.scheduledAt,
+      required this.dueDate,
       required this.ownerId,
       this.assigneeId,
       this.familyId,
-      required this.type,
-      required this.recurrence,
+      required this.visibility,
+      required this.priority,
       this.isCompleted,
       this.completedAt,
+      this.notes,
       this.createdAt,
-      this.updatedAt,
-      final Map<String, dynamic>? metadata})
-      : _metadata = metadata;
+      this.updatedAt});
 
   factory _$ReminderImpl.fromJson(Map<String, dynamic> json) =>
       _$$ReminderImplFromJson(json);
@@ -305,41 +303,33 @@ class _$ReminderImpl implements _Reminder {
   @override
   final String description;
   @override
-  final DateTime scheduledAt;
+  final DateTime dueDate;
   @override
   final String ownerId;
-// who created the reminder
   @override
   final String? assigneeId;
-// who the reminder is for (nullable)
   @override
   final String? familyId;
-// family context (nullable)
   @override
-  final ReminderType type;
+  final String visibility;
+// 'private', 'family'
   @override
-  final ReminderRecurrence recurrence;
+  final String priority;
+// 'low', 'medium', 'high'
   @override
   final bool? isCompleted;
   @override
   final DateTime? completedAt;
   @override
+  final String? notes;
+  @override
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final Map<String, dynamic>? _metadata;
-  @override
-  Map<String, dynamic>? get metadata {
-    final value = _metadata;
-    if (value == null) return null;
-    if (_metadata is EqualUnmodifiableMapView) return _metadata;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(value);
-  }
 
   @override
   String toString() {
-    return 'Reminder(id: $id, title: $title, description: $description, scheduledAt: $scheduledAt, ownerId: $ownerId, assigneeId: $assigneeId, familyId: $familyId, type: $type, recurrence: $recurrence, isCompleted: $isCompleted, completedAt: $completedAt, createdAt: $createdAt, updatedAt: $updatedAt, metadata: $metadata)';
+    return 'Reminder(id: $id, title: $title, description: $description, dueDate: $dueDate, ownerId: $ownerId, assigneeId: $assigneeId, familyId: $familyId, visibility: $visibility, priority: $priority, isCompleted: $isCompleted, completedAt: $completedAt, notes: $notes, createdAt: $createdAt, updatedAt: $updatedAt)';
   }
 
   @override
@@ -351,25 +341,25 @@ class _$ReminderImpl implements _Reminder {
             (identical(other.title, title) || other.title == title) &&
             (identical(other.description, description) ||
                 other.description == description) &&
-            (identical(other.scheduledAt, scheduledAt) ||
-                other.scheduledAt == scheduledAt) &&
+            (identical(other.dueDate, dueDate) || other.dueDate == dueDate) &&
             (identical(other.ownerId, ownerId) || other.ownerId == ownerId) &&
             (identical(other.assigneeId, assigneeId) ||
                 other.assigneeId == assigneeId) &&
             (identical(other.familyId, familyId) ||
                 other.familyId == familyId) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.recurrence, recurrence) ||
-                other.recurrence == recurrence) &&
+            (identical(other.visibility, visibility) ||
+                other.visibility == visibility) &&
+            (identical(other.priority, priority) ||
+                other.priority == priority) &&
             (identical(other.isCompleted, isCompleted) ||
                 other.isCompleted == isCompleted) &&
             (identical(other.completedAt, completedAt) ||
                 other.completedAt == completedAt) &&
+            (identical(other.notes, notes) || other.notes == notes) &&
             (identical(other.createdAt, createdAt) ||
                 other.createdAt == createdAt) &&
             (identical(other.updatedAt, updatedAt) ||
-                other.updatedAt == updatedAt) &&
-            const DeepCollectionEquality().equals(other._metadata, _metadata));
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -379,17 +369,17 @@ class _$ReminderImpl implements _Reminder {
       id,
       title,
       description,
-      scheduledAt,
+      dueDate,
       ownerId,
       assigneeId,
       familyId,
-      type,
-      recurrence,
+      visibility,
+      priority,
       isCompleted,
       completedAt,
+      notes,
       createdAt,
-      updatedAt,
-      const DeepCollectionEquality().hash(_metadata));
+      updatedAt);
 
   /// Create a copy of Reminder
   /// with the given fields replaced by the non-null parameter values.
@@ -412,17 +402,17 @@ abstract class _Reminder implements Reminder {
       {required final String id,
       required final String title,
       required final String description,
-      required final DateTime scheduledAt,
+      required final DateTime dueDate,
       required final String ownerId,
       final String? assigneeId,
       final String? familyId,
-      required final ReminderType type,
-      required final ReminderRecurrence recurrence,
+      required final String visibility,
+      required final String priority,
       final bool? isCompleted,
       final DateTime? completedAt,
+      final String? notes,
       final DateTime? createdAt,
-      final DateTime? updatedAt,
-      final Map<String, dynamic>? metadata}) = _$ReminderImpl;
+      final DateTime? updatedAt}) = _$ReminderImpl;
 
   factory _Reminder.fromJson(Map<String, dynamic> json) =
       _$ReminderImpl.fromJson;
@@ -434,27 +424,27 @@ abstract class _Reminder implements Reminder {
   @override
   String get description;
   @override
-  DateTime get scheduledAt;
+  DateTime get dueDate;
   @override
-  String get ownerId; // who created the reminder
+  String get ownerId;
   @override
-  String? get assigneeId; // who the reminder is for (nullable)
+  String? get assigneeId;
   @override
-  String? get familyId; // family context (nullable)
+  String? get familyId;
   @override
-  ReminderType get type;
+  String get visibility; // 'private', 'family'
   @override
-  ReminderRecurrence get recurrence;
+  String get priority; // 'low', 'medium', 'high'
   @override
   bool? get isCompleted;
   @override
   DateTime? get completedAt;
   @override
+  String? get notes;
+  @override
   DateTime? get createdAt;
   @override
   DateTime? get updatedAt;
-  @override
-  Map<String, dynamic>? get metadata;
 
   /// Create a copy of Reminder
   /// with the given fields replaced by the non-null parameter values.
@@ -462,204 +452,4 @@ abstract class _Reminder implements Reminder {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ReminderImplCopyWith<_$ReminderImpl> get copyWith =>
       throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-mixin _$ReminderAssigneeOption {
-  String get id => throw _privateConstructorUsedError;
-  String get displayName => throw _privateConstructorUsedError;
-  ReminderAssigneeType get type => throw _privateConstructorUsedError;
-  bool? get isAvailable => throw _privateConstructorUsedError;
-
-  /// Create a copy of ReminderAssigneeOption
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $ReminderAssigneeOptionCopyWith<ReminderAssigneeOption> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ReminderAssigneeOptionCopyWith<$Res> {
-  factory $ReminderAssigneeOptionCopyWith(ReminderAssigneeOption value,
-          $Res Function(ReminderAssigneeOption) then) =
-      _$REDACTED_TOKEN<$Res, ReminderAssigneeOption>;
-  @useResult
-  $Res call(
-      {String id,
-      String displayName,
-      ReminderAssigneeType type,
-      bool? isAvailable});
-}
-
-/// @nodoc
-class _$REDACTED_TOKEN<$Res,
-        $Val extends ReminderAssigneeOption>
-    implements $ReminderAssigneeOptionCopyWith<$Res> {
-  _$REDACTED_TOKEN(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of ReminderAssigneeOption
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? displayName = null,
-    Object? type = null,
-    Object? isAvailable = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      displayName: null == displayName
-          ? _value.displayName
-          : displayName // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as ReminderAssigneeType,
-      isAvailable: freezed == isAvailable
-          ? _value.isAvailable
-          : isAvailable // ignore: cast_nullable_to_non_nullable
-              as bool?,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$REDACTED_TOKEN<$Res>
-    implements $ReminderAssigneeOptionCopyWith<$Res> {
-  factory _$$REDACTED_TOKEN(
-          _$ReminderAssigneeOptionImpl value,
-          $Res Function(_$ReminderAssigneeOptionImpl) then) =
-      __$$REDACTED_TOKEN<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      String displayName,
-      ReminderAssigneeType type,
-      bool? isAvailable});
-}
-
-/// @nodoc
-class __$$REDACTED_TOKEN<$Res>
-    extends _$REDACTED_TOKEN<$Res,
-        _$ReminderAssigneeOptionImpl>
-    implements _$$REDACTED_TOKEN<$Res> {
-  __$$REDACTED_TOKEN(
-      _$ReminderAssigneeOptionImpl _value,
-      $Res Function(_$ReminderAssigneeOptionImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of ReminderAssigneeOption
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? displayName = null,
-    Object? type = null,
-    Object? isAvailable = freezed,
-  }) {
-    return _then(_$ReminderAssigneeOptionImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      displayName: null == displayName
-          ? _value.displayName
-          : displayName // ignore: cast_nullable_to_non_nullable
-              as String,
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as ReminderAssigneeType,
-      isAvailable: freezed == isAvailable
-          ? _value.isAvailable
-          : isAvailable // ignore: cast_nullable_to_non_nullable
-              as bool?,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ReminderAssigneeOptionImpl implements _ReminderAssigneeOption {
-  const _$ReminderAssigneeOptionImpl(
-      {required this.id,
-      required this.displayName,
-      required this.type,
-      this.isAvailable});
-
-  @override
-  final String id;
-  @override
-  final String displayName;
-  @override
-  final ReminderAssigneeType type;
-  @override
-  final bool? isAvailable;
-
-  @override
-  String toString() {
-    return 'ReminderAssigneeOption(id: $id, displayName: $displayName, type: $type, isAvailable: $isAvailable)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ReminderAssigneeOptionImpl &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.displayName, displayName) ||
-                other.displayName == displayName) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.isAvailable, isAvailable) ||
-                other.isAvailable == isAvailable));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, id, displayName, type, isAvailable);
-
-  /// Create a copy of ReminderAssigneeOption
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$REDACTED_TOKEN<_$ReminderAssigneeOptionImpl>
-      get copyWith => __$$REDACTED_TOKEN<
-          _$ReminderAssigneeOptionImpl>(this, _$identity);
-}
-
-abstract class _ReminderAssigneeOption implements ReminderAssigneeOption {
-  const factory _ReminderAssigneeOption(
-      {required final String id,
-      required final String displayName,
-      required final ReminderAssigneeType type,
-      final bool? isAvailable}) = _$ReminderAssigneeOptionImpl;
-
-  @override
-  String get id;
-  @override
-  String get displayName;
-  @override
-  ReminderAssigneeType get type;
-  @override
-  bool? get isAvailable;
-
-  /// Create a copy of ReminderAssigneeOption
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$REDACTED_TOKEN<_$ReminderAssigneeOptionImpl>
-      get copyWith => throw _privateConstructorUsedError;
 }

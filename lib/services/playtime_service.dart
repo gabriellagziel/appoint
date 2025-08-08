@@ -3,16 +3,33 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../models/playtime_game.dart';
 import '../models/playtime_session.dart';
 import '../models/playtime_background.dart';
+import 'coppa_service.dart';
+import 'playtime_preferences_service.dart';
+
+/// Custom exceptions for playtime validation
+class AgeRestrictedError extends Error {
+  final String message;
+  AgeRestrictedError(this.message);
+
+  @override
+  String toString() => 'AgeRestrictedError: $message';
+}
+
+class ParentApprovalRequiredError extends Error {
+  final String message;
+  ParentApprovalRequiredError(this.message);
+
+  @override
+  String toString() => 'ParentApprovalRequiredError: $message';
+}
 
 class PlaytimeService {
   static final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  static final FirebaseAuth _auth = FirebaseAuth.instance;
 
   // Games Collection
   static const String _gamesCollection = 'playtime_games';
   static const String _sessionsCollection = 'playtime_sessions';
   static const String _backgroundsCollection = 'playtime_backgrounds';
-  static const String _uploadsCollection = 'playtime_uploads';
 
   // MARK: - Game Operations
 
@@ -91,9 +108,12 @@ class PlaytimeService {
 
   // MARK: - Session Operations
 
-  /// Create a new playtime session
+  /// Create a new playtime session with validation
   static Future<bool> createSession(PlaytimeSession session) async {
     try {
+      // Validate session before creating
+      await _validateSession(session);
+
       await _firestore
           .collection(_sessionsCollection)
           .doc(session.id)
@@ -101,7 +121,77 @@ class PlaytimeService {
       return true;
     } catch (e) {
       print('Error creating session: $e');
-      return false;
+      rethrow; // Re-throw to allow tests to catch specific exceptions
+    }
+  }
+
+  /// Validate a playtime session for age restrictions and parent approval
+  static Future<void> _validateSession(PlaytimeSession session) async {
+    // Get user age from the database
+    final userDoc =
+        await _firestore.collection('users').doc(session.creatorId).get();
+
+    if (!userDoc.exists) {
+      throw AgeRestrictedError('User not found');
+    }
+
+    final userData = userDoc.data()!;
+    final userAge = userData['age'] as int?;
+    if (userAge == null) {
+      throw AgeRestrictedError('User age not specified');
+    }
+
+    // Get game information
+    final gameDoc =
+        await _firestore.collection(_gamesCollection).doc(session.gameId).get();
+
+    if (!gameDoc.exists) {
+      throw AgeRestrictedError('Game not found');
+    }
+
+    final gameData = gameDoc.data()!;
+    final gameMinAge = gameData['minAge'] as int? ?? 0;
+
+    // Check if user is adult (18+) - adults can create any session
+    if (COPPAService.isAdult(userAge)) {
+      return; // Adults don't need validation
+    }
+
+    // For minors, check age appropriateness and parent approval
+    final isAgeAppropriate =
+        COPPAService.isGameAgeAppropriate(userAge, gameMinAge);
+    final requiresApproval =
+        COPPAService.requiresParentApproval(userAge, gameMinAge);
+
+    // Block children from inappropriate games without parent approval
+    if (!isAgeAppropriate && !session.parentApprovalStatus.isApproved) {
+      if (COPPAService.isSubjectToCOPPA(userAge)) {
+        throw AgeRestrictedError(
+            'Game is not age-appropriate for children under 13');
+      } else {
+        // Check if parent allows override for teens
+        final parentId = userData['parentUid'] as String?;
+        if (parentId != null) {
+          final allowsOverride =
+              await PlaytimePreferencesService.allowsAgeRestrictionOverride(
+                  parentId);
+          if (allowsOverride && !session.parentApprovalStatus.isApproved) {
+            throw ParentApprovalRequiredError(
+                'Parent approval required for age-restricted game');
+          } else if (!allowsOverride) {
+            throw AgeRestrictedError(
+                'Game is not age-appropriate and parent does not allow overrides');
+          }
+        } else {
+          throw AgeRestrictedError('No parent guardian found for minor user');
+        }
+      }
+    }
+
+    // Require parent approval for all sessions by minors
+    if (requiresApproval && !session.parentApprovalStatus.isApproved) {
+      throw ParentApprovalRequiredError(
+          'Parent approval required for this session');
     }
   }
 
@@ -124,7 +214,8 @@ class PlaytimeService {
   }
 
   /// Get sessions where user is a participant
-  static Future<List<PlaytimeSession>> getParticipantSessions(String userId) async {
+  static Future<List<PlaytimeSession>> getParticipantSessions(
+      String userId) async {
     try {
       final snapshot = await _firestore
           .collection(_sessionsCollection)
@@ -142,7 +233,8 @@ class PlaytimeService {
   }
 
   /// Get sessions pending parent approval
-  static Future<List<PlaytimeSession>> getPendingApprovalSessions(String parentId) async {
+  static Future<List<PlaytimeSession>> getPendingApprovalSessions(
+      String parentId) async {
     try {
       final snapshot = await _firestore
           .collection(_sessionsCollection)
@@ -161,12 +253,10 @@ class PlaytimeService {
   }
 
   /// Update session status
-  static Future<bool> updateSessionStatus(String sessionId, String status) async {
+  static Future<bool> updateSessionStatus(
+      String sessionId, String status) async {
     try {
-      await _firestore
-          .collection(_sessionsCollection)
-          .doc(sessionId)
-          .update({
+      await _firestore.collection(_sessionsCollection).doc(sessionId).update({
         'status': status,
         'updatedAt': DateTime.now().toIso8601String(),
       });
@@ -178,12 +268,10 @@ class PlaytimeService {
   }
 
   /// Add participant to session
-  static Future<bool> addParticipant(String sessionId, PlaytimeParticipant participant) async {
+  static Future<bool> addParticipant(
+      String sessionId, PlaytimeParticipant participant) async {
     try {
-      await _firestore
-          .collection(_sessionsCollection)
-          .doc(sessionId)
-          .update({
+      await _firestore.collection(_sessionsCollection).doc(sessionId).update({
         'participants': FieldValue.arrayUnion([participant.toJson()]),
         'currentParticipants': FieldValue.increment(1),
         'updatedAt': DateTime.now().toIso8601String(),
@@ -198,22 +286,16 @@ class PlaytimeService {
   /// Remove participant from session
   static Future<bool> removeParticipant(String sessionId, String userId) async {
     try {
-      final sessionDoc = await _firestore
-          .collection(_sessionsCollection)
-          .doc(sessionId)
-          .get();
+      final sessionDoc =
+          await _firestore.collection(_sessionsCollection).doc(sessionId).get();
 
       if (!sessionDoc.exists) return false;
 
       final session = PlaytimeSession.fromJson(sessionDoc.data()!);
-      final updatedParticipants = session.participants
-          .where((p) => p.userId != userId)
-          .toList();
+      final updatedParticipants =
+          session.participants.where((p) => p.userId != userId).toList();
 
-      await _firestore
-          .collection(_sessionsCollection)
-          .doc(sessionId)
-          .update({
+      await _firestore.collection(_sessionsCollection).doc(sessionId).update({
         'participants': updatedParticipants.map((p) => p.toJson()).toList(),
         'currentParticipants': updatedParticipants.length,
         'updatedAt': DateTime.now().toIso8601String(),
@@ -228,12 +310,10 @@ class PlaytimeService {
   // MARK: - Parent Approval Operations
 
   /// Approve session by parent
-  static Future<bool> approveSessionByParent(String sessionId, String parentId) async {
+  static Future<bool> approveSessionByParent(
+      String sessionId, String parentId) async {
     try {
-      await _firestore
-          .collection(_sessionsCollection)
-          .doc(sessionId)
-          .update({
+      await _firestore.collection(_sessionsCollection).doc(sessionId).update({
         'parentApprovalStatus.approvedBy': FieldValue.arrayUnion([parentId]),
         'parentApprovalStatus.approvedAt': DateTime.now().toIso8601String(),
         'status': 'approved',
@@ -247,12 +327,10 @@ class PlaytimeService {
   }
 
   /// Decline session by parent
-  static Future<bool> declineSessionByParent(String sessionId, String parentId, String reason) async {
+  static Future<bool> declineSessionByParent(
+      String sessionId, String parentId, String reason) async {
     try {
-      await _firestore
-          .collection(_sessionsCollection)
-          .doc(sessionId)
-          .update({
+      await _firestore.collection(_sessionsCollection).doc(sessionId).update({
         'parentApprovalStatus.declinedBy': FieldValue.arrayUnion([parentId]),
         'parentApprovalStatus.declinedAt': DateTime.now().toIso8601String(),
         'status': 'declined',
@@ -286,7 +364,8 @@ class PlaytimeService {
   }
 
   /// Get backgrounds by category
-  static Future<List<PlaytimeBackground>> getBackgroundsByCategory(String category) async {
+  static Future<List<PlaytimeBackground>> getBackgroundsByCategory(
+      String category) async {
     try {
       final snapshot = await _firestore
           .collection(_backgroundsCollection)
@@ -319,7 +398,8 @@ class PlaytimeService {
   }
 
   /// Approve background by admin
-  static Future<bool> approveBackground(String backgroundId, String adminId) async {
+  static Future<bool> approveBackground(
+      String backgroundId, String adminId) async {
     try {
       await _firestore
           .collection(_backgroundsCollection)
@@ -338,7 +418,8 @@ class PlaytimeService {
   }
 
   /// Decline background by admin
-  static Future<bool> declineBackground(String backgroundId, String adminId, String reason) async {
+  static Future<bool> declineBackground(
+      String backgroundId, String adminId, String reason) async {
     try {
       await _firestore
           .collection(_backgroundsCollection)
@@ -360,12 +441,10 @@ class PlaytimeService {
   // MARK: - Safety and Moderation
 
   /// Report session for safety concerns
-  static Future<bool> reportSession(String sessionId, String reporterId, String reason) async {
+  static Future<bool> reportSession(
+      String sessionId, String reporterId, String reason) async {
     try {
-      await _firestore
-          .collection(_sessionsCollection)
-          .doc(sessionId)
-          .update({
+      await _firestore.collection(_sessionsCollection).doc(sessionId).update({
         'safetyFlags.reportedContent': true,
         'safetyFlags.moderationRequired': true,
         'updatedAt': DateTime.now().toIso8601String(),
@@ -378,12 +457,10 @@ class PlaytimeService {
   }
 
   /// Pause session due to safety concerns
-  static Future<bool> pauseSession(String sessionId, String adminId, String reason) async {
+  static Future<bool> pauseSession(
+      String sessionId, String adminId, String reason) async {
     try {
-      await _firestore
-          .collection(_sessionsCollection)
-          .doc(sessionId)
-          .update({
+      await _firestore.collection(_sessionsCollection).doc(sessionId).update({
         'safetyFlags.autoPaused': true,
         'status': 'cancelled',
         'updatedAt': DateTime.now().toIso8601String(),
@@ -400,10 +477,7 @@ class PlaytimeService {
   /// Check if user is a child
   static Future<bool> isChildUser(String userId) async {
     try {
-      final userDoc = await _firestore
-          .collection('users')
-          .doc(userId)
-          .get();
+      final userDoc = await _firestore.collection('users').doc(userId).get();
 
       if (!userDoc.exists) return false;
 
@@ -418,10 +492,7 @@ class PlaytimeService {
   /// Get parent ID for a child user
   static Future<String?> getParentId(String childId) async {
     try {
-      final userDoc = await _firestore
-          .collection('users')
-          .doc(childId)
-          .get();
+      final userDoc = await _firestore.collection('users').doc(childId).get();
 
       if (!userDoc.exists) return null;
 
@@ -436,7 +507,7 @@ class PlaytimeService {
   /// Check if session requires parent approval
   static Future<bool> requiresParentApproval(PlaytimeSession session) async {
     if (!session.requiresParentApproval) return false;
-    
+
     final isChild = await isChildUser(session.creatorId);
     return isChild;
   }

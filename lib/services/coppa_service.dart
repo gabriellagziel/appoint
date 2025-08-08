@@ -1,165 +1,169 @@
-import 'package:flutter/foundation.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
-/// COPPA (Children's Online Privacy Protection Act) service
-/// Handles child account compliance and ad restrictions
-class CoppaService {
-  static final CoppaService _instance = CoppaService._internal();
-  factory CoppaService() => _instance;
-  CoppaService._internal();
+/// Service for COPPA (Children's Online Privacy Protection Act) compliance
+/// and age-based restrictions for playtime sessions
+class COPPAService {
+  static const int coppaAgeThreshold = 13;
+  static const int adultAgeThreshold = 18;
 
-  /// Minimum age for showing ads (13 years old)
-  static const int _minimumAdAge = 13;
-
-  /// Checks if a user is a child account (under 13)
-  static bool isChildAccount({
-    required DateTime? birthDate,
-    required bool isChildAccountFlag,
-  }) {
-    if (isChildAccountFlag) return true;
-
-    if (birthDate == null) return false;
-
-    final now = DateTime.now();
-    final age = now.year - birthDate.year;
-
-    // Check if birthday has occurred this year
-    if (now.month < birthDate.month ||
-        (now.month == birthDate.month && now.day < birthDate.day)) {
-      return age - 1 < _minimumAdAge;
-    }
-
-    return age < _minimumAdAge;
+  /// Check if a user is subject to COPPA regulations (under 13)
+  static bool isSubjectToCOPPA(int age) {
+    return age < coppaAgeThreshold;
   }
 
-  /// Checks if ads should be shown for a user based on COPPA compliance
-  static bool shouldShowAds({
-    required DateTime? birthDate,
-    required bool isChildAccountFlag,
-    required bool isPremium,
-    required bool isAdminFreeAccess,
-  }) {
-    // Don't show ads for premium or admin users
-    if (isPremium || isAdminFreeAccess) return false;
+  /// Check if a user is a minor (under 18)
+  static bool isMinor(int age) {
+    return age < adultAgeThreshold;
+  }
 
-    // Don't show ads for child accounts
-    if (isChildAccount(
-      birthDate: birthDate,
-      isChildAccountFlag: isChildAccountFlag,
-    )) {
+  /// Check if a user is an adult (18 or over)
+  static bool isAdult(int age) {
+    return age >= adultAgeThreshold;
+  }
+
+  /// Get age category for a user
+  static String getAgeCategory(int age) {
+    if (isSubjectToCOPPA(age)) {
+      return 'child'; // Under 13
+    } else if (isMinor(age)) {
+      return 'teen'; // 13-17
+    } else {
+      return 'adult'; // 18+
+    }
+  }
+
+  /// Check if a game is age-appropriate for a user
+  static bool isGameAgeAppropriate(int userAge, int gameMinAge) {
+    return userAge >= gameMinAge;
+  }
+
+  /// Check if parent approval is required for a playtime session
+  static bool requiresParentApproval(int userAge, int gameMinAge) {
+    // Always require parent approval for children under 13
+    if (isSubjectToCOPPA(userAge)) {
+      return true;
+    }
+
+    // Require parent approval for teens playing games above their age
+    if (isMinor(userAge) && !isGameAgeAppropriate(userAge, gameMinAge)) {
+      return true;
+    }
+
+    // Adults don't need parent approval
+    return false;
+  }
+
+  /// Get user age from Firestore
+  static Future<int?> getUserAge(String userId) async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(userId)
+          .get();
+
+      if (doc.exists) {
+        return doc.data()?['age'] as int?;
+      }
+      return null;
+    } catch (e) {
+      print('Error fetching user age: $e');
+      return null;
+    }
+  }
+
+  /// Get parent ID for a user
+  static Future<String?> getParentId(String userId) async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('users')
+          .doc(userId)
+          .get();
+
+      if (doc.exists) {
+        return doc.data()?['parentUid'] as String?;
+      }
+      return null;
+    } catch (e) {
+      print('Error fetching parent ID: $e');
+      return null;
+    }
+  }
+
+  /// Check if a user can create a playtime session without restrictions
+  static Future<bool> canCreateSessionWithoutApproval(
+      String userId, String gameId) async {
+    try {
+      // Get user age
+      final userAge = await getUserAge(userId);
+      if (userAge == null) return false;
+
+      // Adults can always create sessions without approval
+      if (isAdult(userAge)) return true;
+
+      // Get game minimum age
+      final gameDoc = await FirebaseFirestore.instance
+          .collection('playtime_games')
+          .doc(gameId)
+          .get();
+
+      if (!gameDoc.exists) return false;
+
+      final gameMinAge = gameDoc.data()?['minAge'] as int? ?? 0;
+
+      // Check if approval is required
+      return !requiresParentApproval(userAge, gameMinAge);
+    } catch (e) {
+      print('Error checking session creation permissions: $e');
       return false;
     }
-
-    return true;
   }
 
-  /// Validates age for COPPA compliance
-  static bool isValidAge(DateTime birthDate) {
-    final now = DateTime.now();
-    final age = now.year - birthDate.year;
+  /// Validate a playtime session for COPPA compliance
+  static Future<Map<String, dynamic>> validateSessionForCOPPA(
+    String userId,
+    String gameId,
+  ) async {
+    try {
+      final userAge = await getUserAge(userId);
+      if (userAge == null) {
+        return {
+          'valid': false,
+          'reason': 'User age not found',
+          'requiresParentApproval': false,
+        };
+      }
 
-    // Check if birthday has occurred this year
-    if (now.month < birthDate.month ||
-        (now.month == birthDate.month && now.day < birthDate.day)) {
-      return age - 1 >= 13;
+      final gameDoc = await FirebaseFirestore.instance
+          .collection('playtime_games')
+          .doc(gameId)
+          .get();
+
+      if (!gameDoc.exists) {
+        return {
+          'valid': false,
+          'reason': 'Game not found',
+          'requiresParentApproval': false,
+        };
+      }
+
+      final gameMinAge = gameDoc.data()?['minAge'] as int? ?? 0;
+      final isAgeAppropriate = isGameAgeAppropriate(userAge, gameMinAge);
+      final needsApproval = requiresParentApproval(userAge, gameMinAge);
+
+      return {
+        'valid': true,
+        'userAge': userAge,
+        'gameMinAge': gameMinAge,
+        'isAgeAppropriate': isAgeAppropriate,
+        'requiresParentApproval': needsApproval,
+        'ageCategory': getAgeCategory(userAge),
+      };
+    } catch (e) {
+      return {
+        'valid': false,
+        'reason': 'Validation error: $e',
+        'requiresParentApproval': false,
+      };
     }
-
-    return age >= 13;
-  }
-
-  /// Gets age from birth date
-  static int getAge(DateTime birthDate) {
-    final now = DateTime.now();
-    int age = now.year - birthDate.year;
-
-    // Check if birthday has occurred this year
-    if (now.month < birthDate.month ||
-        (now.month == birthDate.month && now.day < birthDate.day)) {
-      age--;
-    }
-
-    return age;
-  }
-
-  /// Formats age for display
-  static String formatAge(DateTime birthDate) {
-    final age = getAge(birthDate);
-    return '$age years old';
-  }
-
-  /// Checks if user needs parental consent
-  static bool needsParentalConsent({
-    required DateTime? birthDate,
-    required bool isChildAccountFlag,
-  }) {
-    if (isChildAccountFlag) return true;
-
-    if (birthDate == null) return false;
-
-    return !isValidAge(birthDate);
-  }
-
-  /// Logs COPPA compliance check
-  static void logCoppaCheck({
-    required String userId,
-    required bool isChildAccount,
-    required bool adsDisabled,
-    required String reason,
-  }) {
-    debugPrint(
-      'COPPA Check - User: $userId, Child: $isChildAccount, Ads Disabled: $adsDisabled, Reason: $reason',
-    );
-
-    // TODO: Log to analytics service
-    // AnalyticsService.logEvent('coppa_check', params: {
-    //   'userId': userId,
-    //   'isChildAccount': isChildAccount,
-    //   'adsDisabled': adsDisabled,
-    //   'reason': reason,
-    // });
-  }
-
-  /// Gets COPPA compliance status for a user
-  static Map<String, dynamic> getComplianceStatus({
-    required DateTime? birthDate,
-    required bool isChildAccountFlag,
-    required bool isPremium,
-    required bool isAdminFreeAccess,
-  }) {
-    final isChild = isChildAccount(
-      birthDate: birthDate,
-      isChildAccountFlag: isChildAccountFlag,
-    );
-
-    final shouldShowAds = CoppaService.shouldShowAds(
-      birthDate: birthDate,
-      isChildAccountFlag: isChildAccountFlag,
-      isPremium: isPremium,
-      isAdminFreeAccess: isAdminFreeAccess,
-    );
-
-    final needsConsent = needsParentalConsent(
-      birthDate: birthDate,
-      isChildAccountFlag: isChildAccountFlag,
-    );
-
-    String reason = 'Unknown';
-    if (isPremium) {
-      reason = 'Premium user';
-    } else if (isAdminFreeAccess) {
-      reason = 'Admin access';
-    } else if (isChild) {
-      reason = 'Child account (COPPA compliance)';
-    } else {
-      reason = 'Eligible for ads';
-    }
-
-    return {
-      'isChildAccount': isChild,
-      'shouldShowAds': shouldShowAds,
-      'needsParentalConsent': needsConsent,
-      'reason': reason,
-      'age': birthDate != null ? getAge(birthDate) : null,
-      'formattedAge': birthDate != null ? formatAge(birthDate) : null,
-    };
   }
 }

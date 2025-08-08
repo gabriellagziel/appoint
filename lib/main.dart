@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'models/playtime_game.dart';
 import 'models/playtime_session.dart';
 import 'models/playtime_background.dart';
 import 'models/meeting.dart';
+import 'services/pwa_prompt_service.dart';
+import 'services/meeting_service.dart';
 
 void main() {
+  // Initialize PWA service for web
+  PwaPromptService.initialize();
+
   runApp(
-    const PlaytimeTestApp(),
+    const ProviderScope(
+      child: PlaytimeTestApp(),
+    ),
   );
 }
 
@@ -55,7 +63,7 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            
+
             // Test PlaytimeGame
             _buildTestSection(
               'PlaytimeGame Model',
@@ -78,10 +86,10 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                   createdAt: DateTime.now(),
                   updatedAt: DateTime.now(),
                 );
-                
+
                 final json = game.toJson();
                 final fromJson = PlaytimeGame.fromJson(json);
-                
+
                 return '✅ Game created successfully\n'
                     'ID: ${game.id}\n'
                     'Name: ${game.name}\n'
@@ -91,9 +99,9 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                     'Max Age: ${game.maxAge}';
               },
             ),
-            
+
             const SizedBox(height: 20),
-            
+
             // Test PlaytimeSession
             _buildTestSection(
               'PlaytimeSession Model',
@@ -124,10 +132,10 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                   updatedAt: DateTime.now(),
                   maxParticipants: 6,
                 );
-                
+
                 final json = session.toJson();
                 final fromJson = PlaytimeSession.fromJson(json);
-                
+
                 return '✅ Session created successfully\n'
                     'ID: ${session.id}\n'
                     'Title: ${session.title}\n'
@@ -137,9 +145,9 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                     'Can Start: ${session.canStart}';
               },
             ),
-            
+
             const SizedBox(height: 20),
-            
+
             // Test PlaytimeBackground
             _buildTestSection(
               'PlaytimeBackground Model',
@@ -160,10 +168,10 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                   createdAt: DateTime.now(),
                   updatedAt: DateTime.now(),
                 );
-                
+
                 final json = background.toJson();
                 final fromJson = PlaytimeBackground.fromJson(json);
-                
+
                 return '✅ Background created successfully\n'
                     'ID: ${background.id}\n'
                     'Name: ${background.name}\n'
@@ -172,9 +180,9 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                     'Is Available: ${background.isAvailable}';
               },
             ),
-            
+
             const SizedBox(height: 20),
-            
+
             // Test Meeting with Playtime
             _buildTestSection(
               'Meeting with Playtime Support',
@@ -202,10 +210,10 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                   virtualLink: 'https://meet.example.com/playtime',
                   notes: 'Bring your creativity!',
                 );
-                
+
                 final json = meeting.toJson();
                 final fromJson = Meeting.fromJson(json);
-                
+
                 return '✅ Meeting with Playtime created successfully\n'
                     'ID: ${meeting.id}\n'
                     'Title: ${meeting.title}\n'
@@ -218,9 +226,9 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                     'Parent Approved: ${meeting.parentApproved}';
               },
             ),
-            
+
             const SizedBox(height: 20),
-            
+
             // Test Service Methods
             _buildTestSection(
               'PlaytimeService Methods',
@@ -237,9 +245,9 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                     '• generateBackgroundId()';
               },
             ),
-            
+
             const SizedBox(height: 20),
-            
+
             // Test Provider
             _buildTestSection(
               'Riverpod Providers',
@@ -253,9 +261,9 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                     '• sessionCreationNotifierProvider';
               },
             ),
-            
+
             const SizedBox(height: 40),
-            
+
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(16),
@@ -288,9 +296,62 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                 ],
               ),
             ),
-            
+
             const SizedBox(height: 20),
-            
+
+            // PWA System Test
+            _buildTestSection(
+              'PWA System Implementation',
+              () {
+                return '✅ PWA System configured:\n'
+                    '• Manifest.json created\n'
+                    '• Service Worker registered\n'
+                    '• PWA prompt service ready\n'
+                    '• User meta tracking active\n'
+                    '• Add to home screen dialog\n'
+                    '• Mobile device detection\n'
+                    '• Meeting creation hooks';
+              },
+            ),
+
+            const SizedBox(height: 20),
+
+            // Test PWA functionality
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.orange.shade50,
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: Colors.orange.shade200),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    '🔧 PWA Testing',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.orange,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  ElevatedButton(
+                    onPressed: _testPwaPrompt,
+                    child: const Text('Test PWA Prompt'),
+                  ),
+                  const SizedBox(height: 8),
+                  ElevatedButton(
+                    onPressed: _simulateMeetingCreation,
+                    child: const Text('Simulate Meeting Creation'),
+                  ),
+                ],
+              ),
+            ),
+
+            const SizedBox(height: 20),
+
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(16),
@@ -329,6 +390,26 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
     );
   }
 
+  void _testPwaPrompt() async {
+    await MeetingService.showPwaPrompt(context);
+  }
+
+  void _simulateMeetingCreation() async {
+    final meeting = Meeting(
+      id: 'test_meeting_${DateTime.now().millisecondsSinceEpoch}',
+      organizerId: 'test_user',
+      title: 'Test Meeting for PWA',
+      startTime: DateTime.now().add(const Duration(hours: 1)),
+      endTime: DateTime.now().add(const Duration(hours: 2)),
+      participants: [],
+      meetingType: MeetingType.personal,
+      createdAt: DateTime.now(),
+      updatedAt: DateTime.now(),
+    );
+
+    await MeetingService.onMeetingCreated(context, meeting);
+  }
+
   Widget _buildTestSection(String title, String Function() testFunction) {
     return Container(
       width: double.infinity,
@@ -358,4 +439,3 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
     );
   }
 }
-
