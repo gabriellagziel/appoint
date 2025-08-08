@@ -51,7 +51,7 @@ class _MeetingChatState extends ConsumerState<MeetingChat> {
                     ref
                         .read(meetingControllerProvider(widget.meetingId)
                             .notifier)
-                        .sendMessage(userId!, t);
+                        .sendMessage(userId, t);
                     _c.clear();
                   },
                 ),
