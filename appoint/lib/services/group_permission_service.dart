@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/user_group.dart';
 import 'group_sharing_service.dart';
 
 enum GroupPermission {

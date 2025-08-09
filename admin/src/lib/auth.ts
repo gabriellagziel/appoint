@@ -11,6 +11,7 @@ import { auth, db } from './firebase';
 export interface AdminUser extends User {
     role?: 'admin' | 'super_admin';
     permissions?: string[];
+    claims?: { [key: string]: unknown; super_admin?: boolean };
 }
 
 // Development mode flag - set to true to bypass Firebase auth
@@ -36,7 +37,8 @@ const MOCK_ADMIN_USER: AdminUser = {
     reload: async () => { },
     toJSON: () => ({}),
     role: 'super_admin',
-    permissions: ['users', 'logs', 'flags', 'analytics', 'settings']
+    permissions: ['users', 'logs', 'flags', 'analytics', 'settings'],
+    claims: { super_admin: true }
 };
 
 // Admin UIDs that are authorized to access the admin panel

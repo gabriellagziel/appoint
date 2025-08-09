@@ -122,8 +122,9 @@ class GroupPolicyService {
     if (policy.maxMembers < 2 || policy.maxMembers > 1000) return false;
 
     // Check if vote duration is reasonable
-    if (policy.voteDuration.inHours < 1 || policy.voteDuration.inDays > 30)
+    if (policy.voteDuration.inHours < 1 || policy.voteDuration.inDays > 30) {
       return false;
+    }
 
     return true;
   }

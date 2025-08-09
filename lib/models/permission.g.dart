@@ -10,18 +10,26 @@ _$PermissionImpl _$$PermissionImplFromJson(Map<String, dynamic> json) =>
     _$PermissionImpl(
       id: json['id'] as String,
       familyLinkId: json['familyLinkId'] as String,
-      category: json['category'] as String,
-      accessLevel: json['accessLevel'] as String,
-      lastModified: json['lastModified'] == null
+      grantedTo: json['grantedTo'] as String,
+      grantedBy: json['grantedBy'] as String,
+      permissionType: json['permissionType'] as String,
+      isGranted: json['isGranted'] as bool,
+      grantedAt: DateTime.parse(json['grantedAt'] as String),
+      revokedAt: json['revokedAt'] == null
           ? null
-          : DateTime.parse(json['lastModified'] as String),
+          : DateTime.parse(json['revokedAt'] as String),
+      notes: json['notes'] as String?,
     );
 
 Map<String, dynamic> _$$PermissionImplToJson(_$PermissionImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'familyLinkId': instance.familyLinkId,
-      'category': instance.category,
-      'accessLevel': instance.accessLevel,
-      'lastModified': instance.lastModified?.toIso8601String(),
+      'grantedTo': instance.grantedTo,
+      'grantedBy': instance.grantedBy,
+      'permissionType': instance.permissionType,
+      'isGranted': instance.isGranted,
+      'grantedAt': instance.grantedAt.toIso8601String(),
+      'revokedAt': instance.revokedAt?.toIso8601String(),
+      'notes': instance.notes,
     };

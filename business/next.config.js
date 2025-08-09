@@ -1,8 +1,28 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    images: {
-        domains: ['business.app-oint.com'],
-    },
-}
+const withBundleAnalyzer = require('@next/bundle-analyzer')({ enabled: process.env.ANALYZE === 'true' });
+const { withSentryConfig } = require('@sentry/nextjs');
 
-module.exports = nextConfig 
+const nextConfig = {
+  compress: true,
+  images: {
+    domains: ['business.app-oint.com'],
+    formats: ['image/avif', 'image/webp'],
+  },
+  webpack: (config) => {
+    config.plugins = config.plugins || [];
+    const DefinePlugin = require('webpack').DefinePlugin;
+    config.plugins.push(new DefinePlugin({ 'process.env.BUILD_TIME': JSON.stringify(new Date().toISOString()) }));
+    return config;
+  }
+};
+
+const sentryWebpackPluginOptions = {
+  authToken: process.env.SENTRY_AUTH_TOKEN,
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
+  silent: true,
+  disableServerWebpackPlugin: process.env.NODE_ENV !== 'production',
+  disableClientWebpackPlugin: process.env.NODE_ENV !== 'production',
+};
+
+module.exports = withSentryConfig(withBundleAnalyzer(nextConfig), sentryWebpackPluginOptions);

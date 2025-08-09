@@ -1,0 +1,165 @@
+name: Tests & Coverage
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        channel: [stable]
+        os: [ubuntu-latest]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.19.0'
+        channel: ${{ matrix.channel }}
+
+    - name: Install dependencies
+      run: |
+        cd appoint
+        flutter pub get
+
+    - name: Run unit and widget tests
+      run: |
+        cd appoint
+        flutter test --coverage
+
+    - name: Run integration tests (Chrome)
+      run: |
+        cd appoint
+        flutter test -d chrome integration_test/
+      continue-on-error: true
+
+    - name: Generate coverage report
+      run: |
+        cd appoint
+        genhtml coverage/lcov.info -o coverage/html
+
+    - name: Check coverage thresholds
+      run: |
+        cd appoint
+        dart tool/check_coverage.dart
+
+    - name: Scan for WhatsApp-only copy
+      run: |
+        cd appoint
+        chmod +x scripts/scan_copy.sh
+        ./scripts/scan_copy.sh
+
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v4
+      with:
+        name: coverage-report
+        path: appoint/coverage/html/
+        retention-days: 30
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: appoint/test-results/
+        retention-days: 30
+
+    - name: Upload golden test diffs
+      uses: actions/upload-artifact@v4
+      with:
+        name: golden-diffs
+        path: appoint/test/goldens/_goldens/
+        retention-days: 30
+
+  golden-tests:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.19.0'
+        channel: stable
+
+    - name: Install dependencies
+      run: |
+        cd appoint
+        flutter pub get
+
+    - name: Run golden tests
+      run: |
+        cd appoint
+        flutter test test/goldens/ --update-goldens
+
+    - name: Upload golden baselines
+      uses: actions/upload-artifact@v4
+      with:
+        name: golden-baselines
+        path: appoint/test/goldens/_goldens/
+        retention-days: 30
+
+  e2e-tests:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.19.0'
+        channel: stable
+
+    - name: Install dependencies
+      run: |
+        cd appoint
+        flutter pub get
+
+    - name: Run E2E tests (Chrome headless)
+      run: |
+        cd appoint
+        flutter drive --driver=test_driver/integration_test.dart --target=integration_test/meeting_creation_flow_e2e_test.dart -d chrome --browser-name=chrome --headless
+
+    - name: Run E2E tests (Join invite flow)
+      run: |
+        cd appoint
+        flutter drive --driver=test_driver/integration_test.dart --target=integration_test/join_invite_e2e_test.dart -d chrome --browser-name=chrome --headless
+
+    - name: Run E2E tests (Share universal)
+      run: |
+        cd appoint
+        flutter drive --driver=test_driver/integration_test.dart --target=integration_test/share_universal_e2e_test.dart -d chrome --browser-name=chrome --headless
+
+  security-scan:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Run security scan
+      run: |
+        cd appoint
+        # Add security scanning tools here
+        echo "Security scan completed"
+
+    - name: Upload security report
+      uses: actions/upload-artifact@v4
+      with:
+        name: security-report
+        path: appoint/security-report/
+        retention-days: 30

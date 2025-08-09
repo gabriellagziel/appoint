@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 // Development mode flag
 const DEV_MODE = !process.env.NEXT_PUBLIC_FIREBASE_API_KEY;
@@ -28,6 +29,7 @@ const firebaseConfig = {
 let app: any;
 let db: any;
 let auth: any;
+let storage: any;
 
 if (DEV_MODE) {
     console.log('🔧 DEV MODE: Using mock Firebase configuration');
@@ -35,13 +37,15 @@ if (DEV_MODE) {
     app = { name: 'mock-app' };
     db = {};
     auth = {};
+    storage = {};
 } else {
     // Initialize real Firebase
     app = initializeApp(firebaseConfig);
     db = getFirestore(app);
     auth = getAuth(app);
+    storage = getStorage(app);
 }
 
 // Export instances
-export { auth, db };
+export { auth, db, storage };
 export default app; 

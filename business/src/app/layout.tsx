@@ -1,3 +1,5 @@
+import "../../sentry.client.config"
+import StatusBadge from "../components/StatusBadge"
 import { AuthProvider } from '@/contexts/AuthContext'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -31,6 +33,7 @@ export default function RootLayout({
             </head>
             <body className={inter.className}>
                 <AuthProvider>
+                    <StatusBadge />
                     {children}
                 </AuthProvider>
             </body>

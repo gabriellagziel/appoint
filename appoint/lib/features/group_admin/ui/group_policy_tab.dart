@@ -323,7 +323,7 @@ class _GroupPolicyTabState extends ConsumerState<GroupPolicyTab> {
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('Policy updated successfully'),
             backgroundColor: Colors.green,
           ),

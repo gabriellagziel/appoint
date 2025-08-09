@@ -1,6 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/user_group.dart';
-import '../models/group_invite.dart';
 import 'group_sharing_service.dart';
 import 'group_manager.dart';
 
@@ -96,7 +94,7 @@ class GroupAnalyticsService {
   /// קבלת מגמות פעילות
   Future<Map<String, dynamic>> getActivityTrends(String groupId, {Duration? period}) async {
     final endDate = DateTime.now();
-    final startDate = period != null ? endDate.subtract(period) : endDate.subtract(Duration(days: 30));
+    final startDate = period != null ? endDate.subtract(period) : endDate.subtract(const Duration(days: 30));
 
     final membershipQuery = await _firestore
         .collection('group_membership_history')

@@ -176,7 +176,7 @@ class GroupSuggestionsBar extends ConsumerWidget {
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
         children: [
-          SizedBox(
+          const SizedBox(
             width: 16,
             height: 16,
             child: CircularProgressIndicator(strokeWidth: 2),

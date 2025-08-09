@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../controllers/create_meeting_flow_controller.dart';
 import '../models/meeting_types.dart';
-import '../../meeting_share/widgets/share_to_group_button.dart';
 
 class ReviewMeetingScreen extends ConsumerWidget {
   final VoidCallback onCreateMeeting;

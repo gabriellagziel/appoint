@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'screens/home_screen.dart';
 import 'features/group/ui/screens/group_join_screen.dart';
 import 'features/group/ui/screens/group_management_screen.dart';
 import 'features/group/ui/screens/group_details_screen.dart';
@@ -14,11 +15,7 @@ final router = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => const Scaffold(
-        body: Center(
-          child: Text('App-Oint Home'),
-        ),
-      ),
+      builder: (context, state) => const HomeScreen(),
     ),
 
     // Join Route - Full screen, no bottom nav

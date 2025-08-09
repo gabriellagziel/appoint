@@ -1,0 +1,5 @@
+            trailing: arrived 
+                ? const Icon(Icons.check_circle, color: Colors.green)
+                : isLate 
+                    ? const Icon(Icons.schedule, color: Colors.orange)
+                    : const SizedBox(),

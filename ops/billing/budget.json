@@ -1,0 +1,31 @@
+{
+  "displayName": "AppOint Monthly Budget",
+  "budgetFilter": {
+    "projects": ["projects/YOUR_PROJECT_ID"],
+    "labels": {},
+    "creditTypesTreatment": "INCLUDE_ALL_CREDITS",
+    "services": [
+      "services/24E6-581D-38E6",
+      "services/6F81-5844-456A",
+      "services/9423-28F5-93DF",
+      "services/6F81-5844-4566"
+    ]
+  },
+  "amount": { 
+    "specifiedAmount": { 
+      "currencyCode": "EUR", 
+      "units": "500" 
+    } 
+  },
+  "thresholdRules": [
+    { "thresholdPercent": 0.5 },
+    { "thresholdPercent": 0.9 },
+    { "thresholdPercent": 1.0 }
+  ],
+  "notificationsRule": {
+    "pubsubTopic": "projects/YOUR_PROJECT_ID/topics/budget-alerts",
+    "schemaVersion": "1.0",
+    "monitoringNotificationChannels": []
+  }
+}
+

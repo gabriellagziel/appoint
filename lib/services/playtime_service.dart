@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import '../models/playtime_game.dart';
 import '../models/playtime_session.dart';
 import '../models/playtime_background.dart';
@@ -33,17 +32,26 @@ class PlaytimeService {
 
   // MARK: - Game Operations
 
-  /// Get all available games
-  static Future<List<PlaytimeGame>> getAvailableGames() async {
+  /// Get all available games with pagination support
+  static Future<List<PlaytimeGame>> getAvailableGames(
+      {int limit = 20, DocumentSnapshot? lastDocument}) async {
     try {
-      final snapshot = await _firestore
+      Query query = _firestore
           .collection(_gamesCollection)
           .where('isActive', isEqualTo: true)
           .where('isPublic', isEqualTo: true)
-          .get();
+          .orderBy('createdAt', descending: true)
+          .limit(limit);
+
+      if (lastDocument != null) {
+        query = query.startAfterDocument(lastDocument);
+      }
+
+      final snapshot = await query.get();
 
       return snapshot.docs
-          .map((doc) => PlaytimeGame.fromJson(doc.data()))
+          .map((doc) =>
+              PlaytimeGame.fromJson(doc.data() as Map<String, dynamic>))
           .toList();
     } catch (e) {
       print('Error fetching games: $e');
@@ -51,17 +59,26 @@ class PlaytimeService {
     }
   }
 
-  /// Get games by category
-  static Future<List<PlaytimeGame>> getGamesByCategory(String category) async {
+  /// Get games by category with pagination
+  static Future<List<PlaytimeGame>> getGamesByCategory(String category,
+      {int limit = 20, DocumentSnapshot? lastDocument}) async {
     try {
-      final snapshot = await _firestore
+      Query query = _firestore
           .collection(_gamesCollection)
           .where('category', isEqualTo: category)
           .where('isActive', isEqualTo: true)
-          .get();
+          .orderBy('createdAt', descending: true)
+          .limit(limit);
+
+      if (lastDocument != null) {
+        query = query.startAfterDocument(lastDocument);
+      }
+
+      final snapshot = await query.get();
 
       return snapshot.docs
-          .map((doc) => PlaytimeGame.fromJson(doc.data()))
+          .map((doc) =>
+              PlaytimeGame.fromJson(doc.data() as Map<String, dynamic>))
           .toList();
     } catch (e) {
       print('Error fetching games by category: $e');

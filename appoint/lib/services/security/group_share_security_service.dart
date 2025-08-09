@@ -26,7 +26,7 @@ class GroupShareSecurityService {
         shareId: shareId,
         ipHash: ipHash,
         userId: userId,
-        duration: Duration(hours: 1),
+        duration: const Duration(hours: 1),
       );
 
       if (hourlyClicks >= _maxClicksPerHour) {
@@ -46,7 +46,7 @@ class GroupShareSecurityService {
         shareId: shareId,
         ipHash: ipHash,
         userId: userId,
-        duration: Duration(days: 1),
+        duration: const Duration(days: 1),
       );
 
       if (dailyClicks >= _maxClicksPerDay) {

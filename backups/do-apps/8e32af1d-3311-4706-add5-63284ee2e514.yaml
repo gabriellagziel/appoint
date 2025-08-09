@@ -1,0 +1,35 @@
+envs:
+- key: NODE_ENV
+  scope: RUN_AND_BUILD_TIME
+  value: production
+- key: PORT
+  scope: RUN_AND_BUILD_TIME
+  value: "3000"
+ingress:
+  rules:
+  - component:
+      name: marketing
+    match:
+      path:
+        prefix: /
+name: app-oint-marketing
+region: nyc
+services:
+- build_command: echo 'Marketing app built successfully'
+  environment_slug: node-js
+  github:
+    branch: main
+    repo: gabriellagziel/appoint
+  health_check:
+    failure_threshold: 3
+    http_path: /
+    initial_delay_seconds: 30
+    period_seconds: 30
+    success_threshold: 1
+    timeout_seconds: 10
+  http_port: 3000
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: marketing
+  run_command: npx serve public -p 3000
+  source_dir: marketing

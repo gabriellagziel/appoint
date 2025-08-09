@@ -1,0 +1,39 @@
+domains:
+- domain: business.app-oint.com
+  type: PRIMARY
+  zone: app-oint.com
+envs:
+- key: NODE_ENV
+  scope: RUN_AND_BUILD_TIME
+  value: production
+- key: PORT
+  scope: RUN_AND_BUILD_TIME
+  value: "80"
+ingress:
+  rules:
+  - component:
+      name: business
+    match:
+      path:
+        prefix: /
+name: app-oint-business
+region: nyc
+services:
+- build_command: npm ci && npm run build
+  environment_slug: node-js
+  github:
+    branch: main
+    repo: gabriellagziel/appoint
+  health_check:
+    failure_threshold: 3
+    http_path: /health
+    initial_delay_seconds: 10
+    period_seconds: 30
+    success_threshold: 1
+    timeout_seconds: 10
+  http_port: 80
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: business
+  run_command: npm start
+  source_dir: business

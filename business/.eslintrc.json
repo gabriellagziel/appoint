@@ -1,0 +1,16 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:import/recommended", "prettier"],
+  "rules": {
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "import/no-unresolved": "off",
+    "react/jsx-key": "warn",
+    "react/no-unescaped-entities": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "parserOptions": { "project": ["./tsconfig.json"] },
+      "excludedFiles": ["**/.next/**", "**/dist/**", "**/build/**", "**/public/**"]
+    }
+  ]
+}

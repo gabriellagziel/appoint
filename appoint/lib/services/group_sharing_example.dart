@@ -41,7 +41,7 @@ class GroupSharingExample {
         groupName: "My Family Group",
         description: "A group for sharing appointments with family",
         maxUses: 10,
-        expiresIn: Duration(days: 7),
+        expiresIn: const Duration(days: 7),
       );
 
       print('Group created with invite code: $inviteCode');

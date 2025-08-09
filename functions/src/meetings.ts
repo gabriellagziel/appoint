@@ -1,6 +1,7 @@
 import * as admin from 'firebase-admin';
 import { onDocumentWritten } from 'firebase-functions/v2/firestore';
 import { onCall } from 'firebase-functions/v2/https';
+import { withRateLimit } from './middleware/rateLimit';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 
 const db = admin.firestore();
@@ -140,6 +141,7 @@ export const validateMeetingCreation = onCall(async (request) => {
   }
 
   const userId = request.auth.uid;
+  await withRateLimit(`uid:${userId}`, async () => Promise.resolve());
   const { title, participants, startTime, endTime } = request.data;
 
   // Basic validation
@@ -170,6 +172,7 @@ export const checkEventFeatureAccess = onCall(async (request) => {
   }
 
   const userId = request.auth.uid;
+  await withRateLimit(`uid:${userId}`, async () => Promise.resolve());
   const { meetingId, feature } = request.data;
 
   // Get meeting
@@ -209,6 +212,7 @@ export const getMeetingAnalytics = onCall(async (request) => {
   }
 
   const userId = request.auth.uid;
+  await withRateLimit(`uid:${userId}`, async () => Promise.resolve());
   const { startDate, endDate } = request.data;
 
   let query = db.collection('meetings').where('organizerId', '==', userId);
@@ -247,6 +251,7 @@ export const createEventForm = onCall(async (request) => {
   }
 
   const userId = request.auth.uid;
+  await withRateLimit(`uid:${userId}`, async () => Promise.resolve());
   const { meetingId, title, description, fields } = request.data;
 
   // Get and validate meeting
