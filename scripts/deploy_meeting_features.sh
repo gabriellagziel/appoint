@@ -90,3 +90,5 @@ echo ""
 echo "🔗 Demo meeting URL will be shown above"
 echo "📊 Monitor logs: firebase functions:log"
 echo "🔄 Rollback if needed: firebase deploy --only firestore:rules --message 'rollback'"
+
+

@@ -11,17 +11,24 @@ _$CalendarItemImpl _$$CalendarItemImplFromJson(Map<String, dynamic> json) =>
       id: json['id'] as String,
       title: json['title'] as String,
       description: json['description'] as String,
-      startAt: DateTime.parse(json['startAt'] as String),
-      endAt: json['endAt'] == null
-          ? null
-          : DateTime.parse(json['endAt'] as String),
-      type: $enumDecode(_$CalendarItemTypeEnumMap, json['type']),
+      startTime: DateTime.parse(json['startTime'] as String),
+      endTime: DateTime.parse(json['endTime'] as String),
       ownerId: json['ownerId'] as String,
       assigneeId: json['assigneeId'] as String?,
       familyId: json['familyId'] as String?,
-      visibility: $enumDecode(_$CalendarVisibilityEnumMap, json['visibility']),
-      metadata: json['metadata'] as Map<String, dynamic>?,
-      isCompleted: json['isCompleted'] as bool?,
+      visibility: json['visibility'] as String,
+      type: json['type'] as String,
+      location: json['location'] as String?,
+      attendees: (json['attendees'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList(),
+      notes: json['notes'] as String?,
+      createdAt: json['createdAt'] == null
+          ? null
+          : DateTime.parse(json['createdAt'] as String),
+      updatedAt: json['updatedAt'] == null
+          ? null
+          : DateTime.parse(json['updatedAt'] as String),
     );
 
 Map<String, dynamic> _$$CalendarItemImplToJson(_$CalendarItemImpl instance) =>
@@ -29,24 +36,16 @@ Map<String, dynamic> _$$CalendarItemImplToJson(_$CalendarItemImpl instance) =>
       'id': instance.id,
       'title': instance.title,
       'description': instance.description,
-      'startAt': instance.startAt.toIso8601String(),
-      'endAt': instance.endAt?.toIso8601String(),
-      'type': _$CalendarItemTypeEnumMap[instance.type]!,
+      'startTime': instance.startTime.toIso8601String(),
+      'endTime': instance.endTime.toIso8601String(),
       'ownerId': instance.ownerId,
       'assigneeId': instance.assigneeId,
       'familyId': instance.familyId,
-      'visibility': _$CalendarVisibilityEnumMap[instance.visibility]!,
-      'metadata': instance.metadata,
-      'isCompleted': instance.isCompleted,
+      'visibility': instance.visibility,
+      'type': instance.type,
+      'location': instance.location,
+      'attendees': instance.attendees,
+      'notes': instance.notes,
+      'createdAt': instance.createdAt?.toIso8601String(),
+      'updatedAt': instance.updatedAt?.toIso8601String(),
     };
-
-const _$CalendarItemTypeEnumMap = {
-  CalendarItemType.meeting: 'meeting',
-  CalendarItemType.reminder: 'reminder',
-  CalendarItemType.appointment: 'appointment',
-};
-
-const _$CalendarVisibilityEnumMap = {
-  CalendarVisibility.private: 'private',
-  CalendarVisibility.family: 'family',
-};

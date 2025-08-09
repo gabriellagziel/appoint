@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/user_group.dart';
-import '../models/group_invite.dart';
 import 'group_sharing_service.dart';
 import 'group_permission_service.dart';
 

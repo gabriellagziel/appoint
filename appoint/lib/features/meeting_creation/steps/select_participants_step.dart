@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../controllers/create_meeting_flow_controller.dart';
-import '../models/meeting_types.dart';
 import '../widgets/participants_preview_widget.dart';
 import '../widgets/select_group_dialog.dart';
 import '../widgets/group_suggestions_bar.dart';

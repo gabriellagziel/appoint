@@ -1,9 +1,10 @@
+"use client";
 import React from 'react';
 import { Sidebar, TopBar } from '../../../components/shared';
 
 export interface AdminLayoutProps {
   children: React.ReactNode;
-  sidebarItems: Array<{
+  sidebarItems?: Array<{
     id: string;
     label: string;
     icon?: React.ReactNode;
@@ -18,7 +19,7 @@ export interface AdminLayoutProps {
 
 const AdminLayout: React.FC<AdminLayoutProps> = ({
   children,
-  sidebarItems,
+  sidebarItems = [],
   title,
   subtitle,
   actions,
@@ -52,3 +53,4 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({
 };
 
 export default AdminLayout; 
+export { AdminLayout };

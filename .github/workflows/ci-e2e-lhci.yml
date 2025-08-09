@@ -1,0 +1,40 @@
+name: E2E + Lighthouse (enterprise)
+on: [pull_request]
+jobs:
+  e2e-lh:
+    runs-on: ubuntu-latest
+    env:
+      SENTRY_RELEASE: ${{ github.sha }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install deps
+        working-directory: enterprise-app
+        run: npm ci
+      - name: Playwright browsers
+        run: npx playwright install --with-deps
+      - name: Build & Start
+        working-directory: enterprise-app
+        env:
+          SENTRY_RELEASE: ${{ github.sha }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
+          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          SENTRY_ENV: ci
+        run: npm run build && npm start & sleep 5
+      - name: Health and Version
+        run: |
+          curl -sSf http://localhost:3000/api/healthz | jq .
+          curl -sSf http://localhost:3000/api/version | jq .
+          curl -sSf http://localhost:3000/api/status | jq . || true
+      - name: E2E
+        working-directory: enterprise-app
+        run: npm run test:e2e
+      - name: LHCI
+        working-directory: enterprise-app
+        run: npx lhci autorun --upload.target=temporary-public-storage
+
+

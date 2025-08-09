@@ -331,7 +331,7 @@ class _PublicMeetingScreenState extends ConsumerState<PublicMeetingScreen> {
                       color: Colors.green.withOpacity(0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Member',
                       style: TextStyle(
                         color: Colors.green,

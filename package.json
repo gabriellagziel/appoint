@@ -27,7 +27,8 @@
     "dev:dashboard": "cd dashboard && npm run dev",
     "setup-hooks": "npm install && husky install && chmod +x .husky/pre-commit",
     "clean": "rm -rf node_modules package-lock.json && npm install",
-    "clean:all": "npm run clean && cd functions && npm run clean && cd ../admin && npm run clean && cd ../business && npm run clean && cd ../dashboard && npm run clean && cd ../enterprise-onboarding-portal && npm run clean && cd ../marketing && npm run clean"
+    "clean:all": "npm run clean && cd functions && npm run clean && cd ../admin && npm run clean && cd ../business && npm run clean && cd ../dashboard && npm run clean && cd ../enterprise-onboarding-portal && npm run clean && cd ../marketing && npm run clean",
+    "lint:changed": "git diff --name-only origin/main...HEAD | grep -E '\\.(ts|tsx)$' | xargs -r npx eslint --max-warnings=0"
   },
   "husky": {
     "hooks": {
@@ -45,10 +46,12 @@
     ]
   },
   "devDependencies": {
+    "clsx": "^2.1.1",
     "husky": "^8.0.3",
     "lint-staged": "^16.1.2",
     "markdownlint-cli": "^0.45.0",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "tailwind-merge": "^3.3.1"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../models/saved_group.dart';
-import '../controllers/create_meeting_flow_controller.dart';
 import '../../../models/group_usage_insight.dart';
 import '../../group_suggestions/providers/group_suggestions_providers.dart';
 import '../../auth/providers/auth_provider.dart';
@@ -120,11 +119,11 @@ class SavedGroupsBar extends ConsumerWidget {
                 const Spacer(),
                 TextButton(
                   onPressed: () => _showAllSavedGroups(context, ref),
-                  child: const Text('View all'),
                   style: TextButton.styleFrom(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
                     minimumSize: const Size(0, 24),
                   ),
+                  child: const Text('View all'),
                 ),
               ],
             ),

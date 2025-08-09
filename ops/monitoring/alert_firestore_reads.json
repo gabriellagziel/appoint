@@ -1,0 +1,30 @@
+{
+  "displayName": "Firestore Reads Spike Alert",
+  "documentation": {
+    "content": "Alert when Firestore read operations spike unexpectedly, which may indicate performance issues or abuse.",
+    "mimeType": "text/markdown"
+  },
+  "conditions": [
+    {
+      "displayName": "Firestore Read Count Rate",
+      "conditionThreshold": {
+        "comparison": "COMPARISON_GREATER_THAN",
+        "duration": "300s",
+        "filter": "metric.type=\"firestore.googleapis.com/document/read_count\"",
+        "thresholdValue": 1000,
+        "trigger": {
+          "count": 1
+        }
+      }
+    }
+  ],
+  "enabled": true,
+  "notificationChannels": [
+    "projects/app-oint/alerts/notificationChannels/123456789"
+  ],
+  "userLabels": {
+    "feature": "share-groups",
+    "severity": "warning"
+  }
+}
+

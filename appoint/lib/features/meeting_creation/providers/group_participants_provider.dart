@@ -1,5 +1,4 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../services/group_sharing_service.dart';
 import '../../../models/user_group.dart';
 import '../../auth/providers/auth_provider.dart';
 import '../../group/providers/group_providers.dart';

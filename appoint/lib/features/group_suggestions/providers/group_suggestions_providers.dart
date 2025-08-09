@@ -3,7 +3,6 @@ import '../services/group_suggestions_service.dart';
 import '../services/saved_groups_service.dart';
 import '../../../models/saved_group.dart';
 import '../../../models/group_usage_insight.dart';
-import '../../../models/user_group.dart';
 import '../../auth/providers/auth_provider.dart';
 
 // Service providers

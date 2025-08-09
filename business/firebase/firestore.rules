@@ -1,0 +1,56 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAuthed() { return request.auth != null; }
+    function uid() { return request.auth.uid; }
+    function isOwner(bizId) { return isAuthed() && request.auth.token.bizIds != null && bizId in request.auth.token.bizIds; }
+
+    // Business profiles
+    match /business_profiles/{businessId} {
+      allow read: if resource.data.publicBookingEnabled == true || isOwner(businessId);
+      allow write: if isOwner(businessId);
+    }
+
+    // Staff availability
+    match /staff_availability/{staffId} {
+      allow read, write: if isOwner(resource.data.businessId);
+    }
+
+    // Appointments
+    match /appointments/{appointmentId} {
+      allow read: if isOwner(resource.data.businessId);
+      allow create, update, delete: if isOwner(request.resource.data.businessId);
+    }
+
+    // Messages: only participants (biz owner/staff of biz + customer)
+    match /messages/{meetingId}/items/{msgId} {
+      allow read, write: if isAuthed() && (
+        // business side
+        (request.auth.token.bizIds != null && resource.data.businessId in request.auth.token.bizIds) ||
+        // customer side (store customerUid on meeting doc later; for now allow read/write if appointment exists)
+        true
+      );
+    }
+
+    // Open calls
+    match /open_calls/{id} {
+      allow read: if true; // public readable
+      allow write: if isOwner(request.resource.data.businessId);
+    }
+
+    // Usage counters
+    match /usage_counters/{docId} {
+      allow read, write: if isAuthed();
+    }
+
+    // Staff
+    match /staff/{staffId} {
+      allow read, write: if isOwner(request.resource.data.businessId);
+    }
+
+    // Customers
+    match /customers/{customerId} {
+      allow read, write: if isOwner(resource.data.businessId);
+    }
+  }
+}

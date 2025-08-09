@@ -1,0 +1,36 @@
+{
+  "displayName": "Free Access Expirer Stall Alert",
+  "documentation": {
+    "content": "Alert when the free access expirer function hasn't processed any grants in the last 15 minutes",
+    "mimeType": "text/markdown"
+  },
+  "conditions": [
+    {
+      "displayName": "Free Access Expirer Stall",
+      "conditionThreshold": {
+        "filter": "resource.type=\"cloud_function\" AND resource.labels.function_name=\"expireFreeAccessGrants\"",
+        "comparison": "COMPARISON_LESS_THAN",
+        "thresholdValue": 1,
+        "duration": "900s",
+        "aggregations": [
+          {
+            "alignmentPeriod": "300s",
+            "perSeriesAligner": "ALIGN_RATE",
+            "crossSeriesReducer": "REDUCE_SUM",
+            "groupByFields": [
+              "resource.labels.function_name"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "alertStrategy": {
+    "autoClose": "604800s"
+  },
+  "combiner": "OR",
+  "enabled": true,
+  "notificationChannels": [
+    "projects/app-oint/notificationChannels/123456789"
+  ]
+}

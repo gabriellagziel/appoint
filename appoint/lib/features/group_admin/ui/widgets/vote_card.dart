@@ -194,7 +194,7 @@ class VoteCard extends StatelessWidget {
           children: [
             Text(
               '${(yesPercentage * 100).toStringAsFixed(1)}% Yes',
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.green,
                 fontSize: 12,
                 fontWeight: FontWeight.w500,
@@ -202,7 +202,7 @@ class VoteCard extends StatelessWidget {
             ),
             Text(
               '${(noPercentage * 100).toStringAsFixed(1)}% No',
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.red,
                 fontSize: 12,
                 fontWeight: FontWeight.w500,

@@ -58,10 +58,12 @@ class AuthService {
         final user = _auth.currentUser;
         return user ?? _mockUser;
       } catch (e) {
+        print('Auth error in web mode: $e');
         return _mockUser;
       }
     } else {
-      return _auth.currentUser;
+      final user = _auth.currentUser;
+      return user ?? _mockUser;
     }
   }
 

@@ -1,0 +1,31 @@
+{
+  "displayName": "Firestore Rules Denied Alert",
+  "documentation": {
+    "content": "Alert when Firestore security rules deny requests, which may indicate security issues or misconfiguration.",
+    "mimeType": "text/markdown"
+  },
+  "conditions": [
+    {
+      "displayName": "Firestore Permission Denied",
+      "conditionThreshold": {
+        "comparison": "COMPARISON_GREATER_THAN",
+        "duration": "300s",
+        "filter": "metric.type=\"firestore.googleapis.com/request_count\" AND metric.label.\"status\"=\"PERMISSION_DENIED\"",
+        "thresholdValue": 10,
+        "trigger": {
+          "count": 1
+        }
+      }
+    }
+  ],
+  "enabled": true,
+  "notificationChannels": [
+    "projects/app-oint/alerts/notificationChannels/123456789"
+  ],
+  "userLabels": {
+    "feature": "share-groups",
+    "severity": "critical"
+  }
+}
+
+

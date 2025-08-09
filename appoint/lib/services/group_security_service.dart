@@ -1,6 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/user_group.dart';
-import '../models/group_invite.dart';
 import 'group_sharing_service.dart';
 import 'group_permission_service.dart';
 
@@ -41,7 +39,7 @@ class GroupSecurityService {
 
     if (!banDoc.exists) return false;
 
-    final banData = banDoc.data() as Map<String, dynamic>?;
+    final banData = banDoc.data();
     if (banData == null) return false;
 
     final banUntil = (banData['banUntil'] as Timestamp).toDate();
@@ -51,7 +49,7 @@ class GroupSecurityService {
   /// בדיקת הגבלת קצב
   Future<bool> _isRateLimited(String userId, String action) async {
     final now = DateTime.now();
-    final windowStart = now.subtract(Duration(minutes: 5));
+    final windowStart = now.subtract(const Duration(minutes: 5));
 
     final query = await _firestore
         .collection('user_actions')
@@ -82,7 +80,7 @@ class GroupSecurityService {
   /// בדיקת פעילות חשודה
   Future<bool> _isSuspiciousActivity(String userId, String groupId) async {
     final now = DateTime.now();
-    final windowStart = now.subtract(Duration(hours: 1));
+    final windowStart = now.subtract(const Duration(hours: 1));
 
     final query = await _firestore
         .collection('user_actions')
@@ -116,7 +114,7 @@ class GroupSecurityService {
     Duration? duration,
     String? bannedBy,
   }) async {
-    final banUntil = DateTime.now().add(duration ?? Duration(days: 7));
+    final banUntil = DateTime.now().add(duration ?? const Duration(days: 7));
 
     await _firestore.collection('group_bans').doc('${groupId}_$userId').set({
       'groupId': groupId,
@@ -159,7 +157,7 @@ class GroupSecurityService {
         .get();
 
     return query.docs.map((doc) {
-      final data = doc.data() as Map<String, dynamic>;
+      final data = doc.data();
       return {
         'userId': data['userId'],
         'reason': data['reason'],
@@ -203,7 +201,7 @@ class GroupSecurityService {
   Future<Map<String, dynamic>> getSecurityStats(String groupId) async {
     final bannedUsers = await getBannedUsers(groupId);
     final now = DateTime.now();
-    final windowStart = now.subtract(Duration(days: 7));
+    final windowStart = now.subtract(const Duration(days: 7));
 
     final actionsQuery = await _firestore
         .collection('user_actions')
@@ -212,7 +210,7 @@ class GroupSecurityService {
         .get();
 
     final suspiciousActions = actionsQuery.docs.where((doc) {
-      final data = doc.data() as Map<String, dynamic>;
+      final data = doc.data();
       final action = data['action'] as String?;
       return action == 'suspicious_activity' || action == 'rate_limited';
     }).length;

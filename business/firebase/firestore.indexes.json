@@ -1,0 +1,24 @@
+{
+  "indexes": [
+    {
+      "collectionId": "appointments",
+      "fields": [
+        { "fieldPath": "businessId", "mode": "ASCENDING" },
+        { "fieldPath": "startAt", "mode": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionId": "appointments",
+      "fields": [
+        { "fieldPath": "businessId", "mode": "ASCENDING" },
+        { "fieldPath": "status", "mode": "ASCENDING" },
+        { "fieldPath": "startAt", "mode": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
+
+
+
+

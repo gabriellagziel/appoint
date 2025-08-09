@@ -1,7 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../../models/user_group.dart';
 import '../../../models/group_role.dart';
-import '../../../models/group_policy.dart';
 import '../../../models/group_audit_event.dart';
 import '../../../models/group_vote.dart';
 import 'group_audit_service.dart';
@@ -185,8 +183,9 @@ class GroupAdminService {
       // Check permissions
       if (!actorRole.canRemoveMembers()) return false;
       if (targetRole == GroupRole.owner) return false;
-      if (actorRole == GroupRole.admin && targetRole == GroupRole.admin)
+      if (actorRole == GroupRole.admin && targetRole == GroupRole.admin) {
         return false;
+      }
 
       return await _removeMemberFromGroup(groupId, targetUserId, actorUserId);
     } catch (e) {
@@ -267,8 +266,9 @@ class GroupAdminService {
       // Check permissions
       if (!actorRole.canRemoveMembers()) return false;
       if (targetRole == GroupRole.owner) return false;
-      if (actorRole == GroupRole.admin && targetRole == GroupRole.admin)
+      if (actorRole == GroupRole.admin && targetRole == GroupRole.admin) {
         return false;
+      }
 
       return await _removeMemberFromGroup(groupId, targetUserId, actorUserId);
     } catch (e) {

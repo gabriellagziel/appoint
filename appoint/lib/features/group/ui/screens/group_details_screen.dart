@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import '../../../../services/group_sharing_service.dart';
-import '../../../../models/user_group.dart';
 import '../../../auth/providers/auth_provider.dart';
 import '../../providers/group_providers.dart';
 import '../../../group_admin/ui/group_members_tab.dart';

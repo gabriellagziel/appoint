@@ -2,6 +2,7 @@ import * as admin from 'firebase-admin';
 import { onRequest } from 'firebase-functions/v2/https';
 import ical from 'ical-generator';
 import { v4 as uuidv4 } from 'uuid';
+import { withRateLimit } from './middleware/rateLimit';
 
 if (!admin.apps.length) {
   admin.initializeApp();
@@ -18,6 +19,8 @@ const APPOINTMENTS_COLLECTION = 'appointments';
  */
 export const icsFeed = onRequest(async (req, res) => {
   try {
+    const ip = (req.headers['x-forwarded-for'] as string) || req.ip || 'unknown';
+    await withRateLimit(`ip:${ip}`, async () => Promise.resolve());
     const { token } = req.query as any;
     if (!token) {
       res.status(400).send('Missing token');
@@ -84,6 +87,10 @@ export const rotateIcsToken = onRequest(async (req, res) => {
     }
 
     const { businessId } = req.body || {};
+
+    // Rate limit per IP
+    const ip = (req.headers['x-forwarded-for'] as string) || req.ip || 'unknown';
+    await withRateLimit(`ip:${ip}`, async () => Promise.resolve());
     let targetBusinessId = businessId;
 
     // If not provided, try API key auth

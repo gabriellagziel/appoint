@@ -4,6 +4,7 @@ enum MeetingType {
   individual,
   event,
   group,
+  playtime,
 }
 
 extension MeetingTypeExtension on MeetingType {
@@ -15,6 +16,8 @@ extension MeetingTypeExtension on MeetingType {
         return 'Event';
       case MeetingType.group:
         return 'Group Meeting';
+      case MeetingType.playtime:
+        return 'Playtime';
     }
   }
 
@@ -26,6 +29,8 @@ extension MeetingTypeExtension on MeetingType {
         return 'Multiple participants';
       case MeetingType.group:
         return 'Group-based meeting';
+      case MeetingType.playtime:
+        return 'Gaming and play activities';
     }
   }
 
@@ -37,8 +42,10 @@ extension MeetingTypeExtension on MeetingType {
         return Icons.event;
       case MeetingType.group:
         return Icons.group;
+      case MeetingType.playtime:
+        return Icons.games;
     }
   }
 }
 
-
+enum RecurrenceType { none, daily, weekly, monthly, custom }

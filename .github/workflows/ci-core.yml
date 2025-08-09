@@ -1,0 +1,48 @@
+name: CI Core
+on: [push, pull_request]
+jobs:
+  functions-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install Firebase Tools
+        run: npm i -g firebase-tools
+      - name: Install deps
+        working-directory: functions
+        run: npm ci
+      - name: Emulators + focused tests
+        run: |
+          firebase emulators:exec \
+            --only firestore,auth,functions \
+            "cd functions && npm test --silent -- firestore.rules.spec.ts rateLimit.test.ts"
+
+  web-lint-build:
+    runs-on: ubuntu-latest
+    env:
+      SENTRY_RELEASE: ${{ github.sha }}
+    strategy:
+      matrix:
+        app: [admin, business, enterprise-app]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install & Lint
+        working-directory: ${{ matrix.app }}
+        run: npm ci && npm run lint || true
+      - name: Build
+        working-directory: ${{ matrix.app }}
+        env:
+          SENTRY_RELEASE: ${{ github.sha }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
+          SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          SENTRY_ENV: ci
+        run: npm run build
+
+

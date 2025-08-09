@@ -1,0 +1,10 @@
+ID            Type     Name            Data                                            Priority    Port    TTL     Weight
+1785429589    SOA      @               1800                                            0           0       1800    0
+1785429590    NS       @               ns1.digitalocean.com                            0           0       1800    0
+1785429591    NS       @               ns2.digitalocean.com                            0           0       1800    0
+1785429592    NS       @               ns3.digitalocean.com                            0           0       1800    0
+1785636077    CNAME    www             app-oint-core.web.app                           0           0       3600    0
+1785637103    CNAME    app-oint.com    app-oint-core.web.app                           0           0       3600    0
+1785638573    A        @               199.36.158.100                                  0           0       30      0
+1787339619    CNAME    enterprise      app-oint-enterprise-kpxyy.ondigitalocean.app    0           0       1800    0
+1787365714    CNAME    business        app-oint-business-asit5.ondigitalocean.app      0           0       1800    0

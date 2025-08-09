@@ -274,3 +274,15 @@ export async function exportLogs(filters: LogFilters = {}): Promise<string> {
         throw new Error("Failed to export logs");
     }
 } 
+
+// Backwards-compat shim for older imports
+export async function logAdminAction(...args: any[]) {
+  // Support both legacy signature (actorUid, action, metadata) and new (action, metadata)
+  if (args.length === 3 && typeof args[1] === 'string') {
+    const [actorUid, action, metadata] = args as [string, string, any];
+    await createLog(action, { actorUid, ...(metadata || {}) });
+    return;
+  }
+  const [action, metadata] = args as [string, any];
+  await createLog(action, metadata || {});
+}

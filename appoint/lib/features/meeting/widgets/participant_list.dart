@@ -22,7 +22,7 @@ class ParticipantList extends StatelessWidget {
             children: [
               Expanded(child: Text(name)),
               if (isLate) 
-                Icon(Icons.schedule, color: Colors.orange, size: 16),
+                const Icon(Icons.schedule, color: Colors.orange, size: 16),
             ],
           ),
             subtitle: Column(
@@ -31,7 +31,7 @@ class ParticipantList extends StatelessWidget {
               Text('Status: $status'),
               if (isLate && lateReason != null && lateReason.isNotEmpty)
                 Text('Late: $lateReason', 
-                     style: TextStyle(color: Colors.orange, fontSize: 12)),
+                     style: const TextStyle(color: Colors.orange, fontSize: 12)),
             ],
           ),
             trailing:
@@ -46,3 +46,5 @@ class ParticipantList extends StatelessWidget {
     );
   }
 }
+
+

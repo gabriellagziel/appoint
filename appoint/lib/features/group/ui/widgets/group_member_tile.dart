@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../../services/group_sharing_service.dart';
 
 class GroupMemberTile extends ConsumerWidget {
   final String memberId;

@@ -2,6 +2,7 @@ import { onRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import express from 'express';
 import { v4 as uuidv4 } from 'uuid';
+import { withRateLimit } from './middleware/rateLimit';
 
 if (!admin.apps.length) {
   admin.initializeApp();
@@ -25,6 +26,8 @@ app.get('/authorize', async (req, res) => {
   const { client_id, redirect_uri, state, response_type } = req.query as any;
 
   try {
+    const ip = (req.headers['x-forwarded-for'] as string) || (req as any).ip || 'unknown';
+    await withRateLimit(`ip:${ip}`, async () => Promise.resolve());
     const client = await getClient(client_id);
     if (client.redirectUri !== redirect_uri) throw new Error('invalid_redirect');
 
@@ -45,6 +48,8 @@ app.get('/authorize', async (req, res) => {
 app.post('/token', async (req, res) => {
   const { grant_type } = req.body;
   try {
+    const ip = (req.headers['x-forwarded-for'] as string) || (req as any).ip || 'unknown';
+    await withRateLimit(`ip:${ip}`, async () => Promise.resolve());
     if (grant_type === 'authorization_code') {
       const { code, client_id, client_secret } = req.body;
       const client = await getClient(client_id);
@@ -80,6 +85,8 @@ app.post('/token', async (req, res) => {
 /* /oauth/revoke */
 app.post('/revoke', async (req, res) => {
   const { token } = req.body;
+  const ip = (req.headers['x-forwarded-for'] as string) || (req as any).ip || 'unknown';
+  await withRateLimit(`ip:${ip}`, async () => Promise.resolve());
   await db.collection('oauth_tokens').doc(token).delete();
   res.status(200).json({ success: true });
 });

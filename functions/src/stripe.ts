@@ -1,5 +1,6 @@
 import * as admin from 'firebase-admin';
 import { HttpsError, onCall, onRequest } from 'firebase-functions/v2/https';
+import { withRateLimit } from './middleware/rateLimit';
 import Stripe from 'stripe';
 
 // Utility: ensure Firebase admin is initialised and avoid "apps length" errors in tests
@@ -51,6 +52,10 @@ export const createCheckoutSession = onRequest(async (req, res) => {
       return;
     }
 
+    // Rate limit per IP
+    const ip = (req.headers['x-forwarded-for'] as string) || req.ip || 'unknown';
+    await withRateLimit(`ip:${ip}`, async () => Promise.resolve());
+
     // Create checkout session
     const stripe = getStripe();
     const session = await stripe.checkout.sessions.create({
@@ -94,6 +99,9 @@ export const confirmSession = onRequest(async (req, res) => {
     }
 
     const { sessionId, studioId } = req.body;
+    // Rate limit per IP
+    const ip = (req.headers['x-forwarded-for'] as string) || req.ip || 'unknown';
+    await withRateLimit(`ip:${ip}`, async () => Promise.resolve());
 
     if (!sessionId || !studioId) {
       res.status(400).json({ error: 'Missing required parameters' });
@@ -149,6 +157,9 @@ export const handleCheckoutSessionCompleted = onRequest(async (req, res) => {
   let event: Stripe.Event;
 
   try {
+    // Rate limit per IP
+    const ip = (req.headers['x-forwarded-for'] as string) || (req as any).ip || 'unknown';
+    await withRateLimit(`ip:${ip}`, async () => Promise.resolve());
     event = stripe.webhooks.constructEvent(req.rawBody, sig as string, endpointSecret);
   } catch (err: any) {
     console.error('Webhook signature verification failed:', err);
@@ -317,6 +328,9 @@ export const cancelSubscription = onRequest(async (req, res) => {
     }
 
     const { studioId, subscriptionId } = req.body;
+    // Rate limit per user if authenticated header provided
+    const uid = (req.headers['x-user-id'] as string) || 'anonymous';
+    await withRateLimit(`uid:${uid}`, async () => Promise.resolve());
 
     if (!studioId || !subscriptionId) {
       res.status(400).json({ error: 'Missing required parameters' });
