@@ -34,6 +34,12 @@ class MeetingDetailsScreen extends ConsumerWidget {
     }
 
     final isDesktop = MediaQuery.of(context).size.width > 900;
+    final MeetingType = m['type']; // string or enum id in your model
+    final String? virtualUrl = m['virtualUrl'];
+    final bool hasLocation = (m['location'] != null) || (m['lat'] != null && m['lng'] != null);
+    final bool isOpenCall = MeetingType == 'openCall';
+    final bool isEvent = MeetingType == 'event' || ((state.participants.length + 1) >= 4);
+    final bool isPlaytime = MeetingType == 'playtime';
 
     final content = isDesktop
         ? Row(
@@ -48,6 +54,11 @@ class MeetingDetailsScreen extends ConsumerWidget {
                     ParticipantList(participants: state.participants),
                     const SizedBox(height: 16),
                     MeetingActionsBar(meetingId: meetingId),
+                    const SizedBox(height: 16),
+                    if (!isOpenCall && hasLocation)
+                      Card(child: ListTile(title: const Text('Location'), subtitle: Text(m['location'] ?? '')),),
+                    if (virtualUrl != null && virtualUrl.isNotEmpty)
+                      Card(child: ListTile(title: const Text('Virtual meeting'), subtitle: Text(virtualUrl))),
                   ],
                 ),
               ),
@@ -56,9 +67,10 @@ class MeetingDetailsScreen extends ConsumerWidget {
                 flex: 4,
                 child: ListView(
                   children: [
-                    MeetingChecklist(meetingId: meetingId, meeting: m),
-                    const SizedBox(height: 16),
-                    MeetingChat(meetingId: meetingId),
+                    if (isEvent || isPlaytime)
+                      MeetingChecklist(meetingId: meetingId, meeting: m),
+                    if (isEvent) const SizedBox(height: 16),
+                    if (isEvent) MeetingChat(meetingId: meetingId),
                   ],
                 ),
               ),
@@ -72,9 +84,15 @@ class MeetingDetailsScreen extends ConsumerWidget {
               const SizedBox(height: 12),
               MeetingActionsBar(meetingId: meetingId),
               const SizedBox(height: 12),
-              MeetingChecklist(meetingId: meetingId, meeting: m),
+              if (!isOpenCall && hasLocation)
+                Card(child: ListTile(title: const Text('Location'), subtitle: Text(m['location'] ?? ''))),
+              if (virtualUrl != null && virtualUrl.isNotEmpty)
+                Card(child: ListTile(title: const Text('Virtual meeting'), subtitle: Text(virtualUrl))),
               const SizedBox(height: 12),
-              MeetingChat(meetingId: meetingId),
+              if (isEvent || isPlaytime)
+                MeetingChecklist(meetingId: meetingId, meeting: m),
+              if (isEvent) const SizedBox(height: 12),
+              if (isEvent) MeetingChat(meetingId: meetingId),
             ],
           );
 
