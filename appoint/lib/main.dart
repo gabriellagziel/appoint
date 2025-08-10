@@ -1,39 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_app_check/firebase_app_check.dart';
-import 'app_router.dart';
-import 'package:appoint/firebase_options.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter_web_plugins/url_strategy.dart';
+import 'app_router.dart' show router;
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  // App Check for web
-  try {
-    await FirebaseAppCheck.instance.activate(
-      webProvider: ReCaptchaV3Provider('RECAPTCHA_V3_SITE_KEY'),
-      androidProvider: AndroidProvider.debug,
-      appleProvider: AppleProvider.debug,
+void main() {
+  FlutterError.onError = (FlutterErrorDetails details) {
+    // ignore: avoid_print
+    print(details.exceptionAsString());
+    // ignore: avoid_print
+    print(details.stack);
+  };
+  ErrorWidget.builder = (FlutterErrorDetails details) {
+    return Material(
+      child: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Text('Something went wrong.\n${details.exceptionAsString()}'),
+        ),
+      ),
     );
-  } catch (_) {}
-
-  runApp(const ProviderScope(child: AppOintApp()));
+  };
+  WidgetsFlutterBinding.ensureInitialized();
+  if (kIsWeb) setUrlStrategy(const HashUrlStrategy());
+  print('[[MAIN]] main.dart at appoint/lib/main.dart IS RUNNING');
+  runApp(const App());
 }
 
-class AppOintApp extends StatelessWidget {
-  const AppOintApp({super.key});
-
+class App extends StatelessWidget {
+  const App({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      title: 'App-Oint',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        useMaterial3: true,
-      ),
-      routerConfig: router,
-    );
+    return MaterialApp.router(routerConfig: router);
   }
 }
