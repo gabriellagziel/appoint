@@ -1,136 +1,27 @@
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'screens/home_screen.dart';
-import 'features/group/ui/screens/group_join_screen.dart';
-import 'features/group/ui/screens/group_management_screen.dart';
-import 'features/group/ui/screens/group_details_screen.dart';
-import 'features/meeting_public/screens/public_meeting_screen.dart';
-import 'features/invite/route/join_route.dart';
-import 'features/invite/controllers/invite_controller.dart';
-import 'features/meeting/screens/meeting_details_screen.dart';
+import 'features/home/home_entry_decider.dart';
+import 'features/meeting_flow/personal_mobile_flow.dart';
+import 'features/meeting/create_flow/create_meeting_flow_screen.dart';
 
-final router = GoRouter(
-  initialLocation: '/',
-  routes: [
-    GoRoute(
-      path: '/',
-      builder: (context, state) => const HomeScreen(),
-    ),
+void _routerLoadedProof() =>
+    print('[[ROUTER FILE LOADED]] appoint/lib/app_router.dart');
 
-    // Join Route - Full screen, no bottom nav
-    GoRoute(
-      path: '/join',
-      name: 'Join',
-      builder: (context, state) {
-        final token = state.uri.queryParameters['token'];
-        final src = state.uri.queryParameters['src'];
-        
-        if (token == null || token.isEmpty) {
-          return const Scaffold(
-            body: Center(
-              child: Text('Invalid invite link'),
-            ),
-          );
-        }
-
-        // Initialize invite controller with token and src
-        return Consumer(
-          builder: (context, ref, child) {
-            // Load the invite when the route is accessed
-            WidgetsBinding.instance.addPostFrameCallback((_) {
-              ref.read(inviteControllerProvider.notifier).load(token, src: src);
-            });
-            
-            return const JoinRoute();
-          },
-        );
-      },
-    ),
-
-    // Group Sharing Routes
-    GoRoute(
-      path: '/group-invite/:code',
-      name: 'GroupJoin',
-      builder: (context, state) {
-        final code = state.pathParameters['code']!;
-        return GroupJoinScreen(inviteCode: code);
-      },
-    ),
-
-    GoRoute(
-      path: '/groups',
-      name: 'GroupManagement',
-      builder: (context, state) => const GroupManagementScreen(),
-    ),
-
-    GoRoute(
-      path: '/groups/:id',
-      name: 'GroupDetails',
-      builder: (context, state) {
-        final id = state.pathParameters['id']!;
-        return GroupDetailsScreen(groupId: id);
-      },
-    ),
-
-    // Placeholder routes for other features
-    GoRoute(
-      path: '/login',
-      builder: (context, state) => const Scaffold(
-        body: Center(
-          child: Text('Login Screen'),
-        ),
+final router = (() {
+  _routerLoadedProof();
+  return GoRouter(
+    initialLocation: '/home',
+    routes: [
+      // Force /home to use HomeEntryDecider
+      GoRoute(path: '/home', builder: (_, __) => const HomeEntryDecider()),
+      // Direct link to the new flow
+      GoRoute(path: '/flow', builder: (_, __) => const PersonalMobileFlow()),
+      // New modular create meeting flow
+      GoRoute(
+        path: '/create/meeting',
+        builder: (_, __) => const CreateMeetingFlowScreen(),
       ),
-    ),
-
-    // Meeting Creation Routes
-    GoRoute(
-      path: '/create-meeting',
-      name: 'CreateMeeting',
-      builder: (context, state) => const Scaffold(
-        body: Center(
-          child: Text('Create Meeting Flow'),
-        ),
-      ),
-    ),
-
-    // Meeting Details Route
-    GoRoute(
-      path: '/meeting/:meetingId',
-      name: 'MeetingDetails',
-      builder: (context, state) {
-        final meetingId = state.pathParameters['meetingId']!;
-        return MeetingDetailsScreen(meetingId: meetingId);
-      },
-    ),
-
-    // Public Meeting Route
-    GoRoute(
-      path: '/m/:meetingId',
-      name: 'PublicMeeting',
-      builder: (context, state) {
-        final meetingId = state.pathParameters['meetingId']!;
-        final groupId = state.uri.queryParameters['g'];
-        final source = state.uri.queryParameters['src'];
-        final guestToken = state.uri.queryParameters['token'];
-
-        return PublicMeetingScreen(
-          meetingId: meetingId,
-          groupId: groupId,
-          source: source,
-          guestToken: guestToken,
-        );
-      },
-    ),
-
-    GoRoute(
-      path: '/select-group',
-      name: 'SelectGroupDialog',
-      builder: (context, state) => const Scaffold(
-        body: Center(
-          child: Text('Select Group Dialog'),
-        ),
-      ),
-    ),
-  ],
-);
+      // Root redirect safeguard
+      GoRoute(path: '/', redirect: (_, __) => '/home'),
+    ],
+  );
+})();
