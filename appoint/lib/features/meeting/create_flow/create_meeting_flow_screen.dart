@@ -9,6 +9,7 @@ import 'steps/time_step.dart';
 import 'steps/location_step.dart';
 import 'steps/virtual_url_step.dart';
 import 'steps/extras_step.dart';
+import 'steps/review_step.dart';
 
 class CreateMeetingFlowScreen extends ConsumerWidget {
   const CreateMeetingFlowScreen({super.key});
@@ -28,7 +29,7 @@ class CreateMeetingFlowScreen extends ConsumerWidget {
       case MeetingStep.extras:
         return const ExtrasStep();
       case MeetingStep.review:
-        return const SizedBox.shrink();
+        return const ReviewStep();
     }
   }
 
@@ -46,12 +47,15 @@ class CreateMeetingFlowScreen extends ConsumerWidget {
           children: [
             StepHeader(steps: steps, currentIndex: state.currentIndex),
             const SizedBox(height: 16),
-            Expanded(child: SingleChildScrollView(child: _bodyFor(steps[state.currentIndex]))),
+            Expanded(
+                child: SingleChildScrollView(
+                    child: _bodyFor(steps[state.currentIndex]))),
             const SizedBox(height: 12),
             Row(
               children: [
                 if (state.currentIndex > 0)
-                  OutlinedButton(onPressed: notifier.back, child: const Text('Back')),
+                  OutlinedButton(
+                      onPressed: notifier.back, child: const Text('Back')),
                 const Spacer(),
                 ElevatedButton(
                   onPressed: () {
@@ -63,7 +67,9 @@ class CreateMeetingFlowScreen extends ConsumerWidget {
                       notifier.next();
                     }
                   },
-                  child: Text(state.currentIndex == steps.length - 1 ? 'Create' : 'Next'),
+                  child: Text(state.currentIndex == steps.length - 1
+                      ? 'Create'
+                      : 'Next'),
                 ),
               ],
             ),
@@ -73,5 +79,3 @@ class CreateMeetingFlowScreen extends ConsumerWidget {
     );
   }
 }
-
-
