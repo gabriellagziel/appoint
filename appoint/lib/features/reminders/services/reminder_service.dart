@@ -25,5 +25,3 @@ class ReminderService {
     await _col.doc(id).update({'done': done});
   }
 }
-
-

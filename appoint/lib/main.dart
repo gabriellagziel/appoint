@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter_web_plugins/url_strategy.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'app_router.dart' show router;
 
-void main() {
+Future<void> main() async {
   FlutterError.onError = (FlutterErrorDetails details) {
     // ignore: avoid_print
     print(details.exceptionAsString());
@@ -22,6 +24,7 @@ void main() {
   };
   WidgetsFlutterBinding.ensureInitialized();
   if (kIsWeb) setUrlStrategy(const HashUrlStrategy());
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   print('[[MAIN]] main.dart at appoint/lib/main.dart IS RUNNING');
   runApp(const App());
 }
