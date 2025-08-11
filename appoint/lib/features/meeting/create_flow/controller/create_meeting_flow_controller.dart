@@ -7,8 +7,8 @@ class CreateMeetingFlowController extends StateNotifier<CreateMeetingState> {
 
   List<MeetingStep> get steps {
     final t = state.type ?? MeetingType.personal;
-    final isPlaytimeVirtual =
-        t == MeetingType.playtime && (state.virtualUrl != null && state.virtualUrl!.isNotEmpty);
+    final isPlaytimeVirtual = t == MeetingType.playtime &&
+        (state.virtualUrl != null && state.virtualUrl!.isNotEmpty);
     return stepsFor(t, playtimeVirtual: isPlaytimeVirtual);
   }
 
@@ -95,6 +95,35 @@ class CreateMeetingFlowController extends StateNotifier<CreateMeetingState> {
       state = state.copyWith(type: MeetingType.event, currentIndex: 0);
     }
   }
+
+  Future<String?> submit() async {
+    if (!canSubmit) return null;
+    final payload = {
+      'type': state.type?.name,
+      'title': state.title,
+      'description': state.description,
+      'participants': state.participantIds,
+      'start': state.start?.toIso8601String(),
+      'end': state.end?.toIso8601String(),
+      'location': state.locationAddress == null
+          ? null
+          : {
+              'address': state.locationAddress,
+              'lat': state.lat,
+              'lng': state.lng,
+            },
+      'virtualUrl': state.virtualUrl,
+    };
+    try {
+      final id = await _fakeMeetingCreate(payload);
+      return id;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  Future<String> _fakeMeetingCreate(Map<String, dynamic> data) async {
+    await Future.delayed(const Duration(milliseconds: 400));
+    return DateTime.now().millisecondsSinceEpoch.toString();
+  }
 }
-
-

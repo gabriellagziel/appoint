@@ -23,10 +23,12 @@ class CreateReminderScreen extends ConsumerWidget {
       if (date == null) return;
       final time = await showTimePicker(
         context: context,
-        initialTime: TimeOfDay.fromDateTime(form.when ?? now.add(const Duration(hours: 1))),
+        initialTime: TimeOfDay.fromDateTime(
+            form.when ?? now.add(const Duration(hours: 1))),
       );
       if (time == null) return;
-      final dt = DateTime(date.year, date.month, date.day, time.hour, time.minute);
+      final dt =
+          DateTime(date.year, date.month, date.day, time.hour, time.minute);
       notifier.setWhen(dt);
     }
 
@@ -45,9 +47,11 @@ class CreateReminderScreen extends ConsumerWidget {
             const SizedBox(height: 12),
             Row(children: [
               Expanded(
-                child: Text(form.when?.toLocal().toString() ?? 'No time selected'),
+                child:
+                    Text(form.when?.toLocal().toString() ?? 'No time selected'),
               ),
-              TextButton(onPressed: pickDateTime, child: const Text('Pick time')),
+              TextButton(
+                  onPressed: pickDateTime, child: const Text('Pick time')),
             ]),
             const SizedBox(height: 12),
             DropdownButton<Recurrence>(
@@ -64,7 +68,13 @@ class CreateReminderScreen extends ConsumerWidget {
               onChanged: notifier.setNotes,
             ),
             const SizedBox(height: 8),
-            const Text('Notifications are in-app (no SMS).'),
+            const Padding(
+              padding: EdgeInsets.only(top: 8.0),
+              child: Text(
+                'Notifications are in-app only (no SMS).',
+                style: TextStyle(fontSize: 12, color: Colors.black54),
+              ),
+            ),
             const Spacer(),
             SizedBox(
               width: double.infinity,
@@ -75,8 +85,8 @@ class CreateReminderScreen extends ConsumerWidget {
                   if (ok) {
                     Navigator.of(context).pop(true);
                   } else {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Failed to save reminder')));
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                        content: Text('Failed to save reminder')));
                   }
                 },
                 child: const Text('Save'),
@@ -88,5 +98,3 @@ class CreateReminderScreen extends ConsumerWidget {
     );
   }
 }
-
-
