@@ -29,7 +29,8 @@ class ReminderFormState {
     String? notes,
     bool? notify,
     List<String>? targets,
-  }) => ReminderFormState(
+  }) =>
+      ReminderFormState(
         text: text ?? this.text,
         when: when ?? this.when,
         recurrence: recurrence ?? this.recurrence,
@@ -42,7 +43,8 @@ class ReminderFormState {
 class ReminderFormNotifier extends StateNotifier<ReminderFormState> {
   final ReminderService service;
   final Ref ref;
-  ReminderFormNotifier(this.ref, this.service) : super(const ReminderFormState());
+  ReminderFormNotifier(this.ref, this.service)
+      : super(const ReminderFormState());
 
   void setText(String v) => state = state.copyWith(text: v);
   void setWhen(DateTime v) => state = state.copyWith(when: v);
@@ -68,7 +70,8 @@ class ReminderFormNotifier extends StateNotifier<ReminderFormState> {
   }
 }
 
-final reminderServiceProvider = Provider<ReminderService>((ref) => ReminderService());
+final reminderServiceProvider =
+    Provider<ReminderService>((ref) => ReminderService());
 
 final reminderFormProvider =
     StateNotifierProvider<ReminderFormNotifier, ReminderFormState>((ref) {
@@ -76,12 +79,11 @@ final reminderFormProvider =
   return ReminderFormNotifier(ref, svc);
 });
 
-final remindersStreamProvider = StreamProvider.autoDispose<List<Map<String, dynamic>>>((ref) {
+final remindersStreamProvider =
+    StreamProvider.autoDispose<List<Map<String, dynamic>>>((ref) {
   final uid = ref.watch(currentUserIdProvider);
   final svc = ref.watch(reminderServiceProvider);
   if (uid == null) return const Stream.empty();
   if (Firebase.apps.isEmpty) return const Stream.empty();
   return svc.streamRemindersForUser(uid);
 });
-
-
