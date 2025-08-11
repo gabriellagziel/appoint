@@ -24,4 +24,8 @@ class ReminderService {
   Future<void> toggleDone(String id, bool done) async {
     await _col.doc(id).update({'done': done});
   }
+
+  Future<void> updateReminder(String id, Map<String, dynamic> data) {
+    return _col.doc(id).update(data);
+  }
 }
