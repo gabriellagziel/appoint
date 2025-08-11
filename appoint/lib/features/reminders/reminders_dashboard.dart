@@ -8,7 +8,16 @@ class RemindersDashboard extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final reminders = ref.watch(remindersStreamProvider);
-    final svc = ref.read(reminderServiceProvider);
+    final form = ref.read(reminderFormProvider.notifier);
+
+    Widget _badge(String text) => Container(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(color: Colors.black12),
+          ),
+          child: Text(text),
+        );
     return Scaffold(
       appBar: AppBar(title: const Text('Reminders')),
       body: reminders.when(
@@ -17,12 +26,13 @@ class RemindersDashboard extends ConsumerWidget {
             return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   const Text('No reminders yet'),
-                  const SizedBox(height: 12),
+                  const SizedBox(height: 8),
                   FilledButton(
                     onPressed: () => context.push('/reminders/create'),
-                    child: const Text('Create reminder'),
+                    child: const Text('Create a Reminder'),
                   ),
                 ],
               ),
@@ -52,9 +62,17 @@ class RemindersDashboard extends ConsumerWidget {
               return ListTile(
                 title: Text(r['text'] ?? ''),
                 subtitle: Text(when?.toLocal().toString() ?? 'No time set'),
-                trailing: Checkbox(
-                  value: done,
-                  onChanged: (v) => svc.toggleDone(r['id'], v ?? false),
+                trailing: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    if ((r['recurrence']?.toString() ?? 'none') != 'none')
+                      _badge(r['recurrence'].toString()),
+                    const SizedBox(width: 8),
+                    Checkbox(
+                      value: done,
+                      onChanged: (v) => form.markDone(r, v ?? false),
+                    ),
+                  ],
                 ),
               );
             },

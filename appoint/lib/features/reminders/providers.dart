@@ -68,6 +68,14 @@ class ReminderFormNotifier extends StateNotifier<ReminderFormState> {
       'done': false,
     });
   }
+
+  Future<void> markDone(Map<String, dynamic> item, bool done) async {
+    final id = item['id']?.toString();
+    if (id == null) return;
+    try {
+      await service.updateReminder(id, {'done': done});
+    } catch (_) {}
+  }
 }
 
 final reminderServiceProvider =
