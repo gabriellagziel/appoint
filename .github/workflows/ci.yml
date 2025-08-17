@@ -3,12 +3,38 @@ name: CI
 on:
   push:
     branches: [ main ]
+    paths:
+      - "appoint/**"
+      - "functions/**"
+      - "marketing/**"
+      - "business/**"
+      - "admin/**"
+      - "enterprise-onboarding-portal/**"
+      - ".github/workflows/ci.yml"
   pull_request:
     branches: [ main ]
+    paths:
+      - "appoint/**"
+      - "functions/**"
+      - "marketing/**"
+      - "business/**"
+      - "admin/**"
+      - "enterprise-onboarding-portal/**"
+      - ".github/workflows/ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - name: Fetch tags
@@ -32,7 +58,8 @@ jobs:
   deploy-functions:
     needs: build-and-test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    timeout-minutes: 15
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     steps:
       - uses: actions/checkout@v4
       - name: Fetch tags
@@ -52,11 +79,16 @@ jobs:
           cd functions
           npm run lint
       - name: Deploy Functions
+        if: github.event_name != 'pull_request'
         run: firebase deploy --only functions --token "${{ secrets.FIREBASE_TOKEN }}"
+      - name: Deploy Functions (PR mode)
+        if: github.event_name == 'pull_request'
+        run: echo "⚠️ Skipping Firebase deployment - FIREBASE_TOKEN not available on PRs"
 
   build-nextjs-apps:
     needs: build-and-test
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     strategy:
       matrix:
         app: [marketing, business, enterprise-onboarding-portal, admin]
@@ -78,7 +110,8 @@ jobs:
   smoke-test:
     needs: [deploy-functions, build-nextjs-apps]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    timeout-minutes: 10
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     steps:
       - uses: actions/checkout@v4
       - name: Fetch tags
@@ -95,7 +128,8 @@ jobs:
 
   security-scan:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    timeout-minutes: 10
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     steps:
       - uses: actions/checkout@v4
       - name: Fetch tags
@@ -112,6 +146,7 @@ jobs:
   notify:
     needs: [build-and-test, deploy-functions, build-nextjs-apps, smoke-test]
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     if: always()
     steps:
       - uses: actions/checkout@v4

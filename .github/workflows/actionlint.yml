@@ -1,0 +1,34 @@
+name: actionlint
+on: 
+  push:
+    paths:
+      - ".github/workflows/**"
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: actionlint-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run actionlint
+        run: |
+          # Install actionlint
+          curl -sSLo actionlint.tar.gz https://github.com/rhysd/actionlint/releases/latest/download/actionlint_1.6.26_linux_amd64.tar.gz
+          tar xzf actionlint.tar.gz
+          sudo mv actionlint /usr/local/bin/
+          
+          # Run actionlint
+          actionlint -color

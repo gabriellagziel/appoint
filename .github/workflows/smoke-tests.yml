@@ -17,6 +17,14 @@ on:
         default: 'https://api.app-oint.com'
         type: string
 
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: smoke-tests-${{ github.ref }}
+  cancel-in-progress: true
+
 env:
   API_BASE_URL: ${{ github.event.inputs.api_base_url || 'https://api.app-oint.com' }}
   TEST_TIMEOUT: 30
