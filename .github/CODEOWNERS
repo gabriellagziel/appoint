@@ -1,0 +1,26 @@
+# Global owners
+* @gabriellagziel
+
+# GitHub Actions workflows
+.github/workflows/ @gabriellagziel
+
+# Configuration files
+*.yml @gabriellagziel
+*.yaml @gabriellagziel
+*.json @gabriellagziel
+*.js @gabriellagziel
+*.ts @gabriellagziel
+*.dart @gabriellagziel
+
+# Flutter specific
+pubspec.yaml @gabriellagziel
+pubspec.lock @gabriellagziel
+analysis_options.yaml @gabriellagziel
+
+# Documentation
+*.md @gabriellagziel
+docs/ @gabriellagziel
+
+# Security and compliance
+.github/security/ @gabriellagziel
+.github/dependabot.yml @gabriellagziel
