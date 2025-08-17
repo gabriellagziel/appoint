@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import '@app-oint/design-system/dist/css/tokens.css'
-import { detectLocale, resolveLocaleFolder } from "../lib/locale";
-import StatusBadge from "../components/StatusBadge"
+import { detectLocale, resolveLocaleFolder } from "@/lib/locale";
+import StatusBadge from "@/components/StatusBadge"
 import { AuthProvider } from '@/contexts/AuthContext'
 
 // Sentry configuration removed - file not found

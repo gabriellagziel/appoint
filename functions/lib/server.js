@@ -1,20 +1,76 @@
-import cors from 'cors';
-import express from 'express';
-import { liveness, readiness } from './health.js';
-import metricsRoute, { metricsMiddleware } from './metrics.js';
-import { db as getDb } from './lib/admin.js';
-import fetch from 'node-fetch';
-import { v4 as uuidv4 } from 'uuid';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const cors_1 = __importDefault(require("cors"));
+const express_1 = __importDefault(require("express"));
+const health_js_1 = require("./health.js");
+const metrics_js_1 = __importStar(require("./metrics.js"));
+const admin_js_1 = require("./lib/admin.js");
+const node_fetch_1 = __importDefault(require("node-fetch"));
+const uuid_1 = require("uuid");
 // Stripe route is optional in local dev; we will require it dynamically in handler
-const app = express();
+const app = (0, express_1.default)();
 const PORT = parseInt(process.env.PORT || '8080', 10);
 const HOST = process.env.HOSTNAME || '0.0.0.0';
 // Apply metrics middleware to all routes
-app.use(metricsMiddleware);
+app.use(metrics_js_1.metricsMiddleware);
 // CORS
-app.use(cors({ origin: true }));
+const corsOptions = {
+    origin: [
+        'https://marketing.app-oint.com',
+        'https://business.app-oint.com',
+        'https://enterprise.app-oint.com',
+        'https://personal.app-oint.com',
+        'https://admin.app-oint.com',
+        'https://app.app-oint.com',
+        // Allow localhost for development
+        'http://localhost:3000',
+        'http://localhost:3001',
+        'http://localhost:3002',
+        'http://localhost:3003',
+        'http://localhost:8080'
+    ],
+    credentials: true,
+    optionsSuccessStatus: 200
+};
+app.use((0, cors_1.default)(corsOptions));
 // Routes
-app.use('/metrics', metricsRoute);
+app.use('/metrics', metrics_js_1.default);
 // Groups health endpoint
 app.get('/api/groups/healthz', (_req, res) => res.json({ ok: true }));
 // Groups metrics endpoint (optional in local dev)
@@ -30,7 +86,7 @@ app.get('/api/groups/metrics', async (_req, res) => {
     }
 });
 // Groups upgrade: creates Stripe checkout session (optional in local dev)
-app.post('/api/groups/:groupId/upgrade', express.json(), async (req, res) => {
+app.post('/api/groups/:groupId/upgrade', express_1.default.json(), async (req, res) => {
     try {
         const { groupId } = req.params;
         const { priceId } = req.body || {};
@@ -65,7 +121,7 @@ app.get('/api/groups/:groupId/upgrade', async (req, res) => {
     }
 });
 // Personal premium: lightweight wrapper to reuse existing createCheckoutSession
-app.post('/api/user/premium/checkout', express.json(), async (req, res) => {
+app.post('/api/user/premium/checkout', express_1.default.json(), async (req, res) => {
     try {
         const { userId, priceId, successUrl, cancelUrl } = req.body || {};
         if (!userId || !priceId) {
@@ -97,7 +153,7 @@ app.get('/api/places/autocomplete', async (req, res) => {
             return;
         }
         const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&format=json&limit=5`;
-        const resp = await fetch(url, {
+        const resp = await (0, node_fetch_1.default)(url, {
             headers: { 'User-Agent': 'App-Oint/1.0 (personal PWA)' },
         });
         if (!resp.ok) {
@@ -119,15 +175,15 @@ app.get('/api/places/autocomplete', async (req, res) => {
     }
 });
 // Create invite code for participants joining
-app.post('/api/groups/invite/create', express.json(), async (req, res) => {
+app.post('/api/groups/invite/create', express_1.default.json(), async (req, res) => {
     try {
         const groupId = req.body?.groupId || '';
         if (!groupId) {
             res.status(400).json({ error: 'groupId required' });
             return;
         }
-        const code = uuidv4().slice(0, 8);
-        await getDb().collection('group_invites').doc(code).set({
+        const code = (0, uuid_1.v4)().slice(0, 8);
+        await (0, admin_js_1.db)().collection('group_invites').doc(code).set({
             groupId,
             createdAt: Date.now(),
             usedBy: [],
@@ -139,7 +195,7 @@ app.post('/api/groups/invite/create', express.json(), async (req, res) => {
     }
 });
 // Resolve invite code use (append uid to usedBy list)
-app.post('/api/groups/invite/use', express.json(), async (req, res) => {
+app.post('/api/groups/invite/use', express_1.default.json(), async (req, res) => {
     try {
         const code = req.body?.code || '';
         const uid = req.body?.uid || '';
@@ -147,7 +203,7 @@ app.post('/api/groups/invite/use', express.json(), async (req, res) => {
             res.status(400).json({ error: 'code and uid required' });
             return;
         }
-        const ref = getDb().collection('group_invites').doc(code);
+        const ref = (0, admin_js_1.db)().collection('group_invites').doc(code);
         const snap = await ref.get();
         if (!snap.exists) {
             res.status(404).json({ error: 'invalid_code' });
@@ -165,13 +221,14 @@ app.post('/api/groups/invite/use', express.json(), async (req, res) => {
     }
 });
 // Health checks
-app.get('/health/liveness', liveness);
-app.get('/health/readiness', readiness);
-app.get('/health', liveness);
-app.get('/api/health', liveness);
+app.get('/health/liveness', health_js_1.liveness);
+app.get('/health/readiness', health_js_1.readiness);
+app.get('/health', health_js_1.liveness);
+app.get('/api/health', health_js_1.liveness);
 // API routes
 app.get('/api/status', (req, res) => {
     res.json({
+        ok: true,
         message: 'App-Oint Functions API is running',
         timestamp: new Date().toISOString(),
         version: process.env.npm_package_version || '1.0.0'
@@ -202,4 +259,4 @@ if (process.env.NODE_ENV !== 'test') {
         console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
     });
 }
-export default app;
+exports.default = app;

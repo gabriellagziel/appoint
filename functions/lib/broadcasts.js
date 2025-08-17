@@ -1,6 +1,42 @@
-import * as admin from 'firebase-admin';
-import { HttpsError, onCall } from 'firebase-functions/v2/https';
-import { onSchedule } from 'firebase-functions/v2/scheduler';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.processScheduledBroadcasts = exports.sendBroadcastMessage = void 0;
+const admin = __importStar(require("firebase-admin"));
+const https_1 = require("firebase-functions/v2/https");
+const scheduler_1 = require("firebase-functions/v2/scheduler");
 // Ensure Firebase Admin is initialized
 if (!admin.apps.length) {
     admin.initializeApp();
@@ -15,16 +51,16 @@ const RETRY_DELAY_MS = 1000;
  * Callable function to send broadcast messages
  * Triggered by admin users from the Flutter app
  */
-export const sendBroadcastMessage = onCall(async (request) => {
+exports.sendBroadcastMessage = (0, https_1.onCall)(async (request) => {
     const data = request.data;
     // Verify admin authentication
     if (!request.auth) {
-        throw new HttpsError('unauthenticated', 'User must be authenticated');
+        throw new https_1.HttpsError('unauthenticated', 'User must be authenticated');
     }
     // Verify admin privileges
     const userDoc = await firestore.collection('users').doc(request.auth.uid).get();
     if (!userDoc.exists || userDoc.data()?.role !== 'admin') {
-        throw new HttpsError('permission-denied', 'Admin privileges required');
+        throw new https_1.HttpsError('permission-denied', 'Admin privileges required');
     }
     const { messageId, adminId } = data;
     try {
@@ -32,12 +68,12 @@ export const sendBroadcastMessage = onCall(async (request) => {
         // Get broadcast message
         const messageDoc = await firestore.collection('admin_broadcasts').doc(messageId).get();
         if (!messageDoc.exists) {
-            throw new HttpsError('not-found', 'Broadcast message not found');
+            throw new https_1.HttpsError('not-found', 'Broadcast message not found');
         }
         const messageData = messageDoc.data();
         // Verify message is in pending status
         if (messageData.status !== 'pending') {
-            throw new HttpsError('failed-precondition', 'Message is not in pending status');
+            throw new https_1.HttpsError('failed-precondition', 'Message is not in pending status');
         }
         // Get target users
         const targetUsers = await getTargetUsers(messageData.targetingFilters);
@@ -74,17 +110,17 @@ export const sendBroadcastMessage = onCall(async (request) => {
             failureReason: error instanceof Error ? error.message : 'Unknown error',
             processedAt: admin.firestore.FieldValue.serverTimestamp(),
         });
-        if (error instanceof HttpsError) {
+        if (error instanceof https_1.HttpsError) {
             throw error;
         }
-        throw new HttpsError('internal', 'Failed to send broadcast message');
+        throw new https_1.HttpsError('internal', 'Failed to send broadcast message');
     }
 });
 /**
  * Scheduled function to process pending broadcast messages
  * Runs every minute to check for scheduled messages
  */
-export const processScheduledBroadcasts = onSchedule('every 1 minutes', async (event) => {
+exports.processScheduledBroadcasts = (0, scheduler_1.onSchedule)('every 1 minutes', async (event) => {
     console.log('Processing scheduled broadcasts...');
     try {
         const now = admin.firestore.Timestamp.now();

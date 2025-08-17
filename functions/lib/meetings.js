@@ -1,8 +1,44 @@
-import * as admin from 'firebase-admin';
-import { onDocumentWritten } from 'firebase-functions/v2/firestore';
-import { onCall } from 'firebase-functions/v2/https';
-import { withRateLimit } from './middleware/rateLimit.js';
-import { onSchedule } from 'firebase-functions/v2/scheduler';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.cleanupExpiredMeetings = exports.createEventForm = exports.getMeetingAnalytics = exports.checkEventFeatureAccess = exports.validateMeetingCreation = exports.onMeetingWrite = void 0;
+const admin = __importStar(require("firebase-admin"));
+const firestore_1 = require("firebase-functions/v2/firestore");
+const https_1 = require("firebase-functions/v2/https");
+const rateLimit_js_1 = require("./middleware/rateLimit.js");
+const scheduler_1 = require("firebase-functions/v2/scheduler");
 const db = admin.firestore();
 // Business Logic Functions
 function getMeetingType(participants) {
@@ -42,7 +78,7 @@ function canAccessEventFeatures(meeting, userId) {
 }
 // Cloud Functions
 // Firestore trigger for meeting validation
-export const onMeetingWrite = onDocumentWritten('meetings/{meetingId}', async (event) => {
+exports.onMeetingWrite = (0, firestore_1.onDocumentWritten)('meetings/{meetingId}', async (event) => {
     const meetingId = event.params.meetingId;
     // Handle deletion
     if (!event.data?.after?.exists) {
@@ -80,13 +116,13 @@ export const onMeetingWrite = onDocumentWritten('meetings/{meetingId}', async (e
     }
 });
 // HTTP function to validate meeting creation
-export const validateMeetingCreation = onCall(async (request) => {
+exports.validateMeetingCreation = (0, https_1.onCall)(async (request) => {
     // Check authentication
     if (!request.auth) {
         throw new Error('User must be authenticated');
     }
     const userId = request.auth.uid;
-    await withRateLimit(`uid:${userId}`, async () => Promise.resolve());
+    await (0, rateLimit_js_1.withRateLimit)(`uid:${userId}`, async () => Promise.resolve());
     const { title, participants, startTime, endTime } = request.data;
     // Basic validation
     if (!title || !participants || !startTime || !endTime) {
@@ -106,12 +142,12 @@ export const validateMeetingCreation = onCall(async (request) => {
     };
 });
 // HTTP function to check event feature access
-export const checkEventFeatureAccess = onCall(async (request) => {
+exports.checkEventFeatureAccess = (0, https_1.onCall)(async (request) => {
     if (!request.auth) {
         throw new Error('User must be authenticated');
     }
     const userId = request.auth.uid;
-    await withRateLimit(`uid:${userId}`, async () => Promise.resolve());
+    await (0, rateLimit_js_1.withRateLimit)(`uid:${userId}`, async () => Promise.resolve());
     const { meetingId, feature } = request.data;
     // Get meeting
     const meetingDoc = await db.collection('meetings').doc(meetingId).get();
@@ -139,12 +175,12 @@ export const checkEventFeatureAccess = onCall(async (request) => {
     return { hasAccess: true, reason: null };
 });
 // HTTP function to get meeting analytics
-export const getMeetingAnalytics = onCall(async (request) => {
+exports.getMeetingAnalytics = (0, https_1.onCall)(async (request) => {
     if (!request.auth) {
         throw new Error('User must be authenticated');
     }
     const userId = request.auth.uid;
-    await withRateLimit(`uid:${userId}`, async () => Promise.resolve());
+    await (0, rateLimit_js_1.withRateLimit)(`uid:${userId}`, async () => Promise.resolve());
     const { startDate, endDate } = request.data;
     let query = db.collection('meetings').where('organizerId', '==', userId);
     if (startDate) {
@@ -171,12 +207,12 @@ export const getMeetingAnalytics = onCall(async (request) => {
     };
 });
 // HTTP function to create event form (with validation)
-export const createEventForm = onCall(async (request) => {
+exports.createEventForm = (0, https_1.onCall)(async (request) => {
     if (!request.auth) {
         throw new Error('User must be authenticated');
     }
     const userId = request.auth.uid;
-    await withRateLimit(`uid:${userId}`, async () => Promise.resolve());
+    await (0, rateLimit_js_1.withRateLimit)(`uid:${userId}`, async () => Promise.resolve());
     const { meetingId, title, description, fields } = request.data;
     // Get and validate meeting
     const meetingDoc = await db.collection('meetings').doc(meetingId).get();
@@ -214,7 +250,7 @@ export const createEventForm = onCall(async (request) => {
     return { formId: formRef.id };
 });
 // Scheduled function to clean up expired meetings
-export const cleanupExpiredMeetings = onSchedule('every 24 hours', async (event) => {
+exports.cleanupExpiredMeetings = (0, scheduler_1.onSchedule)('every 24 hours', async (event) => {
     const cutoffDate = new Date();
     cutoffDate.setDate(cutoffDate.getDate() - 30); // 30 days ago
     const expiredMeetings = await db.collection('meetings')

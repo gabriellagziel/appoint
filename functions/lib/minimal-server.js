@@ -1,11 +1,16 @@
-import cors from 'cors';
-import express from 'express';
-import { getPublicStatus } from './health/publicStatus.js';
-const app = express();
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const cors_1 = __importDefault(require("cors"));
+const express_1 = __importDefault(require("express"));
+const publicStatus_js_1 = require("./health/publicStatus.js");
+const app = (0, express_1.default)();
 const PORT = parseInt(process.env.PORT || '8080', 10);
 const HOST = process.env.HOSTNAME || '0.0.0.0';
 // CORS
-app.use(cors({ origin: true }));
+app.use((0, cors_1.default)({ origin: true }));
 // Health checks
 app.get('/health', (req, res) => {
     res.status(200).json({
@@ -24,7 +29,7 @@ app.get('/api/health', (req, res) => {
     });
 });
 // Public health status endpoint
-app.get('/api/status', getPublicStatus);
+app.get('/api/status', publicStatus_js_1.getPublicStatus);
 // API routes
 app.get('/api/status', (req, res) => {
     res.json({
@@ -58,4 +63,4 @@ if (process.env.NODE_ENV !== 'test') {
         console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
     });
 }
-export default app;
+exports.default = app;

@@ -1,5 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.withRateLimit = exports.rateLimitMiddleware = void 0;
 const rateLimitStore = {};
-export const rateLimitMiddleware = (windowMs = 15 * 60 * 1000, // 15 minutes
+const rateLimitMiddleware = (windowMs = 15 * 60 * 1000, // 15 minutes
 maxRequests = 100) => {
     return (req, res, next) => {
         const key = req.ip || req.connection.remoteAddress || 'unknown';
@@ -29,8 +32,9 @@ maxRequests = 100) => {
         next();
     };
 };
+exports.rateLimitMiddleware = rateLimitMiddleware;
 // Rate limiting wrapper function for async operations
-export const withRateLimit = async (key, operation, windowMs = 15 * 60 * 1000, // 15 minutes
+const withRateLimit = async (key, operation, windowMs = 15 * 60 * 1000, // 15 minutes
 maxRequests = 100) => {
     const now = Date.now();
     if (!rateLimitStore[key] || now > rateLimitStore[key].resetTime) {
@@ -47,3 +51,4 @@ maxRequests = 100) => {
     }
     return await operation();
 };
+exports.withRateLimit = withRateLimit;

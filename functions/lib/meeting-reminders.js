@@ -1,7 +1,43 @@
-import * as admin from 'firebase-admin';
-import { onDocumentCreated, onDocumentUpdated } from 'firebase-functions/v2/firestore';
-import { onCall } from 'firebase-functions/v2/https';
-import { onSchedule } from 'firebase-functions/v2/scheduler';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.updateUserLocation = exports.getMeetingAnalytics = exports.onParticipantStatusChange = exports.onMeetingCreated = exports.sendMeetingReminders = exports.checkMeetingLocations = void 0;
+const admin = __importStar(require("firebase-admin"));
+const firestore_1 = require("firebase-functions/v2/firestore");
+const https_1 = require("firebase-functions/v2/https");
+const scheduler_1 = require("firebase-functions/v2/scheduler");
 if (!admin.apps.length) {
     admin.initializeApp();
 }
@@ -9,7 +45,7 @@ const db = admin.firestore();
 /**
  * Scheduled function: Check locations for upcoming meetings every 15 minutes
  */
-export const checkMeetingLocations = onSchedule({
+exports.checkMeetingLocations = (0, scheduler_1.onSchedule)({
     schedule: 'every 15 minutes',
 }, async (context) => {
     console.log('Starting meeting location check...');
@@ -53,7 +89,7 @@ export const checkMeetingLocations = onSchedule({
 /**
  * Scheduled function: Send meeting reminders
  */
-export const sendMeetingReminders = onSchedule('every 5 minutes', async (context) => {
+exports.sendMeetingReminders = (0, scheduler_1.onSchedule)('every 5 minutes', async (context) => {
     console.log('Starting meeting reminder check...');
     const now = admin.firestore.Timestamp.now();
     const fiveMinutesFromNow = admin.firestore.Timestamp.fromMillis(now.toMillis() + (5 * 60 * 1000));
@@ -86,7 +122,7 @@ export const sendMeetingReminders = onSchedule('every 5 minutes', async (context
 /**
  * Firestore trigger: Create reminders when a meeting is created
  */
-export const onMeetingCreated = onDocumentCreated('meetings/{meetingId}', async (event) => {
+exports.onMeetingCreated = (0, firestore_1.onDocumentCreated)('meetings/{meetingId}', async (event) => {
     const snap = event.data;
     if (!snap)
         return;
@@ -102,7 +138,7 @@ export const onMeetingCreated = onDocumentCreated('meetings/{meetingId}', async 
 /**
  * Firestore trigger: Update chat when participant status changes
  */
-export const onParticipantStatusChange = onDocumentUpdated('meetings/{meetingId}', async (event) => {
+exports.onParticipantStatusChange = (0, firestore_1.onDocumentUpdated)('meetings/{meetingId}', async (event) => {
     const change = event.data;
     if (!change)
         return;
@@ -250,7 +286,7 @@ async function sendChatStatusUpdate(chatId, statusChange) {
 /**
  * HTTP function: Get meeting analytics
  */
-export const getMeetingAnalytics = onCall(async (request) => {
+exports.getMeetingAnalytics = (0, https_1.onCall)(async (request) => {
     if (!request.auth) {
         throw new Error('User must be authenticated');
     }
@@ -307,7 +343,7 @@ export const getMeetingAnalytics = onCall(async (request) => {
 /**
  * HTTP function: Update user location
  */
-export const updateUserLocation = onCall(async (request) => {
+exports.updateUserLocation = (0, https_1.onCall)(async (request) => {
     if (!request.auth) {
         throw new Error('User must be authenticated');
     }

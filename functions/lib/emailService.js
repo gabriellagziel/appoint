@@ -1,5 +1,43 @@
-import * as admin from 'firebase-admin';
-import * as nodemailer from 'nodemailer';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.sendApiKeyEmail = sendApiKeyEmail;
+exports.sendWelcomeEmail = sendWelcomeEmail;
+exports.sendInvoiceEmail = sendInvoiceEmail;
+const admin = __importStar(require("firebase-admin"));
+const nodemailer = __importStar(require("nodemailer"));
 // Initialize Firebase Admin if not already initialised
 if (!admin.apps.length) {
     admin.initializeApp();
@@ -19,7 +57,7 @@ const transporter = nodemailer.createTransport({
 /**
  * Send API key email to newly registered business
  */
-export async function sendApiKeyEmail(data) {
+async function sendApiKeyEmail(data) {
     const { companyName, contactName, email, apiKey, businessId, monthlyQuota, dashboardUrl } = data;
     const subject = `Your App-Oint Enterprise API Access - ${companyName}`;
     const htmlBody = `
@@ -177,7 +215,7 @@ This email was sent to ${email} for ${companyName}
 /**
  * Send welcome email to newly registered business
  */
-export async function sendWelcomeEmail(data) {
+async function sendWelcomeEmail(data) {
     const { companyName, contactName, email, plan, dashboardUrl } = data;
     const subject = `Welcome to App-Oint Enterprise - ${companyName}`;
     const htmlBody = `
@@ -309,7 +347,7 @@ This email was sent to ${email} for ${companyName}
 /**
  * Send invoice email with PDF attachment
  */
-export async function sendInvoiceEmail(to, pdfBuffer, filename, isOverageInvoice = false) {
+async function sendInvoiceEmail(to, pdfBuffer, filename, isOverageInvoice = false) {
     const subject = isOverageInvoice
         ? 'App-Oint Enterprise - Map Usage Invoice'
         : 'App-Oint Enterprise - Monthly Invoice';

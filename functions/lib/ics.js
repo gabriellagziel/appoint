@@ -1,8 +1,47 @@
-import * as admin from 'firebase-admin';
-import { onRequest } from 'firebase-functions/v2/https';
-import ical from 'ical-generator';
-import { v4 as uuidv4 } from 'uuid';
-import { withRateLimit } from './middleware/rateLimit.js';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.rotateIcsToken = exports.icsFeed = void 0;
+const admin = __importStar(require("firebase-admin"));
+const https_1 = require("firebase-functions/v2/https");
+const ical_generator_1 = __importDefault(require("ical-generator"));
+const uuid_1 = require("uuid");
+const rateLimit_js_1 = require("./middleware/rateLimit.js");
 if (!admin.apps.length) {
     admin.initializeApp();
 }
@@ -13,10 +52,10 @@ const APPOINTMENTS_COLLECTION = 'appointments';
  * Generates an ICS calendar for a business identified by token.
  * URL example: https://<region>-<project>.cloudfunctions.net/icsFeed?token=abc123
  */
-export const icsFeed = onRequest(async (req, res) => {
+exports.icsFeed = (0, https_1.onRequest)(async (req, res) => {
     try {
         const ip = req.headers['x-forwarded-for'] || req.ip || 'unknown';
-        await withRateLimit(`ip:${ip}`, async () => Promise.resolve());
+        await (0, rateLimit_js_1.withRateLimit)(`ip:${ip}`, async () => Promise.resolve());
         const { token } = req.query;
         if (!token) {
             res.status(400).send('Missing token');
@@ -43,7 +82,7 @@ export const icsFeed = onRequest(async (req, res) => {
             .where('start', '>=', now)
             .where('start', '<=', sixMonthsLater)
             .get();
-        const cal = ical({ name: 'App-Oint Appointments' });
+        const cal = (0, ical_generator_1.default)({ name: 'App-Oint Appointments' });
         apptSnap.forEach((doc) => {
             const data = doc.data();
             cal.createEvent({
@@ -67,7 +106,7 @@ export const icsFeed = onRequest(async (req, res) => {
  * Callable HTTPS function (or REST) to rotate the ICS token for a business.
  * Expects { businessId } in body (admin) OR uses API key auth for business.
  */
-export const rotateIcsToken = onRequest(async (req, res) => {
+exports.rotateIcsToken = (0, https_1.onRequest)(async (req, res) => {
     try {
         if (req.method !== 'POST') {
             res.status(405).send('Method Not Allowed');
@@ -76,7 +115,7 @@ export const rotateIcsToken = onRequest(async (req, res) => {
         const { businessId } = req.body || {};
         // Rate limit per IP
         const ip = req.headers['x-forwarded-for'] || req.ip || 'unknown';
-        await withRateLimit(`ip:${ip}`, async () => Promise.resolve());
+        await (0, rateLimit_js_1.withRateLimit)(`ip:${ip}`, async () => Promise.resolve());
         let targetBusinessId = businessId;
         // If not provided, try API key auth
         if (!targetBusinessId) {
@@ -92,7 +131,7 @@ export const rotateIcsToken = onRequest(async (req, res) => {
             }
             targetBusinessId = snap.docs[0].id;
         }
-        const newToken = uuidv4();
+        const newToken = (0, uuid_1.v4)();
         await db.collection(BUSINESS_COLLECTION).doc(targetBusinessId).update({ icsToken: newToken });
         res.json({ token: newToken });
     }

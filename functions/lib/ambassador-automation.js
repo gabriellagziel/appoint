@@ -1,8 +1,44 @@
-import * as admin from 'firebase-admin';
-import { onDocumentCreated } from 'firebase-functions/v2/firestore';
-import { HttpsError, onCall } from 'firebase-functions/v2/https';
-import { onSchedule } from 'firebase-functions/v2/scheduler';
-import { sendDemotionNotification, REDACTED_TOKEN, sendPromotionNotification, sendReferralSuccessNotification, sendTierUpgradeNotification, sendPendingApprovalNotification, sendApprovalNotification, sendRejectionNotification } from './ambassador-notifications.js';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.rejectPendingAmbassador = exports.approvePendingAmbassador = exports.getAmbassadorDashboard = exports.checkAmbassadorEligibility = exports.trackUserReferral = exports.monthlyPremiumRewardGrant = exports.monthlyAmbassadorReview = exports.dailyAmbassadorEligibilityCheck = void 0;
+const admin = __importStar(require("firebase-admin"));
+const firestore_1 = require("firebase-functions/v2/firestore");
+const https_1 = require("firebase-functions/v2/https");
+const scheduler_1 = require("firebase-functions/v2/scheduler");
+const ambassador_notifications_js_1 = require("./ambassador-notifications.js");
 const db = admin.firestore();
 // Ambassador automation constants
 const MINIMUM_MONTHLY_REFERRALS = 10;
@@ -12,7 +48,7 @@ const LIFETIME_TIER_REFERRALS = 1000;
 const REFERRAL_RATIO_FOR_AMBASSADOR = 10; // 1 in 10 referrals can become ambassadors
 const MONTHLY_PREMIUM_THRESHOLD = 3; // 3 referrals = 1 month premium
 // Scheduled function: Daily ambassador eligibility check
-export const dailyAmbassadorEligibilityCheck = onSchedule({
+exports.dailyAmbassadorEligibilityCheck = (0, scheduler_1.onSchedule)({
     schedule: '0 2 * * *', // Run at 2 AM daily
     timeZone: 'UTC'
 }, async (context) => {
@@ -72,7 +108,7 @@ export const dailyAmbassadorEligibilityCheck = onSchedule({
     }
 });
 // Scheduled function: Monthly ambassador performance review
-export const monthlyAmbassadorReview = onSchedule({
+exports.monthlyAmbassadorReview = (0, scheduler_1.onSchedule)({
     schedule: '0 3 1 * *', // Run at 3 AM on the 1st of every month
     timeZone: 'UTC'
 }, async (context) => {
@@ -95,7 +131,7 @@ export const monthlyAmbassadorReview = onSchedule({
             if (monthlyReferrals < MINIMUM_MONTHLY_REFERRALS) {
                 // Send warning first if it's the first time this month
                 if (monthlyReferrals < 5) {
-                    await REDACTED_TOKEN(profile.userId, profile.languageCode || 'en', monthlyReferrals, MINIMUM_MONTHLY_REFERRALS);
+                    await (0, ambassador_notifications_js_1.REDACTED_TOKEN)(profile.userId, profile.languageCode || 'en', monthlyReferrals, MINIMUM_MONTHLY_REFERRALS);
                 }
                 // Demote ambassador
                 await demoteAmbassador(profile.userId, 'insufficient_monthly_referrals');
@@ -130,7 +166,7 @@ export const monthlyAmbassadorReview = onSchedule({
     }
 });
 // Scheduled function: Monthly premium reward grant
-export const monthlyPremiumRewardGrant = onSchedule({
+exports.monthlyPremiumRewardGrant = (0, scheduler_1.onSchedule)({
     schedule: '0 4 1 * *', // Run at 4 AM on the 1st of every month
     timeZone: 'UTC'
 }, async (context) => {
@@ -186,7 +222,7 @@ export const monthlyPremiumRewardGrant = onSchedule({
     }
 });
 // Firestore trigger: User referral tracking
-export const trackUserReferral = onDocumentCreated('users/{userId}', async (event) => {
+exports.trackUserReferral = (0, firestore_1.onDocumentCreated)('users/{userId}', async (event) => {
     const snap = event.data;
     const context = event;
     if (!snap) {
@@ -218,10 +254,10 @@ export const trackUserReferral = onDocumentCreated('users/{userId}', async (even
     return null;
 });
 // HTTPS callable: Manual ambassador promotion check
-export const checkAmbassadorEligibility = onCall(async (request) => {
+exports.checkAmbassadorEligibility = (0, https_1.onCall)(async (request) => {
     // Verify authentication
     if (!request.auth) {
-        throw new HttpsError('unauthenticated', 'User must be authenticated');
+        throw new https_1.HttpsError('unauthenticated', 'User must be authenticated');
     }
     const userId = request.data.userId || request.auth.uid;
     try {
@@ -249,21 +285,21 @@ export const checkAmbassadorEligibility = onCall(async (request) => {
     }
     catch (error) {
         console.error('Error checking ambassador eligibility:', error);
-        throw new HttpsError('internal', 'Failed to check eligibility');
+        throw new https_1.HttpsError('internal', 'Failed to check eligibility');
     }
 });
 // HTTPS callable: Get ambassador dashboard data
-export const getAmbassadorDashboard = onCall(async (request) => {
+exports.getAmbassadorDashboard = (0, https_1.onCall)(async (request) => {
     // Verify authentication
     if (!request.auth) {
-        throw new HttpsError('unauthenticated', 'User must be authenticated');
+        throw new https_1.HttpsError('unauthenticated', 'User must be authenticated');
     }
     const userId = request.auth.uid;
     try {
         // Get ambassador profile
         const profileDoc = await db.collection('ambassador_profiles').doc(userId).get();
         if (!profileDoc.exists) {
-            throw new HttpsError('not-found', 'Ambassador profile not found');
+            throw new https_1.HttpsError('not-found', 'Ambassador profile not found');
         }
         const profile = profileDoc.data();
         // Get recent referrals
@@ -315,18 +351,18 @@ export const getAmbassadorDashboard = onCall(async (request) => {
     }
     catch (error) {
         console.error('Error getting ambassador dashboard:', error);
-        throw new HttpsError('internal', 'Failed to get dashboard data');
+        throw new https_1.HttpsError('internal', 'Failed to get dashboard data');
     }
 });
 // HTTPS callable: Admin approve pending ambassador
-export const approvePendingAmbassador = onCall(async (request) => {
+exports.approvePendingAmbassador = (0, https_1.onCall)(async (request) => {
     // Verify authentication and admin role
     if (!request.auth) {
-        throw new HttpsError('unauthenticated', 'User must be authenticated');
+        throw new https_1.HttpsError('unauthenticated', 'User must be authenticated');
     }
     const { userId } = request.data;
     if (!userId) {
-        throw new HttpsError('invalid-argument', 'User ID is required');
+        throw new https_1.HttpsError('invalid-argument', 'User ID is required');
     }
     try {
         const promoted = await promoteToAmbassador(userId);
@@ -337,7 +373,7 @@ export const approvePendingAmbassador = onCall(async (request) => {
             const profileDoc = await db.collection('ambassador_profiles').doc(userId).get();
             if (profileDoc.exists) {
                 const profile = profileDoc.data();
-                await sendApprovalNotification(userId, profile.languageCode || 'en');
+                await (0, ambassador_notifications_js_1.sendApprovalNotification)(userId, profile.languageCode || 'en');
             }
             return { success: true, message: 'Ambassador approved successfully' };
         }
@@ -347,18 +383,18 @@ export const approvePendingAmbassador = onCall(async (request) => {
     }
     catch (error) {
         console.error('Error approving pending ambassador:', error);
-        throw new HttpsError('internal', 'Failed to approve ambassador');
+        throw new https_1.HttpsError('internal', 'Failed to approve ambassador');
     }
 });
 // HTTPS callable: Admin reject pending ambassador
-export const rejectPendingAmbassador = onCall(async (request) => {
+exports.rejectPendingAmbassador = (0, https_1.onCall)(async (request) => {
     // Verify authentication and admin role
     if (!request.auth) {
-        throw new HttpsError('unauthenticated', 'User must be authenticated');
+        throw new https_1.HttpsError('unauthenticated', 'User must be authenticated');
     }
     const { userId, reason } = request.data;
     if (!userId || !reason) {
-        throw new HttpsError('invalid-argument', 'User ID and reason are required');
+        throw new https_1.HttpsError('invalid-argument', 'User ID and reason are required');
     }
     try {
         const now = admin.firestore.Timestamp.now();
@@ -383,13 +419,13 @@ export const rejectPendingAmbassador = onCall(async (request) => {
         const profileDoc = await db.collection('ambassador_profiles').doc(userId).get();
         if (profileDoc.exists) {
             const profile = profileDoc.data();
-            await sendRejectionNotification(userId, profile.languageCode || 'en', reason);
+            await (0, ambassador_notifications_js_1.sendRejectionNotification)(userId, profile.languageCode || 'en', reason);
         }
         return { success: true, message: 'Ambassador rejected successfully' };
     }
     catch (error) {
         console.error('Error rejecting pending ambassador:', error);
-        throw new HttpsError('internal', 'Failed to reject ambassador');
+        throw new https_1.HttpsError('internal', 'Failed to reject ambassador');
     }
 });
 // Helper functions
@@ -440,7 +476,7 @@ async function promoteToPendingAmbassador(userId) {
             });
         });
         // Send pending approval notification
-        await sendPendingApprovalNotification(userId, languageCode);
+        await (0, ambassador_notifications_js_1.sendPendingApprovalNotification)(userId, languageCode);
         return true;
     }
     catch (error) {
@@ -485,7 +521,7 @@ async function promoteToAmbassador(userId) {
         await generateShareLink(userId);
         await awardTierReward(userId, 'basic');
         // Send promotion notification
-        await sendPromotionNotification(userId, languageCode, 'basic');
+        await (0, ambassador_notifications_js_1.sendPromotionNotification)(userId, languageCode, 'basic');
         return true;
     }
     catch (error) {
@@ -524,7 +560,7 @@ async function demoteAmbassador(userId, reason) {
         const profileDoc = await db.collection('ambassador_profiles').doc(userId).get();
         if (profileDoc.exists) {
             const profile = profileDoc.data();
-            await sendDemotionNotification(userId, profile.languageCode || 'en', reason);
+            await (0, ambassador_notifications_js_1.sendDemotionNotification)(userId, profile.languageCode || 'en', reason);
         }
     }
     catch (error) {
@@ -572,7 +608,7 @@ async function trackReferralForAmbassador(ambassadorId, referredUserId) {
             const referredUser = referredUserDoc.data();
             const referredUserName = referredUser.displayName || referredUser.email || 'New User';
             const totalReferrals = ambassador.totalReferrals + 1; // +1 because this is the new referral
-            await sendReferralSuccessNotification(ambassadorId, ambassador.languageCode || 'en', referredUserName, totalReferrals);
+            await (0, ambassador_notifications_js_1.sendReferralSuccessNotification)(ambassadorId, ambassador.languageCode || 'en', referredUserName, totalReferrals);
         }
     }
     catch (error) {
@@ -836,7 +872,7 @@ async function checkAndUpgradeTier(userId) {
             });
             await awardTierReward(userId, newTier);
             // Send tier upgrade notification
-            await sendTierUpgradeNotification(userId, profile.languageCode || 'en', profile.tier, newTier, totalReferrals);
+            await (0, ambassador_notifications_js_1.sendTierUpgradeNotification)(userId, profile.languageCode || 'en', profile.tier, newTier, totalReferrals);
             // Log tier upgrade
             await db.collection('ambassador_tier_upgrades').add({
                 ambassadorId: userId,

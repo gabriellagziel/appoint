@@ -1,222 +1,226 @@
-import { z } from 'zod';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.sendNotificationToStudioSchema = exports.generateReportSchema = exports.unsuspendUserSchema = exports.suspendUserSchema = exports.setAdminRoleSchema = exports.getSystemAnalyticsSchema = exports.getBusinessAnalyticsSchema = exports.getAmbassadorStatsSchema = exports.trackReferralSchema = exports.createAmbassadorSchema = exports.getBusinessDetailsSchema = exports.updateBusinessSchema = exports.createBusinessSchema = exports.deleteUserSchema = exports.updateUserProfileSchema = exports.createUserSchema = exports.cancelSubscriptionSchema = exports.createCheckoutSessionSchema = exports.processRefundSchema = exports.confirmPaymentSchema = exports.createPaymentIntentSchema = exports.getAvailableSlotsSchema = exports.cancelBookingSchema = exports.updateBookingSchema = exports.createBookingSchema = exports.phoneSchema = exports.emailSchema = exports.studioIdSchema = exports.userIdSchema = void 0;
+exports.validateInput = validateInput;
+const zod_1 = require("zod");
 // Base schemas for common fields
-export const userIdSchema = z.string().min(1, 'User ID is required');
-export const studioIdSchema = z.string().min(1, 'Studio ID is required');
-export const emailSchema = z.string().email('Invalid email format');
-export const phoneSchema = z.string().regex(/^\+?[1-9]\d{1,14}$/, 'Invalid phone number format');
+exports.userIdSchema = zod_1.z.string().min(1, 'User ID is required');
+exports.studioIdSchema = zod_1.z.string().min(1, 'Studio ID is required');
+exports.emailSchema = zod_1.z.string().email('Invalid email format');
+exports.phoneSchema = zod_1.z.string().regex(/^\+?[1-9]\d{1,14}$/, 'Invalid phone number format');
 // Booking schemas
-export const createBookingSchema = z.object({
-    studioId: studioIdSchema,
-    serviceId: z.string().min(1, 'Service ID is required'),
-    scheduledAt: z.string().datetime('Invalid date format'),
-    customerId: userIdSchema,
-    notes: z.string().optional(),
-    customerInfo: z.object({
-        name: z.string().min(1, 'Customer name is required'),
-        email: emailSchema,
-        phone: phoneSchema,
+exports.createBookingSchema = zod_1.z.object({
+    studioId: exports.studioIdSchema,
+    serviceId: zod_1.z.string().min(1, 'Service ID is required'),
+    scheduledAt: zod_1.z.string().datetime('Invalid date format'),
+    customerId: exports.userIdSchema,
+    notes: zod_1.z.string().optional(),
+    customerInfo: zod_1.z.object({
+        name: zod_1.z.string().min(1, 'Customer name is required'),
+        email: exports.emailSchema,
+        phone: exports.phoneSchema,
     }),
 });
-export const updateBookingSchema = z.object({
-    appointmentId: z.string().min(1, 'Appointment ID is required'),
-    updates: z.object({
-        scheduledAt: z.string().datetime('Invalid date format').optional(),
-        status: z.enum(['confirmed', 'cancelled', 'completed', 'no_show']).optional(),
-        notes: z.string().optional(),
+exports.updateBookingSchema = zod_1.z.object({
+    appointmentId: zod_1.z.string().min(1, 'Appointment ID is required'),
+    updates: zod_1.z.object({
+        scheduledAt: zod_1.z.string().datetime('Invalid date format').optional(),
+        status: zod_1.z.enum(['confirmed', 'cancelled', 'completed', 'no_show']).optional(),
+        notes: zod_1.z.string().optional(),
     }),
 });
-export const cancelBookingSchema = z.object({
-    appointmentId: z.string().min(1, 'Appointment ID is required'),
-    reason: z.string().optional(),
+exports.cancelBookingSchema = zod_1.z.object({
+    appointmentId: zod_1.z.string().min(1, 'Appointment ID is required'),
+    reason: zod_1.z.string().optional(),
 });
-export const getAvailableSlotsSchema = z.object({
-    businessId: z.string().min(1, 'Business ID is required'),
-    serviceId: z.string().min(1, 'Service ID is required'),
-    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Date must be in YYYY-MM-DD format'),
+exports.getAvailableSlotsSchema = zod_1.z.object({
+    businessId: zod_1.z.string().min(1, 'Business ID is required'),
+    serviceId: zod_1.z.string().min(1, 'Service ID is required'),
+    date: zod_1.z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Date must be in YYYY-MM-DD format'),
 });
 // Payment schemas
-export const createPaymentIntentSchema = z.object({
-    amount: z.number().positive('Amount must be positive'),
-    currency: z.string().default('usd'),
-    appointmentId: z.string().min(1, 'Appointment ID is required'),
-    customerId: userIdSchema,
+exports.createPaymentIntentSchema = zod_1.z.object({
+    amount: zod_1.z.number().positive('Amount must be positive'),
+    currency: zod_1.z.string().default('usd'),
+    appointmentId: zod_1.z.string().min(1, 'Appointment ID is required'),
+    customerId: exports.userIdSchema,
 });
-export const confirmPaymentSchema = z.object({
-    paymentIntentId: z.string().min(1, 'Payment Intent ID is required'),
-    appointmentId: z.string().min(1, 'Appointment ID is required'),
+exports.confirmPaymentSchema = zod_1.z.object({
+    paymentIntentId: zod_1.z.string().min(1, 'Payment Intent ID is required'),
+    appointmentId: zod_1.z.string().min(1, 'Appointment ID is required'),
 });
-export const processRefundSchema = z.object({
-    paymentIntentId: z.string().min(1, 'Payment Intent ID is required'),
-    amount: z.number().positive('Amount must be positive'),
-    reason: z.string().min(1, 'Refund reason is required'),
+exports.processRefundSchema = zod_1.z.object({
+    paymentIntentId: zod_1.z.string().min(1, 'Payment Intent ID is required'),
+    amount: zod_1.z.number().positive('Amount must be positive'),
+    reason: zod_1.z.string().min(1, 'Refund reason is required'),
 });
 // Stripe schemas
-export const createCheckoutSessionSchema = z.object({
-    studioId: studioIdSchema,
-    priceId: z.string().min(1, 'Price ID is required'),
-    successUrl: z.string().url('Invalid success URL').optional(),
-    cancelUrl: z.string().url('Invalid cancel URL').optional(),
-    customerEmail: emailSchema.optional(),
+exports.createCheckoutSessionSchema = zod_1.z.object({
+    studioId: exports.studioIdSchema,
+    priceId: zod_1.z.string().min(1, 'Price ID is required'),
+    successUrl: zod_1.z.string().url('Invalid success URL').optional(),
+    cancelUrl: zod_1.z.string().url('Invalid cancel URL').optional(),
+    customerEmail: exports.emailSchema.optional(),
 });
-export const cancelSubscriptionSchema = z.object({
-    subscriptionId: z.string().min(1, 'Subscription ID is required'),
+exports.cancelSubscriptionSchema = zod_1.z.object({
+    subscriptionId: zod_1.z.string().min(1, 'Subscription ID is required'),
 });
 // User management schemas
-export const createUserSchema = z.object({
-    email: emailSchema,
-    displayName: z.string().min(1, 'Display name is required').max(100, 'Display name too long'),
-    phoneNumber: phoneSchema.optional(),
-    businessId: z.string().optional(),
-    role: z.enum(['user', 'business_owner', 'admin']).default('user'),
+exports.createUserSchema = zod_1.z.object({
+    email: exports.emailSchema,
+    displayName: zod_1.z.string().min(1, 'Display name is required').max(100, 'Display name too long'),
+    phoneNumber: exports.phoneSchema.optional(),
+    businessId: zod_1.z.string().optional(),
+    role: zod_1.z.enum(['user', 'business_owner', 'admin']).default('user'),
 });
-export const updateUserProfileSchema = z.object({
-    userId: userIdSchema,
-    updates: z.object({
-        displayName: z.string().min(1, 'Display name is required').max(100, 'Display name too long').optional(),
-        phoneNumber: phoneSchema.optional(),
-        avatar: z.string().url('Invalid avatar URL').optional(),
-        preferences: z.object({
-            notifications: z.boolean().optional(),
-            language: z.string().min(2, 'Language code too short').max(5, 'Language code too long').optional(),
-            timezone: z.string().min(1, 'Timezone is required').optional(),
+exports.updateUserProfileSchema = zod_1.z.object({
+    userId: exports.userIdSchema,
+    updates: zod_1.z.object({
+        displayName: zod_1.z.string().min(1, 'Display name is required').max(100, 'Display name too long').optional(),
+        phoneNumber: exports.phoneSchema.optional(),
+        avatar: zod_1.z.string().url('Invalid avatar URL').optional(),
+        preferences: zod_1.z.object({
+            notifications: zod_1.z.boolean().optional(),
+            language: zod_1.z.string().min(2, 'Language code too short').max(5, 'Language code too long').optional(),
+            timezone: zod_1.z.string().min(1, 'Timezone is required').optional(),
         }).optional(),
     }),
 });
-export const deleteUserSchema = z.object({
-    userId: userIdSchema,
-    reason: z.string().optional(),
+exports.deleteUserSchema = zod_1.z.object({
+    userId: exports.userIdSchema,
+    reason: zod_1.z.string().optional(),
 });
 // Business management schemas
-export const createBusinessSchema = z.object({
-    name: z.string().min(1, 'Business name is required').max(200, 'Business name too long'),
-    description: z.string().max(1000, 'Description too long'),
-    address: z.object({
-        street: z.string().min(1, 'Street address is required'),
-        city: z.string().min(1, 'City is required'),
-        state: z.string().min(1, 'State is required'),
-        zipCode: z.string().min(1, 'ZIP code is required'),
-        country: z.string().min(2, 'Country code too short').max(3, 'Country code too long'),
+exports.createBusinessSchema = zod_1.z.object({
+    name: zod_1.z.string().min(1, 'Business name is required').max(200, 'Business name too long'),
+    description: zod_1.z.string().max(1000, 'Description too long'),
+    address: zod_1.z.object({
+        street: zod_1.z.string().min(1, 'Street address is required'),
+        city: zod_1.z.string().min(1, 'City is required'),
+        state: zod_1.z.string().min(1, 'State is required'),
+        zipCode: zod_1.z.string().min(1, 'ZIP code is required'),
+        country: zod_1.z.string().min(2, 'Country code too short').max(3, 'Country code too long'),
     }),
-    contactInfo: z.object({
-        phone: phoneSchema,
-        email: emailSchema,
-        website: z.string().url('Invalid website URL').optional(),
+    contactInfo: zod_1.z.object({
+        phone: exports.phoneSchema,
+        email: exports.emailSchema,
+        website: zod_1.z.string().url('Invalid website URL').optional(),
     }),
-    businessHours: z.record(z.string(), z.object({
-        open: z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
-        close: z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
-        closed: z.boolean(),
+    businessHours: zod_1.z.record(zod_1.z.string(), zod_1.z.object({
+        open: zod_1.z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
+        close: zod_1.z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
+        closed: zod_1.z.boolean(),
     })),
-    services: z.array(z.object({
-        name: z.string().min(1, 'Service name is required'),
-        duration: z.number().positive('Duration must be positive'),
-        price: z.number().nonnegative('Price must be non-negative'),
-        description: z.string().optional(),
+    services: zod_1.z.array(zod_1.z.object({
+        name: zod_1.z.string().min(1, 'Service name is required'),
+        duration: zod_1.z.number().positive('Duration must be positive'),
+        price: zod_1.z.number().nonnegative('Price must be non-negative'),
+        description: zod_1.z.string().optional(),
     })).min(1, 'At least one service is required'),
-    category: z.string().min(1, 'Category is required'),
-    tags: z.array(z.string()).optional(),
+    category: zod_1.z.string().min(1, 'Category is required'),
+    tags: zod_1.z.array(zod_1.z.string()).optional(),
 });
-export const updateBusinessSchema = z.object({
-    businessId: z.string().min(1, 'Business ID is required'),
-    updates: z.object({
-        name: z.string().min(1, 'Business name is required').max(200, 'Business name too long').optional(),
-        description: z.string().max(1000, 'Description too long').optional(),
-        address: z.object({
-            street: z.string().min(1, 'Street address is required'),
-            city: z.string().min(1, 'City is required'),
-            state: z.string().min(1, 'State is required'),
-            zipCode: z.string().min(1, 'ZIP code is required'),
-            country: z.string().min(2, 'Country code too short').max(3, 'Country code too long'),
+exports.updateBusinessSchema = zod_1.z.object({
+    businessId: zod_1.z.string().min(1, 'Business ID is required'),
+    updates: zod_1.z.object({
+        name: zod_1.z.string().min(1, 'Business name is required').max(200, 'Business name too long').optional(),
+        description: zod_1.z.string().max(1000, 'Description too long').optional(),
+        address: zod_1.z.object({
+            street: zod_1.z.string().min(1, 'Street address is required'),
+            city: zod_1.z.string().min(1, 'City is required'),
+            state: zod_1.z.string().min(1, 'State is required'),
+            zipCode: zod_1.z.string().min(1, 'ZIP code is required'),
+            country: zod_1.z.string().min(2, 'Country code too short').max(3, 'Country code too long'),
         }).optional(),
-        contactInfo: z.object({
-            phone: phoneSchema,
-            email: emailSchema,
-            website: z.string().url('Invalid website URL').optional(),
+        contactInfo: zod_1.z.object({
+            phone: exports.phoneSchema,
+            email: exports.emailSchema,
+            website: zod_1.z.string().url('Invalid website URL').optional(),
         }).optional(),
-        businessHours: z.record(z.string(), z.object({
-            open: z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
-            close: z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
-            closed: z.boolean(),
+        businessHours: zod_1.z.record(zod_1.z.string(), zod_1.z.object({
+            open: zod_1.z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
+            close: zod_1.z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
+            closed: zod_1.z.boolean(),
         })).optional(),
-        services: z.array(z.object({
-            name: z.string().min(1, 'Service name is required'),
-            duration: z.number().positive('Duration must be positive'),
-            price: z.number().nonnegative('Price must be non-negative'),
-            description: z.string().optional(),
+        services: zod_1.z.array(zod_1.z.object({
+            name: zod_1.z.string().min(1, 'Service name is required'),
+            duration: zod_1.z.number().positive('Duration must be positive'),
+            price: zod_1.z.number().nonnegative('Price must be non-negative'),
+            description: zod_1.z.string().optional(),
         })).optional(),
-        category: z.string().min(1, 'Category is required').optional(),
-        tags: z.array(z.string()).optional(),
+        category: zod_1.z.string().min(1, 'Category is required').optional(),
+        tags: zod_1.z.array(zod_1.z.string()).optional(),
     }),
 });
-export const getBusinessDetailsSchema = z.object({
-    businessId: z.string().min(1, 'Business ID is required'),
+exports.getBusinessDetailsSchema = zod_1.z.object({
+    businessId: zod_1.z.string().min(1, 'Business ID is required'),
 });
 // Ambassador schemas
-export const createAmbassadorSchema = z.object({
-    userId: userIdSchema,
-    referralCode: z.string().min(1, 'Referral code is required').max(20, 'Referral code too long'),
-    quota: z.number().positive('Quota must be positive'),
-    commissionRate: z.number().min(0, 'Commission rate must be non-negative').max(1, 'Commission rate cannot exceed 100%'),
+exports.createAmbassadorSchema = zod_1.z.object({
+    userId: exports.userIdSchema,
+    referralCode: zod_1.z.string().min(1, 'Referral code is required').max(20, 'Referral code too long'),
+    quota: zod_1.z.number().positive('Quota must be positive'),
+    commissionRate: zod_1.z.number().min(0, 'Commission rate must be non-negative').max(1, 'Commission rate cannot exceed 100%'),
 });
-export const trackReferralSchema = z.object({
-    referralCode: z.string().min(1, 'Referral code is required'),
-    customerId: userIdSchema,
-    appointmentId: z.string().min(1, 'Appointment ID is required'),
+exports.trackReferralSchema = zod_1.z.object({
+    referralCode: zod_1.z.string().min(1, 'Referral code is required'),
+    customerId: exports.userIdSchema,
+    appointmentId: zod_1.z.string().min(1, 'Appointment ID is required'),
 });
-export const getAmbassadorStatsSchema = z.object({
-    ambassadorId: z.string().min(1, 'Ambassador ID is required'),
-    period: z.enum(['week', 'month', 'year']).optional(),
+exports.getAmbassadorStatsSchema = zod_1.z.object({
+    ambassadorId: zod_1.z.string().min(1, 'Ambassador ID is required'),
+    period: zod_1.z.enum(['week', 'month', 'year']).optional(),
 });
 // Analytics schemas
-export const getBusinessAnalyticsSchema = z.object({
-    businessId: z.string().min(1, 'Business ID is required'),
-    period: z.enum(['week', 'month', 'year']),
-    startDate: z.string().datetime('Invalid start date format').optional(),
-    endDate: z.string().datetime('Invalid end date format').optional(),
+exports.getBusinessAnalyticsSchema = zod_1.z.object({
+    businessId: zod_1.z.string().min(1, 'Business ID is required'),
+    period: zod_1.z.enum(['week', 'month', 'year']),
+    startDate: zod_1.z.string().datetime('Invalid start date format').optional(),
+    endDate: zod_1.z.string().datetime('Invalid end date format').optional(),
 });
-export const getSystemAnalyticsSchema = z.object({
-    period: z.enum(['week', 'month', 'year']),
-    startDate: z.string().datetime('Invalid start date format').optional(),
-    endDate: z.string().datetime('Invalid end date format').optional(),
+exports.getSystemAnalyticsSchema = zod_1.z.object({
+    period: zod_1.z.enum(['week', 'month', 'year']),
+    startDate: zod_1.z.string().datetime('Invalid start date format').optional(),
+    endDate: zod_1.z.string().datetime('Invalid end date format').optional(),
 });
 // Admin schemas
-export const setAdminRoleSchema = z.object({
-    uid: z.string().min(1, 'User ID is required'),
-    role: z.enum(['admin', 'super_admin', 'moderator']),
-    permissions: z.array(z.string()).optional(),
+exports.setAdminRoleSchema = zod_1.z.object({
+    uid: zod_1.z.string().min(1, 'User ID is required'),
+    role: zod_1.z.enum(['admin', 'super_admin', 'moderator']),
+    permissions: zod_1.z.array(zod_1.z.string()).optional(),
 });
-export const suspendUserSchema = z.object({
-    userId: userIdSchema,
-    reason: z.string().min(1, 'Suspension reason is required'),
-    duration: z.number().positive('Duration must be positive').optional(),
+exports.suspendUserSchema = zod_1.z.object({
+    userId: exports.userIdSchema,
+    reason: zod_1.z.string().min(1, 'Suspension reason is required'),
+    duration: zod_1.z.number().positive('Duration must be positive').optional(),
 });
-export const unsuspendUserSchema = z.object({
-    userId: userIdSchema,
+exports.unsuspendUserSchema = zod_1.z.object({
+    userId: exports.userIdSchema,
 });
-export const generateReportSchema = z.object({
-    reportType: z.enum(['users', 'businesses', 'appointments', 'revenue', 'ambassadors']),
-    format: z.enum(['csv', 'pdf', 'json']),
-    filters: z.object({
-        startDate: z.string().datetime('Invalid start date format').optional(),
-        endDate: z.string().datetime('Invalid end date format').optional(),
-        businessId: z.string().optional(),
-        userId: z.string().optional(),
+exports.generateReportSchema = zod_1.z.object({
+    reportType: zod_1.z.enum(['users', 'businesses', 'appointments', 'revenue', 'ambassadors']),
+    format: zod_1.z.enum(['csv', 'pdf', 'json']),
+    filters: zod_1.z.object({
+        startDate: zod_1.z.string().datetime('Invalid start date format').optional(),
+        endDate: zod_1.z.string().datetime('Invalid end date format').optional(),
+        businessId: zod_1.z.string().optional(),
+        userId: zod_1.z.string().optional(),
     }).optional(),
 });
 // Notification schemas
-export const sendNotificationToStudioSchema = z.object({
-    studioId: studioIdSchema,
-    title: z.string().min(1, 'Title is required').max(100, 'Title too long'),
-    body: z.string().min(1, 'Body is required').max(500, 'Body too long'),
-    data: z.record(z.string(), z.string()).optional(),
+exports.sendNotificationToStudioSchema = zod_1.z.object({
+    studioId: exports.studioIdSchema,
+    title: zod_1.z.string().min(1, 'Title is required').max(100, 'Title too long'),
+    body: zod_1.z.string().min(1, 'Body is required').max(500, 'Body too long'),
+    data: zod_1.z.record(zod_1.z.string(), zod_1.z.string()).optional(),
 });
 // Validation helper function
-export function validateInput(schema, data) {
+function validateInput(schema, data) {
     try {
         return schema.parse(data);
     }
     catch (error) {
-        if (error instanceof z.ZodError) {
+        if (error instanceof zod_1.z.ZodError) {
             const errorMessage = error.issues.map((err) => `${err.path.join('.')}: ${err.message}`).join(', ');
             throw new Error(`Validation failed: ${errorMessage}`);
         }

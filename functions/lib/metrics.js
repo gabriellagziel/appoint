@@ -1,5 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.metricsMiddleware = void 0;
 // Basic metrics middleware
-export const metricsMiddleware = (req, res, next) => {
+const metricsMiddleware = (req, res, next) => {
     // Add request timing
     const start = Date.now();
     res.on('finish', () => {
@@ -8,6 +11,7 @@ export const metricsMiddleware = (req, res, next) => {
     });
     next();
 };
+exports.metricsMiddleware = metricsMiddleware;
 // Metrics route
 const metricsRoute = (req, res) => {
     res.json({
@@ -17,4 +21,4 @@ const metricsRoute = (req, res) => {
         service: 'appoint-functions'
     });
 };
-export default metricsRoute;
+exports.default = metricsRoute;

@@ -1,4 +1,7 @@
-export const getPublicStatus = async (req, res) => {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getPublicStatus = void 0;
+const getPublicStatus = async (req, res) => {
     try {
         const startTime = Date.now();
         // Basic health checks
@@ -28,6 +31,7 @@ export const getPublicStatus = async (req, res) => {
         });
     }
 };
+exports.getPublicStatus = getPublicStatus;
 async function checkDatabaseHealth() {
     try {
         // Basic database connectivity check

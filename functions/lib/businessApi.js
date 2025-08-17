@@ -1,12 +1,51 @@
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.checkOverdueInvoices = exports.generateMonthlyInvoice = exports.recordApiUsage = exports.generateBusinessApiKey = exports.resetMonthlyQuotas = exports.businessApi = exports.registerBusiness = void 0;
 // businessApi.ts
-import express from 'express';
-import * as admin from 'firebase-admin';
-import { onRequest } from 'firebase-functions/v2/https';
-import { onSchedule } from 'firebase-functions/v2/scheduler';
-import { sendApiKeyEmail, sendWelcomeEmail } from './emailService.js';
-import { auditLogMiddleware } from './middleware/auditLogger.js';
-import { ipWhitelistMiddleware } from './middleware/ipWhitelist.js';
-import { rateLimitMiddleware } from './middleware/rateLimiter.js';
+const express_1 = __importDefault(require("express"));
+const admin = __importStar(require("firebase-admin"));
+const https_1 = require("firebase-functions/v2/https");
+const scheduler_1 = require("firebase-functions/v2/scheduler");
+const emailService_js_1 = require("./emailService.js");
+const auditLogger_js_1 = require("./middleware/auditLogger.js");
+const ipWhitelist_js_1 = require("./middleware/ipWhitelist.js");
+const rateLimiter_js_1 = require("./middleware/rateLimiter.js");
 // Initialize Firebase Admin if not already initialised
 if (!admin.apps.length) {
     admin.initializeApp();
@@ -51,7 +90,7 @@ function generateApiKey() {
  *
  * Returns: { id, apiKey, quota, status }
  */
-export const registerBusiness = onRequest(async (req, res) => {
+exports.registerBusiness = (0, https_1.onRequest)(async (req, res) => {
     // Simple CORS (allow any origin) – adjust in production
     res.set('Access-Control-Allow-Origin', '*');
     res.set('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -122,7 +161,7 @@ export const registerBusiness = onRequest(async (req, res) => {
         console.log(`New business registration: ${companyName} (${email}) - ID: ${docRef.id}`);
         // Send welcome email immediately
         try {
-            await sendWelcomeEmail({
+            await (0, emailService_js_1.sendWelcomeEmail)({
                 companyName,
                 contactName: `${firstName} ${lastName}`,
                 email,
@@ -138,7 +177,7 @@ export const registerBusiness = onRequest(async (req, res) => {
         // In production, this would be triggered by admin approval
         if (process.env.NODE_ENV === 'development' || process.env.AUTO_APPROVE === 'true') {
             try {
-                await sendApiKeyEmail({
+                await (0, emailService_js_1.sendApiKeyEmail)({
                     companyName,
                     contactName: `${firstName} ${lastName}`,
                     email,
@@ -172,9 +211,9 @@ export const registerBusiness = onRequest(async (req, res) => {
 /**
  * Express application for Business API endpoints under /api/business/
  */
-const businessApiApp = express();
+const businessApiApp = (0, express_1.default)();
 // Body parser
-businessApiApp.use(express.json());
+businessApiApp.use(express_1.default.json());
 // Middleware: Validate API key & quota
 businessApiApp.use(async (req, res, next) => {
     try {
@@ -236,9 +275,9 @@ businessApiApp.use(async (req, res, next) => {
     }
 });
 // Apply enterprise middleware
-businessApiApp.use(ipWhitelistMiddleware);
-businessApiApp.use(rateLimitMiddleware());
-businessApiApp.use(auditLogMiddleware);
+businessApiApp.use(ipWhitelist_js_1.ipWhitelistMiddleware);
+businessApiApp.use((0, rateLimiter_js_1.rateLimitMiddleware)());
+businessApiApp.use(auditLogger_js_1.auditLogMiddleware);
 // After body parser
 businessApiApp.use((req, _res, next) => {
     req._startTime = Date.now();
@@ -577,12 +616,12 @@ businessApiApp.put('/account', async (req, res) => {
     }
 });
 // Wrap express app as cloud function
-export const businessApi = onRequest(businessApiApp);
+exports.businessApi = (0, https_1.onRequest)(businessApiApp);
 /**
  * Scheduled function: Reset monthly quotas & trigger billing every 1st day of month.
  * Runs at 00:00 on day-1 UTC.
  */
-export const resetMonthlyQuotas = onSchedule('0 0 1 * *', async () => {
+exports.resetMonthlyQuotas = (0, scheduler_1.onSchedule)('0 0 1 * *', async () => {
     const snapshot = await db.collection(BUSINESS_COLLECTION).get();
     const batch = db.batch();
     snapshot.docs.forEach((doc) => {
@@ -599,7 +638,7 @@ export const resetMonthlyQuotas = onSchedule('0 0 1 * *', async () => {
         const businessData = doc.data();
         if (businessData.usageThisMonth > 0) {
             // Import and call billing function
-            const { generateMonthlyInvoice } = await import('./billingEngine.js');
+            const { generateMonthlyInvoice } = await Promise.resolve().then(() => __importStar(require('./billingEngine.js')));
             try {
                 await generateMonthlyInvoice(doc.id, businessData);
             }
@@ -610,14 +649,16 @@ export const resetMonthlyQuotas = onSchedule('0 0 1 * *', async () => {
     }
 });
 // Export functions for testing
-export const generateBusinessApiKey = generateApiKey;
-export const recordApiUsage = logUsage;
+exports.generateBusinessApiKey = generateApiKey;
+exports.recordApiUsage = logUsage;
 // Export billing functions (these will be implemented in billingEngine.ts)
-export const generateMonthlyInvoice = async (businessId, businessData) => {
+const generateMonthlyInvoice = async (businessId, businessData) => {
     // This will be implemented in billingEngine.ts
     console.log('Generating monthly invoice for business:', businessId);
 };
-export const checkOverdueInvoices = async () => {
+exports.generateMonthlyInvoice = generateMonthlyInvoice;
+const checkOverdueInvoices = async () => {
     // This will be implemented in billingEngine.ts
     console.log('Checking overdue invoices');
 };
+exports.checkOverdueInvoices = checkOverdueInvoices;

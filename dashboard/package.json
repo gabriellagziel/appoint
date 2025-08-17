@@ -27,16 +27,18 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "firebase": "^10.7.1",
+    "firebase-admin": "^13.4.0",
     "lucide-react": "^0.294.0",
     "next": "^14.2.31",
     "next-auth": "^4.24.11",
-    "stripe": "^16.12.0",
     "react": "^18",
     "react-day-picker": "^9.8.1",
     "react-dom": "^18",
     "react-hook-form": "^7.62.0",
+    "stripe": "^16.12.0",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^4.0.17"
   },
   "devDependencies": {
     "@types/node": "^20",

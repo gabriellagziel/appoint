@@ -1,8 +1,47 @@
-import archiver from 'archiver';
-import ExcelJS from 'exceljs';
-import * as admin from 'firebase-admin';
-import { HttpsError, onRequest } from 'firebase-functions/v2/https';
-import { Parser } from 'json2csv';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.exportYearlyTax = exports.adminAnalyticsSummary = exports.downloadUsageCSV = exports.getUsageStats = void 0;
+const archiver_1 = __importDefault(require("archiver"));
+const exceljs_1 = __importDefault(require("exceljs"));
+const admin = __importStar(require("firebase-admin"));
+const https_1 = require("firebase-functions/v2/https");
+const json2csv_1 = require("json2csv");
 if (!admin.apps.length) {
     admin.initializeApp();
 }
@@ -17,16 +56,16 @@ const BUSINESS_COLLECTION = 'business_accounts';
 async function requireBusiness(req) {
     const apiKey = (req.headers['x-api-key'] || req.headers['api-key']);
     if (!apiKey) {
-        throw new HttpsError('unauthenticated', 'API key missing');
+        throw new https_1.HttpsError('unauthenticated', 'API key missing');
     }
     const snap = await db.collection(BUSINESS_COLLECTION).where('apiKey', '==', apiKey).limit(1).get();
     if (snap.empty) {
-        throw new HttpsError('unauthenticated', 'Invalid API key');
+        throw new https_1.HttpsError('unauthenticated', 'Invalid API key');
     }
     return { id: snap.docs[0].id, data: snap.docs[0].data() };
 }
 // Business facing usage stats
-export const getUsageStats = onRequest(async (req, res) => {
+exports.getUsageStats = (0, https_1.onRequest)(async (req, res) => {
     try {
         const business = await requireBusiness(req);
         const { month, year } = req.query;
@@ -57,7 +96,7 @@ export const getUsageStats = onRequest(async (req, res) => {
     }
 });
 // Download CSV usage report
-export const downloadUsageCSV = onRequest(async (req, res) => {
+exports.downloadUsageCSV = (0, https_1.onRequest)(async (req, res) => {
     try {
         const business = await requireBusiness(req);
         const { month, year } = req.query;
@@ -81,7 +120,7 @@ export const downloadUsageCSV = onRequest(async (req, res) => {
                 latency_ms: data.latencyMs || '',
             };
         });
-        const parser = new Parser({ fields: ['timestamp', 'endpoint', 'success', 'latency_ms'] });
+        const parser = new json2csv_1.Parser({ fields: ['timestamp', 'endpoint', 'success', 'latency_ms'] });
         const csv = parser.parse(rows);
         res.setHeader('Content-Type', 'text/csv');
         res.setHeader('Content-Disposition', `attachment; filename="usage-${y}-${(m + 1).toString().padStart(2, '0')}.csv"`);
@@ -93,7 +132,7 @@ export const downloadUsageCSV = onRequest(async (req, res) => {
     }
 });
 // Admin analytics summary
-export const adminAnalyticsSummary = onRequest(async (req, res) => {
+exports.adminAnalyticsSummary = (0, https_1.onRequest)(async (req, res) => {
     // Admin auth check implementation - see ticket #ANA-001
     try {
         const { month, year } = req.query;
@@ -135,13 +174,13 @@ export const adminAnalyticsSummary = onRequest(async (req, res) => {
     }
 });
 // Yearly tax export ZIP
-export const exportYearlyTax = onRequest(async (req, res) => {
+exports.exportYearlyTax = (0, https_1.onRequest)(async (req, res) => {
     // Admin auth check - see ticket #ANA-001
     try {
         const { year } = req.query;
         const y = year ? Number(year) : new Date().getUTCFullYear() - 1;
         // Create archive
-        const archive = archiver('zip');
+        const archive = (0, archiver_1.default)('zip');
         res.setHeader('Content-Type', 'application/zip');
         res.setHeader('Content-Disposition', `attachment; filename="tax-export-${y}.zip"`);
         archive.pipe(res);
@@ -181,10 +220,10 @@ export const exportYearlyTax = onRequest(async (req, res) => {
                     latency_ms: data.latencyMs || '',
                 };
             });
-            const parser = new Parser({ fields: ['timestamp', 'endpoint', 'success', 'latency_ms'] });
+            const parser = new json2csv_1.Parser({ fields: ['timestamp', 'endpoint', 'success', 'latency_ms'] });
             archive.append(parser.parse(rows), { name: `${folder}usage-${y}.csv` });
         }
-        const workbook = new ExcelJS.Workbook();
+        const workbook = new exceljs_1.default.Workbook();
         const sheet = workbook.addWorksheet('Summary');
         sheet.columns = [
             { header: 'Business ID', key: 'bid' },

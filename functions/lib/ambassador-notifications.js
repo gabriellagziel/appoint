@@ -1,9 +1,53 @@
-import { onCall, HttpsError } from 'firebase-functions/v2/https';
-import { onSchedule } from 'firebase-functions/v2/scheduler';
-import * as admin from 'firebase-admin';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.sendMonthlyReminders = exports.sendAmbassadorNotification = exports.AmbassadorNotificationType = void 0;
+exports.sendPromotionNotification = sendPromotionNotification;
+exports.sendTierUpgradeNotification = sendTierUpgradeNotification;
+exports.REDACTED_TOKEN = REDACTED_TOKEN;
+exports.sendDemotionNotification = sendDemotionNotification;
+exports.sendReferralSuccessNotification = sendReferralSuccessNotification;
+exports.sendPendingApprovalNotification = sendPendingApprovalNotification;
+exports.sendApprovalNotification = sendApprovalNotification;
+exports.sendRejectionNotification = sendRejectionNotification;
+const https_1 = require("firebase-functions/v2/https");
+const scheduler_1 = require("firebase-functions/v2/scheduler");
+const admin = __importStar(require("firebase-admin"));
 const db = admin.firestore();
 // Ambassador notification types
-export var AmbassadorNotificationType;
+var AmbassadorNotificationType;
 (function (AmbassadorNotificationType) {
     AmbassadorNotificationType["PROMOTION"] = "ambassador_promotion";
     AmbassadorNotificationType["TIER_UPGRADE"] = "tier_upgrade";
@@ -14,7 +58,7 @@ export var AmbassadorNotificationType;
     AmbassadorNotificationType["PENDING_APPROVAL"] = "pending_approval";
     AmbassadorNotificationType["APPROVAL"] = "approval";
     AmbassadorNotificationType["REJECTION"] = "rejection";
-})(AmbassadorNotificationType || (AmbassadorNotificationType = {}));
+})(AmbassadorNotificationType || (exports.AmbassadorNotificationType = AmbassadorNotificationType = {}));
 // Default English templates
 const DEFAULT_TEMPLATES = {
     [AmbassadorNotificationType.PROMOTION]: {
@@ -150,22 +194,22 @@ async function sendNotificationHelper(notificationData) {
 /**
  * Send Ambassador notification to a user
  */
-export const sendAmbassadorNotification = onCall(async (request) => {
+exports.sendAmbassadorNotification = (0, https_1.onCall)(async (request) => {
     if (!request.auth) {
-        throw new HttpsError('unauthenticated', 'User must be authenticated');
+        throw new https_1.HttpsError('unauthenticated', 'User must be authenticated');
     }
     try {
         return await sendNotificationHelper(request.data);
     }
     catch (error) {
         console.error('Error sending notification:', error);
-        throw new HttpsError('internal', 'Failed to send notification');
+        throw new https_1.HttpsError('internal', 'Failed to send notification');
     }
 });
 /**
  * Scheduled function to send monthly reminders
  */
-export const sendMonthlyReminders = onSchedule('0 10 * * *', async (event) => {
+exports.sendMonthlyReminders = (0, scheduler_1.onSchedule)('0 10 * * *', async (event) => {
     console.log('Starting monthly reminder check...');
     try {
         const now = new Date();
@@ -323,7 +367,7 @@ async function sendEmailNotification(email, subject, body) {
 /**
  * Convenience functions for specific notification types
  */
-export async function sendPromotionNotification(userId, languageCode, tier) {
+async function sendPromotionNotification(userId, languageCode, tier) {
     await sendNotificationHelper({
         userId,
         type: AmbassadorNotificationType.PROMOTION,
@@ -334,7 +378,7 @@ export async function sendPromotionNotification(userId, languageCode, tier) {
         sendInApp: true,
     });
 }
-export async function sendTierUpgradeNotification(userId, languageCode, previousTier, newTier, totalReferrals) {
+async function sendTierUpgradeNotification(userId, languageCode, previousTier, newTier, totalReferrals) {
     await sendNotificationHelper({
         userId,
         type: AmbassadorNotificationType.TIER_UPGRADE,
@@ -349,7 +393,7 @@ export async function sendTierUpgradeNotification(userId, languageCode, previous
         sendInApp: true,
     });
 }
-export async function REDACTED_TOKEN(userId, languageCode, currentReferrals, minimumRequired) {
+async function REDACTED_TOKEN(userId, languageCode, currentReferrals, minimumRequired) {
     await sendNotificationHelper({
         userId,
         type: AmbassadorNotificationType.PERFORMANCE_WARNING,
@@ -363,7 +407,7 @@ export async function REDACTED_TOKEN(userId, languageCode, currentReferrals, min
         sendInApp: true,
     });
 }
-export async function sendDemotionNotification(userId, languageCode, reason) {
+async function sendDemotionNotification(userId, languageCode, reason) {
     await sendNotificationHelper({
         userId,
         type: AmbassadorNotificationType.DEMOTION,
@@ -374,7 +418,7 @@ export async function sendDemotionNotification(userId, languageCode, reason) {
         sendInApp: true,
     });
 }
-export async function sendReferralSuccessNotification(userId, languageCode, referredUserName, totalReferrals) {
+async function sendReferralSuccessNotification(userId, languageCode, referredUserName, totalReferrals) {
     await sendNotificationHelper({
         userId,
         type: AmbassadorNotificationType.REFERRAL_SUCCESS,
@@ -388,7 +432,7 @@ export async function sendReferralSuccessNotification(userId, languageCode, refe
         sendInApp: true,
     });
 }
-export async function sendPendingApprovalNotification(userId, languageCode) {
+async function sendPendingApprovalNotification(userId, languageCode) {
     try {
         await sendNotificationHelper({
             userId,
@@ -404,7 +448,7 @@ export async function sendPendingApprovalNotification(userId, languageCode) {
         console.error('Error sending pending approval notification:', error);
     }
 }
-export async function sendApprovalNotification(userId, languageCode) {
+async function sendApprovalNotification(userId, languageCode) {
     try {
         await sendNotificationHelper({
             userId,
@@ -420,7 +464,7 @@ export async function sendApprovalNotification(userId, languageCode) {
         console.error('Error sending approval notification:', error);
     }
 }
-export async function sendRejectionNotification(userId, languageCode, reason) {
+async function sendRejectionNotification(userId, languageCode, reason) {
     try {
         await sendNotificationHelper({
             userId,

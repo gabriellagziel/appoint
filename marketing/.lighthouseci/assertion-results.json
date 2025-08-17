@@ -1,0 +1,246 @@
+[
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "color-contrast",
+    "level": "error",
+    "url": "http://localhost:59755/index.html",
+    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.9/color-contrast"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "errors-in-console",
+    "level": "error",
+    "url": "http://localhost:59755/index.html",
+    "auditTitle": "Browser errors were logged to the console",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": null,
+    "values": [
+      null,
+      null,
+      null
+    ],
+    "operator": ">=",
+    "passed": false,
+    "message": "Audit did not produce a value at all. \"minScore\" might not be a valid assertion for this audit.",
+    "auditId": "lcp-lazy-loaded",
+    "level": "error",
+    "url": "http://localhost:59755/index.html",
+    "auditTitle": "Largest Contentful Paint image was not lazily loaded",
+    "auditDocumentationLink": "https://web.dev/articles/lcp-lazy-loading"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "meta-description",
+    "level": "error",
+    "url": "http://localhost:59755/index.html",
+    "auditTitle": "Document does not have a meta description",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/seo/meta-description/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": null,
+    "values": [
+      null,
+      null,
+      null
+    ],
+    "operator": ">=",
+    "passed": false,
+    "message": "Audit did not produce a value at all. \"minScore\" might not be a valid assertion for this audit.",
+    "auditId": "non-composited-animations",
+    "level": "error",
+    "url": "http://localhost:59755/index.html",
+    "auditTitle": "Avoid non-composited animations",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": null,
+    "values": [
+      null,
+      null,
+      null
+    ],
+    "operator": ">=",
+    "passed": false,
+    "message": "Audit did not produce a value at all. \"minScore\" might not be a valid assertion for this audit.",
+    "auditId": "prioritize-lcp-image",
+    "level": "error",
+    "url": "http://localhost:59755/index.html",
+    "auditTitle": "Preload Largest Contentful Paint image",
+    "auditDocumentationLink": "https://web.dev/articles/optimize-lcp#REDACTED_TOKEN"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "color-contrast",
+    "level": "error",
+    "url": "http://localhost:59755/scheduler.html",
+    "auditTitle": "Background and foreground colors do not have a sufficient contrast ratio.",
+    "auditDocumentationLink": "https://dequeuniversity.com/rules/axe/4.9/color-contrast"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "errors-in-console",
+    "level": "error",
+    "url": "http://localhost:59755/scheduler.html",
+    "auditTitle": "Browser errors were logged to the console",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0.65,
+    "values": [
+      0.64,
+      0.65,
+      0.6
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "first-contentful-paint",
+    "level": "warn",
+    "url": "http://localhost:59755/scheduler.html",
+    "auditTitle": "First Contentful Paint",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0.89,
+    "values": [
+      0.88,
+      0.89,
+      0.86
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "largest-contentful-paint",
+    "level": "warn",
+    "url": "http://localhost:59755/scheduler.html",
+    "auditTitle": "Largest Contentful Paint",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/REDACTED_TOKEN/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": null,
+    "values": [
+      null,
+      null,
+      null
+    ],
+    "operator": ">=",
+    "passed": false,
+    "message": "Audit did not produce a value at all. \"minScore\" might not be a valid assertion for this audit.",
+    "auditId": "lcp-lazy-loaded",
+    "level": "error",
+    "url": "http://localhost:59755/scheduler.html",
+    "auditTitle": "Largest Contentful Paint image was not lazily loaded",
+    "auditDocumentationLink": "https://web.dev/articles/lcp-lazy-loading"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": 0,
+    "values": [
+      0,
+      0,
+      0
+    ],
+    "operator": ">=",
+    "passed": false,
+    "auditId": "meta-description",
+    "level": "error",
+    "url": "http://localhost:59755/scheduler.html",
+    "auditTitle": "Document does not have a meta description",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/seo/meta-description/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": null,
+    "values": [
+      null,
+      null,
+      null
+    ],
+    "operator": ">=",
+    "passed": false,
+    "message": "Audit did not produce a value at all. \"minScore\" might not be a valid assertion for this audit.",
+    "auditId": "non-composited-animations",
+    "level": "error",
+    "url": "http://localhost:59755/scheduler.html",
+    "auditTitle": "Avoid non-composited animations",
+    "auditDocumentationLink": "https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/"
+  },
+  {
+    "name": "minScore",
+    "expected": 0.9,
+    "actual": null,
+    "values": [
+      null,
+      null,
+      null
+    ],
+    "operator": ">=",
+    "passed": false,
+    "message": "Audit did not produce a value at all. \"minScore\" might not be a valid assertion for this audit.",
+    "auditId": "prioritize-lcp-image",
+    "level": "error",
+    "url": "http://localhost:59755/scheduler.html",
+    "auditTitle": "Preload Largest Contentful Paint image",
+    "auditDocumentationLink": "https://web.dev/articles/optimize-lcp#REDACTED_TOKEN"
+  }
+]

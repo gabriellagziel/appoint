@@ -1,8 +1,47 @@
-import crypto from 'crypto';
-import * as admin from 'firebase-admin';
-import { onDocumentWritten } from 'firebase-functions/v2/firestore';
-import { onSchedule } from 'firebase-functions/v2/scheduler';
-import fetch from 'node-fetch';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.processWebhookRetries = exports.onAppointmentWrite = void 0;
+const crypto_1 = __importDefault(require("crypto"));
+const admin = __importStar(require("firebase-admin"));
+const firestore_1 = require("firebase-functions/v2/firestore");
+const scheduler_1 = require("firebase-functions/v2/scheduler");
+const node_fetch_1 = __importDefault(require("node-fetch"));
 if (!admin.apps.length) {
     admin.initializeApp();
 }
@@ -10,14 +49,14 @@ const db = admin.firestore();
 const WEBHOOK_COLLECTION = 'webhook_endpoints';
 const WEBHOOK_LOGS = 'webhook_logs';
 function signPayload(secret, body, timestamp) {
-    return crypto.createHmac('sha256', secret).update(timestamp + '.' + body).digest('hex');
+    return crypto_1.default.createHmac('sha256', secret).update(timestamp + '.' + body).digest('hex');
 }
 async function deliverWebhook(webhook, payload) {
     const body = JSON.stringify(payload);
     const timestamp = Date.now();
     const signature = signPayload(webhook.secret, body, timestamp);
     try {
-        const res = await fetch(webhook.url, {
+        const res = await (0, node_fetch_1.default)(webhook.url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -53,7 +92,7 @@ async function deliverWebhook(webhook, payload) {
  * Firestore trigger when appointments created/updated/cancelled.
  * For demo, listen to collection 'appointments'.
  */
-export const onAppointmentWrite = onDocumentWritten('appointments/{appointmentId}', async (event) => {
+exports.onAppointmentWrite = (0, firestore_1.onDocumentWritten)('appointments/{appointmentId}', async (event) => {
     const change = event.data;
     const context = event;
     const after = change.after.exists ? change.after.data() : null;
@@ -78,7 +117,7 @@ export const onAppointmentWrite = onDocumentWritten('appointments/{appointmentId
 /**
  * Pub/Sub scheduled function processes retries.
  */
-export const processWebhookRetries = onSchedule('every 5 minutes', async () => {
+exports.processWebhookRetries = (0, scheduler_1.onSchedule)('every 5 minutes', async () => {
     const now = admin.firestore.Timestamp.now();
     const snap = await db.collection(WEBHOOK_COLLECTION).where('nextRetry', '<=', now).get();
     snap.forEach((doc) => {

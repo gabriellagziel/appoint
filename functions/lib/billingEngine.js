@@ -1,9 +1,49 @@
-import { parse } from 'csv-parse/sync';
-import * as admin from 'firebase-admin';
-import { onCall, onRequest } from 'firebase-functions/v2/https';
-import { onSchedule } from 'firebase-functions/v2/scheduler';
-import * as nodemailer from 'nodemailer';
-import PDFDocument from 'pdfkit';
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.resetMapUsageForNewPeriod = exports.importBankPayments = exports.generateMapOverageInvoice = exports.monthlyMapOverageBilling = exports.monthlyBillingJob = void 0;
+exports.generateMonthlyInvoice = generateMonthlyInvoice;
+const sync_1 = require("csv-parse/sync");
+const admin = __importStar(require("firebase-admin"));
+const https_1 = require("firebase-functions/v2/https");
+const scheduler_1 = require("firebase-functions/v2/scheduler");
+const nodemailer = __importStar(require("nodemailer"));
+const pdfkit_1 = __importDefault(require("pdfkit"));
 if (!admin.apps.length) {
     admin.initializeApp();
 }
@@ -42,7 +82,7 @@ function calculateMapOverage(usage, limit) {
 }
 function generateInvoicePDF({ businessName, businessId, apiKey, usage, amount, dueDate, isOverageInvoice = false, mapOverageDetails, }) {
     return new Promise((resolve, reject) => {
-        const doc = new PDFDocument();
+        const doc = new pdfkit_1.default();
         const chunks = [];
         doc.on('data', (chunk) => chunks.push(chunk));
         doc.on('end', () => resolve(Buffer.concat(chunks)));
@@ -109,7 +149,7 @@ async function sendInvoiceEmail({ to, pdfBuffer, filename, isOverageInvoice = fa
 /**
  * Generate monthly invoice for a business
  */
-export async function generateMonthlyInvoice(businessId, businessData) {
+async function generateMonthlyInvoice(businessId, businessData) {
     try {
         const now = new Date();
         const year = now.getFullYear();
@@ -180,7 +220,7 @@ export async function generateMonthlyInvoice(businessId, businessData) {
     }
 }
 // Monthly billing job for API usage (existing)
-export const monthlyBillingJob = onSchedule('15 0 1 * *', async () => {
+exports.monthlyBillingJob = (0, scheduler_1.onSchedule)('15 0 1 * *', async () => {
     const year = new Date().getUTCFullYear();
     const month = new Date().getUTCMonth(); // previous month? Actually runs first day for previous month compute
     const billingPeriodStart = new Date(Date.UTC(year, month - 1, 1));
@@ -239,7 +279,7 @@ export const monthlyBillingJob = onSchedule('15 0 1 * *', async () => {
     console.log('Monthly billing job completed');
 });
 // Monthly map overage billing job (NEW)
-export const monthlyMapOverageBilling = onSchedule('30 0 1 * *', async () => {
+exports.monthlyMapOverageBilling = (0, scheduler_1.onSchedule)('30 0 1 * *', async () => {
     const year = new Date().getUTCFullYear();
     const month = new Date().getUTCMonth();
     // Get all active business subscriptions with map overage
@@ -330,7 +370,7 @@ function getMapLimitForPlan(plan) {
     }
 }
 // Function to manually trigger overage invoice generation (for testing)
-export const generateMapOverageInvoice = onCall(async (request) => {
+exports.generateMapOverageInvoice = (0, https_1.onCall)(async (request) => {
     const userId = request.auth?.uid;
     if (!userId) {
         throw new Error('User must be authenticated');
@@ -397,14 +437,14 @@ export const generateMapOverageInvoice = onCall(async (request) => {
  * HTTPS function to import CSV of paid invoices (bank transfers).
  * Expects multipart form or raw CSV string in body.
  */
-export const importBankPayments = onRequest(async (req, res) => {
+exports.importBankPayments = (0, https_1.onRequest)(async (req, res) => {
     if (req.method !== 'POST') {
         res.status(405).json({ error: 'Only POST allowed' });
         return;
     }
     try {
         const csvData = typeof req.body === 'string' ? req.body : req.body.csv;
-        const records = parse(csvData, { columns: true });
+        const records = (0, sync_1.parse)(csvData, { columns: true });
         // CSV columns: invoiceId, amountPaid
         for (const row of records) {
             const invoiceRef = db.collection(INVOICE_COLLECTION).doc(row.invoiceId);
@@ -438,7 +478,7 @@ export const importBankPayments = onRequest(async (req, res) => {
     }
 });
 // Reset map usage for all subscriptions at billing period start (helper function)
-export const resetMapUsageForNewPeriod = onCall(async (request) => {
+exports.resetMapUsageForNewPeriod = (0, https_1.onCall)(async (request) => {
     // This should be called by Stripe webhooks when subscription periods update
     const { subscriptionId } = request.data;
     if (!subscriptionId) {

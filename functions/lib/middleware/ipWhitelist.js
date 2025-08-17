@@ -1,6 +1,9 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ipWhitelistMiddleware = void 0;
 // Configure allowed IPs - in production this would come from environment variables
 const ALLOWED_IPS = process.env.ALLOWED_IPS?.split(',') || ['127.0.0.1', '::1'];
-export const ipWhitelistMiddleware = (req, res, next) => {
+const ipWhitelistMiddleware = (req, res, next) => {
     const clientIP = req.ip || req.connection.remoteAddress || req.socket.remoteAddress;
     // Allow localhost and development
     if (process.env.NODE_ENV === 'development') {
@@ -15,3 +18,4 @@ export const ipWhitelistMiddleware = (req, res, next) => {
     }
     next();
 };
+exports.ipWhitelistMiddleware = ipWhitelistMiddleware;

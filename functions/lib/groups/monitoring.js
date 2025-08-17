@@ -1,7 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getGroupsMetrics = getGroupsMetrics;
 // Group metrics aggregation for monitoring and dashboards
-import { db as getDb } from '../lib/admin.js';
-export async function getGroupsMetrics() {
-    const db = getDb();
+const admin_js_1 = require("../lib/admin.js");
+async function getGroupsMetrics() {
+    const db = (0, admin_js_1.db)();
     const groupsSnap = await db.collection('groups').get();
     let proGroups = 0;
     for (const doc of groupsSnap.docs) {
