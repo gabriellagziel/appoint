@@ -1,69 +1,78 @@
-# Dependencies
-node_modules/
-*/node_modules/
-**/node_modules/
-
-# Build artifacts
-*.tar.gz
-*.pack
-*.gz
-
-# Environment files
-.env
-.env.local
-.env.production
-
-# Logs
+# ------------------------
+# Global
+# ------------------------
+.DS_Store
+Thumbs.db
 *.log
-npm-debug.log*
+*.tmp
+*.swp
+*.swo
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory used by tools like istanbul
+# ------------------------
+# Node.js / Next.js
+# ------------------------
+node_modules/
+.npm/
+.npm-cache/
+.next/
+out/
+dist/
+.cache/
 coverage/
+.env*
+!.env.example
 
-# nyc test coverage
-.nyc_output
+# ------------------------
+# Flutter / Dart
+# ------------------------
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+Generated.xcconfig
 
-# Dependency directories
-jspm_packages/
+# ------------------------
+# Firebase
+# ------------------------
+.firebase/
+.firebase-*
+firebase-debug.log
+firestore-debug.log
+storage-debug.log
 
-# Optional npm cache directory
-.npm
+# ------------------------
+# DigitalOcean / CI artifacts
+# ------------------------
+.do/
+doctl
+*.tar.gz
+*.zip
+*.dill
 
-# Optional REPL history
-.node_repl_history
+# ------------------------
+# QA / Local testing
+# ------------------------
+qa/output/
+qa/ORG_QA/
+qa/temp/
+*.coverage
+*.testlog
 
-# Output of 'npm pack'
-*.tgz
+# ------------------------
+# IDE / Editor
+# ------------------------
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
 
-# Yarn Integrity file
-.yarn-integrity
-
-# dotenv environment variables file
-.env
-
-# next.js build output
-.next
-
-# Nuxt.js build output
-.nuxt
-
-# vuepress build output
-.vuepress/dist
-
-# Serverless directories
-.serverless
-
-# FuseBox cache
-.fusebox/
-
-# DynamoDB Local files
-.dynamodb/
-
-# TernJS port file
-.tern-port
+# ------------------------
+# OS / Misc
+# ------------------------
+*.bak
+*.old
+*.orig
+*.rej
