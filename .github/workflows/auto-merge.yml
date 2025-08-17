@@ -50,7 +50,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Wait for CI completion
-        uses: lewagon/wait-on-check-action@v1.3.1
+        uses: lewagon/wait-on-check-action@v1.4.0
         with:
           ref: ${{ github.head_ref }}
           check-name: 'DigitalOcean CI Pipeline'
