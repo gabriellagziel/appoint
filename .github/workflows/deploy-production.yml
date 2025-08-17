@@ -28,7 +28,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Validate environment variables
         run: |
@@ -75,7 +75,7 @@ jobs:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Setup DigitalOcean CLI
         uses: digitalocean/action-doctl@v2
