@@ -3,17 +3,42 @@ name: Security
 on:
   push:
     branches: [ main, develop ]
+    paths:
+      - "appoint/**"
+      - "functions/**"
+      - "marketing/**"
+      - "business/**"
+      - "admin/**"
+      - "enterprise-onboarding-portal/**"
+      - ".github/workflows/security.yml"
   pull_request:
     branches: [ main, develop ]
+    paths:
+      - "appoint/**"
+      - "functions/**"
+      - "marketing/**"
+      - "business/**"
+      - "admin/**"
+      - "enterprise-onboarding-portal/**"
+      - ".github/workflows/security.yml"
   schedule:
     # Run daily at 2 AM UTC
     - cron: '0 2 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: security-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   dependency-scan:
     name: Dependency Scan
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       
@@ -61,6 +86,7 @@ jobs:
   code-scan:
     name: Code Security Scan
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       
@@ -92,6 +118,7 @@ jobs:
   firebase-security:
     name: Firebase Security Rules
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       
@@ -126,6 +153,7 @@ jobs:
   secrets-scan:
     name: Secrets Scan
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
@@ -150,6 +178,7 @@ jobs:
   compliance-check:
     name: Compliance Check
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       

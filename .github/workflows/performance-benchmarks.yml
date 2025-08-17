@@ -12,6 +12,14 @@ on:
       - 'lib/**'
       - 'pubspec.yaml'
 
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: performance-benchmarks-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   performance-benchmarks:
     runs-on: ubuntu-latest

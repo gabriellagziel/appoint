@@ -1,18 +1,60 @@
 name: Security QA
 
-push:
-  branches: [ main ]
-
 on:
+  push:
+    branches: [ main ]
   pull_request:
+    branches: [ main ]
   schedule:
     - cron: '0 0 * * *'
 
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: security-qa-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  security-qa:
+  dependency-scan:
+    name: Dependency Vulnerability Scan
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Placeholder Security QA
-        run: echo "Security QA stub"
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          
+      - name: Scan Functions Dependencies
+        run: |
+          cd functions
+          npm ci
+          npm audit --audit-level=moderate || echo "⚠️ Vulnerabilities found in functions"
+          
+      - name: Scan Marketing Dependencies
+        run: |
+          cd marketing
+          npm ci
+          npm audit --audit-level=moderate || echo "⚠️ Vulnerabilities found in marketing"
+          
+      - name: Scan Business Dependencies
+        run: |
+          cd business
+          npm ci
+          npm audit --audit-level=moderate || echo "⚠️ Vulnerabilities found in business"
+          
+      - name: Scan Admin Dependencies
+        run: |
+          cd admin
+          npm ci
+          npm audit --audit-level=moderate || echo "⚠️ Vulnerabilities found in admin"
+          
+      - name: Security Summary
+        run: |
+          echo "🔒 Security scan completed"
+          echo "📊 Check individual app audit results above"

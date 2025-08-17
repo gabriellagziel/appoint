@@ -1,20 +1,34 @@
 name: Auto Merge
 
-push:
-  branches: [ main ]
-
 on:
+  push:
+    branches: [ main ]
+    paths:
+      - ".github/workflows/auto-merge.yml"
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - ".github/workflows/auto-merge.yml"
   workflow_run:
     workflows: ["DigitalOcean CI Pipeline"]
     types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+  pull-requests: write
+
+concurrency:
+  group: auto-merge-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   # Auto-merge PRs on green CI
   auto-merge:
     if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Check if PR exists
         id: check-pr
@@ -45,6 +59,7 @@ jobs:
   bot-feedback:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

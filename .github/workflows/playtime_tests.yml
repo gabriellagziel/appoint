@@ -5,6 +5,14 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: playtime-tests-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   playtime-unit-tests:
     runs-on: ubuntu-latest

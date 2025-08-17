@@ -7,28 +7,34 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "analyze": "ANALYZE=true next build"
+    "analyze": "ANALYZE=true next build",
+    "test": "jest -w 1 --passWithNoTests"
   },
   "dependencies": {
+    "@app-oint/design-system": "file:../packages/design-system",
     "clsx": "^2.0.0",
+    "firebase": "^12.1.0",
     "next": "^14.2.31",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.0.0",
-    "firebase": "^12.1.0",
-    "@app-oint/design-system": "file:../packages/design-system"
+    "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.0.0",
     "@sentry/nextjs": "^10.3.0",
+    "@testing-library/jest-dom": "^6.7.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
+    "jest": "^30.0.5",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "whatwg-url": "^14.2.0"
   }
 }

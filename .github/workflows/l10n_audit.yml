@@ -1,6 +1,27 @@
 name: L10n Audit
 
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - "appoint/l10n/**"
+      - "appoint/lib/**"
+      - "tools/**"
+      - ".github/workflows/l10n_audit.yml"
+  pull_request:
+    paths:
+      - "appoint/l10n/**"
+      - "appoint/lib/**"
+      - "tools/**"
+      - ".github/workflows/l10n_audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: l10n-audit-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   l10n_audit:

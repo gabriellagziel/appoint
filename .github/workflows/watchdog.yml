@@ -1,44 +1,56 @@
-name: 🐶 CI Watchdog
-
+name: CI Watchdog
 on:
-  schedule:
-    - cron: '*/5 * * * *'
+  push:
+  pull_request:
   workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: watchdog-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   watchdog:
     runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
+    timeout-minutes: 5
     steps:
-      - name: 🔧 Install GitHub CLI
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Quick environment sanity
         run: |
-          sudo apt-get update
-          sudo apt-get install -y gh
+          echo "REF=${GITHUB_REF}"
+          echo "SHA=${GITHUB_SHA}"
+          git --version
 
-      - name: 🪪 Authenticate GitHub CLI
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Validate workflow YAML
         run: |
-          gh auth setup-git
-          gh auth status
+          sudo apt-get update -y
+          sudo apt-get install -y yamllint
+          yamllint -d "{extends: default, rules: {line-length: disable}}" .github/workflows
 
-      - name: 🕵️‍♂️ Find stuck workflows
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Large-file guard (40MB+)
         run: |
-          echo "🔍 Checking for stuck workflows >30min..."
-          gh run list --limit 100 --json databaseId,status,workflowName,duration,startedAt | jq -c '.[] | select(.status == "in_progress" and (.duration | tonumber) > 1800)' > stuck.json
+          set -e
+          python3 - <<'PY'
+          import os, subprocess, sys
+          files = subprocess.check_output(['git','ls-files']).decode().splitlines()
+          bad = []
+          for f in files:
+            try:
+              if os.path.getsize(f) > 40*1024*1024:
+                bad.append((f, os.path.getsize(f)))
+            except FileNotFoundError:
+              pass
+          if bad:
+            print("Large files detected:")
+            for f,s in bad: print(f"{f} -> {s} bytes")
+            sys.exit(1)
+          PY
+          echo "No oversized files committed."
 
-          if [ -s stuck.json ]; then
-            echo "🚨 Found stuck workflows:"
-            cat stuck.json | jq .
-
-            echo "🛑 Cancelling stuck workflows..."
-            cat stuck.json | jq -r '.databaseId' | while read run_id; do
-              gh run cancel "$run_id"
-            done
-          else
-            echo "✅ No stuck workflows found."
-          fi
+      - name: Watchdog OK
+        run: echo "✅ CI Watchdog passed"
