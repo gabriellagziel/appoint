@@ -13,7 +13,10 @@ class VirtualUrlStep extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TextField(controller: urlCtrl, decoration: const InputDecoration(labelText: 'Virtual meeting URL (Meet/Zoom)')),
+        TextField(
+            controller: urlCtrl,
+            decoration: const InputDecoration(
+                labelText: 'Virtual meeting URL (Meet/Zoom)')),
         const SizedBox(height: 8),
         ElevatedButton(
           onPressed: () => ctrl.setVirtualUrl(urlCtrl.text),
@@ -23,5 +26,3 @@ class VirtualUrlStep extends ConsumerWidget {
     );
   }
 }
-
-

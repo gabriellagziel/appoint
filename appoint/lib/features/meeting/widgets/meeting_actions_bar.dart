@@ -16,25 +16,29 @@ class MeetingActionsBar extends ConsumerWidget {
         padding: const EdgeInsets.all(12),
         child: Wrap(spacing: 8, children: [
           ElevatedButton(
-              onPressed: userId == null ? null
+              onPressed: userId == null
+                  ? null
                   : () => ref
                       .read(meetingControllerProvider(meetingId).notifier)
                       .rsvp(userId, 'accepted'),
               child: const Text('Accept')),
           OutlinedButton(
-              onPressed: userId == null ? null
+              onPressed: userId == null
+                  ? null
                   : () => ref
                       .read(meetingControllerProvider(meetingId).notifier)
                       .rsvp(userId, 'declined'),
               child: const Text('Decline')),
           TextButton(
-              onPressed: userId == null ? null
+              onPressed: userId == null
+                  ? null
                   : () => ref
                       .read(meetingControllerProvider(meetingId).notifier)
                       .markArrived(userId, true),
               child: const Text("I've Arrived")),
           TextButton(
-            onPressed: userId == null ? null
+            onPressed: userId == null
+                ? null
                 : () async {
                     final reason = await showDialog<String>(
                         context: context,
@@ -70,6 +74,4 @@ class MeetingActionsBar extends ConsumerWidget {
       ),
     );
   }
-
-
 }

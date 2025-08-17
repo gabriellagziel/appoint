@@ -1,8 +1,10 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export default function Document() {
+export default function Document(props) {
+  // Allow per-request locale via __NEXT_DATA__.props.pageProps.locale if provided by getServerSideProps
+  const locale = props?.__NEXT_DATA__?.props?.pageProps?.locale || 'en'
   return (
-    <Html lang="en">
+    <Html lang={locale} data-theme="light">
       <Head />
       <body>
         <Main />
@@ -10,4 +12,4 @@ export default function Document() {
       </body>
     </Html>
   )
-} 
+}

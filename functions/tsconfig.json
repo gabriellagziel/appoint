@@ -1,22 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2020",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "lib": ["esnext"],
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "lib",
+    "rootDir": "src",
     "strict": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "dist",
+    "noEmitOnError": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
+    "types": ["node"]
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/ambassadors.ts"]
 }

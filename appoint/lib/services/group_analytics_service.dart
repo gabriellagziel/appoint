@@ -27,13 +27,17 @@ class GroupAnalyticsService {
       },
       'stats': stats,
       'membership': {
-        'totalJoins': membershipHistory.where((h) => h['action'] == 'joined').length,
-        'totalLeaves': membershipHistory.where((h) => h['action'] == 'left').length,
+        'totalJoins':
+            membershipHistory.where((h) => h['action'] == 'joined').length,
+        'totalLeaves':
+            membershipHistory.where((h) => h['action'] == 'left').length,
         'recentActivity': membershipHistory.take(10).toList(),
       },
       'invites': {
-        'totalCreated': inviteHistory.where((h) => h['action'] == 'created').length,
-        'totalCancelled': inviteHistory.where((h) => h['action'] == 'cancelled').length,
+        'totalCreated':
+            inviteHistory.where((h) => h['action'] == 'created').length,
+        'totalCancelled':
+            inviteHistory.where((h) => h['action'] == 'cancelled').length,
         'recentActivity': inviteHistory.take(10).toList(),
       },
     };
@@ -50,13 +54,15 @@ class GroupAnalyticsService {
       'adminGroups': adminGroups.length,
       'memberGroups': userGroups.length - adminGroups.length,
       'recentActivity': membershipHistory.take(10).toList(),
-      'groups': userGroups.map((group) => {
-        'id': group.id,
-        'name': group.name,
-        'isAdmin': group.admins.contains(userId),
-        'memberCount': group.memberCount,
-        'createdAt': group.createdAt,
-      }).toList(),
+      'groups': userGroups
+          .map((group) => {
+                'id': group.id,
+                'name': group.name,
+                'isAdmin': group.admins.contains(userId),
+                'memberCount': group.memberCount,
+                'createdAt': group.createdAt,
+              })
+          .toList(),
     };
   }
 
@@ -64,12 +70,15 @@ class GroupAnalyticsService {
   Future<Map<String, dynamic>> getSystemAnalytics() async {
     final groupsQuery = await _firestore.collection('user_groups').get();
     final invitesQuery = await _firestore.collection('group_invites').get();
-    final membershipQuery = await _firestore.collection('group_membership_history').get();
+    final membershipQuery =
+        await _firestore.collection('group_membership_history').get();
 
     final totalGroups = groupsQuery.docs.length;
-    final activeGroups = groupsQuery.docs.where((doc) => doc.data()['isActive'] == true).length;
+    final activeGroups =
+        groupsQuery.docs.where((doc) => doc.data()['isActive'] == true).length;
     final totalInvites = invitesQuery.docs.length;
-    final activeInvites = invitesQuery.docs.where((doc) => doc.data()['isActive'] == true).length;
+    final activeInvites =
+        invitesQuery.docs.where((doc) => doc.data()['isActive'] == true).length;
     final totalMembershipActions = membershipQuery.docs.length;
 
     return {
@@ -85,29 +94,38 @@ class GroupAnalyticsService {
       },
       'membership': {
         'totalActions': totalMembershipActions,
-        'joins': membershipQuery.docs.where((doc) => doc.data()['action'] == 'joined').length,
-        'leaves': membershipQuery.docs.where((doc) => doc.data()['action'] == 'left').length,
+        'joins': membershipQuery.docs
+            .where((doc) => doc.data()['action'] == 'joined')
+            .length,
+        'leaves': membershipQuery.docs
+            .where((doc) => doc.data()['action'] == 'left')
+            .length,
       },
     };
   }
 
   /// קבלת מגמות פעילות
-  Future<Map<String, dynamic>> getActivityTrends(String groupId, {Duration? period}) async {
+  Future<Map<String, dynamic>> getActivityTrends(String groupId,
+      {Duration? period}) async {
     final endDate = DateTime.now();
-    final startDate = period != null ? endDate.subtract(period) : endDate.subtract(const Duration(days: 30));
+    final startDate = period != null
+        ? endDate.subtract(period)
+        : endDate.subtract(const Duration(days: 30));
 
     final membershipQuery = await _firestore
         .collection('group_membership_history')
         .where('groupId', isEqualTo: groupId)
-        .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(startDate))
+        .where('timestamp',
+            isGreaterThanOrEqualTo: Timestamp.fromDate(startDate))
         .where('timestamp', isLessThanOrEqualTo: Timestamp.fromDate(endDate))
         .get();
 
     final activityByDay = <String, int>{};
-    
+
     for (final doc in membershipQuery.docs) {
       final timestamp = (doc.data()['timestamp'] as Timestamp).toDate();
-      final dayKey = '${timestamp.year}-${timestamp.month.toString().padLeft(2, '0')}-${timestamp.day.toString().padLeft(2, '0')}';
+      final dayKey =
+          '${timestamp.year}-${timestamp.month.toString().padLeft(2, '0')}-${timestamp.day.toString().padLeft(2, '0')}';
       activityByDay[dayKey] = (activityByDay[dayKey] ?? 0) + 1;
     }
 
@@ -122,7 +140,8 @@ class GroupAnalyticsService {
   }
 
   /// קבלת היסטוריית חברות
-  Future<List<Map<String, dynamic>>> _getMembershipHistory(String groupId) async {
+  Future<List<Map<String, dynamic>>> _getMembershipHistory(
+      String groupId) async {
     final query = await _firestore
         .collection('group_membership_history')
         .where('groupId', isEqualTo: groupId)
@@ -164,7 +183,8 @@ class GroupAnalyticsService {
   }
 
   /// קבלת היסטוריית חברות של משתמש
-  Future<List<Map<String, dynamic>>> _getUserMembershipHistory(String userId) async {
+  Future<List<Map<String, dynamic>>> _getUserMembershipHistory(
+      String userId) async {
     final query = await _firestore
         .collection('group_membership_history')
         .where('userId', isEqualTo: userId)

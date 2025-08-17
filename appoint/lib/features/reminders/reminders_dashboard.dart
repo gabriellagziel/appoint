@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'providers.dart';
+import 'services/reminder_service.dart';
+import 'package:intl/intl.dart';
+import '../settings/providers/settings_providers.dart';
+import '../../services/analytics_service.dart';
 
 class RemindersDashboard extends ConsumerWidget {
   const RemindersDashboard({super.key});
@@ -38,6 +42,12 @@ class RemindersDashboard extends ConsumerWidget {
               ),
             );
           }
+          // Fire and forget: dashboard opened
+          // ignore: discarded_futures
+          // For web, just call without awaiting.
+          // We avoid unawaited import; ignore the future explicitly.
+          // ignore: unused_result
+          Analytics.log('reminder_list_opened');
           return ListView.separated(
             itemCount: items.length,
             separatorBuilder: (_, __) => const Divider(height: 1),
@@ -50,23 +60,60 @@ class RemindersDashboard extends ConsumerWidget {
                 if (rawWhen is DateTime) {
                   when = rawWhen;
                 } else if (rawWhen != null && rawWhen.toString().isNotEmpty) {
-                  // Firestore Timestamp has toDate(); guard reflectively
+                  // Firestore Timestamp via dynamic; call toDate if present
                   final dyn = rawWhen;
-                  if (dyn is dynamic && (dyn as dynamic).toDate != null) {
+                  try {
+                    // ignore: avoid_dynamic_calls
                     when = (dyn as dynamic).toDate();
+                  } catch (_) {
+                    when = null;
                   }
                 }
               } catch (_) {
                 when = null;
               }
+              final recurrence = (r['recurrence']?.toString() ?? 'none');
+              final next = ReminderService.nextOccurrence(when, recurrence);
+              final subtitleParts = <String>[];
+              if (when != null) {
+                subtitleParts.add(DateFormat.yMMMd().add_Hm().format(when));
+              }
+              if (recurrence != 'none' && next != null) {
+                subtitleParts.add(
+                    '• Repeats $recurrence — next ${DateFormat.E().add_Hm().format(next)}');
+              }
+              final settingsAsync = ref.watch(userSettingsStreamProvider);
+              final snoozeTooltip = settingsAsync.maybeWhen(
+                data: (s) => 'Snooze ${s.defaultSnoozeMinutes}m',
+                orElse: () => 'Snooze 15m',
+              );
+
               return ListTile(
                 title: Text(r['text'] ?? ''),
-                subtitle: Text(when?.toLocal().toString() ?? 'No time set'),
+                subtitle: Text(subtitleParts.isEmpty
+                    ? 'No time set'
+                    : subtitleParts.join(' ')),
                 trailing: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    if ((r['recurrence']?.toString() ?? 'none') != 'none')
-                      _badge(r['recurrence'].toString()),
+                    if (recurrence != 'none') _badge(recurrence),
+                    PopupMenuButton<int>(
+                      tooltip: 'More',
+                      onSelected: (m) =>
+                          form.snooze(r, by: Duration(minutes: m)),
+                      itemBuilder: (_) => const [
+                        PopupMenuItem(value: 5, child: Text('Snooze 5m')),
+                        PopupMenuItem(value: 10, child: Text('Snooze 10m')),
+                        PopupMenuItem(value: 15, child: Text('Snooze 15m')),
+                        PopupMenuItem(value: 30, child: Text('Snooze 30m')),
+                      ],
+                      icon: const Icon(Icons.more_vert),
+                    ),
+                    IconButton(
+                      tooltip: snoozeTooltip,
+                      onPressed: () => form.snooze(r),
+                      icon: const Icon(Icons.snooze),
+                    ),
                     const SizedBox(width: 8),
                     Checkbox(
                       value: done,

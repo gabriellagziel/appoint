@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/group_audit_event.dart';
+import 'package:appoint/models/group_role.dart';
 import 'package:appoint/features/group_admin/providers/group_admin_providers.dart';
 import 'package:appoint/features/auth/providers/auth_provider.dart';
 import 'package:appoint/features/group_admin/ui/widgets/audit_event_tile.dart';
@@ -168,7 +169,7 @@ class _GroupAuditTabState extends ConsumerState<GroupAuditTab> {
         color: Theme.of(context).cardColor,
         border: Border(
           bottom: BorderSide(
-            color: Colors.grey.withOpacity(0.2),
+            color: Colors.grey.withValues(alpha: 0.2),
             width: 1,
           ),
         ),

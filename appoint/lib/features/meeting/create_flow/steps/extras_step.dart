@@ -14,5 +14,3 @@ class ExtrasStep extends StatelessWidget {
     );
   }
 }
-
-

@@ -10,6 +10,7 @@ class GroupPolicy {
   final Duration voteDuration;
   final DateTime? lastUpdated;
   final String? updatedBy;
+  final int version;
 
   const GroupPolicy({
     this.membersCanInvite = true,
@@ -21,6 +22,7 @@ class GroupPolicy {
     this.voteDuration = const Duration(hours: 48),
     this.lastUpdated,
     this.updatedBy,
+    this.version = 1,
   });
 
   factory GroupPolicy.fromMap(Map<String, dynamic> data) {
@@ -36,6 +38,7 @@ class GroupPolicy {
           ? (data['lastUpdated'] as Timestamp).toDate()
           : null,
       updatedBy: data['updatedBy'],
+      version: data['version'] is int ? data['version'] as int : 1,
     );
   }
 
@@ -51,6 +54,7 @@ class GroupPolicy {
       'lastUpdated':
           lastUpdated != null ? Timestamp.fromDate(lastUpdated!) : null,
       'updatedBy': updatedBy,
+      'version': version,
     };
   }
 
@@ -64,6 +68,7 @@ class GroupPolicy {
     Duration? voteDuration,
     DateTime? lastUpdated,
     String? updatedBy,
+    int? version,
   }) {
     return GroupPolicy(
       membersCanInvite: membersCanInvite ?? this.membersCanInvite,
@@ -75,6 +80,7 @@ class GroupPolicy {
       voteDuration: voteDuration ?? this.voteDuration,
       lastUpdated: lastUpdated ?? this.lastUpdated,
       updatedBy: updatedBy ?? this.updatedBy,
+      version: version ?? this.version,
     );
   }
 

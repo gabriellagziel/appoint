@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'dart:convert';
 import 'dart:math';
 import 'package:crypto/crypto.dart';
@@ -211,8 +212,11 @@ class GroupShareSecurityService {
     final snapshot = await query.get();
     if (snapshot.docs.isEmpty) return null;
 
-    final timestamp = snapshot.docs.first.data()['timestamp'] as Timestamp;
-    return timestamp.toDate();
+    final Map<String, dynamic> data = Map<String, dynamic>.from(
+        snapshot.docs.first.data() as Map<String, dynamic>);
+    final ts = data['timestamp'];
+    if (ts is Timestamp) return ts.toDate();
+    return null;
   }
 
   /// Log a click event
@@ -320,18 +324,22 @@ class GroupShareSecurityService {
           .where('blocked', isEqualTo: true)
           .get();
 
+      final uniqueUsers = clicksSnapshot.docs
+          .map((doc) => doc.data()['userId'])
+          .where((userId) => userId != null)
+          .toSet()
+          .length;
+      final uniqueIps = clicksSnapshot.docs
+          .map((doc) => doc.data()['ipHash'])
+          .where((ip) => ip != null)
+          .toSet()
+          .length;
+
       return {
         'totalClicks': clicksSnapshot.docs.length,
         'blockedClicks': blockedClicksSnapshot.docs.length,
-        'uniqueUsers': clicksSnapshot.docs
-            .map((doc) => doc.data()['userId'])
-            .where((userId) => userId != null)
-            .toSet()
-            .length,
-        'uniqueIPs': clicksSnapshot.docs
-            .map((doc) => doc.data()['ipHash'])
-            .toSet()
-            .length,
+        'uniqueUsers': uniqueUsers,
+        'uniqueIPs': uniqueIps,
       };
     } catch (e) {
       print('Error getting security stats: $e');
@@ -345,5 +353,3 @@ final groupShareSecurityServiceProvider =
     Provider<GroupShareSecurityService>((ref) {
   return GroupShareSecurityService();
 });
-
-

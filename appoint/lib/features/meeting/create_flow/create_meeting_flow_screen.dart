@@ -57,20 +57,12 @@ class CreateMeetingFlowScreen extends ConsumerWidget {
                   OutlinedButton(
                       onPressed: notifier.back, child: const Text('Back')),
                 const Spacer(),
-                ElevatedButton(
-                  onPressed: () {
-                    if (state.currentIndex == steps.length - 1) {
-                      if (notifier.canSubmit) {
-                        Navigator.of(context).pop(true);
-                      }
-                    } else {
-                      notifier.next();
-                    }
-                  },
-                  child: Text(state.currentIndex == steps.length - 1
-                      ? 'Create'
-                      : 'Next'),
-                ),
+                if (state.currentIndex < steps.length - 1)
+                  ElevatedButton(
+                    onPressed: notifier.next,
+                    child: const Text('Next'),
+                  ),
+                // When on the last step (review), the step itself renders the Create button
               ],
             ),
           ],

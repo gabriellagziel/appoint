@@ -30,6 +30,11 @@ ingress:
     match:
       path:
         prefix: /docs
+  - component:
+      name: personal
+    match:
+      path:
+        prefix: /personal
 name: app-oint-web-platform
 region: nyc
 services:
@@ -165,3 +170,10 @@ static_sites:
   name: docs-site
   output_dir: .
   source_dir: docs
+- build_command: flutter build web --release --no-tree-shake-icons
+  github:
+    branch: main
+    repo: gabriellagziel/appoint
+  name: personal
+  output_dir: build/web
+  source_dir: appoint

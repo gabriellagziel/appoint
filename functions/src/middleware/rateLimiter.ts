@@ -45,3 +45,28 @@ export const rateLimitMiddleware = (
     };
 };
 
+// Rate limiting wrapper function for async operations
+export const withRateLimit = async <T>(
+    key: string,
+    operation: () => Promise<T>,
+    windowMs: number = 15 * 60 * 1000, // 15 minutes
+    maxRequests: number = 100
+): Promise<T> => {
+    const now = Date.now();
+
+    if (!rateLimitStore[key] || now > rateLimitStore[key].resetTime) {
+        rateLimitStore[key] = {
+            count: 1,
+            resetTime: now + windowMs
+        };
+    } else {
+        rateLimitStore[key].count++;
+    }
+
+    if (rateLimitStore[key].count > maxRequests) {
+        throw new Error('Rate limit exceeded. Please try again later.');
+    }
+
+    return await operation();
+};
+

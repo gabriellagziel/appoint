@@ -1,9 +1,9 @@
 import { Providers } from "@/components/Providers"
-import "../../sentry.client.config"
 import StatusBadge from "@/components/StatusBadge"
 import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import "@app-oint/design-system/dist/css/tokens.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
+  maximumScale: 5,
+  userScalable: true,
   themeColor: "#3b82f6",
 }
 

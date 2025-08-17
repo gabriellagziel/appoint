@@ -1,0 +1,126 @@
+# Page snapshot
+
+```yaml
+- main:
+  - link "Skip to content":
+    - /url: "#main"
+  - link "Home":
+    - /url: /
+    - img "App-Oint"
+    - text: App-Oint
+  - navigation "Primary":
+    - link "User":
+      - /url: /user/
+    - link "Business":
+      - /url: https://business.app-oint.com
+    - link "Enterprise":
+      - /url: https://enterprise.app-oint.com
+    - link "Pricing":
+      - /url: /#pricing
+    - link "Docs":
+      - /url: https://enterprise.app-oint.com/docs
+    - link "Switch Language":
+      - /url: /?lang=en
+    - link "Sign in":
+      - /url: https://app.app-oint.com
+  - heading "Your day, perfectly organized." [level=1]
+  - paragraph: "App-Oint is a conversational time organizer: the fastest appointment fixer, a genuinely smart reminders system, and live connections to businesses and enterprise systems."
+  - link "Open the App":
+    - /url: https://app.app-oint.com
+  - link "For Business":
+    - /url: https://business.app-oint.com
+  - link "For Enterprise":
+    - /url: https://enterprise.app-oint.com
+  - list:
+    - listitem: "• PWA: Add to Home Screen"
+    - listitem: • Google Sign-In
+    - listitem: • Privacy-first (in-app notifications, no SMS)
+  - heading "Appointment Fixer" [level=3]
+  - paragraph: Create one-on-one, group, virtual, business, or Playtime meetings in a natural conversational flow.
+  - heading "Smart Reminders" [level=3]
+  - paragraph: Set reminders for yourself or family, recurring patterns, and checklists with in-app notifications.
+  - heading "Connect Everywhere" [level=3]
+  - paragraph: Two-way scheduling with businesses and a clean Enterprise API for large systems.
+  - heading "How it works" [level=2]
+  - text: Step 1
+  - heading "Pick what you need" [level=3]
+  - paragraph: Meeting, Playtime, or Reminder — personal, group, virtual.
+  - text: Step 2
+  - heading "Invite & set time" [level=3]
+  - paragraph: Invite people or groups, choose the time, and you’re done.
+  - text: Step 3
+  - heading "Live meeting page" [level=3]
+  - paragraph: Chat, “I’m running late”, “I’ve arrived”, navigation or join link.
+  - heading "User App (PWA)" [level=2]
+  - paragraph: Add App-Oint to your home screen for a full-screen, app-like experience. No stores, no friction. Free (with ads) or Premium (€4) with no ads.
+  - link "Open the App":
+    - /url: https://app.app-oint.com
+  - link "How to Add to Home Screen":
+    - /url: /how-to-install-pwa/
+  - heading "Business Studio" [level=2]
+  - paragraph: Turn user requests into confirmed visits. Live calendar, two-way confirmation, branding, and lightweight analytics.
+  - link "Explore Business Studio":
+    - /url: https://business.app-oint.com
+  - heading "Enterprise API" [level=2]
+  - paragraph: "Schedule at scale via API. Keys, usage dashboards, and monthly invoicing. Typical pricing: $0.99 per meeting with location, $0.49 without."
+  - link "See the API Portal":
+    - /url: https://enterprise.app-oint.com
+  - link "Read the Docs":
+    - /url: https://enterprise.app-oint.com/docs
+  - heading "Playtime" [level=3]
+  - paragraph: Physical or virtual. Invite friends, set the time, bring the fun. Parents can approve child sessions.
+  - heading "Family & Reminders" [level=3]
+  - paragraph: Share reminders across family members with in-app notifications. No SMS — privacy by default.
+  - heading "Pricing Snapshot" [level=2]
+  - heading "User" [level=3]
+  - paragraph: Free (ads) or Premium €4/month (no ads, PWA prompts).
+  - heading "Business" [level=3]
+  - paragraph: Plans inside Business Studio. Live calendar, two-way confirms.
+  - heading "Enterprise" [level=3]
+  - paragraph: $0.99 (with location) / $0.49 (without). Monthly billing via bank transfer.
+  - heading "FAQ" [level=2]
+  - heading "Is this a native app?" [level=3]
+  - paragraph: It’s a PWA. Add to Home Screen for a full-screen app experience.
+  - heading "How do ads/premium work?" [level=3]
+  - paragraph: Free shows ads before confirm; Premium removes ads. Kids are ad-free.
+  - heading "Do you send SMS?" [level=3]
+  - paragraph: No. All notifications are in-app for privacy and control.
+  - heading "How do I connect to a business?" [level=3]
+  - paragraph: Book the business directly; they confirm in their Business Studio.
+  - text: App-Oint
+  - paragraph: The conversational time organizer — appointments, reminders, and connections.
+  - text: Product
+  - list:
+    - listitem:
+      - link "User App":
+        - /url: https://app.app-oint.com
+    - listitem:
+      - link "Business Studio":
+        - /url: https://business.app-oint.com
+    - listitem:
+      - link "Enterprise Portal":
+        - /url: https://enterprise.app-oint.com
+  - text: Company
+  - list:
+    - listitem:
+      - link "Privacy":
+        - /url: /privacy/
+    - listitem:
+      - link "Terms":
+        - /url: /terms/
+    - listitem:
+      - link "Status":
+        - /url: /status/
+  - text: Developers
+  - list:
+    - listitem:
+      - link "API Docs":
+        - /url: https://enterprise.app-oint.com/docs
+    - listitem:
+      - link "Changelog":
+        - /url: /changelog/
+    - listitem:
+      - link "Contact":
+        - /url: /contact/
+  - text: © 2025 App-Oint. All rights reserved.
+```

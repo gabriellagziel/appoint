@@ -6,5 +6,3 @@ final createMeetingFlowControllerProvider =
     StateNotifierProvider<CreateMeetingFlowController, CreateMeetingState>(
   (ref) => CreateMeetingFlowController(),
 );
-
-

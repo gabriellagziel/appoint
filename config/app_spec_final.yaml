@@ -1,5 +1,5 @@
 name: app-oint
-region: fra
+region: fra1
 services:
   # === Marketing App ===
   - name: marketing

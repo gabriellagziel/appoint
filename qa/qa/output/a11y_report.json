@@ -1,0 +1,449 @@
+[
+  {
+    "name": "marketing",
+    "url": "http://localhost:3000/",
+    "violations": [
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensures the order of headings is semantically correct",
+        "help": "Heading levels should only increase by one",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/heading-order?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order invalid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<h3 class=\"font-semibold\">Appointment Fixer</h3>",
+            "target": [
+              ".hover\\:shadow-sm.p-6.rounded-2xl:nth-child(1) > h3"
+            ],
+            "failureSummary": "Fix any of the following:\n  Heading order invalid"
+          }
+        ]
+      },
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ],
+        "description": "Ensure image alternative is not repeated as text",
+        "help": "Alternative text of images should not be repeated as text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/image-redundant-alt?application=axeAPI",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img alt=\"App-Oint\" fetchpriority=\"high\" width=\"32\" height=\"32\" decoding=\"async\" data-nimg=\"1\" class=\"rounded\" style=\"color:transparent\" src=\"/logo.jpeg\">",
+            "target": [
+              "img[alt=\"App-Oint\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "business",
+    "url": "http://localhost:3002/",
+    "violations": [
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensures the order of headings is semantically correct",
+        "help": "Heading levels should only increase by one",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/heading-order?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order invalid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<h3 class=\"text-lg font-semibold text-gray-900\">Appointments</h3>",
+            "target": [
+              ".rounded-xl.border-gray-200.p-6:nth-child(1) > h3"
+            ],
+            "failureSummary": "Fix any of the following:\n  Heading order invalid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "admin",
+    "url": "http://localhost:3003/",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#16a34a",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.29,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"bg-white rounded-xl p-8 shadow-lg border border-gray-200/50\">",
+                    "target": [
+                      ".space-y-8 > .p-8.border-gray-200\\/50.shadow-lg:nth-child(1)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.29 (foreground color: #16a34a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<span class=\"text-lg text-green-600 font-semibold\">System Online</span>",
+            "target": [
+              ".gap-3 > span"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.29 (foreground color: #16a34a, background color: #ffffff, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#16a34a",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.29,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-200 hover:scale-[1.02] border border-gray-200/50\">",
+                    "target": [
+                      ".hover\\:shadow-xl.hover\\:scale-\\[1\\.02\\].p-8:nth-child(1)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.29 (foreground color: #16a34a, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-sm text-green-600 font-medium\">+12.3% from last month</p>",
+            "target": [
+              ".hover\\:shadow-xl.hover\\:scale-\\[1\\.02\\].p-8:nth-child(1) > .gap-2.items-center.flex > .text-green-600"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.29 (foreground color: #16a34a, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#16a34a",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.29,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-200 hover:scale-[1.02] border border-gray-200/50\">",
+                    "target": [
+                      ".hover\\:shadow-xl.hover\\:scale-\\[1\\.02\\].p-8:nth-child(2)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.29 (foreground color: #16a34a, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-sm text-green-600 font-medium\">+8.7% from last month</p>",
+            "target": [
+              ".hover\\:shadow-xl.hover\\:scale-\\[1\\.02\\].p-8:nth-child(2) > .gap-2.items-center.flex > .text-green-600"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.29 (foreground color: #16a34a, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#16a34a",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.29,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-200 hover:scale-[1.02] border border-gray-200/50\">",
+                    "target": [
+                      ".hover\\:shadow-xl.hover\\:scale-\\[1\\.02\\].p-8:nth-child(3)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.29 (foreground color: #16a34a, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-sm text-green-600 font-medium\">Last 7 days</p>",
+            "target": [
+              ".hover\\:shadow-xl.hover\\:scale-\\[1\\.02\\].p-8:nth-child(3) > .gap-2.items-center.flex > .text-green-600"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.29 (foreground color: #16a34a, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensures the order of headings is semantically correct",
+        "help": "Heading levels should only increase by one",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/heading-order?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order invalid"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<h3 class=\"text-lg font-semibold text-gray-600\">Total Users</h3>",
+            "target": [
+              ".hover\\:shadow-xl.hover\\:scale-\\[1\\.02\\].p-8:nth-child(1) > .mb-6.justify-between.items-center > .text-lg"
+            ],
+            "failureSummary": "Fix any of the following:\n  Heading order invalid"
+          }
+        ]
+      },
+      {
+        "id": "meta-viewport",
+        "impact": "critical",
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "wcag2aa",
+          "wcag144",
+          "EN-301-549",
+          "EN-9.1.4.4",
+          "ACT"
+        ],
+        "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+        "help": "Zooming and scaling must not be disabled",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/meta-viewport?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "meta-viewport",
+                "data": "user-scalable=no",
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "user-scalable=no on <meta> tag disables zooming on mobile devices"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">",
+            "target": [
+              "meta[name=\"viewport\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  user-scalable=no on <meta> tag disables zooming on mobile devices"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "personal",
+    "url": "http://localhost:3020/#/home",
+    "violations": [
+      {
+        "id": "html-has-lang",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311",
+          "TTv5",
+          "TT11.a",
+          "EN-301-549",
+          "EN-9.3.1.1",
+          "ACT"
+        ],
+        "description": "Ensures every HTML document has a lang attribute",
+        "help": "<html> element must have a lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/html-has-lang?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "has-lang",
+                "data": {
+                  "messageKey": "noLang"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "The <html> element does not have a lang attribute"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<html>",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+          }
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensures the document has a main landmark",
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/landmark-one-main?application=axeAPI",
+        "nodes": [
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "page-has-main",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Document does not have a main landmark"
+              }
+            ],
+            "none": [],
+            "impact": "moderate",
+            "html": "<html>",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+          }
+        ]
+      },
+      {
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.9/page-has-heading-one?application=axeAPI",
+        "nodes": [
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "page-has-heading-one",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Page must have a level-one heading"
+              }
+            ],
+            "none": [],
+            "impact": "moderate",
+            "html": "<html>",
+            "target": [
+              "html"
+            ],
+            "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+          }
+        ]
+      }
+    ]
+  }
+]

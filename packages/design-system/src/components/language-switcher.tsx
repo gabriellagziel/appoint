@@ -42,9 +42,8 @@ const LanguageSwitcher = React.forwardRef<HTMLDivElement, LanguageSwitcherProps>
       <div ref={ref} className={cn("relative", className)} {...props}>
         <Button
           variant="ghost"
-          size="sm"
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 h-8 px-3"
         >
           <Globe className="h-4 w-4" />
           <span className="hidden sm:inline">{currentLang.name}</span>

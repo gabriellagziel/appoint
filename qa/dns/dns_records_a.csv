@@ -1,0 +1,10 @@
+host,type,value,ttl
+@,A,AAA.BBB.CCC.DDD,300
+www,A,AAA.BBB.CCC.DDD,300
+app,A,AAA.BBB.CCC.DDD,300
+business,A,AAA.BBB.CCC.DDD,300
+enterprise,A,AAA.BBB.CCC.DDD,300
+api,A,AAA.BBB.CCC.DDD,300
+admin,A,AAA.BBB.CCC.DDD,300
+
+

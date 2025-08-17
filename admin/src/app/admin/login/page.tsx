@@ -3,9 +3,10 @@
 import { useAuth } from '@/contexts/AuthContext';
 import { Eye, EyeOff, Lock, Mail } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 import React, { useState } from 'react'; // Added missing import for React
 
-export default function AdminLoginPage() {
+function LoginInner() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -16,8 +17,8 @@ export default function AdminLoginPage() {
     const router = useRouter();
     const searchParams = useSearchParams();
 
-    const callbackUrl = searchParams.get('callbackUrl') || '/admin';
-    const errorParam = searchParams.get('error');
+    const callbackUrl = searchParams?.get('callbackUrl') || '/admin';
+    const errorParam = searchParams?.get('error');
 
     // Show error from URL params
     React.useEffect(() => {
@@ -173,3 +174,11 @@ export default function AdminLoginPage() {
         </div>
     );
 } 
+
+export default function AdminLoginPage() {
+  return (
+    <Suspense fallback={<div />}> 
+      <LoginInner />
+    </Suspense>
+  );
+}

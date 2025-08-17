@@ -17,7 +17,7 @@ class VoteCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isOpen = vote.status == 'open';
+    final isOpen = vote.isOpen;
     final hasVoted =
         currentUserId != null && vote.ballots.containsKey(currentUserId);
     final canVote = isOpen && !hasVoted && onCastBallot != null;
@@ -80,8 +80,9 @@ class VoteCard extends StatelessWidget {
   }
 
   Widget _buildStatusChip(BuildContext context) {
-    final isOpen = vote.status == 'open';
-    final isExpired = vote.closesAt.isBefore(DateTime.now());
+    final isOpen = vote.isOpen;
+    final isExpired = (vote.closesAt ?? DateTime.fromMillisecondsSinceEpoch(0))
+        .isBefore(DateTime.now());
 
     Color color;
     String text;
@@ -100,9 +101,9 @@ class VoteCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
+        color: color.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: color.withOpacity(0.3)),
+        border: Border.all(color: color.withValues(alpha: 0.3)),
       ),
       child: Text(
         text,
@@ -116,9 +117,9 @@ class VoteCard extends StatelessWidget {
   }
 
   Widget _buildProgressSection(BuildContext context) {
-    final totalVotes = vote.yesCount + vote.noCount;
-    final yesPercentage = totalVotes > 0 ? (vote.yesCount / totalVotes) : 0.0;
-    final noPercentage = totalVotes > 0 ? (vote.noCount / totalVotes) : 0.0;
+    final totalVotes = vote.totalVotes;
+    final yesPercentage = totalVotes > 0 ? (vote.yesVotes / totalVotes) : 0.0;
+    final noPercentage = totalVotes > 0 ? (vote.noVotes / totalVotes) : 0.0;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -138,7 +139,7 @@ class VoteCard extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                   Text(
-                    vote.yesCount.toString(),
+                    vote.yesVotes.toString(),
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           color: Colors.green,
                           fontWeight: FontWeight.bold,
@@ -155,7 +156,7 @@ class VoteCard extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                   Text(
-                    vote.noCount.toString(),
+                    vote.noVotes.toString(),
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           color: Colors.red,
                           fontWeight: FontWeight.bold,
@@ -297,9 +298,9 @@ class VoteCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: resultColor.withOpacity(0.1),
+        color: resultColor.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: resultColor.withOpacity(0.3)),
+        border: Border.all(color: resultColor.withValues(alpha: 0.3)),
       ),
       child: Row(
         children: [
@@ -309,7 +310,7 @@ class VoteCard extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           Text(
-            'Result: $result',
+            'Result: ${vote.hasPassed ? 'Passed' : 'Failed'}',
             style: TextStyle(
               color: resultColor,
               fontWeight: FontWeight.bold,

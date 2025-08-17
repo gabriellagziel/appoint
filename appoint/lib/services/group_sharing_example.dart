@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'group_sharing_service.dart';
 import '../models/user_group.dart';
@@ -149,5 +150,3 @@ class GroupSharingWidget extends ConsumerWidget {
     );
   }
 }
-
-

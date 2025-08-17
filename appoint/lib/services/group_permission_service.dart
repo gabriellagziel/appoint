@@ -15,7 +15,8 @@ class GroupPermissionService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   /// בדיקה אם למשתמש יש הרשאה מסוימת בקבוצה
-  Future<bool> hasPermission(String groupId, String userId, GroupPermission permission) async {
+  Future<bool> hasPermission(
+      String groupId, String userId, GroupPermission permission) async {
     final group = await _groupSharingService.getGroupById(groupId);
     if (group == null) return false;
 
@@ -54,15 +55,16 @@ class GroupPermissionService {
   }
 
   /// קבלת כל ההרשאות של משתמש בקבוצה
-  Future<List<GroupPermission>> getUserPermissions(String groupId, String userId) async {
+  Future<List<GroupPermission>> getUserPermissions(
+      String groupId, String userId) async {
     final permissions = <GroupPermission>[];
-    
+
     for (final permission in GroupPermission.values) {
       if (await hasPermission(groupId, userId, permission)) {
         permissions.add(permission);
       }
     }
-    
+
     return permissions;
   }
 
@@ -92,7 +94,8 @@ class GroupPermissionService {
   }
 
   /// קבלת רשימת משתמשים עם הרשאות מסוימות
-  Future<List<String>> getUsersWithPermission(String groupId, GroupPermission permission) async {
+  Future<List<String>> getUsersWithPermission(
+      String groupId, GroupPermission permission) async {
     final group = await _groupSharingService.getGroupById(groupId);
     if (group == null) return [];
 
@@ -113,9 +116,10 @@ class GroupPermissionService {
     if (group == null) return {};
 
     final stats = <String, dynamic>{};
-    
+
     for (final permission in GroupPermission.values) {
-      final usersWithPermission = await getUsersWithPermission(groupId, permission);
+      final usersWithPermission =
+          await getUsersWithPermission(groupId, permission);
       stats[permission.name] = usersWithPermission.length;
     }
 
@@ -127,7 +131,8 @@ class GroupPermissionService {
   }
 
   /// קבלת היסטוריית הרשאות (אם נדרש בעתיד)
-  Future<List<Map<String, dynamic>>> getPermissionHistory(String groupId) async {
+  Future<List<Map<String, dynamic>>> getPermissionHistory(
+      String groupId) async {
     final query = await _firestore
         .collection('group_permission_history')
         .where('groupId', isEqualTo: groupId)
@@ -167,4 +172,3 @@ class GroupPermissionService {
     });
   }
 }
-

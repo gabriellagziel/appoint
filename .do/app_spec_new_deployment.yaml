@@ -1,0 +1,92 @@
+name: app-oint-fixed
+region: fra
+services:
+  # Marketing (Next.js)
+  - name: marketing
+    github:
+      repo: gabriellagziel/appoint
+      branch: main
+      deploy_on_push: true
+    source_dir: marketing
+    run_command: "npm run start"
+    build_command: "npm install && npm run build"
+    http_port: 3000
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /api/health
+
+  # Business (Next.js)
+  - name: business
+    github:
+      repo: gabriellagziel/appoint
+      branch: main
+      deploy_on_push: true
+    source_dir: business
+    run_command: "npm run start"
+    build_command: "npm install && npm run build"
+    http_port: 3002
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /api/health
+
+  # Admin (Next.js)
+  - name: admin
+    github:
+      repo: gabriellagziel/appoint
+      branch: main
+      deploy_on_push: true
+    source_dir: admin
+    run_command: "npm run start"
+    build_command: "npm install && npm run build"
+    http_port: 3003
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /api/health
+
+  # Enterprise (Next.js)
+  - name: enterprise
+    github:
+      repo: gabriellagziel/appoint
+      branch: main
+      deploy_on_push: true
+    source_dir: enterprise-app
+    run_command: "npm run start"
+    build_command: "npm install && npm run build"
+    http_port: 3001
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /api/health
+
+  # Personal (Flutter Web / PWA)
+  - name: personal
+    github:
+      repo: gabriellagziel/appoint
+      branch: main
+      deploy_on_push: true
+    source_dir: appoint
+    run_command: "python3 -m http.server 8080 --directory build/web"
+    build_command: "flutter pub get && flutter build web --release"
+    http_port: 8080
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /health.txt
+
+  # Functions API (Node.js server)
+  - name: functions
+    github:
+      repo: gabriellagziel/appoint
+      branch: main
+      deploy_on_push: true
+    source_dir: functions
+    run_command: "npx tsx src/server.ts"
+    build_command: "npm install"
+    http_port: 8088
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    health_check:
+      http_path: /api/status

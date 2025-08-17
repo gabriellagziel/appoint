@@ -46,14 +46,16 @@ class _MeetingChatState extends ConsumerState<MeetingChat> {
                             const InputDecoration(hintText: 'Message...'))),
                 IconButton(
                   icon: const Icon(Icons.send),
-                  onPressed: (userId == null || _c.text.trim().isEmpty) ? null : () {
-                    final t = _c.text.trim();
-                    ref
-                        .read(meetingControllerProvider(widget.meetingId)
-                            .notifier)
-                        .sendMessage(userId, t);
-                    _c.clear();
-                  },
+                  onPressed: (userId == null || _c.text.trim().isEmpty)
+                      ? null
+                      : () {
+                          final t = _c.text.trim();
+                          ref
+                              .read(meetingControllerProvider(widget.meetingId)
+                                  .notifier)
+                              .sendMessage(userId, t);
+                          _c.clear();
+                        },
                 ),
               ],
             ),

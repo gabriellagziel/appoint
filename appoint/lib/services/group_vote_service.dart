@@ -55,14 +55,15 @@ class GroupVoteService {
   }
 
   /// Open a new vote
-  Future<void> openVote(
-      String groupId, String action, String targetUserId) async {
+  Future<void> openVote(String groupId, String action, String targetUserId,
+      {String? createdBy}) async {
     try {
       final vote = GroupVote(
         id: '', // Will be set by Firestore
         groupId: groupId,
         action: action,
         targetUserId: targetUserId,
+        createdBy: createdBy ?? 'system',
         status: 'open',
         createdAt: DateTime.now(),
         closesAt: DateTime.now().add(const Duration(days: 3)),

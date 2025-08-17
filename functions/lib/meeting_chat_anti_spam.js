@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.trackChatAnalytics = exports.cleanupRateLimits = exports.validateChatMessage = void 0;
-const functions = require("firebase-functions");
-const admin = require("firebase-admin");
+import * as functions from 'firebase-functions';
+import * as admin from 'firebase-admin';
 // Initialize Firebase Admin
 if (!admin.apps.length) {
     admin.initializeApp();
@@ -17,7 +14,7 @@ const RATE_LIMIT = {
 const PROFANITY_WORDS = [
     'spam', 'test', 'demo', // Add more as needed
 ];
-exports.validateChatMessage = functions.firestore
+export const validateChatMessage = functions.firestore
     .document('meetings/{meetingId}/chat/{messageId}')
     .onCreate(async (snap, context) => {
     const message = snap.data();
@@ -88,7 +85,7 @@ exports.validateChatMessage = functions.firestore
     }
 });
 // Cleanup old rate limit records (runs every hour)
-exports.cleanupRateLimits = functions.pubsub
+export const cleanupRateLimits = functions.pubsub
     .schedule('every 1 hours')
     .onRun(async (context) => {
     const oneHourAgo = admin.firestore.Timestamp.fromMillis(Date.now() - 60 * 60 * 1000);
@@ -104,7 +101,7 @@ exports.cleanupRateLimits = functions.pubsub
     console.log(`Cleaned up ${oldRecords.size} old rate limit records`);
 });
 // Analytics function for tracking chat activity
-exports.trackChatAnalytics = functions.firestore
+export const trackChatAnalytics = functions.firestore
     .document('meetings/{meetingId}/chat/{messageId}')
     .onCreate(async (snap, context) => {
     const message = snap.data();

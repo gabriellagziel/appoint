@@ -16,7 +16,7 @@ class GroupPolicyService {
 
       if (!policyDoc.exists) {
         // Return default policy if none exists
-        return GroupPolicy.defaultPolicy();
+        return const GroupPolicy();
       }
 
       return GroupPolicy.fromMap(policyDoc.data()!);

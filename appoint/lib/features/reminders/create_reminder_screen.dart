@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'providers.dart';
+import '../../services/analytics_service.dart';
 
 class CreateReminderScreen extends ConsumerWidget {
   const CreateReminderScreen({super.key});
@@ -79,16 +80,25 @@ class CreateReminderScreen extends ConsumerWidget {
             SizedBox(
               width: double.infinity,
               child: FilledButton(
-                onPressed: () async {
-                  final ok = await notifier.save();
-                  if (!context.mounted) return;
-                  if (ok) {
-                    Navigator.of(context).pop(true);
-                  } else {
-                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                        content: Text('Failed to save reminder')));
-                  }
-                },
+                onPressed: (textCtrl.text.trim().isEmpty)
+                    ? null
+                    : () async {
+                        final ok = await notifier.save();
+                        if (!context.mounted) return;
+                        if (ok) {
+                          // ignore: unused_result
+                          Analytics.log('reminder_created', {
+                            'recurrence': form.recurrence.name,
+                            'hasTime': form.when != null,
+                            'targets': form.targets.length,
+                          });
+                          Navigator.of(context).pop(true);
+                        } else {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                  content: Text('Failed to save reminder')));
+                        }
+                      },
                 child: const Text('Save'),
               ),
             )

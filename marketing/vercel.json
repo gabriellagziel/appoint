@@ -1,0 +1,11 @@
+{
+  "buildCommand": "pnpm -F marketing build",
+  "installCommand": "pnpm -w install --frozen-lockfile",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "regions": ["fra1"],
+  "env": {
+    "NODE_ENV": "production",
+    "NEXT_TELEMETRY_DISABLED": "1"
+  }
+}

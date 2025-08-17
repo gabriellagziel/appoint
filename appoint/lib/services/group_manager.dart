@@ -33,7 +33,8 @@ class GroupManager {
     final updates = <String, dynamic>{};
     if (imageUrl != null) updates['imageUrl'] = imageUrl;
     if (initialMembers != null) {
-      final allMembers = List<String>.from(group.members)..addAll(initialMembers);
+      final allMembers = List<String>.from(group.members)
+        ..addAll(initialMembers);
       updates['members'] = allMembers;
     }
     if (initialAdmins != null) {
@@ -47,14 +48,14 @@ class GroupManager {
 
     List<String> updatedMembers = group.members;
     List<String> updatedAdmins = group.admins;
-    
+
     if (initialMembers != null) {
       updatedMembers = List<String>.from(group.members)..addAll(initialMembers);
     }
     if (initialAdmins != null) {
       updatedAdmins = List<String>.from(group.admins)..addAll(initialAdmins);
     }
-    
+
     return group.copyWith(
       imageUrl: imageUrl,
       members: updatedMembers,
@@ -65,7 +66,7 @@ class GroupManager {
   /// קבלת כל הקבוצות של משתמש עם פרטים מלאים
   Future<List<UserGroup>> getUserGroupsWithDetails(String userId) async {
     final groups = await _groupSharingService.getUserGroups(userId);
-    
+
     // Add additional details like member count, admin status, etc.
     return groups.map((group) => group).toList();
   }
@@ -95,7 +96,8 @@ class GroupManager {
   }
 
   /// עדכון פרטי קבוצה
-  Future<void> updateGroupDetails(String groupId, {
+  Future<void> updateGroupDetails(
+    String groupId, {
     String? name,
     String? description,
     String? imageUrl,
@@ -114,7 +116,8 @@ class GroupManager {
     if (group == null) throw Exception("Group not found");
 
     final updatedMembers = List<String>.from(group.members)..addAll(userIds);
-    await _groupSharingService.updateGroup(groupId, {'members': updatedMembers});
+    await _groupSharingService
+        .updateGroup(groupId, {'members': updatedMembers});
   }
 
   /// הסרת חברים מהקבוצה
@@ -122,12 +125,16 @@ class GroupManager {
     final group = await _groupSharingService.getGroupById(groupId);
     if (group == null) throw Exception("Group not found");
 
-    final updatedMembers = List<String>.from(group.members)..removeWhere((id) => userIds.contains(id));
-    await _groupSharingService.updateGroup(groupId, {'members': updatedMembers});
+    final updatedMembers = List<String>.from(group.members)
+      ..removeWhere((id) => userIds.contains(id));
+    await _groupSharingService
+        .updateGroup(groupId, {'members': updatedMembers});
   }
 
   /// יצירת הזמנה חדשה לקבוצה קיימת
-  Future<String> createNewGroupInvite(String groupId, String creatorId, {
+  Future<String> createNewGroupInvite(
+    String groupId,
+    String creatorId, {
     int maxUses = -1,
     Duration? expiresIn,
   }) async {
@@ -149,7 +156,10 @@ class GroupManager {
       expiresAt: expiresIn != null ? DateTime.now().add(expiresIn) : null,
     );
 
-    await _firestore.collection('group_invites').doc(inviteCode).set(invite.toMap());
+    await _firestore
+        .collection('group_invites')
+        .doc(inviteCode)
+        .set(invite.toMap());
     return inviteCode;
   }
 
@@ -190,7 +200,8 @@ class GroupManager {
     if (group == null) throw Exception("Group not found");
 
     final invites = await getActiveGroupInvites(groupId);
-    final totalInviteUses = invites.fold<int>(0, (sum, invite) => sum + invite.usedBy.length);
+    final totalInviteUses =
+        invites.fold<int>(0, (sum, invite) => sum + invite.usedBy.length);
 
     return {
       'memberCount': group.memberCount,
@@ -227,7 +238,8 @@ class GroupManager {
   }
 
   /// קבלת פרטי משתמשים
-  Future<List<Map<String, dynamic>>> _getUserDetails(List<String> userIds) async {
+  Future<List<Map<String, dynamic>>> _getUserDetails(
+      List<String> userIds) async {
     if (userIds.isEmpty) return [];
 
     final usersQuery = await _firestore
@@ -249,8 +261,9 @@ class GroupManager {
   /// יצירת קוד קבוצה ייחודי
   String _generateGroupCode() {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    return String.fromCharCodes(
-      Iterable.generate(6, (_) => chars.codeUnitAt(DateTime.now().millisecondsSinceEpoch % chars.length))
-    );
+    return String.fromCharCodes(Iterable.generate(
+        6,
+        (_) => chars
+            .codeUnitAt(DateTime.now().millisecondsSinceEpoch % chars.length)));
   }
 }

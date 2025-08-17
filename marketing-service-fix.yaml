@@ -1,0 +1,31 @@
+name: app-oint-marketing
+region: nyc
+services:
+- build_command: "npm install --legacy-peer-deps && npm run build"
+  environment_slug: node-js
+  github:
+    branch: main
+    repo: gabriellagziel/appoint
+  health_check:
+    failure_threshold: 3
+    http_path: /api/health
+    initial_delay_seconds: 30
+    period_seconds: 30
+    success_threshold: 1
+    timeout_seconds: 10
+  http_port: 3000
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: marketing
+  run_command: "npm run start"
+  source_dir: marketing
+  envs:
+  - key: NODE_ENV
+    scope: RUN_AND_BUILD_TIME
+    value: production
+  - key: PORT
+    scope: RUN_AND_BUILD_TIME
+    value: "3000"
+  - key: NODE_VERSION
+    scope: RUN_AND_BUILD_TIME
+    value: "18"

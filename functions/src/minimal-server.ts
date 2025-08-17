@@ -1,6 +1,6 @@
 import cors from 'cors';
 import express from 'express';
-import { getPublicStatus } from './health/publicStatus';
+import { getPublicStatus } from './health/publicStatus.js';
 
 const app = express();
 const PORT = parseInt(process.env.PORT || '8080', 10);

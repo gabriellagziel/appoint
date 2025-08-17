@@ -17,8 +17,9 @@ class GroupSelectorTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: isSelected ? 4 : 1,
-      color:
-          isSelected ? Theme.of(context).primaryColor.withOpacity(0.1) : null,
+      color: isSelected
+          ? Theme.of(context).primaryColor.withValues(alpha: 0.1)
+          : null,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(12),
@@ -33,7 +34,7 @@ class GroupSelectorTile extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: isSelected
                       ? Theme.of(context).primaryColor
-                      : Theme.of(context).primaryColor.withOpacity(0.1),
+                      : Theme.of(context).primaryColor.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(24),
                 ),
                 child: Icon(
@@ -111,5 +112,3 @@ class GroupSelectorTile extends StatelessWidget {
     );
   }
 }
-
-

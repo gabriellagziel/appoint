@@ -96,7 +96,7 @@ class GroupAdminService {
       if (policy.requireVoteForAdmin && actorRole != GroupRole.owner) {
         return await _voteService.openVote(
           groupId: groupId,
-          action: VoteAction.promoteAdmin,
+          action: 'promote_admin',
           targetUserId: targetUserId,
           createdBy: actorUserId,
           closesAt: DateTime.now().add(policy.voteDuration),
@@ -129,7 +129,7 @@ class GroupAdminService {
       if (policy.requireVoteForAdmin && actorRole != GroupRole.owner) {
         return await _voteService.openVote(
           groupId: groupId,
-          action: VoteAction.demoteAdmin,
+          action: 'demote_admin',
           targetUserId: targetUserId,
           createdBy: actorUserId,
           closesAt: DateTime.now().add(policy.voteDuration),
@@ -159,90 +159,7 @@ class GroupAdminService {
       // Always require vote for ownership transfer
       return await _voteService.openVote(
         groupId: groupId,
-        action: VoteAction.transferOwnership,
-        targetUserId: targetUserId,
-        createdBy: actorUserId,
-        closesAt: DateTime.now()
-            .add(const Duration(hours: 72)), // Longer for ownership
-      );
-    } catch (e) {
-      print('Error transferring ownership: $e');
-      return false;
-    }
-  }
-
-  /// Remove a member from the group
-  Future<bool> removeMember(
-      String groupId, String targetUserId, String actorUserId) async {
-    try {
-      final actorRole = await getUserRole(groupId, actorUserId);
-      final targetRole = await getUserRole(groupId, targetUserId);
-
-      if (actorRole == null || targetRole == null) return false;
-
-      // Check permissions
-      if (!actorRole.canRemoveMembers()) return false;
-      if (targetRole == GroupRole.owner) return false;
-      if (actorRole == GroupRole.admin && targetRole == GroupRole.admin) {
-        return false;
-      }
-
-      return await _removeMemberFromGroup(groupId, targetUserId, actorUserId);
-    } catch (e) {
-      print('Error removing member: $e');
-      return false;
-    }
-  }
-
-  /// Demote an admin to member
-  Future<bool> demoteAdmin(
-      String groupId, String targetUserId, String actorUserId) async {
-    try {
-      final policy = await _policyService.getPolicy(groupId);
-      final actorRole = await getUserRole(groupId, actorUserId);
-      final targetRole = await getUserRole(groupId, targetUserId);
-
-      if (actorRole == null || targetRole == null) return false;
-
-      // Check permissions
-      if (!actorRole.canManageRoles()) return false;
-      if (targetRole == GroupRole.owner) return false;
-
-      // Check if vote is required
-      if (policy.requireVoteForAdmin && actorRole != GroupRole.owner) {
-        return await _voteService.openVote(
-          groupId: groupId,
-          action: VoteAction.demoteAdmin,
-          targetUserId: targetUserId,
-          createdBy: actorUserId,
-          closesAt: DateTime.now().add(policy.voteDuration),
-        );
-      } else {
-        return await _changeRole(
-            groupId, targetUserId, GroupRole.member, actorUserId);
-      }
-    } catch (e) {
-      print('Error demoting admin: $e');
-      return false;
-    }
-  }
-
-  /// Transfer ownership
-  Future<bool> transferOwnership(
-      String groupId, String targetUserId, String actorUserId) async {
-    try {
-      final actorRole = await getUserRole(groupId, actorUserId);
-      final targetRole = await getUserRole(groupId, targetUserId);
-
-      if (actorRole == null || targetRole == null) return false;
-
-      // Only owner can transfer ownership
-      if (actorRole != GroupRole.owner) return false;
-
-      // Always require vote for ownership transfer
-      return await _voteService.openVote(
-        groupId: groupId,
-        action: VoteAction.transferOwnership,
+        action: 'transfer_ownership',
         targetUserId: targetUserId,
         createdBy: actorUserId,
         closesAt: DateTime.now()
@@ -325,21 +242,23 @@ class GroupAdminService {
       if (!vote.hasPassed) return false;
 
       switch (vote.action) {
-        case VoteAction.promoteAdmin:
+        case 'promote_admin':
           return await _changeRole(
               vote.groupId, vote.targetUserId, GroupRole.admin, vote.createdBy);
-        case VoteAction.demoteAdmin:
+        case 'demote_admin':
           return await _changeRole(vote.groupId, vote.targetUserId,
               GroupRole.member, vote.createdBy);
-        case VoteAction.transferOwnership:
+        case 'transfer_ownership':
           return await _transferOwnershipDirect(
               vote.groupId, vote.targetUserId, vote.createdBy);
-        case VoteAction.removeMember:
+        case 'remove_member':
           return await _removeMemberFromGroup(
               vote.groupId, vote.targetUserId, vote.createdBy);
-        case VoteAction.changePolicy:
+        case 'change_policy':
           // Handle policy changes
           return true;
+        default:
+          return false;
       }
     } catch (e) {
       print('Error executing vote result: $e');

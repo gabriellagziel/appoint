@@ -1,51 +1,52 @@
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
-import { getStorage } from "firebase/storage";
+import { initializeApp, getApps, getApp } from "firebase/app"
+import { getAuth, connectAuthEmulator } from "firebase/auth"
+import { getFirestore, connectFirestoreEmulator } from "firebase/firestore"
+import { getStorage, connectStorageEmulator } from "firebase/storage"
 
-// Development mode flag
-const DEV_MODE = !process.env.NEXT_PUBLIC_FIREBASE_API_KEY;
+const env = (k: string, d?: string) => process.env[k] ?? d ?? ""
+const useEmulators = env("NEXT_PUBLIC_FIREBASE_EMULATORS") === "1" || process.env.NODE_ENV !== "production"
 
-// Mock configuration for development when env vars are not set
-const mockConfig = {
-    apiKey: "mock-api-key",
-    authDomain: "mock-project.firebaseapp.com",
-    projectId: "mock-project",
-    storageBucket: "mock-project.appspot.com",
-    messagingSenderId: "123456789",
-    appId: "mock-app-id",
-};
-
-const firebaseConfig = {
-    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY || mockConfig.apiKey,
-    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || mockConfig.authDomain,
-    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || mockConfig.projectId,
-    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || mockConfig.storageBucket,
-    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID || mockConfig.messagingSenderId,
-    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID || mockConfig.appId,
-};
-
-// Initialize Firebase only if we have real config or in development mode
-let app: any;
-let db: any;
-let auth: any;
-let storage: any;
-
-if (DEV_MODE) {
-    console.log('🔧 DEV MODE: Using mock Firebase configuration');
-    // In development mode, create mock instances
-    app = { name: 'mock-app' };
-    db = {};
-    auth = {};
-    storage = {};
-} else {
-    // Initialize real Firebase
-    app = initializeApp(firebaseConfig);
-    db = getFirestore(app);
-    auth = getAuth(app);
-    storage = getStorage(app);
+const devConfig = {
+  apiKey: env("NEXT_PUBLIC_FIREBASE_API_KEY", "dev-api-key"),
+  authDomain: env("NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN", "dev.firebaseapp.com"),
+  projectId: env("NEXT_PUBLIC_FIREBASE_PROJECT_ID", "dev-project"),
+  storageBucket: env("NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET", "dev.appspot.com"),
+  messagingSenderId: env("NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID", "1234567890"),
+  appId: env("NEXT_PUBLIC_FIREBASE_APP_ID", "1:123:web:dev"),
 }
 
-// Export instances
-export { auth, db, storage };
-export default app; 
+const hasAll = ["NEXT_PUBLIC_FIREBASE_API_KEY", "NEXT_PUBLIC_FIREBASE_PROJECT_ID", "NEXT_PUBLIC_FIREBASE_APP_ID"].every(
+  (k) => !!env(k)
+)
+
+const firebaseConfig = hasAll
+  ? {
+      apiKey: env("NEXT_PUBLIC_FIREBASE_API_KEY")!,
+      authDomain: env("NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN", ""),
+      projectId: env("NEXT_PUBLIC_FIREBASE_PROJECT_ID")!,
+      storageBucket: env("NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET", ""),
+      messagingSenderId: env("NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID", ""),
+      appId: env("NEXT_PUBLIC_FIREBASE_APP_ID")!,
+      measurementId: env("NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID", ""),
+    }
+  : devConfig
+
+const app = getApps().length ? getApp() : initializeApp(firebaseConfig)
+const db = getFirestore(app)
+const auth = getAuth(app)
+const storage = getStorage(app)
+
+if (useEmulators) {
+  try {
+    connectFirestoreEmulator(db, "localhost", 8080)
+  } catch {}
+  try {
+    connectAuthEmulator(auth, "http://localhost:9099", { disableWarnings: true })
+  } catch {}
+  try {
+    connectStorageEmulator(storage, "localhost", 9199)
+  } catch {}
+}
+
+export { auth, db, storage }
+export default app

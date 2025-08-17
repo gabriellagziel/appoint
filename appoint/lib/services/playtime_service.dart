@@ -1,10 +1,6 @@
-  // MARK: - Web-Safe Auth Methods
-  /// Get current user safely (web-compatible)
-  User? get currentUser {
-    return AuthService.currentUser;
-  }
+// Placeholder web-safe auth helpers (detached from Firebase for now)
+class PlaytimeAuthSafe {
+  const PlaytimeAuthSafe();
 
-  /// Get current user ID safely (web-compatible)
-  String? get currentUserId {
-    return AuthService.currentUserId;
-  }
+  String? get currentUserId => null;
+}

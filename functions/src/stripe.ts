@@ -1,6 +1,6 @@
 import * as admin from 'firebase-admin';
 import { HttpsError, onCall, onRequest } from 'firebase-functions/v2/https';
-import { withRateLimit } from './middleware/rateLimit';
+import { withRateLimit } from './middleware/rateLimiter.js';
 import Stripe from 'stripe';
 
 // Utility: ensure Firebase admin is initialised and avoid "apps length" errors in tests
@@ -217,18 +217,34 @@ async function processCheckoutSessionCompleted(session: Stripe.Checkout.Session)
     const stripe = getStripe();
     const subscription = await stripe.subscriptions.retrieve(session.subscription as string) as any;
 
-    await db.collection('studio').doc(studioId).update({
-      subscriptionStatus: 'active',
-      subscriptionData: {
-        sessionId: session.id,
-        subscriptionId: subscription.id,
-        customerId: subscription.customer,
-        status: subscription.status,
-        currentPeriodEnd: subscription.current_period_end ? new Date(subscription.current_period_end * 1000) : null,
-        createdAt: subscription.created ? new Date(subscription.created * 1000) : null,
-      },
-      lastPaymentDate: serverTimestamp,
-    });
+    // Personal user premium mapping: studioId prefixed with 'user:'
+    if (studioId?.startsWith('user:')) {
+      const userId = studioId.split(':')[1];
+      await db.collection('users').doc(userId).set({
+        isPremium: true,
+        premium: {
+          sessionId: session.id,
+          subscriptionId: subscription.id,
+          customerId: subscription.customer,
+          status: subscription.status,
+          currentPeriodEnd: subscription.current_period_end ? new Date(subscription.current_period_end * 1000) : null,
+          createdAt: subscription.created ? new Date(subscription.created * 1000) : null,
+        },
+      }, { merge: true });
+    } else if (studioId) {
+      await db.collection('studio').doc(studioId).update({
+        subscriptionStatus: 'active',
+        subscriptionData: {
+          sessionId: session.id,
+          subscriptionId: subscription.id,
+          customerId: subscription.customer,
+          status: subscription.status,
+          currentPeriodEnd: subscription.current_period_end ? new Date(subscription.current_period_end * 1000) : null,
+          createdAt: subscription.created ? new Date(subscription.created * 1000) : null,
+        },
+        lastPaymentDate: serverTimestamp,
+      });
+    }
 
     console.log(`Subscription activated for studio: ${studioId}`);
   }
@@ -371,10 +387,10 @@ export const cancelSubscription = onRequest(async (req, res) => {
 });
 
 // Create payment intent with 3D Secure support
-export const createPaymentIntent = onCall(async (data, context) => {
+export const createPaymentIntent = onCall(async (request) => {
   try {
     // Basic validation
-    const { amount } = data.data || data;
+    const { amount } = request.data || {};
     if (!amount || typeof amount !== 'number' || amount <= 0) {
       throw new HttpsError('invalid-argument', 'Amount must be a positive number');
     }
@@ -387,7 +403,7 @@ export const createPaymentIntent = onCall(async (data, context) => {
         card: { request_three_d_secure: 'any' },
       },
       metadata: {
-        userId: (context as any)?.auth?.uid || 'anonymous',
+        userId: request.auth?.uid || 'anonymous',
         type: 'payment',
       },
     });

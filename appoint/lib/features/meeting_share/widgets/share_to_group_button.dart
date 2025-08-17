@@ -83,7 +83,7 @@ class _ShareToGroupButtonState extends ConsumerState<ShareToGroupButton> {
         width: 40,
         height: 40,
         decoration: BoxDecoration(
-          color: _getSourceColor(source).withOpacity(0.1),
+          color: _getSourceColor(source).withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(8),
         ),
         child: Icon(
@@ -122,15 +122,15 @@ class _ShareToGroupButtonState extends ConsumerState<ShareToGroupButton> {
   IconData _getSourceIcon(ShareSource source) {
     switch (source) {
       case ShareSource.whatsappGroup:
-        return Icons.whatsapp;
+        return Icons.chat_bubble_outline;
       case ShareSource.telegramGroup:
-        return Icons.telegram;
+        return Icons.send_outlined;
       case ShareSource.signalGroup:
-        return Icons.signal_cellular_alt;
+        return Icons.lock_outline;
       case ShareSource.discord:
-        return Icons.discord;
+        return Icons.groups_2_outlined;
       case ShareSource.messenger:
-        return Icons.facebook;
+        return Icons.message_outlined;
       case ShareSource.email:
         return Icons.email;
       case ShareSource.sms:
@@ -208,7 +208,7 @@ class QuickShareButton extends ConsumerWidget {
         width: 32,
         height: 32,
         decoration: BoxDecoration(
-          color: _getSourceColor().withOpacity(0.1),
+          color: _getSourceColor().withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Icon(
@@ -238,22 +238,22 @@ class QuickShareButton extends ConsumerWidget {
       case ShareSource.sms:
         return Colors.green;
       case ShareSource.copyLink:
-        return Theme.of(context).primaryColor;
+        return Colors.blueAccent;
     }
   }
 
   IconData _getSourceIcon() {
     switch (source) {
       case ShareSource.whatsappGroup:
-        return Icons.whatsapp;
+        return Icons.chat_bubble_outline;
       case ShareSource.telegramGroup:
-        return Icons.telegram;
+        return Icons.send_outlined;
       case ShareSource.signalGroup:
-        return Icons.signal_cellular_alt;
+        return Icons.lock_outline;
       case ShareSource.discord:
-        return Icons.discord;
+        return Icons.groups_2_outlined;
       case ShareSource.messenger:
-        return Icons.facebook;
+        return Icons.message_outlined;
       case ShareSource.email:
         return Icons.email;
       case ShareSource.sms:
@@ -298,5 +298,3 @@ class QuickShareButton extends ConsumerWidget {
     }
   }
 }
-
-

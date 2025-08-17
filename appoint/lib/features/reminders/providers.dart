@@ -2,6 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import '../reminders/services/reminder_service.dart';
 import '../../services/auth/auth_providers.dart';
+import '../settings/providers/settings_providers.dart';
+import '../../services/analytics_service.dart';
 
 enum Recurrence { none, daily, weekly }
 
@@ -74,6 +76,27 @@ class ReminderFormNotifier extends StateNotifier<ReminderFormState> {
     if (id == null) return;
     try {
       await service.updateReminder(id, {'done': done});
+      await Analytics.log('reminder_marked_done', {'done': done});
+    } catch (_) {}
+  }
+
+  Future<void> snooze(Map<String, dynamic> item,
+      {Duration by = const Duration(minutes: 15)}) async {
+    final id = item['id']?.toString();
+    if (id == null) return;
+    try {
+      // prefer user default if by not provided
+      int minutes = by.inMinutes;
+      try {
+        final prefs = await ref.read(userSettingsStreamProvider.future);
+        minutes = minutes > 0 ? minutes : prefs.defaultSnoozeMinutes;
+      } catch (_) {}
+      await service.snoozeReminder(id, by: Duration(minutes: minutes));
+      await Analytics.log('reminder_snoozed', {
+        'minutes': minutes,
+        'recurrence': state.recurrence.name,
+        'hasTime': state.when != null,
+      });
     } catch (_) {}
   }
 }

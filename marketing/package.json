@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "pnpm -w --filter @app-oint/design-system run build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -16,8 +17,8 @@
     "autoprefixer": "10.4.21",
     "next": "14.2.31",
     "postcss": "8.5.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tailwindcss": "3.4.17",
     "typescript": "5.9.2"
   },
@@ -26,6 +27,7 @@
     "node_modules/.cache"
   ],
   "dependencies": {
+    "@app-oint/design-system": "file:../packages/design-system",
     "@octokit/rest": "22.0.0",
     "@radix-ui/react-slot": "1.2.3",
     "class-variance-authority": "0.7.1",

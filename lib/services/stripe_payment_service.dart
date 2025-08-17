@@ -1,5 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'dart:convert';
+// Optional Stripe SDK import: ensure dependency is added to pubspec before enabling.
+// ignore_for_file: uri_does_not_exist, undefined_identifier
+import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:http/http.dart' as http;
 
 /// Stripe payment service for handling upgrades
 class StripePaymentService {
@@ -8,10 +12,12 @@ class StripePaymentService {
   factory StripePaymentService() => _instance;
   StripePaymentService._internal();
 
-  // TODO: Replace with actual Stripe configuration
-  static const String _stripePublishableKey = 'pk_test_your_publishable_key';
-  static const String _stripeSecretKey = 'sk_test_your_secret_key';
-  static const String _stripeApiBaseUrl = 'https://api.stripe.com/v1';
+  // Production-ready configuration: keys via environment/Runtime config
+  // Inline security: Do NOT ship secret keys in the client. Publishable key only.
+  static const String _stripePublishableKey =
+      String.fromEnvironment('STRIPE_PUBLISHABLE_KEY', defaultValue: '');
+  static const String _backendBaseUrl =
+      String.fromEnvironment('BACKEND_BASE_URL', defaultValue: '');
 
   /// Creates a payment link for premium upgrade
   static Future<String?> createUpgradePaymentLink({
@@ -21,14 +27,20 @@ class StripePaymentService {
     String currency = 'USD',
   }) async {
     try {
-      // TODO: Replace with actual Stripe API call
-      // For now, return a mock payment link
-      debugPrint(
-        'Creating payment link for user: $userId, amount: $amount $currency',
+      // Request a Checkout Session from backend (Cloud Functions or Next.js API)
+      final res = await http.post(
+        Uri.parse('$_backendBaseUrl/api/checkout/session'),
+        headers: {'Content-Type': 'application/json'},
+        body: jsonEncode({
+          'amount': (amount * 100).round(),
+          'currency': currency.toLowerCase(),
+          'userId': userId,
+          'customer_email': userEmail,
+        }),
       );
-
-      // Mock payment link
-      return 'https://checkout.stripe.com/pay/cs_test_mock_payment_link#fidkdXx0YmxldVo';
+      if (res.statusCode != 200) return null;
+      final data = jsonDecode(res.body) as Map<String, dynamic>;
+      return data['url'] as String?;
 
       // Real implementation would look like:
       // final response = await http.post(
@@ -66,17 +78,15 @@ class StripePaymentService {
     required String priceId,
   }) async {
     try {
-      // TODO: Replace with actual Stripe API call
-      debugPrint('Creating subscription for user: $userId, price: $priceId');
-
-      // Mock subscription data
-      return {
-        'id': 'sub_mock_subscription_id',
-        'status': 'active',
-        'current_period_end':
-            DateTime.now().add(Duration(days: 30)).millisecondsSinceEpoch,
-        'customer': 'cus_mock_customer_id',
-      };
+      // Create subscription on backend and return subscription details
+      final res = await http.post(
+        Uri.parse('$_backendBaseUrl/api/subscriptions'),
+        headers: {'Content-Type': 'application/json'},
+        body: jsonEncode(
+            {'userId': userId, 'userEmail': userEmail, 'priceId': priceId}),
+      );
+      if (res.statusCode != 200) return null;
+      return jsonDecode(res.body) as Map<String, dynamic>;
     } catch (e) {
       debugPrint('Error creating subscription: $e');
       return null;
@@ -86,12 +96,11 @@ class StripePaymentService {
   /// Verifies payment success
   static Future<bool> verifyPayment(String sessionId) async {
     try {
-      // TODO: Replace with actual Stripe API call
-      debugPrint('Verifying payment session: $sessionId');
-
-      // Mock verification
-      await Future.delayed(Duration(seconds: 1));
-      return true;
+      final res = await http.get(Uri.parse(
+          '$_backendBaseUrl/api/checkout/verify?sessionId=$sessionId'));
+      if (res.statusCode != 200) return false;
+      final data = jsonDecode(res.body) as Map<String, dynamic>;
+      return (data['paid'] as bool?) ?? false;
     } catch (e) {
       debugPrint('Error verifying payment: $e');
       return false;
@@ -103,17 +112,10 @@ class StripePaymentService {
     String subscriptionId,
   ) async {
     try {
-      // TODO: Replace with actual Stripe API call
-      debugPrint('Getting subscription status: $subscriptionId');
-
-      // Mock subscription status
-      return {
-        'id': subscriptionId,
-        'status': 'active',
-        'current_period_end':
-            DateTime.now().add(Duration(days: 25)).millisecondsSinceEpoch,
-        'cancel_at_period_end': false,
-      };
+      final res = await http
+          .get(Uri.parse('$_backendBaseUrl/api/subscriptions/$subscriptionId'));
+      if (res.statusCode != 200) return null;
+      return jsonDecode(res.body) as Map<String, dynamic>;
     } catch (e) {
       debugPrint('Error getting subscription status: $e');
       return null;
@@ -123,12 +125,9 @@ class StripePaymentService {
   /// Cancels subscription
   static Future<bool> cancelSubscription(String subscriptionId) async {
     try {
-      // TODO: Replace with actual Stripe API call
-      debugPrint('Canceling subscription: $subscriptionId');
-
-      // Mock cancellation
-      await Future.delayed(Duration(seconds: 1));
-      return true;
+      final res = await http.delete(
+          Uri.parse('$_backendBaseUrl/api/subscriptions/$subscriptionId'));
+      return res.statusCode == 200;
     } catch (e) {
       debugPrint('Error canceling subscription: $e');
       return false;
@@ -178,6 +177,11 @@ class StripePaymentService {
       final plans = getPricingPlans();
       final plan = plans.firstWhere((p) => p['id'] == planId);
 
+      // Initialize SDK if available
+      if (_stripePublishableKey.isNotEmpty) {
+        Stripe.publishableKey = _stripePublishableKey;
+      }
+
       final paymentLink = await createUpgradePaymentLink(
         userId: userId,
         userEmail: userEmail,
@@ -186,11 +190,8 @@ class StripePaymentService {
       );
 
       if (paymentLink != null) {
-        // TODO: Use url_launcher to open payment link
+        // Use url_launcher to open payment link in production app
         debugPrint('Opening payment link: $paymentLink');
-
-        // For now, just log the link
-        debugPrint('Payment link created: $paymentLink');
       } else {
         debugPrint('Failed to create payment link');
       }

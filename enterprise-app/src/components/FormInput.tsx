@@ -1,42 +1,54 @@
-import React from 'react';
-import { cn } from '@/lib/utils';
+"use client";
 
-interface FormInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  label?: string;
+import React from "react";
+import clsx from "clsx";
+
+interface FormInputProps {
+  label: string;
+  icon?: React.ComponentType<{ className?: string }>;
+  type?: string;
+  value: string;
+  onChange: (value: string) => void;
+  placeholder?: string;
   error?: string;
-  helperText?: string;
+  required?: boolean;
 }
 
-const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
-  ({ className, label, error, helperText, ...props }, ref) => {
-    return (
-      <div className="space-y-2">
-        {label && (
-          <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-            {label}
-          </label>
+export default function FormInput({ label, icon: Icon, type = "text", value, onChange, placeholder, error, required }: FormInputProps) {
+  return (
+    <div className="space-y-2">
+      <label className="block text-sm font-medium text-neutral-200">
+        {label}
+      </label>
+      <div className="relative">
+        {Icon && (
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <Icon className="h-5 w-5 text-neutral-400" />
+          </div>
         )}
         <input
-          className={cn(
-            'flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
-            error && 'border-red-500 focus-visible:ring-red-500',
-            className
+          type={type}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          className={clsx(
+            "block w-full rounded-lg bg-neutral-900 text-neutral-100 placeholder-neutral-500",
+            "border border-neutral-700 focus:ring-2 focus:ring-primary-600 focus:border-primary-600 transition-colors",
+            Icon ? "pl-10 pr-3 py-2.5" : "px-3 py-2.5",
+            error && "border-danger focus:ring-danger"
           )}
-          ref={ref}
-          {...props}
+          placeholder={placeholder}
+          aria-invalid={!!error}
+          aria-describedby={error ? `${label}-error` : undefined}
+          required={required}
         />
         {error && (
-          <p className="text-sm text-red-500">{error}</p>
-        )}
-        {helperText && !error && (
-          <p className="text-sm text-muted-foreground">{helperText}</p>
+          <p id={`${label}-error`} className="mt-1 text-sm text-danger">
+            {error}
+          </p>
         )}
       </div>
-    );
-  }
-);
+    </div>
+  );
+}
 
-FormInput.displayName = 'FormInput';
-
-export default FormInput;
 

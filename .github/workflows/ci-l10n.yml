@@ -1,0 +1,27 @@
+name: l10n-scan
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install root deps
+        run: npm ci || npm install
+      - name: Run l10n scan
+        run: npm run l10n:scan
+      - name: Upload scan report
+        uses: actions/upload-artifact@v4
+        with:
+          name: l10n-report
+          path: tools/l10n/report.json
+
+
+

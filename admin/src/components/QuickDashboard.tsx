@@ -30,7 +30,7 @@ function MetricCard({ title, value, change, positive, icon, trend }: MetricCardP
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center space-x-2">
           <div className={`p-2 rounded-lg ${positive ? 'bg-green-50' : 'bg-red-50'}`}>
-            <div className={positive ? 'text-green-600' : 'text-red-600'}>
+            <div className={positive ? 'text-green-700' : 'text-red-700'}>
               {icon}
             </div>
           </div>
@@ -42,7 +42,7 @@ function MetricCard({ title, value, change, positive, icon, trend }: MetricCardP
       <div className="space-y-1">
         <div className="text-2xl font-bold text-gray-900">{value}</div>
         <div className="flex items-center justify-between">
-          <span className={`text-sm font-medium ${positive ? 'text-green-600' : 'text-red-600'}`}>
+          <span className={`text-sm font-medium ${positive ? 'text-green-700' : 'text-red-700'}`}>
             {change}
           </span>
           {trend && (

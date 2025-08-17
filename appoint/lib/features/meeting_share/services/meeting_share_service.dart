@@ -1,5 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter/foundation.dart';
 import '../../../models/user_group.dart';
 
 enum ShareSource {
@@ -88,9 +89,7 @@ class MeetingShareService {
     required ShareSource source,
     String? customMessage,
   }) {
-    final encodedMessage = customMessage != null
-        ? Uri.encodeComponent(customMessage)
-        : Uri.encodeComponent('Join our meeting!');
+    // message encoding is done in buildShareMessage; keep params only
 
     final params = {
       'g': groupId,
@@ -172,7 +171,7 @@ class MeetingShareService {
           return await _launchUrl(platformUrl);
       }
     } catch (e) {
-      print('Error sharing meeting: $e');
+      debugPrint('Error sharing meeting: $e');
       return false;
     }
   }
@@ -227,7 +226,7 @@ class MeetingShareService {
       'timestamp': DateTime.now().toIso8601String(),
     };
 
-    print('Share event: $event');
+    debugPrint('Share event: $event');
     // await FirebaseAnalytics.instance.logEvent(name: 'share_link_created', parameters: event);
   }
 
@@ -237,7 +236,7 @@ class MeetingShareService {
       final uri = Uri.parse(url);
       return await launchUrl(uri, mode: LaunchMode.externalApplication);
     } catch (e) {
-      print('Error launching URL: $e');
+      debugPrint('Error launching URL: $e');
       return false;
     }
   }
@@ -247,5 +246,3 @@ class MeetingShareService {
 final meetingShareServiceProvider = Provider<MeetingShareService>((ref) {
   return MeetingShareService();
 });
-
-

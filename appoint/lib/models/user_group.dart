@@ -79,4 +79,3 @@ class UserGroup {
   int get memberCount => members.length;
   int get adminCount => admins.length;
 }
-
