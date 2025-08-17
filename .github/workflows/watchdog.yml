@@ -8,6 +8,12 @@ on:
 permissions:
   actions: read
   contents: read
+  checks: read
+  statuses: read
+
+concurrency:
+  group: watchdog
+  cancel-in-progress: true
 
 jobs:
   watchdog:
