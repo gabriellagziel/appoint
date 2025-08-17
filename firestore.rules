@@ -1,6 +1,20 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
+    // ============== Analytics events ==============
+    // Structure: /analytics_events/{uid_or_anon}/events/{eventId}
+    // Writer-only: only the signed-in user may create under their own uid.
+    // No public reads. Admins (custom claims) can read the top-level doc.
+    match /analytics_events/{uid}/events/{eventId} {
+      allow read: if false;
+      allow create: if request.auth != null && request.auth.uid == uid;
+      allow update, delete: if false;
+    }
+
+    match /analytics_events/{uid} {
+      allow read: if request.auth != null && request.auth.token.admin == true;
+      allow write: if false;
+    }
     function isAuthed() {
       return request.auth != null && request.auth.uid != null;
     }

@@ -1,0 +1,22 @@
+{
+  "name": "qa-runner",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "playwright install --with-deps | cat",
+    "test": "playwright test --project=chromium --reporter=list",
+    "test:headed": "playwright test --headed",
+    "a11y": "node scripts/run_a11y.mjs",
+    "lh": "node scripts/run_lighthouse.js",
+    "avail": "bash availability_check.sh",
+    "zip": "bash scripts/zip_artifacts.sh"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@lhci/cli": "^0.14.0",
+    "@playwright/test": "^1.54.2",
+    "lighthouse": "^12.1.0",
+    "node-fetch": "^3.3.2",
+    "zip-a-folder": "^3.1.6"
+  }
+}

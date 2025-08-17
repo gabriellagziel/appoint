@@ -1,0 +1,12 @@
+packages:
+  - 'packages/*'
+  - 'marketing'
+  - 'business'
+  - 'admin'
+  - 'dashboard'
+  - 'enterprise-app'
+  - 'enterprise-onboarding-portal'
+  - 'functions'
+  - 'appoint'
+
+

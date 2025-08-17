@@ -3,10 +3,10 @@ import express from 'express';
 import * as admin from 'firebase-admin';
 import { onRequest } from 'firebase-functions/v2/https';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
-import { sendApiKeyEmail, sendWelcomeEmail } from './emailService';
-import { auditLogMiddleware } from './middleware/auditLogger';
-import { ipWhitelistMiddleware } from './middleware/ipWhitelist';
-import { rateLimitMiddleware } from './middleware/rateLimiter';
+import { sendApiKeyEmail, sendWelcomeEmail } from './emailService.js';
+import { auditLogMiddleware } from './middleware/auditLogger.js';
+import { ipWhitelistMiddleware } from './middleware/ipWhitelist.js';
+import { rateLimitMiddleware } from './middleware/rateLimiter.js';
 
 // Initialize Firebase Admin if not already initialised
 if (!admin.apps.length) {
@@ -715,7 +715,7 @@ export const resetMonthlyQuotas = onSchedule('0 0 1 * *', async () => {
     const businessData = doc.data();
     if (businessData.usageThisMonth > 0) {
       // Import and call billing function
-      const { generateMonthlyInvoice } = await import('./billingEngine');
+      const { generateMonthlyInvoice } = await import('./billingEngine.js');
       try {
         await generateMonthlyInvoice(doc.id, businessData);
       } catch (error) {

@@ -18,9 +18,13 @@ export function middleware(request: NextRequest) {
     return NextResponse.next()
   }
 
-  // For dashboard routes, we'll let the client-side auth handle the protection
-  // since we need to check Firebase Auth state and user roles
+  // Server-side gating for dashboard: require presence of auth cookies.
+  // Deeper subscription checks occur within API routes and can also be enforced here if desired.
   if (path.startsWith('/dashboard')) {
+    const hasSession = Boolean(request.cookies.get('session-token') || request.cookies.get('firebase-auth-token'))
+    if (!hasSession) {
+      return NextResponse.redirect(new URL('/login', request.url))
+    }
     return NextResponse.next()
   }
 

@@ -2,7 +2,7 @@ import * as admin from 'firebase-admin';
 import { onRequest } from 'firebase-functions/v2/https';
 import ical from 'ical-generator';
 import { v4 as uuidv4 } from 'uuid';
-import { withRateLimit } from './middleware/rateLimit';
+import { withRateLimit } from './middleware/rateLimit.js';
 
 if (!admin.apps.length) {
   admin.initializeApp();

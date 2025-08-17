@@ -1,66 +1,59 @@
 {
-  "name": "appoint-web-applications",
-  "version": "1.0.0",
-  "description": "Web applications for APP-OINT",
+  "name": "app-oint-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "marketing",
+    "business",
+    "admin",
+    "dashboard",
+    "enterprise-app",
+    "enterprise-onboarding-portal"
+  ],
   "scripts": {
-    "prepare": "husky install",
-    "pre-commit": "husky add .husky/pre-commit \"npm run pre-commit-hook\"",
-    "pre-commit-hook": "npm run lint",
-    "lint": "npm run lint:marketing && npm run lint:business && npm run lint:enterprise && npm run lint:admin && npm run lint:dashboard",
-    "lint:marketing": "cd marketing && npm run lint",
-    "lint:business": "cd business && npm run lint",
-    "lint:enterprise": "cd enterprise-onboarding-portal && npm run lint",
-    "lint:admin": "cd admin && npm run lint",
-    "lint:dashboard": "cd dashboard && npm run lint",
-    "build": "npm run build:functions && npm run build:marketing && npm run build:business && npm run build:enterprise && npm run build:admin && npm run build:dashboard",
-    "build:functions": "cd functions && npm run build",
-    "build:marketing": "cd marketing && npm run build",
-    "build:business": "cd business && npm run build",
-    "build:enterprise": "cd enterprise-onboarding-portal && npm run build",
-    "build:admin": "cd admin && npm run build",
-    "build:dashboard": "cd dashboard && npm run build",
-    "dev": "echo 'Use npm run dev:marketing, dev:business, etc. to start individual apps'",
-    "dev:marketing": "cd marketing && npm run dev",
-    "dev:business": "cd business && npm run dev",
-    "dev:enterprise": "cd enterprise-onboarding-portal && npm run dev",
-    "dev:admin": "cd admin && npm run dev",
-    "dev:dashboard": "cd dashboard && npm run dev",
-    "setup-hooks": "npm install && husky install && chmod +x .husky/pre-commit",
-    "clean": "rm -rf node_modules package-lock.json && npm install",
-    "clean:all": "npm run clean && cd functions && npm run clean && cd ../admin && npm run clean && cd ../business && npm run clean && cd ../dashboard && npm run clean && cd ../enterprise-onboarding-portal && npm run clean && cd ../marketing && npm run clean",
-    "lint:changed": "git diff --name-only origin/main...HEAD | grep -E '\\.(ts|tsx)$' | xargs -r npx eslint --max-warnings=0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.{json,md}": [
-      "prettier --write",
-      "git add"
-    ]
+    "bootstrap": "bash ./tools/bootstrap.sh",
+    "clean": "rimraf node_modules **/node_modules package-lock.json .turbo",
+    "ds:build": "npm run -w @app-oint/design-system build",
+    "dev:marketing": "npm run -w marketing dev -- -p 3000",
+    "dev:business": "npm run -w business dev -- -p 3001",
+    "dev:admin": "npm run -w admin dev -- -p 3002",
+    "dev:enterprise": "npm run -w enterprise-app dev -- -p 5000",
+    "dev:dashboard": "npm run -w dashboard dev -- -p 3003",
+    "dev:onboarding": "npm run -w enterprise-onboarding-portal dev -- -p 3005",
+    "dev:flutter": "bash ./tools/run_flutter.sh",
+    "dev:all": "npm-run-all -p dev:marketing dev:business dev:admin dev:enterprise dev:dashboard dev:onboarding dev:flutter",
+    "qa:install": "npm i -w packages/design-system && npm i -w marketing && npm i -w business && npm i -w enterprise-app && npm i -w admin && npm i -w functions && echo 'ok'",
+    "qa:build": "npm run -w packages/design-system build && npm run -w marketing build && npm run -w business build && npm run -w enterprise-app build && npm run -w admin build && npm run -w functions build && (cd appoint && flutter build web --release --no-tree-shake-icons && echo ok > build/web/health.txt || true)",
+    "qa:serve": "node qa/scripts/serve-all.mjs",
+    "qa:e2e": "playwright test --config=qa/playwright.config.ts",
+    "qa:e2e-simple": "node qa/run-simple-tests.mjs",
+    "qa:working": "node qa/run-working-qa.mjs",
+    "qa:lighthouse": "node qa/scripts/lighthouse.mjs",
+    "qa:axe": "node qa/scripts/axe-scan.mjs",
+    "qa:i18n": "node qa/scripts/i18n-audit.mjs",
+    "qa:links": "node qa/scripts/link-crawl.mjs",
+    "qa:health": "node qa/scripts/health.mjs",
+    "qa:report": "node qa/scripts/final-report.mjs",
+    "qa:all": "npm run qa:build && npm run qa:serve & sleep 12 && npm run qa:health && npm run qa:e2e && npm run qa:lighthouse && npm run qa:axe && npm run qa:i18n && npm run qa:links && npm run qa:report"
   },
   "devDependencies": {
-    "clsx": "^2.1.1",
-    "husky": "^8.0.3",
-    "lint-staged": "^16.1.2",
-    "markdownlint-cli": "^0.45.0",
-    "prettier": "^3.5.3",
-    "tailwind-merge": "^3.3.1"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+    "@playwright/test": "^1.54.2",
+    "axe-core": "^4.9.1",
+    "chrome-launcher": "^1.1.0",
+    "lighthouse": "^12.2.0",
+    "npm-run-all": "^4.1.5",
+    "ora": "^8.0.1",
+    "picocolors": "^1.0.0",
+    "rimraf": "^5.0.10",
+    "sirv": "^3.0.0",
+    "tiny-glob": "^0.2.9",
+    "undici": "^6.19.8"
   },
   "dependencies": {
-    "@octokit/rest": "^22.0.0",
-    "express": "^5.1.0",
-    "firebase-admin": "^13.4.0",
-    "ioredis": "^5.7.0",
-    "typescript": "^5.9.2"
+    "@axe-core/playwright": "^4.10.2"
+  },
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   }
 }

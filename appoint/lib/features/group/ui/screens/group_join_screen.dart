@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import '../../../../models/user_group.dart';
 import '../../../../models/group_invite.dart';
 import '../../../auth/providers/auth_provider.dart';
@@ -87,6 +89,17 @@ class _GroupJoinScreenState extends ConsumerState<GroupJoinScreen> {
 
     try {
       final service = ref.read(groupSharingServiceProvider);
+      // Record usage via backend endpoint for audit; then join in Firestore
+      try {
+        await http.post(
+          Uri.parse('/api/groups/invite/use'),
+          headers: {'Content-Type': 'application/json'},
+          body: jsonEncode({
+            'code': widget.inviteCode,
+            'uid': authState.user!.uid,
+          }),
+        );
+      } catch (_) {}
       final group = await service.joinGroupFromCode(
           widget.inviteCode, authState.user!.uid);
 

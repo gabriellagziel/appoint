@@ -15,7 +15,8 @@
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.0.0",
-    "firebase": "^12.7.0"
+    "firebase": "^12.1.0",
+    "@app-oint/design-system": "file:../packages/design-system"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.0.0",

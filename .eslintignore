@@ -1,7 +1,0 @@
-**/.next/**
-**/build/**
-**/dist/**
-**/node_modules/**
-**/public/**
-**/*.g.dart
-**/*.freezed.dart

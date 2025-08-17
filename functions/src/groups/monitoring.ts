@@ -1,45 +1,34 @@
-import * as admin from 'firebase-admin';
-import { Group } from './groupTypes';
+// Group metrics aggregation for monitoring and dashboards
+import { db as getDb } from '../lib/admin.js'
 
-if (!admin.apps.length) {
-  admin.initializeApp();
+export type GroupMetrics = {
+  totalGroups: number
+  proGroups: number
+  freeGroups: number
+  upgradesLast30d: number
 }
 
-export const getGroupsMetrics = async () => {
-  const snap = await admin.firestore().collection('groups').get();
-  const groups = snap.docs.map((d) => ({ id: d.id, ...(d.data() as any) })) as Group[];
-  const revenue = groups.reduce((sum, g) => sum + (g.totalRevenue || 0), 0);
-  const avgEvents = groups.length
-    ? groups.reduce((sum, g) => sum + (g.events?.length || 0), 0) / groups.length
-    : 0;
-  return {
-    totalGroups: groups.length,
-    totalRevenue: revenue,
-    avgEventsPerGroup: avgEvents,
-    totalUsers: groups.reduce((sum, g) => sum + (g.members?.length || 0), 0),
-    groups,
-  };
-};
+export async function getGroupsMetrics(): Promise<GroupMetrics> {
+  const db = getDb()
 
-export const notifyDashboardIfNeeded = async (group: Group) => {
-  if (group.usageScore > 90) {
-    const dashboardHook = process.env.DASHBOARD_ALERTS_HOOK;
-    if (!dashboardHook) return;
-    try {
-      const maybeFetch: any = (globalThis as any).fetch;
-      if (typeof maybeFetch === 'function') {
-        await maybeFetch(dashboardHook, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ type: 'HIGH_USAGE', groupId: group.id, score: group.usageScore }),
-        });
-      } else {
-        console.log('Dashboard alert (no fetch available):', group.id, group.usageScore);
-      }
-    } catch (e) {
-      console.error('Failed to notify dashboard', e);
-    }
+  const groupsSnap = await db.collection('groups').get()
+  let proGroups = 0
+  for (const doc of groupsSnap.docs) {
+    const data = doc.data() || {}
+    if ((data.plan || '').toLowerCase() === 'pro') proGroups += 1
   }
-};
+  const totalGroups = groupsSnap.size
+  const freeGroups = Math.max(0, totalGroups - proGroups)
+
+  const since = new Date()
+  since.setDate(since.getDate() - 30)
+  const upgradesSnap = await db
+    .collection('group_upgrade_intents')
+    .where('createdAt', '>=', since)
+    .get()
+  const upgradesLast30d = upgradesSnap.size
+
+  return { totalGroups, proGroups, freeGroups, upgradesLast30d }
+}
 
 

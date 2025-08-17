@@ -1,738 +1,443 @@
 import Head from 'next/head'
-import { useState } from 'react'
+import Link from 'next/link'
+import Script from 'next/script'
+import Image from 'next/image'
+import { detectLocale, loadCommonMessages } from '../lib/locale'
+import { useEffect, useState } from 'react'
 
-// Section Components
-const SectionHero = () => (
-  <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 py-20 lg:py-32">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Your time is too valuable to waste on{' '}
-            <span className="text-blue-600">back-and-forths</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            App-Oint doesn't just schedule — it understands your rhythm.
-            From open calls to multi-location businesses, we built this for the chaos.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button className="btn-primary text-lg px-8 py-4">
-              Get Started Free
-            </button>
-            <button className="btn-secondary text-lg px-8 py-4">
-              View Demo
-            </button>
-          </div>
-          <p className="text-sm text-gray-500 mt-4">
-            No credit card required • 30-day free trial
-          </p>
-        </div>
-        <div className="relative">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
-            <div className="bg-gray-900 rounded-lg p-6 font-mono text-sm text-white">
-              <div className="flex items-center mb-4">
-                <div className="flex space-x-2">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                </div>
-                <span className="ml-4 text-gray-400">app-oint.com</span>
-              </div>
-              <div className="space-y-2">
-                <div><span className="text-blue-400">const</span> <span className="text-yellow-400">appointment</span> = {`{`}</div>
-                <div className="pl-4"><span className="text-green-400">customer</span>: <span className="text-green-400">'john@example.com'</span>,</div>
-                <div className="pl-4"><span className="text-green-400">time</span>: <span className="text-green-400">'2024-01-15T10:00:00Z'</span>,</div>
-                <div className="pl-4"><span className="text-green-400">duration</span>: <span className="text-green-400">30</span></div>
-                <div>{`}`};</div>
-                <div className="mt-4 text-blue-400">// AI-enhanced scheduling</div>
-                <div className="text-green-400">// Human-centered design</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-)
+const BUSINESS_URL = process.env.NEXT_PUBLIC_BUSINESS_URL || 'https://business.app-oint.com';
+const ENTERPRISE_URL = process.env.NEXT_PUBLIC_ENTERPRISE_URL || 'https://enterprise.app-oint.com';
 
-const SectionTrust = () => (
-  <section className="bg-white py-8 border-b">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-wrap justify-center items-center space-x-8 text-gray-500">
-        <div className="flex items-center space-x-2">
-          <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-            <span className="text-white text-xs font-bold">✓</span>
-          </div>
-          <span className="text-sm font-medium">SOC2 Compliant</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
-            <span className="text-white text-xs font-bold">✓</span>
-          </div>
-          <span className="text-sm font-medium">GDPR Ready</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center">
-            <span className="text-white text-xs font-bold">✓</span>
-          </div>
-          <span className="text-sm font-medium">ISO 27001</span>
-        </div>
-        <div className="flex items-center space-x-2">
-          <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center">
-            <span className="text-white text-xs font-bold">✓</span>
-          </div>
-          <span className="text-sm font-medium">99.9% Uptime</span>
-        </div>
-      </div>
-    </div>
-  </section>
-)
+export default function Home({ locale = 'en', t = {} }) {
+  const [mounted, setMounted] = useState(false)
 
-const SectionFeaturesPersonal = () => (
-  <section className="py-20 bg-gray-50">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Perfect for Personal Scheduling</h2>
-        <p className="text-xl text-gray-600">AI-enhanced. Human-centered. Scheduling done right.</p>
-      </div>
-      <div className="grid md:grid-cols-3 gap-8">
-        <div className="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
-          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-            <span className="text-2xl">🧠</span>
-          </div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Smart Scheduling</h3>
-          <p className="text-gray-600">AI learns your preferences and suggests optimal times, reducing back-and-forth by 80%.</p>
-        </div>
-        <div className="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
-          <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-            <span className="text-2xl">⚡</span>
-          </div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Instant Booking</h3>
-          <p className="text-gray-600">Share your link and let others book instantly. No more email chains or phone calls.</p>
-        </div>
-        <div className="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow">
-          <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-            <span className="text-2xl">📱</span>
-          </div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Everywhere Access</h3>
-          <p className="text-gray-600">Web, mobile apps, and integrations. Your schedule follows you everywhere.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-)
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
-const SectionFeaturesBusiness = () => (
-  <section className="py-20 bg-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Transform Your Business Scheduling</h2>
-        <p className="text-xl text-gray-600">From solo entrepreneurs to enterprise teams, we built this for the chaos.</p>
-      </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div className="bg-gray-50 rounded-xl p-8 hover:bg-white hover:shadow-lg transition-all">
-          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-            <span className="text-2xl">👥</span>
-          </div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Team Collaboration</h3>
-          <p className="text-gray-600">Coordinate schedules across your entire team with shared calendars and availability.</p>
-        </div>
-        <div className="bg-gray-50 rounded-xl p-8 hover:bg-white hover:shadow-lg transition-all">
-          <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-            <span className="text-2xl">🏢</span>
-          </div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Multi-Location</h3>
-          <p className="text-gray-600">Manage multiple locations from one dashboard with centralized control and reporting.</p>
-        </div>
-        <div className="bg-gray-50 rounded-xl p-8 hover:bg-white hover:shadow-lg transition-all">
-          <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-            <span className="text-2xl">📊</span>
-          </div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Advanced Analytics</h3>
-          <p className="text-gray-600">Track performance, analyze patterns, and optimize your scheduling efficiency.</p>
-        </div>
-        <div className="bg-gray-50 rounded-xl p-8 hover:bg-white hover:shadow-lg transition-all">
-          <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-            <span className="text-2xl">🎨</span>
-          </div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">White-Label</h3>
-          <p className="text-gray-600">Custom branding and white-label solutions to match your company identity.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-)
+  const track = (name) => {
+    if (typeof window !== 'undefined') {
+      if (window.gtag) {
+        window.gtag('event', name)
+      } else if (window.dataLayer) {
+        window.dataLayer.push({ event: name })
+      } else {
+        // eslint-disable-next-line no-console
+        console.log('analytics_event', name)
+      }
+    }
+  }
 
-const SectionFeaturesAPI = () => (
-  <section className="py-20 bg-gray-900 text-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold mb-4">Developer-First Enterprise API</h2>
-        <p className="text-xl text-gray-300">Build powerful scheduling applications with our enterprise-grade API.</p>
-      </div>
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <div className="space-y-6">
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold">1</span>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">RESTful API</h3>
-                <p className="text-gray-300">Clean, intuitive endpoints with comprehensive documentation and SDKs.</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold">2</span>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Webhooks & Integrations</h3>
-                <p className="text-gray-300">Real-time notifications and seamless integration with your existing systems.</p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold">3</span>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2">Enterprise Security</h3>
-                <p className="text-gray-300">SOC2, GDPR, ISO 27001 compliant with IP whitelisting and audit logs.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-gray-800 rounded-xl p-6">
-          <div className="bg-gray-900 rounded-lg p-4 font-mono text-sm">
-            <div className="text-gray-400 mb-2">// Create appointment via API</div>
-            <div className="space-y-1">
-              <div><span className="text-blue-400">POST</span> <span className="text-green-400">/api/v1/appointments</span></div>
-              <div><span className="text-yellow-400">Authorization:</span> <span className="text-green-400">Bearer YOUR_API_KEY</span></div>
-              <div className="mt-2 text-gray-400">{`{`}</div>
-              <div className="pl-4 text-gray-300">
-                <div><span className="text-green-400">"customer"</span>: <span className="text-green-400">"john@example.com"</span>,</div>
-                <div><span className="text-green-400">"time"</span>: <span className="text-green-400">"2024-01-15T10:00:00Z"</span>,</div>
-                <div><span className="text-green-400">"duration"</span>: <span className="text-green-400">30</span></div>
-              </div>
-              <div className="text-gray-400">{`}`}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-)
+  const navigateWithAnalytics = (eventName, href) => (e) => {
+    if (mounted && typeof window !== 'undefined' && window.gtag) {
+      e.preventDefault()
+      window.gtag('event', eventName, {
+        event_callback: () => {
+          // External navigation; fall back to location.assign
+          window.location.assign(href)
+        },
+      })
+      // Fallback in case callback doesn't fire
+      setTimeout(() => window.location.assign(href), 500)
+    }
+  }
 
-const SectionAmbassadors = () => (
-  <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Join Our Community</h2>
-        <p className="text-xl text-gray-600">Become an App-Oint Ambassador and help others discover better scheduling.</p>
-      </div>
-      <div className="grid md:grid-cols-3 gap-8">
-        <div className="bg-white rounded-xl shadow-md p-8 text-center">
-          <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span className="text-3xl">🌟</span>
-          </div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Earn Rewards</h3>
-          <p className="text-gray-600">Get exclusive benefits, early access to features, and recognition in our community.</p>
-        </div>
-        <div className="bg-white rounded-xl shadow-md p-8 text-center">
-          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span className="text-3xl">🤝</span>
-          </div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Share Knowledge</h3>
-          <p className="text-gray-600">Help others discover better scheduling practices and build meaningful connections.</p>
-        </div>
-        <div className="bg-white rounded-xl shadow-md p-8 text-center">
-          <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span className="text-3xl">🚀</span>
-          </div>
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Grow Together</h3>
-          <p className="text-gray-600">Access exclusive events, networking opportunities, and professional development.</p>
-        </div>
-      </div>
-      <div className="text-center mt-12">
-        <button className="btn-primary text-lg px-8 py-4">
-          Become an Ambassador
-        </button>
-      </div>
-    </div>
-  </section>
-)
-
-const SectionTestimonials = () => (
-  <section className="py-20 bg-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Trusted by Thousands</h2>
-        <p className="text-xl text-gray-600">Join thousands of users who've transformed their scheduling experience.</p>
-      </div>
-      <div className="grid md:grid-cols-3 gap-8">
-        <div className="bg-gray-50 rounded-xl p-8">
-          <div className="flex items-center mb-4">
-            <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
-              S
-            </div>
-            <div className="ml-4">
-              <h4 className="font-semibold text-gray-900">Sarah Chen</h4>
-              <p className="text-sm text-gray-600">Freelance Consultant</p>
-            </div>
-          </div>
-          <p className="text-gray-600 italic">"App-Oint reduced my scheduling back-and-forth by 90%. My clients love the instant booking experience."</p>
-        </div>
-        <div className="bg-gray-50 rounded-xl p-8">
-          <div className="flex items-center mb-4">
-            <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
-              M
-            </div>
-            <div className="ml-4">
-              <h4 className="font-semibold text-gray-900">Mike Rodriguez</h4>
-              <p className="text-sm text-gray-600">Dental Practice Owner</p>
-            </div>
-          </div>
-          <p className="text-gray-600 italic">"Managing 3 locations became effortless. The multi-location features are game-changing for our practice."</p>
-        </div>
-        <div className="bg-gray-50 rounded-xl p-8">
-          <div className="flex items-center mb-4">
-            <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
-              A
-            </div>
-            <div className="ml-4">
-              <h4 className="font-semibold text-gray-900">Alex Thompson</h4>
-              <p className="text-sm text-gray-600">Tech Startup CEO</p>
-            </div>
-          </div>
-          <p className="text-gray-600 italic">"The API integration was seamless. We built our entire scheduling system on App-Oint's foundation."</p>
-        </div>
-      </div>
-    </div>
-  </section>
-)
-
-const SectionPricing = () => {
-  const [billingCycle, setBillingCycle] = useState('monthly')
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Is this a native app?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'It’s a PWA. Add to Home Screen for a full-screen app experience.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do ads/premium work?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Free shows ads before confirm; Premium removes ads. Kids are ad-free.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you send SMS?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. All notifications are in-app for privacy and control.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I connect to a business?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Book the business directly; they confirm in their Business Studio.'
+        }
+      }
+    ]
+  }
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Simple, Transparent Pricing</h2>
-          <p className="text-xl text-gray-600">Choose the plan that fits your needs. All plans include our core features.</p>
+    <main id="main" className="min-h-screen bg-white text-neutral-900">
+      <Head>
+        <title>{t?.seo?.defaultTitle || 'App-Oint — Smart Time Organizer: Appointments, Reminders, Business & Enterprise'}</title>
+        <meta
+          name="description"
+          content={t?.seo?.defaultDescription || 'App-Oint is a conversational time organizer: the fastest appointment fixer, smart reminders, and live connections to businesses and enterprise systems.'}
+        />
+        <meta property="og:title" content="App-Oint — Smart Time Organizer" />
+        <meta
+          property="og:description"
+          content="Appointments that feel like a chat, reminders that actually help, and seamless connections to businesses and enterprise systems."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://app-oint.com" />
+        <meta property="og:image" content="/logo.jpeg" />
+        <link rel="icon" href="/logo.svg" />
+        <link rel="canonical" href="https://app-oint.com" />
+      </Head>
 
-          <div className="flex justify-center mt-8">
-            <div className="bg-white rounded-lg p-1 flex">
-              <button
-                onClick={() => setBillingCycle('monthly')}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${billingCycle === 'monthly'
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-600 hover:text-gray-900'
-                  }`}
-              >
-                Monthly
-              </button>
-              <button
-                onClick={() => setBillingCycle('yearly')}
-                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${billingCycle === 'yearly'
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-600 hover:text-gray-900'
-                  }`}
-              >
-                Yearly
-                <span className="ml-1 text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Save 20%</span>
-              </button>
-            </div>
-          </div>
+      <Script id="faq-jsonld" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify(faqJsonLd)}
+      </Script>
+
+      {/* Navbar */}
+      <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:text-blue-700 focus:ring-2 focus:ring-blue-600 focus:px-3 focus:py-2 rounded">Skip to content</a>
+      <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+        <div className="mx-auto max-w-7xl px-4 h-16 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-3 font-semibold" aria-label="Home">
+            <Image src="/logo.jpeg" alt="App-Oint" width={32} height={32} className="rounded" priority />
+            <span>{t?.brand?.name || 'App-Oint'}</span>
+          </Link>
+          <nav className="hidden md:flex items-center gap-6 text-sm" aria-label="Primary">
+            <Link href="/user/" className="hover:text-blue-700">User</Link>
+            <a href={BUSINESS_URL} onClick={navigateWithAnalytics('cta_business_clicked', BUSINESS_URL)} className="hover:text-blue-700">Business</a>
+            <a href={ENTERPRISE_URL} onClick={navigateWithAnalytics('cta_enterprise_clicked', ENTERPRISE_URL)} className="hover:text-blue-700">Enterprise</a>
+            <Link href="#pricing" className="hover:text-blue-700">Pricing</Link>
+            <a href="https://enterprise.app-oint.com/docs" className="hover:text-blue-700">Docs</a>
+            <Link href={`/?lang=${locale === 'en' ? 'fr' : 'en'}`} className="hover:text-blue-700">
+              {t?.language?.switchLanguage || 'Switch Language'}
+            </Link>
+            <a
+              href="https://app.app-oint.com"
+              onClick={navigateWithAnalytics('cta_signin_clicked', 'https://app.app-oint.com')}
+              className="px-3 py-1.5 rounded-lg bg-blue-600 text-white hover:bg-blue-700"
+            >
+              Sign in
+            </a>
+          </nav>
         </div>
+      </header>
 
-        <div className="grid md:grid-cols-4 gap-8">
-          {/* Free Plan */}
-          <div className="bg-white rounded-xl shadow-md p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Free</h3>
-            <div className="text-4xl font-bold text-gray-900 mb-2">
-              €0<span className="text-lg text-gray-500">/mo</span>
-            </div>
-            <p className="text-gray-600 mb-8">Perfect for getting started</p>
-            <ul className="space-y-4 mb-8">
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Up to 10 appointments/month
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Basic scheduling
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Email support
-              </li>
-            </ul>
-            <button className="w-full btn-secondary py-3">
-              Get Started Free
-            </button>
-          </div>
-
-          {/* Professional Plan */}
-          <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-blue-500 relative">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                Most Popular
-              </span>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Professional</h3>
-            <div className="text-4xl font-bold text-gray-900 mb-2">
-              €{billingCycle === 'yearly' ? '12' : '15'}<span className="text-lg text-gray-500">/mo</span>
-            </div>
-            <p className="text-gray-600 mb-8">For growing businesses</p>
-            <ul className="space-y-4 mb-8">
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Unlimited appointments
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Team collaboration
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Advanced analytics
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Priority support
-              </li>
-            </ul>
-            <button className="w-full btn-primary py-3">
-              Start Professional
-            </button>
-          </div>
-
-          {/* Business Plus Plan */}
-          <div className="bg-white rounded-xl shadow-md p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Business Plus</h3>
-            <div className="text-4xl font-bold text-gray-900 mb-2">
-              €{billingCycle === 'yearly' ? '20' : '25'}<span className="text-lg text-gray-500">/mo</span>
-            </div>
-            <p className="text-gray-600 mb-8">For established companies</p>
-            <ul className="space-y-4 mb-8">
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Multi-location support
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                White-label options
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                API access
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Dedicated support
-              </li>
-            </ul>
-            <button className="w-full btn-secondary py-3">
-              Start Business Plus
-            </button>
-          </div>
-
-          {/* Enterprise Plan */}
-          <div className="bg-white rounded-xl shadow-md p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
-            <div className="text-4xl font-bold text-gray-900 mb-2">
-              Contact us
-            </div>
-            <p className="text-gray-600 mb-8">For enterprise needs</p>
-            <ul className="space-y-4 mb-8">
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Unlimited everything
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Custom integrations
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                SLA guarantee
-              </li>
-              <li className="flex items-center">
-                <span className="text-green-500 mr-3">✓</span>
-                Account manager
-              </li>
-            </ul>
-            <button className="w-full btn-secondary py-3">
-              Contact Sales
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-const SectionApps = () => (
-  <section className="py-20 bg-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Available Everywhere</h2>
-        <p className="text-xl text-gray-600">Access your schedule on any device, anywhere, anytime.</p>
-      </div>
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">Mobile Apps</h3>
-          <div className="space-y-6">
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-black rounded-xl flex items-center justify-center">
-                <span className="text-white text-2xl">📱</span>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900">iOS App</h4>
-                <p className="text-gray-600">Available on the App Store</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center">
-                <span className="text-white text-2xl">🤖</span>
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900">Android App</h4>
-                <p className="text-gray-600">Available on Google Play</p>
-              </div>
-            </div>
-          </div>
-          <div className="mt-8">
-            <button className="btn-primary mr-4">
-              Download iOS App
-            </button>
-            <button className="btn-secondary">
-              Download Android App
-            </button>
-          </div>
-        </div>
-        <div className="relative">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8">
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <div className="flex items-center justify-between mb-4">
-                <h4 className="font-semibold text-gray-900">App-Oint Mobile</h4>
-                <span className="text-sm text-gray-500">v2.1.0</span>
-              </div>
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-600">Today's Schedule</span>
-                  <span className="text-sm font-medium text-gray-900">3 meetings</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-600">Next Meeting</span>
-                  <span className="text-sm font-medium text-gray-900">10:00 AM</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-600">Status</span>
-                  <span className="text-sm text-green-600 font-medium">✓ Online</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-)
-
-const SectionIntegrations = () => (
-  <section className="py-20 bg-gray-50">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Seamless Integrations</h2>
-        <p className="text-xl text-gray-600">Works with the tools you already use and love.</p>
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-        {[
-          { name: 'Google Calendar', icon: '📅' },
-          { name: 'Outlook', icon: '📧' },
-          { name: 'Slack', icon: '💬' },
-          { name: 'Zoom', icon: '🎥' },
-          { name: 'Stripe', icon: '💳' },
-          { name: 'Salesforce', icon: '☁️' },
-          { name: 'HubSpot', icon: '🎯' },
-          { name: 'Zapier', icon: '🔗' },
-          { name: 'Notion', icon: '📝' },
-          { name: 'Trello', icon: '📋' },
-          { name: 'Asana', icon: '✅' },
-          { name: 'Jira', icon: '🐛' }
-        ].map((integration, index) => (
-          <div key={index} className="bg-white rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
-            <div className="text-3xl mb-2">{integration.icon}</div>
-            <h4 className="font-medium text-gray-900">{integration.name}</h4>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-)
-
-const Footer = () => {
-  const [language, setLanguage] = useState('en')
-
-  return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8">
+      {/* Hero */}
+      <section className="mx-auto max-w-7xl px-4 py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <span className="text-2xl">🎯</span>
-              <span className="text-xl font-bold">App-Oint</span>
+            <h1 className="text-4xl/tight lg:text-5xl/tight font-semibold">
+              Your day, <span className="text-blue-600">perfectly organized</span>.
+            </h1>
+            <p className="mt-4 text-lg text-neutral-700">
+              App-Oint is a conversational time organizer: the fastest appointment fixer,
+              a genuinely smart reminders system, and live connections to businesses and enterprise systems.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="https://app.app-oint.com"
+                onClick={navigateWithAnalytics('cta_open_app_clicked', 'https://app.app-oint.com')}
+                className="px-5 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700"
+              >
+                Open the App
+              </a>
+              <a
+                href={BUSINESS_URL}
+                onClick={navigateWithAnalytics('cta_business_clicked', BUSINESS_URL)}
+                className="px-5 py-3 rounded-xl border hover:bg-neutral-50"
+              >
+                For Business
+              </a>
+              <a
+                href={ENTERPRISE_URL}
+                onClick={navigateWithAnalytics('cta_enterprise_clicked', ENTERPRISE_URL)}
+                className="px-5 py-3 rounded-xl border hover:bg-neutral-50"
+              >
+                For Enterprise
+              </a>
             </div>
-            <p className="text-gray-400">
-              Your time is too valuable to waste on back-and-forths.
-              AI-enhanced. Human-centered. Scheduling done right.
+            <ul className="mt-4 text-sm text-neutral-600 flex flex-wrap gap-x-4 gap-y-1">
+              <li>• PWA: Add to Home Screen</li>
+              <li>• Google Sign-In</li>
+              <li>• Privacy-first (in-app notifications, no SMS)</li>
+            </ul>
+          </div>
+          <div aria-hidden className="relative h-72 lg:h-96 rounded-2xl border overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-amber-50" />
+            <div className="absolute inset-6 rounded-2xl border bg-white shadow-sm flex items-center justify-center">
+              <div className="grid gap-3 p-6 w-full max-w-md">
+                <div className="h-3 w-24 bg-neutral-200 rounded" />
+                <div className="h-10 rounded-xl bg-blue-600/10" />
+                <div className="h-3 w-40 bg-neutral-200 rounded" />
+                <div className="h-10 rounded-xl bg-amber-500/10" />
+                <div className="h-3 w-28 bg-neutral-200 rounded" />
+                <div className="h-10 rounded-xl bg-neutral-200/80" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Trio */}
+      <section className="mx-auto max-w-7xl px-4 py-12">
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              title: 'Appointment Fixer',
+              body:
+                'Create one-on-one, group, virtual, business, or Playtime meetings in a natural conversational flow.'
+            },
+            {
+              title: 'Smart Reminders',
+              body:
+                'Set reminders for yourself or family, recurring patterns, and checklists with in-app notifications.'
+            },
+            {
+              title: 'Connect Everywhere',
+              body:
+                'Two-way scheduling with businesses and a clean Enterprise API for large systems.'
+            }
+          ].map((c) => (
+            <div key={c.title} className="rounded-2xl border p-6 hover:shadow-sm">
+              <h3 className="font-semibold">{c.title}</h3>
+              <p className="mt-2 text-neutral-700">{c.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="mx-auto max-w-7xl px-4 py-12">
+        <h2 className="text-2xl font-semibold">How it works</h2>
+        <div className="mt-6 grid md:grid-cols-3 gap-6">
+          {[
+            { step: '1', title: 'Pick what you need', text: 'Meeting, Playtime, or Reminder — personal, group, virtual.' },
+            { step: '2', title: 'Invite & set time', text: 'Invite people or groups, choose the time, and you’re done.' },
+            { step: '3', title: 'Live meeting page', text: 'Chat, “I’m running late”, “I’ve arrived”, navigation or join link.' }
+          ].map((s) => (
+            <div key={s.step} className="rounded-2xl border p-6">
+              <div className="text-blue-600 font-semibold">Step {s.step}</div>
+              <h3 className="mt-1 font-semibold">{s.title}</h3>
+              <p className="mt-2 text-neutral-700">{s.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* User PWA */}
+      <section id="user" className="mx-auto max-w-7xl px-4 py-12">
+        <div className="rounded-3xl border p-8 lg:p-10 bg-blue-50/40">
+          <h2 className="text-2xl font-semibold">User App (PWA)</h2>
+          <p className="mt-2 text-neutral-700">
+            Add App-Oint to your home screen for a full-screen, app-like experience. No stores, no friction.
+            Free (with ads) or Premium (€4) with no ads.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <a
+              href="https://app.app-oint.com"
+              onClick={navigateWithAnalytics('cta_open_app_clicked', 'https://app.app-oint.com')}
+              className="px-5 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700"
+            >
+              Open the App
+            </a>
+            <Link
+              href="/how-to-install-pwa"
+              className="px-5 py-3 rounded-xl border hover:bg-neutral-50"
+            >
+              How to Add to Home Screen
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Business */}
+      <section id="business" className="mx-auto max-w-7xl px-4 py-12">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 className="text-2xl font-semibold">Business Studio</h2>
+            <p className="mt-2 text-neutral-700">
+              Turn user requests into confirmed visits. Live calendar, two-way confirmation, branding, and lightweight analytics.
+            </p>
+            <div className="mt-4">
+              <a
+                href={BUSINESS_URL}
+                onClick={navigateWithAnalytics('cta_business_clicked', BUSINESS_URL)}
+                className="px-5 py-3 rounded-xl border hover:bg-neutral-50"
+              >
+                Explore Business Studio
+              </a>
+            </div>
+          </div>
+          <div aria-hidden className="rounded-2xl border h-56 lg:h-72 bg-neutral-50 overflow-hidden">
+            <Image
+              src="/business-studio.png"
+              alt="App-Oint Business Studio dashboard"
+              width={1200}
+              height={720}
+              className="w-full h-full object-cover"
+              priority
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Enterprise */}
+      <section id="enterprise" className="mx-auto max-w-7xl px-4 py-12">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 className="text-2xl font-semibold">Enterprise API</h2>
+            <p className="mt-2 text-neutral-700">
+              Schedule at scale via API. Keys, usage dashboards, and monthly invoicing.
+              Typical pricing: $0.99 per meeting with location, $0.49 without.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <a
+                href={ENTERPRISE_URL}
+                onClick={navigateWithAnalytics('cta_enterprise_clicked', ENTERPRISE_URL)}
+                className="px-5 py-3 rounded-xl border hover:bg-neutral-50"
+              >
+                See the API Portal
+              </a>
+              <a
+                href="https://enterprise.app-oint.com/docs"
+                className="px-5 py-3 rounded-xl border hover:bg-neutral-50"
+              >
+                Read the Docs
+              </a>
+            </div>
+          </div>
+          <div aria-hidden className="rounded-2xl border h-56 lg:h-72 bg-neutral-50 overflow-hidden">
+            <Image
+              src="/enterprise-portal.png"
+              alt="App-Oint Enterprise API portal and docs"
+              width={1200}
+              height={720}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Playtime & Family */}
+      <section className="mx-auto max-w-7xl px-4 py-12">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="rounded-2xl border p-6">
+            <h3 className="font-semibold">Playtime</h3>
+            <p className="mt-2 text-neutral-700">
+              Physical or virtual. Invite friends, set the time, bring the fun. Parents can approve child sessions.
+            </p>
+          </div>
+          <div className="rounded-2xl border p-6">
+            <h3 className="font-semibold">Family & Reminders</h3>
+            <p className="mt-2 text-neutral-700">
+              Share reminders across family members with in-app notifications. No SMS — privacy by default.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing snapshot */}
+      <section id="pricing" className="mx-auto max-w-7xl px-4 py-12">
+        <h2 className="text-2xl font-semibold">Pricing Snapshot</h2>
+        <div className="mt-6 grid md:grid-cols-3 gap-6">
+          <div className="rounded-2xl border p-6">
+            <h3 className="font-semibold">User</h3>
+            <p className="mt-2 text-neutral-700">Free (ads) or Premium €4/month (no ads, PWA prompts).</p>
+          </div>
+          <div className="rounded-2xl border p-6">
+            <h3 className="font-semibold">Business</h3>
+            <p className="mt-2 text-neutral-700">Plans inside Business Studio. Live calendar, two-way confirms.</p>
+          </div>
+          <div className="rounded-2xl border p-6">
+            <h3 className="font-semibold">Enterprise</h3>
+            <p className="mt-2 text-neutral-700">$0.99 (with location) / $0.49 (without). Monthly billing via bank transfer.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="mx-auto max-w-7xl px-4 py-12">
+        <h2 className="text-2xl font-semibold">FAQ</h2>
+        <div className="mt-6 grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 className="font-medium">Is this a native app?</h3>
+            <p className="mt-1 text-neutral-700">It’s a PWA. Add to Home Screen for a full-screen app experience.</p>
+          </div>
+          <div>
+            <h3 className="font-medium">How do ads/premium work?</h3>
+            <p className="mt-1 text-neutral-700">Free shows ads before confirm; Premium removes ads. Kids are ad-free.</p>
+          </div>
+          <div>
+            <h3 className="font-medium">Do you send SMS?</h3>
+            <p className="mt-1 text-neutral-700">No. All notifications are in-app for privacy and control.</p>
+          </div>
+          <div>
+            <h3 className="font-medium">How do I connect to a business?</h3>
+            <p className="mt-1 text-neutral-700">Book the business directly; they confirm in their Business Studio.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t">
+        <div className="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-4 gap-6 text-sm">
+          <div>
+            <div className="font-semibold">App-Oint</div>
+            <p className="mt-2 text-neutral-600">
+              The conversational time organizer — appointments, reminders, and connections.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold mb-4">Product</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white">Features</a></li>
-              <li><a href="#" className="hover:text-white">Pricing</a></li>
-              <li><a href="#" className="hover:text-white">API</a></li>
-              <li><a href="#" className="hover:text-white">Mobile Apps</a></li>
+            <div className="font-semibold">Product</div>
+            <ul className="mt-2 space-y-1">
+              <li><a href="https://app.app-oint.com" onClick={navigateWithAnalytics('footer_user_app_clicked', 'https://app.app-oint.com')} className="hover:text-blue-700">User App</a></li>
+              <li><a href="https://business.app-oint.com" onClick={navigateWithAnalytics('footer_business_clicked', 'https://business.app-oint.com')} className="hover:text-blue-700">Business Studio</a></li>
+              <li><a href="https://enterprise.app-oint.com" onClick={navigateWithAnalytics('footer_enterprise_clicked', 'https://enterprise.app-oint.com')} className="hover:text-blue-700">Enterprise Portal</a></li>
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold mb-4">Company</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white">About</a></li>
-              <li><a href="#" className="hover:text-white">Blog</a></li>
-              <li><a href="#" className="hover:text-white">Careers</a></li>
-              <li><a href="#" className="hover:text-white">Contact</a></li>
+            <div className="font-semibold">Company</div>
+            <ul className="mt-2 space-y-1">
+              <li><Link href="/privacy" className="hover:text-blue-700">Privacy</Link></li>
+              <li><Link href="/terms" className="hover:text-blue-700">Terms</Link></li>
+              <li><Link href="/status" className="hover:text-blue-700">Status</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-white">Cookie Policy</a></li>
-              <li><a href="#" className="hover:text-white">Security</a></li>
+            <div className="font-semibold">Developers</div>
+            <ul className="mt-2 space-y-1">
+              <li><a href="https://enterprise.app-oint.com/docs" className="hover:text-blue-700">API Docs</a></li>
+              <li><Link href="/changelog" className="hover:text-blue-700">Changelog</Link></li>
+              <li><Link href="/contact" className="hover:text-blue-700">Contact</Link></li>
             </ul>
           </div>
         </div>
-
-        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">&copy; 2024 App-Oint. All rights reserved.</p>
-          <div className="flex items-center space-x-4 mt-4 md:mt-0">
-            <select
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              className="bg-gray-800 text-white px-3 py-1 rounded text-sm"
-            >
-              <option value="en">English</option>
-              <option value="es">Español</option>
-              <option value="fr">Français</option>
-              <option value="de">Deutsch</option>
-            </select>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
-                <span className="sr-only">Twitter</span>
-                <span className="text-xl">🐦</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <span className="sr-only">LinkedIn</span>
-                <span className="text-xl">💼</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <span className="sr-only">GitHub</span>
-                <span className="text-xl">🐙</span>
-              </a>
-            </div>
-          </div>
+        <div className="mx-auto max-w-7xl px-4 pb-8 text-xs text-neutral-500">
+          © {new Date().getFullYear()} App-Oint. All rights reserved.
         </div>
-      </div>
-    </footer>
+      </footer>
+    </main>
   )
 }
 
-// Main Landing Page Component
-export default function Home() {
-  return (
-    <div lang="en">
-      <Head>
-        <title>App-Oint — Time Organized</title>
-        <meta name="description" content="From personal scheduling to enterprise APIs — organize your time with AI-enhanced smart appointments. Set – Send – Done." />
-        <meta name="keywords" content="appointments, scheduling, calendar, booking, business, API, enterprise" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="App-Oint — Time Organized" />
-        <meta property="og:description" content="From personal scheduling to enterprise APIs — organize your time with AI-enhanced smart appointments." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://app-oint.com" />
-        <meta property="og:image" content="https://app-oint.com/og-image.png" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="App-Oint — Time Organized" />
-        <meta name="twitter:description" content="From personal scheduling to enterprise APIs — organize your time with AI-enhanced smart appointments." />
-        <meta name="twitter:image" content="https://app-oint.com/og-image.png" />
-
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-
-        {/* Analytics Placeholders */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'GA_MEASUREMENT_ID');
-            `,
-          }}
-        />
-      </Head>
-
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-3">
-              <span className="text-2xl">🎯</span>
-              <span className="text-xl font-bold text-gray-900">App-Oint</span>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="text-gray-600 hover:text-gray-900">Features</a>
-              <a href="#pricing" className="text-gray-600 hover:text-gray-900">Pricing</a>
-              <a href="#api" className="text-gray-600 hover:text-gray-900">API</a>
-              <button className="btn-primary">
-                Get Started
-              </button>
-            </div>
-            <div className="md:hidden">
-              <button className="text-gray-600">
-                <span className="text-xl">☰</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Main Content */}
-      <main>
-        <SectionHero />
-        <SectionTrust />
-        <SectionFeaturesPersonal />
-        <SectionFeaturesBusiness />
-        <SectionFeaturesAPI />
-        <SectionAmbassadors />
-        <SectionTestimonials />
-        <SectionPricing />
-        <SectionApps />
-        <SectionIntegrations />
-      </main>
-
-      <Footer />
-    </div>
-  )
+export async function getServerSideProps({ req }) {
+  const locale = detectLocale(req);
+  const { locale: resolved, messages } = loadCommonMessages(locale);
+  return {
+    props: {
+      locale: resolved,
+      t: messages || {},
+    },
+  };
 }

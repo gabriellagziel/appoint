@@ -13,28 +13,29 @@ class MeetingChecklist extends ConsumerWidget {
     final items =
         (meeting['checklist'] as List?)?.cast<Map<String, dynamic>>() ??
             const [];
-    
+
     return Card(
       child: Column(
         children: [
-          if (items.isNotEmpty) ...items.map((i) {
-            final id = i['id']?.toString() ?? '';
-            final label = i['label']?.toString() ?? id;
-            final done = i['done'] == true;
-            return CheckboxListTile(
-              title: Text(label),
-              value: done,
-              onChanged: (v) => ref
-                  .read(meetingControllerProvider(meetingId).notifier)
-                  .toggleChecklistItem(id, v ?? false),
-              secondary: IconButton(
-                icon: const Icon(Icons.delete, size: 16),
-                onPressed: () => ref
+          if (items.isNotEmpty)
+            ...items.map((i) {
+              final id = i['id']?.toString() ?? '';
+              final label = i['label']?.toString() ?? id;
+              final done = i['done'] == true;
+              return CheckboxListTile(
+                title: Text(label),
+                value: done,
+                onChanged: (v) => ref
                     .read(meetingControllerProvider(meetingId).notifier)
-                    .removeChecklistItem(id),
-              ),
-            );
-          }),
+                    .toggleChecklistItem(id, v ?? false),
+                secondary: IconButton(
+                  icon: const Icon(Icons.delete, size: 16),
+                  onPressed: () => ref
+                      .read(meetingControllerProvider(meetingId).notifier)
+                      .removeChecklistItem(id),
+                ),
+              );
+            }),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
@@ -78,7 +79,8 @@ class MeetingChecklist extends ConsumerWidget {
                             onPressed: () {
                               if (controller.text.trim().isNotEmpty) {
                                 ref
-                                    .read(meetingControllerProvider(meetingId).notifier)
+                                    .read(meetingControllerProvider(meetingId)
+                                        .notifier)
                                     .addChecklistItem(controller.text.trim());
                                 Navigator.pop(context);
                               }
@@ -98,5 +100,10 @@ class MeetingChecklist extends ConsumerWidget {
     );
   }
 }
+
+
+
+
+
 
 

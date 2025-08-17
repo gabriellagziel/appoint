@@ -34,15 +34,16 @@ export function middleware(request: NextRequest) {
     return NextResponse.next()
   }
 
-  // TEMPORARILY DISABLED: Admin route protection for testing
-  // if (isAdminRoute(pathname)) {
-  //   // Redirect to admin login if not authenticated
-  //   if (!isAuthenticated(request)) {
-  //     const loginUrl = new URL('/admin/login', request.url)
-  //     loginUrl.searchParams.set('callbackUrl', pathname)
-  //     return NextResponse.redirect(loginUrl)
-  //   }
-  // }
+  // Re-enable admin route protection: ensure only authenticated users can access `/admin/*`.
+  // Rationale: This was previously disabled for testing. In production we must enforce access control at the edge.
+  if (isAdminRoute(pathname)) {
+    // If no auth cookies are present, redirect to admin login and preserve intended destination.
+    if (!isAuthenticated(request)) {
+      const loginUrl = new URL('/admin/login', request.url)
+      loginUrl.searchParams.set('callbackUrl', pathname)
+      return NextResponse.redirect(loginUrl)
+    }
+  }
 
   // Device-based routing
   const isMobile = isMobileOrTablet(userAgent)

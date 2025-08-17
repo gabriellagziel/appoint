@@ -115,7 +115,7 @@ class MeetingShareAnalyticsService {
 
       final events = eventsSnapshot.docs.map((doc) => doc.data()).toList();
 
-      final summary = {
+      final Map<String, dynamic> summary = {
         'totalShares': 0,
         'totalClicks': 0,
         'totalJoins': 0,
@@ -126,39 +126,37 @@ class MeetingShareAnalyticsService {
       };
 
       for (final event in events) {
-        final eventType = event['event'] as String;
-        final source = event['source'] as String;
+        final eventType = (event['event'] ?? '') as String;
+        final source = (event['source'] ?? 'unknown') as String;
 
         // Initialize source stats if not exists
-        if (!summary['sources'].containsKey(source)) {
-          summary['sources'][source] = {
+        final sources = summary['sources'] as Map<String, Map<String, int>>;
+        if (!sources.containsKey(source)) {
+          sources[source] = {
             'shares': 0,
             'clicks': 0,
             'joins': 0,
             'rsvps': 0,
           };
         }
+        final src = sources[source]!;
 
         switch (eventType) {
           case 'share_link_created':
             summary['totalShares'] = (summary['totalShares'] as int) + 1;
-            summary['sources'][source]['shares'] =
-                (summary['sources'][source]['shares'] as int) + 1;
+            src['shares'] = (src['shares'] ?? 0) + 1;
             break;
           case 'share_link_clicked':
             summary['totalClicks'] = (summary['totalClicks'] as int) + 1;
-            summary['sources'][source]['clicks'] =
-                (summary['sources'][source]['clicks'] as int) + 1;
+            src['clicks'] = (src['clicks'] ?? 0) + 1;
             break;
           case 'group_member_joined_from_share':
             summary['totalJoins'] = (summary['totalJoins'] as int) + 1;
-            summary['sources'][source]['joins'] =
-                (summary['sources'][source]['joins'] as int) + 1;
+            src['joins'] = (src['joins'] ?? 0) + 1;
             break;
           case 'rsvp_submitted_from_share':
             summary['totalRSVPs'] = (summary['totalRSVPs'] as int) + 1;
-            summary['sources'][source]['rsvps'] =
-                (summary['sources'][source]['rsvps'] as int) + 1;
+            src['rsvps'] = (src['rsvps'] ?? 0) + 1;
             break;
         }
       }
@@ -192,7 +190,7 @@ class MeetingShareAnalyticsService {
 
       final events = eventsSnapshot.docs.map((doc) => doc.data()).toList();
 
-      final summary = {
+      final Map<String, dynamic> summary = {
         'totalShares': 0,
         'totalClicks': 0,
         'totalJoins': 0,
@@ -202,44 +200,39 @@ class MeetingShareAnalyticsService {
       };
 
       for (final event in events) {
-        final eventType = event['event'] as String;
-        final source = event['source'] as String;
-        final meetingId = event['meetingId'] as String;
+        final eventType = (event['event'] ?? '') as String;
+        final source = (event['source'] ?? 'unknown') as String;
+        final meetingId = (event['meetingId'] ?? '') as String;
 
         // Count meetings
-        summary['meetings'][meetingId] =
-            (summary['meetings'][meetingId] ?? 0) + 1;
+        final meetings = summary['meetings'] as Map<String, int>;
+        if (meetingId.isNotEmpty) {
+          meetings[meetingId] = (meetings[meetingId] ?? 0) + 1;
+        }
 
         // Initialize source stats if not exists
-        if (!summary['sources'].containsKey(source)) {
-          summary['sources'][source] = {
-            'shares': 0,
-            'clicks': 0,
-            'joins': 0,
-            'rsvps': 0,
-          };
+        final sources = summary['sources'] as Map<String, Map<String, int>>;
+        if (!sources.containsKey(source)) {
+          sources[source] = {'shares': 0, 'clicks': 0, 'joins': 0, 'rsvps': 0};
         }
+        final src = sources[source]!;
 
         switch (eventType) {
           case 'share_link_created':
             summary['totalShares'] = (summary['totalShares'] as int) + 1;
-            summary['sources'][source]['shares'] =
-                (summary['sources'][source]['shares'] as int) + 1;
+            src['shares'] = (src['shares'] ?? 0) + 1;
             break;
           case 'share_link_clicked':
             summary['totalClicks'] = (summary['totalClicks'] as int) + 1;
-            summary['sources'][source]['clicks'] =
-                (summary['sources'][source]['clicks'] as int) + 1;
+            src['clicks'] = (src['clicks'] ?? 0) + 1;
             break;
           case 'group_member_joined_from_share':
             summary['totalJoins'] = (summary['totalJoins'] as int) + 1;
-            summary['sources'][source]['joins'] =
-                (summary['sources'][source]['joins'] as int) + 1;
+            src['joins'] = (src['joins'] ?? 0) + 1;
             break;
           case 'rsvp_submitted_from_share':
             summary['totalRSVPs'] = (summary['totalRSVPs'] as int) + 1;
-            summary['sources'][source]['rsvps'] =
-                (summary['sources'][source]['rsvps'] as int) + 1;
+            src['rsvps'] = (src['rsvps'] ?? 0) + 1;
             break;
         }
       }
@@ -343,5 +336,3 @@ final conversionFunnelProvider =
   final service = ref.read(REDACTED_TOKEN);
   return await service.getConversionFunnel(meetingId);
 });
-
-

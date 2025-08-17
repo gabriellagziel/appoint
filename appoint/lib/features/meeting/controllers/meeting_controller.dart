@@ -58,6 +58,10 @@ class MeetingController extends StateNotifier<MeetingState> {
   Future<void> toggleChecklistItem(String itemId, bool done) => ref
       .read(meetingServiceProvider)
       .toggleChecklistItem(meetingId, itemId, done);
+  Future<void> addChecklistItem(String label) =>
+      ref.read(meetingServiceProvider).addChecklistItem(meetingId, label);
+  Future<void> removeChecklistItem(String itemId) =>
+      ref.read(meetingServiceProvider).removeChecklistItem(meetingId, itemId);
 }
 
 final meetingControllerProvider =

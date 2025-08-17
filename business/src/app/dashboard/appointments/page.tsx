@@ -362,7 +362,7 @@ export default function AppointmentsPage() {
                     </div>
 
                     <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Today's Schedule</h3>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Today&apos;s Schedule</h3>
                         <div className="space-y-3">
                             {appointments.filter(a => a.date === '2024-08-05').map((appointment) => (
                                 <div key={appointment.id} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">

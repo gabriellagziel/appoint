@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app'
 import { addDoc, collection, getFirestore, Timestamp } from 'firebase/firestore'
 import { NextRequest, NextResponse } from 'next/server'
+import sgMail from '@sendgrid/mail'
 
 // Firebase configuration
 const firebaseConfig = {
@@ -62,8 +63,32 @@ export async function POST(request: NextRequest) {
 
         const docRef = await addDoc(collection(db, 'business_registrations'), registrationData)
 
-        // TODO: Send notification email to admin team
-        // await sendAdminNotification(body)
+        // Send notification email to admin team using SendGrid
+        try {
+            const apiKey = process.env.SENDGRID_API_KEY
+            if (!apiKey) {
+                console.warn('SENDGRID_API_KEY not set; skipping admin email notification')
+            } else {
+                sgMail.setApiKey(apiKey)
+                const adminRecipients = (process.env.ADMIN_NOTIFICATION_EMAILS || '').split(',').map(e => e.trim()).filter(Boolean)
+                const to = adminRecipients.length ? adminRecipients : [process.env.DEFAULT_ADMIN_EMAIL || 'admin@app-oint.com']
+                const from = process.env.SENDGRID_FROM_EMAIL || 'noreply@app-oint.com'
+
+                // Inline security: Ensure 'from' domain is verified with SendGrid; prevent spoofing.
+                await sgMail.send({
+                    to,
+                    from,
+                    subject: `New Business Registration: ${body.companyName}`,
+                    text: `Company: ${body.companyName}\nContact: ${body.contactName} <${body.contactEmail}>\nUse Case: ${body.useCase}`,
+                    html: `<p><strong>Company:</strong> ${body.companyName}</p>
+                           <p><strong>Contact:</strong> ${body.contactName} &lt;${body.contactEmail}&gt;</p>
+                           <p><strong>Use Case:</strong> ${body.useCase}</p>
+                           <p><strong>Registration ID:</strong> ${docRef.id}</p>`,
+                })
+            }
+        } catch (e) {
+            console.error('Failed to send admin notification email', e)
+        }
 
         return NextResponse.json({
             success: true,

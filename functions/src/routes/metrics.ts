@@ -1,20 +1,17 @@
-import { Router } from 'express';
-import { register } from '../middleware/metrics';
-import { getGroupsMetrics } from '../groups/monitoring';
+// Minimal metrics route for functions express server, exporting a router
+import express from 'express'
+import { getGroupsMetrics } from '../groups/monitoring.js'
 
-const router = Router();
-router.get('/metrics', async (_req, res) => {
-    res.set('Content-Type', register.contentType);
-    res.send(await register.metrics());
-});
+const router = express.Router()
 
-router.get('/metrics/groups', async (_req, res) => {
-    try {
-        const metrics = await getGroupsMetrics();
-        res.json(metrics);
-    } catch (e: any) {
-        res.status(500).json({ error: e?.message || 'failed' });
-    }
-});
+router.get('/', async (_req, res) => {
+  // Inline comment: expose system metrics; extend with counters/histograms if using Prometheus
+  const groups = await getGroupsMetrics()
+  res.json({ ok: true, groups })
+})
 
-export default router;
+export default router
+export const metricsMiddleware = (_req: express.Request, _res: express.Response, next: express.NextFunction) => {
+  // Inline comment: place to add correlation IDs, request timing, etc.
+  next()
+}

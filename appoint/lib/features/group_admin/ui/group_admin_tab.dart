@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/group_role.dart';
+import 'package:appoint/models/group_policy.dart';
 import 'package:appoint/features/group_admin/providers/group_admin_providers.dart';
 import 'package:appoint/features/auth/providers/auth_provider.dart';
 
@@ -194,7 +195,7 @@ class GroupAdminTab extends ConsumerWidget {
                 'Owners',
                 roleStats.owners.toString(),
                 Colors.purple,
-                Icons.crown,
+                Icons.emoji_events,
               ),
             ),
             const SizedBox(width: 8),
@@ -621,24 +622,25 @@ class GroupAdminTab extends ConsumerWidget {
     }
   }
 
-  RoleStats _calculateRoleStats(List<GroupMember> members) {
-    int owners = 0, admins = 0, members = 0;
+  RoleStats _calculateRoleStats(List<GroupMember> groupMembers) {
+    int ownersCount = 0, adminsCount = 0, membersCount = 0;
 
-    for (final member in members) {
+    for (final member in groupMembers) {
       switch (member.role) {
         case GroupRole.owner:
-          owners++;
+          ownersCount++;
           break;
         case GroupRole.admin:
-          admins++;
+          adminsCount++;
           break;
         case GroupRole.member:
-          members++;
+          membersCount++;
           break;
       }
     }
 
-    return RoleStats(owners: owners, admins: admins, members: members);
+    return RoleStats(
+        owners: ownersCount, admins: adminsCount, members: membersCount);
   }
 }
 

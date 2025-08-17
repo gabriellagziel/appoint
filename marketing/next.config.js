@@ -1,16 +1,20 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
   reactStrictMode: true,
   images: {
     unoptimized: true
   },
   trailingSlash: true,
-  typescript: {
-    ignoreBuildErrors: true,
+  async headers() {
+    return [{
+      source: '/:path*',
+      headers: [
+        { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains; preload' },
+      ],
+    }];
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  output: "standalone",
 };
 
 module.exports = nextConfig;

@@ -1,0 +1,11 @@
+== Local availability ==
+== http://127.0.0.1:3000 ==
+status:500 time:0.459452s
+HTTP/1.1 500 Internal Server Error
+Cache-Control: no-store, must-revalidate
+X-Powered-By: Next.js
+ETag: "ens907exnl2fp"
+Content-Type: text/html; charset=utf-8
+
+== http://127.0.0.1:3001 ==
+status:000 time:0.000470s

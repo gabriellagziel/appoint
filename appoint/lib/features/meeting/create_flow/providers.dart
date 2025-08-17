@@ -6,5 +6,3 @@ final REDACTED_TOKEN =
     StateNotifierProvider<CreateMeetingFlowController, CreateMeetingState>(
   (ref) => CreateMeetingFlowController(),
 );
-
-

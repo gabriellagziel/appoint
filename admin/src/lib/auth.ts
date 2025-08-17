@@ -14,8 +14,8 @@ export interface AdminUser extends User {
     claims?: { [key: string]: unknown; super_admin?: boolean };
 }
 
-// Development mode flag - set to true to bypass Firebase auth
-const DEV_MODE = !process.env.NEXT_PUBLIC_FIREBASE_API_KEY;
+// Remove development bypass: enforce real Firebase auth and Firestore role checks in all environments.
+const DEV_MODE = false; // Inline comment: this disables prior behavior that auto-logged in a mock user.
 
 // Mock admin user for development
 const MOCK_ADMIN_USER: AdminUser = {
@@ -51,11 +51,7 @@ const AUTHORIZED_ADMIN_UIDS = [
 
 export class AuthService {
     static async signIn(email: string, password: string): Promise<AdminUser> {
-        if (DEV_MODE) {
-            // In development mode, accept any email/password
-            console.log('🔧 DEV MODE: Bypassing Firebase auth');
-            return MOCK_ADMIN_USER;
-        }
+        // Enforce real authentication: no dev bypass allowed
 
         try {
             const userCredential = await signInWithEmailAndPassword(auth, email, password);
@@ -84,10 +80,7 @@ export class AuthService {
     }
 
     static async signOut(): Promise<void> {
-        if (DEV_MODE) {
-            console.log('🔧 DEV MODE: Mock sign out');
-            return;
-        }
+        // Always execute real sign out
 
         try {
             await signOut(auth);
@@ -97,11 +90,7 @@ export class AuthService {
     }
 
     static async getCurrentUser(): Promise<AdminUser | null> {
-        if (DEV_MODE) {
-            // In development mode, return mock user
-            console.log('🔧 DEV MODE: Returning mock admin user');
-            return MOCK_ADMIN_USER;
-        }
+        // Always resolve actual Firebase user; no dev mock user
 
         return new Promise((resolve) => {
             const unsubscribe = onAuthStateChanged(auth, async (user) => {

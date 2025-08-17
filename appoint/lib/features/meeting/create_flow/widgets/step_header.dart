@@ -4,7 +4,8 @@ import '../models/create_meeting_state.dart';
 class StepHeader extends StatelessWidget {
   final List<MeetingStep> steps;
   final int currentIndex;
-  const StepHeader({super.key, required this.steps, required this.currentIndex});
+  const StepHeader(
+      {super.key, required this.steps, required this.currentIndex});
 
   @override
   Widget build(BuildContext context) {
@@ -22,5 +23,3 @@ class StepHeader extends StatelessWidget {
     );
   }
 }
-
-

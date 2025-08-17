@@ -1,0 +1,10 @@
+"use client";
+import React from "react";
+
+const AppCtx = React.createContext<{ ready: boolean }>({ ready: true });
+export const useApp = () => React.useContext(AppCtx);
+
+export default function ClientProviders({ children }: { children: React.ReactNode }) {
+  return <AppCtx.Provider value={{ ready: true }}>{children}</AppCtx.Provider>;
+}
+

@@ -4,6 +4,7 @@ enum AuditEventType {
   memberJoined,
   memberLeft,
   memberRemoved,
+  memberInvited,
   roleChanged,
   policyChanged,
   voteOpened,
@@ -26,6 +27,8 @@ extension AuditEventTypeExtension on AuditEventType {
         return 'Member Left';
       case AuditEventType.memberRemoved:
         return 'Member Removed';
+      case AuditEventType.memberInvited:
+        return 'Member Invited';
       case AuditEventType.roleChanged:
         return 'Role Changed';
       case AuditEventType.policyChanged:
@@ -59,6 +62,8 @@ extension AuditEventTypeExtension on AuditEventType {
         return 'person_remove';
       case AuditEventType.memberRemoved:
         return 'person_off';
+      case AuditEventType.memberInvited:
+        return 'person_add_alt';
       case AuditEventType.roleChanged:
         return 'admin_panel_settings';
       case AuditEventType.policyChanged:
@@ -87,6 +92,7 @@ extension AuditEventTypeExtension on AuditEventType {
   String get color {
     switch (this) {
       case AuditEventType.memberJoined:
+      case AuditEventType.memberInvited:
       case AuditEventType.roleChanged:
       case AuditEventType.policyChanged:
       case AuditEventType.voteOpened:
@@ -197,6 +203,8 @@ class GroupAuditEvent {
     switch (type) {
       case AuditEventType.memberJoined:
         return '${metadata['userName'] ?? 'A user'} joined the group';
+      case AuditEventType.memberInvited:
+        return '${metadata['targetUserName'] ?? 'A user'} was invited by ${metadata['actorUserName'] ?? 'an admin'}';
       case AuditEventType.memberLeft:
         return '${metadata['userName'] ?? 'A user'} left the group';
       case AuditEventType.memberRemoved:

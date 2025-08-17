@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 enum RSVPStatus {
   accepted,
@@ -74,8 +75,8 @@ class PublicRSVPService {
       if (guestToken != null) {
         // Guest RSVP
         rsvpData['guestToken'] = guestToken;
-        rsvpData['guestName'] = guestName;
-        rsvpData['guestEmail'] = guestEmail;
+        if (guestName != null) rsvpData['guestName'] = guestName;
+        if (guestEmail != null) rsvpData['guestEmail'] = guestEmail;
       } else {
         // Member RSVP
         rsvpData['userId'] = userId;
@@ -97,7 +98,7 @@ class PublicRSVPService {
 
       return true;
     } catch (e) {
-      print('Error submitting RSVP: $e');
+      debugPrint('Error submitting RSVP: $e');
       return false;
     }
   }
@@ -124,13 +125,16 @@ class PublicRSVPService {
       final snapshot = await query.get();
       if (snapshot.docs.isEmpty) return null;
 
-      final rsvpData = snapshot.docs.first.data();
+      final Map<String, dynamic> rsvpData = Map<String, dynamic>.from(
+          snapshot.docs.first.data() as Map<String, dynamic>);
+      final statusStr = (rsvpData['status'] ?? '') as String?;
+      if (statusStr == null) return RSVPStatus.pending;
       return RSVPStatus.values.firstWhere(
-        (status) => status.name == rsvpData['status'],
+        (status) => status.name == statusStr,
         orElse: () => RSVPStatus.pending,
       );
     } catch (e) {
-      print('Error getting RSVP: $e');
+      debugPrint('Error getting RSVP: $e');
       return null;
     }
   }
@@ -156,8 +160,8 @@ class PublicRSVPService {
       };
 
       for (final rsvp in rsvps) {
-        final status = rsvp['status'] as String;
-        final type = rsvp['type'] as String;
+        final status = (rsvp['status'] as String?) ?? 'pending';
+        final type = (rsvp['type'] as String?) ?? 'member';
 
         switch (status) {
           case 'accepted':
@@ -183,7 +187,7 @@ class PublicRSVPService {
 
       return summary;
     } catch (e) {
-      print('Error getting RSVP summary: $e');
+      debugPrint('Error getting RSVP summary: $e');
       return {};
     }
   }
@@ -214,7 +218,7 @@ class PublicRSVPService {
         };
       }).toList();
     } catch (e) {
-      print('Error getting RSVP list: $e');
+      debugPrint('Error getting RSVP list: $e');
       return [];
     }
   }
@@ -263,8 +267,8 @@ class PublicRSVPService {
 
       if (!meetingDoc.exists) return false;
 
-      final meetingData = meetingDoc.data()!;
-      final allowGuestsRSVP = meetingData['allowGuestsRSVP'] ?? true;
+      final meetingData = meetingDoc.data() ?? <String, dynamic>{};
+      final allowGuestsRSVP = (meetingData['allowGuestsRSVP'] as bool?) ?? true;
 
       // If guest and guests not allowed
       if (guestToken != null && !allowGuestsRSVP) {
@@ -280,7 +284,7 @@ class PublicRSVPService {
 
       return existingRSVP == null;
     } catch (e) {
-      print('Error checking RSVP permission: $e');
+      debugPrint('Error checking RSVP permission: $e');
       return false;
     }
   }
@@ -304,7 +308,7 @@ class PublicRSVPService {
         'event': 'rsvp_submitted',
       });
     } catch (e) {
-      print('Error logging RSVP event: $e');
+      debugPrint('Error logging RSVP event: $e');
     }
   }
 }

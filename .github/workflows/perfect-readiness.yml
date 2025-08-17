@@ -1,0 +1,38 @@
+name: Perfect Readiness Gate
+on: [push, pull_request]
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 18 }
+      - name: Install root deps
+        run: npm i
+      - name: Install & Build
+        run: npm run qa:build
+      - name: Serve locally
+        run: npm run qa:serve &
+      - name: Wait for servers
+        run: sleep 12
+      - name: Health
+        run: npm run qa:health
+      - name: E2E
+        run: npx playwright install --with-deps && npm run qa:e2e
+      - name: Lighthouse
+        run: npm run qa:lighthouse
+      - name: Accessibility (axe)
+        run: npm run qa:axe
+      - name: i18n audit
+        run: npm run qa:i18n
+      - name: Link crawl
+        run: npm run qa:links
+      - name: Final report
+        run: npm run qa:report
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-artifacts
+          path: |
+            qa/output/**
+            qa/FINAL_UI_UX_QA_REPORT.md

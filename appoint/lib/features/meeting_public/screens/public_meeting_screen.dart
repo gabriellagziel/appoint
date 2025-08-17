@@ -250,9 +250,10 @@ class _PublicMeetingScreenState extends ConsumerState<PublicMeetingScreen> {
       margin: const EdgeInsets.only(bottom: 16),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: _getSourceColor(source).withOpacity(0.1),
+        color: _getSourceColor(source).withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: _getSourceColor(source).withOpacity(0.3)),
+        border:
+            Border.all(color: _getSourceColor(source).withValues(alpha: 0.3)),
       ),
       child: Row(
         children: [
@@ -328,7 +329,7 @@ class _PublicMeetingScreenState extends ConsumerState<PublicMeetingScreen> {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
                     decoration: BoxDecoration(
-                      color: Colors.green.withOpacity(0.1),
+                      color: Colors.green.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: const Text(
@@ -424,7 +425,7 @@ class _PublicMeetingScreenState extends ConsumerState<PublicMeetingScreen> {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: _currentRSVP!.color.withOpacity(0.1),
+                  color: _currentRSVP!.color.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Row(
@@ -587,15 +588,15 @@ class _PublicMeetingScreenState extends ConsumerState<PublicMeetingScreen> {
   IconData _getSourceIcon(String source) {
     switch (source) {
       case 'whatsappGroup':
-        return Icons.whatsapp;
+        return Icons.chat_bubble_outline;
       case 'telegramGroup':
-        return Icons.telegram;
+        return Icons.send_outlined;
       case 'signalGroup':
-        return Icons.signal_cellular_alt;
+        return Icons.lock_outline;
       case 'discord':
-        return Icons.discord;
+        return Icons.groups_2_outlined;
       case 'messenger':
-        return Icons.facebook;
+        return Icons.message_outlined;
       default:
         return Icons.share;
     }
@@ -618,5 +619,3 @@ class _PublicMeetingScreenState extends ConsumerState<PublicMeetingScreen> {
     }
   }
 }
-
-

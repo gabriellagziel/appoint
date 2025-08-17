@@ -1,7 +1,7 @@
 import * as admin from 'firebase-admin';
 import { onDocumentWritten } from 'firebase-functions/v2/firestore';
 import { onCall } from 'firebase-functions/v2/https';
-import { withRateLimit } from './middleware/rateLimit';
+import { withRateLimit } from './middleware/rateLimit.js';
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 
 const db = admin.firestore();

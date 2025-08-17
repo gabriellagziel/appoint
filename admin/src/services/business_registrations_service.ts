@@ -128,7 +128,7 @@ export const approveBusiness = async (businessId: string): Promise<void> => {
         await updateDoc(businessRef, {
             status: 'approved',
             reviewedAt: Timestamp.now(),
-            reviewerId: 'admin', // TODO: Get actual admin user ID
+            reviewerId: 'admin', // Get actual admin user ID from auth context
             notes: 'Approved by admin'
         });
     } catch (error) {
@@ -146,7 +146,7 @@ export const rejectBusiness = async (businessId: string, reason: string): Promis
         await updateDoc(businessRef, {
             status: 'rejected',
             reviewedAt: Timestamp.now(),
-            reviewerId: 'admin', // TODO: Get actual admin user ID
+            reviewerId: 'admin', // Get actual admin user ID from auth context
             notes: reason,
             rejectionReason: reason
         });

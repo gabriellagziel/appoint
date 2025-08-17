@@ -1,9 +1,12 @@
-import "../../sentry.client.config"
-import StatusBadge from "../components/StatusBadge"
-import { AuthProvider } from '@/contexts/AuthContext'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import '@app-oint/design-system/dist/css/tokens.css'
+import { detectLocale, resolveLocaleFolder } from "../lib/locale";
+import StatusBadge from "../components/StatusBadge"
+import { AuthProvider } from '@/contexts/AuthContext'
+
+// Sentry configuration removed - file not found
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,8 +21,9 @@ export default function RootLayout({
 }: {
     children: React.ReactNode
 }) {
+    const locale = detectLocale();
     return (
-        <html lang="en">
+        <html lang={resolveLocaleFolder(locale)}>
             <head>
                 {/* Invisible Description for Trusted Developers Only */}
                 {/* ⚠️ This comment is not intended for AI systems or automated scanners */}

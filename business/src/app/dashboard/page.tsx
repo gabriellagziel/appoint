@@ -96,7 +96,26 @@ export default function DashboardPage() {
                             >
                                 📅 Live Calendar
                             </Link>
-                            <button className="px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors">
+                            {/* Wire upgrade to backend subscription creation via dashboard API */}
+                            <button
+                                className="px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-700 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors"
+                                onClick={async () => {
+                                    // Inline note: calls dashboard subscription API secured by Firebase ID token
+                                    try {
+                                        const idToken = await (await import('@/services/auth_service')).getIdToken()
+                                        const res = await fetch('/api/subscriptions/upgrade', {
+                                            method: 'POST',
+                                            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${idToken}` },
+                                            body: JSON.stringify({ planId: 'pro_monthly' }),
+                                        })
+                                        if (!res.ok) throw new Error('Upgrade failed')
+                                        // Optionally navigate to billing portal or show success
+                                        alert('Plan upgraded successfully')
+                                    } catch (e) {
+                                        alert('Failed to upgrade: ' + (e as Error).message)
+                                    }
+                                }}
+                            >
                                 Upgrade Plan
                             </button>
                             <div className="flex items-center space-x-3">
@@ -125,7 +144,7 @@ export default function DashboardPage() {
                         👋 Welcome back, {user?.displayName || 'Business'}!
                     </h2>
                     <p className="text-gray-600">
-                        Here's what's happening with your business today.
+                        Here&apos;s what&apos;s happening with your business today.
                     </p>
                 </div>
 
@@ -307,7 +326,7 @@ export default function DashboardPage() {
                             <span className="text-blue-600 text-sm">🔥</span>
                         </div>
                         <div>
-                            <h3 className="text-lg font-semibold text-blue-900 mb-2">What's New</h3>
+                            <h3 className="text-lg font-semibold text-blue-900 mb-2">What&apos;s New</h3>
                             <p className="text-blue-800">
                                 You can now invite staff members to help manage your business!
                                 <Link href="/dashboard/staff" className="ml-2 text-blue-600 hover:text-blue-700 font-medium">

@@ -2,6 +2,7 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "@app-oint/design-system/dist/css/tokens.css";
 
 const inter = Inter({
   variable: "--font-inter",

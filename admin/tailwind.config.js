@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+const preset = require("@app-oint/design-system/tailwind-preset.cjs");
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  presets: [preset],
   theme: {
     extend: {
       colors: {

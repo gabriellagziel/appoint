@@ -8,7 +8,8 @@ class GroupSecurityService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   /// בדיקת אבטחה לפני פעולה
-  Future<bool> validateAction(String groupId, String userId, String action) async {
+  Future<bool> validateAction(
+      String groupId, String userId, String action) async {
     final group = await _groupSharingService.getGroupById(groupId);
     if (group == null) return false;
 
@@ -55,7 +56,8 @@ class GroupSecurityService {
         .collection('user_actions')
         .where('userId', isEqualTo: userId)
         .where('action', isEqualTo: action)
-        .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(windowStart))
+        .where('timestamp',
+            isGreaterThanOrEqualTo: Timestamp.fromDate(windowStart))
         .get();
 
     // Limit based on action type
@@ -86,7 +88,8 @@ class GroupSecurityService {
         .collection('user_actions')
         .where('userId', isEqualTo: userId)
         .where('groupId', isEqualTo: groupId)
-        .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(windowStart))
+        .where('timestamp',
+            isGreaterThanOrEqualTo: Timestamp.fromDate(windowStart))
         .get();
 
     // If user performed more than 50 actions in the last hour, it's suspicious
@@ -94,7 +97,9 @@ class GroupSecurityService {
   }
 
   /// רישום פעולת משתמש
-  Future<void> logUserAction(String userId, String action, {
+  Future<void> logUserAction(
+    String userId,
+    String action, {
     String? groupId,
     Map<String, dynamic>? metadata,
   }) async {
@@ -110,7 +115,10 @@ class GroupSecurityService {
   }
 
   /// חסימת משתמש מקבוצה
-  Future<void> banUser(String groupId, String userId, String reason, {
+  Future<void> banUser(
+    String groupId,
+    String userId,
+    String reason, {
     Duration? duration,
     String? bannedBy,
   }) async {
@@ -126,7 +134,9 @@ class GroupSecurityService {
     });
 
     // Log the ban action
-    await logUserAction(bannedBy ?? 'system', 'ban_user',
+    await logUserAction(
+      bannedBy ?? 'system',
+      'ban_user',
       groupId: groupId,
       metadata: {
         'bannedUserId': userId,
@@ -137,11 +147,17 @@ class GroupSecurityService {
   }
 
   /// הסרת חסימה של משתמש
-  Future<void> unbanUser(String groupId, String userId, String? unbannedBy) async {
-    await _firestore.collection('group_bans').doc('${groupId}_$userId').delete();
+  Future<void> unbanUser(
+      String groupId, String userId, String? unbannedBy) async {
+    await _firestore
+        .collection('group_bans')
+        .doc('${groupId}_$userId')
+        .delete();
 
     // Log the unban action
-    await logUserAction(unbannedBy ?? 'system', 'unban_user',
+    await logUserAction(
+      unbannedBy ?? 'system',
+      'unban_user',
       groupId: groupId,
       metadata: {
         'unbannedUserId': userId,
@@ -169,7 +185,8 @@ class GroupSecurityService {
   }
 
   /// קבלת היסטוריית פעולות של משתמש
-  Future<List<Map<String, dynamic>>> getUserActionHistory(String userId, {
+  Future<List<Map<String, dynamic>>> getUserActionHistory(
+    String userId, {
     String? groupId,
     int limit = 100,
   }) async {
@@ -206,7 +223,8 @@ class GroupSecurityService {
     final actionsQuery = await _firestore
         .collection('user_actions')
         .where('groupId', isEqualTo: groupId)
-        .where('timestamp', isGreaterThanOrEqualTo: Timestamp.fromDate(windowStart))
+        .where('timestamp',
+            isGreaterThanOrEqualTo: Timestamp.fromDate(windowStart))
         .get();
 
     final suspiciousActions = actionsQuery.docs.where((doc) {
@@ -217,7 +235,8 @@ class GroupSecurityService {
 
     return {
       'bannedUsers': bannedUsers.length,
-      'activeBans': bannedUsers.where((ban) => ban['banUntil'].isAfter(now)).length,
+      'activeBans':
+          bannedUsers.where((ban) => ban['banUntil'].isAfter(now)).length,
       'recentActions': actionsQuery.docs.length,
       'suspiciousActions': suspiciousActions,
     };
@@ -239,7 +258,8 @@ class GroupSecurityService {
   }
 
   /// בדיקת הרשאות מתקדמת
-  Future<bool> checkAdvancedPermissions(String groupId, String userId, String action) async {
+  Future<bool> checkAdvancedPermissions(
+      String groupId, String userId, String action) async {
     // First check basic permissions
     if (!await validateAction(groupId, userId, action)) {
       return false;
@@ -262,4 +282,3 @@ class GroupSecurityService {
     }
   }
 }
-

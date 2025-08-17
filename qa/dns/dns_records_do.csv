@@ -1,0 +1,9 @@
+host,type,value,ttl
+@,A,REDACTED_TOKEN,300
+www,CNAME,WWW-TARGET.ondigitalocean.app.,300
+app,CNAME,APP-TARGET.ondigitalocean.app.,300
+business,CNAME,BUSINESS-TARGET.ondigitalocean.app.,300
+enterprise,CNAME,ENTERPRISE-TARGET.ondigitalocean.app.,300
+api,CNAME,API-TARGET.ondigitalocean.app.,300
+admin,CNAME,ADMIN-TARGET.ondigitalocean.app.,300
+

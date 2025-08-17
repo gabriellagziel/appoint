@@ -1,6 +1,14 @@
 import 'package:flutter/foundation.dart';
 
-enum MeetingType { oneOnOne, group, event, openCall, business, playtime, personal }
+enum MeetingType {
+  oneOnOne,
+  group,
+  event,
+  openCall,
+  business,
+  playtime,
+  personal
+}
 
 enum MeetingStep {
   info,
@@ -24,8 +32,11 @@ class CreateMeetingState {
   final String? virtualUrl;
   final String title;
   final String description;
+  final String recurrence; // 'none' | 'daily' | 'weekly' | 'monthly'
+  final String? flexibleNote; // e.g. 'after 5pm', 'next week'
   final Set<MeetingStep> completed;
   final int currentIndex;
+  final bool preferVirtual;
 
   const CreateMeetingState({
     this.type,
@@ -38,8 +49,11 @@ class CreateMeetingState {
     this.virtualUrl,
     this.title = '',
     this.description = '',
+    this.recurrence = 'none',
+    this.flexibleNote,
     this.completed = const {},
     this.currentIndex = 0,
+    this.preferVirtual = false,
   });
 
   CreateMeetingState copyWith({
@@ -53,9 +67,13 @@ class CreateMeetingState {
     String? virtualUrl,
     String? title,
     String? description,
+    String? recurrence,
+    String? flexibleNote,
     Set<MeetingStep>? completed,
     int? currentIndex,
-  }) => CreateMeetingState(
+    bool? preferVirtual,
+  }) =>
+      CreateMeetingState(
         type: type ?? this.type,
         participantIds: participantIds ?? this.participantIds,
         start: start ?? this.start,
@@ -66,9 +84,10 @@ class CreateMeetingState {
         virtualUrl: virtualUrl ?? this.virtualUrl,
         title: title ?? this.title,
         description: description ?? this.description,
+        recurrence: recurrence ?? this.recurrence,
+        flexibleNote: flexibleNote ?? this.flexibleNote,
         completed: completed ?? this.completed,
         currentIndex: currentIndex ?? this.currentIndex,
+        preferVirtual: preferVirtual ?? this.preferVirtual,
       );
 }
-
-

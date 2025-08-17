@@ -27,7 +27,7 @@ export default async function HomePage() {
             </div>
             <div className="flex items-center gap-3">
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-lg text-green-600 font-semibold">System Online</span>
+              <span className="text-lg text-green-700 font-semibold">System Online</span>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default async function HomePage() {
             <div className="text-3xl font-bold text-gray-900 mb-2">12,543</div>
             <div className="flex items-center gap-2">
               <TrendingUp className="h-4 w-4 text-green-500" />
-              <p className="text-sm text-green-600 font-medium">+12.3% from last month</p>
+              <p className="text-sm text-green-700 font-medium">+12.3% from last month</p>
             </div>
           </div>
 
@@ -58,7 +58,7 @@ export default async function HomePage() {
             <div className="text-3xl font-bold text-gray-900 mb-2">$285,420</div>
             <div className="flex items-center gap-2">
               <TrendingUp className="h-4 w-4 text-green-500" />
-              <p className="text-sm text-green-600 font-medium">+8.7% from last month</p>
+              <p className="text-sm text-green-700 font-medium">+8.7% from last month</p>
             </div>
           </div>
 
@@ -72,7 +72,7 @@ export default async function HomePage() {
             <div className="text-3xl font-bold text-gray-900 mb-2">3,421</div>
             <div className="flex items-center gap-2">
               <TrendingUp className="h-4 w-4 text-green-500" />
-              <p className="text-sm text-green-600 font-medium">Last 7 days</p>
+              <p className="text-sm text-green-700 font-medium">Last 7 days</p>
             </div>
           </div>
 
@@ -83,7 +83,7 @@ export default async function HomePage() {
                 <Shield className="h-6 w-6 text-green-600" />
               </div>
             </div>
-            <div className="text-3xl font-bold text-green-600 mb-2">Online</div>
+            <div className="text-3xl font-bold text-green-700 mb-2">Online</div>
             <p className="text-sm text-gray-500">All systems operational</p>
           </div>
         </div>

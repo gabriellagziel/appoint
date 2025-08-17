@@ -50,6 +50,11 @@ jspm_packages/
 # next.js build output
 .next
 
+# QA artifacts and auth states
+.auth
+qa/output
+qa/qa_artifact.zip
+
 # Nuxt.js build output
 .nuxt
 
@@ -67,3 +72,25 @@ jspm_packages/
 
 # TernJS port file
 .tern-port
+# Node/PNPM
+node_modules/
+.npm-cache/
+pnpm-debug.log*
+npm-debug.log*
+yarn-error.log*
+
+# Next.js
+.next/
+out/
+.vercel/
+
+# Monorepo builds
+packages/*/dist/
+marketing/.next/
+marketing/node_modules/
+marketing/.npm-cache/
+functions/node_modules/
+
+# OS/Editors
+.DS_Store
+*.swp

@@ -53,7 +53,9 @@ class GroupMembershipService {
     }
 
     try {
-      await _groupSharingService.addGroupMembers(groupId, userIds);
+      for (final uid in userIds) {
+        await _groupSharingService.addGroupAdmin(groupId, uid);
+      }
 
       // Log membership actions
       for (final userId in userIds) {
@@ -77,7 +79,9 @@ class GroupMembershipService {
     }
 
     try {
-      await _groupSharingService.removeGroupMembers(groupId, userIds);
+      for (final uid in userIds) {
+        await _groupSharingService.leaveGroup(groupId, uid);
+      }
 
       // Log membership actions
       for (final userId in userIds) {

@@ -1,0 +1,7 @@
+{
+  "marketing": { "cwd": "marketing", "port": 3000, "start": "npm start", "health": "/api/health/" },
+  "enterprise": { "cwd": "enterprise-app", "port": 3001, "start": "npm start", "health": "/api/health/" },
+  "business": { "cwd": "business", "port": 3002, "start": "npm start", "health": "/api/health/" },
+  "admin": { "cwd": "admin", "port": 3003, "start": "npm start", "health": "/api/health/" },
+  "personal": { "cwd": "appoint/build/web", "port": 3020, "static": true, "health": "/health.txt" }
+}

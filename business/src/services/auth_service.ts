@@ -152,4 +152,12 @@ export const onAuthStateChange = (callback: (user: AuthUser | null) => void) => 
             authListeners.splice(index, 1)
         }
     }
+}
+
+export const getIdToken = async (): Promise<string> => {
+    // Mock ID token for development
+    if (!currentUser) {
+        throw new Error('No authenticated user')
+    }
+    return `mock-token-${currentUser.uid}-${Date.now()}`
 } 

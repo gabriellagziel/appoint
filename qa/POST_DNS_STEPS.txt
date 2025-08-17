@@ -1,0 +1,22 @@
+Commands to run after DNS changes:
+
+# Quick resolution checks
+dig +short app.app-oint.com
+dig +short api.app-oint.com
+dig +short admin.app-oint.com
+
+# Availability + HSTS
+for h in https://www.app-oint.com https://app.app-oint.com https://business.app-oint.com https://enterprise.app-oint.com https://api.app-oint.com https://admin.app-oint.com; do
+  echo "== $h =="; curl -s -o /dev/null -w "status:%{http_code} time:%{time_total}s\n" "$h";
+  echo "HSTS:"; curl -sI "$h" | grep -i strict-transport-security || echo "NO HSTS";
+  echo;
+done
+
+# Apex redirect
+curl -sI https://app-oint.com | egrep -i "HTTP/|location:"
+
+# Rerun QA
+cd /Users/a/Desktop/ga/qa
+bash availability_check.sh | tee ../qa/output/availability.txt
+npx playwright test --project=chromium --reporter=list | tee ../qa/output/run.txt
+npm run lh

@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/create_meeting_state.dart';
 import '../flow_maps/meeting_type_to_steps.dart';
 
@@ -44,6 +45,14 @@ class CreateMeetingFlowController extends StateNotifier<CreateMeetingState> {
     );
   }
 
+  void setRecurrence(String? recurrence) {
+    state = state.copyWith(recurrence: recurrence);
+  }
+
+  void setFlexibleNote(String? note) {
+    state = state.copyWith(flexibleNote: note);
+  }
+
   bool validateStep(MeetingStep step) {
     switch (step) {
       case MeetingStep.info:
@@ -82,6 +91,14 @@ class CreateMeetingFlowController extends StateNotifier<CreateMeetingState> {
     if (idx > 0) state = state.copyWith(currentIndex: idx - 1);
   }
 
+  /// Jump directly to a specific step in the current flow, if it exists.
+  void goTo(MeetingStep step) {
+    final index = steps.indexOf(step);
+    if (index >= 0) {
+      state = state.copyWith(currentIndex: index);
+    }
+  }
+
   bool get canSubmit {
     for (final step in steps) {
       if (!validateStep(step)) return false;
@@ -113,17 +130,14 @@ class CreateMeetingFlowController extends StateNotifier<CreateMeetingState> {
               'lng': state.lng,
             },
       'virtualUrl': state.virtualUrl,
+      'createdAt': FieldValue.serverTimestamp(),
     };
     try {
-      final id = await _fakeMeetingCreate(payload);
-      return id;
+      final doc =
+          await FirebaseFirestore.instance.collection('meetings').add(payload);
+      return doc.id;
     } catch (_) {
       return null;
     }
-  }
-
-  Future<String> _fakeMeetingCreate(Map<String, dynamic> data) async {
-    await Future.delayed(const Duration(milliseconds: 400));
-    return DateTime.now().millisecondsSinceEpoch.toString();
   }
 }

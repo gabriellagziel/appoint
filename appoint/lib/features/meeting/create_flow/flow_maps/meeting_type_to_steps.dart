@@ -49,5 +49,3 @@ List<MeetingStep> stepsFor(MeetingType type, {bool playtimeVirtual = false}) {
       ];
   }
 }
-
-

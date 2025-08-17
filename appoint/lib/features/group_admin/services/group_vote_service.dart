@@ -12,7 +12,7 @@ class GroupVoteService {
   /// Open a new vote
   Future<bool> openVote({
     required String groupId,
-    required VoteAction action,
+    required String action,
     required String targetUserId,
     required String createdBy,
     DateTime? closesAt,
@@ -27,7 +27,7 @@ class GroupVoteService {
         createdBy: createdBy,
         createdAt: DateTime.now(),
         closesAt: closesAt ?? DateTime.now().add(const Duration(hours: 48)),
-        status: VoteStatus.open,
+        status: 'open',
       );
 
       await _firestore
@@ -44,7 +44,7 @@ class GroupVoteService {
         type: AuditEventType.voteOpened,
         metadata: {
           'voteId': voteId,
-          'voteAction': action.displayName,
+          'voteAction': action,
           'targetUserId': targetUserId,
         },
       );
@@ -105,7 +105,7 @@ class GroupVoteService {
       await _firestore
           .collection('votes')
           .doc(voteId)
-          .update({'status': VoteStatus.closed.name});
+          .update({'status': 'closed'});
 
       // Execute result if passed
       bool executed = false;
@@ -120,7 +120,7 @@ class GroupVoteService {
         type: AuditEventType.voteClosed,
         metadata: {
           'voteId': voteId,
-          'voteAction': groupVote.action.displayName,
+          'voteAction': groupVote.action,
           'votePassed': groupVote.hasPassed,
           'executed': executed,
           'totalVotes': groupVote.totalVotes,
@@ -153,7 +153,7 @@ class GroupVoteService {
       await _firestore
           .collection('votes')
           .doc(voteId)
-          .update({'status': VoteStatus.cancelled.name});
+          .update({'status': 'cancelled'});
 
       // Log audit event
       await _auditService.logEvent(
@@ -162,7 +162,7 @@ class GroupVoteService {
         type: AuditEventType.voteCancelled,
         metadata: {
           'voteId': voteId,
-          'voteAction': groupVote.action.displayName,
+          'voteAction': groupVote.action,
         },
       );
 

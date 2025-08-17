@@ -9,7 +9,9 @@ class GroupInviteService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   /// יצירת הזמנה חדשה לקבוצה
-  Future<String> createInvite(String groupId, String creatorId, {
+  Future<String> createInvite(
+    String groupId,
+    String creatorId, {
     int maxUses = -1,
     Duration? expiresIn,
   }) async {
@@ -28,8 +30,11 @@ class GroupInviteService {
       expiresAt: expiresIn != null ? DateTime.now().add(expiresIn) : null,
     );
 
-    await _firestore.collection('group_invites').doc(inviteCode).set(invite.toMap());
-    
+    await _firestore
+        .collection('group_invites')
+        .doc(inviteCode)
+        .set(invite.toMap());
+
     // Log invite creation
     await _logInviteAction(
       inviteCode: inviteCode,
@@ -43,10 +48,11 @@ class GroupInviteService {
 
   /// קבלת פרטי הזמנה
   Future<GroupInvite?> getInvite(String inviteCode) async {
-    final doc = await _firestore.collection('group_invites').doc(inviteCode).get();
-    
+    final doc =
+        await _firestore.collection('group_invites').doc(inviteCode).get();
+
     if (!doc.exists) return null;
-    
+
     return GroupInvite.fromMap(doc.id, doc.data()!);
   }
 
@@ -111,10 +117,10 @@ class GroupInviteService {
   /// קבלת סטטיסטיקות הזמנות
   Future<Map<String, dynamic>> getInviteStats(String groupId) async {
     final invites = await getActiveInvites(groupId);
-    
+
     int totalUses = 0;
     int totalInvites = invites.length;
-    
+
     for (final invite in invites) {
       totalUses += invite.usedBy.length;
     }
@@ -134,9 +140,10 @@ class GroupInviteService {
   /// יצירת קוד הזמנה ייחודי
   String _generateInviteCode() {
     const chars = 'REDACTED_TOKEN';
-    return String.fromCharCodes(
-      Iterable.generate(6, (_) => chars.codeUnitAt(DateTime.now().millisecondsSinceEpoch % chars.length))
-    );
+    return String.fromCharCodes(Iterable.generate(
+        6,
+        (_) => chars
+            .codeUnitAt(DateTime.now().millisecondsSinceEpoch % chars.length)));
   }
 
   /// רישום פעולת הזמנה

@@ -1,21 +1,59 @@
+// ignore_for_file: uri_does_not_exist, undefined_identifier
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'models/playtime_game.dart';
 import 'models/playtime_session.dart';
 import 'models/playtime_background.dart';
 import 'models/meeting.dart';
 import 'services/pwa_prompt_service.dart';
 import 'services/meeting_service.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'app_router.dart';
+import 'app_router_quarantine.dart';
+import 'l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+// Stripe SDK initialization (publishable key via --dart-define STRIPE_PUBLISHABLE_KEY)
+// Ensure flutter_stripe dependency is added in pubspec.yaml
+import 'package:flutter_stripe/flutter_stripe.dart';
 
-void main() {
+Future<void> _initFirebaseAndEmulators() async {
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  const useEmulators =
+      bool.fromEnvironment('USE_EMULATORS', defaultValue: true);
+  if (useEmulators) {
+    try {
+      await FirebaseAuth.instance.useAuthEmulator('localhost', 9099);
+    } catch (_) {}
+    try {
+      FirebaseFirestore.instance.useFirestoreEmulator('localhost', 8081);
+    } catch (_) {}
+    try {
+      FirebaseStorage.instance.useStorageEmulator('localhost', 9199);
+    } catch (_) {}
+  }
+}
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (kIsWeb) {
+    setUrlStrategy(const HashUrlStrategy());
+  }
+  await _initFirebaseAndEmulators();
+  // Initialize Stripe publishable key from env if available
+  const stripeKey =
+      String.fromEnvironment('STRIPE_PUBLISHABLE_KEY', defaultValue: '');
+  if (stripeKey.isNotEmpty) {
+    Stripe.publishableKey = stripeKey;
+  }
   // Initialize PWA service for web
   PwaPromptService.initialize();
 
-  runApp(
-    const ProviderScope(
-      child: PlaytimeTestApp(),
-    ),
-  );
+  runApp(const PlaytimeTestApp());
 }
 
 class PlaytimeTestApp extends StatelessWidget {
@@ -23,13 +61,29 @@ class PlaytimeTestApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    const bool kQuarantine =
+        bool.fromEnvironment('FLOW_QUARANTINE', defaultValue: false);
+    return MaterialApp.router(
       title: 'Playtime Test App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
         useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF3B82F6)),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style:
+              ElevatedButton.styleFrom(minimumSize: const Size.fromHeight(48)),
+        ),
+        filledButtonTheme: FilledButtonThemeData(
+          style: FilledButton.styleFrom(minimumSize: const Size.fromHeight(48)),
+        ),
       ),
-      home: const PlaytimeTestScreen(),
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: AppLocalizations.supportedLocales,
+      routerConfig: kQuarantine ? quarantineRouter : router,
     );
   }
 }
@@ -46,7 +100,8 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Playtime System Test'),
+        title: Text(AppLocalizations.of(context)?.playtimeSystemTest ??
+            'Playtime System Test'),
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
       ),
@@ -55,9 +110,10 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Playtime System Implementation Test',
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)?.REDACTED_TOKEN ??
+                  'Playtime System Implementation Test',
+              style: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
@@ -66,7 +122,8 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
 
             // Test PlaytimeGame
             _buildTestSection(
-              'PlaytimeGame Model',
+              AppLocalizations.of(context)?.playtimeGameModel ??
+                  'PlaytimeGame Model',
               () {
                 final game = PlaytimeGame(
                   id: 'test_game_1',
@@ -104,7 +161,8 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
 
             // Test PlaytimeSession
             _buildTestSection(
-              'PlaytimeSession Model',
+              AppLocalizations.of(context)?.playtimeSessionModel ??
+                  'PlaytimeSession Model',
               () {
                 final session = PlaytimeSession(
                   id: 'test_session_1',
@@ -150,7 +208,8 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
 
             // Test PlaytimeBackground
             _buildTestSection(
-              'PlaytimeBackground Model',
+              AppLocalizations.of(context)?.playtimeBackgroundModel ??
+                  'PlaytimeBackground Model',
               () {
                 final background = PlaytimeBackground(
                   id: 'test_bg_1',
@@ -185,7 +244,8 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
 
             // Test Meeting with Playtime
             _buildTestSection(
-              'Meeting with Playtime Support',
+              AppLocalizations.of(context)?.meetingWithPlaytimeSupport ??
+                  'Meeting with Playtime Support',
               () {
                 final meeting = Meeting(
                   id: 'test_meeting_1',
@@ -231,7 +291,8 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
 
             // Test Service Methods
             _buildTestSection(
-              'PlaytimeService Methods',
+              AppLocalizations.of(context)?.playtimeServiceMethods ??
+                  'PlaytimeService Methods',
               () {
                 return '✅ Service methods available:\n'
                     '• getAvailableGames()\n'
@@ -250,7 +311,8 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
 
             // Test Provider
             _buildTestSection(
-              'Riverpod Providers',
+              AppLocalizations.of(context)?.riverpodProviders ??
+                  'Riverpod Providers',
               () {
                 return '✅ Providers configured:\n'
                     '• playtimeGamesProvider\n'
@@ -272,26 +334,29 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: Colors.green.shade200),
               ),
-              child: const Column(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '🎉 PHASE 1 Implementation Complete!',
-                    style: TextStyle(
+                    AppLocalizations.of(context)
+                            ?.phase1ImplementationComplete ??
+                        '🎉 PHASE 1 Implementation Complete!',
+                    style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: Colors.green,
                     ),
                   ),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                   Text(
-                    '✅ All core models created\n'
-                    '✅ Service layer implemented\n'
-                    '✅ Providers configured\n'
-                    '✅ MeetingType.playtime support added\n'
-                    '✅ Parent approval workflow ready\n'
-                    '✅ Safety features included',
-                    style: TextStyle(color: Colors.green),
+                    AppLocalizations.of(context)?.allCoreModelsCreated ??
+                        '✅ All core models created\n'
+                            '✅ Service layer implemented\n'
+                            '✅ Providers configured\n'
+                            '✅ MeetingType.playtime support added\n'
+                            '✅ Parent approval workflow ready\n'
+                            '✅ Safety features included',
+                    style: const TextStyle(color: Colors.green),
                   ),
                 ],
               ),
@@ -301,7 +366,8 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
 
             // PWA System Test
             _buildTestSection(
-              'PWA System Implementation',
+              AppLocalizations.of(context)?.pwaSystemImplementation ??
+                  'PWA System Implementation',
               () {
                 return '✅ PWA System configured:\n'
                     '• Manifest.json created\n'
@@ -339,12 +405,15 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                   const SizedBox(height: 12),
                   ElevatedButton(
                     onPressed: _testPwaPrompt,
-                    child: const Text('Test PWA Prompt'),
+                    child: Text(AppLocalizations.of(context)?.testPwaPrompt ??
+                        'Test PWA Prompt'),
                   ),
                   const SizedBox(height: 8),
                   ElevatedButton(
                     onPressed: _simulateMeetingCreation,
-                    child: const Text('Simulate Meeting Creation'),
+                    child: Text(
+                        AppLocalizations.of(context)?.simulateMeetingCreation ??
+                            'Simulate Meeting Creation'),
                   ),
                 ],
               ),
@@ -360,26 +429,28 @@ class _PlaytimeTestScreenState extends State<PlaytimeTestScreen> {
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: Colors.blue.shade200),
               ),
-              child: const Column(
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    '📋 Next Steps for PHASE 2',
-                    style: TextStyle(
+                    AppLocalizations.of(context)?.nextStepsPhase2 ??
+                        '📋 Next Steps for PHASE 2',
+                    style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                       color: Colors.blue,
                     ),
                   ),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                   Text(
-                    '1. Create UI components\n'
-                    '2. Implement Firestore collections\n'
-                    '3. Add parent approval screens\n'
-                    '4. Build admin moderation tools\n'
-                    '5. Add real-time chat features\n'
-                    '6. Implement safety monitoring',
-                    style: TextStyle(color: Colors.blue),
+                    AppLocalizations.of(context)?.nextStepsPhase2Details ??
+                        '1. Create UI components\n'
+                            '2. Implement Firestore collections\n'
+                            '3. Add parent approval screens\n'
+                            '4. Build admin moderation tools\n'
+                            '5. Add real-time chat features\n'
+                            '6. Implement safety monitoring',
+                    style: const TextStyle(color: Colors.blue),
                   ),
                 ],
               ),

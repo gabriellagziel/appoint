@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const preset = require("@app-oint/design-system/tailwind-preset.cjs");
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -7,6 +8,7 @@ module.exports = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
+  presets: [preset],
   prefix: "",
   theme: {
     container: {

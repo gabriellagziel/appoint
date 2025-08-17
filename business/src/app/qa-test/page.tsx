@@ -194,7 +194,7 @@ export default function QATestPage() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Test Results</h3>
                         {results.length === 0 ? (
-                            <p className="text-gray-500 text-center py-8">No tests run yet. Click "Run All Tests" to start.</p>
+                            <p className="text-gray-500 text-center py-8">No tests run yet. Click &quot;Run All Tests&quot; to start.</p>
                         ) : (
                             <div className="space-y-3">
                                 {results.map((result, index) => (

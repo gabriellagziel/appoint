@@ -45,5 +45,3 @@ final authStateProvider = StateProvider<AuthState?>((ref) {
     ),
   );
 });
-
-

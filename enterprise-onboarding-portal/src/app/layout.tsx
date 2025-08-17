@@ -1,4 +1,5 @@
 import './globals.css'
+import '@app-oint/design-system/dist/css/tokens.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

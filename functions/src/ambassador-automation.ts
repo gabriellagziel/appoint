@@ -11,7 +11,7 @@ import {
   sendPendingApprovalNotification,
   sendApprovalNotification,
   sendRejectionNotification
-} from './ambassador-notifications';
+} from './ambassador-notifications.js';
 
 const db = admin.firestore();
 

@@ -1,62 +1,18 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-enum VoteAction {
-  promoteAdmin,
-  demoteAdmin,
-  transferOwnership,
-  removeMember,
-  changePolicy,
-}
-
-enum VoteStatus {
-  open,
-  closed,
-  cancelled,
-}
-
-extension VoteActionExtension on VoteAction {
-  String get displayName {
-    switch (this) {
-      case VoteAction.promoteAdmin:
-        return 'Promote to Admin';
-      case VoteAction.demoteAdmin:
-        return 'Demote Admin';
-      case VoteAction.transferOwnership:
-        return 'Transfer Ownership';
-      case VoteAction.removeMember:
-        return 'Remove Member';
-      case VoteAction.changePolicy:
-        return 'Change Policy';
-    }
-  }
-
-  String get description {
-    switch (this) {
-      case VoteAction.promoteAdmin:
-        return 'Promote a member to admin role';
-      case VoteAction.demoteAdmin:
-        return 'Demote an admin to member role';
-      case VoteAction.transferOwnership:
-        return 'Transfer group ownership to another member';
-      case VoteAction.removeMember:
-        return 'Remove a member from the group';
-      case VoteAction.changePolicy:
-        return 'Change group policy settings';
-    }
-  }
-}
-
 class GroupVote {
   final String id;
   final String groupId;
-  final VoteAction action;
+  final String action;
   final String targetUserId;
   final String createdBy;
   final DateTime createdAt;
   final DateTime? closesAt;
-  final VoteStatus status;
+  final String status;
   final Map<String, bool> ballots; // userId -> yes/no
   final Map<String, dynamic>? metadata; // Additional data for the action
+  final int yesCount;
+  final int noCount;
 
   const GroupVote({
     required this.id,
@@ -66,59 +22,61 @@ class GroupVote {
     required this.createdBy,
     required this.createdAt,
     this.closesAt,
-    this.status = VoteStatus.open,
+    this.status = 'open',
     this.ballots = const {},
     this.metadata,
+    this.yesCount = 0,
+    this.noCount = 0,
   });
 
   factory GroupVote.fromMap(String id, Map<String, dynamic> data) {
     return GroupVote(
       id: id,
       groupId: data['groupId'] ?? '',
-      action: VoteAction.values.firstWhere(
-        (action) => action.name == data['action'],
-        orElse: () => VoteAction.promoteAdmin,
-      ),
+      action: data['action'] ?? 'promote_admin',
       targetUserId: data['targetUserId'] ?? '',
       createdBy: data['createdBy'] ?? '',
       createdAt: (data['createdAt'] as Timestamp).toDate(),
       closesAt: data['closesAt'] != null
           ? (data['closesAt'] as Timestamp).toDate()
           : null,
-      status: VoteStatus.values.firstWhere(
-        (status) => status.name == data['status'],
-        orElse: () => VoteStatus.open,
-      ),
+      status: data['status'] ?? 'open',
       ballots: Map<String, bool>.from(data['ballots'] ?? {}),
       metadata: data['metadata'],
+      yesCount: (data['yesCount'] ?? 0) as int,
+      noCount: (data['noCount'] ?? 0) as int,
     );
   }
 
   Map<String, dynamic> toMap() {
     return {
       'groupId': groupId,
-      'action': action.name,
+      'action': action,
       'targetUserId': targetUserId,
       'createdBy': createdBy,
       'createdAt': Timestamp.fromDate(createdAt),
       'closesAt': closesAt != null ? Timestamp.fromDate(closesAt!) : null,
-      'status': status.name,
+      'status': status,
       'ballots': ballots,
       'metadata': metadata,
+      'yesCount': yesCount,
+      'noCount': noCount,
     };
   }
 
   GroupVote copyWith({
     String? id,
     String? groupId,
-    VoteAction? action,
+    String? action,
     String? targetUserId,
     String? createdBy,
     DateTime? createdAt,
     DateTime? closesAt,
-    VoteStatus? status,
+    String? status,
     Map<String, bool>? ballots,
     Map<String, dynamic>? metadata,
+    int? yesCount,
+    int? noCount,
   }) {
     return GroupVote(
       id: id ?? this.id,
@@ -131,21 +89,23 @@ class GroupVote {
       status: status ?? this.status,
       ballots: ballots ?? this.ballots,
       metadata: metadata ?? this.metadata,
+      yesCount: yesCount ?? this.yesCount,
+      noCount: noCount ?? this.noCount,
     );
   }
 
-  bool get isOpen => status == VoteStatus.open;
-  bool get isClosed => status == VoteStatus.closed;
-  bool get isCancelled => status == VoteStatus.cancelled;
+  bool get isOpen => status == 'open';
+  bool get isClosed => status == 'closed';
+  bool get isCancelled => status == 'cancelled';
 
   bool get isExpired {
     if (closesAt == null) return false;
     return DateTime.now().isAfter(closesAt!);
   }
 
-  int get totalVotes => ballots.length;
-  int get yesVotes => ballots.values.where((vote) => vote).length;
-  int get noVotes => ballots.values.where((vote) => !vote).length;
+  int get totalVotes => yesCount + noCount;
+  int get yesVotes => yesCount;
+  int get noVotes => noCount;
 
   double get yesPercentage {
     if (totalVotes == 0) return 0.0;

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import '../../../auth/providers/auth_provider.dart';
 import '../../providers/group_providers.dart';
-import '../../../group_admin/ui/group_members_tab.dart';
-import '../../../group_admin/ui/group_admin_tab.dart';
-import '../../../group_admin/ui/group_policy_tab.dart';
-import '../../../group_admin/ui/group_votes_tab.dart';
-import '../../../group_admin/ui/group_audit_tab.dart';
+import '../../services/group_metrics_service.dart';
 
-class GroupDetailsScreen extends ConsumerStatefulWidget {
+final _groupMetricsProvider = StreamProvider.autoDispose((ref) {
+  final service = GroupMetricsService();
+  return service.streamMetrics();
+});
+
+class GroupDetailsScreen extends ConsumerWidget {
   final String groupId;
 
   const GroupDetailsScreen({
@@ -17,90 +17,59 @@ class GroupDetailsScreen extends ConsumerStatefulWidget {
     required this.groupId,
   });
 
-  @override
-  ConsumerState<GroupDetailsScreen> createState() => _GroupDetailsScreenState();
-}
-
-class _GroupDetailsScreenState extends ConsumerState<GroupDetailsScreen>
-    with TickerProviderStateMixin {
-  bool _isLoading = false;
-  late TabController _tabController;
-
-  Future<void> _leaveGroup() async {
-    final authState = ref.read(authStateProvider);
-    if (authState == null || authState.user == null) return;
-
-    final confirmed = await showDialog<bool>(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Leave Group'),
-        content: const Text('Are you sure you want to leave this group?'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(false),
-            child: const Text('Cancel'),
+  Widget _buildUsageBanner(WidgetRef ref) {
+    final metricsAsync = ref.watch(_groupMetricsProvider);
+    return metricsAsync.when(
+      data: (metrics) {
+        final isWarn = metrics.nearLimit && !metrics.atOrOverLimit;
+        final isError = metrics.atOrOverLimit;
+        if (!isWarn && !isError) return const SizedBox.shrink();
+        final color = isError ? Colors.red.shade50 : Colors.orange.shade50;
+        final border = isError ? Colors.red.shade200 : Colors.orange.shade200;
+        final title =
+            isError ? 'Group limits reached' : 'Approaching group limits';
+        final subtitle =
+            'Members: ${metrics.membersCount}, Meetings: ${metrics.meetingsCount}';
+        return Container(
+          margin: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(color: border),
           ),
-          ElevatedButton(
-            onPressed: () => Navigator.of(context).pop(true),
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            child: const Text('Leave'),
+          child: Row(
+            children: [
+              Icon(isError ? Icons.error_outline : Icons.warning_amber_rounded,
+                  color: isError ? Colors.red : Colors.orange),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(title,
+                        style: const TextStyle(fontWeight: FontWeight.bold)),
+                    const SizedBox(height: 4),
+                    Text(subtitle),
+                  ],
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text('Upgrade to Pro'),
+              )
+            ],
           ),
-        ],
-      ),
+        );
+      },
+      loading: () => const SizedBox.shrink(),
+      error: (_, __) => const SizedBox.shrink(),
     );
-
-    if (confirmed != true) return;
-
-    setState(() {
-      _isLoading = true;
-    });
-
-    try {
-      final service = ref.read(groupSharingServiceProvider);
-      await service.leaveGroup(widget.groupId, authState.user!.uid);
-
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Successfully left the group'),
-            backgroundColor: Colors.green,
-          ),
-        );
-        context.go('/groups');
-      }
-    } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to leave group: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
-    } finally {
-      if (mounted) {
-        setState(() {
-          _isLoading = false;
-        });
-      }
-    }
   }
 
   @override
-  void initState() {
-    super.initState();
-    _tabController = TabController(length: 5, vsync: this);
-  }
-
-  @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final groupAsync = ref.watch(groupProvider(widget.groupId));
+  Widget build(BuildContext context, WidgetRef ref) {
+    final groupAsync = ref.watch(groupProvider(groupId));
     final authState = ref.watch(authStateProvider);
 
     return Scaffold(
@@ -110,55 +79,34 @@ class _GroupDetailsScreenState extends ConsumerState<GroupDetailsScreen>
           loading: () => const Text('Group Details'),
           error: (_, __) => const Text('Group Details'),
         ),
-        bottom: const TabBar(
-          isScrollable: true,
-          tabs: [
-            Tab(text: 'Members'),
-            Tab(text: 'Admin'),
-            Tab(text: 'Policy'),
-            Tab(text: 'Votes'),
-            Tab(text: 'Audit'),
-          ],
-        ),
-        actions: [
-          if (!_isLoading)
-            IconButton(
-              onPressed: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                      content: Text('Share functionality coming soon')),
-                );
-              },
-              icon: const Icon(Icons.share),
-            ),
-        ],
       ),
-      body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
-          : groupAsync.when(
+      body: Column(
+        children: [
+          _buildUsageBanner(ref),
+          Expanded(
+            child: groupAsync.when(
               data: (group) {
                 if (group == null) {
                   return const Center(child: Text('Group not found'));
                 }
-
-                final isAdmin = group.admins.contains(authState?.user?.uid);
                 final isMember = group.members.contains(authState?.user?.uid);
-
                 if (!isMember) {
                   return const Center(
                     child: Text('You are not a member of this group'),
                   );
                 }
-
-                return TabBarView(
-                  controller: _tabController,
-                  children: [
-                    GroupMembersTab(groupId: widget.groupId),
-                    GroupAdminTab(groupId: widget.groupId),
-                    GroupPolicyTab(groupId: widget.groupId),
-                    GroupVotesTab(groupId: widget.groupId),
-                    GroupAuditTab(groupId: widget.groupId),
-                  ],
+                return Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: ListView(
+                    children: [
+                      Text('Group ID: ${groupId}',
+                          style: Theme.of(context).textTheme.titleMedium),
+                      const SizedBox(height: 8),
+                      Text('Members: ${group.members.length}'),
+                      const SizedBox(height: 16),
+                      const Text('More group details coming soon...'),
+                    ],
+                  ),
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
@@ -174,14 +122,16 @@ class _GroupDetailsScreenState extends ConsumerState<GroupDetailsScreen>
                     ),
                     const SizedBox(height: 16),
                     ElevatedButton(
-                      onPressed: () =>
-                          ref.refresh(groupProvider(widget.groupId)),
+                      onPressed: () => ref.refresh(groupProvider(groupId)),
                       child: const Text('Retry'),
                     ),
                   ],
                 ),
               ),
             ),
+          ),
+        ],
+      ),
     );
   }
 }

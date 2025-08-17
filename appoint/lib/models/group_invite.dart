@@ -28,8 +28,8 @@ class GroupInvite {
       createdBy: data['createdBy'] ?? '',
       usedBy: List<String>.from(data['usedBy'] ?? []),
       createdAt: (data['createdAt'] as Timestamp).toDate(),
-      expiresAt: data['expiresAt'] != null 
-          ? (data['expiresAt'] as Timestamp).toDate() 
+      expiresAt: data['expiresAt'] != null
+          ? (data['expiresAt'] as Timestamp).toDate()
           : null,
       maxUses: data['maxUses'] ?? -1,
       isActive: data['isActive'] ?? true,
@@ -75,4 +75,3 @@ class GroupInvite {
   bool get isValid => isActive && !isExpired && !isMaxUsesReached;
   int get remainingUses => maxUses > 0 ? maxUses - usedBy.length : -1;
 }
-

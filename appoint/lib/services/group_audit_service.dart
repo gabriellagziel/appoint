@@ -120,6 +120,7 @@ class GroupAuditService {
       actorUserId: actorUserId,
       targetUserId: targetUserId,
       timestamp: DateTime.now(),
+      metadata: const {},
     );
 
     await logAuditEvent(groupId, event);

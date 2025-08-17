@@ -53,10 +53,11 @@ class ParticipantsPreviewWidget extends ConsumerWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).primaryColor.withOpacity(0.1),
+                  color: Theme.of(context).primaryColor.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                   border: Border.all(
-                    color: Theme.of(context).primaryColor.withOpacity(0.3),
+                    color:
+                        Theme.of(context).primaryColor.withValues(alpha: 0.3),
                   ),
                 ),
                 child: Row(
@@ -186,7 +187,7 @@ class ParticipantsPreviewWidget extends ConsumerWidget {
       BuildContext context, String participantId, WidgetRef ref) {
     return ListTile(
       leading: CircleAvatar(
-        backgroundColor: Theme.of(context).primaryColor.withOpacity(0.1),
+        backgroundColor: Theme.of(context).primaryColor.withValues(alpha: 0.1),
         child: Text(
           participantId.substring(0, 2).toUpperCase(),
           style: TextStyle(
@@ -229,7 +230,8 @@ class ParticipantsPreviewWidget extends ConsumerWidget {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: Theme.of(context).primaryColor.withOpacity(0.1),
+                    color:
+                        Theme.of(context).primaryColor.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Row(
@@ -270,5 +272,3 @@ class ParticipantsPreviewWidget extends ConsumerWidget {
     );
   }
 }
-
-

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/models/group_vote.dart';
+// import removed; votes are provided by provider types
 import 'package:appoint/features/group_admin/providers/group_admin_providers.dart';
 import 'package:appoint/features/auth/providers/auth_provider.dart';
 import 'package:appoint/features/group_admin/ui/widgets/vote_card.dart';

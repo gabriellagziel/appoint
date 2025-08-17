@@ -1,0 +1,32 @@
+$ORIGIN app-oint.com.
+$TTL 300
+@    IN SOA ns1.yourdns.net. hostmaster.app-oint.com. (
+        2025081001 ; serial
+        3600       ; refresh
+        900        ; retry
+        1209600    ; expire
+        300 )      ; minimum
+
+; NS
+@    IN NS ns1.yourdns.net.
+@    IN NS ns2.yourdns.net.
+
+; Apex (optional if redirect via LB)
+@    IN A 203.0.113.10 ; REPLACE_WITH_APEX_IP
+
+; Canonical www
+www  IN CNAME REPLACE_WITH_MAIN_TARGET.
+
+; Personal/App
+app  IN CNAME REPLACE_WITH_DO_APP_TARGET. ; or
+;app  IN A 203.0.113.11 ; REPLACE_WITH_PERSONAL_IP
+
+; API Portal
+api  IN CNAME REPLACE_WITH_API_PORTAL_TARGET. ; or
+;api  IN A 203.0.113.12 ; REPLACE_WITH_API_IP
+
+; Admin
+admin IN CNAME REPLACE_WITH_ADMIN_TARGET. ; or
+;admin IN A 203.0.113.13 ; REPLACE_WITH_ADMIN_IP
+
+

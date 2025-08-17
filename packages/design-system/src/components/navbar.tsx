@@ -54,9 +54,8 @@ const Navbar = React.forwardRef<HTMLElement, NavbarProps>(
             <div className="md:hidden">
               <Button
                 variant="ghost"
-                size="sm"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-500 hover:text-gray-900"
+                className="text-gray-500 hover:text-gray-900 h-8 px-3"
               >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </Button>

@@ -35,7 +35,8 @@ final groupAnalyticsServiceProvider = Provider<GroupAnalyticsService>((ref) {
   return GroupAnalyticsService();
 });
 
-final REDACTED_TOKEN = Provider<GroupNotificationService>((ref) {
+final REDACTED_TOKEN =
+    Provider<GroupNotificationService>((ref) {
   return GroupNotificationService();
 });
 
@@ -44,63 +45,76 @@ final groupSecurityServiceProvider = Provider<GroupSecurityService>((ref) {
 });
 
 // State providers
-final userGroupsProvider = FutureProvider.family<List<UserGroup>, String>((ref, userId) async {
+final userGroupsProvider =
+    FutureProvider.family<List<UserGroup>, String>((ref, userId) async {
   final service = ref.read(groupSharingServiceProvider);
   return await service.getUserGroups(userId);
 });
 
-final userAdminGroupsProvider = FutureProvider.family<List<UserGroup>, String>((ref, userId) async {
+final userAdminGroupsProvider =
+    FutureProvider.family<List<UserGroup>, String>((ref, userId) async {
   final service = ref.read(groupManagerProvider);
   return await service.getUserAdminGroups(userId);
 });
 
-final groupDetailsProvider = FutureProvider.family<Map<String, dynamic>?, String>((ref, groupId) async {
+final groupDetailsProvider =
+    FutureProvider.family<Map<String, dynamic>?, String>((ref, groupId) async {
   final service = ref.read(groupManagerProvider);
   return await service.getGroupDetails(groupId);
 });
 
-final groupStatsProvider = FutureProvider.family<Map<String, dynamic>, String>((ref, groupId) async {
+final groupStatsProvider =
+    FutureProvider.family<Map<String, dynamic>, String>((ref, groupId) async {
   final service = ref.read(groupManagerProvider);
   return await service.getGroupStats(groupId);
 });
 
-final groupAnalyticsProvider = FutureProvider.family<Map<String, dynamic>, String>((ref, groupId) async {
+final groupAnalyticsProvider =
+    FutureProvider.family<Map<String, dynamic>, String>((ref, groupId) async {
   final service = ref.read(groupAnalyticsServiceProvider);
   return await service.getGroupAnalytics(groupId);
 });
 
-final userGroupAnalyticsProvider = FutureProvider.family<Map<String, dynamic>, String>((ref, userId) async {
+final userGroupAnalyticsProvider =
+    FutureProvider.family<Map<String, dynamic>, String>((ref, userId) async {
   final service = ref.read(groupAnalyticsServiceProvider);
   return await service.getUserGroupAnalytics(userId);
 });
 
-final groupInvitesProvider = FutureProvider.family<List<GroupInvite>, String>((ref, groupId) async {
+final groupInvitesProvider =
+    FutureProvider.family<List<GroupInvite>, String>((ref, groupId) async {
   final service = ref.read(groupInviteServiceProvider);
   return await service.getActiveInvites(groupId);
 });
 
-final userNotificationsProvider = FutureProvider.family<List<Map<String, dynamic>>, String>((ref, userId) async {
+final userNotificationsProvider =
+    FutureProvider.family<List<Map<String, dynamic>>, String>(
+        (ref, userId) async {
   final service = ref.read(REDACTED_TOKEN);
   return await service.getUserNotifications(userId);
 });
 
-final notificationStatsProvider = FutureProvider.family<Map<String, dynamic>, String>((ref, userId) async {
+final notificationStatsProvider =
+    FutureProvider.family<Map<String, dynamic>, String>((ref, userId) async {
   final service = ref.read(REDACTED_TOKEN);
   return await service.getNotificationStats(userId);
 });
 
-final groupPermissionStatsProvider = FutureProvider.family<Map<String, dynamic>, String>((ref, groupId) async {
+final groupPermissionStatsProvider =
+    FutureProvider.family<Map<String, dynamic>, String>((ref, groupId) async {
   final service = ref.read(groupPermissionServiceProvider);
   return await service.getGroupPermissionStats(groupId);
 });
 
-final groupSecurityStatsProvider = FutureProvider.family<Map<String, dynamic>, String>((ref, groupId) async {
+final groupSecurityStatsProvider =
+    FutureProvider.family<Map<String, dynamic>, String>((ref, groupId) async {
   final service = ref.read(groupSecurityServiceProvider);
   return await service.getSecurityStats(groupId);
 });
 
 // Action providers
-final createGroupProvider = FutureProvider.family<String, Map<String, dynamic>>((ref, params) async {
+final createGroupProvider =
+    FutureProvider.family<String, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(groupManagerProvider);
   final creatorId = params['creatorId'] as String;
   final name = params['name'] as String;
@@ -129,7 +143,8 @@ final createGroupProvider = FutureProvider.family<String, Map<String, dynamic>>(
   return group.id;
 });
 
-final joinGroupProvider = FutureProvider.family<UserGroup, Map<String, dynamic>>((ref, params) async {
+final joinGroupProvider =
+    FutureProvider.family<UserGroup, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(groupMembershipServiceProvider);
   final inviteCode = params['inviteCode'] as String;
   final userId = params['userId'] as String;
@@ -144,7 +159,8 @@ final joinGroupProvider = FutureProvider.family<UserGroup, Map<String, dynamic>>
   return group;
 });
 
-final leaveGroupProvider = FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
+final leaveGroupProvider =
+    FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(groupMembershipServiceProvider);
   final groupId = params['groupId'] as String;
   final userId = params['userId'] as String;
@@ -157,7 +173,8 @@ final leaveGroupProvider = FutureProvider.family<void, Map<String, dynamic>>((re
   ref.invalidate(groupStatsProvider(groupId));
 });
 
-final createInviteProvider = FutureProvider.family<String, Map<String, dynamic>>((ref, params) async {
+final createInviteProvider =
+    FutureProvider.family<String, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(groupInviteServiceProvider);
   final groupId = params['groupId'] as String;
   final creatorId = params['creatorId'] as String;
@@ -177,7 +194,8 @@ final createInviteProvider = FutureProvider.family<String, Map<String, dynamic>>
   return inviteCode;
 });
 
-final updateGroupProvider = FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
+final updateGroupProvider =
+    FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(groupManagerProvider);
   final groupId = params['groupId'] as String;
   final name = params['name'] as String?;
@@ -196,7 +214,8 @@ final updateGroupProvider = FutureProvider.family<void, Map<String, dynamic>>((r
   ref.invalidate(groupStatsProvider(groupId));
 });
 
-final addGroupMemberProvider = FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
+final addGroupMemberProvider =
+    FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(groupMembershipServiceProvider);
   final groupId = params['groupId'] as String;
   final userIds = params['userIds'] as List<String>;
@@ -212,7 +231,8 @@ final addGroupMemberProvider = FutureProvider.family<void, Map<String, dynamic>>
   }
 });
 
-final removeGroupMemberProvider = FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
+final removeGroupMemberProvider =
+    FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(groupMembershipServiceProvider);
   final groupId = params['groupId'] as String;
   final userIds = params['userIds'] as List<String>;
@@ -228,7 +248,8 @@ final removeGroupMemberProvider = FutureProvider.family<void, Map<String, dynami
   }
 });
 
-final addGroupAdminProvider = FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
+final addGroupAdminProvider =
+    FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(groupMembershipServiceProvider);
   final groupId = params['groupId'] as String;
   final userId = params['userId'] as String;
@@ -243,7 +264,8 @@ final addGroupAdminProvider = FutureProvider.family<void, Map<String, dynamic>>(
   ref.invalidate(userAdminGroupsProvider(userId));
 });
 
-final removeGroupAdminProvider = FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
+final removeGroupAdminProvider =
+    FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(groupMembershipServiceProvider);
   final groupId = params['groupId'] as String;
   final userId = params['userId'] as String;
@@ -258,7 +280,8 @@ final removeGroupAdminProvider = FutureProvider.family<void, Map<String, dynamic
   ref.invalidate(userAdminGroupsProvider(userId));
 });
 
-final deleteGroupProvider = FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
+final deleteGroupProvider =
+    FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(groupSharingServiceProvider);
   final groupId = params['groupId'] as String;
   final userId = params['userId'] as String;
@@ -274,7 +297,8 @@ final deleteGroupProvider = FutureProvider.family<void, Map<String, dynamic>>((r
   ref.invalidate(groupInvitesProvider(groupId));
 });
 
-final markNotificationAsReadProvider = FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
+final markNotificationAsReadProvider =
+    FutureProvider.family<void, Map<String, dynamic>>((ref, params) async {
   final service = ref.read(REDACTED_TOKEN);
   final userId = params['userId'] as String;
   final notificationId = params['notificationId'] as String;
@@ -285,4 +309,3 @@ final markNotificationAsReadProvider = FutureProvider.family<void, Map<String, d
   ref.invalidate(userNotificationsProvider(userId));
   ref.invalidate(notificationStatsProvider(userId));
 });
-

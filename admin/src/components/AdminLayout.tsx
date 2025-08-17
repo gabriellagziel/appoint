@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
-import { Sidebar, TopBar } from '../../../components/shared';
+import { TopBar } from './TopBar';
+import { Sidebar } from './Sidebar';
 
 export interface AdminLayoutProps {
   children: React.ReactNode;
@@ -28,10 +29,7 @@ const AdminLayout: React.FC<AdminLayoutProps> = ({
   return (
     <div className="flex h-screen bg-gray-50">
       {/* Sidebar */}
-      <Sidebar
-        items={sidebarItems}
-        className="hidden md:flex"
-      />
+      <Sidebar isOpen={true} onToggle={() => {}} />
       
       {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">

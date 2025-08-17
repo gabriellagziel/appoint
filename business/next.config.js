@@ -3,6 +3,19 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({ enabled: process.e
 const { withSentryConfig } = require('@sentry/nextjs');
 
 const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000; includeSubDomains; preload',
+          },
+        ],
+      },
+    ];
+  },
   compress: true,
   images: {
     domains: ['business.app-oint.com'],
