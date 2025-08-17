@@ -2,18 +2,12 @@ name: 🐶 CI Watchdog
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 */2 * * *'  # Every 2 hours instead of every 5 minutes
   workflow_dispatch:
 
 permissions:
   actions: read
   contents: read
-  checks: read
-  statuses: read
-
-concurrency:
-  group: watchdog
-  cancel-in-progress: true
 
 jobs:
   watchdog:
@@ -34,44 +28,42 @@ jobs:
           gh auth setup-git
           gh auth status
 
-      - name: 🕵️‍♂️ Find stuck workflows
+      - name: 🕵️‍♂️ Check workflow health
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "🔍 Checking for stuck workflows >30min..."
+          echo "🔍 Checking workflow health..."
           
-          # Get workflow runs with proper error handling
-          if ! gh run list --limit 100 --json databaseId,status,workflowName,duration,startedAt > runs.json 2>/dev/null; then
-            echo "⚠️ Could not fetch workflow runs, skipping watchdog check"
-            exit 0
-          fi
-          
-          # Check if runs.json is valid and has content
-          if [ ! -s runs.json ] || ! jq empty runs.json 2>/dev/null; then
-            echo "⚠️ No valid workflow runs data found, skipping watchdog check"
-            exit 0
-          fi
-          
-          # Find stuck workflows
-          jq -c '.[] | select(.status == "in_progress" and (.duration | tonumber) > 1800)' runs.json > stuck.json
-
-          if [ -s stuck.json ]; then
-            echo "🚨 Found stuck workflows:"
-            cat stuck.json | jq .
-
-            echo "🛑 Cancelling stuck workflows..."
-            cat stuck.json | jq -r '.databaseId' | while read run_id; do
-              if [ -n "$run_id" ]; then
-                echo "Cancelling run: $run_id"
-                gh run cancel "$run_id" || echo "Failed to cancel run: $run_id"
-              fi
-            done
+          # Simple health check - just verify we can access the API
+          if gh run list --limit 5 --json status,workflowName > /dev/null 2>&1; then
+            echo "✅ GitHub API access confirmed"
+            
+            # Count recent failed runs
+            failed_count=$(gh run list --limit 20 --json status,workflowName,conclusion | jq -r '.[] | select(.status == "completed" and .conclusion == "failure") | .workflowName' | wc -l)
+            
+            if [ "$failed_count" -gt 0 ]; then
+              echo "⚠️ Found $failed_count recent failed workflow runs"
+              gh run list --limit 20 --json status,workflowName,conclusion,url | jq -r '.[] | select(.status == "completed" and .conclusion == "failure") | "❌ " + .workflowName + ": " + .url'
+            else
+              echo "✅ No recent failed workflow runs found"
+            fi
+            
+            # Check for stuck workflows (running > 30 minutes)
+            stuck_count=$(gh run list --limit 50 --json status,workflowName,duration,startedAt | jq -r '.[] | select(.status == "in_progress" and (.duration | tonumber) > 1800) | .workflowName' | wc -l)
+            
+            if [ "$stuck_count" -gt 0 ]; then
+              echo "🚨 Found $stuck_count stuck workflows (running > 30 minutes)"
+              gh run list --limit 50 --json status,workflowName,duration,startedAt,url | jq -r '.[] | select(.status == "in_progress" and (.duration | tonumber) > 1800) | "⏰ " + .workflowName + " (running " + (.duration | tonumber | . / 60 | floor | tostring) + " minutes): " + .url'
+            else
+              echo "✅ No stuck workflows found"
+            fi
+            
           else
-            echo "✅ No stuck workflows found."
+            echo "❌ Cannot access GitHub API - check permissions"
+            exit 1
           fi
           
       - name: 🧹 Cleanup
         if: always()
         run: |
-          rm -f runs.json stuck.json
-          echo "🧹 Cleanup completed"
+          echo "🧹 Watchdog check completed"
