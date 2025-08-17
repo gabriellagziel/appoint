@@ -94,7 +94,7 @@ dev_dependencies:
   yaml: ^3.1.2
 
   # flutter_driver: any  # Removed for null safety compatibility
-  vm_service: any
+  vm_service: 15.0.2
 flutter:
   uses-material-design: true
   generate: true
