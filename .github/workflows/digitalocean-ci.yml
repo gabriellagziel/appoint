@@ -84,7 +84,7 @@ jobs:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Cache Flutter dependencies (persistent)
         uses: actions/cache@v4
@@ -140,7 +140,7 @@ jobs:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Restore Flutter cache
         uses: actions/cache@v4
@@ -215,7 +215,7 @@ jobs:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Restore Flutter cache
         uses: actions/cache@v4
@@ -272,7 +272,7 @@ jobs:
         test_type: [unit, widget, integration]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Restore Flutter cache
         uses: actions/cache@v4
@@ -335,7 +335,7 @@ jobs:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Restore Flutter cache
         uses: actions/cache@v4
@@ -386,7 +386,7 @@ jobs:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Restore Flutter cache
         uses: actions/cache@v4
@@ -452,7 +452,7 @@ jobs:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Restore Flutter cache
         uses: actions/cache@v4
@@ -511,7 +511,7 @@ jobs:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Restore Flutter cache
         uses: actions/cache@v4
@@ -559,7 +559,7 @@ jobs:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Download web artifacts
         uses: actions/download-artifact@v4
@@ -601,7 +601,7 @@ jobs:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Download web artifacts
         uses: actions/download-artifact@v4
@@ -645,7 +645,7 @@ jobs:
       release_id: ${{ steps.create_release.outputs.id }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Get version
         id: version
@@ -725,7 +725,7 @@ jobs:
     if: failure() && github.event_name == 'workflow_dispatch'
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Rollback deployment
         run: |
