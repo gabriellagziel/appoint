@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://github.com/gabriellagziel/appoint#readme
+    about: Please check our documentation first
+  - name: 💬 Discussions
+    url: https://github.com/gabriellagziel/appoint/discussions
+    about: Ask questions and share ideas with the community

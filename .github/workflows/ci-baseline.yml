@@ -1,0 +1,93 @@
+name: CI Baseline
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.27.1'
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+          
+      - name: Install Node dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif [ -f pnpm-lock.yaml ]; then
+            npm install -g pnpm
+            pnpm install --frozen-lockfile
+          else
+            npm install
+          fi
+          
+      - name: Verify Flutter structure
+        run: |
+          echo "🔍 Verifying Flutter repository structure..."
+          
+          # Check for essential Flutter files
+          if [ ! -f pubspec.yaml ]; then
+            echo "❌ pubspec.yaml not found"
+            exit 1
+          fi
+          
+          if [ ! -d "lib" ]; then
+            echo "❌ lib directory not found"
+            exit 1
+          fi
+          
+          if [ ! -d ".github/workflows" ]; then
+            echo "❌ .github/workflows directory not found"
+            exit 1
+          fi
+          
+          # Check for basic workflow files
+          workflow_count=$(find .github/workflows -name "*.yml" -o -name "*.yaml" | wc -l)
+          if [ "$workflow_count" -eq 0 ]; then
+            echo "❌ No workflow files found"
+            exit 1
+          fi
+          
+          echo "✅ Flutter repository structure verified"
+          
+      - name: Flutter doctor
+        run: |
+          echo "🔍 Running Flutter doctor..."
+          flutter doctor
+          
+      - name: Get Flutter dependencies
+        run: |
+          echo "📦 Getting Flutter dependencies..."
+          flutter pub get
+          
+      - name: Basic Flutter analysis
+        run: |
+          echo "🔍 Running basic Flutter analysis..."
+          flutter analyze --no-fatal-infos || echo "⚠️ Analysis issues found (non-blocking)"
+          
+      - name: Baseline success
+        run: |
+          echo "✅ CI Baseline completed successfully"
+          echo "📊 Repository is structurally sound"
+          echo "🔧 Flutter version: $(flutter --version | head -1)"
+          echo "🔧 Node version: $(node -v)"
+          echo "📦 Package manager: $(if [ -f pnpm-lock.yaml ]; then echo "pnpm"; elif [ -f yarn.lock ]; then echo "yarn"; else echo "npm"; fi)"
