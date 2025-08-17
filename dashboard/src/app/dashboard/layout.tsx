@@ -1,7 +1,8 @@
 import { ProtectedRoute } from '@/components/ProtectedRoute';
 import { SubscriptionCheck } from '@/components/SubscriptionCheck';
+import DashboardLayout from '@/components/DashboardLayout';
 
-export default function DashboardLayout({
+export default function DashboardLayoutWrapper({
   children,
 }: {
   children: React.ReactNode;
@@ -9,7 +10,9 @@ export default function DashboardLayout({
   return (
     <ProtectedRoute>
       <SubscriptionCheck>
-        {children}
+        <DashboardLayout>
+          {children}
+        </DashboardLayout>
       </SubscriptionCheck>
     </ProtectedRoute>
   );
