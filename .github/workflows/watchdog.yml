@@ -5,17 +5,21 @@ on:
     - cron: '*/5 * * * *'
   workflow_dispatch:
 
+permissions:
+  actions: read
+  contents: read
+
 jobs:
   watchdog:
     runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
+    # Only run on main repository, not on forks
+    if: github.repository == 'gabriellagziel/appoint'
+    
     steps:
       - name: 🔧 Install GitHub CLI
         run: |
           sudo apt-get update
-          sudo apt-get install -y gh
+          sudo apt-get install -y gh jq
 
       - name: 🪪 Authenticate GitHub CLI
         env:
@@ -29,7 +33,21 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "🔍 Checking for stuck workflows >30min..."
-          gh run list --limit 100 --json databaseId,status,workflowName,duration,startedAt | jq -c '.[] | select(.status == "in_progress" and (.duration | tonumber) > 1800)' > stuck.json
+          
+          # Get workflow runs with proper error handling
+          if ! gh run list --limit 100 --json databaseId,status,workflowName,duration,startedAt > runs.json 2>/dev/null; then
+            echo "⚠️ Could not fetch workflow runs, skipping watchdog check"
+            exit 0
+          fi
+          
+          # Check if runs.json is valid and has content
+          if [ ! -s runs.json ] || ! jq empty runs.json 2>/dev/null; then
+            echo "⚠️ No valid workflow runs data found, skipping watchdog check"
+            exit 0
+          fi
+          
+          # Find stuck workflows
+          jq -c '.[] | select(.status == "in_progress" and (.duration | tonumber) > 1800)' runs.json > stuck.json
 
           if [ -s stuck.json ]; then
             echo "🚨 Found stuck workflows:"
@@ -37,8 +55,17 @@ jobs:
 
             echo "🛑 Cancelling stuck workflows..."
             cat stuck.json | jq -r '.databaseId' | while read run_id; do
-              gh run cancel "$run_id"
+              if [ -n "$run_id" ]; then
+                echo "Cancelling run: $run_id"
+                gh run cancel "$run_id" || echo "Failed to cancel run: $run_id"
+              fi
             done
           else
             echo "✅ No stuck workflows found."
           fi
+          
+      - name: 🧹 Cleanup
+        if: always()
+        run: |
+          rm -f runs.json stuck.json
+          echo "🧹 Cleanup completed"
