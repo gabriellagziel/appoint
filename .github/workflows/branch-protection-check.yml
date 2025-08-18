@@ -1,8 +1,5 @@
 name: Branch Protection Check
 
-push:
-  branches: [ main ]
-
 on: workflow_dispatch
 jobs:
   verify-branch-protection:
