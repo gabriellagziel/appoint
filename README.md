@@ -221,3 +221,73 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Firebase Documentation](https://firebase.google.com/docs)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Docker Documentation](https://docs.docker.com/)
+
+<!-- HOW-WE-SHIP:START -->
+## How We Ship
+
+### Required checks (branch protection)
+- Only these 3 checks must pass:
+  - Flutter (web) build
+  - Next.js apps build
+  - Cloud Functions compile
+
+Badge:  
+[![core-ci](https://github.com/gabriellagziel/appoint/actions/workflows/core-ci.yml/badge.svg)](https://github.com/gabriellagziel/appoint/actions/workflows/core-ci.yml)
+
+### CI pipeline (core-ci)
+- Builds Flutter web (analyze, test, build artifact)
+- Builds all Next.js apps (marketing, business, enterprise-app, dashboard)
+- Compiles Functions (Node 18, CommonJS)
+- No deploys from CI; artifacts only
+
+### Environments (Vercel)
+- Each app linked to its subdirectory
+- Framework: Next.js
+- Build: `npm ci && npm run build`
+- Output: `.next`
+- Env vars set for Preview + Production (see `ops/vercel/README.md`)
+
+### Functions runtime (Firebase)
+- `functions/package.json` → `"type": "commonjs"`, `"engines": { "node": "18" }`
+- Build locally before deploy:
+```bash
+cd functions && npm ci && npm run build
+```
+
+### Release process
+
+1. Merge PR (core-ci must be green)
+2. Tag `vX.Y.Z` from main
+3. Deploy Functions first (verify health)
+4. Promote Vercel Preview → Production per app
+
+### Quick smoke (per app)
+
+* Homepage 200, key route 200
+* Console: no errors
+* Env-driven UI value looks sane
+* Auth flow OK (if present)
+* Critical path works (no 4xx/5xx)
+
+### Rollback
+
+* Vercel: promote previous deployment to Production
+* Functions: redeploy previous working build/tag
+
+### Keep it green
+
+* Only core-ci runs on push/PR; all other workflows are manual
+* Preview envs in Vercel must mirror prod where applicable
+* If CI fails:
+
+  * Flutter: fix `flutter analyze`/tests
+  * Next.js: missing env or bad build script
+  * Functions: CommonJS + Node 18; fix TS errors
+
+### References
+
+* Exec summary: `ops/audit/EXEC_SUMMARY.md`
+* CI: `.github/workflows/core-ci.yml`
+* Vercel mapping: `ops/vercel/README.md`
+
+<!-- HOW-WE-SHIP:END -->
