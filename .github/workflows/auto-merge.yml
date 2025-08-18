@@ -3,13 +3,7 @@ name: Auto Merge
 push:
   branches: [ main ]
 
-on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-  workflow_run:
-    workflows: ["DigitalOcean CI Pipeline"]
-    types: [completed]
-
+on: workflow_dispatch
 jobs:
   # Auto-merge PRs on green CI
   auto-merge:

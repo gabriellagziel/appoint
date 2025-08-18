@@ -1,22 +1,6 @@
 name: Smoke Tests
 
-on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Target environment to test'
-        required: true
-        default: 'production'
-        type: choice
-        options:
-          - production
-          - staging
-      api_base_url:
-        description: 'API Base URL to test'
-        required: false
-        default: 'https://api.app-oint.com'
-        type: string
-
+on: workflow_dispatch
 env:
   API_BASE_URL: ${{ github.event.inputs.api_base_url || 'https://api.app-oint.com' }}
   TEST_TIMEOUT: 30

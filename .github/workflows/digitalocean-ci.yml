@@ -3,42 +3,7 @@ name: DigitalOcean CI Pipeline
 push:
   branches: [ main ]
 
-on:
-  push:
-    branches: [ main, develop ]
-  pull_request:
-    branches: [ main, develop ]
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Deployment environment'
-        required: true
-        default: 'staging'
-        type: choice
-        options:
-          - staging
-          - production
-      platform:
-        description: 'Target platform'
-        required: true
-        default: 'all'
-        type: choice
-        options:
-          - all
-          - web
-          - android
-          - ios
-      skip_tests:
-        description: 'Skip tests'
-        required: false
-        default: false
-        type: boolean
-      force_github_fallback:
-        description: 'Force GitHub fallback (override lock)'
-        required: false
-        default: false
-        type: boolean
-
+on: workflow_dispatch
 env:
   FLUTTER_VERSION: '3.32.5'
   DART_VERSION: '3.5.4'

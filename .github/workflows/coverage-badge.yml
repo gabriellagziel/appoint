@@ -3,9 +3,7 @@ name: Coverage Badge
 push:
   branches: [ main ]
 
-on:
-  pull_request:
-
+on: workflow_dispatch
 jobs:
   coverage:
     runs-on: ubuntu-latest
