@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "commonjs",
-    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "lib",
+    "rootDir": "src",
     "strict": true,
-    "outDir": "dist",
-    "rootDir": ".",
-    "types": ["node", "jest"]
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"]
   },
-  "include": ["src", "test"]
-} 
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/ambassadors.ts"]
+}
