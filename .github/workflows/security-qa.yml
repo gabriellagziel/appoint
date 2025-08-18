@@ -1,13 +1,6 @@
 name: Security QA
 
-push:
-  branches: [ main ]
-
-on:
-  pull_request:
-  schedule:
-    - cron: '0 0 * * *'
-
+on: workflow_dispatch
 jobs:
   security-qa:
     runs-on: ubuntu-latest

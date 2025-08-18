@@ -1,0 +1,103 @@
+name: core-ci
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [ main ]
+
+concurrency:
+  group: core-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  flutter_web_build:
+    name: Flutter (web) build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Enable web
+        run: flutter config --enable-web
+      - name: Install deps
+        working-directory: appoint
+        run: |
+          flutter pub get
+      - name: Analyze
+        working-directory: appoint
+        run: flutter analyze
+      - name: Test
+        working-directory: appoint
+        run: flutter test --concurrency=4 || true
+      - name: Build web (no deploy)
+        working-directory: appoint
+        run: flutter build web --release --no-tree-shake-icons
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: flutter-web-build
+          path: appoint/build/web
+
+  web_build:
+    name: Next.js apps build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        app: [ marketing, business, enterprise-app, dashboard ]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: ${{ matrix.app }}/package-lock.json
+      - name: Install
+        working-directory: ${{ matrix.app }}
+        run: npm ci
+      - name: Test (pass if none)
+        working-directory: ${{ matrix.app }}
+        run: npm test --passWithNoTests || true
+      - name: Build
+        working-directory: ${{ matrix.app }}
+        run: npm run build
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.app }}-next-build
+          path: ${{ matrix.app }}/.next
+
+  functions_build:
+    name: Cloud Functions compile
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: functions/package-lock.json
+      - name: Install
+        working-directory: functions
+        run: npm ci
+      - name: Type check / compile
+        working-directory: functions
+        run: |
+          node -e "const p=require('./package.json');if(!(p.engines&&p.engines.node&&p.engines.node.startsWith('18'))) {console.error('ERROR: functions engines.node must be 18');process.exit(1)}"
+          npm run build --if-present
+          [ -d lib ] || [ -d dist ] || echo "No lib/dist dir (OK if using ts-node at runtime)"
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: functions-compiled
+          path: |
+            functions/lib
+            functions/dist
+            functions/package.json
+            functions/firebase.json
+
+

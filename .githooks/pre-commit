@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+if git diff --cached --name-only | grep -q "^functions/"; then
+  TYPE=$(jq -r '.type // "commonjs"' functions/package.json 2>/dev/null || echo "commonjs")
+  ENGINE=$(jq -r '.engines.node // ""' functions/package.json 2>/dev/null || echo "")
+  if [ "$TYPE" != "commonjs" ]; then
+    echo "❌ functions/package.json must have \"type\": \"commonjs\""; exit 1
+  fi
+  case "$ENGINE" in 18* ) ;; * ) echo "❌ functions engines.node must start with 18"; exit 1;; esac
+fi
+
+

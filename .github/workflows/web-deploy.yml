@@ -1,11 +1,6 @@
 name: Web Deploy
 
-push:
-  branches: [ main ]
-
-on:
-  pull_request:
-
+on: workflow_dispatch
 jobs:
   deploy-web:
     runs-on: ubuntu-latest

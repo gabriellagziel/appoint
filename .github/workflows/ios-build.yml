@@ -1,11 +1,6 @@
 name: iOS Build
 
-push:
-  branches: [ main ]
-
-on:
-  pull_request:
-
+on: workflow_dispatch
 jobs:
   build-ios:
     runs-on: macos-latest

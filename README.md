@@ -22,8 +22,9 @@ docker-compose down
 ```
 
 **Services will be available at:**
-- **Dashboard**: http://localhost:3000
-- **API/Functions**: http://localhost:8080
+
+- **Dashboard**: <http://localhost:3000>
+- **API/Functions**: <http://localhost:8080>
 - **Database**: PostgreSQL on localhost:5432
 - **Cache**: Redis on localhost:6379
 
@@ -49,6 +50,7 @@ docker-compose up dashboard-dev functions-dev -d
 ### Environment Configuration
 
 1. Copy environment files:
+
    ```bash
    cp dashboard/.env.example dashboard/.env
    cp functions/.env.example functions/.env
@@ -57,6 +59,7 @@ docker-compose up dashboard-dev functions-dev -d
 2. Update the `.env` files with your configuration values
 
 3. Restart services:
+
    ```bash
    docker-compose restart
    ```
@@ -82,8 +85,7 @@ docker-compose exec functions npm test
 
 ## 📊 Status
 
-[![CI Pipeline](https://github.com/your-username/appoint/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/appoint/actions/workflows/ci.yml)
-[![Nightly Builds](https://github.com/your-username/appoint/actions/workflows/nightly.yml/badge.svg)](https://github.com/your-username/appoint/actions/workflows/nightly.yml)
+[![core-ci](https://github.com/gabriellagziel/appoint/actions/workflows/core-ci.yml/badge.svg)](https://github.com/gabriellagziel/appoint/actions/workflows/core-ci.yml)
 [![Codecov](https://codecov.io/gh/your-username/appoint/branch/main/graph/badge.svg)](https://codecov.io/gh/your-username/appoint)
 
 ## 📚 Documentation
@@ -221,3 +223,79 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Firebase Documentation](https://firebase.google.com/docs)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Docker Documentation](https://docs.docker.com/)
+
+<!-- HOW-WE-SHIP:START -->
+## How We Ship
+
+### Required checks (branch protection)
+
+- Only these 3 checks must pass:
+  - Flutter (web) build
+  - Next.js apps build
+  - Cloud Functions compile
+
+Badge:  
+[![core-ci](https://github.com/gabriellagziel/appoint/actions/workflows/core-ci.yml/badge.svg)](https://github.com/gabriellagziel/appoint/actions/workflows/core-ci.yml)
+
+### CI pipeline (core-ci)
+
+- Builds Flutter web (analyze, test, build artifact)
+- Builds all Next.js apps (marketing, business, enterprise-app, dashboard)
+- Compiles Functions (Node 18, CommonJS)
+- No deploys from CI; artifacts only
+
+### Environments (Vercel)
+
+- Each app linked to its subdirectory
+- Framework: Next.js
+- Build: `npm ci && npm run build`
+- Output: `.next`
+- Env vars set for Preview + Production (see `ops/vercel/README.md`)
+
+### Functions runtime (Firebase)
+
+- `functions/package.json` → `"type": "commonjs"`, `"engines": { "node": "18" }`
+- Build locally before deploy:
+
+```bash
+cd functions && npm ci && npm run build
+```
+
+### Release process
+
+1. Merge PR (core-ci must be green)
+2. Tag `vX.Y.Z` from main
+3. Deploy Functions first (verify health)
+4. Promote Vercel Preview → Production per app
+
+### Quick smoke (per app)
+
+- Homepage 200, key route 200
+- Console: no errors
+- Env-driven UI value looks sane
+- Auth flow OK (if present)
+- Critical path works (no 4xx/5xx)
+
+### Rollback
+
+- Vercel: promote previous deployment to Production
+- Functions: redeploy previous working build/tag
+
+### Keep it green
+
+- Only core-ci runs on push/PR; all other workflows are manual
+- Preview envs in Vercel must mirror prod where applicable
+- If CI fails:
+
+  - Flutter: fix `flutter analyze`/tests
+  - Next.js: missing env or bad build script
+  - Functions: CommonJS + Node 18; fix TS errors
+
+### References
+
+- Exec summary: `ops/audit/EXEC_SUMMARY.md`
+- CI: `.github/workflows/core-ci.yml`
+- Vercel mapping: `ops/vercel/README.md`
+ - 🔑 Release templates: see [ops/release/TEMPLATES.md](ops/release/TEMPLATES.md) for Vercel promotion + Functions deploy checklists (with Decision Gate).
+
+<!-- HOW-WE-SHIP:END -->

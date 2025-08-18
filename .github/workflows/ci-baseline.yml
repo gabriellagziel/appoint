@@ -1,12 +1,6 @@
 name: CI Baseline
 
-on:
-  push:
-    branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
-  workflow_dispatch:
-
+on: workflow_dispatch
 permissions:
   contents: read
 

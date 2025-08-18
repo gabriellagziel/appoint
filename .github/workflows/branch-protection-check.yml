@@ -1,13 +1,6 @@
 name: Branch Protection Check
 
-push:
-  branches: [ main ]
-
-on:
-  pull_request:
-    branches: [ main, develop ]
-  workflow_dispatch:
-
+on: workflow_dispatch
 jobs:
   verify-branch-protection:
     runs-on: ubuntu-latest
