@@ -1,8 +1,5 @@
 name: DigitalOcean CI Pipeline
 
-push:
-  branches: [ main ]
-
 on: workflow_dispatch
 env:
   FLUTTER_VERSION: '3.32.5'
