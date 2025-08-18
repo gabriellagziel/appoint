@@ -296,5 +296,6 @@ cd functions && npm ci && npm run build
 - Exec summary: `ops/audit/EXEC_SUMMARY.md`
 - CI: `.github/workflows/core-ci.yml`
 - Vercel mapping: `ops/vercel/README.md`
+ - 🔑 Release templates: see [ops/release/TEMPLATES.md](ops/release/TEMPLATES.md) for Vercel promotion + Functions deploy checklists (with Decision Gate).
 
 <!-- HOW-WE-SHIP:END -->
