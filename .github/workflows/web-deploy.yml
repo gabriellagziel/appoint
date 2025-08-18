@@ -1,8 +1,5 @@
 name: Web Deploy
 
-push:
-  branches: [ main ]
-
 on: workflow_dispatch
 jobs:
   deploy-web:

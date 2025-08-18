@@ -1,8 +1,5 @@
 name: Security QA
 
-push:
-  branches: [ main ]
-
 on: workflow_dispatch
 jobs:
   security-qa:

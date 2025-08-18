@@ -1,8 +1,5 @@
 name: iOS Build
 
-push:
-  branches: [ main ]
-
 on: workflow_dispatch
 jobs:
   build-ios:
