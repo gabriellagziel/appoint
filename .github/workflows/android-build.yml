@@ -3,9 +3,7 @@ name: Android Build
 push:
   branches: [ main ]
 
-on:
-  pull_request:
-
+on: workflow_dispatch
 jobs:
   build-android:
     runs-on: ubuntu-latest
