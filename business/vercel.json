@@ -1,7 +1,7 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/", "destination": "https://app-oint.com/business", "permanent": false }
+    { "source": "/", "destination": "https://app-oint.com", "permanent": false }
   ],
   "rewrites": [
     { "source": "/app/:match*", "destination": "/app/:match*" },
