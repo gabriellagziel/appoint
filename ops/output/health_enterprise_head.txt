@@ -1,0 +1,25 @@
+---- HEAD https://REDACTED_TOKEN.vercel.app ----
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-security-policy: default-src 'self' vercel.com *.vercel.com vercel.live instant-preview-site.vercel.app instant-preview-site-k5oiz7uj7.vercel.sh;script-src 'self' 'unsafe-eval' 'unsafe-inline' va.vercel-scripts.com vercel.com *.vercel.com vercel.live instant-preview-site.vercel.app instant-preview-site-k5oiz7uj7.vercel.sh;style-src 'self' 'unsafe-inline' vercel.com *.vercel.com vercel.live instant-preview-site.vercel.app instant-preview-site-k5oiz7uj7.vercel.sh;font-src 'self' vercel.com *.vercel.com vercel.live instant-preview-site.vercel.app instant-preview-site-k5oiz7uj7.vercel.sh *.gstatic.com;connect-src data: *;
+content-type: text/html; charset=utf-8
+date: Sun, 24 Aug 2025 19:09:52 GMT
+feature-policy: fullscreen 'self'; camera 'none'
+link: <https://instant-preview-site.vercel.app/_next/static/media/569ce4b8f30dc480-s.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", <https://instant-preview-site.vercel.app/_next/static/media/93f479601ee12b01.p.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2"
+referrer-policy: origin-when-cross-origin
+server: Vercel
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-content-type-options: nosniff
+x-dns-prefetch-control: on
+x-download-options: noopen
+x-edge-runtime: 1
+x-frame-options: DENY
+x-matched-path: /[[...slug]]
+x-robots-tag: noindex
+x-vercel-cache: MISS
+x-vercel-id: fra1::fra1::REDACTED_TOKEN
+x-xss-protection: 0
+
+----------------------------
