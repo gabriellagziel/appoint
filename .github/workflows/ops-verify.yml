@@ -1,0 +1,36 @@
+name: Ops Verify (Vercel + DNS + Headers)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"  # daily 03:17 UTC
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_ORG: gabriellagziels-projects
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      DOCTL_TOKEN: ${{ secrets.DOCTL_TOKEN }} # optional if you use SKIP_DNS
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install doctl (optional)
+        run: |
+          curl -sL https://github.com/digitalocean/doctl/releases/download/v1.106.0/doctl-1.106.0-linux-amd64.tar.gz \
+            | tar -xz && sudo mv doctl /usr/local/bin/
+          doctl auth init -t "$DOCTL_TOKEN" || true
+
+      - name: Install Node (for vercel CLI)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Verify live
+        run: |
+          bash -lc 'SKIP_DNS=1 SKIP_ALIAS=1 REDEPLOY=0 ./go-live.sh' || exit $?
+
+      - name: Notify on failure (optional)
+        if: failure()
+        run: |
+          echo "Acceptance failed. Investigate logs."  # hook to Slack/webhook here

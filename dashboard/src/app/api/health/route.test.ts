@@ -13,18 +13,18 @@ jest.mock('next/server', () => ({
 describe('/api/health', () => {
   it('should return healthy status', async () => {
     const response = await GET()
-    
+
     expect(response).toBeDefined()
     expect(response.status).toBe(200)
   })
 
   it('should include required health data fields', async () => {
-    const { NextResponse } = require('next/server')
-    
+    const { NextResponse } = await import('next/server')
+
     await GET()
-    
+
     const callArgs = NextResponse.json.mock.calls[0][0]
-    
+
     expect(callArgs).toHaveProperty('status', 'healthy')
     expect(callArgs).toHaveProperty('timestamp')
     expect(callArgs).toHaveProperty('service', 'dashboard')

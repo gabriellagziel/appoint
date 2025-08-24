@@ -7,7 +7,7 @@ if (isFirebaseFunctions) {
   // Firebase Functions mode - use the original Firebase Functions exports
   const functions = require('firebase-functions');
   
-  // Import from modular TypeScript structure
+  // Import compiled JS from lib (built from TypeScript)
   const { 
     onNewBooking,
     createCheckoutSession,
@@ -29,7 +29,7 @@ if (isFirebaseFunctions) {
     processWebhookRetries,
     oauth,
     hourlyAlerts,
-  } = require('./src/index');
+  } = require('./lib/index');
 
   const {
     autoAssignAmbassadors,
@@ -124,5 +124,5 @@ if (isFirebaseFunctions) {
 } else {
   // Containerized mode - use Express.js server
   console.log('Starting Functions API in containerized mode...');
-  require('./dist/server.js');
+  require('./lib/server.js');
 } 

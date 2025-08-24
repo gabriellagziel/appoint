@@ -1,0 +1,45 @@
+Next Config	other	rg -n --pcre2 -S "(rewrites\\(|redirects\\(|basePath|trailingSlash)" -g '!node_modules' . | while IFS=: read -r file line text; do	./ops/scripts/url_inventory.sh	46
+Next Config	other	  trailingSlash: true,	./marketing/next.config.ts	5
+Next Config	other	  trailingSlash: true,	./qa/ORG_QA/appoint/marketing/next.config.ts	5
+Next Config	other	Next Config	other	rg -n --pcre2 -S "(rewrites\\(|redirects\\(|basePath|trailingSlash)" -g '!node_modules' . | while IFS=: read -r file line text; do	./ops/scripts/url_inventory.sh	46	./ops/audit/urls/rewrites.tsv	1
+Next Config	other	Next Config	other	  trailingSlash: true,	./marketing/next.config.ts	5	./ops/audit/urls/rewrites.tsv	2
+Next Config	other	Next Config	other	  trailingSlash: true,	./qa/ORG_QA/appoint/marketing/next.config.ts	5	./ops/audit/urls/rewrites.tsv	3
+Next Config	other	  trailingSlash: false,	./qa/ORG_QA/appoint/marketing/next.config.js	14
+Next Config	other	  trailingSlash: false,	./marketing/next.config.js	14
+Rewrite/Redirect	other	  resource: 'user_profile',	./PRIVACY_COMPLIANCE.md	486
+Rewrite/Redirect	other	        source: 'share_link',	./qa/ORG_QA/appoint/functions/src/ambassador-automation.ts	423
+Rewrite/Redirect	other	Rewrite/Redirect	other	  resource: 'user_profile',	./PRIVACY_COMPLIANCE.md	486	./ops/audit/urls/rewrites.tsv	9
+Rewrite/Redirect	other	        source: 'share_link',	./functions/src/ambassador-automation.ts	423
+Rewrite/Redirect	other	                source: 'share_link',	./functions/lib/ambassador-automation.js	361
+Rewrite/Redirect	other	  resource: 'user_profile',	./qa/ORG_QA/appoint/PRIVACY_COMPLIANCE.md	486
+Rewrite/Redirect	other	        source: '/(.*)',	./qa/ORG_QA/appoint/marketing/next.config.js	38
+Rewrite/Redirect	other	        source: '/(.*)',	./marketing/next.config.js	38
+Next Config	other	rg -n --pcre2 -S "(rewrites\\(|redirects\\(|basePath|trailingSlash)" -g '!node_modules' . | while IFS=: read -r file line text; do	./ops/scripts/url_inventory.sh	46
+Next Config	other	  trailingSlash: true,	./marketing/next.config.ts	5
+Next Config	other	Next Config	other	rg -n --pcre2 -S "(rewrites\\(|redirects\\(|basePath|trailingSlash)" -g '!node_modules' . | while IFS=: read -r file line text; do	./ops/scripts/url_inventory.sh	46	./ops/audit/urls/rewrites.tsv	1
+Next Config	other	Next Config	other	  trailingSlash: true,	./marketing/next.config.ts	5	./ops/audit/urls/rewrites.tsv	2
+Next Config	other	Next Config	other	  trailingSlash: true,	./qa/ORG_QA/appoint/marketing/next.config.ts	5	./ops/audit/urls/rewrites.tsv	3
+Next Config	other	Next Config	other	Next Config	other	rg -n --pcre2 -S "(rewrites\\(|redirects\\(|basePath|trailingSlash)" -g '!node_modules' . | while IFS=: read -r file line text; do	./ops/scripts/url_inventory.sh	46	./ops/audit/urls/rewrites.tsv	1	./ops/audit/urls/rewrites.tsv	4
+Next Config	other	Next Config	other	Next Config	other	  trailingSlash: true,	./marketing/next.config.ts	5	./ops/audit/urls/rewrites.tsv	2	./ops/audit/urls/rewrites.tsv	5
+Next Config	other	Next Config	other	Next Config	other	  trailingSlash: true,	./qa/ORG_QA/appoint/marketing/next.config.ts	5	./ops/audit/urls/rewrites.tsv	3	./ops/audit/urls/rewrites.tsv	6
+Next Config	other	Next Config	other	  trailingSlash: false,	./qa/ORG_QA/appoint/marketing/next.config.js	14	./ops/audit/urls/rewrites.tsv	7
+Next Config	other	Next Config	other	  trailingSlash: false,	./marketing/next.config.js	14	./ops/audit/urls/rewrites.tsv	8
+Next Config	other	  trailingSlash: true,	./qa/ORG_QA/appoint/marketing/next.config.ts	5
+Next Config	other	  trailingSlash: false,	./marketing/next.config.js	14
+Next Config	other	  trailingSlash: false,	./qa/ORG_QA/appoint/marketing/next.config.js	14
+Rewrite/Redirect	other	  resource: 'user_profile',	./PRIVACY_COMPLIANCE.md	486
+Rewrite/Redirect	other	        source: 'share_link',	./functions/src/ambassador-automation.ts	423
+Rewrite/Redirect	other	                source: 'share_link',	./functions/lib/ambassador-automation.js	361
+Rewrite/Redirect	other	        source: 'share_link',	./qa/ORG_QA/appoint/functions/src/ambassador-automation.ts	423
+Rewrite/Redirect	other	Rewrite/Redirect	other	  resource: 'user_profile',	./PRIVACY_COMPLIANCE.md	486	./ops/audit/urls/rewrites.tsv	9
+Rewrite/Redirect	other	Rewrite/Redirect	other	        source: 'share_link',	./qa/ORG_QA/appoint/functions/src/ambassador-automation.ts	423	./ops/audit/urls/rewrites.tsv	10
+Rewrite/Redirect	other	Rewrite/Redirect	other	Rewrite/Redirect	other	  resource: 'user_profile',	./PRIVACY_COMPLIANCE.md	486	./ops/audit/urls/rewrites.tsv	9	./ops/audit/urls/rewrites.tsv	11
+Rewrite/Redirect	other	Rewrite/Redirect	other	        source: 'share_link',	./functions/src/ambassador-automation.ts	423	./ops/audit/urls/rewrites.tsv	12
+Rewrite/Redirect	other	Rewrite/Redirect	other	                source: 'share_link',	./functions/lib/ambassador-automation.js	361	./ops/audit/urls/rewrites.tsv	13
+Rewrite/Redirect	other	Rewrite/Redirect	other	  resource: 'user_profile',	./qa/ORG_QA/appoint/PRIVACY_COMPLIANCE.md	486	./ops/audit/urls/rewrites.tsv	14
+Rewrite/Redirect	other	Rewrite/Redirect	other	        source: '/(.*)',	./qa/ORG_QA/appoint/marketing/next.config.js	38	./ops/audit/urls/rewrites.tsv	15
+Rewrite/Redirect	other	Rewrite/Redirect	other	        source: '/(.*)',	./marketing/next.config.js	38	./ops/audit/urls/rewrites.tsv	16
+Rewrite/Redirect	other	Rewrite/Redirect	other	  resource: 'user_profile',	./PRIVACY_COMPLIANCE.md	486	./ops/audit/urls/rewrites.tsv	30
+Rewrite/Redirect	other	        source: '/(.*)',	./marketing/next.config.js	38
+Rewrite/Redirect	other	  resource: 'user_profile',	./qa/ORG_QA/appoint/PRIVACY_COMPLIANCE.md	486
+Rewrite/Redirect	other	        source: '/(.*)',	./qa/ORG_QA/appoint/marketing/next.config.js	38

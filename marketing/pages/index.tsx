@@ -1,31 +1,11 @@
 import Image from 'next/image'
-import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Briefcase, Server, Shield } from 'lucide-react'
-import { Navbar } from '@/components/Navbar'
-import { useTranslation } from '@/lib/i18n'
 
 export default function Home() {
-  const router = useRouter()
-  const { t } = useTranslation(router.locale)
   return (
-    <>
-      <Head>
-        <title>{t('seo.defaultTitle')}</title>
-        <meta name="description" content={t('seo.defaultDescription')} />
-        <meta property="og:title" content={t('seo.defaultTitle')} />
-        <meta property="og:description" content={t('seo.defaultDescription')} />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={t('seo.defaultTitle')} />
-        <meta name="twitter:description" content={t('seo.defaultDescription')} />
-      </Head>
-      
-      <div className="min-h-screen bg-gray-50">
-        <Navbar />
-        <main className="bg-gradient-to-br from-gray-50 to-white">
+    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="flex min-h-[80vh] flex-col items-center justify-center text-center">
@@ -43,10 +23,14 @@ export default function Home() {
           {/* Slogan */}
           <div className="mb-12">
             <h1 className="text-5xl font-light text-gray-900 mb-4 tracking-tight">
-              {t('brand.tagline')}
+              Time Organized
             </h1>
             <div className="text-xl text-gray-600 font-light space-x-4">
-              {t('brand.subtitle')}
+              <span>Set</span>
+              <span className="text-gray-400">·</span>
+              <span>Send</span>
+              <span className="text-gray-400">·</span>
+              <span>Done</span>
             </div>
           </div>
 
@@ -59,9 +43,12 @@ export default function Home() {
           {/* Navigation Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
             {/* Business Portal Card */}
-            <Card className="group hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 hover:scale-[1.02] cursor-pointer border-gray-200/50 bg-white/80 backdrop-blur-sm">
+            <Card className="group hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 hover:scale-[1.02]
+cursor-pointer border-gray-200/50 bg-white/80 backdrop-blur-sm">
+
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto mb-4 w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+
                   <Briefcase className="w-8 h-8 text-blue-600" />
                 </div>
                 <CardTitle className="text-xl font-semibold text-gray-900">
@@ -75,6 +62,7 @@ export default function Home() {
                 <Button 
                   asChild
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-200"
+
                 >
                   <a href="https://business.app-oint.com" target="_blank" rel="noopener noreferrer">
                     Enter Business Portal
@@ -84,9 +72,12 @@ export default function Home() {
             </Card>
 
             {/* Enterprise API Card */}
-            <Card className="group hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 hover:scale-[1.02] cursor-pointer border-gray-200/50 bg-white/80 backdrop-blur-sm">
+            <Card className="group hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 hover:scale-[1.02]
+cursor-pointer border-gray-200/50 bg-white/80 backdrop-blur-sm">
+
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto mb-4 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center group-hover:bg-green-200 transition-colors">
+
                   <Server className="w-8 h-8 text-green-600" />
                 </div>
                 <CardTitle className="text-xl font-semibold text-gray-900">
@@ -100,6 +91,7 @@ export default function Home() {
                 <Button 
                   asChild
                   className="w-full bg-green-600 hover:bg-green-700 text-white shadow-lg hover:shadow-xl transition-all duration-200"
+
                 >
                   <a href="https://enterprise.app-oint.com" target="_blank" rel="noopener noreferrer">
                     Explore API Access
@@ -109,9 +101,12 @@ export default function Home() {
             </Card>
 
             {/* Admin Panel Card */}
-            <Card className="group hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 hover:scale-[1.02] cursor-pointer border-gray-200/50 bg-white/80 backdrop-blur-sm">
+            <Card className="group hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 hover:scale-[1.02]
+cursor-pointer border-gray-200/50 bg-white/80 backdrop-blur-sm">
+
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto mb-4 w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center group-hover:bg-purple-200 transition-colors">
+
                   <Shield className="w-8 h-8 text-purple-600" />
                 </div>
                 <CardTitle className="text-xl font-semibold text-gray-900">
@@ -125,6 +120,7 @@ export default function Home() {
                 <Button 
                   asChild
                   className="w-full bg-purple-600 hover:bg-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-200"
+
                 >
                   <a href="https://admin.app-oint.com" target="_blank" rel="noopener noreferrer">
                     Go to Admin Panel
@@ -142,9 +138,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      </main>
-      </div>
-    </>
+    </main>
   )
 }
 

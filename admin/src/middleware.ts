@@ -53,6 +53,11 @@ async function isAdminUser(request: NextRequest): Promise<boolean> {
 }
 
 export async function middleware(request: NextRequest) {
+  // Allow public access if PUBLIC_MODE is enabled
+  if (process.env.PUBLIC_MODE === 'true') {
+    return NextResponse.next()
+  }
+
   const { pathname } = request.nextUrl
   const userAgent = request.headers.get('user-agent') || ''
 

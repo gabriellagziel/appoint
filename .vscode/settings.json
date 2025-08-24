@@ -44,5 +44,28 @@
   "cmake.sourceDirectory": "/Users/a/Documents/APP-OINT/linux",
   "dart.analysis.showLints": false,
   "dart.analysis.showTodos": false,
-  "dart.analysis.showWarnings": false
+  "dart.analysis.showWarnings": false,
+  "eslint.workingDirectories": [
+    {
+      "directory": "./admin",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "./dashboard",
+      "changeProcessCWD": true
+    },
+    {
+      "directory": "./marketing",
+      "changeProcessCWD": true
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact"
+  ],
+  "files.watcherExclude": {
+    "**/functions/**": true
+  }
 }

@@ -1,0 +1,2 @@
+- /robots.txt: marketing, other
+- /sitemap.xml: marketing, other
