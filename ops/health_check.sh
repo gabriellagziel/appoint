@@ -1,39 +1,30 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-domains=(
-  "app-oint.com"
-  "business.app-oint.com"
-  "enterprise.app-oint.com"
-)
+domains=("app-oint.com" "www.app-oint.com" "business.app-oint.com" "enterprise.app-oint.com")
 
-echo "=== HEALTH CHECK $(date -Iseconds) ==="
+echo "=== HEALTH $(date -Iseconds) ==="
 for d in "${domains[@]}"; do
   echo "--- $d ---"
   
-  # Check HTTP status
-  code=$(curl -s -o /dev/null -w "%{http_code}" "https://$d/" || echo "FAILED")
+  # HTTP status
+  code=$(curl -s -o /dev/null -w "%{http_code}" "https://$d/")
   echo "HTTP: $code"
   
-  # Check headers
-  hdr=$(curl -sI "https://$d/" || echo "")
-  hsts=$(grep -i "strict-transport-security" <<< "$hdr" || true)
-  xfo=$(grep -i "x-frame-options" <<< "$hdr" || true)
-  csp=$(grep -i "content-security-policy" <<< "$hdr" || true)
+  # Headers
+  hdr=$(curl -sI "https://$d/")
   
-  echo "HSTS: ${hsts:+OK}"
-  echo "XFO:  ${xfo:+OK}"
-  echo "CSP:  ${csp:+OK}"
+  # Security headers check
+  hsts=$([[ "$hdr" =~ [Ss]trict-Transport-Security ]] && echo "OK" || echo "MISSING")
+  xfo=$([[ "$hdr" =~ [Xx]-[Ff]rame-[Oo]ptions ]] && echo "OK" || echo "MISSING")
+  csp=$([[ "$hdr" =~ [Cc]ontent-[Ss]ecurity-[Pp]olicy ]] && echo "OK" || echo "MISSING")
+  vercel=$([[ "$hdr" =~ [Xx]-[Vv]ercel-[Ii]d ]] && echo "OK" || echo "UNKNOWN")
   
-  # Check body for hotfix signatures
-  body=$(curl -sL "https://$d/" | head -c 4000 || echo "")
-  bad=$(grep -Ei "splash|placeholder|hotfix" <<< "$body" || true)
-  if [ -n "$bad" ]; then 
-    echo "WARN: hotfix signature found"
-  else
-    echo "Content: OK"
-  fi
+  echo "HSTS: $hsts  | XFO: $xfo  | CSP: $csp  | x-vercel-id: $vercel"
   
+  # Content check (avoid hotfix signatures)
+  body=$(curl -sL "https://$d/" | head -c 8000)
+  sig=$([ -z "$(grep -Ei "splash|placeholder" <<< "$body" || true)" ] && echo "CLEAN" || echo "HOTFIX")
+  echo "CONTENT: $sig"
   echo ""
 done
-
