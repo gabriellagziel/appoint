@@ -1,0 +1,99 @@
+# dashboard – Environment Variables
+
+## Detected via process.env
+- AUTH_SECRET
+- AUTH_TRUST_HOST
+- BOOK_LANG
+- Binary file dashboard/.next/cache/webpack/client-production/0.pack matches
+- Binary file dashboard/.next/cache/webpack/client-production/10.pack matches
+- Binary file dashboard/.next/cache/webpack/edge-server-production/0.pack matches
+- Binary file dashboard/.next/cache/webpack/server-production/0.pack matches
+- Binary file dashboard/.next/cache/webpack/server-production/1.pack matches
+- Binary file dashboard/.next/cache/webpack/server-production/2.pack matches
+- Binary file dashboard/.next/cache/webpack/server-production/4.pack matches
+- Binary file dashboard/.next/cache/webpack/server-production/9.pack matches
+- CI
+- CLOUD_EVENTARC_EMULATOR_HOST
+- CLOUD_TASKS_EMULATOR_HOST
+- DATA_CONNECT_EMULATOR_HOST
+- EVENTARC_CLOUD_EVENT_SOURCE
+- FIREBASE_AUTH_EMULATOR_HOST
+- FIREBASE_DATABASE_EMULATOR_HOST
+- REDACTED_TOKEN
+- FIREBASE_REMOTE_CONFIG_URL_BASE
+- FIREBASE_SERVICE_ACCOUNT_BASE64
+- FIREBASE_STORAGE_EMULATOR_HOST
+- FIRESTORE_EMULATOR_HOST
+- GCLOUD_PROJECT
+- GOOGLE_CLOUD_PROJECT
+- GOOGLE_CLOUD_QUOTA_PROJECT
+- REDACTED_TOKEN
+- REDACTED_TOKEN
+- GRPC_NODE_TRACE
+- GRPC_NODE_VERBOSITY
+- GRPC_SSL_CIPHER_SUITES
+- GRPC_TRACE
+- GRPC_VERBOSITY
+- HOST
+- HTTPS_PROXY
+- HTTP_PROXY
+- JEST_WORKER_ID
+- NEXTAUTH_SECRET
+- NEXTAUTH_URL
+- NEXTAUTH_URL_INTERNAL
+- NEXT_OTEL_FETCH_DISABLED
+- NEXT_OTEL_PERFORMANCE_PREFIX
+- NEXT_OTEL_VERBOSE
+- NEXT_PRIVATE_TEST_PROXY
+- NEXT_PUBLIC_FIREBASE_API_KEY
+- NEXT_PUBLIC_FIREBASE_APP_ID
+- REDACTED_TOKEN
+- REDACTED_TOKEN
+- NEXT_PUBLIC_FIREBASE_PROJECT_ID
+- REDACTED_TOKEN
+- NEXT_RUNTIME
+- REDACTED_TOKEN
+- NODE_COMPILE_CACHE
+- NODE_ENV
+- NODE_UNIQUE_ID
+- NODE_V8_COVERAGE
+- NO_PROXY
+- PATH
+- PORT
+- STORAGE_EMULATOR_HOST
+- STRIPE_SECRET_KEY
+- UNDICI_NO_FG
+- USE_MOCK_PERSISTENCE
+- VERCEL
+- VERCEL_URL
+- X_GOOGLE_TARGET_PLATFORM
+- __FIREBASE_DEFAULTS__
+- __NEXT_BUILD_ID
+- REDACTED_TOKEN
+- __NEXT_FETCH_CACHE_KEY_PREFIX
+- REDACTED_TOKEN
+- REDACTED_TOKEN
+- __NEXT_PREVIEW_MODE_ID
+- __NEXT_PREVIEW_MODE_SIGNING_KEY
+
+## From next.config.* (if any)
+- (none)
+
+## From .env.* examples (if any)
+- ADS_PROVIDER
+- FEATURE_ADS
+- NEXT_PUBLIC_APP_NAME
+- NEXT_PUBLIC_APP_URL
+- NEXT_PUBLIC_FIREBASE_API_KEY
+- NEXT_PUBLIC_FIREBASE_APP_ID
+- REDACTED_TOKEN
+- REDACTED_TOKEN
+- NEXT_PUBLIC_FIREBASE_PROJECT_ID
+- REDACTED_TOKEN
+- NEXT_TELEMETRY_DISABLED
+- NODE_ENV
+
+## Notes
+- Any **NEXT_PUBLIC_*** must exist in both Preview & Production in Vercel.
+- Non-NEXT_PUBLIC keys are server-only; set in Vercel env (not exposed to browser).
+- If empty above, this app likely relies on defaults only.

@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "app-oint-core"
+  },
+  "targets": {
+    "app-oint-core": {
+      "hosting": {
+        "app-oint-core": [
+          "app-oint-core"
+        ],
+        "personal-app-oint": [
+          "personal-app-oint"
+        ]
+      }
+    }
   }
 }
