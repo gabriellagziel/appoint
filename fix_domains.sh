@@ -41,3 +41,4 @@ api "https://api.vercel.com/v9/projects/$BID/domains" | jq -r '.domains[].name'
 
 echo "[enterprise-app domains]"
 api "https://api.vercel.com/v9/projects/$EID/domains" | jq -r '.domains[].name'
+

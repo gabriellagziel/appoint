@@ -1,0 +1,21 @@
+=== HEALTH 2025-08-25T00:47:26+02:00 ===
+--- app-oint.com ---
+HTTP: 200
+HSTS: MISSING  | XFO: MISSING  | CSP: MISSING  | x-vercel-id: OK
+CONTENT: HOTFIX
+
+--- www.app-oint.com ---
+HTTP: 200
+HSTS: MISSING  | XFO: MISSING  | CSP: MISSING  | x-vercel-id: OK
+CONTENT: HOTFIX
+
+--- business.app-oint.com ---
+HTTP: 200
+HSTS: MISSING  | XFO: OK  | CSP: OK  | x-vercel-id: OK
+CONTENT: CLEAN
+
+--- enterprise.app-oint.com ---
+HTTP: 200
+HSTS: MISSING  | XFO: OK  | CSP: OK  | x-vercel-id: OK
+CONTENT: CLEAN
+
