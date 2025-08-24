@@ -1,0 +1,24 @@
+=== HEALTH 2025-08-24T23:46:35+02:00 ===
+--- app-oint.com ---
+HTTP: 200
+HSTS: strict-transport-security: max-age=63072000
+OK
+XFO:  MISSING
+CSP:  MISSING
+CONTENT: HOTFIX-SIGNATURE
+--- business.app-oint.com ---
+HTTP: 200
+HSTS: strict-transport-security: max-age=31536000; includeSubDomains; preload
+OK
+XFO:  x-frame-options: SAMEORIGIN
+OK
+CSP:  content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' https: data:; connect-src 'self' https: wss:; frame-ancestors 'self'; base-uri 'self'; form-action 'self'
+OK
+CONTENT: CLEAN
+--- enterprise.app-oint.com ---
+HTTP: 200
+HSTS: strict-transport-security: max-age=63072000
+OK
+XFO:  MISSING
+CSP:  MISSING
+CONTENT: CLEAN

@@ -1,0 +1,22 @@
+=== HEALTH CHECK 2025-08-24T23:22:00+02:00 ===
+--- app-oint.com ---
+HTTP: 200
+HSTS: OK
+XFO:  
+CSP:  
+WARN: hotfix signature found
+
+--- business.app-oint.com ---
+HTTP: 200
+HSTS: OK
+XFO:  OK
+CSP:  OK
+Content: OK
+
+--- enterprise.app-oint.com ---
+HTTP: 200
+HSTS: OK
+XFO:  
+CSP:  
+Content: OK
+

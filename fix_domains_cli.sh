@@ -34,3 +34,4 @@ echo "[business domains]"
 
 echo "[enterprise-app domains]"
 (cd enterprise-app && npx vercel domains ls) || true
+
