@@ -1,12 +1,4 @@
-# *
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /api/
-Disallow: /_next/
 
-# Host
-Host: https://app-oint.com
-
-# Sitemaps
 Sitemap: https://app-oint.com/sitemap.xml
