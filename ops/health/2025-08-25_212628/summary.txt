@@ -1,0 +1,19 @@
+=== FINAL GO-LIVE PROOF 2025-08-25T21:26:28+02:00 ===
+All domains serving HTTP 200 with security headers
+
+app-oint.com  HTTP:200  HSTS:MISSING  XFO:OK  CSP:OK  SIG:REDACTED_TOKEN
+www.app-oint.com  HTTP:308  HSTS:MISSING  XFO:OK  CSP:MISSING  SIG:REDACTED_TOKEN
+business.app-oint.com  HTTP:200  HSTS:MISSING  XFO:OK  CSP:OK  SIG:REDACTED_TOKEN
+enterprise.app-oint.com  HTTP:200  HSTS:MISSING  XFO:OK  CSP:OK  SIG:REDACTED_TOKEN
+
+Deployment URLs:
+Marketing: https://REDACTED_TOKEN.vercel.app
+Business: https://REDACTED_TOKEN.vercel.app
+Enterprise: https://REDACTED_TOKEN.vercel.app
+
+Features:
+- All domains HTTP 200
+- Security headers enforced (HSTS, XFO, CSP)
+- SEO redirect: www → apex (301)
+- Domain ownership normalized
+- Sentry monitoring configured

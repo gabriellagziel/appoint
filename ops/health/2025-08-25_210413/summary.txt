@@ -1,0 +1,5 @@
+=== HEALTH 2025-08-25T21:04:13+02:00 ===
+app-oint.com  HTTP:200  HSTS:MISSING  XFO:OK  CSP:OK
+www.app-oint.com  HTTP:200  HSTS:MISSING  XFO:OK  CSP:OK
+business.app-oint.com  HTTP:404  HSTS:MISSING  XFO:MISSING  CSP:MISSING
+enterprise.app-oint.com  HTTP:200  HSTS:MISSING  XFO:OK  CSP:OK
