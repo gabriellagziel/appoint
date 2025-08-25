@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-08-25_142115",
+  "expected_mapping": {
+    "marketing": ["app-oint.com", "www.app-oint.com"],
+    "business": ["business.app-oint.com"],
+    "enterprise-app": ["enterprise.app-oint.com"]
+  },
+  "sanity": "[SANITY] repo structure OK: marketing exists OK: business exists OK: enterprise-app exists ",
+  "vercel_context_file": "ops/audit/2025-08-25_142115/vercel_context.txt",
+  "domains_health": [{"domain":"app-oint.com","http":404,"hsts":"MISSING","xfo":"MISSING","csp":"MISSING","x_vercel_id":"OK","content_sig":"CLEAN","body_hash":"REDACTED_TOKEN"},{"domain":"www.app-oint.com","http":404,"hsts":"MISSING","xfo":"MISSING","csp":"MISSING","x_vercel_id":"OK","content_sig":"CLEAN","body_hash":"REDACTED_TOKEN"},{"domain":"business.app-oint.com","http":200,"hsts":"MISSING","xfo":"OK","csp":"OK","x_vercel_id":"OK","content_sig":"CLEAN","body_hash":"REDACTED_TOKEN"},{"domain":"enterprise.app-oint.com","http":200,"hsts":"MISSING","xfo":"OK","csp":"OK","x_vercel_id":"OK","content_sig":"CLEAN","body_hash":"REDACTED_TOKEN"}],
+  "deploy_vs_domain": [{"project":"marketing","deployment_url":"https://REDACTED_TOKEN.vercel.app","domain":"app-oint.com","match":"NO","deploy_hash":"REDACTED_TOKEN","domain_hash":"REDACTED_TOKEN"},{"project":"marketing","deployment_url":"https://REDACTED_TOKEN.vercel.app","domain":"www.app-oint.com","match":"NO","deploy_hash":"REDACTED_TOKEN","domain_hash":"REDACTED_TOKEN"},{"project":"business","deployment_url":"https://REDACTED_TOKEN.vercel.app","domain":"business.app-oint.com","match":"NO","deploy_hash":"REDACTED_TOKEN","domain_hash":"REDACTED_TOKEN"},{"project":"enterprise-app","deployment_url":"https://REDACTED_TOKEN.vercel.app","domain":"enterprise.app-oint.com","match":"YES","deploy_hash":"REDACTED_TOKEN","domain_hash":"REDACTED_TOKEN"}],
+  "alias_table_file": "ops/audit/2025-08-25_142115/vercel_alias_ls.txt",
+  "drift_file": "ops/audit/2025-08-25_142115/drift.txt",
+  "middleware_summary_file": "ops/audit/2025-08-25_142115/middleware_summary.txt",
+  "per_project": {
+    "marketing": {
+      "vercel_domains_file": "ops/audit/2025-08-25_142115/marketing/vercel_domains.txt",
+      "vercel_deploys_file": "ops/audit/2025-08-25_142115/marketing/vercel_deploys.txt",
+      "vercel_env_sentry_file": "ops/audit/2025-08-25_142115/marketing/vercel_env_sentry.txt",
+      "vercel_json_file": "ops/audit/2025-08-25_142115/marketing/vercel_json.txt",
+      "link_file": "ops/audit/2025-08-25_142115/marketing/link.txt"
+    },
+    "business": {
+      "vercel_domains_file": "ops/audit/2025-08-25_142115/business/vercel_domains.txt",
+      "vercel_deploys_file": "ops/audit/2025-08-25_142115/business/vercel_deploys.txt",
+      "vercel_env_sentry_file": "ops/audit/2025-08-25_142115/business/vercel_env_sentry.txt",
+      "vercel_json_file": "ops/audit/2025-08-25_142115/business/vercel_json.txt",
+      "link_file": "ops/audit/2025-08-25_142115/business/link.txt"
+    },
+    "enterprise-app": {
+      "vercel_domains_file": "ops/audit/2025-08-25_142115/enterprise-app/vercel_domains.txt",
+      "vercel_deploys_file": "ops/audit/2025-08-25_142115/enterprise-app/vercel_deploys.txt",
+      "vercel_env_sentry_file": "ops/audit/2025-08-25_142115/enterprise-app/vercel_env_sentry.txt",
+      "vercel_json_file": "ops/audit/2025-08-25_142115/enterprise-app/vercel_json.txt",
+      "link_file": "ops/audit/2025-08-25_142115/enterprise-app/link.txt"
+    }
+  },
+  "report_md": "ops/audit/2025-08-25_142115/REPORT.md"
+}

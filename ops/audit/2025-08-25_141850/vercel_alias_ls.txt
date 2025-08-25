@@ -1,0 +1,26 @@
+Vercel CLI 46.0.2
+Fetching aliases under gabriellagziels-projects
+> aliases found under gabriellagziels-projects [310ms]
+  source                                                      url                                                                           age    
+  REDACTED_TOKEN.vercel.app       REDACTED_TOKEN.vercel.app    15h    
+  REDACTED_TOKEN.vercel.app       REDACTED_TOKEN.vercel.app    15h    
+  REDACTED_TOKEN.vercel.app       REDACTED_TOKEN.vercel.app    15h    
+  REDACTED_TOKEN.vercel.app       REDACTED_TOKEN.vercel.app       15h    
+  REDACTED_TOKEN.vercel.app    enterprise.app-oint.com                                                       16h    
+  REDACTED_TOKEN.vercel.app      business.app-oint.com                                                         16h    
+  REDACTED_TOKEN.vercel.app       REDACTED_TOKEN.vercel.app                     4d    
+  REDACTED_TOKEN.vercel.app         admin-gabriellagziels-projects.vercel.app                                      4d    
+  REDACTED_TOKEN.vercel.app         REDACTED_TOKEN.vercel.app                       4d    
+  REDACTED_TOKEN.vercel.app         admin-six-wheat.vercel.app                                                     4d    
+  REDACTED_TOKEN.vercel.app    REDACTED_TOKEN.vercel.app              4d    
+  REDACTED_TOKEN.vercel.app    REDACTED_TOKEN.vercel.app                             4d    
+  REDACTED_TOKEN.vercel.app    enterprise-app-taupe.vercel.app                                                4d    
+  REDACTED_TOKEN.vercel.app      REDACTED_TOKEN.vercel.app                                   4d    
+  REDACTED_TOKEN.vercel.app      business-omega-silk.vercel.app                                                 4d    
+  REDACTED_TOKEN.vercel.app      REDACTED_TOKEN.vercel.app                    4d    
+  REDACTED_TOKEN.vercel.app     marketing-two-beta.vercel.app                                                  4d    
+  REDACTED_TOKEN.vercel.app     REDACTED_TOKEN.vercel.app                   4d    
+  REDACTED_TOKEN.vercel.app     REDACTED_TOKEN.vercel.app                                  4d    
+  REDACTED_TOKEN.vercel.app       REDACTED_TOKEN.vercel.app         7d    
+
+> To display the next page run `vercel alias ls --next 1755555357542`

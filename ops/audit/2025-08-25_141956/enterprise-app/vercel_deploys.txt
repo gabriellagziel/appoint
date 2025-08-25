@@ -1,0 +1,48 @@
+Vercel CLI 46.0.2
+Retrieving project…
+Fetching deployments in gabriellagziels-projects
+> Deployments for gabriellagziels-projects/enterprise-app [411ms]
+
+  Age     Deployment                                                           Status      Environment     Duration     Username           
+  13h     https://REDACTED_TOKEN.vercel.app     ● Ready     Production      33s          gabriellagziel     
+  13h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      13s          gabriellagziel     
+  13h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      15s          gabriellagziel     
+  13h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      3s           gabriellagziel     
+  14h     https://REDACTED_TOKEN.vercel.app     ● Ready     Production      29s          gabriellagziel     
+  14h     https://REDACTED_TOKEN.vercel.app     ● Ready     Production      38s          gabriellagziel     
+  14h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      28s          gabriellagziel     
+  14h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      19s          gabriellagziel     
+  14h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      13s          gabriellagziel     
+  14h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      20s          gabriellagziel     
+  14h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      18s          gabriellagziel     
+  14h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      20s          gabriellagziel     
+  14h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      15s          gabriellagziel     
+  15h     https://REDACTED_TOKEN.vercel.app     ● Error     Preview         15s          gabriellagziel     
+  17h     https://REDACTED_TOKEN.vercel.app     ● Error     Production      26s          gabriellagziel     
+  17h     https://REDACTED_TOKEN.vercel.app     ● Ready     Production      3s           gabriellagziel     
+  2d      https://REDACTED_TOKEN.vercel.app     ● Ready     Production      3s           gabriellagziel     
+  2d      https://REDACTED_TOKEN.vercel.app     ● Ready     Production      3s           gabriellagziel     
+  2d      https://REDACTED_TOKEN.vercel.app     ● Ready     Production      3s           gabriellagziel     
+  2d      https://REDACTED_TOKEN.vercel.app     ● Error     Production      4s           gabriellagziel     
+
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+https://REDACTED_TOKEN.vercel.app
+> To display the next page, run `vercel ls --next 1755962052822`

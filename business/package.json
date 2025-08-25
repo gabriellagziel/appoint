@@ -2,8 +2,8 @@
   "name": "business-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "mkdir -p out && echo 'Building business app...'",
-    "export": "mkdir -p out && cp public/index.html out/index.html",
+    "build": "next build",
+    "export": "mkdir -p out && echo '<html><head><title>Business</title></head><body><h1>Business App</h1><p>Set • Send • Done</p></body></html>' > out/index.html",
     "serve": "serve out -p ${PORT:-8081} --single",
     "start": "npm run serve",
     "dev": "npm run serve",
@@ -19,11 +19,18 @@
     "health": "curl -f http://localhost:8081/health.html || exit 1"
   },
   "dependencies": {
+    "lucide-react": "^0.541.0",
+    "next": "^15.5.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "serve": "^14.2.1"
   },
   "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.11",
+    "express": "^4.18.2",
     "jest": "^29.7.0",
     "supertest": "^6.3.3",
-    "express": "^4.18.2"
+    "typescript": "^5.9.2"
   }
 }

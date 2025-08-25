@@ -1,0 +1,3 @@
+=== HOTFIX ALIAS PROOF 2025-08-25T18:56:24+02:00 ===
+app-oint.com → HTTP 200
+www.app-oint.com → HTTP 307

@@ -1,0 +1,21 @@
+=== HEALTH 2025-08-25T14:19:37+02:00 ===
+--- app-oint.com ---
+HTTP: 404
+HSTS: MISSING | XFO: MISSING | CSP: MISSING | x-vercel-id: OK
+CONTENT: CLEAN
+BODY_HASH_8KB: REDACTED_TOKEN
+--- www.app-oint.com ---
+HTTP: 404
+HSTS: MISSING | XFO: MISSING | CSP: MISSING | x-vercel-id: OK
+CONTENT: CLEAN
+BODY_HASH_8KB: REDACTED_TOKEN
+--- business.app-oint.com ---
+HTTP: 200
+HSTS: MISSING | XFO: OK | CSP: OK | x-vercel-id: OK
+CONTENT: CLEAN
+BODY_HASH_8KB: REDACTED_TOKEN
+--- enterprise.app-oint.com ---
+HTTP: 200
+HSTS: MISSING | XFO: OK | CSP: OK | x-vercel-id: OK
+CONTENT: CLEAN
+BODY_HASH_8KB: REDACTED_TOKEN

@@ -1,0 +1,11 @@
+=== DEPLOYMENT ↔ DOMAIN HASH COMPARISON ===
+--- marketing --- https://REDACTED_TOKEN.vercel.app
+DEPLOY_HASH_8KB: REDACTED_TOKEN
+COMPARE marketing → app-oint.com : NO
+COMPARE marketing → www.app-oint.com : NO
+--- business --- https://REDACTED_TOKEN.vercel.app
+DEPLOY_HASH_8KB: REDACTED_TOKEN
+COMPARE business → business.app-oint.com : NO
+--- enterprise-app --- https://REDACTED_TOKEN.vercel.app
+DEPLOY_HASH_8KB: REDACTED_TOKEN
+COMPARE enterprise-app → enterprise.app-oint.com : YES

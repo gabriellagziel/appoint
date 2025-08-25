@@ -1,0 +1,5 @@
+=== SMOKE 2025-08-25T21:31:06+02:00 ===
+app-oint.com  HTTP:200  HSTS:MISSING  XFO:OK  CSP:OK
+www.app-oint.com  HTTP:308  Location:https://app-oint.com/
+business.app-oint.com  HTTP:200  HSTS:MISSING  XFO:OK  CSP:OK
+enterprise.app-oint.com  HTTP:200  HSTS:MISSING  XFO:OK  CSP:OK

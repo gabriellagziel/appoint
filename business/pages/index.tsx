@@ -1,7 +1,5 @@
+import { BarChart3, Calendar, Clock, Settings, Shield, Users } from 'lucide-react'
 import Head from 'next/head'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Calendar, Users, BarChart3, Settings, Clock, Shield } from 'lucide-react'
 
 export default function BusinessHome() {
   const features = [
@@ -43,7 +41,7 @@ export default function BusinessHome() {
         <title>Business Portal - App-Oint</title>
         <meta name="description" content="Business scheduling and management portal for App-Oint" />
       </Head>
-      
+
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
         <main className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,16 +51,16 @@ export default function BusinessHome() {
                 Business Management Portal
               </h1>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-                Streamline your business operations with our comprehensive scheduling and management suite. 
+                Streamline your business operations with our comprehensive scheduling and management suite.
                 From appointments to analytics, we've got you covered.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold">
                   Get Started Free
-                </Button>
-                <Button variant="outline" size="lg">
+                </button>
+                <button className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50">
                   View Demo
-                </Button>
+                </button>
               </div>
             </div>
 
@@ -73,15 +71,11 @@ export default function BusinessHome() {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {features.map((feature, index) => (
-                  <Card key={index} className="text-center h-full hover:shadow-lg transition-shadow">
-                    <CardHeader>
-                      <feature.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                      <CardTitle className="text-xl">{feature.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription>{feature.description}</CardDescription>
-                    </CardContent>
-                  </Card>
+                  <div key={index} className="text-center h-full hover:shadow-lg transition-shadow bg-white rounded-lg p-6 border">
+                    <feature.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                    <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                    <p className="text-gray-600">{feature.description}</p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -94,22 +88,12 @@ export default function BusinessHome() {
               <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                 App-Oint provides a complete suite of tools to streamline your booking process and grow your business.
               </p>
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg">
                 Start Your Free Trial
-              </Button>
+              </button>
               <p className="text-sm text-gray-500 mt-4">
                 No credit card required • 14-day free trial • Cancel anytime
               </p>
-            </div>
-
-            {/* Navigation to App */}
-            <div className="text-center mt-16">
-              <p className="text-gray-600 mb-4">
-                Already have an account?
-              </p>
-              <Button variant="outline" size="lg" asChild>
-                <a href="/app">Go to Business App</a>
-              </Button>
             </div>
           </div>
         </main>

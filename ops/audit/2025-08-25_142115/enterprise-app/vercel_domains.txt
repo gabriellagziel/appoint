@@ -1,0 +1,8 @@
+Vercel CLI 46.0.2
+Fetching Domains under gabriellagziels-projects
+> 1 Domain found under gabriellagziels-projects [220ms]
+ 
+  Domain             Registrar           Nameservers         Expiration Date    Creator             Age    
+  app-oint.com       Third Party         Third Party         -                  gabriellagziel      16h    
+ 
+

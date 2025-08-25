@@ -1,0 +1,3 @@
+=== DEPLOYMENT ↔ DOMAIN HASH COMPARISON ===
+--- marketing --- https://REDACTED_TOKEN.vercel.app
+DEPLOY_HASH_8KB: REDACTED_TOKEN

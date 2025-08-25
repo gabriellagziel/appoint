@@ -1,0 +1,5 @@
+Vercel CLI 46.0.2
+Retrieving project…
+> Environment Variables found for gabriellagziels-projects/enterprise-app [217ms]
+ SENTRY_AUTH_TOKEN          Encrypted           Production          3d ago     
+ NEXT_PUBLIC_SENTRY_DSN     Encrypted           Production          3d ago     

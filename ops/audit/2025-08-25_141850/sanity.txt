@@ -1,0 +1,4 @@
+[SANITY] repo structure
+OK: marketing exists
+OK: business exists
+OK: enterprise-app exists

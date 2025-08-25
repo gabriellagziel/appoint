@@ -1,0 +1,50 @@
+--- /Users/a/Desktop/ga/marketing/middleware.backup.ts ---
+import type { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
+
+export function middleware(req: NextRequest) {
+    const p = req.nextUrl.pathname;
+
+    // Always allow home page, assets, health, and public files
+    const allow =
+        p === '/' ||
+        p === '/robots.txt' ||
+        p === '/sitemap.xml' ||
+        p.startsWith('/_next') ||
+        p.startsWith('/assets') ||
+        p === '/favicon.ico' ||
+        p.startsWith('/api/status');
+
+    if (allow) return NextResponse.next();
+
+    // Only protect internal areas if they exist
+    const protectedPath = p.startsWith('/dashboard') || p.startsWith('/app');
+    if (!protectedPath) return NextResponse.next();
+
+    // For protected paths, redirect to home if not authenticated
+    const url = req.nextUrl.clone();
+    url.pathname = '/';
+    return NextResponse.redirect(url);
+}
+
+export const config = { matcher: ['/dashboard/:path*', '/app/:path*', '/api/status'] };
+--- /Users/a/Desktop/ga/marketing/middleware.ts ---
+import type { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
+
+// Middleware יחול רק על נתיבי /app, /dashboard ו-/api (מוגנים/פנימיים)
+export function middleware(req: NextRequest) {
+    const { pathname } = req.nextUrl;
+
+    // API ציבורי לא מוגן
+    if (pathname.startsWith('/api/public')) {
+        return NextResponse.next();
+    }
+
+    // TODO: כאן לוגיקת אימות למסלולים מוגנים (אם צריך)
+    return NextResponse.next();
+}
+
+export const config = {
+    matcher: ['/app/:path*', '/dashboard/:path*', '/api/:path*'],
+};

@@ -1,14 +1,36 @@
 {
-  "builds": [
+  "redirects": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "out"
-      }
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "admin.app-oint.com"
+        }
+      ],
+      "destination": "/admin/$1"
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "personal.app-oint.com"
+        }
+      ],
+      "destination": "/personal/$1"
     }
   ],
   "headers": [
+    {
+      "source": "/:path*.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [
@@ -39,9 +61,12 @@
       ]
     },
     {
-      "source": "/static/(.*)",
+      "source": "/_next/static/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     }
   ]

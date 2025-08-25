@@ -1,0 +1,4 @@
+=== DOMAIN DRIFT (same domain in multiple projects?) ===
+    app-oint.com       Third Party         Third Party         -                  gabriellagziel      16h    
+    app-oint.com       Third Party         Third Party         -                  gabriellagziel      16h    
+    app-oint.com       Third Party         Third Party         -                  gabriellagziel      16h    

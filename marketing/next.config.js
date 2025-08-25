@@ -7,9 +7,6 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
 
-  // Support for DigitalOcean App Platform
-  output: 'standalone',
-
   // Handle trailing slashes
   trailingSlash: false,
 
@@ -22,13 +19,6 @@ const nextConfig = {
   images: {
     domains: ['localhost', 'app-oint.com'],
     formats: ['image/webp', 'image/avif'],
-  },
-
-  // i18n configuration
-  i18n: {
-    locales: ['en', 'es', 'fr', 'de', 'he', 'ar'],
-    defaultLocale: 'en',
-    localeDetection: true,
   },
 
   // Headers for security and performance

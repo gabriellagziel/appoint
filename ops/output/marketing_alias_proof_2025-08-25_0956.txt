@@ -1,0 +1,22 @@
+=== MARKETING ALIAS PROOF 2025-08-25T09:56:34+02:00 ===
+Deployment URL: https://REDACTED_TOKEN.vercel.app
+
+Hashes:
+  deployment: REDACTED_TOKEN
+  app-oint : REDACTED_TOKEN
+  www      : REDACTED_TOKEN
+
+Match (deployment == app-oint.com): NO
+Match (deployment == www.app-oint.com): NO
+
+Headers apex:
+  HSTS: MISSING  | XFO: MISSING  | CSP: MISSING
+Headers www:
+  HSTS: MISSING  | XFO: MISSING  | CSP: MISSING
+
+Top of body (apex):
+The deployment could not be found on Vercel.
+
+DEPLOYMENT_NOT_FOUND
+
+fra1::REDACTED_TOKEN

@@ -1,0 +1,16 @@
+=== vercel whoami ===
+Vercel CLI 46.0.2
+gabriellagziel
+
+=== vercel projects ls (top 30) ===
+Vercel CLI 46.0.2
+Fetching projects in gabriellagziels-projects
+> Projects found under gabriellagziels-projects  [1s]
+
+  Project Name     Latest Production URL                                   Updated   Node Version   
+  marketing        https://REDACTED_TOKEN.vercel.app   4h        22.x           
+  enterprise-app   https://enterprise.app-oint.com                         13h       22.x           
+  business         https://REDACTED_TOKEN.vercel.app    13h       22.x           
+  appoint          https://personal.app-oint.com                           15h       22.x           
+  admin            https://admin.app-oint.com                              2d        22.x           
+

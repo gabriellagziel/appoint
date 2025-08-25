@@ -1,0 +1,50 @@
+8c837bb4 final: additional cleanup and fixes
+8f0fb50f final: restore marketing landing + harden headers + middleware scope + health/report
+982befed docs: add GO_LIVE_REPORT with health & deploy evidence
+fd8febda chore: restore original landings + headers + middleware scope
+49cca3a4 fix: redirect business.app-oint.com root to main marketing site (not 404 /business route)
+834ecb55 ops: root redirect on business.app-oint.com to existing Marketing Business section
+6e194166 docs: link release templates under How We Ship
+bdb012e3 docs(release): add standardized Vercel promote + Functions deploy templates with Decision Gate
+672a8a16 merge-prep: core-ci manual dispatch, i18n audit stub, docs and lockdown verifier
+35f4fc99 ci: allow manual dispatch for core-ci
+e939b823 audit: add i18n diff stub (no missing keys)
+d1f2915d functions: enforce CommonJS runtime for guardrail
+65baaba5 ci: set all non-core workflows to manual-only; core-ci remains the sole auto workflow
+c5766747 ci: disable legacy workflows; remove schedules (sed)
+9b43e90c ops: add smoke checklist, curl smoke script, Lighthouse plan
+ee32d93f ops: add Makefile for enforce/disable/core-ci/smoke/ship/rollback
+8a2be22b docs: add How We Ship; ops: enforcement + local sanity; hooks: Functions CommonJS/Node18 guard
+f0df1aa3 🚨 CRITICAL: Fix failing CI Watchdog workflow
+4c63322f 🔧 QA: Add concurrency control and improve workflow permissions
+442feffb 🔧 QA: Implement CI baseline, security hardening, and repository governance
+22a05bc5 📋 DEPLOYMENT: Add comprehensive deployment guide and DigitalOcean config
+154174f0 🚀 DEPLOY: Admin Panel Production Ready - Standalone Server
+b1eb349b Complete appointment scheduling interface with proper layout and design system
+40c92b96 Fix business app: Update out/index.html with correct design system colors
+93e664ff Fix ALL UI/UX bugs: Apply correct design system colors (#0A84FF, #5AC8FA, #64D2FF) to business and admin apps
+9a3228ec Fix UI/UX bugs: Apply correct design system colors (#0A84FF, #5AC8FA, #64D2FF) to all apps
+f14e35a0 �� Update appoint submodule with generated mocks only
+7acd99dc 🐛 Remove local mock definitions to use only generated mocks
+98614004 �� Update appoint submodule with intl dependency fix
+0f9aec85 🐛 Fix intl dependency version to match Flutter SDK requirements
+294e78c1 �� Update appoint submodule with login screen overflow fix
+4ce14e08 🐛 Fix login screen test to match actual UI text
+32295bd3 �� Update appoint submodule with fixed Firebase mocks
+8239924e 🐛 Fix Firebase mock naming conflicts by using generated mocks
+e2ec989d 🐛 Use generated Firebase mocks instead of incomplete custom mocks
+3d82e722 �� Update appoint submodule with simplified Firebase test helper
+4507e5ed 🐛 Simplify Firebase test helper to avoid type issues
+05b33286 🐛 Fix Firebase mock type issues and remove sealed class implementations
+ce48a9d0 🐛 Fix MockQuerySnapshot generic type to match docs property
+5daf4e14 🐛 Fix QueryDocumentSnapshot type casting issue
+41f9710a 🎨 Format Firebase mock query snapshot setup
+d2105c14 🐛 Update appoint submodule with Firebase mock fixes
+c62a6938 🐛 Fix Firebase mock classes causing test compilation errors
+1f73aa5f Merge remote main with local changes
+636f30ae Update appoint submodule with merged changes
+16952794 Merge remote changes
+47e5db56 ✅ Fix test compilation errors: undefined variables and method signatures
+d502fae5 Merge pull request #518 from gabriellagziel/recovery-backup-from-web-edits
+98415c76 🔧 Fix intl dependency conflict for CI
+e92b6f4b Merge pull request #517 from gabriellagziel/recovery-backup-from-web-edits

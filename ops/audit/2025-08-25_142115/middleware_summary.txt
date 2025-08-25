@@ -1,0 +1,11 @@
+=== MIDDLEWARE & SHADOW FILES ===
+--- marketing ---
+NO SHADOW index.html
+FOUND: /Users/a/Desktop/ga/marketing/middleware.backup.ts
+FOUND: /Users/a/Desktop/ga/marketing/middleware.ts
+--- business ---
+NO SHADOW index.html
+FOUND: /Users/a/Desktop/ga/business/middleware.ts
+--- enterprise-app ---
+SHADOW: enterprise-app/public/index.html EXISTS
+FOUND: /Users/a/Desktop/ga/enterprise-app/middleware.js
