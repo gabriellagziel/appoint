@@ -1,8 +1,8 @@
 'use client';
-import { useParams, useRouter } from 'next/navigation';
-import { useState } from 'react';
 import { upsertMeeting } from '@/lib/localStore';
 import { Meeting, MeetingType } from '@/types/meeting';
+import { useParams, useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 
 
@@ -84,7 +84,7 @@ export default function CreateMeeting() {
                         <button onClick={() => {
                             // Create the meeting
                             const meeting: Meeting = {
-                                id: 'meeting-' + Math.random().toString(36).slice(2,9),
+                                id: 'meeting-' + Math.random().toString(36).slice(2, 9),
                                 title: `${type} Meeting`,
                                 type: type,
                                 details: details,
@@ -113,7 +113,7 @@ export default function CreateMeeting() {
                     <div className="flex gap-2">
                         <a href="/en/meetings" className="inline-block rounded-xl border px-4 py-2 hover:shadow">Go to Meetings →</a>
                         {createdMeetingId && (
-                            <button 
+                            <button
                                 onClick={() => router.push(`/en/meetings/${createdMeetingId}`)}
                                 className="inline-block rounded-xl border px-4 py-2 hover:shadow bg-blue-50"
                             >
