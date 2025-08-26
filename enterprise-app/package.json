@@ -1,6 +1,7 @@
 {
   "name": "enterprise-app",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -16,5 +17,8 @@
     "@types/node": "^24.3.0",
     "@types/react": "^19.1.11",
     "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
