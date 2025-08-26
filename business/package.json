@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "scripts": {
     "build": "next build",
-    "export": "mkdir -p out && echo '<html><head><title>Business</title></head><body><h1>Business App</h1><p>Set • Send • Done</p></body></html>' > out/index.html",
     "serve": "serve out -p ${PORT:-8081} --single",
     "start": "npm run serve",
     "dev": "npm run serve",

@@ -1,7 +1,7 @@
+import { Code, Database, Globe, Lock, Shield, Zap } from 'lucide-react'
 import Head from 'next/head'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Code, Database, Shield, Zap, Globe, Lock } from 'lucide-react'
+import { Button } from '../src/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../src/components/ui/card'
 
 export default function EnterpriseHome() {
   const features = [
@@ -64,7 +64,7 @@ export default function EnterpriseHome() {
         <title>Enterprise API - App-Oint</title>
         <meta name="description" content="Enterprise API solutions for App-Oint scheduling platform" />
       </Head>
-      
+
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-white">
         <main className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -81,7 +81,7 @@ export default function EnterpriseHome() {
                 </p>
               </div>
             </div>
-            
+
             {/* Key Features */}
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Enterprise-Grade API Platform</h2>
@@ -99,7 +99,7 @@ export default function EnterpriseHome() {
                 ))}
               </div>
             </div>
-            
+
             {/* API Pricing */}
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">API Pricing Plans</h2>
@@ -128,7 +128,7 @@ export default function EnterpriseHome() {
                 ))}
               </div>
             </div>
-            
+
             <div className="text-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Ready to Build with App-Oint API?

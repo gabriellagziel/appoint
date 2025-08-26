@@ -1,5 +1,21 @@
 {
+    "redirects": [
+        {
+            "source": "(.*)",
+            "destination": "https://personal.app-oint.com$1",
+            "permanent": true
+        }
+    ],
     "headers": [
+        {
+            "source": "/:path*.html",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "no-store"
+                }
+            ]
+        },
         {
             "source": "/(.*)",
             "headers": [
@@ -25,7 +41,7 @@
                 },
                 {
                     "key": "Content-Security-Policy",
-                    "value": "default-src 'self'; img-src 'self' data: https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; connect-src 'self' https: wss:; frame-ancestors 'none';"
+                    "value": "default-src 'self'; img-src 'self' data: https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; connect-src 'self' https: wss:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
                 }
             ]
         },
