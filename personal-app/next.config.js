@@ -6,7 +6,7 @@ const nextConfig = {
   experimental: {
     typedRoutes: true,
   },
-  
+
   // Security headers
   async headers() {
     return [
