@@ -1,0 +1,8 @@
+Create this DNS record at your DNS provider (DigitalOcean):
+Type: CNAME
+Name/Host: personal-app
+Value/Target: cname.vercel-dns.com.
+TTL: default
+
+If any A/AAAA/CNAME already exists for "personal-app", delete it first.
+After saving, propagation normally takes a few minutes.

@@ -1,0 +1,38 @@
+=== GIT HISTORY: MEETING FLOW COMMITS ===
+
+e9f6fcc0 2025-08-25 23:16:00 +0200 fix: restore real UI, remove static export, clean shadows, add business host rewrites
+8c837bb4 2025-08-25 01:02:07 +0200 final: additional cleanup and fixes
+8f0fb50f 2025-08-25 01:01:36 +0200 final: restore marketing landing + harden headers + middleware scope + health/report
+982befed 2025-08-24 23:47:53 +0200 docs: add GO_LIVE_REPORT with health & deploy evidence
+fc9ea930 2025-08-24 23:32:47 +0200 chore(business): create business landing page + headers
+11b69e98 2025-08-24 23:27:38 +0200 chore(marketing): restore landings/headers/middleware
+fd8febda 2025-08-24 23:20:59 +0200 chore: restore original landings + headers + middleware scope
+bdb012e3 2025-08-19 00:52:30 +0200 docs(release): add standardized Vercel promote + Functions deploy templates with Decision Gate
+672a8a16 2025-08-19 00:34:15 +0200 merge-prep: core-ci manual dispatch, i18n audit stub, docs and lockdown verifier
+35f4fc99 2025-08-19 00:31:42 +0200 ci: allow manual dispatch for core-ci
+65baaba5 2025-08-19 00:15:53 +0200 ci: set all non-core workflows to manual-only; core-ci remains the sole auto workflow
+c5766747 2025-08-18 23:31:55 +0200 ci: disable legacy workflows; remove schedules (sed)
+9b43e90c 2025-08-18 23:25:28 +0200 ops: add smoke checklist, curl smoke script, Lighthouse plan
+ee32d93f 2025-08-18 23:17:25 +0200 ops: add Makefile for enforce/disable/core-ci/smoke/ship/rollback
+8a2be22b 2025-08-18 23:10:05 +0200 docs: add How We Ship; ops: enforcement + local sanity; hooks: Functions CommonJS/Node18 guard
+4c2b569b 2025-08-18 01:34:58 +0200 chore(release): trigger Vercel deploy for v1.0.1
+0b1ee9bc 2025-08-17 23:50:15 +0200 chore: prepare for release - commit pending changes
+06d85554 2025-08-17 16:03:51 +0200 fix(ci): replace watchdog with safe, self-contained version
+e5a8871c 2025-08-17 13:40:12 +0200 chore: verify vercel-agent changes (ignore builds/caches; remove heavy files from index)
+f0df1aa3 2025-08-17 13:28:45 +0200 🚨 CRITICAL: Fix failing CI Watchdog workflow
+442feffb 2025-08-17 12:28:18 +0200 🔧 QA: Implement CI baseline, security hardening, and repository governance
+61c68564 2025-08-17 12:28:18 +0200 🔧 QA: Implement CI baseline, security hardening, and repository governance
+2f9dd6e8 2025-08-11 02:23:21 +0200 feat(reminders): recurrence badge, empty state CTA, optimistic mark-done toggle; chore(meeting): route review submit to details via GoRouter when available
+fe7f9496 2025-08-11 02:18:34 +0200 feat(meeting): add Review step and submit handler; navigate to details | feat(reminders): in-app only notice
+83b6f5e4 2025-08-11 02:01:24 +0200 feat(ftue): add quick actions for Create Meeting and Set Reminder on home
+13623e90 2025-08-11 01:35:26 +0200 feat(meeting): details page parity with type-driven sections (openCall/event/playtime; join/map logic)
+78627917 2025-08-11 01:29:23 +0200 feat(meeting): scaffold modular type-aware create flow (controller, steps, header) and route /create/meeting
+520fad84 2025-08-11 01:04:16 +0200 docs: personal user subdomain spec + code audit; ensure manifest linked
+b509f941 2025-08-09 17:22:36 +0200 stabilize: restore missing shims and stubs; re-add enterprise SSR-safe firebase; re-add Flutter pubspec and l10n
+b240aa3b 2025-08-08 21:29:16 +0200 feat(deployment): add complete Go-Live runbook with seed script, anti-spam function, and deployment automation
+
+## KEY INSIGHTS:
+1. Meeting flow commits are ALL Flutter-based (78627917, 2f9dd6e8, fe7f9496, 83b6f5e4, 13623e90)
+2. No web React meeting flow components found
+3. Meeting flow exists only in mobile app, not web
+4. Personal user spec exists but only as documentation

@@ -1,0 +1,18 @@
+./update_urdu_translations.py:21:    "bookingRequest": "بُکنگ کی درخواست",
+./update_urdu_translations.py:35:    "bookingConfirmed": "بُکنگ کی تصدیق ہو گئی ہے",
+./update_urdu_translations.py:41:    "meetingReadyMessage": "ملاقات تیار ہے! کیا آپ اسے اپنے گروپ کو بھیجنا چاہتے ہیں؟",
+./update_urdu_translations.py:47:    "meetingSharedSuccessfully": "ملاقات کامیابی سے شیئر کی گئی!",
+./update_urdu_translations.py:48:    "bookingConfirmedShare": "بُکنگ کی تصدیق ہو گئی! اب آپ دعوت شیئر کر سکتے ہیں۔",
+./update_urdu_translations.py:128:    "scheduleForLater": "بعد میں شیڈول کریں",
+./update_urdu_translations.py:145:    "scheduled": "شیڈول: {date}",
+./update_urdu_translations.py:162:    "meetingDetails": "ملاقات کی تفصیلات",
+./update_urdu_translations.py:163:    "meetingId": "ملاقات کی شناخت: {id}",
+./fix_part_directives.sh:34:# Fix files in lib/features/booking/domain/entities
+./fix_part_directives.sh:35:for file in lib/features/booking/domain/entities/*.dart; do
+./flutter_errors.txt:9:  error • The method 'scheduled' isn't defined for the type 'AppLocalizations' • lib/features/admin/admin_broadcast_screen.dart:205:26 • undefined_method
+./flutter_errors.txt:22:  error • The getter 'scheduleForLater' isn't defined for the type 'AppLocalizations' • lib/features/admin/admin_broadcast_screen.dart:599:28 • undefined_getter
+./flutter_errors.txt:37:  error • The method 'scheduled' isn't defined for the type 'AppLocalizations' • lib/features/admin/admin_broadcast_screen.dart:913:27 • undefined_method
+./flutter_errors.txt:95:  error • The getter 'scheduledFor' isn't defined for the type 'AppLocalizations' • lib/features/playtime/playtime_hub_screen.dart:425:23 • undefined_getter
+./flutter_errors.txt:101:  error • The getter 'scheduledFor' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/parent_dashboard_screen.dart:568:23 • undefined_getter
+./flutter_errors.txt:117:  error • The getter 'meetingReadyMessage' isn't defined for the type 'AppLocalizations' • lib/widgets/whatsapp_share_button.dart:119:20 • undefined_getter
+./flutter_errors.txt:123:  error • The getter 'meetingSharedSuccessfully' isn't defined for the type 'AppLocalizations' • lib/widgets/whatsapp_share_button.dart:262:30 • undefined_getter

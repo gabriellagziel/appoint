@@ -1,0 +1,34 @@
+=== Inspect domain in this project ===
+Vercel CLI 46.0.2
+Fetching Domain personal-app.app-oint.com under gabriellagziels-projects
+> Domain personal-app.app-oint.com found under gabriellagziels-projects [3s]
+
+  General
+
+    Name			app-oint.com
+    Registrar			Third Party
+    Expiration Date		-
+    Creator			gabriellagziel
+    Created At			25 August 2025 21:22:58 [13h ago]
+    Edge Network		yes
+    Renewal Price		-
+
+  Nameservers
+
+    Intended Nameservers    Current Nameservers          
+    ns1.vercel-dns.com      ns1.digitalocean.com    ✘    
+    ns2.vercel-dns.com      ns2.digitalocean.com    ✘    
+    -                       ns3.digitalocean.com    ✘    
+
+  Projects
+   
+    Project            Domains                             
+    personal-app       personal-app.app-oint.com           
+   
+WARN! This Domain is not configured properly. To configure it you should either:
+  a) Set the following record on your DNS provider to continue: `A personal-app.app-oint.com 76.76.21.21` [recommended]
+  b) Change your Domains's nameservers to the intended set detailed above.
+
+  We will run a verification for you and you will receive an email upon completion.
+  Read more: https://vercel.com/gabriellagziels-projects/personal-app/settings/domains
+

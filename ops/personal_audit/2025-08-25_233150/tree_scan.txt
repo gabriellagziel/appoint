@@ -1,0 +1,238 @@
+== TREE SCAN (files & directories) ==
+-- marketing --
+total 120
+drwxr-xr-x  12 a  staff   384 Aug 25 01:02 .
+drwxr-xr-x  36 a  staff  1152 Aug 25 23:06 ..
+-rw-r--r--   1 a  staff  2068 Aug 18 11:13 404.tsx
+-rw-r--r--   1 a  staff  2110 Aug 18 11:13 500.tsx
+-rw-r--r--   1 a  staff   530 Aug 18 11:13 _app.tsx
+-rw-r--r--   1 a  staff  5261 Aug 18 11:13 about.tsx
+drwxr-xr-x   4 a  staff   128 Aug 18 11:13 business
+-rw-r--r--   1 a  staff  8617 Aug 18 11:13 contact.tsx
+-rw-r--r--   1 a  staff  6098 Aug 18 11:13 enterprise.tsx
+-rw-r--r--   1 a  staff  3612 Aug 18 11:13 features.tsx
+-rw-r--r--   1 a  staff  6272 Aug 25 01:02 index.tsx
+-rw-r--r--   1 a  staff  5789 Aug 18 11:13 pricing.tsx
+marketing/src/components/LanguageSwitcher.tsx:103:        <div className="absolute right-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50 max-h-96 overflow-y-auto">
+marketing/package-lock.json:2964:    "node_modules/ast-types-flow": {
+marketing/package-lock.json:2966:      "resolved": "https://registry.npmjs.org/ast-types-flow/-/ast-types-flow-0.0.8.tgz",
+marketing/package-lock.json:4366:        "ast-types-flow": "^0.0.8",
+marketing/package-lock.json:7378:        "scheduler": "^0.26.0"
+marketing/package-lock.json:7737:    "node_modules/scheduler": {
+marketing/package-lock.json:7739:      "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.26.0.tgz",
+marketing/pages/contact.tsx:43:      answer: "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/src/components/Hero.tsx:79:            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+marketing/pages/features.tsx:42:      description: "Accept payments directly through the booking platform."
+marketing/pages/features.tsx:63:                App-Oint provides a complete suite of tools to streamline your booking process and grow your business.
+marketing/.env.example:21:NEXT_PUBLIC_SITE_DESCRIPTION=Professional appointment booking platform
+marketing/.env.example:43:# Facebook Pixel (optional)
+marketing/.env.example:44:NEXT_PUBLIC_FB_PIXEL_ID=your-facebook-pixel-id
+marketing/.env.example:68:NEXT_PUBLIC_FACEBOOK_URL=https://facebook.com/app-oint
+marketing/README.md:82:├── .github/workflows/
+marketing/README.md:83:│   └── deploy.yml            # GitHub Actions workflow
+marketing/public/locales/pl/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/sv/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/sv/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/ja/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/ja/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/sv/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/pl/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/pl/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/pl/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/pl/features.json:30:    "booking": {
+marketing/public/locales/pl/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/pl/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/tr/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/tr/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/sv/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/sv/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/ja/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/ja/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/ja/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/ja/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/ja/features.json:30:    "booking": {
+marketing/public/locales/ja/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/ja/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/sv/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/sv/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/sv/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/sv/features.json:30:    "booking": {
+marketing/public/locales/sv/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/sv/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/sk/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/sk/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/pt_BR/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/pt_BR/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/th/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/sq/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/sq/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/th/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/pt_BR/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/sq/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/sk/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/sk/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/sk/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/sk/features.json:30:    "booking": {
+marketing/public/locales/sk/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/sk/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/sq/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/sq/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/sq/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/sq/features.json:30:    "booking": {
+marketing/public/locales/sq/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/sq/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/pt_BR/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/pt_BR/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/pt_BR/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/pt_BR/features.json:30:    "booking": {
+marketing/public/locales/pt_BR/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/pt_BR/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/eu/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/no/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/no/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/no/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/sl/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/vi/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/cy/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/sl/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/sl/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/sl/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/sl/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/sl/features.json:30:    "booking": {
+marketing/public/locales/sl/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/sl/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/ms/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/ms/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/ms/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/ms/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/ms/features.json:30:    "booking": {
+marketing/public/locales/ms/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/ms/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/da/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/fo/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/fo/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/da/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/he/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/he/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/fo/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/fo/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/fo/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/fo/features.json:30:    "booking": {
+marketing/public/locales/fo/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/fo/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/am/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/am/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/he/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/he/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/he/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/he/features.json:30:    "booking": {
+marketing/public/locales/he/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/he/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/gl/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/gl/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/lt/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/gl/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/ga/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/ga/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/gl/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/mt/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/mt/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/lt/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/ga/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/mt/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/lt/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/lt/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/lt/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/lt/features.json:30:    "booking": {
+marketing/public/locales/lt/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/lt/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/ga/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/ga/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/ga/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/ga/features.json:30:    "booking": {
+marketing/public/locales/ga/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/ga/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/zh/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/bs/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/zh_Hant/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/zh_Hant/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/fa/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/fa/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/bs/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/bs/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/zh_Hant/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/pt/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/bs/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/bs/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/bs/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/bs/features.json:30:    "booking": {
+marketing/public/locales/bs/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/bs/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/en/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/en/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/ha/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/ru/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/pt/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/pt/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/pt/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/pt/features.json:30:    "booking": {
+marketing/public/locales/pt/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/pt/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/ru/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/et/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/ru/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/ru/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/ru/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/ru/features.json:30:    "booking": {
+marketing/public/locales/ru/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/ru/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/et/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/et/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/et/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/et/features.json:30:    "booking": {
+marketing/public/locales/et/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/et/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/es_419/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/es_419/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/ro/contact.json:6:    "scheduleCall": "Schedule Call"
+marketing/public/locales/ro/contact.json:114:        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+marketing/public/locales/es/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/ro/common.json:12:    "scheduleDemo": "Schedule Demo",
+marketing/public/locales/mk/pricing.json:68:        "answer": "Each time a customer views a map on your booking page counts as one load. Exceeded loads are charged at €0.01 each."
+marketing/public/locales/cs/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/cs/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/cs/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/cs/features.json:30:    "booking": {
+marketing/public/locales/cs/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/cs/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/ro/features.json:5:    "subtitle": "App-Oint provides a complete suite of tools to streamline your booking process, manage customers, and grow your business. Discover how our features work together to create the perfect scheduling solution."
+marketing/public/locales/ro/features.json:16:      "description": "Book 40% more appointments with optimized availability"
+marketing/public/locales/ro/features.json:20:      "description": "24/7 online booking with instant confirmations"
+marketing/public/locales/ro/features.json:30:    "booking": {
+marketing/public/locales/ro/features.json:38:        "description": "Automatic availability updates across all platforms in real-time."
+marketing/public/locales/ro/features.json:71:    "subtitle": "Connect App-Oint with your existing tools and workflows. Our platform integrates with popular services to ensure a smooth transition."
+marketing/public/locales/mk/errors.json:32:    "description": "App-Oint is currently undergoing scheduled maintenance. We'll be back online soon. Thank you for your patience.",
+marketing/public/locales/fr/common.json:12:    "scheduleDemo": "Schedule Demo",
+-- business --
+total 8
+drwxr-xr-x   3 a  staff    96 Aug 25 01:02 .
+drwxr-xr-x  24 a  staff   768 Aug 25 23:06 ..
+-rw-r--r--   1 a  staff  4090 Aug 25 23:01 index.tsx
+business/pages/index.tsx:9:      description: "Intelligent appointment booking with conflict detection and optimization"
+business/pages/index.tsx:14:      description: "Manage team schedules, roles, and availability in one place"
+business/pages/index.tsx:29:      description: "Let customers book appointments anytime, anywhere"
+business/pages/index.tsx:89:                App-Oint provides a complete suite of tools to streamline your booking process and grow your business.
+business/vercel.json:18:          "value": "personal.app-oint.com"
+business/vercel.json:21:      "destination": "/personal/$1"
+business/package-lock.json:5092:        "scheduler": "^0.26.0"
+business/package-lock.json:5227:    "node_modules/scheduler": {
+business/package-lock.json:5229:      "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.26.0.tgz",
+-- enterprise-app --
+total 16
+drwxr-xr-x   4 a  staff   128 Aug 25 23:15 .
+drwxr-xr-x  14 a  staff   448 Aug 25 23:06 ..
+drwxr-xr-x   2 a  staff    64 Aug 16 16:51 api
+-rw-r--r--   1 a  staff  6224 Aug 25 23:15 index.tsx
+enterprise-app/package-lock.json:816:        "scheduler": "^0.23.2"
+enterprise-app/package-lock.json:822:    "node_modules/scheduler": {
+enterprise-app/package-lock.json:824:      "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.2.tgz",

@@ -1,0 +1,7 @@
+=== PERSONAL-APP DNS/HTTPS PROOF 2025-08-26T16:24:38+02:00 ===
+Domain: personal-app.app-oint.com
+CNAME : cname.vercel-dns.com.
+HTTP  : <no response>
+HSTS  : MISSING
+XFO   : MISSING
+CSP   : MISSING

@@ -1,0 +1,38 @@
+=== GIT HISTORY: PERSONAL-RELATED COMMITS ===
+
+e9f6fcc0 2025-08-25 23:16:00 +0200 fix: restore real UI, remove static export, clean shadows, add business host rewrites
+8c837bb4 2025-08-25 01:02:07 +0200 final: additional cleanup and fixes
+8f0fb50f 2025-08-25 01:01:36 +0200 final: restore marketing landing + harden headers + middleware scope + health/report
+982befed 2025-08-24 23:47:53 +0200 docs: add GO_LIVE_REPORT with health & deploy evidence
+fd8febda 2025-08-24 23:20:59 +0200 chore: restore original landings + headers + middleware scope
+4c2b569b 2025-08-18 01:34:58 +0200 chore(release): trigger Vercel deploy for v1.0.1
+e5a8871c 2025-08-17 13:40:12 +0200 chore: verify vercel-agent changes (ignore builds/caches; remove heavy files from index)
+278a31b8 2025-08-17 01:45:13 +0200 chore(deploy): unify DO spec to .do/app_spec.yaml; archive legacy specs
+78627917 2025-08-11 01:29:23 +0200 feat(meeting): scaffold modular type-aware create flow (controller, steps, header) and route /create/meeting
+b509f941 2025-08-09 17:22:36 +0200 stabilize: restore missing shims and stubs; re-add enterprise SSR-safe firebase; re-add Flutter pubspec and l10n
+0b282b38 2025-08-08 19:13:36 +0200 feat(firestore-rules): secure meetings with participants/chat/checklist subcollections
+7766bc81 2025-08-08 04:42:37 +0200 fix: Resolve const DateTime issues and add missing models
+3ae59ef3 2025-08-08 00:22:50 +0200 feat: Family UI, Family Calendar, Reminder Assignment
+594cddd1 2025-08-07 19:53:08 +0200 💾 Final full backup from Cursor session before disconnect
+eb65bcc0 2025-08-07 09:58:53 +0200 chore: add Enterprise Onboarding Portal to do-app.yaml
+d2af5de4 2025-08-07 09:58:53 +0200 chore: add Enterprise Onboarding Portal to do-app.yaml
+c5c74e49 2025-08-07 09:57:08 +0200 chore: add Enterprise Onboarding Portal to do-app.yaml
+f0d5e92f 2025-08-07 09:57:08 +0200 chore: add Enterprise Onboarding Portal to do-app.yaml
+cdd7bf25 2025-08-06 21:58:03 +0200 chore: remove Flutter/mobile code
+eee987e3 2025-08-04 07:26:53 +0200 🚀 COMPLETE: Full App-Oint landing page with modular sections and AI-ready messaging
+41d0592d 2025-08-02 22:52:45 +0200 🎉 Perfect Codebase: Cleaned up 159 duplicate node_modules, removed 26+ temp files, fixed TODO/FIXME items, organized structure
+66ad2f0d 2025-08-01 20:09:51 +0200 🎨 Complete Design System Implementation - Modern UI/UX across all applications
+93e08058 2025-08-01 02:34:11 +0200 Fix marketing Next.js build errors - remove duplicate config, fix TypeScript types, resolve ESLint issues
+0580c449 2025-07-31 00:24:38 +0200 Merge multiple fix branches - resolved conflicts by taking incoming changes
+29d3749e 2025-07-30 04:19:11 +0200 ✨ Organize imports and apply formatting project‑wide
+d74e3021 2025-07-29 22:50:37 +0200 ✨ Clean up warnings: apply dart fixes, remove unused code, format project
+1db3c5cd 2025-07-29 18:59:19 +0200 ✨ Clean up warnings: apply dart fixes, remove unused code, format project
+3ede0881 2025-07-29 18:59:19 +0200 ✨ Clean up warnings: apply dart fixes, remove unused code, format project
+c121a93f 2025-07-29 18:59:19 +0200 ✅ Rebuild generated files after recovery
+5b671eda 2025-07-29 18:59:19 +0200 ✅ Rebuild generated files after recovery
+
+## KEY INSIGHTS:
+1. Most personal-related commits are Flutter/mobile focused
+2. No web React personal UI commits found
+3. Personal routing exists in vercel.json but no actual pages
+4. Meeting flow exists only in Flutter app

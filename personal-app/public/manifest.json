@@ -1,0 +1,120 @@
+{
+    "name": "App-Oint Personal",
+    "short_name": "Personal",
+    "description": "ניהול פגישות אישיות וזיכרונות",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0a84ff",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "he",
+    "dir": "rtl",
+    "icons": [
+        {
+            "src": "/icons/icon-72.svg",
+            "sizes": "72x72",
+            "type": "image/svg+xml",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/icons/icon-96.svg",
+            "sizes": "96x96",
+            "type": "image/svg+xml",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/icons/icon-128.svg",
+            "sizes": "128x128",
+            "type": "image/svg+xml",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/icons/icon-144.svg",
+            "sizes": "144x144",
+            "type": "image/svg+xml",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/icons/icon-152.svg",
+            "sizes": "152x152",
+            "type": "image/svg+xml",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/icons/icon-192.svg",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/icons/icon-384.svg",
+            "sizes": "384x384",
+            "type": "image/svg+xml",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "/icons/icon-512.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "maskable any"
+        }
+    ],
+    "categories": [
+        "productivity",
+        "lifestyle",
+        "utilities"
+    ],
+    "screenshots": [
+        {
+            "src": "/screenshots/home.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/screenshots/mobile.png",
+            "sizes": "390x844",
+            "type": "image/png",
+            "form_factor": "narrow"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "צור פגישה חדשה",
+            "short_name": "פגישה חדשה",
+            "description": "צור פגישה חדשה במהירות",
+            "url": "/create/meeting",
+            "icons": [
+                {
+                    "src": "/icons/shortcut-meeting.svg",
+                    "sizes": "96x96"
+                }
+            ]
+        },
+        {
+            "name": "צור זיכרון חדש",
+            "short_name": "זיכרון חדש",
+            "description": "צור זיכרון חדש במהירות",
+            "url": "/create/reminder",
+            "icons": [
+                {
+                    "src": "/icons/shortcut-reminder.svg",
+                    "sizes": "96x96"
+                }
+            ]
+        },
+        {
+            "name": "יומן",
+            "short_name": "יומן",
+            "description": "צפה ביומן שלך",
+            "url": "/agenda",
+            "icons": [
+                {
+                    "src": "/icons/shortcut-agenda.svg",
+                    "sizes": "96x96"
+                }
+            ]
+        }
+    ]
+}

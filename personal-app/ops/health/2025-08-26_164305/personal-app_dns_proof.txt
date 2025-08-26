@@ -1,0 +1,22 @@
+=== PERSONAL-APP DNS/HTTPS PROOF 2025-08-26T16:43:06+02:00 ===
+Domain: personal-app.app-oint.com
+CNAME : cname.vercel-dns.com.
+HTTP  : 401
+HSTS  : OK
+XFO   : OK
+CSP   : MISSING
+
+=== BLOCKER ANALYSIS ===
+STATUS: BLOCKED by Vercel Production Protection
+HTTP_CODE: 401 (Authentication Required)
+DEPLOYMENT: https://REDACTED_TOKEN.vercel.app
+ALIAS: ✅ Bound to custom domain
+DNS: ✅ CNAME resolving correctly
+SSL: ✅ Certificate valid
+
+=== UNBLOCK ACTION REQUIRED ===
+1. Open: https://vercel.com/gabriellagziels-projects/personal-app
+2. Go to: Settings → Security
+3. Disable: Production Protection
+4. OR enable: Custom Domains bypass protection
+5. Save and retest: curl -I https://personal-app.app-oint.com/_health

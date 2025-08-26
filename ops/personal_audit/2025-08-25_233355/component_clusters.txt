@@ -1,0 +1,63 @@
+=== COMPONENT CLUSTERS (wizard/flow/meeting) ===
+
+business/pages/index.tsx:28:      title: "24/7 Availability",
+marketing/public/locales/mk/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/mk/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/cs/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/cs/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/fo/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/fo/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/lt/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/lt/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/ms/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/ms/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/pt/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/pt/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/it/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/it/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/he/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/he/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/ro/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/ro/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/et/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/et/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/ga/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/ga/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/ja/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/ja/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/pt_BR/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/pt_BR/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/sv/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/sv/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/fr/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/fr/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/ru/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/ru/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/fi/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/fi/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/sq/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/sq/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/pl/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/pl/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/hr/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/hr/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/sk/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/sk/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/bs/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/bs/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/sl/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/sl/features.json:37:        "name": "Real-time Availability",
+marketing/public/locales/bn/features.json:36:      "realTimeAvailability": {
+marketing/public/locales/bn/features.json:37:        "name": "Real-time Availability",
+
+## KEY FINDINGS:
+1. NO actual wizard/flow/meeting React components found
+2. Only translation strings mentioning "availability" 
+3. No Step, Stepper, Wizard, Flow, Progress components
+4. No MeetingForm, CreateMeeting, MeetingScheduler components
+5. No SlotPicker or Availability components
+6. All found content is just i18n translation files
+
+## CONCLUSION:
+The personal meeting flow UI exists ONLY in Flutter mobile app, not as web React components.
+No web-based wizard, stepper, or meeting creation flow was found in the repository.
