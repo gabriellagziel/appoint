@@ -23,7 +23,7 @@ export function middleware(request: NextRequest) {
   // If no locale in path, redirect to detected locale
   if (!pathname.startsWith("/en") && !pathname.startsWith("/it") && !pathname.startsWith("/he")) {
     const url = request.nextUrl.clone();
-    url.pathname = \`/\${detectedLocale}\${pathname}\`;
+    url.pathname = `/${detectedLocale}${pathname}`;
     return NextResponse.redirect(url);
   }
   
