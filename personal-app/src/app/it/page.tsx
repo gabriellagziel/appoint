@@ -1,27 +1,45 @@
+'use client';
+import BottomNav from '@/components/personal/BottomNav';
+import QuickActions from '@/components/personal/QuickActions';
+import { useParams, useRouter } from 'next/navigation';
+
 export default function ItalianPage() {
+  const params = useParams<{ locale: string }>();
+  const router = useRouter();
+  const locale = 'it';
+
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Benvenuto in APP-OINT
-          </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            Tempo Organizzato. Imposta Invia Fatto.
-          </p>
-          <div className="space-y-4">
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <h2 className="text-lg font-semibold text-blue-900">Crea Riunione</h2>
-            </div>
-            <div className="bg-green-50 p-4 rounded-lg">
-              <h2 className="text-lg font-semibold text-green-900">Agenda</h2>
-            </div>
-            <div className="bg-purple-50 p-4 rounded-lg">
-              <h2 className="text-lg font-semibold text-purple-900">Famiglia</h2>
-            </div>
-          </div>
+    <main className="mx-auto max-w-screen-sm px-4 pb-24 pt-8">
+      <header className="mb-6">
+        <div className="text-2xl font-semibold">Ciao Gabriel, cosa vorresti fare oggi?</div>
+      </header>
+
+      <section className="mb-6">
+        <QuickActions locale={locale} />
+      </section>
+
+      <section className="space-y-3">
+        <div className="text-lg font-semibold">Cosa vorresti fare oggi?</div>
+        <div className="grid grid-cols-1 gap-3">
+          <button onClick={() => router.push(`/${locale}/create/meeting`)} className="rounded-xl border p-3 text-left hover:shadow">
+            ➕ Crea Riunione
+          </button>
+          <button onClick={() => router.push(`/${locale}/reminders`)} className="rounded-xl border p-3 text-left hover:shadow">
+            ⏰ Crea Promemoria
+          </button>
+          <button onClick={() => router.push(`/${locale}/playtime`)} className="rounded-xl border p-3 text-left hover:shadow">
+            🎮 Tempo di Gioco
+          </button>
+          <button onClick={() => router.push(`/${locale}/groups`)} className="rounded-xl border p-3 text-left hover:shadow">
+            👥 Gruppi
+          </button>
+          <button onClick={() => router.push(`/${locale}/family`)} className="rounded-xl border p-3 text-left hover:shadow">
+            👨‍👩‍👧 Gestione Famiglia
+          </button>
         </div>
-      </div>
-    </div>
+      </section>
+
+      <BottomNav locale={locale} />
+    </main>
   );
 }
