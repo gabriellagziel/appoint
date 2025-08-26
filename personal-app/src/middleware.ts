@@ -5,10 +5,10 @@ export function middleware(request: NextRequest) {
   const acceptLanguage = request.headers.get("accept-language") || "";
   const userCountry = request.geo?.country || "";
   
-  // Smart locale detection logic
+  // Smart locale detection logic - PRIORITIZE ITALIAN
   let detectedLocale = "en"; // fallback
   
-  // Check browser language preference
+  // Check browser language preference - ITALIAN FIRST
   if (acceptLanguage.includes("it") || userCountry === "IT") {
     detectedLocale = "it";
   } else if (acceptLanguage.includes("he") || userCountry === "IL") {
@@ -24,7 +24,14 @@ export function middleware(request: NextRequest) {
   if (!pathname.startsWith("/en") && !pathname.startsWith("/it") && !pathname.startsWith("/he")) {
     const url = request.nextUrl.clone();
     url.pathname = `/${detectedLocale}${pathname}`;
-    return NextResponse.redirect(url);
+    
+    // Add debug headers
+    const response = NextResponse.redirect(url);
+    response.headers.set("x-detected-locale", detectedLocale);
+    response.headers.set("x-accept-language", acceptLanguage);
+    response.headers.set("x-user-country", userCountry);
+    
+    return response;
   }
   
   return NextResponse.next();
