@@ -1,15 +1,19 @@
 'use client';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { upsertMeeting } from '@/lib/localStore';
+import { Meeting, MeetingType } from '@/types/meeting';
 
-type MeetingType = 'personal' | 'group' | 'virtual' | 'business' | 'playtime' | 'opencall';
+
 
 export default function CreateMeeting() {
     const { locale } = useParams<{ locale: string }>();
+    const router = useRouter();
     const [step, setStep] = useState<1 | 2 | 3 | 4 | 5>(1);
     const [type, setType] = useState<MeetingType>('personal');
     const [participants, setParticipants] = useState<string[]>([]);
     const [details, setDetails] = useState({ date: '', time: '', location: '', platform: '' });
+    const [createdMeetingId, setCreatedMeetingId] = useState<string>('');
 
     return (
         <main className="mx-auto max-w-screen-sm px-4 pb-24 pt-8 space-y-4">
@@ -77,7 +81,25 @@ export default function CreateMeeting() {
                     </div>
                     <div className="flex gap-3">
                         <button onClick={() => setStep(3)} className="rounded-xl border px-4 py-2">✏️ Edit</button>
-                        <button onClick={() => setStep(5)} className="rounded-xl border px-4 py-2">✅ Confirm</button>
+                        <button onClick={() => {
+                            // Create the meeting
+                            const meeting: Meeting = {
+                                id: 'meeting-' + Math.random().toString(36).slice(2,9),
+                                title: `${type} Meeting`,
+                                type: type,
+                                details: details,
+                                participants: participants.map((name, i) => ({
+                                    id: `p${i}`,
+                                    name,
+                                    status: 'pending' as const
+                                })),
+                                externalLink: details.platform || '',
+                                messages: []
+                            };
+                            upsertMeeting(meeting);
+                            setCreatedMeetingId(meeting.id);
+                            setStep(5);
+                        }} className="rounded-xl border px-4 py-2">✅ Confirm</button>
                     </div>
                 </section>
             )}
@@ -85,10 +107,20 @@ export default function CreateMeeting() {
             {step === 5 && (
                 <section className="space-y-2">
                     <div className="rounded-2xl border p-4">
-                        <div className="text-green-700 font-semibold">Meeting saved (mock)</div>
-                        <div className="text-sm opacity-70">Premium: saved instantly. Free: ad flow would appear.</div>
+                        <div className="text-green-700 font-semibold">Meeting saved!</div>
+                        <div className="text-sm opacity-70">Your meeting has been created and saved.</div>
                     </div>
-                    <a href="/en/meetings" className="inline-block rounded-xl border px-4 py-2 hover:shadow">Go to Meetings →</a>
+                    <div className="flex gap-2">
+                        <a href="/en/meetings" className="inline-block rounded-xl border px-4 py-2 hover:shadow">Go to Meetings →</a>
+                        {createdMeetingId && (
+                            <button 
+                                onClick={() => router.push(`/en/meetings/${createdMeetingId}`)}
+                                className="inline-block rounded-xl border px-4 py-2 hover:shadow bg-blue-50"
+                            >
+                                Open Meeting Hub →
+                            </button>
+                        )}
+                    </div>
                 </section>
             )}
         </main>

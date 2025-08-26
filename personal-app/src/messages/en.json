@@ -1,0 +1,20 @@
+{
+  "personal": {
+    "greeting": "Hi Gabriel, what would you like to do today?",
+    "firstQuestion": "What would you like to do today?",
+    "newMeeting": "New Meeting",
+    "reminder": "Reminder",
+    "playtime": "Playtime",
+    "groups": "Groups",
+    "family": "Family",
+    "meetings": "Meetings",
+    "settings": "Settings",
+    "imLate": "I'm Late",
+    "goJoin": "Go / Join",
+    "arrived": "I've Arrived",
+    "participants": "Participants",
+    "review": "Review",
+    "confirm": "Confirm",
+    "saved": "Meeting saved (demo)"
+  }
+}

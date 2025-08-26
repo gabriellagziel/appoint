@@ -1,0 +1,20 @@
+{
+  "personal": {
+    "greeting": "Ciao Gabriel, cosa vorresti fare oggi?",
+    "firstQuestion": "Cosa vorresti fare oggi?",
+    "newMeeting": "Nuova Riunione",
+    "reminder": "Promemoria",
+    "playtime": "Tempo di Gioco",
+    "groups": "Gruppi",
+    "family": "Famiglia",
+    "meetings": "Riunioni",
+    "settings": "Impostazioni",
+    "imLate": "Sono in Ritardo",
+    "goJoin": "Vai / Partecipa",
+    "arrived": "Sono Arrivato",
+    "participants": "Partecipanti",
+    "review": "Rivedi",
+    "confirm": "Conferma",
+    "saved": "Riunione salvata (demo)"
+  }
+}

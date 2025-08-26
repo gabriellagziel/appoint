@@ -1,0 +1,20 @@
+{
+  "personal": {
+    "greeting": "היי גבריאל, מה תרצה לעשות היום?",
+    "firstQuestion": "מה תרצה לעשות היום?",
+    "newMeeting": "פגישה חדשה",
+    "reminder": "תזכורת",
+    "playtime": "זמן משחק",
+    "groups": "קבוצות",
+    "family": "משפחה",
+    "meetings": "פגישות",
+    "settings": "הגדרות",
+    "imLate": "אני מאחר",
+    "goJoin": "לך / הצטרף",
+    "arrived": "הגעתי",
+    "participants": "משתתפים",
+    "review": "סקירה",
+    "confirm": "אישור",
+    "saved": "פגישה נשמרה (demo)"
+  }
+}
