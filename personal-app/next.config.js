@@ -1,10 +1,5 @@
 /** @type {import("next").NextConfig} */
 const nextConfig = {
-  i18n: {
-    locales: ["en", "it", "he"],
-    defaultLocale: "en",
-    localeDetection: true, // AUTO-DETECT user language
-  },
   async headers() {
     return [
       {
