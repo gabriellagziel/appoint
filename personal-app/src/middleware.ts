@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 import { LOCALES, normalizeLocale } from './i18n';
 
 export const config = { matcher: ['/((?!_next|favicon|robots|sitemap|manifest).*)'] };

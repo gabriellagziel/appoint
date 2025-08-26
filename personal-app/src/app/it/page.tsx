@@ -1,7 +1,7 @@
 'use client';
 import BottomNav from '@/components/personal/BottomNav';
-import QuickActions from '@/components/personal/QuickActions';
 import LocaleSwitcher from '@/components/personal/LocaleSwitcher';
+import QuickActions from '@/components/personal/QuickActions';
 import { useParams, useRouter } from 'next/navigation';
 
 export default function ItalianPage() {
