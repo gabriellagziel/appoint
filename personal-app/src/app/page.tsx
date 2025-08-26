@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function RootPage() {
   // This page should never be reached because middleware redirects first
   // But if it is, show a loading state

@@ -1,45 +1,26 @@
-import { NextRequest, NextResponse } from "next/server";
+import createMiddleware from 'next-intl/middleware';
+import { defaultLocale, locales } from '../i18n';
 
-export function middleware(request: NextRequest) {
-  // Get user's preferred language from browser
-  const acceptLanguage = request.headers.get("accept-language") || "";
-  const userCountry = request.geo?.country || "";
+export default createMiddleware({
+  // A list of all locales that are supported
+  locales: locales,
   
-  // Smart locale detection logic - PRIORITIZE ITALIAN
-  let detectedLocale = "en"; // fallback
+  // Used when no locale matches
+  defaultLocale: defaultLocale,
   
-  // Check browser language preference - ITALIAN FIRST
-  if (acceptLanguage.includes("it") || userCountry === "IT") {
-    detectedLocale = "it";
-  } else if (acceptLanguage.includes("he") || userCountry === "IL") {
-    detectedLocale = "he";
-  } else if (acceptLanguage.includes("en")) {
-    detectedLocale = "en";
-  }
+  // Always show the locale in the URL
+  localePrefix: 'always',
   
-  // Get pathname
-  const pathname = request.nextUrl.pathname;
+  // Locale detection strategy
+  localeDetection: true,
   
-  // If no locale in path, redirect to detected locale
-  if (!pathname.startsWith("/en") && !pathname.startsWith("/it") && !pathname.startsWith("/he")) {
-    const url = request.nextUrl.clone();
-    url.pathname = `/${detectedLocale}${pathname}`;
-    
-    // Add debug headers
-    const response = NextResponse.redirect(url);
-    response.headers.set("x-detected-locale", detectedLocale);
-    response.headers.set("x-accept-language", acceptLanguage);
-    response.headers.set("x-user-country", userCountry);
-    
-    return response;
-  }
-  
-  return NextResponse.next();
-}
+  // Redirect to the locale prefix
+  alternateLinks: true,
+});
 
 export const config = {
+  // Skip static files and API routes
   matcher: [
-    // Skip static files and API routes
-    "/((?!api|_next/static|_next/image|favicon.ico).*)",
+    '/((?!api|_next|_vercel|.*\\..*).*)',
   ],
 };
