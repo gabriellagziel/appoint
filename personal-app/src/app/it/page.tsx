@@ -1,6 +1,7 @@
 'use client';
 import BottomNav from '@/components/personal/BottomNav';
 import QuickActions from '@/components/personal/QuickActions';
+import LocaleSwitcher from '@/components/personal/LocaleSwitcher';
 import { useParams, useRouter } from 'next/navigation';
 
 export default function ItalianPage() {
@@ -10,6 +11,9 @@ export default function ItalianPage() {
 
   return (
     <main className="mx-auto max-w-screen-sm px-4 pb-24 pt-8">
+      <div className="flex justify-end mb-4">
+        <LocaleSwitcher />
+      </div>
       <header className="mb-6">
         <div className="text-2xl font-semibold">Ciao Gabriel, cosa vorresti fare oggi?</div>
       </header>
