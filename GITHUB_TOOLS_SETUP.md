@@ -14,7 +14,7 @@ This guide will help you set up and use all the GitHub tools I've created to enh
 
 ### 2. **Dependency Management** (`.github/workflows/dependency-updates.yml`)
 - **Automated Validation**: Tests dependency updates for compatibility
-- **Security Scanning**: Snyk and npm audit integration
+- **Security Scanning**: npm audit integration
 - **Performance Impact**: Bundle size and performance analysis
 - **Compatibility Testing**: Ensures updates don't break existing functionality
 
@@ -28,10 +28,9 @@ This guide will help you set up and use all the GitHub tools I've created to enh
 - **Automated Updates**: Weekly dependency updates
 - **Security Focus**: Prioritizes security updates
 
-### 5. **Repository Settings** (`.github/repository-settings.yml`)
-- **Branch Protection**: Required status checks and reviews
-- **Code Quality**: Automated quality gates
-- **Security**: Required security scanning
+### 5. **Code Ownership** (`.github/CODEOWNERS`)
+- **Clear Ownership**: Defines who is responsible for different parts
+- **Automated Reviews**: Ensures proper code review process
 
 ## 🚀 Quick Start
 
@@ -44,7 +43,7 @@ git push origin main
 ```
 
 ### Step 2: Configure Repository Settings
-1. Go to your GitHub repository
+1. Go to your repository on GitHub
 2. Navigate to **Settings** → **Branches**
 3. Add branch protection rules for `main` and `develop`
 4. Enable required status checks:
@@ -62,9 +61,6 @@ FIREBASE_SERVICE_ACCOUNT=REDACTED_TOKEN
 
 # Codecov (optional)
 CODECOV_TOKEN=your-codecov-token
-
-# Snyk (optional)
-SNYK_TOKEN=your-snyk-token
 ```
 
 ### Step 4: Test the Workflows

@@ -29,23 +29,44 @@ assignees: ''
 
 **Additional Context:**
 - Device Model: [e.g. iPhone 15 Pro, Samsung Galaxy S23, MacBook Pro M3]
-- Screen Resolution: [e.g. 1920x1080, 390x844]
-- Network: [e.g. WiFi, 5G, 4G]
+- Screen Resolution: [e.g. 1920x1080, 2560x1440]
+- Network: [e.g. WiFi, 5G, Ethernet]
 
 ## 📸 Screenshots/Videos
 <!-- If applicable, add screenshots or videos to help explain the problem -->
 
 ## 📋 Additional Information
-<!-- Add any other context about the problem here -->
+**Error Messages:**
+```
+<!-- Paste any error messages here -->
+```
+
+**Console Logs:**
+```
+<!-- Paste any console logs here -->
+```
+
+**Stack Trace:**
+```
+<!-- Paste any stack traces here -->
+```
 
 ## 🔍 Possible Solutions
-<!-- If you have suggestions on a fix for the bug, describe them here -->
+<!-- If you have suggestions on a fix for the bug -->
 
-## 📊 Impact
-- [ ] Low - Minor inconvenience
-- [ ] Medium - Affects functionality but workaround exists
-- [ ] High - Blocks core functionality
-- [ ] Critical - App crashes or data loss
+## 📚 Related Documentation
+<!-- Link to any relevant documentation -->
 
-## 🔗 Related Issues
-<!-- Link to any related issues or pull requests -->
+## ��️ Labels
+<!-- Add any relevant labels -->
+- [ ] High Priority
+- [ ] Low Priority
+- [ ] UI/UX Issue
+- [ ] Performance Issue
+- [ ] Security Issue
+- [ ] Data Issue
+- [ ] Integration Issue
+
+---
+
+**Thank you for helping us improve AppOint! 🚀**

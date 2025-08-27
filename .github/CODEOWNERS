@@ -1,26 +1,47 @@
 # Global owners
 * @gabriellagziel
 
-# GitHub Actions workflows
-.github/workflows/ @gabriellagziel
+# Personal App
+/personal-app/ @gabriellagziel
 
-# Configuration files
+# Enterprise App
+/enterprise-app/ @gabriellagziel
+
+# Business App
+/business/ @gabriellagziel
+
+# Admin App
+/admin/ @gabriellagziel
+/app-oint-admin/ @gabriellagziel
+
+# Marketing App
+/marketing/ @gabriellagziel
+/app-oint-marketing/ @gabriellagziel
+
+# Appoint App
+/appoint/ @gabriellagziel
+/app-oint-appoint/ @gabriellagziel
+
+# Core App
+/app-oint-enterprise-app/ @gabriellagziel
+
+# GitHub Configuration
+/.github/ @gabriellagziel
+
+# Scripts and Operations
+/scripts/ @gabriellagziel
+/ops/ @gabriellagziel
+
+# Configuration Files
 *.yml @gabriellagziel
 *.yaml @gabriellagziel
 *.json @gabriellagziel
-*.js @gabriellagziel
-*.ts @gabriellagziel
-*.dart @gabriellagziel
-
-# Flutter specific
-pubspec.yaml @gabriellagziel
-pubspec.lock @gabriellagziel
-analysis_options.yaml @gabriellagziel
+*.toml @gabriellagziel
 
 # Documentation
 *.md @gabriellagziel
-docs/ @gabriellagziel
+/docs/ @gabriellagziel
 
-# Security and compliance
-.github/security/ @gabriellagziel
-.github/dependabot.yml @gabriellagziel
+# Build and Deployment
+/build/ @gabriellagziel
+/deploy/ @gabriellagziel

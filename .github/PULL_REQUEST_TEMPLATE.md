@@ -1,5 +1,3 @@
-# 🚀 Pull Request
-
 ## 📋 Pull Request Description
 
 ### 🎯 What does this PR do?
@@ -23,35 +21,51 @@
 ### 🧪 Testing
 - [ ] ✅ Unit tests pass
 - [ ] ✅ Integration tests pass
-- [ ] ✅ E2E tests pass
+- [ ] ✅ Flutter tests pass
+- [ ] ✅ Next.js tests pass
+- [ ] ✅ Firebase functions tests pass
+- [ ] ✅ Security scan passes
+- [ ] ✅ Performance tests pass
 - [ ] ✅ Manual testing completed
-- [ ] ✅ Cross-platform testing (iOS/Android/Web)
+
+### 📱 Platforms Tested
+- [ ] 🖥️ Web (Chrome, Firefox, Safari, Edge)
+- [ ] 📱 iOS (iPhone, iPad)
+- [ ] 🤖 Android (Phone, Tablet)
+- [ ] 🖥️ Desktop (Windows, macOS, Linux)
+
+### 🔒 Security & Performance
+- [ ] 🔒 No security vulnerabilities introduced
+- [ ] ⚡ No performance regressions
+- [ ] 📊 Bundle size impact assessed
+- [ ] 🚀 Lighthouse score maintained
+
+### 📚 Documentation
+- [ ] 📖 Code is self-documenting
+- [ ] 📝 README updated if needed
+- [ ] 🔧 Configuration documented
+- [ ] 📱 UI/UX changes documented
+
+### 🚀 Deployment Notes
+<!-- Any special considerations for deployment -->
+- 
+
+### 🧹 Code Quality
+- [ ] 🎯 Code follows project style guidelines
+- [ ] 🔍 Code reviewed and approved
+- [ ] 🚫 No console.log statements left in production code
+- [ ] 📱 Responsive design principles followed
+- [ ] ♿ Accessibility standards maintained
 
 ### 📋 Checklist
-- [ ] My code follows the project's style guidelines
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
-
-### 📸 Screenshots/Videos
-<!-- If applicable, add screenshots or videos to help explain your changes -->
-
-### 🔍 Additional Notes
-<!-- Any additional information that reviewers should know -->
+- [ ] 🔍 Self-review completed
+- [ ] 📝 PR description is clear and complete
+- [ ] 🧪 All tests are passing
+- [ ] 🔒 Security considerations addressed
+- [ ] 📱 Cross-platform compatibility verified
+- [ ] 📚 Documentation updated
+- [ ] 🚀 Performance impact assessed
 
 ---
 
-## 🚀 Deployment Notes
-- [ ] Staging deployment tested
-- [ ] Production deployment ready
-- [ ] Database migrations tested
-- [ ] Environment variables updated
-- [ ] Monitoring and alerting configured
-
-## 📊 Performance Impact
-<!-- Describe any performance implications of this change -->
-- 
+**Thank you for contributing to AppOint! 🚀**
