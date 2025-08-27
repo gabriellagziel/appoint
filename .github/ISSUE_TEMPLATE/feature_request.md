@@ -22,13 +22,16 @@ assignees: ''
 <!-- If applicable, add mockups, wireframes, or design concepts -->
 
 ## 📊 Impact & Priority
+
 **User Impact:**
+
 - [ ] Low - Nice to have
 - [ ] Medium - Improves user experience
 - [ ] High - Significantly improves user experience
 - [ ] Critical - Essential for user adoption
 
 **Business Impact:**
+
 - [ ] Low - Minimal business value
 - [ ] Medium - Moderate business value
 - [ ] High - High business value

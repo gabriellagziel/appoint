@@ -1,0 +1,179 @@
+name: Dependency Updates
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - '**/package.json'
+      - '**/package-lock.json'
+      - '**/pubspec.yaml'
+      - '**/pubspec.lock'
+      - '**/requirements.txt'
+      - '**/Pipfile'
+      - '**/Dockerfile'
+      - '**/docker-compose.yml'
+
+jobs:
+  # Validate dependency updates
+  validate-dependencies:
+    name: Validate Dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.0'
+          channel: 'stable'
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          # Install npm dependencies
+          npm ci
+          
+          # Install Flutter dependencies
+          flutter pub get
+          
+          # Install Python dependencies if they exist
+          if [ -f "requirements.txt" ]; then
+            pip install -r requirements.txt
+          fi
+      
+      - name: Validate package.json
+        run: |
+          # Check for security vulnerabilities
+          npm audit --audit-level moderate
+          
+          # Validate package.json format
+          npm run type-check
+      
+      - name: Validate pubspec.yaml
+        run: |
+          # Analyze Flutter project
+          flutter analyze
+          
+          # Check for outdated packages
+          flutter pub outdated
+      
+      - name: Build Next.js app
+        run: npm run build
+      
+      - name: Build Flutter app
+        run: |
+          # Build for web
+          flutter build web
+          
+          # Build for Android (if possible)
+          flutter build apk --debug
+      
+      - name: Run tests
+        run: |
+          # Run Next.js tests
+          npm run test:e2e
+          
+          # Run Flutter tests
+          flutter test --coverage
+
+  # Security scan for dependency updates
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    needs: validate-dependencies
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run Snyk security scan
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --severity-threshold=high
+      
+      - name: Run OWASP Dependency Check
+        uses: dependency-check/Dependency-Check_Action@main
+        with:
+          project: 'AppOint'
+          path: '.'
+          format: 'HTML'
+          out: 'reports'
+          args: >
+            --failOnCVSS 7
+            --enableRetired
+      
+      - name: Upload security report
+        uses: actions/upload-artifact@v3
+        with:
+          name: security-report
+          path: reports/
+
+  # Performance testing for dependency updates
+  performance-test:
+    name: Performance Test
+    runs-on: ubuntu-latest
+    needs: validate-dependencies
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build app
+        run: npm run build
+      
+      - name: Run Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: |
+            http://localhost:3000
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          configPath: './.lighthouserc.json'
+
+  # Dependency update summary
+  update-summary:
+    name: Update Summary
+    runs-on: ubuntu-latest
+    needs: [validate-dependencies, security-scan, performance-test]
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Generate update summary
+        run: |
+          echo "## 📦 Dependency Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### ✅ Validation Results" >> $GITHUB_STEP_SUMMARY
+          echo "- Dependencies validated: ${{ needs.validate-dependencies.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Security scan: ${{ needs.security-scan.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Performance test: ${{ needs.performance-test.result }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🔍 Next Steps" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ needs.validate-dependencies.result }}" == "success" ]; then
+            echo "- ✅ Dependencies are ready for review" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- ❌ Dependencies failed validation - review required" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          if [ "${{ needs.security-scan.result }}" == "success" ]; then
+            echo "- ✅ Security scan passed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- ⚠️ Security issues detected - review required" >> $GITHUB_STEP_SUMMARY
+          fi

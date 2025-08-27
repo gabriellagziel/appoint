@@ -1,33 +1,35 @@
 # 🚀 Pull Request
 
-## 📋 Pull Request Description
+## 📋 Description
 
-### 🎯 What does this PR do?
-<!-- Provide a clear and concise description of what this PR accomplishes -->
+A clear and concise description of what this PR accomplishes.
 
-### 🔗 Related Issues
-<!-- Link to any related issues, e.g., "Closes #123" or "Fixes #456" -->
-- 
+## 🔗 Related Issue
 
-### 📱 Type of Change
+Closes #(issue number)
+
+## 🧪 Type of Change
+
 - [ ] 🐛 Bug fix (non-breaking change which fixes an issue)
 - [ ] ✨ New feature (non-breaking change which adds functionality)
 - [ ] 💥 Breaking change (fix or feature that would cause existing functionality to not work as expected)
 - [ ] 📚 Documentation update
-- [ ] 🎨 Style/UI update
-- [ ] ♻️ Refactoring (no functional changes)
-- [ ] ⚡ Performance improvement
-- [ ] 🧪 Test addition or update
-- [ ] 🔧 Configuration change
+- [ ] 🔧 Refactoring (no functional changes)
+- [ ] 🧹 Code cleanup
+- [ ] 🚀 Performance improvement
+- [ ] ✅ Test addition or update
 
-### 🧪 Testing
-- [ ] ✅ Unit tests pass
-- [ ] ✅ Integration tests pass
-- [ ] ✅ E2E tests pass
-- [ ] ✅ Manual testing completed
-- [ ] ✅ Cross-platform testing (iOS/Android/Web)
+## 📱 Testing
 
-### 📋 Checklist
+- [ ] I have tested this change locally
+- [ ] I have added/updated tests for this change
+- [ ] All tests pass locally
+- [ ] CI checks pass
+- [ ] Flutter analyze passes
+- [ ] App builds successfully on target platforms
+
+## 📋 Checklist
+
 - [ ] My code follows the project's style guidelines
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
@@ -35,23 +37,18 @@
 - [ ] My changes generate no new warnings
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
+- [ ] Any dependent changes have been merged and published
+- [ ] Flutter analyze shows no issues
+- [ ] App builds without errors
 
-### 📸 Screenshots/Videos
-<!-- If applicable, add screenshots or videos to help explain your changes -->
+## 📸 Screenshots
 
-### 🔍 Additional Notes
-<!-- Any additional information that reviewers should know -->
+If applicable, add screenshots to help explain your changes.
+
+## 🔍 Additional Notes
+
+Add any other context about the pull request here.
 
 ---
 
-## 🚀 Deployment Notes
-- [ ] Staging deployment tested
-- [ ] Production deployment ready
-- [ ] Database migrations tested
-- [ ] Environment variables updated
-- [ ] Monitoring and alerting configured
-
-## 📊 Performance Impact
-<!-- Describe any performance implications of this change -->
-- 
+**Note**: Please ensure all CI checks pass before requesting a review.

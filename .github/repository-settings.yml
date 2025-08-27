@@ -1,0 +1,96 @@
+# Repository Settings Configuration
+# This file defines the structure for repository settings
+
+# Branch Protection Rules
+branches:
+  - name: main
+    protection:
+      required_status_checks:
+        strict: true
+        contexts:
+          - "Flutter Tests"
+          - "Next.js Tests"
+          - "Firebase Functions Tests"
+          - "Security Scan"
+      required_pull_request_reviews:
+        required_approving_review_count: 2
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: true
+      enforce_admins: false
+      required_linear_history: true
+      allow_force_pushes: false
+      allow_deletions: false
+      block_creations: true
+      REDACTED_TOKEN: true
+
+  - name: develop
+    protection:
+      required_status_checks:
+        strict: true
+        contexts:
+          - "Flutter Tests"
+          - "Next.js Tests"
+          - "Firebase Functions Tests"
+          - "Security Scan"
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: false
+      enforce_admins: false
+      required_linear_history: false
+      allow_force_pushes: false
+      allow_deletions: false
+      block_creations: false
+      REDACTED_TOKEN: true
+
+# Issue Templates
+issue_templates:
+  - name: "Bug Report"
+    template: "bug_report.md"
+    title: "[BUG] "
+    labels: ["bug", "needs-triage"]
+  
+  - name: "Feature Request"
+    template: "feature_request.md"
+    title: "[FEATURE] "
+    labels: ["enhancement", "needs-triage"]
+
+# Pull Request Template
+pull_request_template: "pull_request_template.md"
+
+# Repository Features
+features:
+  issues: true
+  projects: true
+  wiki: true
+  discussions: true
+  security: true
+  pages: false
+
+# Security Settings
+security:
+  secret_scanning: true
+  dependency_review: true
+  code_scanning: true
+  security_policy: true
+
+# Code Owners
+code_owners:
+  - path: "personal-app/"
+    owners: ["gabriellagziel"]
+  - path: "enterprise-app/"
+    owners: ["gabriellagziel"]
+  - path: "business/"
+    owners: ["gabriellagziel"]
+  - path: "admin/"
+    owners: ["gabriellagziel"]
+  - path: "marketing/"
+    owners: ["gabriellagziel"]
+  - path: "appoint/"
+    owners: ["gabriellagziel"]
+  - path: ".github/"
+    owners: ["gabriellagziel"]
+  - path: "scripts/"
+    owners: ["gabriellagziel"]
+  - path: "ops/"
+    owners: ["gabriellagziel"]
