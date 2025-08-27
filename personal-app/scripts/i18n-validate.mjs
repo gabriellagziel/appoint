@@ -25,3 +25,4 @@ for (const f of files) {
     console.log(`  Missing: ${missing.length}  Extra: ${extra.length}`);
     if (missing.length) console.log('  e.g.:', missing.slice(0, 5).join(', '));
 }
+

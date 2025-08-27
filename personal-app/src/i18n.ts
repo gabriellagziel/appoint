@@ -43,3 +43,4 @@ export function normalizeLocale(input: string): Locale {
 export function isRTL(locale: string) {
     return RTL_LOCALES.includes(normalizeLocale(locale) as any);
 }
+

@@ -1,0 +1,140 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: 🌐
+      - combobox "🌐" [ref=e6]:
+        - option "af"
+        - option "am"
+        - option "ar"
+        - option "ha"
+        - option "ig"
+        - option "sw"
+        - option "yo"
+        - option "zu"
+        - option "en" [selected]
+        - option "es"
+        - option "fr"
+        - option "pt"
+        - option "pt-BR"
+        - option "de"
+        - option "it"
+        - option "nl"
+        - option "pl"
+        - option "ru"
+        - option "uk"
+        - option "sv"
+        - option "da"
+        - option "no"
+        - option "fi"
+        - option "cs"
+        - option "sk"
+        - option "sl"
+        - option "hr"
+        - option "sr"
+        - option "he"
+        - option "fa"
+        - option "ur"
+        - option "tr"
+        - option "ku"
+        - option "ps"
+        - option "hy"
+        - option "zh"
+        - option "zh-CN"
+        - option "zh-TW"
+        - option "ja"
+        - option "ko"
+        - option "th"
+        - option "vi"
+        - option "id"
+        - option "ms"
+        - option "tl"
+        - option "hi"
+        - option "bn"
+        - option "ta"
+        - option "te"
+        - option "ml"
+        - option "mr"
+        - option "gu"
+        - option "pa"
+        - option "ro"
+        - option "el"
+        - option "hu"
+        - option "bg"
+        - option "lt"
+        - option "lv"
+        - option "et"
+    - generic [ref=e8]: Hi Gabriel, what would you like to do today?
+    - generic [ref=e10]:
+      - link "➕ New Meeting Set, Send, Done" [ref=e11] [cursor=pointer]:
+        - /url: /en/create/meeting
+        - generic [ref=e12] [cursor=pointer]: ➕
+        - generic [ref=e13] [cursor=pointer]: New Meeting
+        - generic [ref=e14] [cursor=pointer]: Set, Send, Done
+      - link "⏰ Reminder" [ref=e15] [cursor=pointer]:
+        - /url: /en/reminders
+        - generic [ref=e16] [cursor=pointer]: ⏰
+        - generic [ref=e17] [cursor=pointer]: Reminder
+      - link "🎮 Playtime" [ref=e18] [cursor=pointer]:
+        - /url: /en/playtime
+        - generic [ref=e19] [cursor=pointer]: 🎮
+        - generic [ref=e20] [cursor=pointer]: Playtime
+      - link "👥 Groups" [ref=e21] [cursor=pointer]:
+        - /url: /en/groups
+        - generic [ref=e22] [cursor=pointer]: 👥
+        - generic [ref=e23] [cursor=pointer]: Groups
+      - link "👨‍👩‍👧 Family" [ref=e24] [cursor=pointer]:
+        - /url: /en/family
+        - generic [ref=e25] [cursor=pointer]: 👨‍👩‍👧
+        - generic [ref=e26] [cursor=pointer]: Family
+    - generic [ref=e27]:
+      - generic [ref=e28]: What would you like to do today?
+      - generic [ref=e29]:
+        - button "➕ Create Meeting" [ref=e30] [cursor=pointer]
+        - button "⏰ Create Reminder" [ref=e31] [cursor=pointer]
+        - button "🎮 Playtime" [ref=e32] [cursor=pointer]
+        - button "👥 Groups" [ref=e33] [cursor=pointer]
+        - button "👨‍👩‍👧 Family Management" [ref=e34] [cursor=pointer]
+    - navigation [ref=e35]:
+      - list [ref=e36]:
+        - listitem [ref=e37]:
+          - link "Home" [ref=e38] [cursor=pointer]:
+            - /url: /en/home
+        - listitem [ref=e39]:
+          - link "Meetings" [ref=e40] [cursor=pointer]:
+            - /url: /en/meetings
+        - listitem [ref=e41]:
+          - link "Reminders" [ref=e42] [cursor=pointer]:
+            - /url: /en/reminders
+        - listitem [ref=e43]:
+          - link "Groups" [ref=e44] [cursor=pointer]:
+            - /url: /en/groups
+        - listitem [ref=e45]:
+          - link "Family" [ref=e46] [cursor=pointer]:
+            - /url: /en/family
+        - listitem [ref=e47]:
+          - link "Settings" [ref=e48] [cursor=pointer]:
+            - /url: /en/settings
+  - navigation [ref=e49]:
+    - list [ref=e50]:
+      - listitem [ref=e51]:
+        - link "Home" [ref=e52] [cursor=pointer]:
+          - /url: /en/home
+      - listitem [ref=e53]:
+        - link "Meetings" [ref=e54] [cursor=pointer]:
+          - /url: /en/meetings
+      - listitem [ref=e55]:
+        - link "Reminders" [ref=e56] [cursor=pointer]:
+          - /url: /en/reminders
+      - listitem [ref=e57]:
+        - link "Groups" [ref=e58] [cursor=pointer]:
+          - /url: /en/groups
+      - listitem [ref=e59]:
+        - link "Family" [ref=e60] [cursor=pointer]:
+          - /url: /en/family
+      - listitem [ref=e61]:
+        - link "Settings" [ref=e62] [cursor=pointer]:
+          - /url: /en/settings
+```

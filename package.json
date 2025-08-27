@@ -1,38 +1,48 @@
 {
-  "name": "appoint-localization",
+  "name": "personal-app",
   "version": "1.0.0",
-  "description": "Localization infrastructure for APP-OINT",
+  "description": "App-Oint Personal - ניהול פגישות אישיות וזיכרונות",
+  "private": true,
   "scripts": {
-    "prepare": "husky install",
-    "pre-commit": "husky add .husky/pre-commit \"npm run pre-commit-hook\"",
-    "pre-commit-hook": "npm run spell-check && npm run analyze",
-    "spell-check": "cspell \"lib/l10n/app_*.arb\" --no-progress",
-    "analyze": "flutter analyze --no-fatal-infos",
-    "gen-todos": "python3 tool/generate_todo_list.py",
-    "merge-arb": "node tool/merge_arb.js",
-    "check-translations": "python3 tool/back_translation_check.py",
-    "localization-ci": "npm run spell-check && flutter gen-l10n && npm run check-translations && npm run gen-todos",
-    "setup-hooks": "npm install && husky install && chmod +x .husky/pre-commit"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "test": "echo \"No unit tests specified yet\" && exit 0",
+    "vercel-build": "next build",
+    "test:e2e": "playwright test",
+    "spec:probe": "ts-node --transpile-only scripts/spec-probe.ts"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.dart": [
-      "flutter analyze --write=none --no-fatal-infos --no-fatal-warnings",
-      "git add"
-    ]
+  "dependencies": {
+    "next": "14.2.5",
+    "next-intl": "^4.3.5",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "cspell": "^6.31.1",
-    "husky": "^8.0.3",
-    "lint-staged": "^16.1.2",
-    "markdownlint-cli": "^0.45.0",
-    "prettier": "^3.5.3"
+    "@eslint/eslintrc": "^3.0.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "keywords": [
+    "personal",
+    "meetings",
+    "reminders",
+    "pwa",
+    "nextjs",
+    "typescript"
+  ],
+  "author": "App-Oint Team",
+  "license": "MIT"
 }

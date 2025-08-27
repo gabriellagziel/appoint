@@ -6,3 +6,4 @@ Sitemap: https://personal.app-oint.com/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1
+

@@ -29,3 +29,4 @@ export interface Meeting {
     externalLink?: string;  // virtual URL (if any)
     messages: ChatMessage[];
 }
+

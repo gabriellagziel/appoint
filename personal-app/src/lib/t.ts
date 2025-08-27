@@ -9,3 +9,4 @@ export function useT(ns?: string) {
         return ((key: string) => key) as unknown as ReturnType<typeof useTranslations>;
     }
 }
+
