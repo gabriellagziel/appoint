@@ -47,19 +47,19 @@ export default function InstallPrompt({ locale }: { locale: string }) {
         return () => window.removeEventListener('beforeinstallprompt', handler);
     }, []);
 
-      if (!ready) return null;
+    if (!ready) return null;
 
-  const translations = {
-    en: { title: 'Add App-Oint to Home', body: 'Install the app for a faster, full-screen experience.', btn: 'Install', later: 'Later', ios: 'Tap Share → "Add to Home Screen"' },
-    it: { title: 'Aggiungi App-Oint alla Home', body: "Installa l'app per un'esperienza migliore a schermo intero.", btn: 'Installa', later: 'Più tardi', ios: 'Tocca Condividi → "Aggiungi a Home"' },
-    he: { title: 'להוספה למסך הבית', body: 'התקינו את האפליקציה לחוויה מלאה ומהירה.', btn: 'התקנה', later: 'אחר כך', ios: 'שתף → הוסף למסך הבית' }
-  };
+    const translations = {
+        en: { title: 'Add App-Oint to Home', body: 'Install the app for a faster, full-screen experience.', btn: 'Install', later: 'Later', ios: 'Tap Share → "Add to Home Screen"' },
+        it: { title: 'Aggiungi App-Oint alla Home', body: "Installa l'app per un'esperienza migliore a schermo intero.", btn: 'Installa', later: 'Più tardi', ios: 'Tocca Condividi → "Aggiungi a Home"' },
+        he: { title: 'להוספה למסך הבית', body: 'התקינו את האפליקציה לחוויה מלאה ומהירה.', btn: 'התקנה', later: 'אחר כך', ios: 'שתף → הוסף למסך הבית' }
+    };
 
-  const copy = translations[loc as keyof typeof translations] ?? copyFallback();
+    const copy = translations[loc as keyof typeof translations] ?? copyFallback();
 
-  function copyFallback() {
-    return { title: 'Add to Home Screen', body: 'Install the app for a faster, full-screen experience.', btn: 'Install', later: 'Later', ios: 'Use your browser menu → Add to Home Screen' };
-  }
+    function copyFallback() {
+        return { title: 'Add to Home Screen', body: 'Install the app for a faster, full-screen experience.', btn: 'Install', later: 'Later', ios: 'Use your browser menu → Add to Home Screen' };
+    }
 
     const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
 

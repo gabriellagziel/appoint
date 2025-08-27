@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
 import { isRTL, normalizeLocale } from '@/i18n';
+import { NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 

@@ -6,7 +6,7 @@ const NEVER_CACHE = [/\/src\/messages\/.+\.json$/, /\/api\/.*$/];
 
 self.addEventListener('install', (e) => {
     e.waitUntil(caches.open(STATIC_CACHE).then(c => c.addAll([
-        '/', '/favicon.ico'
+        '/', '/favicon.ico', '/offline'
     ])).then(() => self.skipWaiting()));
 });
 
@@ -36,7 +36,10 @@ self.addEventListener('fetch', (event) => {
                 const copy = r.clone();
                 caches.open(RUNTIME_CACHE).then(c => c.put(req, copy));
                 return r;
-            }).catch(() => caches.match(req).then(r => r || caches.match('/')))
+            }).catch(() => {
+                // Try to serve from cache first, then offline page
+                return caches.match(req).then(r => r || caches.match('/offline'));
+            })
         );
         return;
     }
