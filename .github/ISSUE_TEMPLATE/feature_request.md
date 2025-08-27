@@ -22,19 +22,23 @@ assignees: ''
 <!-- If applicable, add mockups, wireframes, or design concepts -->
 
 ## 📊 Impact & Priority
+
 **User Impact:**
+
 - [ ] Low - Nice to have
 - [ ] Medium - Improves user experience
 - [ ] High - Significantly improves user experience
 - [ ] Critical - Essential for user workflow
 
 **Business Impact:**
+
 - [ ] Low - Minimal business value
 - [ ] Medium - Moderate business value
 - [ ] High - High business value
 - [ ] Critical - Essential for business success
 
 ## 🏷️ Feature Category
+
 - [ ] 🎨 UI/UX Enhancement
 - [ ] 🔧 Functionality Addition
 - [ ] 📱 Mobile App Feature
@@ -59,6 +63,7 @@ assignees: ''
 <!-- Link to any related features or existing functionality -->
 
 ## 🚀 Implementation Priority
+
 - [ ] �� Low Priority - Can be implemented later
 - [ ] 🟡 Medium Priority - Should be implemented soon
 - [ ] 🟠 High Priority - Important for next release

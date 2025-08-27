@@ -8,6 +8,7 @@
 - 
 
 ### 📱 Type of Change
+
 - [ ] 🐛 Bug fix (non-breaking change which fixes an issue)
 - [ ] ✨ New feature (non-breaking change which adds functionality)
 - [ ] 💥 Breaking change (fix or feature that would cause existing functionality to not work as expected)
@@ -19,6 +20,7 @@
 - [ ] 🔧 Configuration change
 
 ### 🧪 Testing
+
 - [ ] ✅ Unit tests pass
 - [ ] ✅ Integration tests pass
 - [ ] ✅ Flutter tests pass
@@ -29,18 +31,21 @@
 - [ ] ✅ Manual testing completed
 
 ### 📱 Platforms Tested
+
 - [ ] 🖥️ Web (Chrome, Firefox, Safari, Edge)
 - [ ] 📱 iOS (iPhone, iPad)
 - [ ] 🤖 Android (Phone, Tablet)
 - [ ] 🖥️ Desktop (Windows, macOS, Linux)
 
 ### 🔒 Security & Performance
+
 - [ ] 🔒 No security vulnerabilities introduced
 - [ ] ⚡ No performance regressions
 - [ ] 📊 Bundle size impact assessed
 - [ ] 🚀 Lighthouse score maintained
 
 ### 📚 Documentation
+
 - [ ] 📖 Code is self-documenting
 - [ ] 📝 README updated if needed
 - [ ] 🔧 Configuration documented
@@ -51,6 +56,7 @@
 - 
 
 ### 🧹 Code Quality
+
 - [ ] 🎯 Code follows project style guidelines
 - [ ] 🔍 Code reviewed and approved
 - [ ] 🚫 No console.log statements left in production code
@@ -58,6 +64,7 @@
 - [ ] ♿ Accessibility standards maintained
 
 ### 📋 Checklist
+
 - [ ] 🔍 Self-review completed
 - [ ] 📝 PR description is clear and complete
 - [ ] 🧪 All tests are passing

@@ -1,301 +1,309 @@
-# AppOint
+# 🚀 AppOint GitHub Tools
 
-A Flutter mobile application for appointment booking and management with microservices architecture.
+This repository contains comprehensive GitHub tools and workflows for the AppOint project, designed to enhance development workflow, ensure code quality, and automate testing and deployment processes.
+
+## 🎯 What's Included
+
+### 🔄 CI/CD Workflows
+
+- **Main CI/CD Pipeline**: Comprehensive testing and deployment automation
+- **Dependency Updates**: Automated dependency validation and security scanning
+- **Security Scanning**: CodeQL analysis and vulnerability detection
+- **Performance Testing**: Lighthouse CI integration
+
+### 📋 Templates & Standards
+
+- **Pull Request Template**: Standardized PR process with quality gates
+- **Bug Report Template**: Structured issue reporting
+- **Feature Request Template**: Detailed feature proposals
+- **Code Ownership**: Clear responsibility definitions
+
+### 🔧 Automation
+
+- **Dependabot**: Weekly dependency updates with security focus
+- **Branch Protection**: Automated quality gates and required checks
+- **Code Quality**: Automated linting, testing, and analysis
 
 ## 🚀 Quick Start
 
-### With Docker (Recommended)
+### 1. Clone This Repository
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/appoint.git
-cd appoint
-
-# Start all services with Docker Compose
-docker-compose up -d
-
-# View logs
-docker-compose logs -f
-
-# Stop services
-docker-compose down
+git clone https://github.com/gabriellagziel/appoint-github-tools.git
+cd appoint-github-tools
 ```
 
-**Services will be available at:**
-
-- **Dashboard**: <http://localhost:3000>
-- **API/Functions**: <http://localhost:8080>
-- **Database**: PostgreSQL on localhost:5432
-- **Cache**: Redis on localhost:6379
-
-### Traditional Development
-
-1. **Setup Environment**: Run `scripts/setup_env.sh` for local development setup
-2. **Install Dependencies**: `flutter pub get`
-3. **Run Tests**: `flutter test`
-4. **Start Development**: `flutter run`
-
-## 🐳 Docker Development
-
-### Development Mode with Hot Reloading
+### 2. Copy to Your Main Repository
 
 ```bash
-# Start in development mode with hot reloading
-docker-compose --profile dev up -d
-
-# Or start specific services in dev mode
-docker-compose up dashboard-dev functions-dev -d
+# Copy the .github folder to your main AppOint repository
+cp -r .github/ /path/to/your/appoint-repo/
 ```
 
-### Environment Configuration
-
-1. Copy environment files:
-
-   ```bash
-   cp dashboard/.env.example dashboard/.env
-   cp functions/.env.example functions/.env
-   ```
-
-2. Update the `.env` files with your configuration values
-
-3. Restart services:
-
-   ```bash
-   docker-compose restart
-   ```
-
-### Useful Docker Commands
+### 3. Commit and Push
 
 ```bash
-# View service logs
-docker-compose logs dashboard
-docker-compose logs functions
-
-# Rebuild services after code changes
-docker-compose build dashboard functions
-
-# Reset databases
-docker-compose down -v
-docker-compose up -d
-
-# Run tests in containers
-docker-compose exec dashboard npm test
-docker-compose exec functions npm test
+cd /path/to/your/appoint-repo/
+git add .github/
+git commit -m "🚀 Add comprehensive GitHub tools and workflow automation"
+git push origin main
 ```
 
-## 📊 Status
+### 4. Configure Repository Settings
 
-[![core-ci](https://github.com/gabriellagziel/appoint/actions/workflows/core-ci.yml/badge.svg)](https://github.com/gabriellagziel/appoint/actions/workflows/core-ci.yml)
-[![Codecov](https://codecov.io/gh/your-username/appoint/branch/main/graph/badge.svg)](https://codecov.io/gh/your-username/appoint)
+1. Go to your repository on GitHub
+2. Navigate to **Settings** → **Branches**
+3. Add branch protection rules for `main` and `develop`
+4. Enable required status checks
+
+### 5. Set Up Secrets
+
+Add these secrets in **Settings** → **Secrets and variables** → **Actions**:
+
+- `FIREBASE_SERVICE_ACCOUNT`: Your Firebase service account JSON
+- `CODECOV_TOKEN`: Your Codecov token (optional)
+
+## 📊 Workflow Overview
+
+### Main CI/CD Pipeline
+
+The main workflow runs on every push and pull request, providing:
+
+- **Flutter Testing**: Automated testing with coverage reporting
+- **Next.js Testing**: Build and test validation
+- **Firebase Functions**: Function testing and validation
+- **Security Scanning**: CodeQL analysis and npm audit
+- **Performance Testing**: Lighthouse CI integration
+- **Automated Deployment**: Firebase hosting deployment (main branch only)
+
+### Dependency Management
+
+Automated dependency updates with:
+
+- **Validation**: Tests updates for compatibility
+- **Security**: npm audit integration
+- **Performance**: Impact assessment
+- **Testing**: Ensures updates don't break functionality
+
+## 🔧 Configuration
+
+### Customizing Workflows
+
+All workflows are highly configurable. Key customization points:
+
+- **Flutter Version**: Update in `ci-cd.yml`
+- **Node.js Version**: Update in both workflow files
+- **Test Commands**: Modify test steps as needed
+- **Deployment**: Configure Firebase project and channel
+
+### Dependabot Settings
+
+Configure update frequency and scope in `.github/dependabot.yml`:
+
+- **Update Schedule**: Weekly updates on Monday at 9 AM UTC
+- **Package Ecosystems**: npm, pub, GitHub Actions
+- **Reviewers**: Automatic assignment to maintainers
+- **Labels**: Automatic labeling for easy identification
+
+## 📈 Monitoring & Analytics
+
+### Workflow Status
+
+- **Green Checkmark**: All tests passed ✅
+- **Red X**: Tests failed ❌
+- **Yellow Circle**: Tests running 🔄
+- **Gray Circle**: Tests skipped ⏭️
+
+### Coverage Reports
+
+- Flutter coverage uploaded to Codecov
+- Performance metrics in Lighthouse CI
+- Security scan results in CodeQL
+
+### Dependency Health
+
+- Weekly dependency update reports
+- Security vulnerability alerts
+- Performance impact assessments
+
+## 🛠️ Troubleshooting
+
+### Common Issues
+
+#### Workflow Fails on Flutter Tests
+
+```bash
+# Check Flutter version compatibility
+flutter --version
+flutter doctor
+
+# Verify dependencies
+flutter pub get
+flutter analyze
+```
+
+#### Workflow Fails on Next.js Tests
+
+```bash
+# Check Node.js version
+node --version
+
+# Verify dependencies
+npm ci
+npm run build
+npm test
+```
+
+#### Security Scan Fails
+
+```bash
+# Check for vulnerabilities
+npm audit
+npm audit fix
+
+# Update dependencies
+npm update
+```
+
+### Getting Help
+
+1. **Check Workflow Logs**: Click on failed workflow → View logs
+2. **Review Error Messages**: Look for specific error details
+3. **Check Dependencies**: Ensure all required tools are available
+4. **Verify Secrets**: Confirm all required secrets are set
+
+## 🎯 Best Practices
+
+### For Developers
+
+1. **Always run tests locally** before pushing
+2. **Use meaningful commit messages** for better tracking
+3. **Review dependency updates** before merging
+4. **Monitor workflow status** for your PRs
+
+### For Maintainers
+
+1. **Review security alerts** promptly
+2. **Monitor performance metrics** regularly
+3. **Update workflow configurations** as needed
+4. **Maintain secret security** and rotate regularly
+
+### For Teams
+
+1. **Standardize on PR templates** for consistency
+2. **Use branch protection** to enforce quality gates
+3. **Regular dependency updates** for security
+4. **Performance monitoring** for user experience
+
+## 🚀 Advanced Features
+
+### Custom Workflows
+
+Create additional workflows in `.github/workflows/`:
+
+```yaml
+name: Custom Workflow
+on:
+  workflow_dispatch:  # Manual trigger
+  schedule:
+    - cron: '0 2 * * *'  # Daily at 2 AM UTC
+
+jobs:
+  custom-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Custom Step
+        run: echo "Hello from custom workflow!"
+```
+
+### Integration with External Tools
+
+- **Slack Notifications**: Notify team of workflow status
+- **Jira Integration**: Link PRs to tickets
+- **Custom Dashboards**: Monitor metrics and trends
+
+## 📈 Performance Optimization
+
+### Workflow Optimization
+
+1. **Use caching** for dependencies
+2. **Parallel jobs** where possible
+3. **Conditional execution** for optional steps
+4. **Matrix builds** for multiple configurations
+
+### Resource Management
+
+1. **Limit concurrent workflows** to avoid rate limits
+2. **Use appropriate runners** for different job types
+3. **Optimize build times** with incremental builds
+4. **Clean up artifacts** to save storage
+
+## 🔒 Security Considerations
+
+### Secret Management
+
+1. **Never commit secrets** to the repository
+2. **Use GitHub secrets** for sensitive data
+3. **Rotate secrets** regularly
+4. **Limit secret access** to necessary workflows
+
+### Code Security
+
+1. **Enable Dependabot alerts** for vulnerabilities
+2. **Use CodeQL** for static analysis
+3. **Regular security audits** of dependencies
+4. **Monitor for suspicious activity**
+
+## 🎉 Success Metrics
+
+### Quality Metrics
+
+- **Test Coverage**: Aim for >80% coverage
+- **Build Success Rate**: Target >95% success
+- **Security Issues**: Zero high/critical vulnerabilities
+- **Performance**: Maintain Lighthouse scores >90
+
+### Efficiency Metrics
+
+- **Build Time**: Reduce overall build time
+- **Deployment Frequency**: Increase deployment frequency
+- **Time to Resolution**: Faster issue resolution
+- **Developer Productivity**: Reduced manual tasks
 
 ## 📚 Documentation
 
-- **[Project Documentation](docs/README.md)** - Comprehensive project documentation
-- **[Architecture](docs/architecture.md)** - System architecture and design patterns
-- **[CI/CD Setup](docs/ci_setup.md)** - Continuous Integration and Deployment guide
-- **[Docker Usage - Dashboard](dashboard/DOCKER_USAGE.md)** - Dashboard service Docker guide
-- **[Docker Usage - Functions](functions/DOCKER_USAGE.md)** - Functions service Docker guide
-
-## 🛠️ Development
-
-### Prerequisites
-
-- Docker & Docker Compose (recommended)
-- Flutter SDK 3.4.0+ (for mobile development)
-- Dart SDK 3.4.0+
-- Android Studio / Xcode (for mobile development)
-- Node.js 22+ (for local development without Docker)
-
-### Local Development (Without Docker)
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/appoint.git
-cd appoint
-
-# Setup environment
-./scripts/setup_env.sh
-
-# Install dependencies
-flutter pub get
-
-# Run tests
-flutter test
-
-# Start development server
-flutter run
-```
-
-### Mobile Development
-
-```bash
-# Install Flutter dependencies
-flutter pub get
-
-# Run Flutter app
-flutter run
-
-# Run on specific device
-flutter run -d chrome  # Web
-flutter run -d android # Android
-flutter run -d ios     # iOS
-```
-
-## 🧪 Testing
-
-```bash
-# Run all tests
-flutter test
-
-# Run tests with coverage
-flutter test --coverage
-
-# Run integration tests
-flutter test --tags integration
-
-# Test Docker services
-docker-compose exec dashboard npm test
-docker-compose exec functions npm test
-```
-
-## 📦 Build
-
-### Mobile App
-
-```bash
-# Build debug APK
-flutter build apk --debug
-
-# Build release APK
-flutter build apk --release
-
-# Build for iOS
-flutter build ios
-```
-
-### Docker Images
-
-```bash
-# Build all Docker images
-docker-compose build
-
-# Build specific service
-docker-compose build dashboard
-docker-compose build functions
-
-# Build for production
-docker-compose -f docker-compose.yml -f docker-compose.prod.yml build
-```
-
-## 🔧 Architecture
-
-This project uses a microservices architecture:
-
-- **Dashboard**: Next.js frontend for admin/business management
-- **Functions**: Node.js API service handling business logic
-- **Mobile App**: Flutter cross-platform mobile application
-- **Database**: PostgreSQL for data persistence
-- **Cache**: Redis for session storage and caching
+- **Setup Guide**: [GITHUB_TOOLS_SETUP.md](GITHUB_TOOLS_SETUP.md)
+- **Workflow Details**: Check individual workflow files
+- **Configuration**: Review template files and customize as needed
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+To contribute to these GitHub tools:
 
-### Code Quality
-
-- All code must pass static analysis (`flutter analyze`)
-- All tests must pass (`flutter test`)
-- Docker builds must succeed (`docker-compose build`)
-- Code coverage is tracked via Codecov
-- PRs require all CI checks to pass before merge
+1. Fork this repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the same license as the main AppOint project.
 
-## 🔗 Links
+---
 
-- [Flutter Documentation](https://docs.flutter.dev/)
-- [Firebase Documentation](https://firebase.google.com/docs)
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Docker Documentation](https://docs.docker.com/)
+## 🆘 Need Help?
 
-<!-- HOW-WE-SHIP:START -->
-## How We Ship
+If you encounter issues or need assistance:
 
-### Required checks (branch protection)
+1. **Check the logs** in the failed workflow
+2. **Review this guide** for common solutions
+3. **Search GitHub issues** for similar problems
+4. **Create a new issue** with detailed error information
 
-- Only these 3 checks must pass:
-  - Flutter (web) build
-  - Next.js apps build
-  - Cloud Functions compile
+---
 
-Badge:  
-[![core-ci](https://github.com/gabriellagziel/appoint/actions/workflows/core-ci.yml/badge.svg)](https://github.com/gabriellagziel/appoint/actions/workflows/core-ci.yml)
+**Happy coding with your new GitHub tools! 🚀**
 
-### CI pipeline (core-ci)
-
-- Builds Flutter web (analyze, test, build artifact)
-- Builds all Next.js apps (marketing, business, enterprise-app, dashboard)
-- Compiles Functions (Node 18, CommonJS)
-- No deploys from CI; artifacts only
-
-### Environments (Vercel)
-
-- Each app linked to its subdirectory
-- Framework: Next.js
-- Build: `npm ci && npm run build`
-- Output: `.next`
-- Env vars set for Preview + Production (see `ops/vercel/README.md`)
-
-### Functions runtime (Firebase)
-
-- `functions/package.json` → `"type": "commonjs"`, `"engines": { "node": "18" }`
-- Build locally before deploy:
-
-```bash
-cd functions && npm ci && npm run build
-```
-
-### Release process
-
-1. Merge PR (core-ci must be green)
-2. Tag `vX.Y.Z` from main
-3. Deploy Functions first (verify health)
-4. Promote Vercel Preview → Production per app
-
-### Quick smoke (per app)
-
-- Homepage 200, key route 200
-- Console: no errors
-- Env-driven UI value looks sane
-- Auth flow OK (if present)
-- Critical path works (no 4xx/5xx)
-
-### Rollback
-
-- Vercel: promote previous deployment to Production
-- Functions: redeploy previous working build/tag
-
-### Keep it green
-
-- Only core-ci runs on push/PR; all other workflows are manual
-- Preview envs in Vercel must mirror prod where applicable
-- If CI fails:
-
-  - Flutter: fix `flutter analyze`/tests
-  - Next.js: missing env or bad build script
-  - Functions: CommonJS + Node 18; fix TS errors
-
-### References
-
-- Exec summary: `ops/audit/EXEC_SUMMARY.md`
-- CI: `.github/workflows/core-ci.yml`
-- Vercel mapping: `ops/vercel/README.md`
-- 🔑 Release templates: see [ops/release/TEMPLATES.md](ops/release/TEMPLATES.md) for Vercel promotion + Functions deploy checklists (with Decision Gate).
-
-<!-- HOW-WE-SHIP:END -->
+For detailed setup instructions, see [GITHUB_TOOLS_SETUP.md](GITHUB_TOOLS_SETUP.md)

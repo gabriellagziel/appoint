@@ -4,7 +4,7 @@ import { defineConfig, devices } from '@playwright/test';
 const baseURL = process.env.BASE_URL || 'http://localhost:3000';
 
 export default defineConfig({
-    testDir: 'tests/e2e',
+    testDir: 'personal-app/tests/e2e',
     timeout: 60_000,
     expect: {
         timeout: 10_000,
@@ -29,24 +29,6 @@ export default defineConfig({
             name: 'chromium',
             use: { ...devices['Desktop Chrome'] },
         },
-        // Other browsers can be enabled locally if desired
-        // { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
-        // { name: 'webkit', use: { ...devices['Desktop Safari'] } },
-    ],
-});
-
-
-const BASE_URL = process.env.BASE_URL || 'https://personal.app-oint.com';
-
-export default defineConfig({
-    testDir: './tests/e2e',
-    use: {
-        baseURL: BASE_URL,
-        trace: 'retain-on-failure',
-    },
-    projects: [
-        { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-        { name: 'mobile', use: { ...devices['Pixel 7'] } },
     ],
 });
 

@@ -1,99 +1,98 @@
-import { expect, test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 // Helpers
-async function acceptA2HS(context) {
-    // Simulate 3 sessions for A2HS logic based on localStorage counter
-    await context.addInitScript(() => {
-        try {
-            localStorage.setItem('sessionsCount', '3');
-        } catch { }
-    });
+async function acceptA2HS(context: any) {
+  // Simulate 3 sessions for A2HS logic based on localStorage counter
+  await context.addInitScript(() => {
+    try {
+      localStorage.setItem('sessionsCount', '3');
+    } catch {}
+  });
 }
 
 test.describe('Personal PWA — Spec Compliance', () => {
-    test.beforeEach(async ({ page, context }) => {
-        await acceptA2HS(context);
-    });
+  test.beforeEach(async ({ page, context }) => {
+    await acceptA2HS(context);
+  });
 
-    test('Step 0 – Opening screen & Quick Actions', async ({ page }) => {
-        await page.goto('http://localhost:3000/en');
-        await expect(page.getByText(/Hi .*what would you like to do today\?/i)).toBeVisible();
+  test('Step 0 – Opening screen & Quick Actions', async ({ page }) => {
+    await page.goto('/en');
+    await expect(page.getByText(/Hi .*what would you like to do today\?/i)).toBeVisible();
+    
+    // Quick Actions
+    await expect(page.getByRole('link', { name: /New Meeting/i })).toBeVisible();
+    await expect(page.getByRole('link', { name: /⏰ Reminder/i })).toBeVisible();
+    await expect(page.getByRole('link', { name: /🎮 Playtime/i })).toBeVisible();
+    await expect(page.getByRole('link', { name: /👥 Groups/i })).toBeVisible();
+    await expect(page.getByRole('link', { name: /👨‍👩‍👧 Family/i })).toBeVisible();
+    
+    // Bottom Nav
+    for (const item of ['Home','Meetings','Reminders','Groups','Family','Settings']) {
+      await expect(page.getByRole('link', { name: new RegExp(`^${item}$`, 'i') })).toBeVisible();
+    }
+  });
 
-        // Quick Actions (check for the card links, not the bottom nav)
-        await expect(page.getByRole('link', { name: /New Meeting/i })).toBeVisible();
-        await expect(page.getByRole('link', { name: /⏰ Reminder/i })).toBeVisible();
-        await expect(page.getByRole('link', { name: /Playtime/i })).toBeVisible();
-        await expect(page.getByRole('link', { name: /👥 Groups/i })).toBeVisible();
-        await expect(page.getByRole('link', { name: /👨‍👩‍👧 Family/i })).toBeVisible();
+  test('Create Meeting — Conversational Flow presence', async ({ page }) => {
+    await page.goto('/en');
+    await page.getByRole('link', { name: /New Meeting/i }).click();
+    
+    // Step 1: Meeting type
+    for (const type of ['Personal Meeting','Group Meeting','Virtual Meeting','With a Business','Playtime','Open Call']) {
+      await expect(page.getByRole('button', { name: new RegExp(type, 'i') })).toBeVisible();
+    }
+    
+    await page.getByRole('button', { name: /Personal Meeting|1:1/i }).click();
+    
+    // Step 2: Participants (search/import/invite/group)
+    await expect(page.getByText(/Who would you like to meet with\?/i)).toBeVisible();
+    for (const opt of ['Search','Contacts','Invite Link','Groups']) {
+      await expect(page.getByText(new RegExp(opt, 'i'))).toBeVisible();
+    }
+    
+    // Step 3: Dynamic extras (visible for group ≥4; here just assert component exists when >=4 is chosen)
+    await page.getByRole('button', { name: /Group Meeting|Group Event/i }).click();
+    await expect(page.getByText(/Forms|Checklists|Attachments|Group Chat/i)).toBeVisible();
+    
+    // Step 4: Details
+    await expect(page.getByText(/Date & Time|smart suggestions/i)).toBeVisible();
+    await expect(page.getByText(/Location/i)).toBeVisible();
+    await expect(page.getByRole('button', { name: /Zoom|Meet|Phone/i })).toBeVisible();
+    
+    // Step 5: Review + Confirm (+ad-gate for free users)
+    await expect(page.getByText(/Does that sound right\?/i)).toBeVisible();
+    await expect(page.getByRole('button', { name: /Confirm/i })).toBeVisible();
+  });
 
-        // Bottom Nav
-        for (const item of ['Home', 'Meetings', 'Reminders', 'Groups', 'Family', 'Settings']) {
-            await expect(page.getByRole('link', { name: new RegExp(`^${item}$`, 'i') })).toBeVisible();
-        }
-    });
+  test('Meeting Hub page elements', async ({ page }) => {
+    // Navigate to a meeting (if deep-link is available, replace with actual id)
+    await page.goto('/en/meetings');
+    
+    // Pick first meeting card
+    const first = page.locator('[data-test="meeting-card"]').first();
+    if (await first.count()) {
+      await first.click();
+    } else {
+      test.skip(true, 'No meeting card found to open hub page');
+    }
+    
+    await expect(page.getByTestId('meeting-header')).toBeVisible();
+    await expect(page.getByTestId('meeting-details')).toBeVisible();
+    await expect(page.getByTestId('participants-list')).toBeVisible();
+    await expect(page.getByRole('button', { name: /I'm Late/i })).toBeVisible();
+    await expect(page.getByRole('button', { name: /Go|Join/i })).toBeVisible();
+    await expect(page.getByRole('button', { name: /I've Arrived/i })).toBeVisible();
+    await expect(page.getByTestId('chat-panel')).toBeVisible();
+  });
 
-    test('Create Meeting — Step 1 (Meeting Type Selection)', async ({ page }) => {
-        await page.goto('http://localhost:3000/en');
-        // First click the "New Meeting" link to go to the meeting creation page
-        await page.getByRole('link', { name: /New Meeting/i }).click();
+  test('Reminders, Groups, Family, Playtime routes exist', async ({ page }) => {
+    for (const path of ['/en/reminders','/en/groups','/en/family','/en/playtime']) {
+      await page.goto(path);
+      await expect(page.getByRole('heading')).toBeVisible();
+    }
+  });
 
-        // Now we should be on the meeting creation page with the first step
-        await expect(page.getByText(/Create a Meeting/i)).toBeVisible();
-        await expect(page.getByText(/What kind of meeting do you want to create\?/i)).toBeVisible();
-
-        // Step 1: Meeting type buttons (with emojis)
-        const meetingTypes = [
-            '👤 Personal 1:1',
-            '👥 Group / Event', 
-            '💻 Virtual',
-            '🏢 With a Business',
-            '🎮 Playtime',
-            '📢 Open Call'
-        ];
-
-        for (const type of meetingTypes) {
-            // Remove emojis and special characters for the regex
-            const cleanType = type.replace(/[^\w\s]/g, '').trim();
-            await expect(page.getByRole('button', { name: new RegExp(cleanType, 'i') })).toBeVisible();
-        }
-
-        // Test clicking on one of the buttons
-        await page.getByRole('button', { name: /Personal 1:1/i }).click();
-        
-        // Note: The full conversational flow is not yet implemented
-        // This test will pass when we only test what exists
-    });
-
-    test('Meeting Creation - Basic Flow (Current Implementation)', async ({ page }) => {
-        // This test verifies the current basic implementation
-        await page.goto('http://localhost:3000/en');
-        await page.getByRole('link', { name: /New Meeting/i }).click();
-
-        // Verify we're on the meeting creation page
-        await expect(page.getByText(/Create a Meeting/i)).toBeVisible();
-        
-        // Click on a meeting type to see what happens
-        await page.getByRole('button', { name: /Personal 1:1/i }).click();
-        
-        // For now, we just verify the button click works
-        // The full flow will be implemented in future iterations
-    });
-
-    test('Reminders, Groups, Family, Playtime routes exist', async ({ page }) => {
-        for (const path of ['/en/reminders', '/en/groups', '/en/family', '/en/playtime']) {
-            await page.goto(`http://localhost:3000${path}`);
-            await expect(page.getByRole('heading')).toBeVisible();
-        }
-    });
-
-    test('PWA A2HS prompt after 3 sessions', async ({ page }) => {
-        await page.goto('http://localhost:3000/en');
-        // Note: Our current implementation doesn't have A2HS prompt yet
-        // This test will fail until we implement it, which is expected
-        try {
-            await expect(page.getByText(/Add App-Oint Personal to your Home Screen/i)).toBeVisible();
-        } catch {
-            console.log('A2HS prompt not yet implemented - this is expected');
-        }
-    });
+  test('PWA A2HS prompt after 3 sessions', async ({ page }) => {
+    await page.goto('/en');
+    await expect(page.getByText(/Add App-Oint to your Home Screen/i)).toBeVisible();
+  });
 });
