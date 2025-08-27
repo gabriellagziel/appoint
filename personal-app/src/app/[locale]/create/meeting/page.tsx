@@ -1,128 +1,217 @@
 'use client';
+
+import { useState } from 'react';
+import { useParams, useRouter } from 'next/navigation';
 import { upsertMeeting } from '@/lib/localStore';
 import { Meeting, MeetingType } from '@/types/meeting';
-import { useParams, useRouter } from 'next/navigation';
-import { useState } from 'react';
+import ConversationalFlow from '@/components/convo/ConversationalFlow';
+import QuestionCard from '@/components/convo/QuestionCard';
+import ChoiceCard from '@/components/convo/ChoiceCard';
+import ParticipantSelector from '@/components/convo/ParticipantSelector';
+import LocationSelector from '@/components/convo/LocationSelector';
+import DateTimeSelector from '@/components/convo/DateTimeSelector';
+import NotesChecklist from '@/components/convo/NotesChecklist';
+import SummaryCard, { SummaryRow } from '@/components/convo/SummaryCard';
+
+interface MeetingData {
+  type: MeetingType;
+  participants: Array<{ id: string; name: string; email?: string }>;
+  dateTime: { date: string; time: string } | null;
+  location: { type: 'physical' | 'virtual' | 'business'; value: string; details?: any } | null;
+  notes: string;
+  checklist: Array<{ id: string; text: string; completed: boolean }>;
+}
 
 export default function CreateMeeting() {
-    const { locale } = useParams<{ locale: string }>();
-    const router = useRouter();
-    const [step, setStep] = useState<1 | 2 | 3 | 4 | 5>(1);
-    const [type, setType] = useState<MeetingType>('personal');
-    const [participants, setParticipants] = useState<string[]>([]);
-    const [details, setDetails] = useState({ date: '', time: '', location: '', platform: '' });
-    const [createdMeetingId, setCreatedMeetingId] = useState<string>('');
+  const { locale } = useParams<{ locale: string }>();
+  const router = useRouter();
+  const [meetingData, setMeetingData] = useState<MeetingData>({
+    type: 'personal',
+    participants: [],
+    dateTime: null,
+    location: null,
+    notes: '',
+    checklist: []
+  });
 
-    return (
-        <main className="mx-auto max-w-screen-sm px-4 pb-24 pt-8 space-y-4">
-            <h1 className="text-2xl font-semibold">Create a Meeting</h1>
+  const [isPremium] = useState(false); // Mock premium status - in real app this would come from user profile
 
-            {step === 1 && (
-                <section className="space-y-3">
-                    <div className="text-lg font-semibold">What kind of meeting do you want to create?</div>
-                    <div className="grid grid-cols-2 gap-3">
-                        {([
-                            ['personal', '👤 Personal 1:1'],
-                            ['group', '👥 Group / Event'],
-                            ['virtual', '💻 Virtual'],
-                            ['business', '🏢 With a Business'],
-                            ['playtime', '🎮 Playtime'],
-                            ['opencall', '📢 Open Call']
-                        ] as [MeetingType, string][]).map(([val, label]) => (
-                            <button key={val} onClick={() => { setType(val); setStep(2); }} className="rounded-xl border p-3 text-left hover:shadow">
-                                {label}
-                            </button>
-                        ))}
-                    </div>
-                </section>
+  const updateMeetingData = (updates: Partial<MeetingData>) => {
+    setMeetingData(prev => ({ ...prev, ...updates }));
+  };
+
+  const handleComplete = () => {
+    if (!meetingData.dateTime || !meetingData.location) return;
+
+    const meeting: Meeting = {
+      id: 'meeting-' + Math.random().toString(36).slice(2, 9),
+      title: `${meetingData.type} meeting`,
+      type: meetingData.type,
+      details: {
+        date: meetingData.dateTime.date,
+        time: meetingData.dateTime.time,
+        location: meetingData.location.value,
+        platform: meetingData.location.type === 'virtual' ? meetingData.location.details?.platform || '' : ''
+      },
+      participants: meetingData.participants.map((p, i) => ({ 
+        id: p.id || `p${i}`, 
+        name: p.name, 
+        status: 'pending' as const 
+      })),
+      externalLink: meetingData.location.type === 'virtual' ? meetingData.location.details?.link || '' : '',
+      messages: []
+    };
+
+    upsertMeeting(meeting);
+    
+    // Redirect to the new meeting
+    router.push(`/${locale}/meetings/${meeting.id}`);
+  };
+
+  const steps = [
+    {
+      id: 'type',
+      title: 'What kind of meeting do you want to create?',
+      subtitle: 'Choose the type that best fits your needs',
+      content: (
+        <QuestionCard title="Meeting Type" subtitle="Select the category that matches your meeting">
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              { type: 'personal' as MeetingType, emoji: '👤', title: 'Personal Meeting', subtitle: '1:1 conversation' },
+              { type: 'group' as MeetingType, emoji: '👥', title: 'Group Meeting', subtitle: 'Team or event' },
+              { type: 'virtual' as MeetingType, emoji: '💻', title: 'Virtual Meeting', subtitle: 'Online or call' },
+              { type: 'business' as MeetingType, emoji: '🏢', title: 'With a Business', subtitle: 'Company meeting' },
+              { type: 'playtime' as MeetingType, emoji: '🎮', title: 'Playtime', subtitle: 'Games & activities' },
+              { type: 'opencall' as MeetingType, emoji: '📢', title: 'Open Call', subtitle: 'Public invitation' }
+            ].map(({ type, emoji, title, subtitle }) => (
+              <ChoiceCard
+                key={type}
+                emoji={emoji}
+                title={title}
+                subtitle={subtitle}
+                onClick={() => updateMeetingData({ type })}
+                className={meetingData.type === type ? 'border-blue-500 bg-blue-50' : ''}
+              />
+            ))}
+          </div>
+        </QuestionCard>
+      ),
+      canGoNext: !!meetingData.type
+    },
+    {
+      id: 'participants',
+      title: 'Who would you like to meet with?',
+      subtitle: 'Add participants to your meeting',
+      content: (
+        <QuestionCard title="Participants" subtitle="Search contacts or add new people">
+          <ParticipantSelector
+            participants={meetingData.participants}
+            onParticipantsChange={(participants) => updateMeetingData({ participants })}
+          />
+        </QuestionCard>
+      ),
+      canGoNext: meetingData.participants.length > 0
+    },
+    {
+      id: 'datetime',
+      title: 'When would you like to meet?',
+      subtitle: 'Choose a date and time that works for everyone',
+      content: (
+        <QuestionCard title="Date & Time" subtitle="Smart suggestions based on your availability">
+          <DateTimeSelector
+            dateTime={meetingData.dateTime}
+            onDateTimeChange={(dateTime) => updateMeetingData({ dateTime })}
+          />
+        </QuestionCard>
+      ),
+      canGoNext: !!meetingData.dateTime
+    },
+    {
+      id: 'location',
+      title: 'Where will the meeting take place?',
+      subtitle: 'Physical location, virtual platform, or business venue',
+      content: (
+        <QuestionCard title="Location" subtitle="Choose the meeting venue or platform">
+          <LocationSelector
+            location={meetingData.location}
+            onLocationChange={(location) => updateMeetingData({ location })}
+          />
+        </QuestionCard>
+      ),
+      canGoNext: !!meetingData.location
+    },
+    {
+      id: 'notes',
+      title: 'Any notes or checklist items?',
+      subtitle: 'Add agenda items, reminders, or important details',
+      content: (
+        <QuestionCard title="Notes & Checklist" subtitle="Keep track of what needs to be discussed">
+          <NotesChecklist
+            notes={meetingData.notes}
+            checklist={meetingData.checklist}
+            onNotesChange={(notes) => updateMeetingData({ notes })}
+            onChecklistChange={(checklist) => updateMeetingData({ checklist })}
+          />
+        </QuestionCard>
+      ),
+      canGoNext: true
+    },
+    {
+      id: 'review',
+      title: 'Review your meeting',
+      subtitle: 'Everything looks good? Let\'s confirm the details',
+      content: (
+        <QuestionCard title="Meeting Summary" subtitle="Review all the details before confirming">
+          <SummaryCard title="Meeting Details">
+            <SummaryRow label="Type" value={meetingData.type} />
+            <SummaryRow 
+              label="Participants" 
+              value={`${meetingData.participants.length} people: ${meetingData.participants.map(p => p.name).join(', ')}`} 
+            />
+            <SummaryRow 
+              label="Date & Time" 
+              value={meetingData.dateTime ? `${meetingData.dateTime.date} at ${meetingData.dateTime.time}` : 'Not set'} 
+            />
+            <SummaryRow 
+              label="Location" 
+              value={meetingData.location ? `${meetingData.location.value} (${meetingData.location.type})` : 'Not set'} 
+            />
+            {meetingData.notes && (
+              <SummaryRow label="Notes" value={meetingData.notes} />
             )}
-
-            {step === 2 && (
-                <section className="space-y-3">
-                    <div className="text-lg font-semibold">Who would you like to meet with?</div>
-                    <input className="w-full rounded-xl border p-3" placeholder="Type a name (mock)"
-                        onKeyDown={(e) => {
-                            const v = (e.target as HTMLInputElement).value.trim();
-                            if (e.key === 'Enter' && v) {
-                                setParticipants(p => [...p, v]);
-                                (e.target as HTMLInputElement).value = '';
-                            }
-                        }}
-                    />
-                    <div className="flex flex-wrap gap-2">
-                        {participants.map(p => <span key={p} className="rounded-full border px-3 py-1 text-sm">{p}</span>)}
-                    </div>
-                    <div className="flex gap-3">
-                        <button onClick={() => setStep(1)} className="rounded-xl border px-4 py-2">← Back</button>
-                        <button onClick={() => setStep(3)} className="rounded-xl border px-4 py-2">Next →</button>
-                    </div>
-                </section>
+            {meetingData.checklist.length > 0 && (
+              <SummaryRow 
+                label="Checklist" 
+                value={`${meetingData.checklist.length} items`} 
+              />
             )}
+          </SummaryCard>
 
-            {step === 3 && (
-                <section className="space-y-3">
-                    <div className="text-lg font-semibold">When and where?</div>
-                    <div className="grid gap-3">
-                        <input className="rounded-xl border p-3" placeholder="Date (e.g., 2025-09-01)"
-                            value={details.date} onChange={e => setDetails({ ...details, date: e.target.value })} />
-                        <input className="rounded-xl border p-3" placeholder="Time (e.g., 17:00)"
-                            value={details.time} onChange={e => setDetails({ ...details, time: e.target.value })} />
-                        <input className="rounded-xl border p-3" placeholder="Location or Platform (Zoom/Meet/Phone)"
-                            value={details.location} onChange={e => setDetails({ ...details, location: e.target.value })} />
-                    </div>
-                    <div className="flex gap-3">
-                        <button onClick={() => setStep(2)} className="rounded-xl border px-4 py-2">← Back</button>
-                        <button onClick={() => setStep(4)} className="rounded-xl border px-4 py-2">Next →</button>
-                    </div>
-                </section>
-            )}
+          {/* Premium vs Free Flow */}
+          {isPremium ? (
+            <div className="p-4 bg-green-50 border border-green-200 rounded-xl">
+              <div className="text-green-800 font-medium">Premium User</div>
+              <div className="text-green-600 text-sm">Your meeting will be saved instantly!</div>
+            </div>
+          ) : (
+            <div className="p-4 bg-orange-50 border border-orange-200 rounded-xl">
+              <div className="text-orange-800 font-medium">Free User</div>
+              <div className="text-orange-600 text-sm">A short ad will be shown before saving your meeting.</div>
+            </div>
+          )}
+        </QuestionCard>
+      ),
+      canGoNext: true
+    }
+  ];
 
-            {step === 4 && (
-                <section className="space-y-3">
-                    <div className="text-lg font-semibold">Review</div>
-                    <div className="rounded-2xl border p-4">
-                        <div>Type: <b>{type}</b></div>
-                        <div>Participants: {participants.join(', ') || '—'}</div>
-                        <div>Date/Time: {details.date || '—'} {details.time || ''}</div>
-                        <div>Location: {details.location || '—'}</div>
-                    </div>
-                    <div className="flex gap-3">
-                        <button onClick={() => setStep(3)} className="rounded-xl border px-4 py-2">✏️ Edit</button>
-                        <button onClick={() => {
-                            const meeting: Meeting = {
-                                id: 'meeting-' + Math.random().toString(36).slice(2, 9),
-                                title: `${type} meeting`,
-                                type,
-                                details,
-                                participants: participants.map((name, i) => ({ id: `p${i}`, name, status: 'pending' as const })),
-                                externalLink: '',
-                                messages: []
-                            };
-                            upsertMeeting(meeting);
-                            setCreatedMeetingId(meeting.id);
-                            setStep(5);
-                        }} className="rounded-xl border px-4 py-2">✅ Confirm</button>
-                    </div>
-                </section>
-            )}
-
-            {step === 5 && (
-                <section className="space-y-2">
-                    <div className="rounded-2xl border p-4">
-                        <div className="text-green-700 font-semibold">Meeting saved!</div>
-                        <div className="text-sm opacity-70">Your meeting has been created and saved.</div>
-                    </div>
-                    <div className="flex gap-2">
-                        <a href={`/${locale}/meetings`} className="inline-block rounded-xl border px-4 py-2 hover:shadow">Go to Meetings →</a>
-                        {createdMeetingId && (
-                            <button onClick={() => router.push(`/${locale}/meetings/${createdMeetingId}`)} className="inline-block rounded-xl border px-4 py-2 hover:shadow bg-blue-50">
-                                Open Meeting Hub →
-                            </button>
-                        )}
-                    </div>
-                </section>
-            )}
-        </main>
-    );
+  return (
+    <main className="mx-auto max-w-screen-sm px-4 pb-24 pt-8">
+      <ConversationalFlow
+        steps={steps}
+        onComplete={handleComplete}
+      />
+    </main>
+  );
 }
 

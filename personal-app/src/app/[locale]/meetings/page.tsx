@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import { ensureDemoMeeting } from '@/lib/localStore';
-import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export default function MeetingsPage() {
     const { locale } = useParams<{ locale: string }>();

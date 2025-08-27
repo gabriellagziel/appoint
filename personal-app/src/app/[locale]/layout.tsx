@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
+import BottomNav from '../../components/personal/BottomNav';
 import InstallPrompt from '../../components/pwa/InstallPrompt';
 import PWARegister from '../../components/pwa/PWARegister';
-import BottomNav from '../../components/personal/BottomNav';
 import { isRTL, LOCALES, normalizeLocale } from '../../i18n';
 
 export async function generateMetadata({ params }: { params: { locale: string } }) {

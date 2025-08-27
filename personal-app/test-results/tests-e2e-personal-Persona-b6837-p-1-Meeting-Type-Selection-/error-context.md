@@ -1,36 +1,68 @@
 # Page snapshot
 
 ```yaml
-- generic [active] [ref=e1]:
-  - main [ref=e2]:
-    - heading "Create a Meeting" [level=1] [ref=e3]
-    - generic [ref=e4]:
-      - generic [ref=e5]: What kind of meeting do you want to create?
+- generic [active]:
+  - alert [ref=e1]
+  - dialog [ref=e4]:
+    - generic [ref=e5]:
       - generic [ref=e6]:
-        - button "👤 Personal 1:1" [ref=e7] [cursor=pointer]
-        - button "👥 Group / Event" [ref=e8] [cursor=pointer]
-        - button "💻 Virtual" [ref=e9] [cursor=pointer]
-        - button "🏢 With a Business" [ref=e10] [cursor=pointer]
-        - button "🎮 Playtime" [ref=e11] [cursor=pointer]
-        - button "📢 Open Call" [ref=e12] [cursor=pointer]
-  - navigation [ref=e13]:
-    - list [ref=e14]:
-      - listitem [ref=e15]:
-        - link "Home" [ref=e16] [cursor=pointer]:
-          - /url: /en/home
-      - listitem [ref=e17]:
-        - link "Meetings" [ref=e18] [cursor=pointer]:
-          - /url: /en/meetings
-      - listitem [ref=e19]:
-        - link "Reminders" [ref=e20] [cursor=pointer]:
-          - /url: /en/reminders
-      - listitem [ref=e21]:
-        - link "Groups" [ref=e22] [cursor=pointer]:
-          - /url: /en/groups
-      - listitem [ref=e23]:
-        - link "Family" [ref=e24] [cursor=pointer]:
-          - /url: /en/family
-      - listitem [ref=e25]:
-        - link "Settings" [ref=e26] [cursor=pointer]:
-          - /url: /en/settings
+        - heading "Build Error" [level=1] [ref=e7]
+        - paragraph [ref=e8]: Failed to compile
+        - generic [ref=e9]:
+          - generic "An outdated version detected (latest is 15.5.2), upgrade is highly recommended!" [ref=e11]: Next.js (14.2.5) is outdated
+          - link "(learn more)" [ref=e12] [cursor=pointer]:
+            - /url: https://nextjs.org/docs/messages/version-staleness
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - link "./src/components/convo/ConversationalFlow.tsx:4:1" [ref=e15] [cursor=pointer]:
+            - text: ./src/components/convo/ConversationalFlow.tsx:4:1
+            - img [ref=e16] [cursor=pointer]
+          - generic [ref=e20]:
+            - generic [ref=e21]: Module not found
+            - generic [ref=e22]: ": Can't resolve '"
+            - generic [ref=e23]: lucide-react
+            - generic [ref=e24]: "'"
+            - generic [ref=e26]: 2 |
+            - generic [ref=e28]: 3 |
+            - generic [ref=e30]: import
+            - generic [ref=e31]: "{"
+            - generic [ref=e32]: ReactNode
+            - generic [ref=e33]: ","
+            - generic [ref=e34]: "useState }"
+            - generic [ref=e35]: from
+            - generic [ref=e37]: "'react'"
+            - generic [ref=e38]: ;
+            - generic [ref=e39]: ">"
+            - generic [ref=e40]: 4 |
+            - generic [ref=e42]: import
+            - generic [ref=e43]: "{"
+            - generic [ref=e44]: ChevronLeft
+            - generic [ref=e45]: ","
+            - generic [ref=e47]: ChevronRight
+            - generic [ref=e48]: "}"
+            - generic [ref=e49]: from
+            - generic [ref=e51]: "'lucide-react'"
+            - generic [ref=e52]: ;
+            - generic [ref=e54]: "|"
+            - generic [ref=e56]: ^
+            - generic [ref=e58]: 5 |
+            - generic [ref=e60]: 6 |
+            - generic [ref=e62]: interface
+            - generic [ref=e64]: FlowStep
+            - generic [ref=e65]: "{"
+            - generic [ref=e67]: 7 |
+            - generic [ref=e68]: id
+            - generic [ref=e69]: ":"
+            - generic [ref=e70]: string
+            - generic [ref=e71]: ;
+            - generic [ref=e72]:
+              - link "https://nextjs.org/docs/messages/module-not-found" [ref=e73] [cursor=pointer]:
+                - /url: https://nextjs.org/docs/messages/module-not-found
+              - text: "Import trace for requested module:"
+            - link "./src/app/[locale]/create/meeting/page.tsx" [ref=e74] [cursor=pointer]:
+              - text: ./src/app/[locale]/create/meeting/page.tsx
+              - img [ref=e75] [cursor=pointer]
+        - contentinfo [ref=e79]:
+          - paragraph [ref=e80]:
+            - generic [ref=e81]: This error occurred during the build process and can only be dismissed by fixing the error.
 ```

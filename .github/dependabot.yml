@@ -1,6 +1,6 @@
 version: 2
 updates:
-  # Enable version updates for npm
+  # NPM dependencies
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -12,39 +12,98 @@ updates:
       - "gabriellagziel"
     assignees:
       - "gabriellagziel"
+    labels:
+      - "dependencies"
+      - "npm"
     commit-message:
-      prefix: "deps"
-      prefix-development: "deps-dev"
+      prefix: "npm"
       include: "scope"
+    ignore:
+      # Ignore major version updates for critical packages
+      - dependency-name: "next"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
 
-  # Enable version updates for GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "09:00"
-    open-pull-requests-limit: 5
-    reviewers:
-      - "gabriellagziel"
-    assignees:
-      - "gabriellagziel"
-    commit-message:
-      prefix: "ci"
-      include: "scope"
-
-  # Enable version updates for pub (Flutter/Dart)
+  # Flutter/Dart dependencies
   - package-ecosystem: "pub"
     directory: "/"
     schedule:
       interval: "weekly"
       day: "monday"
-      time: "09:00"
-    open-pull-requests-limit: 10
+      time: "10:00"
+    open-pull-requests-limit: 5
     reviewers:
       - "gabriellagziel"
     assignees:
       - "gabriellagziel"
+    labels:
+      - "dependencies"
+      - "flutter"
+      - "dart"
     commit-message:
-      prefix: "deps"
+      prefix: "pub"
+      include: "scope"
+    ignore:
+      # Ignore major version updates for critical packages
+      - dependency-name: "flutter"
+        update-types: ["version-update:semver-major"]
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "11:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "gabriellagziel"
+    assignees:
+      - "gabriellagziel"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+
+  # Docker dependencies
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "12:00"
+    open-pull-requests-limit: 3
+    reviewers:
+      - "gabriellagziel"
+    assignees:
+      - "gabriellagziel"
+    labels:
+      - "dependencies"
+      - "docker"
+    commit-message:
+      prefix: "docker"
+      include: "scope"
+
+  # Python dependencies (if any)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "13:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "gabriellagziel"
+    assignees:
+      - "gabriellagziel"
+    labels:
+      - "dependencies"
+      - "python"
+    commit-message:
+      prefix: "pip"
       include: "scope"
