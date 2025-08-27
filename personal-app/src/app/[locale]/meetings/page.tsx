@@ -1,3 +1,5 @@
+'use client';
+
 import { ensureDemoMeeting } from '@/lib/localStore';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
