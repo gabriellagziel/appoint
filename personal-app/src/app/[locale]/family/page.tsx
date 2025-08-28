@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Plus, Users, Child, Calendar, Bell, Settings, Link, Trash2, Edit, Crown } from 'lucide-react';
+import { Plus, Users, Calendar, Bell, Settings, Link, Trash2, Edit, Crown } from 'lucide-react';
 
 interface FamilyMember {
   id: string;

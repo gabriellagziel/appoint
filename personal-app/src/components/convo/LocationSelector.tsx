@@ -255,7 +255,7 @@ export default function LocationSelector({
             </div>
             {location.type === 'physical' && location.details?.address && (
               <button
-                onClick={() => openMapsPreview(location.details.address!)}
+                onClick={() => location.details?.address && openMapsPreview(location.details.address)}
                 className="p-2 text-green-600 hover:bg-green-100 rounded-lg transition-colors"
                 aria-label="Open in Maps"
                 title="Open in Maps"
