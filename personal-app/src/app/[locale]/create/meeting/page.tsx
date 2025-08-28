@@ -53,17 +53,17 @@ export default function CreateMeeting() {
         location: meetingData.location.value,
         platform: meetingData.location.type === 'virtual' ? meetingData.location.details?.platform || '' : ''
       },
-      participants: meetingData.participants.map((p, i) => ({ 
-        id: p.id || `p${i}`, 
-        name: p.name, 
-        status: 'pending' as const 
+      participants: meetingData.participants.map((p, i) => ({
+        id: p.id || `p${i}`,
+        name: p.name,
+        status: 'pending' as const
       })),
       externalLink: meetingData.location.type === 'virtual' ? meetingData.location.details?.link || '' : '',
       messages: []
     };
 
     upsertMeeting(meeting);
-    
+
     // Redirect to the new meeting
     router.push(`/${locale}/meetings/${meeting.id}`);
   };
@@ -164,25 +164,25 @@ export default function CreateMeeting() {
         <QuestionCard title="Meeting Summary" subtitle="Review all the details before confirming">
           <SummaryCard title="Meeting Details">
             <SummaryRow label="Type" value={meetingData.type} />
-            <SummaryRow 
-              label="Participants" 
-              value={`${meetingData.participants.length} people: ${meetingData.participants.map(p => p.name).join(', ')}`} 
+            <SummaryRow
+              label="Participants"
+              value={`${meetingData.participants.length} people: ${meetingData.participants.map(p => p.name).join(', ')}`}
             />
-            <SummaryRow 
-              label="Date & Time" 
-              value={meetingData.dateTime ? `${meetingData.dateTime.date} at ${meetingData.dateTime.time}` : 'Not set'} 
+            <SummaryRow
+              label="Date & Time"
+              value={meetingData.dateTime ? `${meetingData.dateTime.date} at ${meetingData.dateTime.time}` : 'Not set'}
             />
-            <SummaryRow 
-              label="Location" 
-              value={meetingData.location ? `${meetingData.location.value} (${meetingData.location.type})` : 'Not set'} 
+            <SummaryRow
+              label="Location"
+              value={meetingData.location ? `${meetingData.location.value} (${meetingData.location.type})` : 'Not set'}
             />
             {meetingData.notes && (
               <SummaryRow label="Notes" value={meetingData.notes} />
             )}
             {meetingData.checklist.length > 0 && (
-              <SummaryRow 
-                label="Checklist" 
-                value={`${meetingData.checklist.length} items`} 
+              <SummaryRow
+                label="Checklist"
+                value={`${meetingData.checklist.length} items`}
               />
             )}
           </SummaryCard>

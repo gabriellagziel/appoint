@@ -1,28 +1,48 @@
-import type { NextRequest } from 'next/server';
-import { NextResponse } from 'next/server';
-import { LOCALES, normalizeLocale } from './i18n';
-
-export const config = { matcher: ['/((?!_next|favicon|robots|sitemap|manifest).*)'] };
+import type { NextRequest } from "next/server";
+import { NextResponse } from "next/server";
+import { LOCALES } from "./i18n";
 
 export default function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
-  const seg = pathname.split('/')[1];
-  if (LOCALES.includes(seg as any)) return NextResponse.next();
 
-  // 1) User preference cookie wins
-  const pref = req.cookies.get('NEXT_LOCALE')?.value;
-  if (pref && LOCALES.includes(normalizeLocale(pref) as any)) {
-    const url = req.nextUrl.clone();
-    url.pathname = `/${normalizeLocale(pref)}${pathname}`;
-    return NextResponse.redirect(url, { status: 307 });
+  // Skip static assets and API routes
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/api') ||
+    pathname.includes('.') ||
+    pathname.startsWith('/_vercel')
+  ) {
+    return NextResponse.next();
   }
 
-  // 2) Fallback to Accept-Language
-  const header = req.headers.get('accept-language') || '';
-  const first = header.split(',')[0] || 'en';
-  const best = normalizeLocale(first);
+  // Handle root redirect to default locale
+  if (pathname === "/") {
+    const url = req.nextUrl.clone();
+    url.pathname = "/en";
+    return NextResponse.redirect(url);
+  }
+
+  // Check if pathname starts with a locale
+  const pathnameSegments = pathname.split('/').filter(Boolean);
+  const firstSegment = pathnameSegments[0];
+
+  if (firstSegment && LOCALES.includes(firstSegment as any)) {
+    // Valid locale in path, continue
+    return NextResponse.next();
+  }
+
+  // No locale in path, redirect to default locale with full path
   const url = req.nextUrl.clone();
-  url.pathname = `/${best}${pathname}`;
-  return NextResponse.redirect(url, { status: 307 });
+  url.pathname = `/en${pathname}`;
+  return NextResponse.redirect(url);
 }
+
+export const config = {
+  matcher: [
+    // Skip all internal paths (_next)
+    '/((?!_next|_vercel|.*\\..*).*)',
+    // Optional: only run on root (/) URL
+    // '/'
+  ],
+};
 

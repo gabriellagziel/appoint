@@ -63,12 +63,12 @@ export default function RemindersPage() {
   const updateReminder = () => {
     if (!editingReminder || !formData.title || !formData.date || !formData.time) return;
 
-    setReminders(reminders.map(r => 
-      r.id === editingReminder.id 
+    setReminders(reminders.map(r =>
+      r.id === editingReminder.id
         ? { ...r, ...formData }
         : r
     ));
-    
+
     setEditingReminder(null);
     setFormData({ title: '', description: '', date: '', time: '', recurring: 'none' });
   };
@@ -78,7 +78,7 @@ export default function RemindersPage() {
   };
 
   const toggleComplete = (id: string) => {
-    setReminders(reminders.map(r => 
+    setReminders(reminders.map(r =>
       r.id === id ? { ...r, completed: !r.completed } : r
     ));
   };
@@ -106,10 +106,10 @@ export default function RemindersPage() {
 
   const getStatusColor = (reminder: Reminder) => {
     if (reminder.completed) return 'bg-green-100 border-green-200';
-    
+
     const reminderDate = new Date(`${reminder.date}T${reminder.time}`);
     const now = new Date();
-    
+
     if (reminderDate < now) return 'bg-red-100 border-red-200';
     if (reminderDate.getTime() - now.getTime() < 24 * 60 * 60 * 1000) return 'bg-orange-100 border-orange-200';
     return 'bg-blue-100 border-blue-200';
@@ -134,7 +134,7 @@ export default function RemindersPage() {
           <h3 className="font-semibold mb-3">
             {editingReminder ? 'Edit Reminder' : 'Create New Reminder'}
           </h3>
-          
+
           <div className="space-y-3">
             <input
               type="text"
@@ -143,7 +143,7 @@ export default function RemindersPage() {
               onChange={(e) => setFormData({ ...formData, title: e.target.value })}
               className="w-full p-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
             />
-            
+
             <textarea
               placeholder="Description (optional)"
               value={formData.description}
@@ -151,7 +151,7 @@ export default function RemindersPage() {
               rows={2}
               className="w-full p-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none resize-none"
             />
-            
+
             <div className="grid grid-cols-2 gap-3">
               <input
                 type="date"
@@ -166,7 +166,7 @@ export default function RemindersPage() {
                 className="p-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
               />
             </div>
-            
+
             <select
               value={formData.recurring}
               onChange={(e) => setFormData({ ...formData, recurring: e.target.value as Reminder['recurring'] })}
@@ -179,7 +179,7 @@ export default function RemindersPage() {
               <option value="yearly">🎯 Yearly</option>
             </select>
           </div>
-          
+
           <div className="flex gap-2 mt-4">
             <button
               onClick={editingReminder ? updateReminder : addReminder}
@@ -227,13 +227,13 @@ export default function RemindersPage() {
                       {reminder.title}
                     </h3>
                   </div>
-                  
+
                   {reminder.description && (
                     <p className={`text-sm mb-2 ${reminder.completed ? 'text-gray-400' : 'text-gray-600'}`}>
                       {reminder.description}
                     </p>
                   )}
-                  
+
                   <div className="flex items-center gap-4 text-sm text-gray-500">
                     <span className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
@@ -248,7 +248,7 @@ export default function RemindersPage() {
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="flex gap-2 ml-3">
                   <button
                     onClick={() => startEdit(reminder)}

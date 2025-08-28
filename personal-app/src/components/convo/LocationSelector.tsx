@@ -1,7 +1,7 @@
 'use client';
 
+import { Building, ExternalLink, Globe, MapPin, Search } from 'lucide-react';
 import { useState } from 'react';
-import { MapPin, Globe, Building, Search, ExternalLink } from 'lucide-react';
 
 interface Location {
   type: 'physical' | 'virtual' | 'business';
@@ -25,10 +25,10 @@ interface LocationSelectorProps {
   className?: string;
 }
 
-export default function LocationSelector({ 
-  location, 
-  onLocationChange, 
-  className = '' 
+export default function LocationSelector({
+  location,
+  onLocationChange,
+  className = ''
 }: LocationSelectorProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [locationType, setLocationType] = useState<'physical' | 'virtual' | 'business'>('physical');
@@ -82,33 +82,30 @@ export default function LocationSelector({
       <div className="grid grid-cols-3 gap-3">
         <button
           onClick={() => setLocationType('physical')}
-          className={`p-3 rounded-xl border-2 transition-colors ${
-            locationType === 'physical'
+          className={`p-3 rounded-xl border-2 transition-colors ${locationType === 'physical'
               ? 'border-blue-500 bg-blue-50 text-blue-700'
               : 'border-gray-200 hover:border-gray-300'
-          }`}
+            }`}
         >
           <MapPin className="w-6 h-6 mx-auto mb-2" />
           <div className="text-sm font-medium">Physical</div>
         </button>
         <button
           onClick={() => setLocationType('virtual')}
-          className={`p-3 rounded-xl border-2 transition-colors ${
-            locationType === 'virtual'
+          className={`p-3 rounded-xl border-2 transition-colors ${locationType === 'virtual'
               ? 'border-blue-500 bg-blue-50 text-blue-700'
               : 'border-gray-200 hover:border-gray-300'
-          }`}
+            }`}
         >
           <Globe className="w-6 h-6 mx-auto mb-2" />
           <div className="text-sm font-medium">Virtual</div>
         </button>
         <button
           onClick={() => setLocationType('business')}
-          className={`p-3 rounded-xl border-2 transition-colors ${
-            locationType === 'business'
+          className={`p-3 rounded-xl border-2 transition-colors ${locationType === 'business'
               ? 'border-blue-500 bg-blue-50 text-blue-700'
               : 'border-gray-200 hover:border-gray-300'
-          }`}
+            }`}
         >
           <Building className="w-6 h-6 mx-auto mb-2" />
           <div className="text-sm font-medium">Business</div>
@@ -128,7 +125,7 @@ export default function LocationSelector({
               className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:outline-none"
             />
           </div>
-          
+
           {searchQuery && (
             <div className="space-y-2">
               <button
@@ -181,7 +178,7 @@ export default function LocationSelector({
               </button>
             ))}
           </div>
-          
+
           {location?.type === 'virtual' && (
             <div className="space-y-2">
               <label className="block text-sm font-medium text-gray-700">
@@ -191,9 +188,9 @@ export default function LocationSelector({
                 type="text"
                 placeholder="Enter meeting link, phone number, or details..."
                 className="w-full p-3 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:outline-none"
-                onChange={(e) => handleLocationChange('virtual', location.value, { 
-                  ...location.details, 
-                  link: e.target.value 
+                onChange={(e) => handleLocationChange('virtual', location.value, {
+                  ...location.details,
+                  link: e.target.value
                 })}
               />
             </div>

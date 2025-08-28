@@ -15,10 +15,10 @@ interface DateTimeSelectorProps {
   className?: string;
 }
 
-export default function DateTimeSelector({ 
-  dateTime, 
-  onDateTimeChange, 
-  className = '' 
+export default function DateTimeSelector({
+  dateTime,
+  onDateTimeChange,
+  className = ''
 }: DateTimeSelectorProps) {
   const [showSuggestions, setShowSuggestions] = useState(false);
 
@@ -107,10 +107,10 @@ export default function DateTimeSelector({
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="font-medium">
-                      {new Date(suggestion.date).toLocaleDateString('en-US', { 
-                        weekday: 'long', 
-                        month: 'short', 
-                        day: 'numeric' 
+                      {new Date(suggestion.date).toLocaleDateString('en-US', {
+                        weekday: 'long',
+                        month: 'short',
+                        day: 'numeric'
                       })}
                     </div>
                     <div className="text-sm text-gray-600">{suggestion.time}</div>
@@ -147,7 +147,7 @@ export default function DateTimeSelector({
       {/* Manual Date/Time Selection */}
       <div className="space-y-3">
         <h4 className="font-medium text-gray-700">Or pick custom date & time:</h4>
-        
+
         {/* Date Selection */}
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
@@ -159,15 +159,14 @@ export default function DateTimeSelector({
               <button
                 key={date}
                 onClick={() => handleDateChange(date)}
-                className={`p-2 text-xs rounded-lg transition-colors ${
-                  dateTime?.date === date
+                className={`p-2 text-xs rounded-lg transition-colors ${dateTime?.date === date
                     ? 'bg-blue-500 text-white'
                     : 'border border-gray-200 hover:bg-gray-50'
-                }`}
-                title={`Select ${new Date(date).toLocaleDateString('en-US', { 
-                  weekday: 'long', 
-                  month: 'long', 
-                  day: 'numeric' 
+                  }`}
+                title={`Select ${new Date(date).toLocaleDateString('en-US', {
+                  weekday: 'long',
+                  month: 'long',
+                  day: 'numeric'
                 })}`}
               >
                 {new Date(date).getDate()}
@@ -205,11 +204,11 @@ export default function DateTimeSelector({
             <div>
               <div className="font-medium text-green-800">
                 <Calendar className="w-4 h-4 inline mr-2" />
-                {new Date(dateTime.date).toLocaleDateString('en-US', { 
-                  weekday: 'long', 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
+                {new Date(dateTime.date).toLocaleDateString('en-US', {
+                  weekday: 'long',
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
                 })}
               </div>
               <div className="text-sm text-green-600 mt-1">

@@ -1,4 +1,4 @@
-import QuickActions from '@/components/personal/QuickActions';
+import ClientHome from '@/components/personal/ClientHome';
 import { normalizeLocale } from '../../../i18n';
 
 export default function HomePage({ params }: { params: { locale: string } }) {
@@ -6,10 +6,10 @@ export default function HomePage({ params }: { params: { locale: string } }) {
     return (
         <main className="mx-auto max-w-screen-sm px-4 pb-24 pt-8 space-y-5">
             <div className="space-y-1">
-                <h1 className="text-2xl font-semibold">Hi Gabriel, what would you like to do today?</h1>
-                <p className="opacity-70">Choose an action to get started.</p>
+                <h1 className="text-2xl font-semibold">Hi Gabriel 👋</h1>
+                <p className="opacity-70">What would you like to do today?</p>
             </div>
-            <QuickActions locale={loc} />
+            <ClientHome />
         </main>
     );
 }

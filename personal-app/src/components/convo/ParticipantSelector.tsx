@@ -16,10 +16,10 @@ interface ParticipantSelectorProps {
   className?: string;
 }
 
-export default function ParticipantSelector({ 
-  participants, 
-  onParticipantsChange, 
-  className = '' 
+export default function ParticipantSelector({
+  participants,
+  onParticipantsChange,
+  className = ''
 }: ParticipantSelectorProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [showImportOptions, setShowImportOptions] = useState(false);

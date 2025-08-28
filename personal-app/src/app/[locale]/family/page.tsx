@@ -1,7 +1,7 @@
 'use client';
 
+import { Bell, Calendar, Crown, Edit, Link, Plus, Settings, Trash2 } from 'lucide-react';
 import { useState } from 'react';
-import { Plus, Users, Calendar, Bell, Settings, Link, Trash2, Edit, Crown } from 'lucide-react';
 
 interface FamilyMember {
   id: string;
@@ -129,12 +129,12 @@ export default function FamilyPage() {
   const updateFamilyReminder = () => {
     if (!editingReminder || !reminderForm.title || !reminderForm.date || !reminderForm.time) return;
 
-    setFamilyReminders(familyReminders.map(r => 
-      r.id === editingReminder.id 
+    setFamilyReminders(familyReminders.map(r =>
+      r.id === editingReminder.id
         ? { ...r, ...reminderForm }
         : r
     ));
-    
+
     setEditingReminder(null);
     setReminderForm({ title: '', description: '', date: '', time: '', assignedTo: [] });
   };
@@ -144,7 +144,7 @@ export default function FamilyPage() {
   };
 
   const toggleReminderComplete = (id: string) => {
-    setFamilyReminders(familyReminders.map(r => 
+    setFamilyReminders(familyReminders.map(r =>
       r.id === id ? { ...r, completed: !r.completed } : r
     ));
   };
@@ -167,10 +167,10 @@ export default function FamilyPage() {
 
   const getStatusColor = (reminder: FamilyReminder) => {
     if (reminder.completed) return 'bg-green-100 border-green-200';
-    
+
     const reminderDate = new Date(`${reminder.date}T${reminder.time}`);
     const now = new Date();
-    
+
     if (reminderDate < now) return 'bg-red-100 border-red-200';
     if (reminderDate.getTime() - now.getTime() < 24 * 60 * 60 * 1000) return 'bg-orange-100 border-orange-200';
     return 'bg-blue-100 border-blue-200';
@@ -209,9 +209,8 @@ export default function FamilyPage() {
             >
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-medium ${
-                    member.role === 'parent' ? 'bg-blue-500' : 'bg-green-500'
-                  }`}>
+                  <div className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-medium ${member.role === 'parent' ? 'bg-blue-500' : 'bg-green-500'
+                    }`}>
                     {member.name.charAt(0)}
                   </div>
                   <div>
@@ -227,7 +226,7 @@ export default function FamilyPage() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="flex gap-2">
                   {member.role === 'child' && (
                     <div className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
@@ -254,7 +253,7 @@ export default function FamilyPage() {
       {showAddMember && (
         <div className="p-4 border-2 border-gray-200 rounded-xl bg-gray-50">
           <h3 className="font-semibold mb-3">Add Family Member</h3>
-          
+
           <div className="space-y-3">
             <input
               type="text"
@@ -263,7 +262,7 @@ export default function FamilyPage() {
               onChange={(e) => setMemberForm({ ...memberForm, name: e.target.value })}
               className="w-full p-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
             />
-            
+
             <input
               type="number"
               placeholder="Age"
@@ -273,7 +272,7 @@ export default function FamilyPage() {
               max="120"
               className="w-full p-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
             />
-            
+
             <select
               value={memberForm.role}
               onChange={(e) => setMemberForm({ ...memberForm, role: e.target.value as 'parent' | 'child' })}
@@ -283,7 +282,7 @@ export default function FamilyPage() {
               <option value="parent">👨‍👩‍👧 Parent (Premium)</option>
             </select>
           </div>
-          
+
           <div className="flex gap-2 mt-4">
             <button
               onClick={addFamilyMember}
@@ -329,13 +328,13 @@ export default function FamilyPage() {
                         {reminder.title}
                       </h3>
                     </div>
-                    
+
                     {reminder.description && (
                       <p className={`text-sm mb-2 ${reminder.completed ? 'text-gray-400' : 'text-gray-600'}`}>
                         {reminder.description}
                       </p>
                     )}
-                    
+
                     <div className="flex items-center gap-4 text-sm text-gray-500 mb-2">
                       <span className="flex items-center gap-1">
                         <Calendar className="w-4 h-4" />
@@ -346,12 +345,12 @@ export default function FamilyPage() {
                         {reminder.time}
                       </span>
                     </div>
-                    
+
                     <div className="text-sm text-gray-600">
                       <span className="font-medium">Assigned to:</span> {reminder.assignedTo.map(id => getMemberName(id)).join(', ')}
                     </div>
                   </div>
-                  
+
                   <div className="flex gap-2 ml-3">
                     <button
                       onClick={() => startEditReminder(reminder)}
@@ -381,7 +380,7 @@ export default function FamilyPage() {
           <h3 className="font-semibold mb-3">
             {editingReminder ? 'Edit Family Reminder' : 'Create Family Reminder'}
           </h3>
-          
+
           <div className="space-y-3">
             <input
               type="text"
@@ -390,7 +389,7 @@ export default function FamilyPage() {
               onChange={(e) => setReminderForm({ ...reminderForm, title: e.target.value })}
               className="w-full p-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
             />
-            
+
             <textarea
               placeholder="Description (optional)"
               value={reminderForm.description}
@@ -398,7 +397,7 @@ export default function FamilyPage() {
               rows={2}
               className="w-full p-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none resize-none"
             />
-            
+
             <div className="grid grid-cols-2 gap-3">
               <input
                 type="date"
@@ -413,7 +412,7 @@ export default function FamilyPage() {
                 className="p-3 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
               />
             </div>
-            
+
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">Assign to:</label>
               <div className="space-y-2">
@@ -437,7 +436,7 @@ export default function FamilyPage() {
               </div>
             </div>
           </div>
-          
+
           <div className="flex gap-2 mt-4">
             <button
               onClick={editingReminder ? updateFamilyReminder : addFamilyReminder}
