@@ -1,127 +1,116 @@
-# Flutter & Dart
-.dart_tool/
-.packages
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production builds
+.next/
+out/
+dist/
 build/
-.firebase/
-tool/diagnostics/
+coverage/
+
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Flutter SDK artifact
-flutter/
-flutter.tar.xz
-.flutter-plugins
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
 .env
-!web/assets/.env
-.flutter-plugins-dependencies
-pubspec.lock
-
-# Miscellaneous
-*.class
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.packages
-.pub-cache/
-.pub/
-/build/
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
-
-# Firebase
-google-services.json
-GoogleService-Info.plist
-
-# Generated files
-*.g.dart
-*.freezed.dart
-*.mocks.dart
-
-# Environment files
-.env
+.env.test
 .env.local
 .env.production
 
-# Coverage
-coverage/
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
 
-# Fastlane
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
-fastlane/test_output
+# Next.js build output
+.next
+out
 
-# Linting ignore files
-.github/workflows/.github-actions-lint-ignore
-.github/workflows/.yamllint
+# Nuxt.js build / generate output
+.nuxt
+dist
 
-# Python virtual environment
-.venv/
-venv/
-env/
+# Gatsby files
+.cache/
+public
 
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
+# Storybook build outputs
+.out
+.storybook-out
 
-# Analysis and diagnostic files
-analysis_report.txt
-remaining_analysis.txt
-full_analysis_report.txt
-long_lines_files.txt
-firebase_test_output*.txt
+# Temporary folders
+tmp/
+temp/
 
-# Translation analysis files
-translations_summary.txt
-translation_quality_report.md
-translation_completion_report.csv
-translations_export.csv
-
-# Temporary files
-*.tmp
-*.temp
-*.swp
-*.swo
-*~
-
-# IDE files
-.vscode/
-.idea/
-*.iml
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # OS generated files
 .DS_Store
@@ -132,23 +121,19 @@ translations_export.csv
 ehthumbs.db
 Thumbs.db
 
-# Build artifacts
-build/
-dist/
-*.tgz
-*.tar.gz
+# Binary artifacts (defensive)
+*.node
+*.exe
+*.dll
+*.so
+*.dylib
 
-# Test artifacts
-test_output.log
-coverage/
-*.lcov
-
-# Log files
-*.log
-logs/
-
-# Backup files
-*.backup
-*.bak
-*.save
-.env
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
