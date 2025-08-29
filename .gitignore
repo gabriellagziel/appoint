@@ -150,3 +150,29 @@ node_modules/
 *.node
 .DS_Store
 Thumbs.db
+# Build artifacts
+.next/
+out/
+dist/
+build/
+# Dependencies
+node_modules/
+# Local env
+.env.local
+# Binaries & OS clutter
+*.node
+.DS_Store
+Thumbs.db
+# Build artifacts
+.next/
+out/
+dist/
+build/
+# Dependencies
+node_modules/
+# Local env
+.env.local
+# Binaries & OS clutter
+*.node
+.DS_Store
+Thumbs.db
