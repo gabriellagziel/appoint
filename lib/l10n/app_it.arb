@@ -1,0 +1,13 @@
+{
+    "@@locale": "it",
+    "home_title": "Cosa vuoi fare adesso?",
+    "qa_meeting": "Riunione",
+    "qa_reminder": "Promemoria",
+    "qa_group": "Gruppo",
+    "qa_playtime": "Gioco",
+    "prompt_who": "Per chi è?",
+    "prompt_what": "Di cosa si tratta?",
+    "prompt_when": "Quando deve avvenire?",
+    "prompt_where": "Dove sarà?",
+    "prompt_confirm": "Rivedi i dettagli"
+}

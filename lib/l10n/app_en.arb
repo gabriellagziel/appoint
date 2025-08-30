@@ -1,4 +1,13 @@
 {
   "@@locale": "en",
-  "hello": "Hello"
+  "home_title": "What do you want to do now?",
+  "qa_meeting": "Meeting",
+  "qa_reminder": "Reminder",
+  "qa_group": "Group",
+  "qa_playtime": "Playtime",
+  "prompt_who": "Who is this for?",
+  "prompt_what": "What is it about?",
+  "prompt_when": "When should it happen?",
+  "prompt_where": "Where will it be?",
+  "prompt_confirm": "Review your details"
 }

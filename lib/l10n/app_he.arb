@@ -1,0 +1,13 @@
+{
+    "@@locale": "he",
+    "home_title": "מה אתה רוצה לעשות עכשיו?",
+    "qa_meeting": "פגישה",
+    "qa_reminder": "תזכורת",
+    "qa_group": "קבוצה",
+    "qa_playtime": "זמן משחק",
+    "prompt_who": "עבור מי זה?",
+    "prompt_what": "על מה?",
+    "prompt_when": "מתי זה קורה?",
+    "prompt_where": "איפה זה יהיה?",
+    "prompt_confirm": "בדוק את הפרטים"
+}
