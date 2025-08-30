@@ -70,6 +70,12 @@
     var serviceWorkerVersion = null;
   </script>
   
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.ready.then(reg => reg.update());
+    }
+  </script>
+  
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
