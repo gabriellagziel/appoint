@@ -1,12 +1,14 @@
 import 'dart:convert';
-import 'package:flutter/foundation.dart';
-import 'flow_engine.dart';
-
 // Conditional import for web
 import 'dart:html' if (dart.library.io) 'dart:io' as html;
 
+import 'package:flutter/foundation.dart';
+
+import 'flow_engine.dart';
+
 class FlowPersist {
-  static Future<void> save(FlowEngine engine, {String key = 'flow_state'}) async {
+  static Future<void> save(FlowEngine engine,
+      {String key = 'flow_state'}) async {
     final payload = jsonEncode({
       'i': engine.index,
       'slots': engine.slots,
@@ -21,7 +23,8 @@ class FlowPersist {
     }
   }
 
-  static Future<bool> restore(FlowEngine engine, {String key = 'flow_state'}) async {
+  static Future<bool> restore(FlowEngine engine,
+      {String key = 'flow_state'}) async {
     String? payload;
     if (kIsWeb) {
       // ignore: avoid_web_libraries_in_flutter
@@ -36,7 +39,7 @@ class FlowPersist {
     engine.slots.clear();
     engine.slots.addAll(slots);
     while (engine.index < i && !engine.isLast) {
-      engine.next(null);
+      engine.next();
     }
     return true;
   }
@@ -51,4 +54,6 @@ class FlowPersist {
   }
 }
 
-class _Mem { static final Map<String,String> store = {}; }
+class _Mem {
+  static final Map<String, String> store = {};
+}

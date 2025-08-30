@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+if [ ! -f "./personal-app/package.json" ]; then
+  echo "❌ Run dev from repo root: pnpm dev:personal"; 
+  echo "   Or cd into personal-app first: cd personal-app && pnpm dev";
+  exit 1;
+fi
+echo "✅ Dev guard passed - running from correct location"

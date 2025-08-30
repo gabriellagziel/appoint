@@ -50,8 +50,12 @@ class _ConversationalShellState extends State<ConversationalShell> {
         title: const Text('Sponsored break'),
         content: const Text('Watch a short promo to continue.'),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(_, false), child: const Text('Skip')),
-          FilledButton(onPressed: () => Navigator.pop(_, true), child: const Text('Watch')),
+          TextButton(
+              onPressed: () => Navigator.pop(_, false),
+              child: const Text('Skip')),
+          FilledButton(
+              onPressed: () => Navigator.pop(_, true),
+              child: const Text('Watch')),
         ],
       ),
     );
@@ -164,7 +168,7 @@ class _Bubble {
 }
 
 class SummaryCard extends StatelessWidget {
-  final Map<String,String> slots;
+  final Map<String, String> slots;
   const SummaryCard({super.key, required this.slots});
   @override
   Widget build(BuildContext context) {
@@ -178,18 +182,24 @@ class SummaryCard extends StatelessWidget {
             Text('Summary', style: Theme.of(context).textTheme.titleLarge),
             const SizedBox(height: 8),
             ...slots.entries.map((e) => Padding(
-              padding: const EdgeInsets.symmetric(vertical: 4),
-              child: Row(
-                children: [
-                  SizedBox(width: 90, child: Text('${e.key}:', style: const TextStyle(fontWeight: FontWeight.w600))),
-                  Expanded(child: Text(e.value)),
-                ],
-              ),
-            )),
+                  padding: const EdgeInsets.symmetric(vertical: 4),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                          width: 90,
+                          child: Text('${e.key}:',
+                              style: const TextStyle(
+                                  fontWeight: FontWeight.w600))),
+                      Expanded(child: Text(e.value)),
+                    ],
+                  ),
+                )),
             const SizedBox(height: 12),
             Row(
               children: [
-                OutlinedButton(onPressed: () => Navigator.pop(context), child: const Text('Close')),
+                OutlinedButton(
+                    onPressed: () => Navigator.pop(context),
+                    child: const Text('Close')),
                 const SizedBox(width: 8),
                 FilledButton(onPressed: () {}, child: const Text('Continue')),
               ],

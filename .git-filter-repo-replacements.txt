@@ -1,0 +1,5 @@
+# Stripe secret & publishable keys
+regex:(?:sk|rk)_(?:live|test)_[0-9A-Za-z]{16,}==>REDACTED_STRIPE_SECRET
+regex:pk_(?:live|test)_[0-9A-Za-z]{16,}==>REDACTED_STRIPE_PUBLISHABLE
+# Generic high-entropy tokens (conservative)
+regex:[A-Za-z0-9_\-]{32,}==>REDACTED_TOKEN

@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_C8Vlq3JZZT7Qc3PHhpZdFk3uNkz0",
+  "orgId": "team_E06jYKBd0fLuTP9d98TgkmDB",
+  "projectName": "marketing",
+  "settings": {
+    "createdAt": 1755717277669,
+    "framework": null,
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "22.x"
+  }
+}

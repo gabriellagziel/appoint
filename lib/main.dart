@@ -1,8 +1,8 @@
-import 'dart:ui' as ui;
 import 'dart:io' show Platform;
+import 'dart:ui' as ui;
 
-import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/material.dart';
 
 import 'flows/meeting_flow.dart';
 import 'l10n/app_localizations.dart';
@@ -58,7 +58,7 @@ class _AppOintAppState extends State<AppOintApp> {
   Widget build(BuildContext context) {
     final t = _t;
     final isV2 = _isV2();
-    
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -84,7 +84,8 @@ class _AppOintAppState extends State<AppOintApp> {
                                 );
                                 Navigator.of(context).push(MaterialPageRoute(
                                   builder: (_) => Scaffold(
-                                    appBar: AppBar(title: Text(t.t('qa_meeting'))),
+                                    appBar:
+                                        AppBar(title: Text(t.t('qa_meeting'))),
                                     body: ConversationalShell(
                                         engine: engine, textDirection: _dir),
                                   ),
@@ -101,10 +102,10 @@ class _AppOintAppState extends State<AppOintApp> {
                     ),
                   )
                 : const Center(
-                    child: Text('Legacy version - add ?v2=1 to URL for new version'),
+                    child: Text(
+                        'Legacy version - add ?v2=1 to URL for new version'),
                   ),
       ),
     );
   }
 }
-
