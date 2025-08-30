@@ -5,7 +5,6 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 
 import 'flows/meeting_flow.dart';
-import 'l10n/app_localizations.dart';
 import 'ui/conversational_shell.dart';
 import 'ui/quick_actions.dart';
 
@@ -20,7 +19,6 @@ class AppOintApp extends StatefulWidget {
 class _AppOintAppState extends State<AppOintApp> {
   late String _localeCode;
   late TextDirection _dir;
-  AppStrings? _t;
 
   String _detectLang() {
     if (kIsWeb) {
@@ -46,66 +44,57 @@ class _AppOintAppState extends State<AppOintApp> {
     final lang = _detectLang();
     _localeCode = lang;
     _dir = _detectDir(lang);
-    _loadStrings();
-  }
-
-  Future<void> _loadStrings() async {
-    _t = await AppStrings.load(_localeCode);
-    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
-    final t = _t;
     final isV2 = _isV2();
-
+    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: Text(t?.t('home_title') ?? '...')),
-        body: t == null
-            ? const Center(child: CircularProgressIndicator())
-            : isV2
-                ? SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 16, vertical: 12),
-                          child: QuickActions(
-                            onPick: (flow) {
-                              if (flow == 'meeting') {
-                                final engine = createMeetingFlow(
-                                  tWho: t.t('prompt_who'),
-                                  tWhat: t.t('prompt_what'),
-                                  tWhen: t.t('prompt_when'),
-                                  tWhere: t.t('prompt_where'),
-                                  tConfirm: t.t('prompt_confirm'),
-                                );
-                                Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (_) => Scaffold(
-                                    appBar:
-                                        AppBar(title: Text(t.t('qa_meeting'))),
-                                    body: ConversationalShell(
-                                        engine: engine, textDirection: _dir),
-                                  ),
-                                ));
-                              }
-                            },
-                            tMeeting: t.t('qa_meeting'),
-                            tReminder: t.t('qa_reminder'),
-                            tGroup: t.t('qa_group'),
-                            tPlaytime: t.t('qa_playtime'),
-                          ),
-                        ),
-                      ],
+        appBar: AppBar(title: const Text('What do you want to do now?')),
+        body: isV2
+            ? SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16, vertical: 12),
+                      child: QuickActions(
+                        onPick: (flow) {
+                          if (flow == 'meeting') {
+                            final engine = createMeetingFlow(
+                              tWho: 'Who is this for?',
+                              tWhat: 'What is it about?',
+                              tWhen: 'When should it happen?',
+                              tWhere: 'Where will it be?',
+                              tConfirm: 'Review your details',
+                            );
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (_) => Scaffold(
+                                appBar: AppBar(title: const Text('Meeting')),
+                                body: ConversationalShell(
+                                    engine: engine, textDirection: _dir),
+                              ),
+                            ));
+                          }
+                        },
+                        tMeeting: 'Meeting',
+                        tReminder: 'Reminder',
+                        tGroup: 'Group',
+                        tPlaytime: 'Playtime',
+                      ),
                     ),
-                  )
-                : const Center(
-                    child: Text(
-                        'Legacy version - add ?v2=1 to URL for new version'),
-                  ),
+                  ],
+                ),
+              )
+            : const Center(
+                child: Text(
+                    'Legacy version - add ?v2=1 to URL for new version'),
+              ),
       ),
     );
   }
 }
+

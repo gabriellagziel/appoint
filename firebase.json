@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "app-oint-core",
-      "public": "temp_build_web",
+      "public": "build/web",
       "ignore": [
         "firebase.json",
         "**/.*",
@@ -16,11 +16,29 @@
       ],
       "headers": [
         {
-          "source": "**",
+          "source": "/assets/**",
           "headers": [
             {
               "key": "Cache-Control",
-              "value": "no-cache, no-store, must-revalidate"
+              "value": "public,max-age=31536000,immutable"
+            }
+          ]
+        },
+        {
+          "source": "/flutter_service_worker.js",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        },
+        {
+          "source": "/index.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
             }
           ]
         }
@@ -28,7 +46,7 @@
     },
     {
       "target": "personal-app-oint",
-      "public": "temp_build_web",
+      "public": "build/web",
       "ignore": [
         "firebase.json",
         "**/.*",
@@ -42,11 +60,29 @@
       ],
       "headers": [
         {
-          "source": "**",
+          "source": "/assets/**",
           "headers": [
             {
               "key": "Cache-Control",
-              "value": "no-cache, no-store, must-revalidate"
+              "value": "public,max-age=31536000,immutable"
+            }
+          ]
+        },
+        {
+          "source": "/flutter_service_worker.js",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        },
+        {
+          "source": "/index.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
             }
           ]
         }

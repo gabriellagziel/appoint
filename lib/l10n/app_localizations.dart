@@ -1,9 +1,7 @@
 import 'dart:async';
-import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
@@ -49,12 +47,12 @@ import 'app_localizations_it.dart';
 ///
 /// iOS applications define key application metadata, including supported
 /// locales, in an Info.plist file that is built into the application bundle.
-/// To configure the locales supported by your app, you'll need to edit this
+/// To configure the locales supported by your app, you’ll need to edit this
 /// file.
 ///
-/// First, open your project's ios/Runner.xcworkspace Xcode workspace file.
+/// First, open your project’s ios/Runner.xcworkspace Xcode workspace file.
 /// Then, in the Project Navigator, open the Info.plist file under the Runner
-/// project's Runner folder.
+/// project’s Runner folder.
 ///
 /// Next, select the Information Property List item, select Add Item from the
 /// Editor menu, then select Localizations from the pop-up menu.
@@ -196,24 +194,4 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       'an issue with the localizations generation tool. Please file an issue '
       'on GitHub with a reproducible sample app and the gen-l10n configuration '
       'that was used.');
-}
-
-// Simple string loading class for the conversational shell
-class AppStrings {
-  final Map<String, dynamic> _map;
-  AppStrings(this._map);
-  String t(String key) => _map[key] as String? ?? key;
-
-  static Future<AppStrings> load(String localeCode) async {
-    final code = localeCode.split('_').first;
-    final asset = 'lib/l10n/app_${code}.arb';
-    try {
-      final jsonStr = await rootBundle.loadString(asset);
-      return AppStrings(json.decode(jsonStr));
-    } catch (e) {
-      // Fallback to English if locale not found
-      final jsonStr = await rootBundle.loadString('lib/l10n/app_en.arb');
-      return AppStrings(json.decode(jsonStr));
-    }
-  }
 }
